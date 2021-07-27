@@ -248,15 +248,6 @@ export default () => {
     expect(DOMContextNative.openURLInBrowser).toHaveBeenCalled();
   });
 
-  it("handleOriginChange should not open a link when the origin is the same", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
-    jest.spyOn(DOMContextNative, "openURLInBrowser");
-    domContext.handleNavigationStateChange({
-      url: "http://originA.com/same-oigin-different-url",
-    });
-    expect(DOMContextNative.openURLInBrowser).not.toHaveBeenCalled();
-  });
-
   it("handleOriginChange should not open a link when the URL scheme is the magic prefix used by React Native postMessage", () => {
     const domContext = setUpNavigationTest(() => Promise.resolve(true));
     jest.spyOn(DOMContextNative, "openURLInBrowser");

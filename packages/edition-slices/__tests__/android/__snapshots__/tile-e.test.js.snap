@@ -20,49 +20,49 @@ exports[`tile e landscape huge 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 28,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 28,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 28,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -100,49 +100,49 @@ exports[`tile e landscape medium 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -177,77 +177,78 @@ exports[`tile e landscape small 1`] = `
     }
   >
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingLeft": 10,
-            }
+      <View
+        style={
+          Object {
+            "paddingBottom": 5,
+            "paddingLeft": 10,
           }
-        >
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+        }
+      >
+        <View>
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
                 "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
-          <Text
-            numberOfLines={2}
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-                "marginBottom": 0,
-              }
-            }
-          >
-            <Text>
-              
-              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-              ...
-            </Text>
-          </Text>
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 5,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+          testID="article-summary-content"
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -283,49 +284,49 @@ exports[`tile e landscape wide 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -363,49 +364,49 @@ exports[`tile e portrait huge 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 28,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 28,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 28,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -443,49 +444,49 @@ exports[`tile e portrait medium 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -520,77 +521,78 @@ exports[`tile e portrait small 1`] = `
     }
   >
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "paddingBottom": 5,
-              "paddingLeft": 10,
-            }
+      <View
+        style={
+          Object {
+            "paddingBottom": 5,
+            "paddingLeft": 10,
           }
-        >
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+        }
+      >
+        <View>
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
                 "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
-          <Text
-            numberOfLines={2}
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-                "marginBottom": 0,
-              }
-            }
-          >
-            <Text>
-              
-              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-              ...
-            </Text>
-          </Text>
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 5,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+          testID="article-summary-content"
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -626,49 +628,49 @@ exports[`tile e portrait smallTablet 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 20,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 20,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
@@ -706,49 +708,49 @@ exports[`tile e portrait wide 1`] = `
     <View>
       <View>
         <View>
-          <View>
-            <View
-              style={
-                Object {
-                  "marginBottom": 5,
-                }
-              }
-            >
-              <ArticleLabel
-                color="#005B8D"
-                title="label"
-              />
-            </View>
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
+          <View
             style={
               Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 28,
-                "fontWeight": "900",
-                "includeFontPadding": false,
-                "lineHeight": 28,
-                "marginBottom": 10,
+                "marginBottom": 5,
               }
             }
           >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-            longRead={true}
-          />
+            <ArticleLabel
+              childTestID="article-slug"
+              color="#005B8D"
+              title="label"
+            />
+          </View>
         </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "includeFontPadding": false,
+              "lineHeight": 28,
+              "marginBottom": 10,
+            }
+          }
+          testID="article-summary-headline"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+          longRead={true}
+        />
       </View>
     </View>
   </View>
