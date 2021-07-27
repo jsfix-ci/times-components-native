@@ -30,8 +30,7 @@ const ResponsiveProvider: React.FC = ({ children }) => {
     window: { fontScale, width, height },
   }: DimensionChangeEvent) => {
     // Prevents issue with odd orientation switch when app put in background
-    if (/inactive|background/.test(appState.current)) return;
-
+    // if (/inactive|background/.test(appState.current)) return; // Disabled as this breaks layout ??
     setState(calculateResponsiveContext(width, height, fontScale));
   };
 
