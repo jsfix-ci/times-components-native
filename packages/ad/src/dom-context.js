@@ -16,6 +16,7 @@ class DOMContext extends PureComponent {
   }
 
   static openURLInBrowser(url) {
+    console.log("OPEN IN BROWSER: ", url);
     return Linking.canOpenURL(url)
       .then((supported) => {
         if (!supported) {
@@ -52,6 +53,11 @@ class DOMContext extends PureComponent {
       url.indexOf(reactPostmessageBridgePrefix) !== 0 &&
       DOMContext.hasDifferentOrigin(url, baseUrl)
     ) {
+      this.webView.stopLoading();
+      DOMContext.openURLInBrowser(url);
+    }
+    // CATCH ADS INSIDE "times.co.uk" domain.
+    if (url.indexOf(baseUrl) > -1 && url !== baseUrl) {
       this.webView.stopLoading();
       DOMContext.openURLInBrowser(url);
     }
