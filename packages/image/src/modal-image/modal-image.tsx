@@ -1,4 +1,4 @@
-import React, { FC, Fragment, useState } from "react";
+import React, { FC, Fragment, useCallback, useState } from "react";
 import { ImageProps, Modal, SafeAreaView, StyleProp, View } from "react-native";
 import Url from "url-parse";
 import ImageViewer from "react-native-image-zoom-viewer";
@@ -36,9 +36,7 @@ interface ModalImageProps extends MainImage {
 }
 
 const computeAspectRatio = (ratio?: number | string) => {
-  if (!ratio) {
-    return 1;
-  }
+  if (!ratio) return 1;
 
   if (typeof ratio === "string") {
     const [ratioWidth, ratioHeight] = ratio.split(":");
@@ -119,6 +117,42 @@ const ModalImage: FC<ModalImageProps> = ({
     caption,
   });
 
+  const renderImage = useCallback(
+    ({ source }: { source: { uri: string }; style: StyleProp<ImageProps> }) => {
+      const onlineUrl = new Url(source.uri, true);
+      delete onlineUrl.query.offline;
+
+      const {
+        relativeWidth,
+        relativeHeight,
+        relativeVerticalOffset,
+        relativeHorizontalOffset,
+        aspectRatio,
+        caption,
+      } = images[currentIndex];
+
+      return (
+        <View style={styles.modalImageContainer}>
+          <Image
+            captionText={caption}
+            rounded={rounded}
+            uri={onlineUrl.toString()}
+            style={[
+              styles.modalImage,
+              isSmallImage ? styles.modalSmallImage : imageStyles,
+            ]}
+            relativeWidth={relativeWidth}
+            relativeHeight={relativeHeight}
+            relativeVerticalOffset={relativeVerticalOffset}
+            relativeHorizontalOffset={relativeHorizontalOffset}
+            aspectRatio={aspectRatio}
+          />
+        </View>
+      );
+    },
+    [images],
+  );
+
   if (onImagePress && !isSmallImage) {
     return (
       <Button
@@ -139,44 +173,6 @@ const ModalImage: FC<ModalImageProps> = ({
       </Button>
     );
   }
-
-  const renderImage = ({
-    source,
-  }: {
-    source: { uri: string };
-    style: StyleProp<ImageProps>;
-  }) => {
-    const onlineUrl = new Url(source.uri, true);
-    delete onlineUrl.query.offline;
-
-    const {
-      relativeWidth,
-      relativeHeight,
-      relativeVerticalOffset,
-      relativeHorizontalOffset,
-      aspectRatio,
-      caption,
-    } = images[currentIndex];
-
-    return (
-      <View style={styles.modalImageContainer}>
-        <Image
-          captionText={caption}
-          rounded={rounded}
-          uri={onlineUrl.toString()}
-          style={[
-            styles.modalImage,
-            isSmallImage ? styles.modalSmallImage : imageStyles,
-          ]}
-          relativeWidth={relativeWidth}
-          relativeHeight={relativeHeight}
-          relativeVerticalOffset={relativeVerticalOffset}
-          relativeHorizontalOffset={relativeHorizontalOffset}
-          aspectRatio={aspectRatio}
-        />
-      </View>
-    );
-  };
 
   return (
     <View>

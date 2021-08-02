@@ -72,29 +72,32 @@ exports[`Image loads high-res 1`] = `
   <Image
     borderRadius={0}
     fadeDuration={0}
-    onLoadEnd={[Function]}
     source={
       Object {
         "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
     style={
-      Object {
-        "height": "100%",
-        "resizeMode": "center",
-        "width": 500,
-      }
+      Array [
+        Object {
+          "height": "100%",
+          "resizeMode": "center",
+        },
+        Object {
+          "width": 500,
+        },
+      ]
     }
   />
   <Image
     accessible={true}
     fadeDuration={0}
     onError={[Function]}
-    onLoadEnd={[Function]}
+    onLoad={[Function]}
     resizeMethod="resize"
     source={
       Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true&resize=1024",
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&rel_vertical_offset=0&rel_horizontal_offset=0&resize=1024",
       }
     }
     style={
