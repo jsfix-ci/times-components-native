@@ -46,9 +46,9 @@ const ExclusiveArticleFlag = (props) => (
 const SponsoredArticleFlag = (props) => (
   <ArticleFlag {...props} title="sponsored" />
 );
-const LongReadArticleFlag = (props) => (
-  <ArticleFlag {...props} title="long read" testID={"long-read"} />
-);
+const LongReadArticleFlag = () => null;
+// disable long read flag for now
+//<ArticleFlag {...props} title="long read" testID={"long-read"} />
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
 NewArticleFlag.defaultProps = {
