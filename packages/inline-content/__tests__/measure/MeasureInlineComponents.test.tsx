@@ -19,6 +19,7 @@ jest.mock("react-native", () => {
   rn.NativeModules.ArticleEvents = {
     addListener: jest.fn(),
   };
+  rn.NativeModules.ReactAnalytics = { track: jest.fn() };
   return rn;
 });
 
