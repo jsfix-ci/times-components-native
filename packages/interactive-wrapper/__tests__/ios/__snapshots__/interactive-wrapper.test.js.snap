@@ -10,6 +10,7 @@ exports[`renders correctly 1`] = `
   }
 >
   <RNCWebView
+    androidLayerType="software"
     cacheEnabled={true}
     injectedJavaScriptBeforeContentLoaded="window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(function webviewEventCallbackSetup(options) {
   var window = options.window;
