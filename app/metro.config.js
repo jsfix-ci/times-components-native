@@ -15,6 +15,12 @@ module.exports = (async () => {
       ),
     },
     serializer: {
+      getTransformOptions: async () => ({
+        transform: {
+          experimentalImportSupport: false,
+          inlineRequires: true,
+        },
+      }),
       getModulesRunBeforeMainModule: () => [
         path.join(
           root,
