@@ -2,7 +2,6 @@ module.exports = {
   haste: {
     defaultPlatform: "ios",
     platforms: ["ios"],
-    providesModuleNodeModules: ["react-native"],
   },
   preset: "react-native",
   setupFiles: [
@@ -20,6 +19,6 @@ module.exports = {
     "^.+\\.graphql": "babel-jest",
   },
   transformIgnorePatterns: [
-    "node_modules/(?!(react-native|react-native-svg|react-native-webview|react-native-autoheight-webview|@react-native-community/art|@storybook/react-native|react-native-swipe-gestures|react-native-device-info)/)",
+    "node_modules/(?!(@react-native|react-native|react-native-svg|react-native-webview|react-native-autoheight-webview|@react-native-community/art|@storybook/react-native|react-native-swipe-gestures|react-native-device-info)/)",
   ],
 };

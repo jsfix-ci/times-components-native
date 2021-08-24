@@ -1,6 +1,6 @@
 // eslint-disable-next-line global-require
 jest.mock("react-native", () => {
-  const rn = require.requireActual("react-native");
+  const rn = jest.requireActual("react-native");
   rn.NativeModules.SectionEvents = {
     addListener: jest.fn(),
     getOpenedPuzzleCount: jest.fn(),

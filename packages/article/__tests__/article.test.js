@@ -16,7 +16,7 @@ jest.mock("@times-components-native/image", () => "TimesImage");
 mockNativeModules();
 // eslint-disable-next-line global-require
 jest.mock("react-native", () => {
-  const rn = require.requireActual("react-native");
+  const rn = jest.requireActual("react-native");
   rn.NativeModules.ArticleEvents = {
     addListener: jest.fn(),
   };
