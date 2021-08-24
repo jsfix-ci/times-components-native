@@ -101,6 +101,8 @@ const ResponsiveImage = memo(
       [onError],
     );
 
+    if (!uri) return null;
+
     const imageUrl = constructImageUrl({
       uri,
       relativeWidth,
@@ -108,8 +110,6 @@ const ResponsiveImage = memo(
       relativeVerticalOffset,
       relativeHorizontalOffset,
     });
-
-    if (!uri) return null;
 
     if (!width) {
       return (
