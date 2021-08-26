@@ -91,7 +91,7 @@
     "react": "17.0.2",
     "react-apollo": "2.5.5",
     "react-display-name": "0.2.3",
-    "react-dom": "16.9.0",
+    "react-dom": "^17.0.2",
     "react-instantsearch-core": "6.9.0",
     "react-instantsearch-native": "6.9.0",
     "react-native": "0.65.1",
