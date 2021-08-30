@@ -1,5 +1,6 @@
 import React, { FC, Fragment, useCallback, useState } from "react";
-import { ImageProps, Modal, SafeAreaView, StyleProp, View } from "react-native";
+import { ImageProps, Modal, StyleProp, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Url from "url-parse";
 import ImageViewer from "react-native-image-zoom-viewer";
 import Button from "@times-components-native/link";

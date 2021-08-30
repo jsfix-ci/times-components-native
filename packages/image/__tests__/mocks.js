@@ -1,4 +1,5 @@
 // eslint-disable-next-line import/prefer-default-export
+import React, { Component } from "react";
 export {
   setIsTablet,
   setDimension,
@@ -8,7 +9,20 @@ jest.mock("NativeAnimatedHelper", () => "NativeAnimatedHelper", {
   virtual: true,
 });
 
-jest.mock("../src/safeAreaView", () => "SafeAreaView");
+jest.mock(
+  "react-native-safe-area-view",
+  () =>
+    class MockSafeAreaView extends Component {
+      render() {
+        const { children } = this.props;
+        return React.createElement("SafeAreaView", this.props, children);
+      }
+    },
+);
+
+jest.mock("react-native-safe-area-context", () => ({
+  useSafeArea: () => ({ insets: null }),
+}));
 
 jest.mock("@times-components-native/gradient", () => ({
   OverlayGradient: "OverlayGradient",
