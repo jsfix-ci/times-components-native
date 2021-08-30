@@ -1,11 +1,8 @@
 /* eslint-disable global-require */
 import React, { Component } from "react";
 import withErrorBoundaries from "./with-error-boundaries";
-
-import { LogBox } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-LogBox.ignoreLogs(["Warning: ..."]); // Ignore log notification by message
-LogBox.ignoreAllLogs(); //Ignore all log notifications
+
 
 const App = (Child) =>
   class AppRoot extends Component {
