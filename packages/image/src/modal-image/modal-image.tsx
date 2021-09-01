@@ -1,6 +1,6 @@
 import React, { FC, Fragment, useCallback, useState } from "react";
 import { ImageProps, Modal, StyleProp, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import Url from "url-parse";
 import ImageViewer from "react-native-image-zoom-viewer";
 import Button from "@times-components-native/link";
@@ -188,17 +188,19 @@ const ModalImage: FC<ModalImageProps> = ({
           <ResponsiveContext.Consumer>
             {({ isArticleTablet }) => (
               <Fragment>
-                <SafeAreaView
-                  style={[
-                    styles.buttonContainer,
-                    isArticleTablet && styles.buttonContainerTablet,
-                  ]}
-                >
-                  <CloseButton
-                    isArticleTablet={isArticleTablet}
-                    onPress={hideModal}
-                  />
-                </SafeAreaView>
+                <SafeAreaProvider>
+                  <SafeAreaView
+                    style={[
+                      styles.buttonContainer,
+                      isArticleTablet && styles.buttonContainerTablet,
+                    ]}
+                  >
+                    <CloseButton
+                      isArticleTablet={isArticleTablet}
+                      onPress={hideModal}
+                    />
+                  </SafeAreaView>
+                </SafeAreaProvider>
                 <ImageViewer
                   imageUrls={images}
                   renderIndicator={() => <View />}
