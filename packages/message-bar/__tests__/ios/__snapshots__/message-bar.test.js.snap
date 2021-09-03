@@ -11,7 +11,9 @@ exports[`1. renders correctly 1`] = `
       </Text>
       <View>
         <View
+          collapsable={false}
           focusable={true}
+          nativeID="animatedComponent"
         >
           <RNSVGSvgView
             align="xMidYMid"

@@ -2,15 +2,10 @@
 
 exports[`1. no child elements 1`] = `
 <RCTScrollView
-  disableVirtualization={false}
-  horizontal={false}
   initialNumToRender={5}
   listKey=""
-  maxToRenderPerBatch={10}
-  onEndReachedThreshold={2}
   removeClippedSubviews={true}
   scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
   windowSize={3}
 >
   <View />
@@ -28,15 +23,10 @@ exports[`2. a single child element 1`] = `
       </ExampleChild>,
     ]
   }
-  disableVirtualization={false}
-  horizontal={false}
   initialNumToRender={5}
   listKey="0"
-  maxToRenderPerBatch={10}
-  onEndReachedThreshold={2}
   removeClippedSubviews={true}
   scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
   windowSize={3}
 >
   <View>
@@ -76,15 +66,10 @@ exports[`3. two child elements 1`] = `
       </ExampleChild>,
     ]
   }
-  disableVirtualization={false}
-  horizontal={false}
   initialNumToRender={5}
   listKey="testId12"
-  maxToRenderPerBatch={10}
-  onEndReachedThreshold={2}
   removeClippedSubviews={true}
   scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
   windowSize={3}
 >
   <View>
@@ -142,15 +127,10 @@ exports[`4. three child elements 1`] = `
       </ExampleChild>,
     ]
   }
-  disableVirtualization={false}
-  horizontal={false}
   initialNumToRender={5}
   listKey="012"
-  maxToRenderPerBatch={10}
-  onEndReachedThreshold={2}
   removeClippedSubviews={true}
   scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
   windowSize={3}
 >
   <View>

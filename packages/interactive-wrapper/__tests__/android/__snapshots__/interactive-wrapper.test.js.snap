@@ -137,12 +137,7 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    <ActivityIndicator
-      animating={true}
-      color={null}
-      hidesWhenStopped={true}
-      size="small"
-    />
+    <ActivityIndicator />
   </View>
 </View>
 `;

@@ -2584,15 +2584,10 @@ exports[`5. standard 1`] = `
       />,
     ]
   }
-  disableVirtualization={false}
-  horizontal={false}
   initialNumToRender={5}
   listKey="522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1"
-  maxToRenderPerBatch={10}
-  onEndReachedThreshold={2}
   removeClippedSubviews={true}
   scrollEventThrottle={50}
-  updateCellsBatchingPeriod={50}
   windowSize={3}
 >
   <View>

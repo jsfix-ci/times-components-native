@@ -3,7 +3,9 @@
 exports[`NewsletterPuffLink renders the link with the text \`Manage preferences here\` 1`] = `
 <View
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -140,8 +142,8 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
 `;
 
 exports[`NewsletterPuffLink should track link viewed and clicked in analytics 1`] = `
-Object {
-  "0": Array [
+Array [
+  Array [
     Object {
       "action": "Viewed",
       "attrs": Object {
@@ -155,7 +157,7 @@ Object {
       "object": "NewsletterPuffLink",
     },
   ],
-  "1": Array [
+  Array [
     Object {
       "action": "onPress",
       "attrs": Object {
@@ -169,12 +171,12 @@ Object {
       "object": "NewsletterPuffLink",
     },
   ],
-}
+]
 `;
 
 exports[`NewsletterPuffLink should track link viewed in analytics 1`] = `
-Object {
-  "0": Array [
+Array [
+  Array [
     Object {
       "action": "Viewed",
       "attrs": Object {
@@ -188,5 +190,5 @@ Object {
       "object": "NewsletterPuffLink",
     },
   ],
-}
+]
 `;

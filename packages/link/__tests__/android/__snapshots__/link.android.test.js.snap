@@ -2,6 +2,11 @@
 
 exports[`1. renders link 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   focusable={true}
   nativeBackgroundAndroid={
     Object {
@@ -17,6 +22,11 @@ exports[`1. renders link 1`] = `
 
 exports[`2. renders link with target 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   focusable={true}
   nativeBackgroundAndroid={
     Object {

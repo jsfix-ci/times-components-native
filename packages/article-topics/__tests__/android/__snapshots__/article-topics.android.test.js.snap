@@ -4,6 +4,11 @@ exports[`1. group of topics 1`] = `
 <View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       focusable={true}
     >
       <View>
@@ -19,6 +24,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       focusable={true}
     >
       <View>
@@ -34,6 +44,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       focusable={true}
     >
       <View>
@@ -49,6 +64,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       focusable={true}
     >
       <View>
@@ -64,6 +84,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       focusable={true}
     >
       <View>
@@ -122,6 +147,11 @@ Array [
 exports[`4. article topic 1`] = `
 <View>
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     focusable={true}
   >
     <View>
