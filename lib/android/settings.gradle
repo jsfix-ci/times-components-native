@@ -1,6 +1,6 @@
 include ':xnative'
 
-include ':react-native-svg'	
+include ':react-native-svg'
 project(':react-native-svg').projectDir = new File(settingsDir, '../../node_modules/react-native-svg/android')
 
 include ':react-native-webview'
@@ -10,7 +10,7 @@ include ':react-native-device-info'
 project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../../node_modules/react-native-device-info/android')
 
 include ':react-native-community-netinfo'
-project(':react-native-community-netinfo').projectDir = new File(rootProject.projectDir, '../../node_modules/react-native-community-netinfo/android')
+project(':react-native-community-netinfo').projectDir = new File(rootProject.projectDir, '../../node_modules/@react-native-community/netinfo/android')
 
 include ':react-native-community-art'
-project(':react-native-community-art').projectDir = new File(rootProject.projectDir, '../../node_modules/react-native-community-art/android')
+project(':react-native-community-art').projectDir = new File(rootProject.projectDir, '../../node_modules/@react-native-community/art/android')
