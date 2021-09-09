@@ -105,7 +105,7 @@
     "react-native-webview": "11.6.4",
     "unfetch": "^4.1.0",
     "url-parse": "1.4.7",
-    "v8-android": "9.88.0",
+    "v8-android": "9.93.0",
     "zen-observable": "0.8.11"
   },
   "devDependencies": {
