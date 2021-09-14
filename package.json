@@ -56,9 +56,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components-native#readme",
   "dependencies": {
+    "@optimizely/react-sdk": "^2.6.3",
+    "@react-native-async-storage/async-storage": "^1.15.7",
     "@react-native-community/art": "1.2.0",
     "@react-native-community/async-storage": "^1.11.0",
-    "@react-native-community/netinfo": "5.9.10",
+    "@react-native-community/netinfo": "^6.0.2",
     "@skele/components": "1.0.0-alpha.40",
     "algoliasearch": "4.8.5",
     "apollo-cache-inmemory": "1.5.1",

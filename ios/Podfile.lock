@@ -269,9 +269,9 @@ PODS:
     - React-jsi (= 0.65.1)
     - React-perflogger (= 0.65.1)
   - React-jsinspector (0.65.1)
-  - react-native-netinfo (5.9.10):
+  - react-native-netinfo (6.0.2):
     - React-Core
-  - react-native-safe-area-context (3.1.9):
+  - react-native-safe-area-context (3.3.0):
     - React-Core
   - react-native-webview (11.6.4):
     - React-Core
@@ -341,16 +341,16 @@ PODS:
     - React-perflogger (= 0.65.1)
   - ReactNativeART (1.2.0):
     - React
-  - ReactNativeNavigation (6.12.2):
-    - React
+  - ReactNativeNavigation (7.20.0):
+    - React-Core
     - React-RCTImage
     - React-RCTText
-    - ReactNativeNavigation/Core (= 6.12.2)
-  - ReactNativeNavigation/Core (6.12.2):
-    - React
+    - ReactNativeNavigation/Core (= 7.20.0)
+  - ReactNativeNavigation/Core (7.20.0):
+    - React-Core
     - React-RCTImage
     - React-RCTText
-  - RNCAsyncStorage (1.12.1):
+  - RNCAsyncStorage (1.15.7):
     - React-Core
   - RNDeviceInfo (7.3.1):
     - React-Core
@@ -416,7 +416,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "ReactNativeART (from `../node_modules/@react-native-community/art`)"
   - ReactNativeNavigation (from `../node_modules/react-native-navigation`)
-  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -505,7 +505,7 @@ EXTERNAL SOURCES:
   ReactNativeNavigation:
     :path: "../node_modules/react-native-navigation"
   RNCAsyncStorage:
-    :path: "../node_modules/@react-native-community/async-storage"
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNDeviceInfo:
     :path: "../node_modules/react-native-device-info"
   RNSVG:
@@ -543,8 +543,8 @@ SPEC CHECKSUMS:
   React-jsi: 12913c841713a15f64eabf5c9ad98592c0ec5940
   React-jsiexecutor: 43f2542aed3c26e42175b339f8d37fe3dd683765
   React-jsinspector: 41e58e5b8e3e0bf061fdf725b03f2144014a8fb0
-  react-native-netinfo: 30fb89fa913c342be82a887b56e96be6d71201dd
-  react-native-safe-area-context: b6e0e284002381d2ff29fa4fff42b4d8282e3c94
+  react-native-netinfo: 92e6e4476eb8bf6fc2d7c0a6ca0a1406f663d73a
+  react-native-safe-area-context: 61c8c484a3a9e7d1fda19f7b1794b35bbfd2262a
   react-native-webview: 1a19adb5578cdf7f005b7961dcc50c1c6b70f41b
   React-perflogger: fd28ee1f2b5b150b00043f0301d96bd417fdc339
   React-RCTActionSheet: 7f3fa0855c346aa5d7c60f9ced16e067db6d29fa
@@ -559,13 +559,13 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 85187f19dd9c47a7c102f9994f9d14e4dc2110de
   ReactCommon: eafed38eec7b591c31751bfa7494801618460459
   ReactNativeART: 78edc68dd4a1e675338cd0cd113319cf3a65f2ab
-  ReactNativeNavigation: aefc8debafb4a374575adafb44a3352b9d5b618a
-  RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
+  ReactNativeNavigation: 87aa2e3a749a9b338057e8d53af54d865241b843
+  RNCAsyncStorage: 7102fe8985f889579a3ae148d957bbb3f308122b
   RNDeviceInfo: 6ecb1d1c87d20e4c62354be0348de23362824dcd
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: aa0cb45287ebe1004c02a13f279c55a95f1572f4
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 2d0cf4316f0131eaa6cc73f6e0f225ead6b17fd6
+PODFILE CHECKSUM: ace3c0ef8d95bc84d0d2fd31303cb7360050c3d8
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.0
