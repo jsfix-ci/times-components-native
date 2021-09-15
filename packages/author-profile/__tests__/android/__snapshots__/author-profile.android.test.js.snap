@@ -208,7 +208,10 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
 
 exports[`7. an article list header 1`] = `
 <View>
-  <View>
+  <View
+    collapsable={false}
+    nativeID="animatedComponent"
+  >
     <View
       pointerEvents="box-none"
     >
@@ -255,7 +258,10 @@ exports[`7. an article list header 1`] = `
 
 exports[`8. an article list header with no bio, job title, name or twitter 1`] = `
 <View>
-  <View>
+  <View
+    collapsable={false}
+    nativeID="animatedComponent"
+  >
     <View
       pointerEvents="box-none"
     >

@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { Dimensions, Platform, Text, View } from "react-native";
+import { Dimensions, NativeModules, Platform, Text, View } from "react-native";
 import {
   getNarrowArticleBreakpoint,
   spacing,
@@ -24,8 +24,12 @@ import ArticleLink from "./article-link";
 import ArticleEndTracking from "./article-end-tracking";
 import InlineNewsletterPuff from "./inline-newsletter-puff";
 import { useResponsiveContext } from "@times-components-native/responsive";
+import get from "lodash.get";
+
+const { track } = NativeModules.ReactAnalytics;
 
 const ArticleBodyRow = ({
+  data,
   interactiveConfig,
   onLinkPress,
   onTwitterLinkPress,
@@ -149,7 +153,26 @@ const ArticleBodyRow = ({
       return (
         <ArticleEndTracking
           onViewed={() => {
-            return;
+            track({
+              object: "Article",
+              action: "Viewed",
+              component: "Page",
+              attrs: {
+                article_id: data.id,
+                article_publish_timestamp: data.publishedTime,
+                event_navigation_action: "article : view end",
+                event_navigation_browsing_method: "scroll",
+                headline: data.headline,
+                page_name: `${data.slug}-${data.shortIdentifier}`,
+                page_section: data.section,
+                page_type: data.template,
+                article_author: get(
+                  data,
+                  "bylines[0].byline[0].children[0].attributes.value",
+                  "",
+                ),
+              },
+            });
           }}
         />
       );

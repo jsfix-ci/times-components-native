@@ -38,6 +38,7 @@ export const MeasureContent: React.FC<Props> = memo(
         {renderTrees(
           [inlineContent],
           getRenderers({
+            data: {},
             interactiveConfig: {},
             onLinkPress: null,
             onTwitterLinkPress: null,

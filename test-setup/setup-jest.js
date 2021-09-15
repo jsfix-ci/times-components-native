@@ -28,4 +28,4 @@ jest.mock("@react-native-community/netinfo", () => {
 
 jest.mock("react-native-image-zoom-viewer", () => "ImageZoomView");
 
-jest.mock("react-native/Libraries/Animated/src/NativeAnimatedHelper");
+jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
