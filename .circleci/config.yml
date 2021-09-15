@@ -197,10 +197,6 @@ workflows:
             - hold_release_prod:
                 type: approval
                 context: nuk-tnl-app-universal
-                filters:
-                    branches:
-                        only:
-                            - master
                 requires:
                     - run_lint
                     - run_typecheck

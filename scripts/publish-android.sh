@@ -5,7 +5,7 @@ PACKAGE_PATH="uk/co/thetimes/times-xnative"
 PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
 
 setupEnv () {
-  if [ "$CIRCLE_BRANCH" == "master" ] && [[ $PACKAGE_VERSION != *"beta"* ]]
+  if [[ $PACKAGE_VERSION != *"beta"* ]]
   then
     echo "👉 Setting up enviroment for a production release."
     ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
@@ -27,8 +27,7 @@ checkIfVersionExists () {
   STATUS=$(curl -s -o /dev/null -w '%{http_code}' -u${ARTIFACTORY_USER}:${ARTIFACTORY_API_KEY} "$ARTIFACTORY_URL/$PACKAGE_PATH/$PACKAGE_VERSION/")
 
   if [ $STATUS -eq 200 ]; then
-    echo "✋ Skipping publishing: Version $PACKAGE_VERSION already exists in the artifacts repo."
-    exit 0
+    echo "Overwriting version $PACKAGE_VERSION in the artifacts repo."
   fi
 }
 
