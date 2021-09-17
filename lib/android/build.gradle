@@ -53,27 +53,25 @@ task removePreviousReactArchives(type: Delete) {
 task generateReactArchives {
     subprojects { subproject ->
         apply plugin: 'maven'
-        def reactProjectPackageJsonDirs = [
-            "react-native-svg": "react-native-svg",
-            "react-native-webview": "react-native-webview",
-            "react-native-device-info": "react-native-device-info",
-            "react-native-community-netinfo": "@react-native-community/netinfo",
-            "react-native-community-art": "@react-native-community/art",
+        def reactSubprojects = [
+            "xnative-rn-svg",
+            "xnative-rn-webview",
+            "xnative-rn-device-info",
+            "xnative-rn-community-netinfo",
+            "xnative-rn-community-art",
         ]
+        def tcnPackageJson = new JsonSlurper().parseText(file("$rootDir/../../package.json").text)
 
-        if (reactProjectPackageJsonDirs.containsKey(subproject.name)) {
-            def packageJsonDir = reactProjectPackageJsonDirs[subproject.name]
+        if (reactSubprojects.contains(subproject.name)) {
             task generateReactArchive(type: Upload) {
                 configuration = subproject.configurations.archives
-                def jsonFile = file("$rootDir/../../node_modules/$packageJsonDir/package.json")
-                def packageJson = new JsonSlurper().parseText(jsonFile.text)
                 repositories.mavenDeployer {
                     repository url: "file://${reactRepositoryPath}"
 
                     pom.project {
-                        groupId 'react-repo'
+                        groupId 'uk.co.thetimes'
                         artifactId subproject.name
-                        version packageJson.version
+                        version tcnPackageJson.version
                     }
                 }
             }
