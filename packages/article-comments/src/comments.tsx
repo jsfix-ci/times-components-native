@@ -67,8 +67,8 @@ const Comments: FC<CommentsProps> = ({
         width={narrowContent ? 165 : 207}
       >
         <Context.Consumer>
-          {({ theme: { scale } }) => {
-            const themedStyleguide = styleguide({ scale });
+          {() => {
+            const themedStyleguide = styleguide();
             const fontFactory = themedStyleguide.fontFactory({
               font: "supporting",
               fontSize: "button",

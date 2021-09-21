@@ -45,8 +45,8 @@ exports[`1. scaled medium full article 1`] = `
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 36,
-                  "lineHeight": 52,
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
@@ -142,8 +142,8 @@ exports[`2. scaled large full article 1`] = `
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 36,
-                  "lineHeight": 52,
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
@@ -239,8 +239,8 @@ exports[`3. scaled xlarge full article 1`] = `
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 36,
-                  "lineHeight": 52,
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >

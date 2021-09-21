@@ -12,7 +12,6 @@ exports[`DropCap renders a dropcap for large scale 1`] = `
   }
 >
   <Text
-    allowFontScaling={false}
     style={
       Array [
         Object {
@@ -43,7 +42,6 @@ exports[`DropCap renders a dropcap for medium scale 1`] = `
   }
 >
   <Text
-    allowFontScaling={false}
     style={
       Array [
         Object {
@@ -74,7 +72,6 @@ exports[`DropCap renders a dropcap for xlarge scale 1`] = `
   }
 >
   <Text
-    allowFontScaling={false}
     style={
       Array [
         Object {
@@ -105,7 +102,6 @@ exports[`DropCap renders a dropcap with default font padding if provided font no
   }
 >
   <Text
-    allowFontScaling={false}
     style={
       Array [
         Object {
@@ -136,7 +132,6 @@ exports[`DropCap renders a dropcap with default scale if provided scale unknown 
   }
 >
   <Text
-    allowFontScaling={false}
     style={
       Array [
         Object {
