@@ -2,6 +2,8 @@ import groovy.json.JsonSlurper
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+apply plugin: 'base'
+
 buildscript {
 
     repositories {
@@ -28,27 +30,19 @@ allprojects {
             url "$reactRepositoryPath"
         }
 
-
-        maven {
-            // Replace AAR from original RN with AAR from react-native-v8
-            url("$rootDir/../../node_modules/react-native-v8/dist")
-        }
-        maven {
-            // prebuilt libv8.so
-            url("$rootDir/../../node_modules/v8-android/dist")
-        }
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+task removeGraphQlFiles(type: Delete) {
     delete graphQlFilesPath
 }
 
-
-task removePreviousReactArchives(type: Delete) {
-    delete reactRepositoryPath
+task removeReactArchives(type: Delete) {
+  delete reactRepositoryPath
 }
+
+clean.dependsOn(removeGraphQlFiles)
+clean.dependsOn(removeReactArchives)
 
 task generateReactArchives {
     subprojects { subproject ->
@@ -79,24 +73,45 @@ task generateReactArchives {
             generateReactArchives.dependsOn(generateReactArchive)
         }
     }
+
     task reactNativeCopy(type: Copy) {
-        from('../../node_modules/react-native-v8/dist')
-        into(reactRepositoryPath)
-    }
-    task v8Copy(type: Copy) {
-        from('../../node_modules/v8-android/dist')
+        from('../../node_modules/react-native/android')
         into(reactRepositoryPath)
     }
 
+    task hermesCopy {
+        def hermesVersion = new JsonSlurper().parseText(file("$rootDir/../../node_modules/hermes-engine/package.json").text).version
+
+        task hermesCopyArchive(type: Copy) {
+          from('../../node_modules/hermes-engine/android/hermes-release.aar')
+          into("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion")
+          rename('hermes-release.aar', "hermes-engine-${hermesVersion}.aar")
+        }
+
+        task createHermesPom {
+          apply plugin: 'maven'
+
+          description "Generates pom file for Hermes Engine"
+          pom {
+            project {
+              groupId 'com.facebook.hermes'
+              artifactId 'hermes-engine'
+              version hermesVersion
+              packaging 'aar'
+            }
+          }.writeTo("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
+        }
+        hermesCopy.dependsOn(hermesCopyArchive)
+        hermesCopy.dependsOn(createHermesPom)
+    }
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
-    task gqlCopy(type: Copy) {
+    task graphQlCopy(type: Copy) {
         from('../../packages/provider-queries/src/')
         include "**/*.graphql"
         into(graphQlFilesPath)
     }
 
-    removePreviousReactArchives.dependsOn(gqlCopy)
-    reactNativeCopy.dependsOn(removePreviousReactArchives)
-    v8Copy.dependsOn(reactNativeCopy)
-    generateReactArchives.dependsOn(v8Copy)
+    generateReactArchives.dependsOn(hermesCopy)
+    generateReactArchives.dependsOn(reactNativeCopy)
+    generateReactArchives.dependsOn(graphQlCopy)
 }

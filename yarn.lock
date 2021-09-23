@@ -10480,13 +10480,6 @@ react-native-switch@^1.5.0:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-v8@0.65.1-patch.0:
-  version "0.65.1-patch.0"
-  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.65.1-patch.0.tgz#4fe32796ed7afbcc8b946daef31f97a67c5f43bb"
-  integrity sha512-JJFZQ5NNmU1TzE/uYy0TTT8GyonOp8CrmPi6MMowFbI0lNpgxElJaCuAaqTbF8QWRyazaA3EFVtcIU7zcxX6fw==
-  dependencies:
-    v8-android-jit "~9.93.0"
-
 react-native-webview@11.6.4:
   version "11.6.4"
   resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.6.4.tgz#bd2d072ea0157b3fcb10961b5d1866470b22c3c3"
@@ -12506,16 +12499,6 @@ uuid@^8.3.0:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-v8-android-jit@~9.93.0:
-  version "9.93.0"
-  resolved "https://registry.yarnpkg.com/v8-android-jit/-/v8-android-jit-9.93.0.tgz#2e52d3878da97647959991cefc5b90e47449f51a"
-  integrity sha512-qSEnxj/7x2lqvAjRtdox0fx20J5ekcLg/O1/M4vNKUtbWG75+/ACspP3n0KD0RIYLhD8F2iGxERRbwu9FbjKRg==
-
-v8-android@9.93.0:
-  version "9.93.0"
-  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-9.93.0.tgz#f25f2aa6b6adb24262cd3808f887013614f5d1d9"
-  integrity sha512-+TEKgBhsgu2nTjIDQVqDzW4RJ9daqjOm+PXisItIJnWDjnQ6fKwuo5QaN1hk/j95+THWZDRBKCtYO2N+ESPDOg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"

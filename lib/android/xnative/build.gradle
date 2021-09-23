@@ -11,6 +11,11 @@ task sourceJar(type: Jar) {
     classifier "source"
 }
 
+project.ext.react = [
+  entryFile: "index.js",
+  enableHermes: true, // clean and rebuild if changing+
+]
+
 publishing {
     publications {
         xnative(MavenPublication) {
@@ -79,7 +84,9 @@ android {
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
-    api "org.chromium:v8-android:${packageInfo.dependencies.'v8-android'}"
+
+    def hermesPackageInfo = new JsonSlurper().parseText(rootProject.file("../../node_modules/hermes-engine/package.json").text)
+    api "com.facebook.hermes:hermes-engine:${hermesPackageInfo.version}"
 
     api("uk.co.thetimes:xnative-rn-svg:${packageInfo.version}") {
         exclude group: "com.facebook.react"
