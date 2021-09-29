@@ -1,3 +1,4 @@
+import { WebViewWithConsent } from "@times-components-native/webview";
 import React, { useRef, useState } from "react";
 import { Linking } from "react-native";
 import { WebView, WebViewMessageEvent } from "react-native-webview";
@@ -65,7 +66,7 @@ function WebviewWrapper({ config, id }: IProps) {
   };
 
   return (
-    <WebView
+    <WebViewWithConsent
       injectedJavaScriptBeforeContentLoaded={scriptToInject}
       onMessage={handleOnMessage}
       ref={webview}

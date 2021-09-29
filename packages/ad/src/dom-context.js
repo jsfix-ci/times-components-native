@@ -1,12 +1,12 @@
 import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
-import { WebView } from "react-native-webview";
 import { Viewport } from "@skele/components";
 import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 import styles, { calculateViewportVisible } from "./styles/index";
+import { WebViewWithConsent } from "@times-components-native/webview";
 
 const ViewportAwareView = Viewport.Aware(View);
 
@@ -221,7 +221,7 @@ class DOMContext extends PureComponent {
         }}
       >
         {(Platform.OS === "ios" || loaded) && (
-          <WebView
+          <WebViewWithConsent
             onMessage={this.handleMessageEvent}
             onNavigationStateChange={this.handleNavigationStateChange}
             originWhitelist={

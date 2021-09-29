@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { PureComponent } from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 import { useResponsiveContext } from "@times-components-native/responsive";
@@ -12,9 +12,10 @@ import DOMContext from "./dom-context";
 import { defaultProps, propTypes } from "./ad-prop-types";
 import styles from "./styles";
 
-const determineData = (config, props) => {
-  const { contextUrl, orientation, screenWidth, slotName, adConfig } = props;
-
+const determineData = (
+  config,
+  { contextUrl, orientation, screenWidth, slotName, adConfig },
+) => {
   const allSlotConfigs = adConfig.globalSlots
     .concat(adConfig.bidderSlots)
     .map((slot) => getSlotConfig(slot, screenWidth, orientation));
@@ -54,114 +55,94 @@ const determineData = (config, props) => {
   };
 };
 
-export class AdBase extends PureComponent {
-  constructor(props) {
-    super(props);
+export const AdBase = ({
+  adConfig,
+  contextUrl,
+  baseUrl,
+  display,
+  isLoading,
+  narrowContent,
+  screenWidth,
+  style,
+  slotName,
+  orientation,
+  width,
+}) => {
+  const [hasError, setHasError] = useState(false);
+  const [isAdReady, setIsAdReady] = useState(false);
+  const [offline, setOffline] = useState(false);
 
-    this.state = {
-      hasError: false,
-      isAdReady: false,
-      offline: false,
-    };
-  }
-
-  componentDidMount() {
+  useEffect(() => {
+    let mounted = true;
+    let unsubscribe = null;
     NetInfo.fetch()
       .then((state) => {
-        const { isConnected } = state;
-        this.setState({
-          offline: !isConnected,
-        });
+        if (mounted) setOffline(!state.isConnected);
       })
       .then(() => {
-        this.unsubscribe = NetInfo.addEventListener((state) => {
-          const { offline } = this.state;
-          const { isConnected } = state;
-          if (isConnected && offline) {
-            this.setState({
-              offline: false,
-            });
-          }
+        unsubscribe = NetInfo.addEventListener((state) => {
+          if (state.isConnected && this.state.offline)
+            if (mounted) setOffline(false);
         });
       });
-  }
+    return () => {
+      mounted = false;
+      if (unsubscribe) unsubscribe();
+    };
+  }, []);
 
-  componentWillUnmount() {
-    if (typeof this.unsubscribe === "function") {
-      this.unsubscribe();
-    }
-  }
+  const setAdReady = () => setIsAdReady(true);
+  const setAdError = () => setHasError(true);
 
-  setAdReady = () => {
-    this.setState({
-      isAdReady: true,
-    });
-  };
+  const config = getSlotConfig(slotName, width || screenWidth, orientation);
+  const data = determineData(config, {
+    contextUrl,
+    orientation,
+    screenWidth,
+    slotName,
+    adConfig,
+  });
 
-  setAdError = () => {
-    this.setState({
-      hasError: true,
-    });
-  };
+  if (hasError || offline) return null;
 
-  render() {
-    const {
-      baseUrl,
-      display,
-      isLoading,
-      narrowContent,
-      screenWidth,
-      style,
-      slotName,
-      orientation,
-      width,
-    } = this.props;
+  const sizeProps =
+    !isAdReady || hasError
+      ? { width: 0 }
+      : {
+          width:
+            width ||
+            (narrowContent
+              ? getNarrowArticleBreakpoint(screenWidth).content
+              : screenWidth),
+        };
 
-    const { hasError, isAdReady, offline } = this.state;
-    const config = getSlotConfig(slotName, width || screenWidth, orientation);
-    const data = determineData(config, this.props);
+  const isInline = display === "inline";
 
-    if (hasError || offline) return null;
-
-    const sizeProps =
-      !isAdReady || hasError
-        ? { width: 0 }
-        : {
-            width:
-              width ||
-              (narrowContent
-                ? getNarrowArticleBreakpoint(screenWidth).content
-                : screenWidth),
-          };
-
-    const isInline = display === "inline";
-
-    return (
-      <View
-        style={[styles.container, style, isInline && styles.inlineAd]}
-        testID="article-advertisement"
-      >
-        {isInline ? (
-          <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
-            <Text style={styles.inlineAdTitleText}>Advertisement</Text>
-          </View>
-        ) : null}
-        {isLoading ? null : (
-          <DOMContext
-            baseUrl={baseUrl}
-            data={data}
-            init={adInit}
-            onRenderComplete={this.setAdReady}
-            onRenderError={this.setAdError}
-            isInline={isInline}
-            maxHeight={config.maxSizes.height}
-            {...sizeProps}
-          />
-        )}
-      </View>
-    );
-  }
-}
+  return (
+    <View
+      style={[styles.container, style, isInline && styles.inlineAd]}
+      testID="article-advertisement"
+    >
+      {isInline && (
+        <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
+          <Text style={styles.inlineAdTitleText}>Advertisement</Text>
+        </View>
+      )}
+      {!isLoading && (
+        <DOMContext
+          baseUrl={baseUrl}
+          data={data}
+          init={adInit}
+          onRenderComplete={setAdReady}
+          onRenderError={setAdError}
+          isInline={isInline}
+          maxHeight={config.maxSizes.height}
+          {...sizeProps}
+        />
+      )}
+    </View>
+  );
+};
 
 const Ad = (props) => {
   const { windowWidth, orientation } = useResponsiveContext();

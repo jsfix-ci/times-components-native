@@ -1,9 +1,9 @@
 import React from "react";
-import WebView from "react-native-webview";
 import { Linking, Platform, View } from "react-native";
 import { WebViewNavigation } from "react-native-webview/lib/WebViewTypes";
 
 import styles from "./styles";
+import { WebViewWithConsent } from "@times-components-native/webview";
 
 const isIOS = Platform.OS === "ios";
 
@@ -30,7 +30,7 @@ export const SponsoredAd: React.FC<Props> = ({ numberOfAds = 4 }) => {
   const contextId = numberToContextID[numberOfAds] || numberToContextID[4];
   return (
     <View style={styles.sponsoredAdWrapper}>
-      <WebView
+      <WebViewWithConsent
         style={styles.sponsoredAd}
         originWhitelist={["*"]}
         onShouldStartLoadWithRequest={handleRequest}
