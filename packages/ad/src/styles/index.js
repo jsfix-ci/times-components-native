@@ -1,7 +1,10 @@
 import styleguide from "@times-components-native/styleguide";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 const { colours, fontFactory, spacing, fonts } = styleguide();
+
+const { width } = Dimensions.get("screen");
+const isNarrowScreenDevice = width < 600;
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
@@ -100,7 +103,7 @@ const styles = {
   },
   sponsoredAd: {
     flex: 0,
-    height: 350,
+    height: isNarrowScreenDevice ? 550 : 350,
   },
   inlineAd: {
     marginTop: 0,
