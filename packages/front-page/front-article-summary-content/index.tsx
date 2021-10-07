@@ -31,7 +31,7 @@ const SummaryText: React.FC<SummaryTextProps> = ({
   numberOfLines,
 }) => {
   return ast.length > 0 ? (
-    <Text numberOfLines={numberOfLines} style={style} allowFontScaling={false}>
+    <Text numberOfLines={numberOfLines} style={style}>
       {renderTrees(ast, getRenderers({ addNewLine: true }))}
     </Text>
   ) : null;

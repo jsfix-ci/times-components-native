@@ -23,7 +23,9 @@ publish_android: &PUBLISH_ANDROID
                 name: Build and publish android js bundles
                 command: |
                     cd ~/project/
+                    yarn android:clean-lib:aar
                     yarn android:build-lib
+                    yarn android:publish-lib:aar:remote
                     bash ./scripts/publish-android.sh
                 working_directory: ~/project/
 

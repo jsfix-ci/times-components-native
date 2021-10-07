@@ -11,6 +11,11 @@ task sourceJar(type: Jar) {
     classifier "source"
 }
 
+project.ext.react = [
+  entryFile: "index.js",
+  enableHermes: true, // clean and rebuild if changing+
+]
+
 publishing {
     publications {
         xnative(MavenPublication) {
@@ -79,21 +84,23 @@ android {
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
-    api "org.chromium:v8-android:${packageInfo.dependencies.'v8-android'}"
 
-    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {
+    def hermesPackageInfo = new JsonSlurper().parseText(rootProject.file("../../node_modules/hermes-engine/package.json").text)
+    api "com.facebook.hermes:hermes-engine:${hermesPackageInfo.version}"
+
+    api("uk.co.thetimes:xnative-rn-svg:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
-    api("react-repo:react-native-webview:${packageInfo.dependencies.'react-native-webview'}") {
+    api("uk.co.thetimes:xnative-rn-webview:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
-    api("react-repo:react-native-device-info:${packageInfo.dependencies.'react-native-device-info'}") {
+    api("uk.co.thetimes:xnative-rn-device-info:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
-    api("react-repo:react-native-community-netinfo:${packageInfo.dependencies.'@react-native-community/netinfo'}") {
+    api("uk.co.thetimes:xnative-rn-community-netinfo:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
-    api("react-repo:react-native-community-art:${packageInfo.dependencies.'@react-native-community/art'}") {
+    api("uk.co.thetimes:xnative-rn-community-art:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
 }

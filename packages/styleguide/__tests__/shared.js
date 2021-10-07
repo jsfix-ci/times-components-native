@@ -78,7 +78,7 @@ const tests = [
     name:
       "Line height factory should throw a TypeError if no font or font size are provided",
     test: () => {
-      expect(() => styleguide().lineHeight()).toThrow(TypeError);
+      expect(() => styleguide().lineHeights()).toThrow(TypeError);
     },
   },
   {
@@ -86,7 +86,7 @@ const tests = [
       "Line height factory should throw a TypeError if no font or font size are not correctly referenced",
     test: () => {
       expect(() =>
-        styleguide().lineHeight({
+        styleguide().lineHeights({
           font: "comicSans",
           fontSize: "massive",
         }),

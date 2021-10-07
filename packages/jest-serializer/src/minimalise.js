@@ -33,7 +33,6 @@ export const minimalWeb = traverse(print, minimalWebTransform);
 
 const redundantNativeKeys = new Set([
   "accessible",
-  "allowFontScaling",
   "className",
   "ellipsizeMode",
   "href",
