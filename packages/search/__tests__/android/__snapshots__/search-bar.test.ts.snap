@@ -56,7 +56,9 @@ exports[`EmptySearchMessage 1`] = `
 exports[`Search Bar CancelButton 1`] = `
 <View
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -162,7 +164,6 @@ exports[`Search Bar should render correctly 1`] = `
         }
       >
         <TextInput
-          allowFontScaling={true}
           autoFocus={true}
           defaultValue="test"
           editable={true}
@@ -172,7 +173,6 @@ exports[`Search Bar should render correctly 1`] = `
           onFocus={[Function]}
           placeholder="Search"
           placeholderTextColor="#000"
-          rejectResponderTermination={true}
           style={
             Object {
               "backgroundColor": "#EFEFEF",
@@ -185,13 +185,14 @@ exports[`Search Bar should render correctly 1`] = `
               "width": "100%",
             }
           }
-          underlineColorAndroid="transparent"
           value="test"
         />
       </View>
       <View
         accessible={true}
+        collapsable={false}
         focusable={true}
+        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

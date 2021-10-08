@@ -43,9 +43,7 @@ exports[`2. article list 1`] = `
             <View />
           </View>
           <ActivityIndicator
-            animating={true}
             color="#DBDBDB"
-            hidesWhenStopped={true}
             size="large"
           />
         </View>

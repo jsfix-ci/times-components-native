@@ -796,6 +796,11 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
       }
     >
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         nativeBackgroundAndroid={
@@ -939,6 +944,11 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
       }
     >
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         nativeBackgroundAndroid={
@@ -1090,6 +1100,11 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  wid
       }
     >
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         focusable={true}
         nativeBackgroundAndroid={

@@ -4,7 +4,9 @@ exports[`1. group of topics 1`] = `
 <View>
   <View>
     <View
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       testID="topic"
     >
       <View>
@@ -20,7 +22,9 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       testID="topic"
     >
       <View>
@@ -36,7 +40,9 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       testID="topic"
     >
       <View>
@@ -52,7 +58,9 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       testID="topic"
     >
       <View>
@@ -68,7 +76,9 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       testID="topic"
     >
       <View>
@@ -127,7 +137,9 @@ Array [
 exports[`4. article topic 1`] = `
 <View>
   <View
+    collapsable={false}
     focusable={true}
+    nativeID="animatedComponent"
     testID="topic"
   >
     <View>

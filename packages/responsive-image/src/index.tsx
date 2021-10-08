@@ -1,21 +1,23 @@
-import * as React from "react";
+import React, { useCallback, useState, memo } from "react";
 import {
   Image,
   ImageBackground,
   ImageBackgroundProps,
-  ImageErrorEventData,
   ImageProps,
-  ImageSourcePropType,
   ImageStyle,
-  NativeSyntheticEvent,
   PixelRatio,
   View,
+  StyleSheet,
 } from "react-native";
 import Url from "url-parse";
 import logoPath from "../assets/t.png";
 import { appendToImageURL } from "@times-components-native/utils";
 import findClosestWidth from "./utils/findClosestWidth";
 import styles from "./styles";
+
+const localStyles = StyleSheet.create({
+  placeholder: { resizeMode: "center", height: "100%" },
+});
 
 export interface ResponsiveImageProps {
   readonly aspectRatio?: number;
@@ -34,83 +36,19 @@ export interface ResponsiveImageProps {
   readonly captionText?: string;
 }
 
-interface ElementProps {
-  readonly source: ImageSourcePropType;
-  readonly onLoadEnd?: ImageProps["onLoadEnd"];
-  readonly onLoad?: ImageProps["onLoad"];
-  readonly aspectRatio?: ResponsiveImageProps["aspectRatio"];
-  readonly borderRadius: number;
-  readonly resize: ImageStyle["resizeMode"];
-  readonly fadeDuration: number;
-  readonly onError?: ImageProps["onError"];
-  readonly captionText?: string;
-}
-
-const ImageElement = ({
-  source,
-  onLoadEnd,
-  onLoad,
-  aspectRatio,
-  borderRadius,
-  resize,
-  fadeDuration,
-  onError,
-  captionText,
-}: ElementProps) => (
-  <Image
-    accessible
-    accessibilityLabel={captionText}
-    fadeDuration={fadeDuration}
-    source={source}
-    onLoadEnd={onLoadEnd}
-    onLoad={onLoad}
-    onError={onError}
-    resizeMethod={"resize"}
-    style={{
-      aspectRatio,
-      borderRadius,
-      ...styles.imageStyle,
-      resizeMode: resize,
-    }}
-  />
-);
-
-const ResponsiveImage = ({
+const constructImageUrl = ({
   uri,
-  aspectRatio,
-  style: propStyle = {},
-  relativeHeight = 1,
-  relativeHorizontalOffset = 0,
-  relativeVerticalOffset = 0,
-  relativeWidth = 1,
-  resizeMode,
-  rounded,
-  onLayout,
-  onError,
-  captionText,
-}: ResponsiveImageProps) => {
-  const [width, setWidth] = React.useState(0);
-  const [showOffline, setShowOffline] = React.useState(false);
-  const [showOnline, setShowOnline] = React.useState(false);
-  const [showPlaceholder, setShowPlaceholder] = React.useState(true);
-  const [checkedCache, setCheckedCache] = React.useState(false);
-  const [failed, setFailed] = React.useState(false);
-
-  const borderRadius = rounded ? 9999 : 0;
-
-  const imageRef = React.useCallback((event) => {
-    const { width } = event.nativeEvent.layout;
-
-    setWidth(width);
-    if (onLayout) {
-      onLayout(event);
-    }
-  }, []);
-
-  if (!uri) {
-    return null;
-  }
-
+  relativeWidth,
+  relativeHeight,
+  relativeVerticalOffset,
+  relativeHorizontalOffset,
+}: {
+  uri: string;
+  relativeWidth: number | string;
+  relativeHeight: number | string;
+  relativeVerticalOffset: number | string;
+  relativeHorizontalOffset: number | string;
+}) => {
   const url: Url = new Url(uri, true);
   if (!uri.includes("data:")) {
     url.query.rel_width = (relativeWidth || 1).toString();
@@ -121,131 +59,118 @@ const ResponsiveImage = ({
     url.query.rel_horizontal_offset = relativeHorizontalOffset
       ? relativeHorizontalOffset.toString()
       : "0";
-    url.query.offline = "true";
   }
-  const offlineUrl = url.toString();
-  url.query.offline = "false";
-  const onlineUrl = url.toString();
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  React.useEffect(() => {
-    if ("queryCache" in Image && width && !checkedCache) {
-      const cache =
-        Image.queryCache && Image.queryCache([onlineUrl, offlineUrl]);
-      setCheckedCache(true);
-      if (!cache) {
-        return;
-      }
-      cache.then((results) => {
-        if (onlineUrl in results) {
-          setShowOnline(true);
-          setShowOffline(false);
-          setShowPlaceholder(false);
-          return;
-        }
-        if (offlineUrl in results) {
-          setShowOffline(true);
-          setShowPlaceholder(false);
-        }
-      });
+  return url.toString();
+};
+
+const ResponsiveImage = memo(
+  ({
+    uri,
+    aspectRatio,
+    style: propStyle = {},
+    relativeHeight = 1,
+    relativeHorizontalOffset = 0,
+    relativeVerticalOffset = 0,
+    relativeWidth = 1,
+    resizeMode,
+    rounded,
+    onLayout,
+    onError,
+    captionText,
+  }: ResponsiveImageProps) => {
+    const [width, setWidth] = useState(0);
+    const [showPlaceholder, setShowPlaceholder] = useState(true);
+
+    const borderRadius = rounded ? 9999 : 0;
+
+    const imageRef = useCallback((event) => {
+      const { width } = event.nativeEvent.layout;
+      setWidth(width);
+      if (onLayout) onLayout(event);
+    }, []);
+
+    const onImageLoad = useCallback(() => {
+      setShowPlaceholder(false);
+    }, []);
+
+    const onImageError = useCallback(
+      (error: any) => {
+        if (onError) onError(error);
+      },
+      [onError],
+    );
+
+    if (!uri) return null;
+
+    const imageUrl = constructImageUrl({
+      uri,
+      relativeWidth,
+      relativeHeight,
+      relativeVerticalOffset,
+      relativeHorizontalOffset,
+    });
+
+    if (!width) {
+      return (
+        <ImageBackground
+          onLayout={imageRef}
+          source={logoPath}
+          fadeDuration={0}
+          imageStyle={{
+            ...styles.imageStyle,
+            borderRadius,
+            resizeMode: "center",
+          }}
+          style={[
+            styles.style,
+            propStyle,
+            {
+              aspectRatio,
+              borderRadius,
+            },
+          ]}
+        />
+      );
     }
-  }, [width]);
 
-  if (!width || !checkedCache) {
+    const ratio = PixelRatio.get();
+    const closestWidth = width && findClosestWidth(width * ratio);
+    const imageUrlWithWidth = appendToImageURL(
+      imageUrl,
+      "resize",
+      closestWidth,
+    );
+
     return (
-      <ImageBackground
-        onLayout={imageRef}
-        source={logoPath}
-        fadeDuration={0}
-        imageStyle={{
-          ...styles.imageStyle,
-          borderRadius,
-          resizeMode: "center",
-        }}
-        style={[
-          styles.style,
-          propStyle,
-          {
+      <View style={[styles.style, propStyle, { aspectRatio, borderRadius }]}>
+        {showPlaceholder && (
+          <Image
+            key="placeholder"
+            source={logoPath}
+            borderRadius={0}
+            fadeDuration={0}
+            style={[localStyles.placeholder, { width }]}
+          />
+        )}
+        <Image
+          fadeDuration={0}
+          accessible
+          accessibilityLabel={captionText}
+          source={{ uri: imageUrlWithWidth }}
+          onLoad={onImageLoad}
+          onError={onImageError}
+          resizeMethod={"resize"}
+          style={{
             aspectRatio,
             borderRadius,
-          },
-        ]}
-      />
+            ...styles.imageStyle,
+            resizeMode: resizeMode || "cover",
+          }}
+        />
+      </View>
     );
-  }
-
-  const resize = resizeMode || "cover";
-  const ratio = PixelRatio.get();
-  const closestWidth = width && findClosestWidth(width * ratio);
-
-  const highRes = showOnline && (
-    <ImageElement
-      key="online"
-      captionText={captionText}
-      source={{ uri: appendToImageURL(onlineUrl, "resize", closestWidth) }}
-      aspectRatio={aspectRatio}
-      borderRadius={borderRadius}
-      onLoad={() => {
-        setShowOffline(false);
-      }}
-      onError={(error) => {
-        setShowOnline(false);
-        setShowOffline(true);
-        setFailed(true);
-        if (onError) {
-          onError(error);
-        }
-      }}
-      resize={resize}
-      fadeDuration={0}
-    />
-  );
-  const lowRes = showOffline && (
-    <ImageElement
-      key="offline"
-      source={{ uri: appendToImageURL(offlineUrl, "resize", closestWidth) }}
-      aspectRatio={aspectRatio}
-      borderRadius={borderRadius}
-      onLoadEnd={() => {
-        if (!failed) {
-          setShowOnline(true);
-        }
-        setShowPlaceholder(false);
-      }}
-      onError={(error: NativeSyntheticEvent<ImageErrorEventData>) => {
-        if (onError) {
-          onError(error);
-        }
-        setShowOffline(false);
-        setFailed(true);
-        setShowPlaceholder(true);
-      }}
-      resize={resize}
-      fadeDuration={0}
-    />
-  );
-  const placeholder = showPlaceholder && (
-    <Image
-      key="placeholder"
-      source={logoPath}
-      borderRadius={0}
-      onLoadEnd={() => {
-        if (!failed) {
-          setShowOffline(true);
-        }
-      }}
-      fadeDuration={0}
-      style={{ resizeMode: "center", width, height: "100%" }}
-    />
-  );
-
-  return (
-    <View style={[styles.style, propStyle, { aspectRatio, borderRadius }]}>
-      {placeholder}
-      {lowRes}
-      {highRes}
-    </View>
-  );
-};
+  },
+);
 
 export default ResponsiveImage;

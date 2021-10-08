@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
     allowFileAccess={false}
     allowsFullscreenVideo={false}
     androidHardwareAccelerationDisabled={false}
-    androidLayerType="none"
+    androidLayerType="software"
     automaticallyAdjustContentInsets={false}
     cacheEnabled={true}
     injectedJavaScript="
@@ -137,12 +137,7 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    <ActivityIndicator
-      animating={true}
-      color={null}
-      hidesWhenStopped={true}
-      size="small"
-    />
+    <ActivityIndicator />
   </View>
 </View>
 `;

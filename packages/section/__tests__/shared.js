@@ -21,16 +21,17 @@ import { getSliceIndexByArticleId } from "../src/utils";
 
 // fixes issues with hooks not being allowed during test run
 jest.mock("react", () => {
-  const react = require.requireActual("react");
+  const react = jest.requireActual("react");
   return react;
 });
 jest.mock("@times-components-native/responsive", () => ({
   useResponsiveContext: () => ({ isTablet: true, editionBreakpoint: "small" }),
 }));
-jest.mock("@times-components-native/edition-slices/src/slices", () => {
-  const sliceMap = require.requireActual(
-    "@times-components-native/edition-slices/src/slices",
-  );
+jest.mock("../../edition-slices/src/slices", () => {
+  // const sliceMap = jest.requireActual(
+  //   "@times-components-native/edition-slices/src/slices",
+  // );
+  const sliceMap = jest.requireActual("../../edition-slices/src/slices");
   const slicesMock = {};
   Object.keys(sliceMap).forEach((key) => {
     slicesMock[key] = key;
@@ -47,7 +48,7 @@ jest.mock("@times-components-native/image", () => ({
 }));
 
 jest.mock("../src/utils", () => {
-  const utils = require.requireActual("../src/utils");
+  const utils = jest.requireActual("../src/utils");
   return {
     ...utils,
     getSliceIndexByArticleId: jest.fn(),
@@ -56,7 +57,7 @@ jest.mock("../src/utils", () => {
 
 export default () => {
   beforeEach(() => {
-    jest.resetModules();
+    // jest.resetModules();
   });
 
   addSerializers(

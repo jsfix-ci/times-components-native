@@ -19,7 +19,9 @@ exports[`1. modal image 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          collapsable={false}
           focusable={true}
+          nativeID="animatedComponent"
           testID={null}
         >
           <Image
@@ -112,6 +114,7 @@ exports[`1. modal image 1`] = `
           />
         </ARTSurfaceView>
         <View
+          collapsable={false}
           forceInset={
             Object {
               "bottom": "always",
@@ -119,6 +122,7 @@ exports[`1. modal image 1`] = `
               "top": "never",
             }
           }
+          nativeID="animatedComponent"
           pointerEvents="box-none"
         >
           <View>
@@ -140,12 +144,15 @@ exports[`1. modal image 1`] = `
     </View>
   </Modal>
   <View
+    collapsable={false}
     focusable={true}
+    nativeID="animatedComponent"
     testID={null}
   >
-    <View>
+    <View
+      accessibilityIgnoresInvertColors={true}
+    >
       <Image
-        borderRadius={0}
         fadeDuration={0}
         source={
           Object {
@@ -177,7 +184,9 @@ exports[`2. modal image with no caption 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          collapsable={false}
           focusable={true}
+          nativeID="animatedComponent"
           testID={null}
         >
           <Image
@@ -270,6 +279,7 @@ exports[`2. modal image with no caption 1`] = `
           />
         </ARTSurfaceView>
         <View
+          collapsable={false}
           forceInset={
             Object {
               "bottom": "always",
@@ -277,13 +287,16 @@ exports[`2. modal image with no caption 1`] = `
               "top": "never",
             }
           }
+          nativeID="animatedComponent"
           pointerEvents="box-none"
         />
       </View>
     </View>
   </Modal>
   <View
+    collapsable={false}
     focusable={true}
+    nativeID="animatedComponent"
     testID={null}
   >
     <View
@@ -321,7 +334,9 @@ exports[`3. modal image with custom highressize 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          collapsable={false}
           focusable={true}
+          nativeID="animatedComponent"
           testID={null}
         >
           <Image
@@ -414,6 +429,7 @@ exports[`3. modal image with custom highressize 1`] = `
           />
         </ARTSurfaceView>
         <View
+          collapsable={false}
           forceInset={
             Object {
               "bottom": "always",
@@ -421,6 +437,7 @@ exports[`3. modal image with custom highressize 1`] = `
               "top": "never",
             }
           }
+          nativeID="animatedComponent"
           pointerEvents="box-none"
         >
           <View>
@@ -442,12 +459,15 @@ exports[`3. modal image with custom highressize 1`] = `
     </View>
   </Modal>
   <View
+    collapsable={false}
     focusable={true}
+    nativeID="animatedComponent"
     testID={null}
   >
-    <View>
+    <View
+      accessibilityIgnoresInvertColors={true}
+    >
       <Image
-        borderRadius={0}
         fadeDuration={0}
         source={
           Object {

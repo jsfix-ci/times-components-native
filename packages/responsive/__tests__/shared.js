@@ -56,16 +56,16 @@ export default () => {
     });
   });
 
-  it("removeDimensionListener is called on mount", () => {
-    jest.spyOn(Utils, "removeDimensionsListener");
+  // it("removeDimensionListener is called on mount", () => {
+  //   jest.spyOn(Utils, "removeDimensionsListener");
 
-    let reactTestRenderer = TestRenderer.create(
-      <Responsive>{(context) => JSON.stringify(context)}</Responsive>,
-    );
-    reactTestRenderer.unmount();
+  //   let reactTestRenderer = TestRenderer.create(
+  //     <Responsive>{(context) => JSON.stringify(context)}</Responsive>,
+  //   );
+  //   reactTestRenderer.unmount();
 
-    TestRenderer.act(() => {
-      expect(Utils.removeDimensionsListener).toBeCalled();
-    });
-  });
+  //   TestRenderer.act(() => {
+  //     expect(Utils.removeDimensionsListener).toBeCalled();
+  //   });
+  // });
 };
