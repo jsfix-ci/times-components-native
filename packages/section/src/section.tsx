@@ -1,5 +1,6 @@
 import React, { FC, useCallback, useEffect, useRef } from "react";
 import {
+  Dimensions,
   FlatList,
   NativeEventEmitter,
   NativeModules,
@@ -65,6 +66,8 @@ const Section: FC<Props> = ({
   const sliceOffsets = useRef<Record<string, number>>({});
 
   useEffect(() => {
+    console.log("section w: ", Dimensions.get("window").width);
+    console.log("section h: ", Dimensions.get("window").height);
     const sectionEventsListener = sectionEventEmitter.addListener(
       "scrollToArticleId",
       scrollToOffset,

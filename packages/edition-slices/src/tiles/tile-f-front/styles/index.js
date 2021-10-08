@@ -117,6 +117,19 @@ const styles = {
         lineHeight: 24,
       },
     },
+    "1133": {
+      ...sharedLandscapeStyles,
+      headline: {
+        ...headline,
+        fontSize: 45,
+        lineHeight: 45,
+      },
+      strapline: {
+        ...strapline,
+        fontSize: 24,
+        lineHeight: 24,
+      },
+    },
     "1366": {
       ...sharedLandscapeStyles,
       imageContainer: {
@@ -136,6 +149,26 @@ const styles = {
     },
   },
   portrait: {
+    "744": {
+      ...sharedPortraitStyles,
+      headline: {
+        ...headline,
+        fontSize: 45,
+        lineHeight: 45,
+        paddingTop: spacing(2),
+      },
+      imageContainer: {
+        width: "100%",
+      },
+      strapline: {
+        ...strapline,
+        fontSize: 24,
+        lineHeight: 24,
+      },
+      headlineMarginBottom: spacing(4),
+      straplineMarginTop: spacing(1),
+      straplineMarginBottom: spacing(3),
+    },
     "768": {
       ...sharedPortraitStyles,
       headline: {
