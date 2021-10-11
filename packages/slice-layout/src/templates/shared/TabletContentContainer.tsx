@@ -14,21 +14,24 @@ const TabletContentContainer = ({
   windowWidth,
   style,
   children,
-}: Props) => (
-  <View
-    style={[
-      {
-        flex: 1,
-        flexDirection: "row",
-        justifyContent: "center",
-        width: calculateContentWidth(windowWidth, orientation),
-        alignSelf: "center",
-      },
-      style,
-    ]}
-  >
-    {children}
-  </View>
-);
+}: Props) => {
+  console.log("STYLE: ", style);
+  return (
+    <View
+      style={[
+        {
+          flex: 1,
+          flexDirection: "row",
+          justifyContent: "center",
+          width: "100%", //calculateContentWidth(windowWidth, orientation),
+          alignSelf: "center",
+        },
+        style,
+      ]}
+    >
+      {children}
+    </View>
+  );
+};
 
 export default TabletContentContainer;

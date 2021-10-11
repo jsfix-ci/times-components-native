@@ -7,6 +7,8 @@ import {
 } from "@times-components-native/edition-slices/src/tiles";
 import InTodaysEdition from "@times-components-native/in-todays-edition";
 
+import { useResponsiveContext } from "@times-components-native/responsive";
+
 function renderMedium(props, orientation) {
   const {
     onPress,
@@ -47,6 +49,11 @@ function renderMedium(props, orientation) {
 }
 
 const FrontLeadTwo = (props) => {
+  const { editionBreakpoint, orientation } = useResponsiveContext();
+  console.log("PROPS: ", props);
+  console.log("ORIENTATION: ", orientation);
+  console.log("EDITON BREAKPOINT: ", editionBreakpoint);
+
   const renderSlice = (_breakpoint, orientation) =>
     renderMedium(props, orientation);
 

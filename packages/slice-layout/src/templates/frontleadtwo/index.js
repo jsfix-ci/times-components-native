@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 
 import { TabletContentContainer } from "../shared";
 import HorizontalLayout from "../horizontallayout";
@@ -7,47 +7,63 @@ import { getStyles } from "./styles";
 import { useResponsiveContext } from "@times-components-native/responsive";
 
 const FrontLeadTwoSlice = ({ orientation, lead1, lead2, inTodaysEdition }) => {
-  const { windowWidth, windowHeight } = useResponsiveContext();
-  const styles = getStyles(orientation, windowWidth, windowHeight);
+  // const { windowWidth, windowHeight } = useResponsiveContext();
+  // const styles = getStyles(orientation, windowWidth, windowHeight);
 
-  if (orientation === "landscape") {
-    return (
-      <TabletContentContainer
-        orientation={orientation}
-        windowWidth={windowWidth}
-        style={styles.container}
-      >
-        <HorizontalLayout
-          containerStyle={styles.horizontalContainer}
-          tiles={[
-            { style: styles.lead1Container, tile: lead1 },
-            { style: styles.lead2Container, tile: lead2 },
-            {
-              style: styles.inTodaysEditionContainer,
-              tile: inTodaysEdition,
-            },
-          ]}
-          colSeparatorStyle={styles.colSeparatorStyle}
-        />
-      </TabletContentContainer>
-    );
-  }
+  const getInToday = (layout) =>
+    layout === orientation ? (
+      <View style={{ backgroundColor: "violet", width: "100%", height: 100 }} />
+    ) : null;
+
+  const getTileSize = () => (orientation === "landscape" ? "35%" : "50%");
+
+  const tileSize = getTileSize();
+
   return (
-    <TabletContentContainer
-      orientation={orientation}
-      windowWidth={windowWidth}
-      style={styles.container}
+    <ScrollView
+      style={{
+        flex: 1,
+        backgroundColor: "pink",
+      }}
+      contentContainerStyle={{
+        flexGrow: 1,
+        justifyContent: "space-between",
+      }}
     >
-      <HorizontalLayout
-        containerStyle={styles.horizontalContainer}
-        tiles={[
-          { style: styles.lead1Container, tile: lead1 },
-          { style: styles.lead2Container, tile: lead2 },
-        ]}
-        colSeparatorStyle={styles.colSeparatorStyle}
-      />
-      <View style={[styles.inTodaysEditionContainer]}>{inTodaysEdition}</View>
-    </TabletContentContainer>
+      <View style={{ flexDirection: "row", flex: 1 }}>
+        <View style={{ backgroundColor: "orange", width: tileSize }}>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+        </View>
+        <View style={{ backgroundColor: "purple", width: tileSize }} />
+        <View style={{ width: "30%" }}>{getInToday("landscape")}</View>
+      </View>
+      {getInToday("portrait")}
+    </ScrollView>
   );
 };
 
