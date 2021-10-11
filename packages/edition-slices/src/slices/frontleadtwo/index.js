@@ -1,70 +1,101 @@
 import React from "react";
-import { ResponsiveSlice } from "@times-components-native/edition-slices/src/slices/shared";
-import { FrontLeadTwoSlice } from "@times-components-native/slice-layout";
-import {
-  TileGFront,
-  TileHFront,
-} from "@times-components-native/edition-slices/src/tiles";
-import InTodaysEdition from "@times-components-native/in-todays-edition";
+import { ScrollView, Text, useWindowDimensions, View } from "react-native";
+
+// import {
+//   TileGFront,
+//   TileHFront,
+// } from "@times-components-native/edition-slices/src/tiles";
+// import InTodaysEdition from "@times-components-native/in-todays-edition";
 
 import { useResponsiveContext } from "@times-components-native/responsive";
-
-function renderMedium(props, orientation) {
-  const {
-    onPress,
-    onLinkPress,
-    slice: { lead1, lead2 },
-    inTodaysEditionSlice: { items: inTodaysEditionItems = [] },
-  } = props;
-
-  return (
-    <FrontLeadTwoSlice
-      lead1={
-        <TileHFront
-          onPress={onPress}
-          tile={lead1}
-          tileName="lead1"
-          orientation={orientation}
-        />
-      }
-      lead2={
-        <TileGFront
-          onPress={onPress}
-          tile={lead2}
-          tileName="lead2"
-          orientation={orientation}
-        />
-      }
-      inTodaysEdition={
-        <InTodaysEdition
-          items={inTodaysEditionItems}
-          onArticlePress={onPress}
-          onLinkPress={onLinkPress}
-          orientation={orientation}
-        />
-      }
-      orientation={orientation}
-    />
-  );
-}
+import { Orientation } from "@times-components-native/responsive/src/types";
 
 const FrontLeadTwo = (props) => {
-  const { editionBreakpoint, orientation } = useResponsiveContext();
-  console.log("PROPS: ", props);
-  console.log("ORIENTATION: ", orientation);
-  console.log("EDITON BREAKPOINT: ", editionBreakpoint);
+  const { orientation } = useResponsiveContext();
+  const { width, fontScale } = useWindowDimensions();
+  const getInToday = (layout) =>
+    layout === orientation ? (
+      <View style={{ backgroundColor: "violet", width: "100%", height: 100 }}>
+        <Text>IN TODAY SECTION</Text>
+      </View>
+    ) : null;
 
-  const renderSlice = (_breakpoint, orientation) =>
-    renderMedium(props, orientation);
+  const getLayout = () => {
+    const breakpoint = Orientation === "landscape" ? 960 : 600;
+    const mediaQuery = width / fontScale;
+
+    let colSize = orientation === "landscape" ? "35%" : "50%";
+    let inTodaySize = orientation === "landscape" ? "100%" : "30%";
+    let direction = orientation === "landscape" ? "row" : "column";
+
+    if (mediaQuery < breakpoint) {
+      colSize = "100%";
+      inTodaySize = "100%";
+      direction = "column";
+    }
+
+    return {
+      colSize,
+      inTodaySize,
+      direction,
+    };
+  };
+
+  const layout = getLayout();
+
+  console.log("LAYOUT: ", layout);
 
   return (
-    <ResponsiveSlice
-      renderSmall={renderSlice}
-      renderMedium={renderSlice}
-      renderWide={renderSlice}
-      renderHuge={renderSlice}
-      grow
-    />
+    <ScrollView
+      style={{
+        flex: 1,
+        backgroundColor: "pink",
+      }}
+      contentContainerStyle={{
+        flexGrow: 1,
+        justifyContent: "space-between",
+      }}
+    >
+      <View style={{ flexDirection: layout.direction, flex: 1 }}>
+        <View style={{ backgroundColor: "orange", width: layout.colSize }}>
+          <Text style={{ fontSize: 32 }}>A</Text>
+          <Text style={{ fontSize: 32 }}>B</Text>
+          <Text style={{ fontSize: 32 }}>C</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+          <Text style={{ fontSize: 32 }}>x</Text>
+        </View>
+        <View style={{ backgroundColor: "purple", width: layout.colSize }}>
+          <Text style={{ fontSize: 32 }}>A</Text>
+          <Text style={{ fontSize: 32 }}>B</Text>
+          <Text style={{ fontSize: 32 }}>C</Text>
+        </View>
+        <View style={{ width: layout.inTodaySize }}>
+          {getInToday("landscape")}
+        </View>
+      </View>
+      {getInToday("portrait")}
+    </ScrollView>
   );
 };
 

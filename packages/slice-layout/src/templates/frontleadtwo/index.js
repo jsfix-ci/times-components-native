@@ -1,11 +1,6 @@
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
 
-import { TabletContentContainer } from "../shared";
-import HorizontalLayout from "../horizontallayout";
-import { getStyles } from "./styles";
-import { useResponsiveContext } from "@times-components-native/responsive";
-
 const FrontLeadTwoSlice = ({ orientation, lead1, lead2, inTodaysEdition }) => {
   // const { windowWidth, windowHeight } = useResponsiveContext();
   // const styles = getStyles(orientation, windowWidth, windowHeight);
