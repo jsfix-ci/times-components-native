@@ -8,7 +8,7 @@ import { ScrollView, Text, useWindowDimensions, View } from "react-native";
 // import InTodaysEdition from "@times-components-native/in-todays-edition";
 
 import { useResponsiveContext } from "@times-components-native/responsive";
-import { Orientation } from "@times-components-native/responsive/src/types";
+//import { Orientation } from "@times-components-native/responsive/src/types";
 
 const FrontLeadTwo = (props) => {
   const { orientation } = useResponsiveContext();
@@ -21,12 +21,15 @@ const FrontLeadTwo = (props) => {
     ) : null;
 
   const getLayout = () => {
-    const breakpoint = Orientation === "landscape" ? 960 : 600;
+    const breakpoint = orientation === "landscape" ? 960 : 600;
     const mediaQuery = width / fontScale;
+
+    console.log("media Q: ", mediaQuery);
+    console.log("breakpoint: ", breakpoint);
 
     let colSize = orientation === "landscape" ? "35%" : "50%";
     let inTodaySize = orientation === "landscape" ? "100%" : "30%";
-    let direction = orientation === "landscape" ? "row" : "column";
+    let direction = "row";
 
     if (mediaQuery < breakpoint) {
       colSize = "100%";
