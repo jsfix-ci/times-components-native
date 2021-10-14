@@ -9,12 +9,14 @@ import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
 import { useResponsiveContext } from "@times-components-native/responsive";
 
+type TDirection = "row" | "column";
 interface Props {
   item: ItemType;
   index: number;
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
   onLinkPress: <T = unknown, R = unknown>(args?: T) => R;
   orientation: string;
+  direction: TDirection;
 }
 
 const isArticleLink = (
@@ -25,16 +27,14 @@ const isArticleLink = (
 };
 
 const Item: React.FC<Props> = ({
+  direction,
   item,
   index,
   onArticlePress,
   onLinkPress,
-  orientation,
 }) => {
-  const { windowWidth } = useResponsiveContext();
-  const styles = getStyles(orientation, windowWidth);
+  const styles = getStyles();
   const link = item.mainLink;
-  const isLandscape = orientation === "landscape";
   const ctaText = isArticleLink(link) ? "Read the full story" : "Take me there";
   const onPress = isArticleLink(link)
     ? () =>
@@ -44,16 +44,20 @@ const Item: React.FC<Props> = ({
         })
     : () => onLinkPress({ url: (item.mainLink as LinkType).url });
 
+  console.log("direction: ", direction);
+
+  const linkStyles = direction === "column" ? {} : { flex: 1 };
+
   return (
     <>
       <Link
-        linkStyle={[styles.item, index === 3 && styles.itemLast]}
+        linkStyle={[styles.item, index === 3 && styles.itemLast, linkStyles]}
         key={item.id}
         onPress={onPress}
       >
         <Text style={styles.itemTitle}>{item.title}</Text>
         <Text style={styles.itemStrapline}>{item.strapline}</Text>
-        {isLandscape && (
+        {direction === "row" && (
           <View style={styles.itemCTA}>
             <Text style={styles.itemCTAText}>{ctaText}</Text>
             <View style={styles.itemCTAIconContainer}>

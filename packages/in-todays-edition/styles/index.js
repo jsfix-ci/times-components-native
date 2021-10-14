@@ -121,134 +121,54 @@ const sharedLandscapeStyles = {
   },
 };
 
-const landscape1080Styles = {
-  ...sharedLandscapeStyles,
+// export const getStyles = (orientation, windowWidth) =>
+//   getStyleByDeviceSize(styles[orientation], windowWidth);
+
+export const getStyles = () => ({
   container: {
-    ...sharedLandscapeStyles.container,
-    paddingVertical: spacing(4),
-    paddingHorizontal: spacing(6),
+    borderColor: "green",
+    borderWidth: 1,
+    paddingVertical: spacing(3),
+    backgroundColor: colours.functional.buff,
+    flex: 1,
+  },
+  divider: {
+    paddingLeft: spacing(2),
+    borderColor: colours.functional.buffKeyline,
+    borderLeftWidth: 1,
+    marginHorizontal: spacing(1),
+  },
+  heading: {
+    fontFamily: fonts.bodyRegular,
+    letterSpacing: 1,
+    color: colours.functional.brandColour,
+  },
+  itemsContainer: {
+    borderColor: "green",
+    borderWidth: 1,
+    flex: 1,
+    marginTop: spacing(2),
   },
   item: {
-    ...sharedLandscapeStyles.item,
-    paddingTop: spacing(3),
+    marginRight: spacing(2),
   },
-  itemCTAText: {
-    ...sharedLandscapeStyles.itemCTAText,
-    fontSize: 14,
+  itemLast: {
+    marginRight: 0,
   },
-};
-
-const styles = {
-  portrait: {
-    744: {
-      ...sharedPortraitStyles,
-      container: {
-        ...sharedPortraitStyles.container,
-        paddingHorizontal: spacing(4),
-        paddingBottom: spacing(5),
-      },
-      itemsContainer: {
-        ...sharedPortraitStyles.itemsContainer,
-        marginTop: spacing(3),
-      },
-    },
-    768: {
-      ...sharedPortraitStyles,
-    },
-    810: {
-      ...sharedPortraitStyles,
-      container: {
-        ...sharedPortraitStyles.container,
-        paddingHorizontal: spacing(4),
-        paddingBottom: spacing(5),
-      },
-      itemsContainer: {
-        ...sharedPortraitStyles.itemsContainer,
-        marginTop: spacing(3),
-      },
-    },
-    1024: {
-      ...sharedPortraitStyles,
-      container: {
-        ...sharedPortraitStyles.container,
-        paddingTop: spacing(4),
-        paddingBottom: spacing(5),
-        paddingHorizontal: spacing(5),
-      },
-      heading: {
-        ...sharedPortraitStyles.heading,
-        fontSize: 16,
-      },
-      itemsContainer: {
-        ...sharedPortraitStyles.itemsContainer,
-        marginTop: 17,
-      },
-      itemTitle: {
-        ...sharedPortraitStyles.itemTitle,
-        fontSize: 20,
-      },
-      itemStrapline: {
-        ...sharedPortraitStyles.itemStrapline,
-        fontSize: 15,
-        lineHeight: 20,
-      },
-      divider: {
-        ...sharedPortraitStyles.divider,
-        paddingLeft: spacing(1),
-      },
-      item: {
-        ...sharedPortraitStyles.item,
-        marginRight: spacing(2),
-      },
-    },
+  itemTitle: {
+    fontSize: 16,
+    fontFamily: fonts.headline,
+    color: colours.functional.brandColour,
   },
-  landscape: {
-    1024: sharedLandscapeStyles,
-    1080: landscape1080Styles,
-    1112: {
-      ...landscape1080Styles,
-      titleContainer: {
-        ...landscape1080Styles.titleContainer,
-        paddingBottom: spacing(3),
-      },
-      item: {
-        ...landscape1080Styles.item,
-        marginBottom: spacing(1),
-      },
-    },
-    1133: sharedLandscapeStyles,
-    1366: {
-      ...landscape1080Styles,
-      container: {
-        ...landscape1080Styles.container,
-        paddingHorizontal: spacing(4),
-      },
-      titleContainer: {
-        ...landscape1080Styles.titleContainer,
-        paddingBottom: spacing(4),
-      },
-      heading: {
-        ...landscape1080Styles.heading,
-        fontSize: 15,
-        lineHeight: 15,
-      },
-      item: {
-        ...landscape1080Styles.item,
-        paddingTop: spacing(5),
-        marginBottom: spacing(2),
-      },
-      itemTitle: {
-        ...landscape1080Styles.itemTitle,
-        fontSize: 20,
-      },
-      itemStrapline: {
-        ...landscape1080Styles.itemStrapline,
-        fontSize: 15,
-        lineHeight: 20,
-      },
-    },
+  itemStrapline: {
+    fontSize: 13,
+    lineHeight: 16,
+    fontFamily: fonts.bodyRegular,
+    color: colours.functional.brandColour,
   },
-};
-
-export const getStyles = (orientation, windowWidth) =>
-  getStyleByDeviceSize(styles[orientation], windowWidth);
+  titleContainer: {
+    borderBottomWidth: 1,
+    borderBottomColor: colours.functional.buffKeyline,
+    paddingBottom: 3,
+  },
+});

@@ -22,11 +22,13 @@ export type ItemType = {
   orientation: string;
 };
 
+type TDirection = "row" | "column";
+
 interface Props {
   items: [ItemType];
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
   onLinkPress: <T = unknown, R = unknown>(args?: T) => R;
-  orientation: string;
+  direction: TDirection;
 }
 
 const headingText = "IN TODAY'S EDITION";
@@ -35,26 +37,25 @@ const InTodaysEdition: React.FC<Props> = ({
   items,
   onArticlePress,
   onLinkPress,
-  orientation,
+  direction,
 }) => {
-  const { windowWidth } = useResponsiveContext();
   if (!items.length) return null;
-  const styles = getStyles(orientation, windowWidth);
+  const styles = getStyles();
 
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
         <Text style={styles.heading}>{headingText}</Text>
       </View>
-      <View style={styles.itemsContainer}>
+      <View style={[styles.itemsContainer, { flexDirection: direction }]}>
         {items.map((item, index) => (
           <Item
+            direction={direction}
             key={`${item.id}-${index}`}
             item={item}
             index={index}
             onArticlePress={onArticlePress}
             onLinkPress={onLinkPress}
-            orientation={orientation}
           />
         ))}
       </View>
