@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { NativeModules, Platform, Text, View } from "react-native";
+import { Dimensions, NativeModules, Platform, Text, View } from "react-native";
 import {
   getNarrowArticleBreakpoint,
   spacing,
@@ -38,13 +38,17 @@ const ArticleBodyRow = ({
   isArticleTablet,
   adConfig,
   images = [],
+  scale,
   analyticsStream,
   narrowContent,
   onParagraphTextLayout,
 }) => {
+  const { fontScale } = Dimensions.get("window");
   const { narrowArticleBreakpoint } = useResponsiveContext();
   const styles = styleFactory({
+    scale,
     narrowContent,
+    fontScale,
     narrowArticleBreakpoint,
   });
 
@@ -126,6 +130,7 @@ const ArticleBodyRow = ({
             testID={"paragraph"}
             onTextLayout={onParagraphTextLayout}
             selectable
+            allowFontScaling={false}
             style={styles.defaultFont}
           >
             {children}

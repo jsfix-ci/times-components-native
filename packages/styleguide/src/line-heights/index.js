@@ -1,7 +1,8 @@
-import lineHeightMapping from "./line-height-mapping";
+import lineHeightMapping from "./mapping";
 
-const lineHeights = ({ font, fontSize }) => {
-  return lineHeightMapping[font][fontSize];
+const lineHeights = (scale) => ({ font, fontSize }) => {
+  const mapping = lineHeightMapping({ scale });
+  return mapping[font][fontSize];
 };
 
 export default lineHeights;

@@ -60,6 +60,7 @@ const DropCap: React.FC<Props> = ({
       ]}
     >
       <Text
+        allowFontScaling={false}
         style={[
           {
             color: dropCapColor,

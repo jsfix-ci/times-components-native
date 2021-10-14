@@ -5,22 +5,25 @@ import styles from "./styles";
 
 const { style: TextStylePropTypes } = Text.propTypes;
 
-const ArticleSummaryStrapline = ({ strapline, style }) => (
+const ArticleSummaryStrapline = ({ strapline, style, allowFontScaling }) => (
   <Text
     accessibilityRole="header"
     aria-level="4"
     style={[styles.strapline, style]}
+    allowFontScaling={allowFontScaling !== false}
   >
     {strapline}
   </Text>
 );
 
 ArticleSummaryStrapline.propTypes = {
+  allowFontScaling: PropTypes.bool,
   strapline: PropTypes.string.isRequired,
   style: TextStylePropTypes,
 };
 
 ArticleSummaryStrapline.defaultProps = {
+  allowFontScaling: false,
   style: {},
 };
 
