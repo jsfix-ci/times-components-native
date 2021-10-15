@@ -1,11 +1,5 @@
-import React, { useState } from "react";
-import {
-  Button,
-  ScrollView,
-  Text,
-  useWindowDimensions,
-  View,
-} from "react-native";
+import React from "react";
+import { ScrollView, useWindowDimensions, View } from "react-native";
 
 import {
   TileGFront,
@@ -13,12 +7,7 @@ import {
 } from "@times-components-native/edition-slices/src/tiles";
 import InTodaysEdition from "@times-components-native/in-todays-edition";
 
-// import { useResponsiveContext } from "@times-components-native/responsive";
-//import { Orientation } from "@times-components-native/responsive/src/types";
-
 const FrontLeadTwo = (props) => {
-  console.log("PROPS: ", props);
-  console.log();
   const { width, fontScale } = useWindowDimensions();
 
   const getLayout = () => {
@@ -56,13 +45,13 @@ const FrontLeadTwo = (props) => {
   } = props;
 
   const getInToday = (direction) => (
-    <View style={{ backgroundColor: "violet", width: "100%", height: 100 }}>
+    <View style={{ width: "100%" }}>
       <InTodaysEdition
         items={inTodaysEditionItems}
         onArticlePress={onPress}
         onLinkPress={onLinkPress}
-        orientation={"portrait"}
         direction={direction}
+        size={layout.size}
       />
     </View>
   );
@@ -71,7 +60,6 @@ const FrontLeadTwo = (props) => {
     <ScrollView
       style={{
         flex: 1,
-        backgroundColor: "pink",
       }}
       contentContainerStyle={{
         flexGrow: 1,
@@ -79,7 +67,7 @@ const FrontLeadTwo = (props) => {
       }}
     >
       <View style={{ flexDirection: layout.direction, flex: 1 }}>
-        <View style={{ backgroundColor: "orange", width: layout.colSize }}>
+        <View style={{ width: layout.colSize, paddingHorizontal: 10 }}>
           <TileHFront
             onPress={onPress}
             tile={props.slice.lead1}
@@ -87,7 +75,7 @@ const FrontLeadTwo = (props) => {
             orientation={"portrait"}
           />
         </View>
-        <View style={{ backgroundColor: "purple", width: layout.colSize }}>
+        <View style={{ width: layout.colSize, paddingHorizontal: 10 }}>
           <TileGFront
             onPress={onPress}
             tile={props.slice.lead2}
@@ -95,11 +83,24 @@ const FrontLeadTwo = (props) => {
             orientation={"portrait"}
           />
         </View>
-        <View style={{ width: layout.inTodaySize }}>
-          {layout.size === "large" ? getInToday("column") : null}
-        </View>
+        {layout.size === "large" ? (
+          <View
+            style={{
+              borderWidth: 1,
+              borderColor: "red",
+              width: layout.inTodaySize,
+              flexDirection: "column",
+              flex: 1,
+              flexGrow: 1,
+            }}
+          >
+            {getInToday("column")}
+          </View>
+        ) : null}
       </View>
-      {layout.size !== "large" ? getInToday("row") : null}
+      <View style={{ paddingHorizontal: 10 }}>
+        {layout.size !== "large" ? getInToday("row") : null}
+      </View>
     </ScrollView>
   );
 };

@@ -12,9 +12,11 @@ const TileHFront = ({ onPress, tile, orientation }) => {
 
   const { article } = tile;
 
+  console.log("CONTENT: ", article.content);
+
   let strapline = getTileStrapline(tile);
   return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileLink onPress={onPress} style={[styles.container]} tile={tile}>
       <FrontTileSummary
         headlineStyle={styles.headline}
         headlineMarginBottom={styles.headlineMarginBottom}

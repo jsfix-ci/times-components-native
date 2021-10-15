@@ -21,7 +21,7 @@ const TileGFront = ({ onPress, tile, orientation }) => {
   const { article } = tile;
 
   return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileLink onPress={onPress} tile={tile}>
       <TileImage
         aspectRatio={4 / 5}
         relativeWidth={crop.relativeWidth}

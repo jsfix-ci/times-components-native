@@ -1,8 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { getStyles } from "./styles";
+import { styles } from "./styles";
 import Item from "./item";
-import { useResponsiveContext } from "@times-components-native/responsive";
 
 export type LinkType = {
   url: string;
@@ -19,16 +18,17 @@ export type ItemType = {
   title: string;
   strapline: string;
   mainLink: PuffMainLinkRef;
-  orientation: string;
 };
 
 type TDirection = "row" | "column";
+type TSize = "small" | "medium" | "large";
 
 interface Props {
   items: [ItemType];
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
   onLinkPress: <T = unknown, R = unknown>(args?: T) => R;
   direction: TDirection;
+  size: TSize;
 }
 
 const headingText = "IN TODAY'S EDITION";
@@ -38,28 +38,50 @@ const InTodaysEdition: React.FC<Props> = ({
   onArticlePress,
   onLinkPress,
   direction,
+  size,
 }) => {
   if (!items.length) return null;
-  const styles = getStyles();
 
+  const getWidth = () => {
+    let width = "100%";
+    if (direction === "column") {
+      return width;
+    }
+    switch (size) {
+      case "small":
+        width = "50%";
+        break;
+      default:
+        width = "25%";
+    }
+
+    return width;
+  };
   return (
-    <View style={styles.container}>
+    <>
       <View style={styles.titleContainer}>
         <Text style={styles.heading}>{headingText}</Text>
       </View>
-      <View style={[styles.itemsContainer, { flexDirection: direction }]}>
+      <View
+        style={[
+          styles.itemsContainer,
+          { flex: 1, flexDirection: direction, flexWrap: "wrap" },
+        ]}
+      >
         {items.map((item, index) => (
-          <Item
-            direction={direction}
-            key={`${item.id}-${index}`}
-            item={item}
-            index={index}
-            onArticlePress={onArticlePress}
-            onLinkPress={onLinkPress}
-          />
+          <View style={{ width: getWidth() }} key={`${item.id}-${index}`}>
+            <Item
+              direction={direction}
+              // key={`${item.id}-${index}`}
+              item={item}
+              index={index}
+              onArticlePress={onArticlePress}
+              onLinkPress={onLinkPress}
+            />
+          </View>
         ))}
       </View>
-    </View>
+    </>
   );
 };
 

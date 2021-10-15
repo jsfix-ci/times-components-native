@@ -4,10 +4,9 @@ import { View, Text } from "react-native";
 import Link from "@times-components-native/link";
 import { IconForwardArrow } from "@times-components-native/icons";
 import { colours } from "@times-components-native/styleguide";
-import { getStyles } from "./styles";
+import { styles } from "./styles";
 import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
-import { useResponsiveContext } from "@times-components-native/responsive";
 
 type TDirection = "row" | "column";
 interface Props {
@@ -33,7 +32,7 @@ const Item: React.FC<Props> = ({
   onArticlePress,
   onLinkPress,
 }) => {
-  const styles = getStyles();
+  // const styles: ViewStyle = getStyles();
   const link = item.mainLink;
   const ctaText = isArticleLink(link) ? "Read the full story" : "Take me there";
   const onPress = isArticleLink(link)
@@ -43,8 +42,6 @@ const Item: React.FC<Props> = ({
           isPuff: true,
         })
     : () => onLinkPress({ url: (item.mainLink as LinkType).url });
-
-  console.log("direction: ", direction);
 
   const linkStyles = direction === "column" ? {} : { flex: 1 };
 
@@ -57,7 +54,7 @@ const Item: React.FC<Props> = ({
       >
         <Text style={styles.itemTitle}>{item.title}</Text>
         <Text style={styles.itemStrapline}>{item.strapline}</Text>
-        {direction === "row" && (
+        {direction === "column" && (
           <View style={styles.itemCTA}>
             <Text style={styles.itemCTAText}>{ctaText}</Text>
             <View style={styles.itemCTAIconContainer}>
