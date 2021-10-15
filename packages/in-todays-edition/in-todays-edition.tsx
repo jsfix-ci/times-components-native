@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { styles } from "./styles";
 import Item from "./item";
+import { spacing } from "@times-components-native/styleguide";
 
 export type LinkType = {
   url: string;
@@ -31,6 +32,8 @@ interface Props {
   size: TSize;
 }
 
+// paddingHorizontal: spacing(4),
+
 const headingText = "IN TODAY'S EDITION";
 
 const InTodaysEdition: React.FC<Props> = ({
@@ -58,7 +61,7 @@ const InTodaysEdition: React.FC<Props> = ({
     return width;
   };
   return (
-    <View style={styles.container}>
+    <View style={[styles.container]}>
       <View style={styles.titleContainer}>
         <Text style={styles.heading}>{headingText}</Text>
       </View>

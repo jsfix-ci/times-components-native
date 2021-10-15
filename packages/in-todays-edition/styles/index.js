@@ -125,6 +125,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     paddingVertical: spacing(3),
+    paddingHorizontal: spacing(4),
     backgroundColor: colours.functional.buff,
   },
   divider: {
