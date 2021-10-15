@@ -86,8 +86,6 @@ const FrontLeadTwo = (props) => {
         {layout.size === "large" ? (
           <View
             style={{
-              borderWidth: 1,
-              borderColor: "red",
               width: layout.inTodaySize,
               flexDirection: "column",
               flex: 1,

@@ -58,7 +58,7 @@ const InTodaysEdition: React.FC<Props> = ({
     return width;
   };
   return (
-    <>
+    <View style={styles.container}>
       <View style={styles.titleContainer}>
         <Text style={styles.heading}>{headingText}</Text>
       </View>
@@ -81,7 +81,7 @@ const InTodaysEdition: React.FC<Props> = ({
           </View>
         ))}
       </View>
-    </>
+    </View>
   );
 };
 
