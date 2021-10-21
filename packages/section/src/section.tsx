@@ -26,6 +26,7 @@ import { SectionTitles } from "./utils/sectionConfigs";
 import { Orientation } from "@times-components-native/responsive/src/types";
 // @ts-ignore
 import { Viewport } from "@skele/components";
+import { MediaQuery } from "@times-components-native/hooks";
 
 const styles = styleFactory();
 const { SectionEvents } = NativeModules;
@@ -64,6 +65,10 @@ const Section: FC<Props> = ({
 
   const flatListRef = useRef<FlatList | null>(null);
   const sliceOffsets = useRef<Record<string, number>>({});
+
+  const screenSize = MediaQuery();
+
+  console.log("SCREEN SIZE: ", screenSize);
 
   useEffect(() => {
     console.log("section w: ", Dimensions.get("window").width);
