@@ -7,7 +7,7 @@ import { getNarrowArticleBreakpoint } from "@times-components-native/styleguide"
 
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
-import AdContainer from "./ad-container";
+
 import DOMContext from "./dom-context";
 import { defaultProps, propTypes } from "./ad-prop-types";
 import styles from "./styles";
@@ -173,5 +173,4 @@ const Ad = (props) => {
 Ad.propTypes = propTypes;
 Ad.defaultProps = defaultProps;
 
-export { AdContainer };
 export default Ad;

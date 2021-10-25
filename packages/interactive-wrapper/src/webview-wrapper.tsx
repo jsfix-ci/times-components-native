@@ -24,16 +24,16 @@ const smallInteractiveAdditionalHeight = 30;
 function WebviewWrapper({ config, id }: IProps) {
   const { dev, environment, platform, version } = config;
   const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-  const scriptToInject = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
+  const scriptToInject = `window.postMessage = function(data) {
+    window.ReactNativeWebView.postMessage(data);
+  };(${webviewEventCallbackSetup})({window});`;
   const [height, setHeight] = useState(1);
   const webview = useRef<WebView>(null);
 
   const openURLInBrowser = (url: string) => {
     return Linking.canOpenURL(url)
       .then((supported) => {
-        if (!supported) {
-          return console.error("Cant open url", url); // eslint-disable-line no-console
-        }
+        if (!supported) return console.error("Cant open url", url); // eslint-disable-line no-console
         return Linking.openURL(url);
       })
       .catch((err) => console.error("An error occurred", err)); // eslint-disable-line no-console
@@ -51,9 +51,7 @@ function WebviewWrapper({ config, id }: IProps) {
 
     const newHeight = parseInt(event.nativeEvent.data, 10);
 
-    if (isNaN(newHeight)) {
-      return;
-    }
+    if (isNaN(newHeight)) return;
 
     if (newHeight && Math.abs(newHeight - height) > minimumDifferenceInPixels) {
       const updatedHeight =

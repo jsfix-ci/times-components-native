@@ -1,4 +1,4 @@
-import { SponsoredAd } from "@times-components-native/ad/src/sponsored-ad";
+import SponsoredAd from "@times-components-native/ad/src/SponsoredAd";
 import TestRenderer from "react-test-renderer";
 import React from "react";
 import WebView from "react-native-webview";
