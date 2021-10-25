@@ -2,7 +2,8 @@
 /* eslint-disable no-param-reassign */
 // NOTE: this function must be self-contained, i.e. contain no references to variables
 // defined outside the function, so that it can be passed into a WebView.
-export default ({ el, data, platform, eventCallback, window }) => {
+// What is data ->
+const AdInit = ({ el, data, platform, eventCallback, window }) => {
   const nativeAdRegex = /^native-(inline|section|(single|double)-mpu)/;
 
   window.googletag = window.googletag || {};
@@ -186,7 +187,9 @@ export default ({ el, data, platform, eventCallback, window }) => {
     },
 
     gpt: {
-      url: "https://www.googletagservices.com/tag/js/gpt.js",
+      url: "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+
+      // what is data
 
       setSlotTargeting(
         slotConfig,
@@ -229,6 +232,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
             ).toString();
             slot.setTargeting("timestestgroup", randomTestingGroup);
             slot.setTargeting("pos", slotName);
+            //slot.setTargeting("")
             googletag.display(slotName);
             eventCallback(
               "warn",
@@ -241,12 +245,15 @@ export default ({ el, data, platform, eventCallback, window }) => {
       },
 
       setPageTargeting(keyValuePairs) {
+        console.log("DONE::keyValuePairs:", keyValuePairs);
+
         googletag.cmd.push(() => {
           try {
             const pubads = googletag.pubads();
             Object.keys(keyValuePairs).forEach((key) => {
               pubads.setTargeting(key, keyValuePairs[key]);
             });
+            pubads.setTargeting("path", "get_page_url_same_as_web");
             eventCallback("warn", "[Google] INFO: set page target");
             eventCallback("log", keyValuePairs);
           } catch (err) {
@@ -484,3 +491,5 @@ export default ({ el, data, platform, eventCallback, window }) => {
     },
   };
 };
+
+export default AdInit;
