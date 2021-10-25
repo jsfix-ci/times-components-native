@@ -5,7 +5,8 @@ export type TMediaQuerySize =
   | "SMALL"
   | "MEDIUM"
   | "LARGE"
-  | "EXTRA LARGE";
+  | "EXTRA LARGE"
+  | "EXTRA EXTRA LARGE";
 
 function MediaQuery(): TMediaQuerySize {
   const { width, fontScale } = useWindowDimensions();
@@ -15,17 +16,20 @@ function MediaQuery(): TMediaQuerySize {
 
   // 480px, 768px, 1024px, and 1280px
 
-  if (breakpoint >= 480 && breakpoint < 768) {
+  if (breakpoint >= 480 && breakpoint < 600) {
     size = "SMALL";
   }
-  if (breakpoint >= 768 && breakpoint < 1024) {
+  if (breakpoint >= 600 && breakpoint < 768) {
     size = "MEDIUM";
   }
-  if (breakpoint >= 1024 && breakpoint < 1280) {
+  if (breakpoint >= 768 && breakpoint < 1024) {
     size = "LARGE";
   }
-  if (breakpoint >= 1280) {
+  if (breakpoint >= 1024 && breakpoint < 1280) {
     size = "EXTRA LARGE";
+  }
+  if (breakpoint >= 1280) {
+    size = "EXTRA EXTRA LARGE";
   }
 
   return size;
