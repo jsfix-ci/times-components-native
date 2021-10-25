@@ -4,17 +4,15 @@ import { View, Text } from "react-native";
 import Link from "@times-components-native/link";
 import { IconForwardArrow } from "@times-components-native/icons";
 import { colours } from "@times-components-native/styleguide";
-import { getStyles } from "./styles";
+import { styles } from "./styles";
 import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
-import { useResponsiveContext } from "@times-components-native/responsive";
 
 interface Props {
   item: ItemType;
   index: number;
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
   onLinkPress: <T = unknown, R = unknown>(args?: T) => R;
-  orientation: string;
 }
 
 const isArticleLink = (
@@ -31,8 +29,6 @@ const Item: React.FC<Props> = ({
   onLinkPress,
   orientation,
 }) => {
-  const { windowWidth } = useResponsiveContext();
-  const styles = getStyles(orientation, windowWidth);
   const link = item.mainLink;
   const isLandscape = orientation === "landscape";
   const ctaText = isArticleLink(link) ? "Read the full story" : "Take me there";
