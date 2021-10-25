@@ -53,8 +53,6 @@ const FrontLeadTwo = (props) => {
         <View
           style={{
             width: layout.width,
-            borderColor: "red",
-            borderWidth: 1,
             flexDirection: layout.direction,
           }}
         >
