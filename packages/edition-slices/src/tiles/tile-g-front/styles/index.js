@@ -83,6 +83,14 @@ const styles = {
         lineHeight: 25,
       },
     },
+    "1133": {
+      ...sharedLandscapeStyles,
+      headline: {
+        ...sharedHeadline,
+        fontSize: 22,
+        lineHeight: 22,
+      },
+    },
     "1194": {
       ...sharedLandscapeStyles,
       headlineMarginBottom: spacing(2),
@@ -107,6 +115,14 @@ const styles = {
     },
   },
   portrait: {
+    "744": {
+      ...sharedPortraitStyles,
+      headline: {
+        ...sharedHeadline,
+        fontSize: 28,
+        lineHeight: 28,
+      },
+    },
     "768": {
       ...sharedPortraitStyles,
       headline: {

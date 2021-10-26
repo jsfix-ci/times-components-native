@@ -2386,6 +2386,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -2981,6 +2982,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -3576,6 +3578,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -4172,6 +4175,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -4768,6 +4772,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }

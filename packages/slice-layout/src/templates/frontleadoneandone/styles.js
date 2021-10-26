@@ -86,6 +86,13 @@ const calculateStyles = (orientation, windowWidth) => {
           marginBottom: spacing(4),
         },
       },
+      "1133": {
+        ...sharedLandscapeStyles,
+        container: {
+          ...sharedLandscapeStyles.container,
+          marginBottom: spacing(4),
+        },
+      },
       "1366": {
         ...sharedLandscapeStyles,
         container: {
@@ -114,6 +121,18 @@ const calculateStyles = (orientation, windowWidth) => {
       },
     },
     portrait: {
+      "744": {
+        ...sharedPortraitStyles,
+        container: {
+          ...sharedPortraitStyles.container,
+          marginBottom: spacing(3),
+        },
+        inTodaysEditionContainer: {
+          ...sharedPortraitStyles.inTodaysEditionContainer,
+          height: 148,
+          marginTop: spacing(4),
+        },
+      },
       "768": {
         ...sharedPortraitStyles,
         inTodaysEditionContainer: {

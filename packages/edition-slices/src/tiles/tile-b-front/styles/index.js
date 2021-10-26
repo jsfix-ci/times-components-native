@@ -83,6 +83,19 @@ const styles = {
         lineHeight: 20,
       },
     },
+    "1133": {
+      ...sharedLandscapeStyles,
+      headline: {
+        ...headlineLandscape,
+        fontSize: 25,
+        lineHeight: 25,
+      },
+      summary: {
+        ...summary,
+        fontSize: 14,
+        lineHeight: 20,
+      },
+    },
     "1366": {
       ...sharedLandscapeStyles,
       headline: {
@@ -98,6 +111,19 @@ const styles = {
     },
   },
   portrait: {
+    "744": {
+      ...sharedPortraitStyles,
+      headline: {
+        ...headlinePortrait,
+        fontSize: 22,
+        lineHeight: 22,
+      },
+      summary: {
+        ...summary,
+        fontSize: 14,
+        lineHeight: 18,
+      },
+    },
     "768": {
       ...sharedPortraitStyles,
       headline: {
