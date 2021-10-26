@@ -88,6 +88,14 @@ const calculateStyles = (orientation, windowWidth) => {
           paddingBottom: spacing(3),
         },
       },
+      "1133": {
+        ...sharedLandscapeStyles,
+        container: {
+          ...container,
+          paddingTop: spacing(2),
+          paddingBottom: spacing(3),
+        },
+      },
       "1194": {
         ...sharedLandscapeStyles,
         container: {
@@ -125,6 +133,17 @@ const calculateStyles = (orientation, windowWidth) => {
       },
     },
     portrait: {
+      "744": {
+        ...sharedPortraitStyles,
+        container: {
+          ...sharedPortraitStyles.container,
+          paddingBottom: spacing(4),
+        },
+        inTodaysEditionContainer: {
+          ...inTodaysEditionContainerPortrait,
+          height: 133,
+        },
+      },
       "768": {
         ...sharedPortraitStyles,
         container: {

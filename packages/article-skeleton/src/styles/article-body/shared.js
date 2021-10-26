@@ -1,7 +1,12 @@
 import styleguide, { tabletWidth } from "@times-components-native/styleguide";
 
-const sharedStyles = ({ narrowContent, narrowArticleBreakpoint }) => {
-  const { colours, fontFactory, spacing } = styleguide();
+const sharedStyles = ({
+  scale,
+  narrowContent,
+  fontScale,
+  narrowArticleBreakpoint,
+}) => {
+  const { colours, fontFactory, spacing } = styleguide({ scale });
 
   const defaultFont = {
     ...fontFactory({
@@ -10,6 +15,8 @@ const sharedStyles = ({ narrowContent, narrowArticleBreakpoint }) => {
     }),
     color: colours.functional.black,
   };
+  defaultFont.fontSize *= fontScale;
+  defaultFont.lineHeight *= fontScale;
 
   return {
     ad: {

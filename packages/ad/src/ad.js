@@ -6,7 +6,6 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 import { getNarrowArticleBreakpoint } from "@times-components-native/styleguide";
 
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
-import adInit from "./utils/ad-init";
 
 import DOMContext from "./dom-context";
 import { defaultProps, propTypes } from "./ad-prop-types";
@@ -150,7 +149,6 @@ export class AdBase extends PureComponent {
           <DOMContext
             baseUrl={baseUrl}
             data={data}
-            init={adInit}
             onRenderComplete={this.setAdReady}
             onRenderError={this.setAdError}
             isInline={isInline}

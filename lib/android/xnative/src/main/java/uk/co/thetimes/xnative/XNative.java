@@ -6,6 +6,7 @@ import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
+import com.reactnativecommunity.art.ARTPackage;
 
 import java.util.List;
 
@@ -16,7 +17,8 @@ public class XNative {
                 new SvgPackage(),
                 new RNCWebViewPackage(),
                 new RNDeviceInfo(),
-                new NetInfoPackage()
+                new NetInfoPackage(),
+                new ARTPackage()
         );
     }
 }

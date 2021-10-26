@@ -45,6 +45,7 @@ const sharedPortraitStyles = {
     paddingBottom: 0,
     paddingRight: spacing(2),
     flex: 1,
+    overflow: "hidden",
   },
 };
 
@@ -102,6 +103,19 @@ const styles = {
         lineHeight: 22,
       },
     },
+    "1133": {
+      ...sharedLandscapeStyles,
+      headline: {
+        ...sharedHeadline,
+        fontSize: 45,
+        lineHeight: 45,
+      },
+      strapline: {
+        ...sharedStrapline,
+        fontSize: 22,
+        lineHeight: 22,
+      },
+    },
     "1194": {
       ...sharedLandscapeStyles,
       headline: {
@@ -135,6 +149,19 @@ const styles = {
     },
   },
   portrait: {
+    "744": {
+      ...sharedPortraitStyles,
+      headline: {
+        ...sharedHeadline,
+        fontSize: 40,
+        lineHeight: 40,
+      },
+      strapline: {
+        ...sharedStrapline,
+        fontSize: 20,
+        lineHeight: 20,
+      },
+    },
     "768": {
       ...sharedPortraitStyles,
       headline: {

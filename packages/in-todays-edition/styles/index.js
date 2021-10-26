@@ -140,6 +140,18 @@ const landscape1080Styles = {
 
 const styles = {
   portrait: {
+    744: {
+      ...sharedPortraitStyles,
+      container: {
+        ...sharedPortraitStyles.container,
+        paddingHorizontal: spacing(4),
+        paddingBottom: spacing(5),
+      },
+      itemsContainer: {
+        ...sharedPortraitStyles.itemsContainer,
+        marginTop: spacing(3),
+      },
+    },
     768: {
       ...sharedPortraitStyles,
     },
@@ -204,6 +216,7 @@ const styles = {
         marginBottom: spacing(1),
       },
     },
+    1133: sharedLandscapeStyles,
     1366: {
       ...landscape1080Styles,
       container: {

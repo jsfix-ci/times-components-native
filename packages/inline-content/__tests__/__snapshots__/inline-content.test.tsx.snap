@@ -92,13 +92,14 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
             style={Object {}}
           >
             <Text
+              allowFontScaling={false}
               selectable={true}
               style={
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "lineHeight": 25.92,
+                  "fontSize": 36,
+                  "lineHeight": 52,
                 }
               }
               testID="paragraph"
@@ -305,13 +306,14 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
             style={Object {}}
           >
             <Text
+              allowFontScaling={false}
               selectable={true}
               style={
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "lineHeight": 25.92,
+                  "fontSize": 36,
+                  "lineHeight": 52,
                 }
               }
               testID="paragraph"
@@ -479,13 +481,14 @@ exports[`InlineContent image renders content and inline image via a render-prop 
         style={Object {}}
       >
         <Text
+          allowFontScaling={false}
           selectable={true}
           style={
             Object {
               "color": "#000000",
               "fontFamily": "TimesDigitalW04",
-              "fontSize": 18,
-              "lineHeight": 25.92,
+              "fontSize": 36,
+              "lineHeight": 52,
             }
           }
           testID="paragraph"
@@ -630,13 +633,14 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
         style={Object {}}
       >
         <Text
+          allowFontScaling={false}
           selectable={true}
           style={
             Object {
               "color": "#000000",
               "fontFamily": "TimesDigitalW04",
-              "fontSize": 18,
-              "lineHeight": 25.92,
+              "fontSize": 36,
+              "lineHeight": 52,
             }
           }
           testID="paragraph"
