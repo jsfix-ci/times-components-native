@@ -190,6 +190,7 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
+            window.theTimesBaseUrl = "${String(baseUrl)}";
             window.postMessage = function(data) {
               var message = typeof data === "string" ? data : JSON.stringify(data);
               window.ReactNativeWebView.postMessage(message);

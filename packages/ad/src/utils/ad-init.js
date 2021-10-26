@@ -189,8 +189,6 @@ const AdInit = ({ el, data, platform, eventCallback, window }) => {
     gpt: {
       url: "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
 
-      // what is data
-
       setSlotTargeting(
         slotConfig,
         { networkId, adUnit, section, slotTargeting } = data,
@@ -232,7 +230,6 @@ const AdInit = ({ el, data, platform, eventCallback, window }) => {
             ).toString();
             slot.setTargeting("timestestgroup", randomTestingGroup);
             slot.setTargeting("pos", slotName);
-            //slot.setTargeting("")
             googletag.display(slotName);
             eventCallback(
               "warn",
@@ -245,15 +242,19 @@ const AdInit = ({ el, data, platform, eventCallback, window }) => {
       },
 
       setPageTargeting(keyValuePairs) {
-        console.log("DONE::keyValuePairs:", keyValuePairs);
-
         googletag.cmd.push(() => {
           try {
             const pubads = googletag.pubads();
             Object.keys(keyValuePairs).forEach((key) => {
               pubads.setTargeting(key, keyValuePairs[key]);
             });
-            pubads.setTargeting("path", "get_page_url_same_as_web");
+            const articleId = keyValuePairs["aid"];
+            if (articleId) {
+              pubads.setTargeting(
+                "path",
+                window.theTimesBaseUrl + "/article/" + articleId,
+              );
+            }
             eventCallback("warn", "[Google] INFO: set page target");
             eventCallback("log", keyValuePairs);
           } catch (err) {
