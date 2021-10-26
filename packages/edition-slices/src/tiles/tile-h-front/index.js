@@ -6,7 +6,7 @@ import { getTileStrapline, TileLink } from "../shared";
 import { getStyle } from "./styles";
 import { useResponsiveContext } from "@times-components-native/responsive";
 
-const TileHFront = ({ onPress, tile, orientation }) => {
+const TileHFront = ({ onPress, tile, orientation, numberOfLines = 6 }) => {
   const { windowWidth, windowHeight } = useResponsiveContext();
   const styles = getStyle(orientation, windowWidth, windowHeight);
 
@@ -28,6 +28,7 @@ const TileHFront = ({ onPress, tile, orientation }) => {
         bylines={article.bylines}
         bylineMarginBottom={styles.bylineMarginBottom}
         tile={tile}
+        numberOfLines={numberOfLines}
       />
     </TileLink>
   );
@@ -36,6 +37,7 @@ const TileHFront = ({ onPress, tile, orientation }) => {
 TileHFront.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
+  numberOfLines: PropTypes.number,
 };
 
 export default TileHFront;

@@ -16,10 +16,9 @@ const FrontLeadTwo = (props) => {
     inTodaysEditionSlice: { items: inTodaysEditionItems = [] },
   } = props;
 
+  console.log("SLICE: ", props.slice);
+
   const screenSize = MediaQuery();
-
-  console.log(screenSize);
-
   const getLayout = () => {
     const layout = {
       direction: "column",
@@ -63,6 +62,7 @@ const FrontLeadTwo = (props) => {
                 tile={lead1}
                 tileName="lead1"
                 orientation={"portrait"}
+                numberOfLines={24}
               />
             </CHundredFifty>
             <CHundredFifty>
@@ -71,12 +71,13 @@ const FrontLeadTwo = (props) => {
                 tile={lead2}
                 tileName="lead2"
                 orientation={"portrait"}
+                numberOfLines={6}
               />
             </CHundredFifty>
           </RowWrapper>
         </View>
         {layout.direction === "row" ? (
-          <View style={{ width: "30%" }}>
+          <View style={{ width: "30%", paddingLeft: 20 }}>
             <InTodaysEdition
               direction="column"
               items={inTodaysEditionItems}

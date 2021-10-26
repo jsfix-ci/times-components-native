@@ -8,7 +8,7 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 import { getTileImage, TileImage, TileLink, withTileTracking } from "../shared";
 import { getStyle } from "./styles";
 
-const TileGFront = ({ onPress, tile, orientation }) => {
+const TileGFront = ({ onPress, tile, orientation, numberOfLines = 6 }) => {
   const { windowWidth, windowHeight } = useResponsiveContext();
 
   const crop = getTileImage(tile, "crop45");
@@ -47,6 +47,7 @@ const TileGFront = ({ onPress, tile, orientation }) => {
         summaryLineHeight={styles.summary.lineHeight}
         containerStyle={styles.summaryContainer}
         hasVideo={article.hasVideo}
+        numberOfLines={numberOfLines}
       />
     </TileLink>
   );
@@ -56,6 +57,7 @@ TileGFront.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   orientation: PropTypes.oneOf(["portrait" | "landscape"]),
+  numberOfLines: PropTypes.number,
 };
 
 export default withTileTracking(TileGFront);

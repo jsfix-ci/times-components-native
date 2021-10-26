@@ -55,6 +55,7 @@ const InTodaysEdition: React.FC<IProps> = ({
           >
             <Item
               key={`${item.id}-${index}`}
+              direction={direction}
               item={item}
               index={index}
               onArticlePress={onArticlePress}

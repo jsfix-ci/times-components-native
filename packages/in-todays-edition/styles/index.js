@@ -268,6 +268,7 @@ export const styles = StyleSheet.create({
   },
   header: {
     fontFamily: fonts.bodyRegular,
+    fontSize: 13,
     letterSpacing: 1,
     color: colours.functional.brandColour,
     fontWeight: "bold",

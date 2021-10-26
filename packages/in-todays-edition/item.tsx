@@ -9,6 +9,7 @@ import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
 
 interface Props {
+  direction: string;
   item: ItemType;
   index: number;
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
@@ -23,14 +24,13 @@ const isArticleLink = (
 };
 
 const Item: React.FC<Props> = ({
+  direction,
   item,
   index,
   onArticlePress,
   onLinkPress,
-  orientation,
 }) => {
   const link = item.mainLink;
-  const isLandscape = orientation === "landscape";
   const ctaText = isArticleLink(link) ? "Read the full story" : "Take me there";
   const onPress = isArticleLink(link)
     ? () =>
@@ -49,11 +49,9 @@ const Item: React.FC<Props> = ({
       >
         <Text style={styles.itemTitle}>{item.title}</Text>
         <Text style={styles.itemStrapline}>{item.strapline}</Text>
-        {isLandscape && (
+        {direction === "column" && (
           <View style={styles.itemCTA}>
-            <Text allowFontScaling={false} style={styles.itemCTAText}>
-              {ctaText}
-            </Text>
+            <Text style={styles.itemCTAText}>{ctaText}</Text>
             <View style={styles.itemCTAIconContainer}>
               <IconForwardArrow
                 fillColour={colours.functional.red}
