@@ -64,6 +64,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -83,6 +84,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -672,6 +674,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -691,6 +694,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -1280,6 +1284,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -1299,6 +1304,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -1888,6 +1894,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -1907,6 +1914,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -2494,6 +2502,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -2513,6 +2522,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -3100,6 +3110,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -3119,6 +3130,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -3706,6 +3718,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -3725,6 +3738,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -4312,6 +4326,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -4331,6 +4346,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={
@@ -4918,6 +4934,7 @@ Array [
           },
         ]
       }
+      colWidth={0}
       containerStyle={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -4937,6 +4954,7 @@ Array [
           "paddingTop": 10,
         }
       }
+      numberOfLines={6}
       straplineMarginBottom={0}
       straplineMarginTop={0}
       summary={

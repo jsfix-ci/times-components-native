@@ -2108,215 +2108,265 @@ exports[`25. puzzle - smalltablet 1`] = `
 `;
 
 exports[`26. front lead two - portrait - smalltablet 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 0,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 688,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileHFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileGFront />
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`27. front lead two - landscape - smalltablet 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 0,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 944,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileHFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileGFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View>
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`28. front lead one and one - portrait - smalltablet 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 0,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 688,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileAFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileBFront />
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`29. front lead one and one - landscape - smalltablet 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 0,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 944,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileAFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileBFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View>
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`30. front lead one - portrait - smalltablet 1`] = `
@@ -4944,275 +4994,265 @@ exports[`62. puzzle - medium 1`] = `
 `;
 
 exports[`63. front lead two - portrait - medium 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "paddingBottom": 20,
-        "paddingTop": 15,
-        "width": 688,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "41.33963178294574%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileHFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "58.515019379844965%",
-          }
-        }
-      >
-        <TileGFront />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "height": 133,
-          "marginTop": 20,
-          "width": "100%",
-        }
-      }
-    >
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`64. front lead two - landscape - medium 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 944,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileHFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileGFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View>
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`65. front lead one and one - portrait - medium 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "marginBottom": 20,
-        "marginHorizontal": 30,
-        "marginTop": 15,
-        "width": 688,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "75.69040697674419%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileAFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginTop": 0,
-            "marginVertical": 10,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "24.164244186046513%",
-          }
-        }
-      >
-        <TileBFront />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "height": 133,
-          "marginTop": 15,
-          "width": "100%",
-        }
-      }
-    >
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`66. front lead one and one - landscape - medium 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "width": 944,
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
       }
-    }
-  >
-    <View>
-      <View>
-        <TileAFront />
-      </View>
+    >
       <View
         style={
           Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
-      />
-      <View>
-        <TileBFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View>
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`67. front lead one - portrait - medium 1`] = `
@@ -7823,330 +7863,265 @@ exports[`99. puzzle - wide 1`] = `
 `;
 
 exports[`100. front lead two - portrait - wide 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 30,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "paddingTop": 15,
-        "paddingVertical": 20,
-        "width": 920,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "41.42210144927536%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileHFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "58.46920289855072%",
-          }
-        }
-      >
-        <TileGFront />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "height": 174,
-          "marginTop": 20,
-          "width": "100%",
-        }
-      }
-    >
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`101. front lead two - landscape - wide 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 30,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "paddingVertical": 10,
-        "width": 944,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "32.90960451977401%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileHFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "42.487641242937855%",
-          }
-        }
-      >
-        <TileGFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "paddingLeft": 10,
-            "width": "24.390889830508474%",
-          }
-        }
-      >
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`102. front lead one and one - portrait - wide 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 30,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "marginBottom": 20,
-        "marginHorizontal": 30,
-        "marginTop": 20,
-        "width": 920,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "75.5163043478261%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileAFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginTop": 0,
-            "marginVertical": 10,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "24.375%",
-          }
-        }
-      >
-        <TileBFront />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "height": 174,
-          "marginTop": 15,
-          "width": "100%",
-        }
-      }
-    >
-      <InTodaysEdition />
-    </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`103. front lead one and one - landscape - wide 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 30,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "marginBottom": 15,
-        "marginTop": 15,
-        "width": 944,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
           "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "width": "49.94703389830508%",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
-        <TileAFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "24.390889830508474%",
-          }
-        }
-      >
-        <TileBFront />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 0,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "marginLeft": 10,
-            "width": "24.390889830508474%",
-          }
-        }
-      >
-        <InTodaysEdition />
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`104. front lead one - portrait - wide 1`] = `
@@ -11010,370 +10985,265 @@ exports[`136. puzzle - huge 1`] = `
 `;
 
 exports[`137. front lead two - portrait - huge 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "width": 1180,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "paddingTop": 15,
-          "paddingVertical": 20,
-          "width": 920,
+          "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "flex": 1,
-            "flexDirection": "row",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "width": "41.42210144927536%",
-            }
-          }
-        >
-          <TileHFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 0,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "58.46920289855072%",
-            }
-          }
-        >
-          <TileGFront />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "height": 174,
-            "marginTop": 20,
+            "flexDirection": "column",
             "width": "100%",
           }
         }
       >
-        <InTodaysEdition />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`138. front lead two - landscape - huge 1`] = `
-<View
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "width": 1180,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "paddingVertical": 20,
-          "width": 1140,
+          "flexDirection": "row",
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "flex": 1,
-            "flexDirection": "row",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "width": "36.068580542264755%",
-            }
-          }
-        >
-          <TileHFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 0,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "46.20414673046252%",
-            }
-          }
-        >
-          <TileGFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 0,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "paddingLeft": 10,
-              "width": "17.5518341307815%",
-            }
-          }
-        >
-          <InTodaysEdition />
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`139. front lead one and one - portrait - huge 1`] = `
-<View
-  style={
-    Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "width": 1180,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "marginBottom": 20,
-          "marginHorizontal": 30,
-          "marginTop": 20,
-          "width": 920,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "flexDirection": "row",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "width": "75.5163043478261%",
-            }
-          }
-        >
-          <TileAFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginTop": 0,
-              "marginVertical": 10,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "24.375%",
-            }
-          }
-        >
-          <TileBFront />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "height": 174,
-            "marginTop": 15,
+            "flexDirection": "column",
             "width": "100%",
           }
         }
       >
-        <InTodaysEdition />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <TileGFront />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
 `;
 
-exports[`140. front lead one and one - landscape - huge 1`] = `
-<View
+exports[`139. front lead one and one - portrait - huge 1`] = `
+<RCTScrollView
   style={
     Object {
-      "alignSelf": "center",
-      "flexGrow": 1,
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "flex": 1,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "flex": 1,
-        "width": 1180,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "alignSelf": "center",
-          "flex": 1,
           "flexDirection": "row",
-          "justifyContent": "center",
-          "marginBottom": 20,
-          "marginTop": 20,
-          "width": 1140,
+          "flexWrap": "wrap",
         }
       }
     >
       <View
         style={
           Object {
-            "flex": 1,
-            "flexDirection": "row",
+            "flexDirection": "column",
+            "width": "100%",
           }
         }
       >
         <View
           style={
             Object {
-              "width": "63.843700159489636%",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
             }
           }
         >
-          <TileAFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 0,
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
             }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "17.5518341307815%",
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
             }
-          }
-        >
-          <TileBFront />
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#DBDBDB",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 0,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "marginLeft": 10,
-              "width": "17.5518341307815%",
-            }
-          }
-        >
-          <InTodaysEdition />
+          >
+            <TileBFront />
+          </View>
         </View>
       </View>
     </View>
+    <InTodaysEdition />
   </View>
-</View>
+</RCTScrollView>
+`;
+
+exports[`140. front lead one and one - landscape - huge 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "borderColor": "green",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <TileHFront />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <TileBFront />
+          </View>
+        </View>
+      </View>
+    </View>
+    <InTodaysEdition />
+  </View>
+</RCTScrollView>
 `;
 
 exports[`141. front lead one - portrait - huge 1`] = `

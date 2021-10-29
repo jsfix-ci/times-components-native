@@ -30,6 +30,7 @@ interface Props {
   summaryLineHeight: number;
   hasVideo?: boolean;
   numberOfLines?: number;
+  colWidth?: number;
 }
 
 const renderContent = (
@@ -102,9 +103,15 @@ const renderByline = (props: Props) => {
 };
 
 const FrontTileSummary: React.FC<Props> = (props) => {
-  const { summaryLineHeight, hasVideo = false, numberOfLines = 6 } = props;
+  const {
+    summaryLineHeight,
+    hasVideo = false,
+    numberOfLines = 6,
+    colWidth = 300,
+  } = props;
 
-  const width = 1000;
+  console.log("C width: ", colWidth);
+
   return (
     <View>
       {renderHeadline(props)}
@@ -112,12 +119,12 @@ const FrontTileSummary: React.FC<Props> = (props) => {
       {renderByline(props)}
       {renderContent(props, {
         numberOfLines: numberOfLines,
-        contentHeight: 4 * summaryLineHeight,
-        contentWidth: width,
+        contentHeight: numberOfLines * summaryLineHeight,
+        contentWidth: colWidth,
       })}
       {hasVideo && (
-        <View style={{ position: "absolute", top: -getIconSize(width) }}>
-          <PlayIcon size={getIconSize(width)} />
+        <View style={{ position: "absolute", top: getIconSize(colWidth) }}>
+          <PlayIcon size={getIconSize(colWidth)} />
         </View>
       )}
     </View>

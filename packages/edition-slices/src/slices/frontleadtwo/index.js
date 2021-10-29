@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ScrollView, View } from "react-native";
 import {
   TileGFront,
@@ -9,15 +9,14 @@ import { CHundredFifty, RowWrapper } from "@times-components-native/layouts";
 import { MediaQuery } from "@times-components-native/hooks";
 
 const FrontLeadTwo = (props) => {
+  const [leftColWidth, setLeftColWidth] = useState(0);
+  const [rightColWidth, setRightColWidth] = useState(0);
   const {
     onPress,
     onLinkPress,
     slice: { lead1, lead2 },
     inTodaysEditionSlice: { items: inTodaysEditionItems = [] },
   } = props;
-
-  console.log("SLICE: ", props.slice);
-
   const screenSize = MediaQuery();
   const getLayout = () => {
     const layout = {
@@ -57,22 +56,36 @@ const FrontLeadTwo = (props) => {
         >
           <RowWrapper>
             <CHundredFifty>
-              <TileHFront
-                onPress={onPress}
-                tile={lead1}
-                tileName="lead1"
-                orientation={"portrait"}
-                numberOfLines={24}
-              />
+              <View
+                onLayout={(event) => {
+                  setLeftColWidth(event.nativeEvent.layout.width);
+                }}
+              >
+                <TileHFront
+                  onPress={onPress}
+                  tile={lead1}
+                  tileName="lead1"
+                  orientation={"portrait"}
+                  numberOfLines={24}
+                  colWidth={leftColWidth}
+                />
+              </View>
             </CHundredFifty>
             <CHundredFifty>
-              <TileGFront
-                onPress={onPress}
-                tile={lead2}
-                tileName="lead2"
-                orientation={"portrait"}
-                numberOfLines={6}
-              />
+              <View
+                onLayout={(event) =>
+                  setRightColWidth(event.nativeEvent.layout.width)
+                }
+              >
+                <TileGFront
+                  onPress={onPress}
+                  tile={lead2}
+                  tileName="lead2"
+                  orientation={"portrait"}
+                  numberOfLines={6}
+                  colWidth={rightColWidth}
+                />
+              </View>
             </CHundredFifty>
           </RowWrapper>
         </View>

@@ -54,6 +54,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -62,6 +63,7 @@ Array [
           "lineHeight": 42,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -649,6 +651,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -657,6 +660,7 @@ Array [
           "lineHeight": 45,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -1244,6 +1248,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -1252,6 +1257,7 @@ Array [
           "lineHeight": 48,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -1839,6 +1845,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={15}
       headlineStyle={
         Object {
@@ -1847,6 +1854,7 @@ Array [
           "lineHeight": 55,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -2435,6 +2443,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -2443,6 +2452,7 @@ Array [
           "lineHeight": 40,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -3031,6 +3041,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -3039,6 +3050,7 @@ Array [
           "lineHeight": 42,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -3627,6 +3639,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -3636,6 +3649,7 @@ Array [
           "marginBottom": 10,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -4224,6 +4238,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -4233,6 +4248,7 @@ Array [
           "marginBottom": 10,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -4821,6 +4837,7 @@ Array [
           },
         ]
       }
+      colWidth={300}
       headlineMarginBottom={20}
       headlineStyle={
         Object {
@@ -4829,6 +4846,7 @@ Array [
           "lineHeight": 53,
         }
       }
+      numberOfLines={6}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
