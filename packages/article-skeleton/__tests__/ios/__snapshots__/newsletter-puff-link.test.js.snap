@@ -2,6 +2,11 @@
 
 exports[`NewsletterPuffLink renders the link with the text \`Manage preferences here\` 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
   collapsable={false}
   focusable={true}

@@ -51,7 +51,6 @@ exports[`tile am without breakpoint 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 35,
-              "fontWeight": "900",
               "includeFontPadding": false,
               "lineHeight": 35,
               "marginBottom": 10,

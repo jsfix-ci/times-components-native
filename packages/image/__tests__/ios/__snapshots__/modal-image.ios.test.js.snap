@@ -19,6 +19,11 @@ exports[`1. modal image 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
           collapsable={false}
           focusable={true}
           nativeID="animatedComponent"
@@ -144,6 +149,11 @@ exports[`1. modal image 1`] = `
     </View>
   </Modal>
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     collapsable={false}
     focusable={true}
     nativeID="animatedComponent"
@@ -184,6 +194,11 @@ exports[`2. modal image with no caption 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
           collapsable={false}
           focusable={true}
           nativeID="animatedComponent"
@@ -294,6 +309,11 @@ exports[`2. modal image with no caption 1`] = `
     </View>
   </Modal>
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     collapsable={false}
     focusable={true}
     nativeID="animatedComponent"
@@ -334,6 +354,11 @@ exports[`3. modal image with custom highressize 1`] = `
         emulateUnlessSupported={true}
       >
         <View
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
           collapsable={false}
           focusable={true}
           nativeID="animatedComponent"
@@ -459,6 +484,11 @@ exports[`3. modal image with custom highressize 1`] = `
     </View>
   </Modal>
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     collapsable={false}
     focusable={true}
     nativeID="animatedComponent"
