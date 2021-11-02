@@ -257,7 +257,7 @@ const sharedStyles = {
 export const styles = StyleSheet.create({
   container: {
     paddingVertical: spacing(3),
-    paddingHorizontal: 10,
+    paddingHorizontal: spacing(4),
     backgroundColor: colours.functional.buff,
   },
   headerContainer: {
@@ -284,6 +284,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: fonts.headline,
     color: colours.functional.brandColour,
+    marginBottom: spacing(1),
   },
   itemStrapline: {
     fontSize: 13,
