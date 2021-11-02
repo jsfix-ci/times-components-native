@@ -294,6 +294,7 @@ export const styles = StyleSheet.create({
   },
   itemCTA: {
     flexDirection: "row",
+    marginTop: 10,
   },
   itemCTAText: {
     fontSize: 13,
