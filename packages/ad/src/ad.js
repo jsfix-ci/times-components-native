@@ -92,15 +92,11 @@ export class AdBase extends PureComponent {
   }
 
   setAdReady = () => {
-    this.setState({
-      isAdReady: true,
-    });
+    this.setState({ isAdReady: true });
   };
 
   setAdError = () => {
-    this.setState({
-      hasError: true,
-    });
+    this.setState({ hasError: true });
   };
 
   render() {
@@ -124,7 +120,7 @@ export class AdBase extends PureComponent {
 
     const sizeProps =
       !isAdReady || hasError
-        ? { width: 0 }
+        ? { width: 0, height: 0 }
         : {
             width:
               width ||
