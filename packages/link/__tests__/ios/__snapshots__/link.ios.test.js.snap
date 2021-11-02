@@ -2,6 +2,11 @@
 
 exports[`1. renders link 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   collapsable={false}
   focusable={true}
   nativeID="animatedComponent"
@@ -18,6 +23,11 @@ exports[`1. renders link 1`] = `
 
 exports[`2. renders link with target 1`] = `
 <View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   collapsable={false}
   focusable={true}
   nativeID="animatedComponent"

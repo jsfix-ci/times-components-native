@@ -2,7 +2,8 @@
 /* eslint-disable no-param-reassign */
 // NOTE: this function must be self-contained, i.e. contain no references to variables
 // defined outside the function, so that it can be passed into a WebView.
-export default ({ el, data, platform, eventCallback, window }) => {
+function AdInit({ el, data, platform, eventCallback, window }) {
+  "show source";
   const nativeAdRegex = /^native-(inline|section|(single|double)-mpu)/;
 
   window.googletag = window.googletag || {};
@@ -12,13 +13,13 @@ export default ({ el, data, platform, eventCallback, window }) => {
   window.apstag = window.apstag || {
     _Q: [],
     addToQueue(action, d) {
-      this._Q.push([action, d]); // eslint-disable-line no-underscore-dangle
+      this._Q.push([action, d]);
     },
     fetchBids() {
-      this.addToQueue("f", arguments); // eslint-disable-line prefer-rest-params
+      this.addToQueue("f", arguments);
     },
     init() {
-      this.addToQueue("i", arguments); // eslint-disable-line prefer-rest-params
+      this.addToQueue("i", arguments);
     },
     setDisplayBids() {
       return null;
@@ -186,7 +187,9 @@ export default ({ el, data, platform, eventCallback, window }) => {
     },
 
     gpt: {
-      url: "https://www.googletagservices.com/tag/js/gpt.js",
+      url: "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+
+      // what is data
 
       setSlotTargeting(
         slotConfig,
@@ -247,6 +250,11 @@ export default ({ el, data, platform, eventCallback, window }) => {
             Object.keys(keyValuePairs).forEach((key) => {
               pubads.setTargeting(key, keyValuePairs[key]);
             });
+            if (keyValuePairs["aid"])
+              pubads.setTargeting(
+                "path",
+                window.theTimesBaseUrl + "article/" + keyValuePairs["aid"],
+              );
             eventCallback("warn", "[Google] INFO: set page target");
             eventCallback("log", keyValuePairs);
           } catch (err) {
@@ -483,4 +491,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       },
     },
   };
-};
+}
+
+export const AdInitAsString = AdInit.toString();
+export default AdInit;

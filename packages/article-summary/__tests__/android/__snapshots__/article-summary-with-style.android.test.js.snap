@@ -25,7 +25,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
         "color": "#333333",
         "fontFamily": "TimesModern-Bold",
         "fontSize": 22,
-        "fontWeight": "900",
         "includeFontPadding": false,
         "lineHeight": 27,
         "marginBottom": 10,

@@ -5,7 +5,6 @@ const sharedStyles = {
   headline: {
     color: colours.functional.primary,
     fontFamily: fonts.headline,
-    fontWeight: "900",
     marginBottom: spacing(2),
   },
   headlineWrapper: {

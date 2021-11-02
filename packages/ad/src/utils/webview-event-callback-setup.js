@@ -4,6 +4,7 @@
 /* eslint-env browser */
 
 const webviewEventCallbackSetup = (options) => {
+  "show source";
   const { window } = options;
   window.eventCallback = (type, detail) => {
     window.postMessage(
@@ -29,4 +30,5 @@ const webviewEventCallbackSetup = (options) => {
   };
 };
 
+export const webviewEventCallbackSetupAsString = webviewEventCallbackSetup.toString();
 export default webviewEventCallbackSetup;
