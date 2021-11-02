@@ -4,6 +4,11 @@ exports[`1. group of topics 1`] = `
 <View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       collapsable={false}
       focusable={true}
       nativeID="animatedComponent"
@@ -22,6 +27,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       collapsable={false}
       focusable={true}
       nativeID="animatedComponent"
@@ -40,6 +50,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       collapsable={false}
       focusable={true}
       nativeID="animatedComponent"
@@ -58,6 +73,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       collapsable={false}
       focusable={true}
       nativeID="animatedComponent"
@@ -76,6 +96,11 @@ exports[`1. group of topics 1`] = `
   </View>
   <View>
     <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       collapsable={false}
       focusable={true}
       nativeID="animatedComponent"
@@ -137,6 +162,11 @@ Array [
 exports[`4. article topic 1`] = `
 <View>
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     collapsable={false}
     focusable={true}
     nativeID="animatedComponent"

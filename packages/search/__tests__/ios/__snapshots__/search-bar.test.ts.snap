@@ -64,6 +64,11 @@ exports[`Search Bar CancelButton 1`] = `
   }
 >
   <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
     collapsable={false}
     focusable={true}

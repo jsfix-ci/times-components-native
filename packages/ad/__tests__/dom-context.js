@@ -1,6 +1,13 @@
+import React from "react";
 /* eslint-disable no-console */
 import { Linking } from "react-native";
-import DOMContextNative from "../src/dom-context";
+import DOMContextNative, {
+  hasDifferentOrigin,
+  openURLInBrowser,
+  urlHasBridgePrefix,
+  isUrlChildOfBaseUrl,
+} from "../src/dom-context";
+import TestRenderer from "react-test-renderer";
 
 // prevent function sources appearing in snapshots
 jest.mock(
@@ -8,9 +15,7 @@ jest.mock(
   () => "mockErrorHandler",
 );
 jest.mock("../src/utils/ad-init", () => null);
-jest.mock("react-native-webview", () => ({
-  WebView: "WebView",
-}));
+jest.mock("react-native-webview", () => ({ WebView: "WebView" }));
 
 export default () => {
   afterEach(() => {
@@ -98,10 +103,8 @@ export default () => {
     jest.spyOn(console, "debug").mockImplementation();
     jest.spyOn(console, "info").mockImplementation();
 
-    const props = DOMContextNative.defaultProps;
-    props.data.debug = true;
-    const component = new DOMContextNative({
-      ...props,
+    const component = DOMContextNative({
+      data: { debug: true },
     });
 
     expect(console.log).not.toHaveBeenCalled();
@@ -152,15 +155,12 @@ export default () => {
   });
 
   it("hasDifferentOrigin does not allow null origins", () => {
-    const result = DOMContextNative.hasDifferentOrigin(
-      null,
-      "https://mock-url.com/",
-    );
+    const result = hasDifferentOrigin(null, "https://mock-url.com/");
     expect(result).toEqual(null);
   });
 
   it("hasDifferentOrigin does not allow equal origins", () => {
-    const result = DOMContextNative.hasDifferentOrigin(
+    const result = hasDifferentOrigin(
       "https://mock-url.com/",
       "https://mock-url.com/",
     );
@@ -168,7 +168,7 @@ export default () => {
   });
 
   it("hasDifferentOrigin verifies if origin is the same", () => {
-    const result = DOMContextNative.hasDifferentOrigin(
+    const result = hasDifferentOrigin(
       "http://originB.com",
       "https://mock-url.com/",
     );
@@ -176,10 +176,7 @@ export default () => {
   });
 
   it("hasDifferentOrigin returns false if incorrect URL was provided", () => {
-    const result = DOMContextNative.hasDifferentOrigin(
-      "about:blank",
-      "https://mock-url.com/",
-    );
+    const result = hasDifferentOrigin("about:blank", "https://mock-url.com/");
     expect(result).toEqual(false);
   });
 
@@ -199,11 +196,9 @@ export default () => {
   };
 
   it("openURLInBrowser should try to open a link", (done) => {
-    setUpNavigationTest(() => Promise.resolve(true));
-
     const navigateTo = "http://originB.com";
 
-    DOMContextNative.openURLInBrowser(navigateTo)
+    openURLInBrowser(navigateTo)
       .then(() => {
         expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
         expect(Linking.openURL).toHaveBeenCalledWith(navigateTo);
@@ -213,12 +208,11 @@ export default () => {
   });
 
   it("handleNavigationStateChange should log an error if the url can't be opened", (done) => {
-    setUpNavigationTest(() => Promise.resolve(false));
     jest.spyOn(console, "error").mockImplementation();
 
     const navigateTo = "http://originB.com";
 
-    DOMContextNative.openURLInBrowser(navigateTo)
+    openURLInBrowser(navigateTo)
       .then(() => {
         expect(Linking.canOpenURL).toHaveBeenCalledWith(navigateTo);
         // eslint-disable-next-line no-console
@@ -240,20 +234,34 @@ export default () => {
     done();
   });
 
-  it("handleOriginChange should prevent webview from loading when it opens a link", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
-    jest.spyOn(DOMContextNative, "openURLInBrowser");
-    domContext.handleNavigationStateChange({ url: "http://originB.com" });
-    expect(domContext.webView.stopLoading).toHaveBeenCalled();
-    expect(DOMContextNative.openURLInBrowser).toHaveBeenCalled();
+  it("urlHasBridgePrefix should return true of url has react native prefix", () => {
+    const result = urlHasBridgePrefix("react-js-navigation://foo");
+    expect(result).toEqual(true);
+  });
+
+  it("urlHasBridgePrefix should return false if url does not have the react native prefix", () => {
+    const result = urlHasBridgePrefix("react://foo");
+    expect(result).toEqual(false);
+  });
+
+  it("isUrlChildOfBaseUrl should return true if url is child of baseUrl", () => {
+    const result = isUrlChildOfBaseUrl("http://foo.com/this", "http://foo.com");
+    expect(result).toEqual(true);
+  });
+
+  it.only("isUrlChildOfBaseUrl should return false if url is not child of baseUrl", () => {
+    const result = isUrlChildOfBaseUrl("http://foo.com/this", "http://bar.com");
+    expect(result).toEqual(false);
   });
 
   it("handleOriginChange should not open a link when the URL scheme is the magic prefix used by React Native postMessage", () => {
-    const domContext = setUpNavigationTest(() => Promise.resolve(true));
-    jest.spyOn(DOMContextNative, "openURLInBrowser");
-    domContext.handleNavigationStateChange({
+    const openURLInBrowser = jest.fn();
+    const testRenderer = TestRenderer.create(<DOMContextNative />);
+    const testInstance = testRenderer.root;
+    const WebView = testInstance.findByType("WebView");
+    WebView.props.onNavigationStateChange({
       url: "react-js-navigation://foo",
     });
-    expect(DOMContextNative.openURLInBrowser).not.toHaveBeenCalled();
+    expect(openURLInBrowser).not.toHaveBeenCalled();
   });
 };
