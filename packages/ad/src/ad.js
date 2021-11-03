@@ -143,17 +143,14 @@ export class AdBase extends PureComponent {
           </View>
         ) : null}
         {!isLoading && (
-          <>
-            <Text>{`isLoajding: ${isLoading};isAdReady:${isAdReady}`}</Text>
-            <DOMContext
-              baseUrl={baseUrl}
-              data={data}
-              onRenderComplete={this.setAdReady}
-              onRenderError={this.setAdError}
-              isInline={isInline}
-              {...sizeProps}
-            />
-          </>
+          <DOMContext
+            baseUrl={baseUrl}
+            data={data}
+            onRenderComplete={this.setAdReady}
+            onRenderError={this.setAdError}
+            isInline={isInline}
+            {...sizeProps}
+          />
         )}
       </View>
     );
