@@ -1,3 +1,4 @@
+import SponsoredAd from "./src/SponsoredAd";
 export { default, AdContainer } from "./src/ad";
 
-export { SponsoredAd } from "./src/sponsored-ad";
+export { SponsoredAd };

@@ -52,7 +52,7 @@ export default {
       type: "story",
     },
     {
-      component: () => <SponsoredAd />,
+      component: () => <SponsoredAd numberOfAds={4} />,
       name: "Sponsored Ad",
       type: "story",
     },

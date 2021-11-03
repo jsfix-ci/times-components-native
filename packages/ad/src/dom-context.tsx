@@ -28,13 +28,13 @@ const deviceInfo = {
 };
 
 interface DomContextType {
-  maxHeight?: number;
   baseUrl?: string;
   onRenderComplete?: () => null;
   onRenderError?: () => null;
   data?: any;
   isInline?: boolean;
   width?: number;
+  height?: number;
 }
 
 const ViewportAwareView = Viewport.Aware(View);
@@ -55,7 +55,7 @@ export const openURLInBrowser = (url: string = "") =>
   });
 
 const DOMContext = ({
-  maxHeight = 0,
+  height: heightProp = 0,
   baseUrl = "",
   onRenderComplete = () => null,
   onRenderError = () => null,
@@ -68,7 +68,7 @@ const DOMContext = ({
 
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(
-    maxHeight + Number(styles.containerAdditionalHeight.height),
+    heightProp + Number(styles.containerAdditionalHeight.height),
   );
 
   const handleNavigationStateChange = useCallback(
@@ -86,42 +86,47 @@ const DOMContext = ({
     [baseUrl, webViewRef],
   );
 
-  const handleMessageEvent = (e: WebViewMessageEvent) => {
-    const json = e.nativeEvent.data;
+  const handleMessageEvent = useCallback(
+    (e: WebViewMessageEvent) => {
+      const json = e.nativeEvent.data;
 
-    if (
-      json.indexOf("isTngMessage") === -1 &&
-      json.indexOf("unrulyLoaded") === -1
-    ) {
-      // don't try and process postMessage events from 3rd party scripts
-      return;
-    }
-    const { type, detail } = JSON.parse(json);
-    switch (type) {
-      case "renderFailed":
-        onRenderError();
-        break;
-      case "unrulyLoaded": {
-        if (loaded && isVisible.current) {
-          inViewport();
+      if (
+        json.indexOf("isTngMessage") === -1 &&
+        json.indexOf("unrulyLoaded") === -1
+      ) {
+        // don't try and process postMessage events from 3rd party scripts
+        return;
+      }
+      const { type, detail } = JSON.parse(json);
+      switch (type) {
+        case "renderFailed":
+          onRenderError();
+          break;
+        case "unrulyLoaded": {
+          if (loaded && isVisible.current) {
+            inViewport();
+          }
+          break;
         }
-        break;
-      }
-      case "renderComplete":
-        onRenderComplete();
-        break;
-      case "setAdWebViewHeight": {
-        const adHeight = detail.height;
-        const webViewHeight =
-          adHeight > 1 ? adHeight + styles.containerAdditionalHeight.height : 0;
+        case "renderComplete":
+          onRenderComplete();
+          break;
+        case "setAdWebViewHeight": {
+          const adHeight = detail.height;
+          const webViewHeight =
+            adHeight > 1
+              ? adHeight + styles.containerAdditionalHeight.height
+              : 0;
 
-        setHeight(isInline ? adHeight : webViewHeight);
-        break;
+          setHeight(isInline ? adHeight : webViewHeight);
+          break;
+        }
+        default:
+          if (data.debug) logger(type, detail);
       }
-      default:
-        if (data.debug) logger(type, detail);
-    }
-  };
+    },
+    [onRenderError, onRenderComplete, webViewRef],
+  );
 
   const outViewport = useCallback(() => {
     isVisible.current = false;
@@ -142,7 +147,7 @@ const DOMContext = ({
     setLoaded(true);
   }, []);
 
-  const inViewport = () => {
+  const inViewport = useCallback(() => {
     isVisible.current = true;
 
     if (webViewRef.current) {
@@ -155,7 +160,7 @@ const DOMContext = ({
           };
         `);
     }
-  };
+  }, [webViewRef]);
 
   // NOTE: if this generated code is not working, and you don't know why
   // because React Native doesn't report errors in webview JS code, try

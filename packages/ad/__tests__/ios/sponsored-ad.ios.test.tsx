@@ -1,4 +1,4 @@
-import { SponsoredAd } from "@times-components-native/ad/src/sponsored-ad";
+import { SponsoredAd } from "@times-components-native/ad";
 import TestRenderer from "react-test-renderer";
 import React from "react";
 import WebView from "react-native-webview";
@@ -16,7 +16,7 @@ describe("SponsoredAd", () => {
   });
 
   it("opens external browser when link is clicked", () => {
-    const ad = TestRenderer.create(<SponsoredAd />);
+    const ad = TestRenderer.create(<SponsoredAd numberOfAds={4} />);
     const webView = ad.root.findByType(WebView);
 
     TestRenderer.act(() => {
@@ -32,7 +32,7 @@ describe("SponsoredAd", () => {
   });
 
   it("handles network requests inside webview if not initiated with a click", () => {
-    const ad = TestRenderer.create(<SponsoredAd />);
+    const ad = TestRenderer.create(<SponsoredAd numberOfAds={4} />);
     const webView = ad.root.findByType(WebView);
 
     TestRenderer.act(() => {

@@ -6,7 +6,7 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 import { getNarrowArticleBreakpoint } from "@times-components-native/styleguide";
 
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
-import AdContainer from "./ad-container";
+
 import DOMContext from "./dom-context";
 import { defaultProps, propTypes } from "./ad-prop-types";
 import styles from "./styles";
@@ -122,6 +122,7 @@ export class AdBase extends PureComponent {
       !isAdReady || hasError
         ? { width: 0, height: 0 }
         : {
+            height: config.maxSizes.height,
             width:
               width ||
               (narrowContent
@@ -136,19 +137,18 @@ export class AdBase extends PureComponent {
         style={[styles.container, style, isInline && styles.inlineAd]}
         testID="article-advertisement"
       >
-        {isInline ? (
+        {isInline && (
           <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
             <Text style={styles.inlineAdTitleText}>Advertisement</Text>
           </View>
-        ) : null}
-        {isLoading ? null : (
+        )}
+        {!isLoading && (
           <DOMContext
             baseUrl={baseUrl}
             data={data}
             onRenderComplete={this.setAdReady}
             onRenderError={this.setAdError}
             isInline={isInline}
-            maxHeight={config.maxSizes.height}
             {...sizeProps}
           />
         )}
@@ -167,5 +167,4 @@ const Ad = (props) => {
 Ad.propTypes = propTypes;
 Ad.defaultProps = defaultProps;
 
-export { AdContainer };
 export default Ad;
