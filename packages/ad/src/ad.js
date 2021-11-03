@@ -122,6 +122,7 @@ export class AdBase extends PureComponent {
       !isAdReady || hasError
         ? { width: 0, height: 0 }
         : {
+            height: config.maxSizes.height,
             width:
               width ||
               (narrowContent
@@ -141,16 +142,18 @@ export class AdBase extends PureComponent {
             <Text style={styles.inlineAdTitleText}>Advertisement</Text>
           </View>
         ) : null}
-        {isLoading ? null : (
-          <DOMContext
-            baseUrl={baseUrl}
-            data={data}
-            onRenderComplete={this.setAdReady}
-            onRenderError={this.setAdError}
-            isInline={isInline}
-            maxHeight={config.maxSizes.height}
-            {...sizeProps}
-          />
+        {!isLoading && (
+          <>
+            <Text>{`isLoajding: ${isLoading};isAdReady:${isAdReady}`}</Text>
+            <DOMContext
+              baseUrl={baseUrl}
+              data={data}
+              onRenderComplete={this.setAdReady}
+              onRenderError={this.setAdError}
+              isInline={isInline}
+              {...sizeProps}
+            />
+          </>
         )}
       </View>
     );

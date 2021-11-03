@@ -1,12 +1,22 @@
 import React, { useRef, useState } from "react";
 import WebView, { WebViewMessageEvent } from "react-native-webview";
 import { Linking, Platform, View } from "react-native";
+import { isTablet } from "react-native-device-info";
 import { WebViewNavigation } from "react-native-webview/lib/WebViewTypes";
 import cheerio from "cheerio";
 
-import styles, { getAdHeightForNAds } from "./styles";
+import styles, { getAdHeightForNAds, TABLET_AD_HEIGHT } from "./styles";
 
-const webviewHeightCallbackSetup = ({ window, MutationObserver }: any) => {
+interface WebviewHeightCallbackSetupProps {
+  window: any;
+  MutationObserver: any;
+}
+
+const webviewHeightCallbackSetup = ({
+  window,
+  MutationObserver,
+}: WebviewHeightCallbackSetupProps) => {
+  "show source";
   const document = window.document;
   window.eventCallback = (type: any, content: any) => {
     window.ReactNativeWebView.postMessage(
@@ -62,11 +72,7 @@ const webviewHeightCallbackSetup = ({ window, MutationObserver }: any) => {
       });
     } catch (e) {
       window.ReactNativeWebView.postMessage(
-        JSON.stringify({
-          e,
-          width: 0,
-          height: 0,
-        }),
+        JSON.stringify({ e, width: 0, height: 0 }),
       );
     }
   });
@@ -82,39 +88,36 @@ const handleRequest = (e: WebViewNavigation) => {
   return false;
 };
 
-interface Props {
+const scriptToInject = `window.postMessage = function(data) {
+  window.ReactNativeWebView.postMessage(data);
+};(${webviewHeightCallbackSetup.toString()})({window,MutationObserver});`;
+
+const numberToContextID: Record<number, string> = {
+  1: "251",
+  2: "250",
+  3: "244",
+  4: "243",
+};
+
+interface SponsoredAdProps {
   numberOfAds?: number;
 }
 
-const SponsoredAd: React.FC<Props> = ({ numberOfAds = 4 }) => {
-  const numberToContextID: Record<number, string> = {
-    1: "251",
-    2: "250",
-    3: "244",
-    4: "243",
-  };
-
-  const scriptToInject = `window.postMessage = function(data) {
-    window.ReactNativeWebView.postMessage(data);
-  };(${webviewHeightCallbackSetup})({window,MutationObserver});`;
-  const [height, setHeight] = useState(100);
+const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds = 4 }) => {
+  const [height, setHeight] = useState<number>(0);
   const webview = useRef<WebView>(null);
 
   const handleOnMessage = (event: WebViewMessageEvent) => {
-    if (event.nativeEvent.data) {
+    if (event.nativeEvent.data && !isTablet()) {
       const eventData = JSON.parse(event.nativeEvent.data);
-      if (eventData.adHtml) {
+      if (eventData && eventData.adHtml) {
         const $ = cheerio.load(eventData.adHtml);
-        const numberOfAds = $("div[id^='dianomi_ad_']").length;
-        setHeight(getAdHeightForNAds(numberOfAds));
-        return;
+        const numberOfAdsInHtml = $("div[id^='dianomi_ad_']").length;
+        setHeight(getAdHeightForNAds(numberOfAdsInHtml));
       }
+    } else {
+      setHeight(TABLET_AD_HEIGHT);
     }
-    if (typeof event?.nativeEvent?.data !== "string") return;
-    const outerHeight =
-      parseInt(JSON.parse(event.nativeEvent.data || "{}")?.outerHeight) || 0;
-
-    setHeight(outerHeight);
   };
 
   const contextId = numberToContextID[numberOfAds] || numberToContextID[4];

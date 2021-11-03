@@ -2,18 +2,13 @@ import styleguide from "@times-components-native/styleguide";
 import { StyleSheet, Dimensions } from "react-native";
 
 const { colours, fontFactory, spacing, fonts } = styleguide();
-
 const { width } = Dimensions.get("screen");
-const isNarrowScreenDevice = width < 600;
 
-const NUMBER_OF_ADS = 1;
-const AD_TITLE_HEIGHT = 25;
-const AD_WIDTH_HEIGHT_RATIO = 414 / 290;
+const AD_WIDTH_HEIGHT_RATIO = 414 / 340;
+export const TABLET_AD_HEIGHT = 350;
 
 export const getAdHeightForNAds = (numberOfAds, adWidth = width) =>
   numberOfAds * (adWidth / AD_WIDTH_HEIGHT_RATIO);
-
-console.log(getAdHeightForNAds(NUMBER_OF_ADS, width));
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
@@ -112,9 +107,6 @@ const styles = {
   },
   sponsoredAd: {
     flex: 0,
-    height: isNarrowScreenDevice
-      ? AD_TITLE_HEIGHT + getAdHeightForNAds(NUMBER_OF_ADS, width) + 50
-      : 350,
   },
   inlineAd: {
     marginTop: 0,
