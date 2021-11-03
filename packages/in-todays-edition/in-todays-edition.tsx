@@ -42,6 +42,7 @@ const InTodaysEdition: React.FC<IProps> = ({
   onLinkPress,
 }) => {
   if (!items.length) return null;
+
   return (
     <View style={[styles.container]}>
       <View style={styles.headerContainer}>
@@ -52,6 +53,7 @@ const InTodaysEdition: React.FC<IProps> = ({
           <CHundredFiftyTwentyFive
             key={`${item.id}-${index}`}
             responsive={direction !== "column"}
+            style={{ marginBottom: 10 }}
           >
             <Item
               key={`${item.id}-${index}`}

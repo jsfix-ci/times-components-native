@@ -7,9 +7,11 @@ import { colours } from "@times-components-native/styleguide";
 import { styles } from "./styles";
 import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
+import { MediaQuery } from "@times-components-native/hooks";
 
+type TDirection = "row" | "column";
 interface Props {
-  direction: string;
+  direction: TDirection;
   item: ItemType;
   index: number;
   onArticlePress: <T = unknown, R = unknown>(args?: T) => R;
@@ -40,8 +42,44 @@ const Item: React.FC<Props> = ({
         })
     : () => onLinkPress({ url: (item.mainLink as LinkType).url });
 
+  const screenSize = MediaQuery();
+
+  const getDividerStyle = (index: number) => {
+    switch (screenSize) {
+      case "EXTRA SMALL":
+        if (index !== 3) {
+          return {
+            borderBottomWidth: 1,
+            marginVertical: 10,
+          };
+        }
+        return {};
+      case "SMALL":
+        if (index % 2) {
+          return {
+            borderLeftWidth: 0,
+          };
+        }
+        return {
+          paddingLeft: 15,
+        };
+      default:
+        if (index !== 3) {
+          return {
+            borderBottomWidth: direction === "row" ? 0 : 1,
+            marginBottom: direction === "row" ? 0 : 10,
+          };
+        }
+        return {};
+    }
+  };
+
   return (
-    <>
+    <View
+      style={{
+        flexDirection: screenSize === "EXTRA SMALL" ? "column" : direction,
+      }}
+    >
       <Link
         linkStyle={[styles.item, index === 3 && styles.itemLast]}
         key={item.id}
@@ -61,8 +99,8 @@ const Item: React.FC<Props> = ({
           </View>
         )}
       </Link>
-      {index !== 3 && <View style={styles.divider}></View>}
-    </>
+      <View style={[styles.divider, getDividerStyle(index)]} />
+    </View>
   );
 };
 
