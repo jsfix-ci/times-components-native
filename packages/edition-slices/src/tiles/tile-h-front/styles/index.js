@@ -1,20 +1,10 @@
+import { StyleSheet } from "react-native";
 import {
   colours,
   fonts,
   spacing,
   globalSpacingStyles,
 } from "@times-components-native/styleguide";
-import { getStyleByDeviceSize } from "@times-components-native/styleguide/src/styleguide";
-
-const sharedHeadline = {
-  ...globalSpacingStyles.tabletHeadline,
-  fontFamily: fonts.headline,
-};
-
-const sharedStrapline = {
-  fontFamily: fonts.headlineRegular,
-  color: colours.functional.primary,
-};
 
 const sharedSummary = {
   ...globalSpacingStyles.tabletTeaser,
@@ -30,16 +20,7 @@ const sharedStyles = {
   straplineMarginBottom: spacing(3),
 };
 
-const sharedLandscapeStyles = {
-  ...sharedStyles,
-  container: {
-    paddingBottom: 0,
-    paddingRight: spacing(2),
-    flex: 1,
-  },
-};
-
-const sharedPortraitStyles = {
+const styles = StyleSheet.create({
   ...sharedStyles,
   container: {
     paddingBottom: 0,
@@ -47,186 +28,19 @@ const sharedPortraitStyles = {
     flex: 1,
     overflow: "hidden",
   },
-};
-
-const portrait834 = {
-  ...sharedPortraitStyles,
   headline: {
-    ...sharedHeadline,
+    ...globalSpacingStyles.tabletHeadline,
+    fontFamily: fonts.headline,
+    fontSize: 42,
+    lineHeight: 42,
     marginBottom: spacing(2),
   },
   strapline: {
-    ...sharedStrapline,
+    fontFamily: fonts.headlineRegular,
+    color: colours.functional.primary,
     fontSize: 22,
     lineHeight: 22,
   },
-};
+});
 
-const styles = {
-  landscape: {
-    "1024": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 42,
-        lineHeight: 42,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 20,
-        lineHeight: 20,
-      },
-    },
-    "1080": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 45,
-        lineHeight: 45,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 22,
-        lineHeight: 22,
-      },
-    },
-    "1112": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 45,
-        lineHeight: 45,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 22,
-        lineHeight: 22,
-      },
-    },
-    "1133": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 45,
-        lineHeight: 45,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 22,
-        lineHeight: 22,
-      },
-    },
-    "1194": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 48,
-        lineHeight: 48,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 22,
-        lineHeight: 22,
-      },
-    },
-    "1366": {
-      ...sharedLandscapeStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 55,
-        lineHeight: 55,
-      },
-      headlineMarginBottom: spacing(3),
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 24,
-        lineHeight: 24,
-      },
-      summary: {
-        ...sharedSummary,
-        fontSize: 15,
-      },
-    },
-  },
-  portrait: {
-    "744": {
-      ...sharedPortraitStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 40,
-        lineHeight: 40,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 20,
-        lineHeight: 20,
-      },
-    },
-    "768": {
-      ...sharedPortraitStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 40,
-        lineHeight: 40,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 20,
-        lineHeight: 20,
-      },
-    },
-    "810": {
-      ...sharedPortraitStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 42,
-        lineHeight: 42,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 22,
-        lineHeight: 22,
-      },
-    },
-    "834": {
-      ratios: {
-        0: {
-          ...portrait834,
-          headline: {
-            ...portrait834.headline,
-            fontSize: 45,
-            lineHeight: 45,
-          },
-        },
-        0.75: {
-          ...portrait834,
-          headline: {
-            ...portrait834.headline,
-            fontSize: 42,
-            lineHeight: 42,
-          },
-        },
-      },
-    },
-    "1024": {
-      ...sharedPortraitStyles,
-      headline: {
-        ...sharedHeadline,
-        fontSize: 53,
-        lineHeight: 53,
-      },
-      strapline: {
-        ...sharedStrapline,
-        fontSize: 24,
-        lineHeight: 24,
-      },
-      summary: {
-        ...sharedSummary,
-        fontSize: 15,
-      },
-    },
-  },
-};
-
-export const getStyle = (orientation, windowWidth, windowHeight) =>
-  getStyleByDeviceSize(styles[orientation], windowWidth, windowHeight);
+export default styles;

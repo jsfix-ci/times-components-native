@@ -68,8 +68,6 @@ const FrontLeadOneAndOne = (props) => {
                   tileName="lead"
                   orientation={"portrait"}
                 />
-                
-                />
               </View>
             </CHundredFifty>
             <CHundredFifty>

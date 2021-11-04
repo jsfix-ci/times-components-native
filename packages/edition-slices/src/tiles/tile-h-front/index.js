@@ -3,22 +3,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FrontTileSummary } from "@times-components-native/front-page";
 import { getTileStrapline, TileLink } from "../shared";
-import { getStyle } from "./styles";
-import { useResponsiveContext } from "@times-components-native/responsive";
+import styles from "./styles";
 
-const TileHFront = ({
-  onPress,
-  tile,
-  orientation,
-  numberOfLines,
-  colWidth,
-}) => {
-  const { windowWidth, windowHeight } = useResponsiveContext();
-  const styles = getStyle(orientation, windowWidth, windowHeight);
-
+const TileHFront = ({ onPress, tile, numberOfLines, colWidth }) => {
   const { article } = tile;
 
-  let strapline = getTileStrapline(tile);
+  const strapline = getTileStrapline(tile);
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <FrontTileSummary
