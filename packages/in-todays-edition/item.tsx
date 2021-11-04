@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import Link from "@times-components-native/link";
 import { IconForwardArrow } from "@times-components-native/icons";
-import { colours } from "@times-components-native/styleguide";
+import { spacing, colours } from "@times-components-native/styleguide";
 import { styles } from "./styles";
 import { ItemType, LinkType, ArticleLinkType } from "./in-todays-edition";
 import withTrackingEvents from "./tracking-events";
@@ -44,13 +44,14 @@ const Item: React.FC<Props> = ({
 
   const screenSize = MediaQuery();
 
+  // handle the border layout at different break points
   const getDividerStyle = (index: number) => {
     switch (screenSize) {
       case "EXTRA SMALL":
         if (index !== 3) {
           return {
             borderBottomWidth: 1,
-            marginVertical: 10,
+            marginVertical: spacing(2),
           };
         }
         return {};
@@ -61,13 +62,13 @@ const Item: React.FC<Props> = ({
           };
         }
         return {
-          paddingLeft: 15,
+          paddingLeft: spacing(3),
         };
       default:
         if (index !== 3) {
           return {
             borderBottomWidth: direction === "row" ? 0 : 1,
-            marginBottom: direction === "row" ? 0 : 10,
+            marginBottom: direction === "row" ? 0 : spacing(2),
           };
         }
         return {};
