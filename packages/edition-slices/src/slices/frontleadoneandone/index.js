@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ScrollView, View } from "react-native";
 import {
   TileAFront,
@@ -11,6 +11,8 @@ import { CHundredFifty, RowWrapper } from "@times-components-native/layouts";
 import { MediaQuery } from "@times-components-native/hooks";
 
 const FrontLeadOneAndOne = (props) => {
+  const [leftColWidth, setLeftColWidth] = useState(0);
+  const [rightColWidth, setRightColWidth] = useState(0);
   const {
     onPress,
     onLinkPress,
@@ -55,30 +57,36 @@ const FrontLeadOneAndOne = (props) => {
           }}
         >
           <RowWrapper>
-            <CHundredFifty>
+            <View style={{ width: "70%" }}>
               <View
-                onLayout={(event) =>
-                  console.log(event.nativeEvent.layout.width)
-                }
-                style={{ borderWidth: 1, borderColor: "green" }}
+                onLayout={(event) => {
+                  setLeftColWidth(event.nativeEvent.layout.width);
+                }}
               >
                 <TileAFront
                   onPress={onPress}
                   tile={lead}
                   tileName="lead"
                   orientation={"portrait"}
+                  colWidth={leftColWidth}
                 />
               </View>
-            </CHundredFifty>
-            <CHundredFifty>
-              <TileBFront
-                onPress={onPress}
-                tile={support}
-                tileName="support"
-                orientation={"portrait"}
-                showKeyline={true}
-              />
-            </CHundredFifty>
+            </View>
+            <View style={{ width: "30%" }}>
+              <View
+                onLayout={(event) =>
+                  setRightColWidth(event.nativeEvent.layout.width)
+                }
+              >
+                <TileBFront
+                  onPress={onPress}
+                  tile={support}
+                  tileName="support"
+                  orientation={"portrait"}
+                  showKeyline={true}
+                />
+              </View>
+            </View>
           </RowWrapper>
         </View>
         {layout.direction === "row" ? (

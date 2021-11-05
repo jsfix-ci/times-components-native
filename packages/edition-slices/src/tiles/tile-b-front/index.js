@@ -42,6 +42,7 @@ const TileBFront = ({ onPress, tile, orientation }) => {
         showKeyline={showKeyline}
         tile={tile}
         bylines={article.bylines}
+        numberOfLines={27}
       />
     </TileLink>
   );

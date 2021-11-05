@@ -56,6 +56,7 @@ const TileAFront = ({ onPress, tile, orientation, colWidth }) => {
         headlineMarginBottom={styles.headlineMarginBottom}
         summaryLineHeight={styles.summary.lineHeight}
         colWidth={colWidth}
+        numberOfLines={15}
       />
     </TileLink>
   );
