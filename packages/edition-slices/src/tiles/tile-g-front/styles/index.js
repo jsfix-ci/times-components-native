@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 import {
   colours,
-  fonts,
   spacing,
   globalSpacingStyles,
 } from "@times-components-native/styleguide";

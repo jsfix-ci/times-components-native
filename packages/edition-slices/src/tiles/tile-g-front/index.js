@@ -46,7 +46,7 @@ const TileGFront = ({ onPress, tile, numberOfLines, colWidth }) => {
         containerStyle={styles.summaryContainer}
         hasVideo={article.hasVideo}
         numberOfLines={numberOfLines}
-        colWidth={100}
+        colWidth={colWidth}
       />
     </TileLink>
   );

@@ -44,7 +44,7 @@ const InTodaysEdition: React.FC<IProps> = ({
   if (!items.length) return null;
 
   return (
-    <View style={[styles.container]}>
+    <View style={[styles.container, { marginTop: 20 }]}>
       <View style={styles.headerContainer}>
         <Text style={styles.header}>{headingText}</Text>
       </View>

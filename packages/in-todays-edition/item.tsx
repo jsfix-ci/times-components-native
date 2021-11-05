@@ -71,7 +71,7 @@ const Item: React.FC<Props> = ({
             marginBottom: direction === "row" ? 0 : spacing(2),
           };
         }
-        return {};
+        return { borderBottomWidth: 0, borderLeftWidth: 0 };
     }
   };
 

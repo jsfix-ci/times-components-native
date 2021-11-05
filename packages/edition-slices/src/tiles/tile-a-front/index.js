@@ -14,7 +14,7 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 
 const getAspectRatio = (crop) => (crop === "crop32" ? 3 / 2 : 5 / 4);
 
-const TileAFront = ({ onPress, tile, orientation }) => {
+const TileAFront = ({ onPress, tile, orientation, colWidth }) => {
   const { windowWidth, windowHeight } = useResponsiveContext();
   const isPortrait = orientation === "portrait";
   const columnCount = isPortrait ? 2 : 1;
@@ -55,6 +55,7 @@ const TileAFront = ({ onPress, tile, orientation }) => {
         straplineMarginBottom={styles.straplineMarginBottom}
         headlineMarginBottom={styles.headlineMarginBottom}
         summaryLineHeight={styles.summary.lineHeight}
+        colWidth={colWidth}
       />
     </TileLink>
   );
@@ -64,6 +65,7 @@ TileAFront.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string,
+  colWidth: PropTypes.number,
 };
 
 export default withTileTracking(TileAFront);
