@@ -7,7 +7,12 @@ import {
   TileHFront,
 } from "@times-components-native/edition-slices/src/tiles";
 import InTodaysEdition from "@times-components-native/in-todays-edition";
-import { CHundredFifty, RowWrapper } from "@times-components-native/layouts";
+import {
+  CHundredFiftySeventy,
+  CHundredFiftyThirty,
+  CHundredFiftyTwentyFive,
+  RowWrapper,
+} from "@times-components-native/layouts";
 import { MediaQuery } from "@times-components-native/hooks";
 
 const FrontLeadOneAndOne = (props) => {
@@ -57,7 +62,7 @@ const FrontLeadOneAndOne = (props) => {
           }}
         >
           <RowWrapper>
-            <View style={{ width: "70%" }}>
+            <CHundredFiftySeventy>
               <View
                 onLayout={(event) => {
                   setLeftColWidth(event.nativeEvent.layout.width);
@@ -71,8 +76,8 @@ const FrontLeadOneAndOne = (props) => {
                   colWidth={leftColWidth}
                 />
               </View>
-            </View>
-            <View style={{ width: "30%" }}>
+            </CHundredFiftySeventy>
+            <CHundredFiftyThirty>
               <View
                 onLayout={(event) =>
                   setRightColWidth(event.nativeEvent.layout.width)
@@ -86,7 +91,7 @@ const FrontLeadOneAndOne = (props) => {
                   showKeyline={true}
                 />
               </View>
-            </View>
+            </CHundredFiftyThirty>
           </RowWrapper>
         </View>
         {layout.direction === "row" ? (
