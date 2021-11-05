@@ -9,6 +9,7 @@ import {
 import { ArticleColumns } from "@times-components-native/article-columns/article-columns";
 import { Text, TextStyle } from "react-native";
 import { transformContentForFront } from "@times-components-native/front-page/utils/transform-content-for-front";
+import { MediaQuery } from "@times-components-native/hooks/";
 interface Props {
   summary: Markup;
   summaryStyle?: any;
@@ -36,6 +37,7 @@ const SummaryText: React.FC<SummaryTextProps> = ({
     </Text>
   ) : null;
 };
+
 const FrontArticleSummaryContent: React.FC<Props> = (props) => {
   const {
     contentHeight,
@@ -51,13 +53,24 @@ const FrontArticleSummaryContent: React.FC<Props> = (props) => {
 
   const transformedAst = transformContentForFront(summary, justified);
 
+  const canDisplayMultipleColumns = () => {
+    const screenSize = MediaQuery();
+    switch (screenSize) {
+      case "EXTRA SMALL":
+      case "SMALL":
+        return false;
+      default:
+        return true;
+    }
+  };
+
   const style = {
     ...styles.summary,
     ...summaryStyle,
     ...(justified && { textAlign: "justify" }),
   } as TextStyle;
   const lineHeight = style.lineHeight || 20;
-  if (columnCount > 1) {
+  if (columnCount > 1 && canDisplayMultipleColumns()) {
     return (
       <ArticleColumns
         bylines={props.bylines}

@@ -16,8 +16,6 @@ const TileGFront = ({ onPress, tile, numberOfLines, colWidth }) => {
 
   const { article } = tile;
 
-  console.log("COLWIDTH: ", colWidth);
-
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <TileImage

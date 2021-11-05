@@ -110,8 +110,6 @@ const FrontTileSummary: React.FC<Props> = (props) => {
     colWidth = 300,
   } = props;
 
-  console.log("C width: ", colWidth);
-
   return (
     <View>
       {renderHeadline(props)}
