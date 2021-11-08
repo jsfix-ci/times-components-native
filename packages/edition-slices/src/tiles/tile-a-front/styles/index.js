@@ -1,10 +1,10 @@
+import { StyleSheet } from "react-native";
 import {
   fonts,
   spacing,
   globalSpacingStyles,
   colours,
 } from "@times-components-native/styleguide";
-import { getStyleByDeviceSize } from "@times-components-native/styleguide/src/styleguide";
 
 const summary = {
   ...globalSpacingStyles.tabletTeaser,
@@ -81,7 +81,7 @@ const portrait834 = {
   },
 };
 
-const styles = {
+const s = {
   landscape: {
     "1024": {
       ...sharedLandscapeStyles,
@@ -209,5 +209,18 @@ const styles = {
   },
 };
 
-export const getStyle = (orientation, windowWidth, windowHeight) =>
-  getStyleByDeviceSize(styles[orientation], windowWidth, windowHeight);
+const styles = StyleSheet.create({
+  container: {
+    paddingBottom: spacing(0),
+    paddingRight: spacing(2),
+    flex: 1,
+  },
+  summary: {
+    ...summary,
+    fontSize: 14,
+    lineHeight: 18,
+  },
+  strapline,
+});
+
+export default styles;
