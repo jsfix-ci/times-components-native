@@ -3,6 +3,7 @@ import ArticleMagazineComment from "@times-components-native/article-magazine-co
 import ArticleInDepth from "@times-components-native/article-in-depth";
 import ArticleMagazineStandard from "@times-components-native/article-magazine-standard";
 import ArticleMainStandard from "@times-components-native/article-main-standard";
+import ArticleSpecial from "@times-components-native/article-special";
 import ArticleMainComment from "@times-components-native/article-main-comment";
 import ArticleCommentTablet from "@times-components-native/article-comment-tablet";
 import { useResponsiveContext } from "@times-components-native/responsive";
@@ -19,6 +20,7 @@ export const getComponentByTemplate = (template, isArticleTablet) => {
     magazinestandard: ArticleMagazineStandard,
     maincomment: isArticleTablet ? ArticleCommentTablet : ArticleMainComment,
     mainstandard: ArticleMainStandard,
+    takeoverpage: ArticleSpecial,
   };
 
   return templates[template] || ArticleMainStandard;
@@ -37,9 +39,6 @@ const Article = (props) => {
   const { leadAsset, template } = article || {};
 
   let { content } = article || {};
-  if (template === "takeoverpage") {
-    throw new TakeoverBailout("Aborted react render: Takeover page");
-  }
   let onImagePressArticle = null;
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
