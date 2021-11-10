@@ -110,6 +110,8 @@ const FrontTileSummary: React.FC<Props> = (props) => {
     colWidth = 300,
   } = props;
 
+  console.log("!", hasVideo);
+
   return (
     <View>
       {renderHeadline(props)}
@@ -121,7 +123,7 @@ const FrontTileSummary: React.FC<Props> = (props) => {
         contentWidth: colWidth,
       })}
       {hasVideo && (
-        <View style={{ position: "absolute", top: getIconSize(colWidth) }}>
+        <View style={{ position: "absolute", top: 0 }}>
           <PlayIcon size={getIconSize(colWidth)} />
         </View>
       )}

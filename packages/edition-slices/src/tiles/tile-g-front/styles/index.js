@@ -5,27 +5,7 @@ import {
   globalSpacingStyles,
 } from "@times-components-native/styleguide";
 
-const sharedSummaryContainer = {
-  position: "absolute",
-  bottom: 0,
-  backgroundColor: colours.functional.white,
-  width: "100%",
-};
-
-const sharedSummary = {
-  ...globalSpacingStyles.tabletTeaser,
-  fontSize: 14,
-  lineHeight: 20,
-};
-
-const sharedStyles = {
-  summaryContainer: { ...sharedSummaryContainer, paddingTop: spacing(1) },
-  summary: { ...sharedSummary },
-  bylineMarginBottom: spacing(3),
-};
-
 const styles = StyleSheet.create({
-  ...sharedStyles,
   container: {
     paddingLeft: spacing(2),
     flex: 1,
@@ -34,6 +14,19 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   headlineMarginBottom: spacing(3),
+  summary: {
+    ...globalSpacingStyles.tabletTeaser,
+    fontSize: 14,
+    lineHeight: 20,
+  },
+  summaryContainer: {
+    backgroundColor: colours.functional.white,
+    bottom: 0,
+    paddingTop: spacing(1),
+    position: "absolute",
+    width: "100%",
+  },
+  bylineMarginBottom: spacing(3),
 });
 
 export default styles;
