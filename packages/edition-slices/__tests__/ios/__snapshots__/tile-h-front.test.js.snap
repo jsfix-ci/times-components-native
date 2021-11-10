@@ -6,6 +6,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -61,6 +62,7 @@ Array [
           "fontFamily": "TimesModern-Bold",
           "fontSize": 42,
           "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -71,8 +73,8 @@ Array [
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Regular",
-          "fontSize": 20,
-          "lineHeight": 20,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
       summary={
@@ -603,6 +605,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -656,8 +659,9 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -1200,6 +1204,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -1253,8 +1258,9 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 48,
-          "lineHeight": 48,
+          "fontSize": 42,
+          "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -1797,6 +1803,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
+        "overflow": "hidden",
         "paddingBottom": 0,
         "paddingRight": 10,
       }
@@ -1846,12 +1853,13 @@ Array [
         ]
       }
       colWidth={300}
-      headlineMarginBottom={15}
+      headlineMarginBottom={20}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 55,
-          "lineHeight": 55,
+          "fontSize": 42,
+          "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -1862,8 +1870,8 @@ Array [
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Regular",
-          "fontSize": 24,
-          "lineHeight": 24,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
       summary={
@@ -1917,7 +1925,7 @@ Array [
       summaryLineHeight={20}
       summaryStyle={
         Object {
-          "fontSize": 15,
+          "fontSize": 14,
           "lineHeight": 20,
         }
       }
@@ -2448,8 +2456,9 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 40,
-          "lineHeight": 40,
+          "fontSize": 42,
+          "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -2460,8 +2469,8 @@ Array [
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Regular",
-          "fontSize": 20,
-          "lineHeight": 20,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
       summary={
@@ -3048,6 +3057,7 @@ Array [
           "fontFamily": "TimesModern-Bold",
           "fontSize": 42,
           "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -4243,8 +4253,8 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
           "marginBottom": 10,
         }
       }
@@ -4842,8 +4852,9 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 53,
-          "lineHeight": 53,
+          "fontSize": 42,
+          "lineHeight": 42,
+          "marginBottom": 10,
         }
       }
       numberOfLines={6}
@@ -4854,8 +4865,8 @@ Array [
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Regular",
-          "fontSize": 24,
-          "lineHeight": 24,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
       summary={
@@ -4909,7 +4920,7 @@ Array [
       summaryLineHeight={20}
       summaryStyle={
         Object {
-          "fontSize": 15,
+          "fontSize": 14,
           "lineHeight": 20,
         }
       }

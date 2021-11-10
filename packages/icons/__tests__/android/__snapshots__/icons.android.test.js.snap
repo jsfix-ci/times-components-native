@@ -1,382 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. iconfacebook renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-facebook"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={14}
-  minY={10}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconFacebook"
-  vbHeight={20.397258758544922}
-  vbWidth={10.592460632324219}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={-14869221}
-      fillRule={1}
-      propList={
-        Array [
-          "fill",
-          "fillRule",
-        ]
-      }
-    >
-      <RNSVGPath
-        d="ff2ae287381fd0583b3a4df9bc45c5be"
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`2. iconforwardarrow renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-forward-arrow"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={42}
-  minY={12}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  vbHeight={120}
-  vbWidth={60}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={-16750951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    >
-      <RNSVGPath
-        d="cf23b8f47ac97eeec14ee4c65e472078"
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`3. iconstar renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-save-star"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconStar"
-  vbHeight={18}
-  vbWidth={18}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="20db890d0ec5651ed550568cd37b5875"
-      fill={-16750951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`4. iconcopylink renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-copy-link"
-  bbHeight={15}
-  bbWidth={20}
-  focusable={false}
-  height={15}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 15,
-      "width": 20,
-    }
-  }
-  title="IconCopyLink"
-  vbHeight={15}
-  vbWidth={15}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="9caedb2f218a37cd4660f2ab42e9b771"
-      fill={-9868951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`5. iconsavebookmark renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-save-bookmark"
-  bbHeight={16}
-  bbWidth={20}
-  focusable={false}
-  height={16}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 16,
-      "width": 20,
-    }
-  }
-  title="IconSaveBookmark"
-  vbHeight={16}
-  vbWidth={12}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="25ee7ee33953337725fa0c3787ab3241"
-      fill={-9868951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`6. icontwitter renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-twitter"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={-354.2}
-  minY={-279.4}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconTwitter"
-  vbHeight={600}
-  vbWidth={750}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="0407fd6a3edc199eb6063d0ebd2c66ad"
-      fill={-16750951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`7. iconvideo renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-video"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconVideo"
-  vbHeight={40}
-  vbWidth={68}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGRect
-      fill={-14869221}
-      height="40"
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-      width="50"
-      x="0"
-      y="0"
-    />
-    <RNSVGPath
-      d="171e0421ab3c212b8bbf45e8c85e924b"
-      fill={-14869221}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`8. iconvideo360player renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-video-360-player"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconVideo360Player"
-  vbHeight={100}
-  vbWidth={108}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="92444cc628d352fe07031cfb7b426ccf"
-      fill={-16750951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`9. thestlogo renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="logo-the-sunday-times"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="TheSTLogo"
-  vbHeight={20}
-  vbWidth={29}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="0f4e958f2b4ff0e7612914c8ca56d8f6"
-      fill={-1}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`10. thetimeslogo renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="logo-the-times"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  role="img"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="TheTimesLogo"
-  vbHeight={20}
-  vbWidth={20}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="9d34e249e9f10c48ae181fd7ef01d8e7"
-      fill={-1}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`11. closeicon renders 1`] = `
+exports[`1. closeicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-close"
@@ -417,7 +41,7 @@ exports[`11. closeicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`12. closeroundicon renders 1`] = `
+exports[`2. closeroundicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -498,7 +122,85 @@ exports[`12. closeroundicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. glassmagnifiericon renders 1`] = `
+exports[`3. deleteicon renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight={13}
+  bbWidth={20}
+  focusable={false}
+  height={13}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 13,
+      "width": 20,
+    }
+  }
+  vbHeight={13}
+  vbWidth={13}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={null}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGGroup
+        propList={
+          Array [
+            "stroke",
+          ]
+        }
+        stroke={-16777216}
+      >
+        <RNSVGGroup>
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGPath
+                d="82883c468bb29880d6174ba97462d6b5"
+                matrix={
+                  Array [
+                    -1,
+                    0,
+                    0,
+                    1,
+                    13,
+                    0,
+                  ]
+                }
+              />
+              <RNSVGPath
+                d="82883c468bb29880d6174ba97462d6b5"
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`4. glassmagnifiericon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -579,7 +281,439 @@ exports[`13. glassmagnifiericon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`14. rightorientedglassmagnifier renders 1`] = `
+exports[`5. iconcheckmark renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight={15}
+  bbWidth={20}
+  focusable={false}
+  height={15}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 15,
+      "width": 20,
+    }
+  }
+  vbHeight={512}
+  vbWidth={512}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="8b88ef71fa40ed4105a0ce4099357cf6"
+      fill={null}
+      propList={
+        Array [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeMiterlimit",
+        ]
+      }
+      stroke={-1728053248}
+      strokeLinecap={2}
+      strokeMiterlimit={10}
+      strokeWidth="44"
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`6. iconcopylink renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-copy-link"
+  bbHeight={15}
+  bbWidth={20}
+  focusable={false}
+  height={15}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 15,
+      "width": 20,
+    }
+  }
+  title="IconCopyLink"
+  vbHeight={15}
+  vbWidth={15}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="9caedb2f218a37cd4660f2ab42e9b771"
+      fill={-9868951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`7. iconfacebook renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-facebook"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={14}
+  minY={10}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconFacebook"
+  vbHeight={20.397258758544922}
+  vbWidth={10.592460632324219}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={-14869221}
+      fillRule={1}
+      propList={
+        Array [
+          "fill",
+          "fillRule",
+        ]
+      }
+    >
+      <RNSVGPath
+        d="ff2ae287381fd0583b3a4df9bc45c5be"
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`8. iconforwardarrow renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-forward-arrow"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={42}
+  minY={12}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  vbHeight={120}
+  vbWidth={60}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={-16750951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGPath
+        d="cf23b8f47ac97eeec14ee4c65e472078"
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`9. iconsavebookmark renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-save-bookmark"
+  bbHeight={16}
+  bbWidth={20}
+  focusable={false}
+  height={16}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 16,
+      "width": 20,
+    }
+  }
+  title="IconSaveBookmark"
+  vbHeight={16}
+  vbWidth={12}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="25ee7ee33953337725fa0c3787ab3241"
+      fill={-9868951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`10. iconstar renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-save-star"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconStar"
+  vbHeight={18}
+  vbWidth={18}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="20db890d0ec5651ed550568cd37b5875"
+      fill={-16750951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`11. icontwitter renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-twitter"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={-354.2}
+  minY={-279.4}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconTwitter"
+  vbHeight={600}
+  vbWidth={750}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="0407fd6a3edc199eb6063d0ebd2c66ad"
+      fill={-16750951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`12. iconvideo renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-video"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconVideo"
+  vbHeight={40}
+  vbWidth={68}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGRect
+      fill={-14869221}
+      height="40"
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      width="50"
+      x="0"
+      y="0"
+    />
+    <RNSVGPath
+      d="171e0421ab3c212b8bbf45e8c85e924b"
+      fill={-14869221}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`13. iconvideo360player renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-video-360-player"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconVideo360Player"
+  vbHeight={100}
+  vbWidth={108}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="92444cc628d352fe07031cfb7b426ccf"
+      fill={-16750951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`14. leftchevron renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
+  focusable={false}
+  height="24"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
+    }
+  }
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
+>
+  <RNSVGGroup
+    fill={null}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+  >
+    <RNSVGMask
+      height="24"
+      maskContentUnits={1}
+      maskTransform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      maskUnits={1}
+      name="mask0"
+      width="24"
+      x="0"
+      y="0"
+    >
+      <RNSVGPath
+        d="eb7ae37f7126e506a57cb4857dd791e9"
+        fill={-1}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      />
+    </RNSVGMask>
+    <RNSVGGroup
+      mask="mask0"
+    >
+      <RNSVGRect
+        fill={-1}
+        height="24"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width="24"
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`15. rightorientedglassmagnifier renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="20"
@@ -674,205 +808,71 @@ exports[`14. rightorientedglassmagnifier renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`15. leftchevron renders 1`] = `
+exports[`16. thestlogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
->
-  <RNSVGGroup
-    fill={null}
-    propList={
-      Array [
-        "fill",
-      ]
-    }
-  >
-    <RNSVGMask
-      height="24"
-      maskContentUnits={1}
-      maskTransform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-      maskUnits={1}
-      name="mask0"
-      width="24"
-      x="0"
-      y="0"
-    >
-      <RNSVGPath
-        d="eb7ae37f7126e506a57cb4857dd791e9"
-        fill={-1}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-      />
-    </RNSVGMask>
-    <RNSVGGroup
-      mask="mask0"
-    >
-      <RNSVGRect
-        fill={-1}
-        height="24"
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        width="24"
-        x={0}
-        y={0}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`16. deleteicon renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={13}
+  aria-label="logo-the-sunday-times"
   bbWidth={20}
   focusable={false}
-  height={13}
   meetOrSlice={0}
   minX={0}
   minY={0}
+  role="img"
   style={
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
-      "flex": 0,
-      "height": 13,
-      "width": 20,
     }
   }
-  vbHeight={13}
-  vbWidth={13}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={null}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    >
-      <RNSVGGroup
-        propList={
-          Array [
-            "stroke",
-          ]
-        }
-        stroke={-16777216}
-      >
-        <RNSVGGroup>
-          <RNSVGGroup>
-            <RNSVGGroup>
-              <RNSVGPath
-                d="82883c468bb29880d6174ba97462d6b5"
-                matrix={
-                  Array [
-                    -1,
-                    0,
-                    0,
-                    1,
-                    13,
-                    0,
-                  ]
-                }
-              />
-              <RNSVGPath
-                d="82883c468bb29880d6174ba97462d6b5"
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-              />
-            </RNSVGGroup>
-          </RNSVGGroup>
-        </RNSVGGroup>
-      </RNSVGGroup>
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`17. iconcheckmark renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={15}
-  bbWidth={20}
-  focusable={false}
-  height={15}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 15,
-      "width": 20,
-    }
-  }
-  vbHeight={512}
-  vbWidth={512}
+  title="TheSTLogo"
+  vbHeight={20}
+  vbWidth={29}
   width={20}
 >
   <RNSVGGroup>
     <RNSVGPath
-      d="8b88ef71fa40ed4105a0ce4099357cf6"
-      fill={null}
+      d="0f4e958f2b4ff0e7612914c8ca56d8f6"
+      fill={-1}
       propList={
         Array [
           "fill",
-          "stroke",
-          "strokeWidth",
-          "strokeLinecap",
-          "strokeMiterlimit",
         ]
       }
-      stroke={-1728053248}
-      strokeLinecap={2}
-      strokeMiterlimit={10}
-      strokeWidth="44"
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`17. thetimeslogo renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="logo-the-times"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="TheTimesLogo"
+  vbHeight={20}
+  vbWidth={20}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="9d34e249e9f10c48ae181fd7ef01d8e7"
+      fill={-1}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
     />
   </RNSVGGroup>
 </RNSVGSvgView>

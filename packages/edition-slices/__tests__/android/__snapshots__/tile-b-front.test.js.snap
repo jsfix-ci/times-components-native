@@ -6,8 +6,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
-        "padding": 10,
-        "paddingVertical": 0,
+        "paddingLeft": 10,
       }
     }
   >
@@ -15,14 +14,14 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 5,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={10}
+      bylineMarginBottom={15}
       bylines={
         Array [
           Object {
@@ -64,7 +63,7 @@ Array [
           },
         ]
       }
-      headlineMarginBottom={10}
+      headlineMarginBottom={15}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
@@ -72,6 +71,7 @@ Array [
           "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={false}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -123,11 +123,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -603,8 +603,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
-        "padding": 10,
-        "paddingVertical": 0,
+        "paddingLeft": 10,
       }
     }
   >
@@ -612,14 +611,14 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 5,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={10}
+      bylineMarginBottom={15}
       bylines={
         Array [
           Object {
@@ -661,14 +660,15 @@ Array [
           },
         ]
       }
-      headlineMarginBottom={10}
+      headlineMarginBottom={15}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
-          "lineHeight": 25,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={false}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -720,11 +720,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -1200,8 +1200,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
-        "padding": 10,
-        "paddingVertical": 0,
+        "paddingLeft": 10,
       }
     }
   >
@@ -1209,14 +1208,14 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 5,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={10}
+      bylineMarginBottom={15}
       bylines={
         Array [
           Object {
@@ -1258,14 +1257,15 @@ Array [
           },
         ]
       }
-      headlineMarginBottom={10}
+      headlineMarginBottom={15}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
-          "lineHeight": 25,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={false}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -1317,11 +1317,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -1797,8 +1797,7 @@ Array [
     linkStyle={
       Object {
         "flex": 1,
-        "padding": 10,
-        "paddingVertical": 0,
+        "paddingLeft": 10,
       }
     }
   >
@@ -1806,14 +1805,14 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 5,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={10}
+      bylineMarginBottom={15}
       bylines={
         Array [
           Object {
@@ -1855,14 +1854,15 @@ Array [
           },
         ]
       }
-      headlineMarginBottom={10}
+      headlineMarginBottom={15}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
-          "lineHeight": 25,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={false}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -1914,11 +1914,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
-          "fontSize": 15,
-          "lineHeight": 20,
+          "fontSize": 14,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -2459,6 +2459,7 @@ Array [
           "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={true}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -3055,6 +3056,7 @@ Array [
           "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={true}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -3651,6 +3653,7 @@ Array [
           "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={true}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -4243,10 +4246,11 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 24,
-          "lineHeight": 24,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={true}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -4786,7 +4790,7 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 5,
           "width": "100%",
         }
       }
@@ -4839,10 +4843,11 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 26,
-          "lineHeight": 26,
+          "fontSize": 22,
+          "lineHeight": 22,
         }
       }
+      numberOfLines={27}
       showKeyline={true}
       straplineMarginBottom={0}
       straplineMarginTop={0}
@@ -4897,7 +4902,7 @@ Array [
       summaryLineHeight={18}
       summaryStyle={
         Object {
-          "fontSize": 15,
+          "fontSize": 14,
           "lineHeight": 18,
         }
       }

@@ -1,6 +1,162 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. iconfacebook sets a width when height is set 1`] = `
+exports[`1. closeicon sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-close"
+  bbHeight={50}
+  bbWidth={28}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 28,
+    }
+  }
+  title="Close Icon"
+  vbHeight={28}
+  vbWidth={28}
+  width={28}
+/>
+`;
+
+exports[`2. closeroundicon sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
+  focusable={false}
+  height="24"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
+    }
+  }
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
+/>
+`;
+
+exports[`3. deleteicon sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight={50}
+  bbWidth={13}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 13,
+    }
+  }
+  vbHeight={13}
+  vbWidth={13}
+  width={13}
+/>
+`;
+
+exports[`4. glassmagnifiericon sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
+  focusable={false}
+  height="24"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
+    }
+  }
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
+/>
+`;
+
+exports[`5. iconcheckmark sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight={50}
+  bbWidth={15}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 15,
+    }
+  }
+  vbHeight={512}
+  vbWidth={512}
+  width={15}
+/>
+`;
+
+exports[`6. iconcopylink sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-copy-link"
+  bbHeight={50}
+  bbWidth={15}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 15,
+    }
+  }
+  title="Copy link to clipboard"
+  vbHeight={15}
+  vbWidth={15}
+  width={15}
+/>
+`;
+
+exports[`7. iconfacebook sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-facebook"
@@ -28,7 +184,7 @@ exports[`1. iconfacebook sets a width when height is set 1`] = `
 />
 `;
 
-exports[`2. iconforwardarrow sets a width when height is set 1`] = `
+exports[`8. iconforwardarrow sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-forward-arrow"
@@ -54,61 +210,7 @@ exports[`2. iconforwardarrow sets a width when height is set 1`] = `
 />
 `;
 
-exports[`3. iconstar sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-save-star"
-  bbHeight={50}
-  bbWidth={50}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 50,
-    }
-  }
-  title="Save star"
-  vbHeight={18}
-  vbWidth={18}
-  width={50}
-/>
-`;
-
-exports[`4. iconcopylink sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-copy-link"
-  bbHeight={50}
-  bbWidth={15}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 15,
-    }
-  }
-  title="Copy link to clipboard"
-  vbHeight={15}
-  vbWidth={15}
-  width={15}
-/>
-`;
-
-exports[`5. iconsavebookmark sets a width when height is set 1`] = `
+exports[`9. iconsavebookmark sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-bookmark"
@@ -136,7 +238,34 @@ exports[`5. iconsavebookmark sets a width when height is set 1`] = `
 />
 `;
 
-exports[`6. icontwitter sets a width when height is set 1`] = `
+exports[`10. iconstar sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-save-star"
+  bbHeight={50}
+  bbWidth={50}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 50,
+    }
+  }
+  title="Save star"
+  vbHeight={18}
+  vbWidth={18}
+  width={50}
+/>
+`;
+
+exports[`11. icontwitter sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-twitter"
@@ -164,7 +293,7 @@ exports[`6. icontwitter sets a width when height is set 1`] = `
 />
 `;
 
-exports[`7. iconvideo sets a width when height is set 1`] = `
+exports[`12. iconvideo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video"
@@ -192,7 +321,7 @@ exports[`7. iconvideo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`8. iconvideo360player sets a width when height is set 1`] = `
+exports[`13. iconvideo360player sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video-360-player"
@@ -220,7 +349,58 @@ exports[`8. iconvideo360player sets a width when height is set 1`] = `
 />
 `;
 
-exports[`9. thestlogo sets a width when height is set 1`] = `
+exports[`14. leftchevron sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
+  focusable={false}
+  height="24"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
+    }
+  }
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
+/>
+`;
+
+exports[`15. rightorientedglassmagnifier sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="20"
+  bbWidth="22"
+  focusable={false}
+  height="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 20,
+      "width": 22,
+    }
+  }
+  vbHeight={18}
+  vbWidth={20}
+  width="22"
+/>
+`;
+
+exports[`16. thestlogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-sunday-times"
@@ -248,7 +428,7 @@ exports[`9. thestlogo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`10. thetimeslogo sets a width when height is set 1`] = `
+exports[`17. thetimeslogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-times"
@@ -273,185 +453,5 @@ exports[`10. thetimeslogo sets a width when height is set 1`] = `
   vbHeight={20}
   vbWidth={20}
   width={50}
-/>
-`;
-
-exports[`11. closeicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-close"
-  bbHeight={50}
-  bbWidth={28}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 28,
-    }
-  }
-  title="Close Icon"
-  vbHeight={28}
-  vbWidth={28}
-  width={28}
-/>
-`;
-
-exports[`12. closeroundicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
-/>
-`;
-
-exports[`13. glassmagnifiericon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
-/>
-`;
-
-exports[`14. rightorientedglassmagnifier sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="20"
-  bbWidth="22"
-  focusable={false}
-  height="20"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 20,
-      "width": 22,
-    }
-  }
-  vbHeight={18}
-  vbWidth={20}
-  width="22"
-/>
-`;
-
-exports[`15. leftchevron sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
-/>
-`;
-
-exports[`16. deleteicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={50}
-  bbWidth={13}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 13,
-    }
-  }
-  vbHeight={13}
-  vbWidth={13}
-  width={13}
-/>
-`;
-
-exports[`17. iconcheckmark sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={50}
-  bbWidth={15}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 15,
-    }
-  }
-  vbHeight={512}
-  vbWidth={512}
-  width={15}
 />
 `;

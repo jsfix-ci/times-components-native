@@ -15,14 +15,14 @@ Array [
       aspectRatio={1.25}
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 10,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1250%2C1000%2C627%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={15}
+      bylineMarginBottom={0}
       bylines={
         Array [
           Object {
@@ -65,16 +65,7 @@ Array [
         ]
       }
       columnCount={1}
-      containerStyle={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "paddingTop": 10,
-          "position": "absolute",
-          "width": "100%",
-        }
-      }
-      headlineMarginBottom={10}
+      headlineMarginBottom={20}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
@@ -83,6 +74,7 @@ Array [
         }
       }
       justified={false}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -142,11 +134,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -631,14 +623,14 @@ Array [
       aspectRatio={1.25}
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 10,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1250%2C1000%2C627%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={15}
+      bylineMarginBottom={0}
       bylines={
         Array [
           Object {
@@ -681,24 +673,16 @@ Array [
         ]
       }
       columnCount={1}
-      containerStyle={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "paddingTop": 10,
-          "position": "absolute",
-          "width": "100%",
-        }
-      }
-      headlineMarginBottom={10}
+      headlineMarginBottom={20}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={false}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -758,11 +742,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -1247,14 +1231,14 @@ Array [
       aspectRatio={1.25}
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 10,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1250%2C1000%2C627%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={15}
+      bylineMarginBottom={0}
       bylines={
         Array [
           Object {
@@ -1297,24 +1281,16 @@ Array [
         ]
       }
       columnCount={1}
-      containerStyle={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "paddingTop": 10,
-          "position": "absolute",
-          "width": "100%",
-        }
-      }
-      headlineMarginBottom={10}
+      headlineMarginBottom={20}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={false}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -1374,11 +1350,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
           "fontSize": 14,
-          "lineHeight": 20,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -1863,14 +1839,14 @@ Array [
       aspectRatio={1.25}
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 10,
           "width": "100%",
         }
       }
       uri="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1250%2C1000%2C627%2C0"
     />
     <FrontTileSummary
-      bylineMarginBottom={15}
+      bylineMarginBottom={0}
       bylines={
         Array [
           Object {
@@ -1913,24 +1889,16 @@ Array [
         ]
       }
       columnCount={1}
-      containerStyle={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "bottom": 0,
-          "paddingTop": 10,
-          "position": "absolute",
-          "width": "100%",
-        }
-      }
-      headlineMarginBottom={15}
+      headlineMarginBottom={20}
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 55,
-          "lineHeight": 55,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={false}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -1990,11 +1958,11 @@ Array [
           },
         ]
       }
-      summaryLineHeight={20}
+      summaryLineHeight={18}
       summaryStyle={
         Object {
-          "fontSize": 15,
-          "lineHeight": 20,
+          "fontSize": 14,
+          "lineHeight": 18,
         }
       }
       tile={
@@ -2538,6 +2506,7 @@ Array [
         }
       }
       justified={true}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -3140,11 +3109,12 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={true}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -3747,11 +3717,12 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 45,
-          "lineHeight": 45,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={true}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -4354,11 +4325,12 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 48,
-          "lineHeight": 48,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={true}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -4907,7 +4879,7 @@ Array [
       aspectRatio={1.5}
       style={
         Object {
-          "marginBottom": 15,
+          "marginBottom": 10,
           "width": "100%",
         }
       }
@@ -4961,11 +4933,12 @@ Array [
       headlineStyle={
         Object {
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 55,
-          "lineHeight": 55,
+          "fontSize": 42,
+          "lineHeight": 42,
         }
       }
       justified={true}
+      numberOfLines={15}
       strapline="Three Conservative MPs resign"
       straplineMarginBottom={15}
       straplineMarginTop={10}
@@ -5028,7 +5001,7 @@ Array [
       summaryLineHeight={18}
       summaryStyle={
         Object {
-          "fontSize": 15,
+          "fontSize": 14,
           "lineHeight": 18,
         }
       }

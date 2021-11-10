@@ -891,115 +891,179 @@ exports[`25. puzzle - smalltablet 1`] = `
 `;
 
 exports[`26. front lead two - portrait - smalltablet 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="portrait"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="portrait"
-          tileName="lead2"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`27. front lead two - landscape - smalltablet 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="landscape"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="landscape"
-          tileName="lead2"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`28. front lead one and one - portrait - smalltablet 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="portrait"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="portrait"
-          showKeyline={true}
-          tileName="support"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`29. front lead one and one - landscape - smalltablet 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="landscape"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="landscape"
-          showKeyline={false}
-          tileName="support"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`30. front lead one - portrait - smalltablet 1`] = `
@@ -2112,115 +2176,179 @@ exports[`62. puzzle - medium 1`] = `
 `;
 
 exports[`63. front lead two - portrait - medium 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="portrait"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="portrait"
-          tileName="lead2"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`64. front lead two - landscape - medium 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="landscape"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="landscape"
-          tileName="lead2"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`65. front lead one and one - portrait - medium 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="portrait"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="portrait"
-          showKeyline={true}
-          tileName="support"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`66. front lead one and one - landscape - medium 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="landscape"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="landscape"
-          showKeyline={false}
-          tileName="support"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`67. front lead one - portrait - medium 1`] = `
@@ -3346,115 +3474,179 @@ exports[`99. puzzle - wide 1`] = `
 `;
 
 exports[`100. front lead two - portrait - wide 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="portrait"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="portrait"
-          tileName="lead2"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`101. front lead two - landscape - wide 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileHFront
-          orientation="landscape"
-          tileName="lead1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileGFront
-          orientation="landscape"
-          tileName="lead2"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`102. front lead one and one - portrait - wide 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="portrait"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="portrait"
-          showKeyline={true}
-          tileName="support"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
-    <View>
-      <InTodaysEdition
-        orientation="portrait"
-      />
-    </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`103. front lead one and one - landscape - wide 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
-        <TileAFront
-          orientation="landscape"
-          tileName="lead"
-        />
-      </View>
-      <View />
-      <View>
-        <TileBFront
-          orientation="landscape"
-          showKeyline={false}
-          tileName="support"
-        />
-      </View>
-      <View />
-      <View>
-        <InTodaysEdition
-          orientation="landscape"
-        />
+        <View>
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`104. front lead one - portrait - wide 1`] = `
@@ -4624,123 +4816,179 @@ exports[`136. puzzle - huge 1`] = `
 `;
 
 exports[`137. front lead two - portrait - huge 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
         <View>
-          <TileHFront
-            orientation="portrait"
-            tileName="lead1"
-          />
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
         </View>
-        <View />
-        <View>
-          <TileGFront
-            orientation="portrait"
-            tileName="lead2"
-          />
-        </View>
-      </View>
-      <View>
-        <InTodaysEdition
-          orientation="portrait"
-        />
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`138. front lead two - landscape - huge 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
         <View>
-          <TileHFront
-            orientation="landscape"
-            tileName="lead1"
-          />
-        </View>
-        <View />
-        <View>
-          <TileGFront
-            orientation="landscape"
-            tileName="lead2"
-          />
-        </View>
-        <View />
-        <View>
-          <InTodaysEdition
-            orientation="landscape"
-          />
+          <View>
+            <View>
+              <TileHFront
+                colWidth={0}
+                numberOfLines={24}
+                orientation="portrait"
+                tileName="lead1"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileGFront
+                colWidth={0}
+                numberOfLines={6}
+                orientation="portrait"
+                tileName="lead2"
+              />
+            </View>
+          </View>
         </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`139. front lead one and one - portrait - huge 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
         <View>
-          <TileAFront
-            orientation="portrait"
-            tileName="lead"
-          />
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
         </View>
-        <View />
-        <View>
-          <TileBFront
-            orientation="portrait"
-            showKeyline={true}
-            tileName="support"
-          />
-        </View>
-      </View>
-      <View>
-        <InTodaysEdition
-          orientation="portrait"
-        />
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`140. front lead one and one - landscape - huge 1`] = `
-<View>
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
   <View>
     <View>
       <View>
         <View>
-          <TileAFront
-            orientation="landscape"
-            tileName="lead"
-          />
-        </View>
-        <View />
-        <View>
-          <TileBFront
-            orientation="landscape"
-            showKeyline={false}
-            tileName="support"
-          />
-        </View>
-        <View />
-        <View>
-          <InTodaysEdition
-            orientation="landscape"
-          />
+          <View>
+            <View>
+              <TileAFront
+                colWidth={0}
+                orientation="portrait"
+                tileName="lead"
+              />
+            </View>
+          </View>
+          <View>
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
+          </View>
         </View>
       </View>
     </View>
+    <InTodaysEdition
+      direction="row"
+    />
   </View>
-</View>
+</RCTScrollView>
 `;
 
 exports[`141. front lead one - portrait - huge 1`] = `

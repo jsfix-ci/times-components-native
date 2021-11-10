@@ -997,19 +997,21 @@ exports[`28. front lead one and one - portrait - smalltablet 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -1038,19 +1040,21 @@ exports[`29. front lead one and one - landscape - smalltablet 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -2278,19 +2282,21 @@ exports[`65. front lead one and one - portrait - medium 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -2319,19 +2325,21 @@ exports[`66. front lead one and one - landscape - medium 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -3572,19 +3580,21 @@ exports[`102. front lead one and one - portrait - wide 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -3613,19 +3623,21 @@ exports[`103. front lead one and one - landscape - wide 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -4910,19 +4922,21 @@ exports[`139. front lead one and one - portrait - huge 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -4951,19 +4965,21 @@ exports[`140. front lead one and one - landscape - huge 1`] = `
         <View>
           <View>
             <View>
-              <TileHFront
-                numberOfLines={24}
+              <TileAFront
+                colWidth={0}
                 orientation="portrait"
-                tileName="lead1"
+                tileName="lead"
               />
             </View>
           </View>
           <View>
-            <TileBFront
-              orientation="portrait"
-              showKeyline={true}
-              tileName="support"
-            />
+            <View>
+              <TileBFront
+                orientation="portrait"
+                showKeyline={true}
+                tileName="support"
+              />
+            </View>
           </View>
         </View>
       </View>

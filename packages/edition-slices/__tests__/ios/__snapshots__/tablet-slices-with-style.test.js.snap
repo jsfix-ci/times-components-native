@@ -2273,15 +2273,8 @@ exports[`28. front lead one and one - portrait - smalltablet 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -2291,7 +2284,9 @@ exports[`28. front lead one and one - portrait - smalltablet 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -2341,15 +2336,8 @@ exports[`29. front lead one and one - landscape - smalltablet 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -2359,7 +2347,9 @@ exports[`29. front lead one and one - landscape - smalltablet 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -5159,15 +5149,8 @@ exports[`65. front lead one and one - portrait - medium 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -5177,7 +5160,9 @@ exports[`65. front lead one and one - portrait - medium 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -5227,15 +5212,8 @@ exports[`66. front lead one and one - landscape - medium 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -5245,7 +5223,9 @@ exports[`66. front lead one and one - landscape - medium 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -8028,15 +8008,8 @@ exports[`102. front lead one and one - portrait - wide 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -8046,7 +8019,9 @@ exports[`102. front lead one and one - portrait - wide 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -8096,15 +8071,8 @@ exports[`103. front lead one and one - landscape - wide 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -8114,7 +8082,9 @@ exports[`103. front lead one and one - landscape - wide 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -11150,15 +11120,8 @@ exports[`139. front lead one and one - portrait - huge 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -11168,7 +11131,9 @@ exports[`139. front lead one and one - portrait - huge 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>
@@ -11218,15 +11183,8 @@ exports[`140. front lead one and one - landscape - huge 1`] = `
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "borderColor": "green",
-                  "borderWidth": 1,
-                }
-              }
-            >
-              <TileHFront />
+            <View>
+              <TileAFront />
             </View>
           </View>
           <View
@@ -11236,7 +11194,9 @@ exports[`140. front lead one and one - landscape - huge 1`] = `
               }
             }
           >
-            <TileBFront />
+            <View>
+              <TileBFront />
+            </View>
           </View>
         </View>
       </View>

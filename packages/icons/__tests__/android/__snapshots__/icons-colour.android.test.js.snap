@@ -1,123 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. iconfacebook renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={-341282}
-      stroke={-4128786}
-    >
-      <RNSVGPath />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`2. iconforwardarrow renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={-341282}
-    >
-      <RNSVGPath />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`3. iconstar renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`4. iconcopylink renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`5. iconsavebookmark renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`6. icontwitter renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`7. iconvideo renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGRect
-      fill={-341282}
-      stroke={-4128786}
-    />
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`8. iconvideo360player renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`9. thestlogo renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`10. thetimeslogo renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={-341282}
-      stroke={-4128786}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`11. closeicon renders with different colours 1`] = `
+exports[`1. closeicon renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
@@ -128,7 +11,7 @@ exports[`11. closeicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`12. closeroundicon renders with different colours 1`] = `
+exports[`2. closeroundicon renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
 >
@@ -149,70 +32,7 @@ exports[`12. closeroundicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. glassmagnifiericon renders with different colours 1`] = `
-<RNSVGSvgView
-  fill="none"
->
-  <RNSVGGroup
-    fill={null}
-  >
-    <RNSVGMask>
-      <RNSVGPath
-        fill={-1}
-      />
-    </RNSVGMask>
-    <RNSVGGroup>
-      <RNSVGRect
-        fill={-1}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`14. rightorientedglassmagnifier renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={null}
-    >
-      <RNSVGGroup
-        stroke={-16777216}
-      >
-        <RNSVGGroup>
-          <RNSVGGroup>
-            <RNSVGCircle />
-            <RNSVGPath />
-          </RNSVGGroup>
-        </RNSVGGroup>
-      </RNSVGGroup>
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`15. leftchevron renders with different colours 1`] = `
-<RNSVGSvgView
-  fill="none"
->
-  <RNSVGGroup
-    fill={null}
-  >
-    <RNSVGMask>
-      <RNSVGPath
-        fill={-1}
-      />
-    </RNSVGMask>
-    <RNSVGGroup>
-      <RNSVGRect
-        fill={-1}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`16. deleteicon renders with different colours 1`] = `
+exports[`3. deleteicon renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGGroup
@@ -235,12 +55,192 @@ exports[`16. deleteicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`17. iconcheckmark renders with different colours 1`] = `
+exports[`4. glassmagnifiericon renders with different colours 1`] = `
+<RNSVGSvgView
+  fill="none"
+>
+  <RNSVGGroup
+    fill={null}
+  >
+    <RNSVGMask>
+      <RNSVGPath
+        fill={-1}
+      />
+    </RNSVGMask>
+    <RNSVGGroup>
+      <RNSVGRect
+        fill={-1}
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`5. iconcheckmark renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
       fill={null}
       stroke={-1728053248}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`6. iconcopylink renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`7. iconfacebook renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={-341282}
+      stroke={-4128786}
+    >
+      <RNSVGPath />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`8. iconforwardarrow renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={-341282}
+    >
+      <RNSVGPath />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`9. iconsavebookmark renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`10. iconstar renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`11. icontwitter renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`12. iconvideo renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGRect
+      fill={-341282}
+      stroke={-4128786}
+    />
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`13. iconvideo360player renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`14. leftchevron renders with different colours 1`] = `
+<RNSVGSvgView
+  fill="none"
+>
+  <RNSVGGroup
+    fill={null}
+  >
+    <RNSVGMask>
+      <RNSVGPath
+        fill={-1}
+      />
+    </RNSVGMask>
+    <RNSVGGroup>
+      <RNSVGRect
+        fill={-1}
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`15. rightorientedglassmagnifier renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGGroup
+      fill={null}
+    >
+      <RNSVGGroup
+        stroke={-16777216}
+      >
+        <RNSVGGroup>
+          <RNSVGGroup>
+            <RNSVGCircle />
+            <RNSVGPath />
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`16. thestlogo renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`17. thetimeslogo renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGPath
+      fill={-341282}
+      stroke={-4128786}
     />
   </RNSVGGroup>
 </RNSVGSvgView>
