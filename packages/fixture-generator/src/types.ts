@@ -4,16 +4,6 @@ export interface DateFilter {
   to: DateTime;
 }
 
-export interface BookmarkSaveInput {
-  /** ID of resource being bookmarked */
-  id: Uuid;
-}
-
-export interface BookmarkUnsaveInput {
-  /** ID of resource being unbookmarked */
-  id: Uuid;
-}
-
 export interface ArticleInput {
   leadAsset?: MediaInput | null;
 
@@ -368,120 +358,6 @@ export interface DailyUniversalRegisterItemInput {
   byline?: Markup | null;
 
   content: Markup;
-}
-/** all the booleans were left as we can default them to false/true in Ingestdepending on the fieldarrays were left as required because we can supply empty onesthese comments should be deleted before merging!!! */
-export interface DraftArticleInput {
-  authors: Slug[];
-
-  byline?: Markup | null;
-
-  bylines?: BylineInput[] | null;
-
-  backgroundColour?: ColourInput | null;
-
-  dropcapsDisabled: boolean;
-  /** we can use this field if we are ok with the required contentwhich we could default to an empty string in Ingest */
-  embeddedContent?: EmbeddedContentInput | null;
-
-  expirableFlags: ExpirableFlagInput[];
-
-  headline?: string | null;
-
-  shortHeadline?: string | null;
-
-  id: Uuid;
-
-  label?: string | null;
-  /** we can use MediaInput only if we are ok with the required title */
-  leadAsset?: MediaInput | null;
-
-  listingAsset?: MediaInput | null;
-
-  commentsEnabled: boolean;
-
-  commentsPreModerated?: boolean | null;
-
-  commercialTags: string[];
-
-  commercialSectionTags?: string[] | null;
-
-  section?: SectionName | null;
-
-  seoDescription?: string | null;
-
-  commercialSection?: string | null;
-
-  parentId?: Uuid | null;
-
-  publicationName: PublicationName;
-  /** may appear when previewing a published article */
-  publishedTime?: DateTime | null;
-  /** we can use the same input as it only specifies articles by UUIDthe only problem is MediaInput which has a required 'title' fieldwhich we could default to an empty string in Ingest */
-  relatedArticleSlice?: DraftArticleSliceInput | null;
-
-  textColour?: ColourInput | null;
-
-  savingEnabled: boolean;
-
-  sharingEnabled: boolean;
-
-  slug?: Slug | null;
-
-  standfirst?: string | null;
-
-  strapline?: string | null;
-  /** always available from Methode */
-  updatedTime: DateTime;
-
-  isLegacy: boolean;
-  /** same thing as with ArticleSliceInput, there is an ImageInputwhich has a required title which we may default to an empty string */
-  content: ContentFragmentInput[];
-
-  template?: TemplateType | null;
-
-  workDesk?: WorkDeskName | null;
-}
-
-export interface DraftArticleSliceInput {
-  standardSlice?: DraftStandardSliceInput | null;
-
-  leadOneAndTwoSlice?: DraftLeadOneAndTwoSliceInput | null;
-
-  opinionOneAndTwoSlice?: DraftOpinionOneAndTwoSliceInput | null;
-}
-
-export interface DraftStandardSliceInput {
-  items: DraftTileInput[];
-}
-
-export interface DraftTileInput {
-  articleId?: Uuid | null;
-
-  draftArticleId?: Uuid | null;
-
-  headline?: string | null;
-
-  leadAsset?: MediaInput | null;
-
-  strapline?: string | null;
-
-  teaser?: Markup | null;
-}
-
-export interface DraftLeadOneAndTwoSliceInput {
-  lead: DraftTileInput;
-
-  support1: DraftTileInput;
-
-  support2: DraftTileInput;
-}
-
-export interface DraftOpinionOneAndTwoSliceInput {
-  opinion: DraftTileInput;
-
-  support1: DraftTileInput;
-
-  support2: DraftTileInput;
 }
 
 export interface EditionInput {
@@ -1189,10 +1065,6 @@ export interface Section {
   colour: Colour;
 }
 
-export interface DraftArticleSlice {
-  items: DraftTile[];
-}
-
 // ====================================================
 // Types
 // ====================================================
@@ -1206,10 +1078,6 @@ export interface Query {
   article?: Article | null;
 
   articles?: Articles | null;
-
-  draftArticle?: DraftArticle | null;
-
-  draftArticles?: DraftArticles | null;
 
   edition?: Edition | null;
 
@@ -1661,112 +1529,6 @@ export interface Articles {
   list: (Article | null)[];
 }
 
-export interface DraftArticle extends ArticleInterface {
-  /** Used for indepth templates to define the background colour to be used. */
-  backgroundColour?: Colour | null;
-  /** An AST of one or more authors that may contain job titles and/or locations */
-  byline?: Markup | null;
-  /** Text or structured bylines for one or more authors */
-  bylines?: (ArticleByline | null)[] | null;
-  /** The content for the article in the shape of an AST */
-  content?: Markup | null;
-  /** Ability to disable dropcaps even if the given template has them by default */
-  dropcapsDisabled?: boolean | null;
-  /** List of time dependent with expiry time */
-  expirableFlags?: (ExpirableFlag | null)[] | null;
-  /** Whether or not the article contains a video (as a lead asset or an inline video, or both) */
-  hasVideo?: boolean | null;
-  /** A longer SEO headline. Note this might not be populated so please use 'shortHeadline' as a fallback. */
-  headline?: string | null;
-
-  id: Uuid;
-  /** A free piece of text to describe an article */
-  label?: string | null;
-  /** A flag set outside of the commenting system, usually used for controversial articles */
-  commentsEnabled?: boolean | null;
-  /** The commenting system moderation policy for this article */
-  commentsPreModerated?: boolean | null;
-  /** A rarely populated field that is a list of free text such as ["luxury", "ferrari"] */
-  commercialTags?: (string | null)[] | null;
-  /** A field for take-over pages to use instead of content */
-  embeddedContent?: DraftEmbeddedContent | null;
-  /** A field that is populated from the article headline, a string delineated withcommas such as ["this", "is", "a", "headline"] */
-  keywords: string[];
-  /** A field returning SEO description of the article content */
-  seoDescription?: string | null;
-  /** A shorter headline useful for when space is at a premium. Note this may returnnull so please use `headline` field as a fallback. */
-  shortHeadline?: string | null;
-  /** Hashed version of the article identifier */
-  shortIdentifier?: string | null;
-  /** The name of the segment that the article appears in, for example Sport in a newspaper */
-  section?: SectionName | null;
-  /** The name of the commercial segment that the article appears in, for special commercial campaign */
-  commercialSection?: string | null;
-  /** A field that is a list of free text for commercial section tags */
-  commercialSectionTags?: string[] | null;
-
-  leadAsset?: Media | null;
-
-  listingAsset?: Media | null;
-
-  parentId?: Uuid | null;
-
-  publicationName: PublicationName;
-
-  publishedTime?: DateTime | null;
-
-  updatedTime?: DateTime | null;
-  /** Related article slice */
-  relatedArticleSlice?: DraftArticleSlice | null;
-
-  savingEnabled?: boolean | null;
-
-  sharingEnabled?: boolean | null;
-  /** Customisable field in the CMS, that is by default a slugified version of the article title */
-  slug?: string | null;
-  /** A brief introductory summary, typically appearing immediately after theheadline and typographically distinct from the rest of the article */
-  standfirst?: string | null;
-  /** A brief introductory summary, typically appearing immediately after the standfirst */
-  strapline?: string | null;
-  /** A predefined truncated version of the article with a max length of the teaser,can optionally choose a shorter length. Use this to avoid ACS. */
-  summary?: Markup | null;
-  /** Used for indepth templates to define the text colour to be used. */
-  textColour?: Colour | null;
-
-  url?: Url | null;
-
-  template?: TemplateType | null;
-
-  workDesk?: WorkDeskName | null;
-}
-
-export interface DraftEmbeddedContent {
-  authorised?: EmbeddedContent | null;
-
-  unauthorised?: EmbeddedContent | null;
-}
-
-/** An article presentation */
-export interface DraftTile {
-  draftArticleId?: Uuid | null;
-
-  articleId?: Uuid | null;
-
-  article: DraftTileArticle;
-
-  headline?: string | null;
-
-  leadAsset?: Media | null;
-
-  strapline?: string | null;
-
-  teaser?: Markup | null;
-}
-
-export interface DraftArticles {
-  list: DraftArticle[];
-}
-
 /** An edition for a single day */
 export interface Edition {
   id: Uuid;
@@ -1868,14 +1630,6 @@ export interface TopicConnection {
 export interface User {
   /** a code used for Spot.IM's Single Sign On auth. Details here: https://github.com/SpotIM/spotim-integration-docs/blob/master/api/single-sign-on/README.md */
   spotimCodeB?: string | null;
-
-  bookmarks?: PageOfBookmarks | null;
-}
-
-export interface PageOfBookmarks {
-  bookmarks: Bookmark[];
-
-  total: number;
 }
 
 export interface Bookmark {
@@ -1927,10 +1681,6 @@ export interface Newsletter {
 }
 
 export interface Mutation {
-  saveBookmarks: Bookmark[];
-
-  unsaveBookmarks: Uuid[];
-
   subscribeNewsletter?: Newsletter | null;
 
   unsubscribeNewsletter?: Newsletter | null;
@@ -2006,37 +1756,6 @@ export interface DailyUniversalRegisterItem {
 /** Any number of articles with no opinion on the layout/importance of any */
 export interface Default extends Layout {
   template?: Template | null;
-}
-
-export interface DraftArticleUpsertResult {
-  id: Uuid;
-}
-
-/** A lead article and two supporting articles. This slice can also represent leadrelated articles slice of the same name (lead-1-and-2-puffs,related-links-lead-and-2) */
-export interface DraftLeadOneAndTwoSlice extends DraftArticleSlice {
-  lead: DraftTile;
-
-  support1: DraftTile;
-
-  support2: DraftTile;
-
-  items: DraftTile[];
-}
-
-/** A lead opinion related articles slice (related-links-opinion-and-2) */
-export interface DraftOpinionOneAndTwoSlice extends DraftArticleSlice {
-  opinion: DraftTile;
-
-  support1: DraftTile;
-
-  support2: DraftTile;
-
-  items: DraftTile[];
-}
-
-/** Fallback slice without any prescribed presentation, replaces standard related-links slice (related-links) */
-export interface DraftStandardSlice extends DraftArticleSlice {
-  items: DraftTile[];
 }
 
 export interface EditionUpsertResult {
@@ -2559,12 +2278,6 @@ export interface ArticlesQueryArgs {
 
   shortIdentifier?: string | null;
 }
-export interface DraftArticleQueryArgs {
-  id: string;
-}
-export interface DraftArticlesQueryArgs {
-  ids?: string[] | null;
-}
 export interface EditionQueryArgs {
   id: string;
 
@@ -2725,17 +2438,6 @@ export interface ListEditionsPagedArgs {
 export interface SpotimCodeBUserArgs {
   codeA: string;
 }
-export interface BookmarksUserArgs {
-  first?: number | null;
-
-  skip?: number | null;
-}
-export interface SaveBookmarksMutationArgs {
-  bookmarks: BookmarkSaveInput[];
-}
-export interface UnsaveBookmarksMutationArgs {
-  bookmarks: BookmarkUnsaveInput[];
-}
 export interface SubscribeNewsletterMutationArgs {
   code: string;
 }
@@ -2755,8 +2457,6 @@ export interface CancelSubscriptionMutationArgs {
 export type ArticleByline = TextByline | AuthorByline;
 
 export type Media = Image | Video;
-
-export type DraftTileArticle = Article | DraftArticle;
 
 export type FrontPageSectionSlice =
   | InTheNewsSlice
