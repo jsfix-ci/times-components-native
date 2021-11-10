@@ -123,7 +123,7 @@ const FrontTileSummary: React.FC<Props> = (props) => {
         contentWidth: colWidth,
       })}
       {hasVideo && (
-        <View style={{ position: "absolute", top: 0 }}>
+        <View style={{ position: "absolute", top: -getIconSize(colWidth) }}>
           <PlayIcon size={getIconSize(colWidth)} />
         </View>
       )}
