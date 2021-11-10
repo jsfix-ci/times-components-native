@@ -12,7 +12,6 @@ import generateQueries from "./generate-queries";
 import mm from "./make-mocks";
 import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
-import nativeEdition from "./native-edition";
 import providerTester from "./provider-tester";
 import topic from "./topic";
 import inlineVideo from "./fixtures/inline-video.json";
@@ -21,7 +20,6 @@ import pullQuote from "./fixtures/pull-quote.json";
 import topicArticles from "./fixtures/topic-articles.json";
 import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
-import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 
 const fixtures = {
   articleListNoImages,
@@ -50,10 +48,7 @@ export {
   makeMocks,
   MockedProvider,
   MockFixture,
-  nativeEdition,
   providerTester,
   schemaToMocks,
   topic,
-  bookmarks,
-  MockBookmarksProvider,
 };

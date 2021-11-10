@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Linking } from "react-native";
+import { Linking, Platform } from "react-native";
 import PropTypes from "prop-types";
 import AutoHeightWebView from "react-native-autoheight-webview";
 import ResponsiveImageInteractive from "./responsive-image";
+import { getAndroidWebViewLayerType } from "../../utils/src/android-webview-utils";
 
 const editorialLambdaProtocol = "https://";
 const editorialLambdaOrigin = "jotn9sgpg6.execute-api.eu-west-1.amazonaws.com";
@@ -89,7 +90,7 @@ class InteractiveWrapper extends Component {
         source={{ uri }}
         style={{ height, width: "100%" }}
         onHttpError={this.handleHttpError}
-        androidLayerType={"hardware"}
+        androidLayerType={getAndroidWebViewLayerType(Platform.Version)}
       />
     );
   }

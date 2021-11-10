@@ -1,6 +1,5 @@
 import { MockList } from "graphql-tools";
 import { article as articleQuery } from "@times-components-native/provider-queries";
-import bookmarks from "./bookmarks";
 import article from "../fixtures/article.json";
 
 const convertRatio = (ratio) => {
@@ -89,6 +88,5 @@ export default ({
       query: articleQuery,
       variables: queryVariables,
     },
-    ...bookmarks({ id: queryVariables.id }, 1000),
   ];
 };

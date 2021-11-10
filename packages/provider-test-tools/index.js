@@ -13,11 +13,8 @@ export {
   makeMocks,
   MockedProvider,
   MockFixture,
-  nativeEdition,
   providerTester,
   schemaToMocks,
   tidyEvent,
   topic,
-  bookmarks,
-  MockBookmarksProvider,
 } from "./src";

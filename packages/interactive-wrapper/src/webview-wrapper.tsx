@@ -24,7 +24,9 @@ const smallInteractiveAdditionalHeight = 30;
 function WebviewWrapper({ config, id }: IProps) {
   const { dev, environment, platform, version } = config;
   const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-  const scriptToInject = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
+  const scriptToInject = `window.postMessage = function(data) {
+    window.ReactNativeWebView.postMessage(data);
+  };(${webviewEventCallbackSetup})({window});`;
   const [height, setHeight] = useState(1);
   const webview = useRef<WebView>(null);
 
