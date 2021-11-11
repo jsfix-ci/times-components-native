@@ -2,15 +2,12 @@ import {
   getEditionBreakpoint,
   getNarrowArticleBreakpoint,
 } from "@times-components-native/styleguide";
-import { NativeModules } from "react-native";
 import { isTablet } from "react-native-device-info";
 import { initialWindowMetrics } from "react-native-safe-area-context";
 
 import { ContextType, Orientation } from "./types";
 
-const config = (NativeModules || {}).ReactConfig;
-
-const minTabletWidth = 768;
+const minTabletWidth = 700;
 const approximateNavHeightOnTablet = 200;
 
 const calculateSectionContentHeightTablet = (height: number) =>
@@ -28,9 +25,7 @@ export const calculateResponsiveContext = (
   narrowArticleBreakpoint: getNarrowArticleBreakpoint(width),
   fontScale,
   isTablet: isTablet ? isTablet() : false,
-  isArticleTablet:
-    (config && config.breakpoint && config.breakpoint !== "small") ||
-    width >= minTabletWidth,
+  isArticleTablet: width >= minTabletWidth,
   windowWidth: width,
   windowHeight: height,
   orientation: height > width ? Orientation.PORTRAIT : Orientation.LANDSCAPE,
