@@ -21,8 +21,7 @@ ignores: [
   "typescript",
   "url-polyfill",
   "url",
-  "v8-android",
-  "@types/cheerio"
+  "v8-android"
 ]
 skip-missing: true
 ignore-bin-package: false
