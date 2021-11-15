@@ -4991,6 +4991,7 @@ exports[`63. front lead two - portrait - medium 1`] = `
     }
   }
 >
+
   <View>
     <View
       style={
@@ -5042,6 +5043,7 @@ exports[`63. front lead two - portrait - medium 1`] = `
       </View>
     </View>
     <InTodaysEdition />
+
   </View>
 </RCTScrollView>
 `;
@@ -5167,7 +5169,7 @@ exports[`65. front lead one and one - portrait - medium 1`] = `
         </View>
       </View>
     </View>
-    <InTodaysEdition />
+    <InTodaysEdition
   </View>
 </RCTScrollView>
 `;
@@ -5252,31 +5254,16 @@ exports[`67. front lead one - portrait - medium 1`] = `
       Object {
         "alignSelf": "center",
         "flex": 1,
-        "flexDirection": "column",
+        "flexDirection": "row",
         "justifyContent": "center",
-        "paddingBottom": 15,
-        "paddingTop": 10,
         "width": 688,
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <TileFFront />
     </View>
-    <View
-      style={
-        Object {
-          "height": 133,
-          "marginTop": 10,
-        }
-      }
-    >
+    <View>
       <InTodaysEdition />
     </View>
   </View>

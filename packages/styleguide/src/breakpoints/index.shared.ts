@@ -8,7 +8,7 @@ const editionBreakpoints = {
 
 const editionBreakpointWidths = {
   smallTablet: 600,
-  medium: 768,
+  medium: 700,
   huge: 1366,
   wide: 1024,
 };
@@ -16,6 +16,10 @@ const editionMaxWidth = editionBreakpointWidths.huge;
 const sliceContentMaxWidth = 1180;
 
 const narrowArticleWidths = {
+  small: {
+    container: 553,
+    content: 545,
+  },
   medium: {
     container: 853,
     content: 545,

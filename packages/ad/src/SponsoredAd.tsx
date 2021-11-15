@@ -1,81 +1,64 @@
 import React, { useCallback, useRef, useState } from "react";
 import WebView, { WebViewMessageEvent } from "react-native-webview";
-import { Linking, Platform, View } from "react-native";
+import { Linking, Platform, View, Dimensions, PixelRatio } from "react-native";
 import { isTablet } from "react-native-device-info";
 import { WebViewNavigation } from "react-native-webview/lib/WebViewTypes";
-import cheerio from "cheerio";
+const ratio = PixelRatio.get();
 
-import styles, {
-  getAdContainerHeightForNAds,
-  TABLET_AD_HEIGHT,
-} from "./styles";
+const { width } = Dimensions.get("window");
+
+import styles, { TABLET_AD_HEIGHT } from "./styles";
 
 interface WebviewHeightCallbackSetupProps {
   window: any;
+  document: any;
   MutationObserver: any;
+  width: number;
+  ratio: number;
 }
 
 const webviewHeightCallbackSetup = ({
   window,
+  document,
   MutationObserver,
+  width,
+  ratio,
 }: WebviewHeightCallbackSetupProps) => {
   "show source";
-  const document = window.document;
-  window.eventCallback = (type: string, content: any) => {
-    window.ReactNativeWebView.postMessage(JSON.stringify({ type, content }));
-  };
-  window.addEventListener("error", (ev: any) => {
-    window.eventCallback(
-      "error",
-      `ev=${JSON.stringify(ev)},msg=${ev.message || ""}, line=${
-        ev.lineno || ""
-      }, col=${ev.colno || ""}`,
+  window.ReactNativeWebView.postMessage(JSON.stringify({ running: "error" }));
+  document.addEventListener("DOMContentLoaded", function () {
+    const elementToObserve = document.getElementById("dianomi");
+
+    window.ReactNativeWebView.postMessage(
+      JSON.stringify({ running: elementToObserve.clientHeight }),
     );
-  });
-  // eslint-disable-next-line no-console
-  window.console.error = (...args: any) => {
-    window.eventCallback("error", args.join("\n"));
-  };
 
-  window.addEventListener("DOMContentLoaded", () => {
-    try {
-      const elementToObserve = document.getElementById("dianomi");
+    const observer = new MutationObserver(function () {
+      try {
+        const dianomiAdContainer = document.getElementById("dianomi");
+        const adContainerClientHeight = dianomiAdContainer.clientHeight;
 
-      window.ReactNativeWebView.postMessage(
-        JSON.stringify({
-          elementToObserve,
-        }),
-      );
+        const pixelWidthOfScreen = width * ratio;
+        const normalisedAdContainerHeight =
+          (pixelWidthOfScreen / window.innerWidth) * adContainerClientHeight;
 
-      const observer = new MutationObserver(function () {
-        const adElement = document.querySelector(".dianomi_context");
-        const adHTML = adElement.innerHTML;
-        const htmlFirstPass = adHTML.substring(
-          adHTML.indexOf("https://www.dianomi.com"),
-          adHTML.indexOf("</iframe>"),
+        window.ReactNativeWebView.postMessage(
+          JSON.stringify({ adContainerHeight: normalisedAdContainerHeight }),
         );
-        const url = htmlFirstPass.substring(0, htmlFirstPass.indexOf(" ") - 1);
-        fetch(url).then((result) => {
-          result.text().then((parsedResult) => {
-            window.ReactNativeWebView.postMessage(
-              JSON.stringify({
-                adHtml: parsedResult,
-              }),
-            );
-          });
-        });
-      });
+      } catch (error) {
+        // In case of failure force showing of no ads, rather than showing a 1/2 broken ad
+        window.ReactNativeWebView.postMessage(
+          JSON.stringify({ adContainerHeight: 0, error: "error" }),
+        );
+      }
+    });
 
-      observer.observe(elementToObserve, {
-        characterData: false,
-        childList: true,
-        attributes: false,
-      });
-    } catch (e) {
-      window.ReactNativeWebView.postMessage(
-        JSON.stringify({ e, width: 0, height: 0 }),
-      );
-    }
+    observer.observe(elementToObserve, {
+      characterData: true,
+      childList: true,
+      attributes: true,
+      subtree: true,
+    });
   });
 };
 
@@ -88,10 +71,6 @@ const handleRequest = (e: WebViewNavigation) => {
   Linking.openURL(e.url);
   return false;
 };
-
-const scriptToInject = `window.postMessage = function(data) {
-  window.ReactNativeWebView.postMessage(data);
-};(${webviewHeightCallbackSetup.toString()})({window,MutationObserver});`;
 
 /*
  * These ids are sent to Dianomi to decide how many ads and
@@ -121,10 +100,8 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
   const handleOnMessage = useCallback((event: WebViewMessageEvent) => {
     if (event.nativeEvent.data && !isTablet()) {
       const eventData = JSON.parse(event.nativeEvent.data);
-      if (eventData && eventData.adHtml) {
-        const $ = cheerio.load(eventData.adHtml);
-        const numberOfAdsInHtml = $("div[id^='dianomi_ad_']").length;
-        setHeight(getAdContainerHeightForNAds(numberOfAdsInHtml));
+      if (eventData.adContainerHeight) {
+        setHeight(parseInt(eventData.adContainerHeight) / ratio);
       }
     } else {
       setHeight(TABLET_AD_HEIGHT);
@@ -136,16 +113,24 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
       <WebView
         ref={webview}
         onMessage={handleOnMessage}
-        injectedJavaScriptBeforeContentLoaded={scriptToInject}
-        style={{ ...styles.sponsoredAd, height }}
+        style={{ height, width: "100%" }}
+        containerStyle={{ width: "100%" }}
         originWhitelist={["*"]}
         onShouldStartLoadWithRequest={handleRequest}
         startInLoadingState={true}
+        scalesPageToFit={false}
         scrollEnabled={false}
         source={{
           html: `
-            <script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
-            <div id="dianomi" class="dianomi_context" data-dianomi-context-id="${dianomiContextId}"></div>
+            <html>
+              <body>
+                <script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+                <div id="dianomi" class="dianomi_context" data-dianomi-context-id="${dianomiContextId}"></div>
+                <script>
+                  (${webviewHeightCallbackSetup.toString()})({window, document, MutationObserver, width:${width}, ratio:${ratio}});
+                </script>
+              </body>
+            </html>
           `,
         }}
         javaScriptEnabled

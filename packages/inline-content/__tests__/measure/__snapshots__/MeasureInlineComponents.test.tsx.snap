@@ -14,8 +14,13 @@ exports[`MeasureContent renders the content 1`] = `
         Object {
           "marginBottom": 20,
         },
-        false,
-        false,
+        Object {
+          "alignSelf": "center",
+          "width": 660,
+        },
+        Object {
+          "width": "100%",
+        },
         false,
         false,
         Object {},

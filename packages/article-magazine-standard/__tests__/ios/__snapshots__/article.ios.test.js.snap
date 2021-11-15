@@ -10,7 +10,10 @@ exports[`1. an error 1`] = `
       "isLandscape": false,
       "isPortrait": true,
       "isTablet": false,
-      "narrowArticleBreakpoint": undefined,
+      "narrowArticleBreakpoint": Object {
+        "container": 553,
+        "content": 545,
+      },
       "orientation": "portrait",
       "sectionContentHeightTablet": 200,
       "sectionContentWidth": 300,
@@ -33,7 +36,10 @@ exports[`2. loading 1`] = `
       "isLandscape": false,
       "isPortrait": true,
       "isTablet": false,
-      "narrowArticleBreakpoint": undefined,
+      "narrowArticleBreakpoint": Object {
+        "container": 553,
+        "content": 545,
+      },
       "orientation": "portrait",
       "sectionContentHeightTablet": 200,
       "sectionContentWidth": 300,
@@ -56,7 +62,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       "isLandscape": false,
       "isPortrait": true,
       "isTablet": false,
-      "narrowArticleBreakpoint": undefined,
+      "narrowArticleBreakpoint": Object {
+        "container": 553,
+        "content": 545,
+      },
       "orientation": "portrait",
       "sectionContentHeightTablet": 200,
       "sectionContentWidth": 300,
@@ -101,11 +110,12 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                 ]
               }
               color="#1D1D1B"
-              tooltipArrowOffset={120}
-              tooltipOffsetX={-45}
-              tooltipOffsetY={55}
+              tooltipArrowOffset={35}
+              tooltipOffsetX={-10}
+              tooltipOffsetY={25}
             />
           </View>
+          <View />
           <View>
             <View>
               <Text>
@@ -169,7 +179,10 @@ exports[`4. an article with ads 1`] = `
       "isLandscape": false,
       "isPortrait": true,
       "isTablet": false,
-      "narrowArticleBreakpoint": undefined,
+      "narrowArticleBreakpoint": Object {
+        "container": 553,
+        "content": 545,
+      },
       "orientation": "portrait",
       "sectionContentHeightTablet": 200,
       "sectionContentWidth": 300,
@@ -214,11 +227,12 @@ exports[`4. an article with ads 1`] = `
                 ]
               }
               color="#1D1D1B"
-              tooltipArrowOffset={120}
-              tooltipOffsetX={-45}
-              tooltipOffsetY={55}
+              tooltipArrowOffset={35}
+              tooltipOffsetX={-10}
+              tooltipOffsetY={25}
             />
           </View>
+          <View />
           <View>
             <View>
               <Text>

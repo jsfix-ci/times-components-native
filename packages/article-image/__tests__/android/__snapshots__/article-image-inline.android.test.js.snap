@@ -4,11 +4,14 @@ exports[`1. inline image (landscape) with caption and credits 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
+      "alignSelf": "center",
+      "flexDirection": "column",
       "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 10,
+      "marginTop": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
       "paddingRight": 10,
+      "paddingTop": 0,
       "width": "100%",
     }
   }
@@ -86,11 +89,14 @@ exports[`2. inline image (portrait) with caption and credits 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
+      "alignSelf": "center",
+      "flexDirection": "column",
       "flexWrap": "nowrap",
-      "paddingBottom": 25,
-      "paddingLeft": 10,
+      "marginTop": 0,
+      "paddingBottom": 0,
+      "paddingLeft": 0,
       "paddingRight": 10,
+      "paddingTop": 0,
       "width": "100%",
     }
   }

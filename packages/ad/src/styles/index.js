@@ -1,17 +1,8 @@
 import styleguide from "@times-components-native/styleguide";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 
 const { colours, fontFactory, spacing, fonts } = styleguide();
-const { width } = Dimensions.get("screen");
-
-// The ads are shown full with on devices and device sizes change,
-// so we need to know the width to height ratio to calculate the height
-// of the ads based on their width when displayed
-const AD_WIDTH_HEIGHT_RATIO = 1.22;
 export const TABLET_AD_HEIGHT = 350;
-
-export const getAdContainerHeightForNAds = (numberOfAds, adWidth = width) =>
-  numberOfAds * (adWidth / AD_WIDTH_HEIGHT_RATIO);
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
@@ -107,9 +98,6 @@ const styles = {
   sponsoredAdWrapper: {
     borderTopWidth: 1,
     borderColor: colours.functional.keyline,
-  },
-  sponsoredAd: {
-    flex: 0,
   },
   inlineAd: {
     marginTop: 0,
