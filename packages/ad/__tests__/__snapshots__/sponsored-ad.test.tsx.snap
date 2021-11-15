@@ -2,14 +2,106 @@
 
 exports[`SponsoredAd renders Dianomi script tag 1`] = `
 "
-            <script type=\\"text/javascript\\" id=\\"dianomi_context_script\\" src=\\"https://www.dianomi.com/js/contextfeed.js\\"></script>
-            <div id=\\"dianomi\\" class=\\"dianomi_context\\" data-dianomi-context-id=\\"243\\"></div>
+            <html>
+              <body>
+                <script type=\\"text/javascript\\" id=\\"dianomi_context_script\\" src=\\"https://www.dianomi.com/js/contextfeed.js\\"></script>
+                <div id=\\"dianomi\\" class=\\"dianomi_context\\" data-dianomi-context-id=\\"243\\"></div>
+                <script>
+                  (function webviewHeightCallbackSetup(_ref) {
+  \\"show source\\";
+
+  var window = _ref.window,
+      document = _ref.document,
+      MutationObserver = _ref.MutationObserver,
+      width = _ref.width,
+      ratio = _ref.ratio;
+  window.ReactNativeWebView.postMessage(JSON.stringify({
+    running: \\"error\\"
+  }));
+  document.addEventListener(\\"DOMContentLoaded\\", function () {
+    var elementToObserve = document.getElementById(\\"dianomi\\");
+    window.ReactNativeWebView.postMessage(JSON.stringify({
+      running: elementToObserve.clientHeight
+    }));
+    var observer = new MutationObserver(function () {
+      try {
+        var dianomiAdContainer = document.getElementById(\\"dianomi\\");
+        var adContainerClientHeight = dianomiAdContainer.clientHeight;
+        var pixelWidthOfScreen = width * ratio;
+        var normalisedAdContainerHeight = pixelWidthOfScreen / window.innerWidth * adContainerClientHeight;
+        window.ReactNativeWebView.postMessage(JSON.stringify({
+          adContainerHeight: normalisedAdContainerHeight
+        }));
+      } catch (error) {
+        window.ReactNativeWebView.postMessage(JSON.stringify({
+          adContainerHeight: 0,
+          error: \\"error\\"
+        }));
+      }
+    });
+    observer.observe(elementToObserve, {
+      characterData: true,
+      childList: true,
+      attributes: true,
+      subtree: true
+    });
+  });
+})({window, document, MutationObserver, width:750, ratio:2});
+                </script>
+              </body>
+            </html>
           "
 `;
 
 exports[`SponsoredAd renders the require number of ad items 1`] = `
 "
-            <script type=\\"text/javascript\\" id=\\"dianomi_context_script\\" src=\\"https://www.dianomi.com/js/contextfeed.js\\"></script>
-            <div id=\\"dianomi\\" class=\\"dianomi_context\\" data-dianomi-context-id=\\"250\\"></div>
+            <html>
+              <body>
+                <script type=\\"text/javascript\\" id=\\"dianomi_context_script\\" src=\\"https://www.dianomi.com/js/contextfeed.js\\"></script>
+                <div id=\\"dianomi\\" class=\\"dianomi_context\\" data-dianomi-context-id=\\"250\\"></div>
+                <script>
+                  (function webviewHeightCallbackSetup(_ref) {
+  \\"show source\\";
+
+  var window = _ref.window,
+      document = _ref.document,
+      MutationObserver = _ref.MutationObserver,
+      width = _ref.width,
+      ratio = _ref.ratio;
+  window.ReactNativeWebView.postMessage(JSON.stringify({
+    running: \\"error\\"
+  }));
+  document.addEventListener(\\"DOMContentLoaded\\", function () {
+    var elementToObserve = document.getElementById(\\"dianomi\\");
+    window.ReactNativeWebView.postMessage(JSON.stringify({
+      running: elementToObserve.clientHeight
+    }));
+    var observer = new MutationObserver(function () {
+      try {
+        var dianomiAdContainer = document.getElementById(\\"dianomi\\");
+        var adContainerClientHeight = dianomiAdContainer.clientHeight;
+        var pixelWidthOfScreen = width * ratio;
+        var normalisedAdContainerHeight = pixelWidthOfScreen / window.innerWidth * adContainerClientHeight;
+        window.ReactNativeWebView.postMessage(JSON.stringify({
+          adContainerHeight: normalisedAdContainerHeight
+        }));
+      } catch (error) {
+        window.ReactNativeWebView.postMessage(JSON.stringify({
+          adContainerHeight: 0,
+          error: \\"error\\"
+        }));
+      }
+    });
+    observer.observe(elementToObserve, {
+      characterData: true,
+      childList: true,
+      attributes: true,
+      subtree: true
+    });
+  });
+})({window, document, MutationObserver, width:750, ratio:2});
+                </script>
+              </body>
+            </html>
           "
 `;

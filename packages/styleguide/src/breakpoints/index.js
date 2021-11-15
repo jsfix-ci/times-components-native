@@ -1,5 +1,3 @@
-import { NativeModules } from "react-native";
-
 import widths, {
   editionBreakpoints,
   editionMaxWidth,
@@ -8,12 +6,7 @@ import widths, {
   narrowArticleWidths,
 } from "./index.shared";
 
-const config = (NativeModules || {}).ReactConfig;
-
 const getEditionBreakpoint = (width) => {
-  if (config && config.breakpoint) {
-    return config.breakpoint;
-  }
   if (width < editionBreakpointWidths.smallTablet) {
     return editionBreakpoints.small;
   }
@@ -30,15 +23,14 @@ const getEditionBreakpoint = (width) => {
 };
 
 const getNarrowArticleBreakpoint = (width) => {
-  if (config && config.breakpoint) {
-    return config.breakpoint;
-  }
   if (width < editionBreakpointWidths.medium) {
     return narrowArticleWidths.small;
   }
+
   if (width < editionBreakpointWidths.wide) {
     return narrowArticleWidths.medium;
   }
+
   return narrowArticleWidths.wide;
 };
 

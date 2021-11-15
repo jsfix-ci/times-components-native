@@ -5,7 +5,10 @@ enum Orientation {
 
 type ContextType = {
   editionBreakpoint: string;
-  narrowArticleBreakpoint: string;
+  narrowArticleBreakpoint: {
+    container: number;
+    content: number;
+  };
   fontScale: number;
   isTablet: boolean;
   isArticleTablet: boolean;
