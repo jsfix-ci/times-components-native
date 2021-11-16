@@ -3,14 +3,11 @@ import { ScrollView, View } from "react-native";
 import {
   TileAFront,
   TileBFront,
-  TileGFront,
-  TileHFront,
 } from "@times-components-native/edition-slices/src/tiles";
 import InTodaysEdition from "@times-components-native/in-todays-edition";
 import {
   CHundredFiftySeventy,
   CHundredFiftyThirty,
-  CHundredFiftyTwentyFive,
   RowWrapper,
 } from "@times-components-native/layouts";
 import { MediaQuery } from "@times-components-native/hooks";
@@ -89,6 +86,7 @@ const FrontLeadOneAndOne = (props) => {
                   tileName="support"
                   orientation={"portrait"}
                   showKeyline={true}
+                  colWidth={rightColWidth}
                 />
               </View>
             </CHundredFiftyThirty>
