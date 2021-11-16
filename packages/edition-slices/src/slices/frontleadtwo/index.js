@@ -77,6 +77,7 @@ const FrontLeadTwo = (props) => {
             </CHundredFiftySixty>
             <CHundredFiftyForty>
               <View
+                style={{ flex: 1 }}
                 onLayout={(event) =>
                   setRightColWidth(event.nativeEvent.layout.width)
                 }
@@ -86,7 +87,7 @@ const FrontLeadTwo = (props) => {
                   tile={lead2}
                   tileName="lead2"
                   orientation={"portrait"}
-                  numberOfLines={6}
+                  numberOfLines={13}
                   colWidth={rightColWidth}
                 />
               </View>
