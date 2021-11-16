@@ -64,71 +64,9 @@ exports[`FrontArticleSummaryContent renders correctly with justified text 1`] = 
 `;
 
 exports[`FrontArticleSummaryContent renders correctly with multiple columns 1`] = `
-<ArticleColumns
-  articleContents={
-    Array [
-      Object {
-        "attributes": Object {
-          "tab": false,
-        },
-        "children": Array [
-          Object {
-            "attributes": Object {
-              "value": "Test",
-            },
-            "children": Array [],
-            "name": "text",
-          },
-        ],
-        "name": "paragraph",
-      },
-    ]
-  }
-  bylines={
-    Array [
-      Object {
-        "byline": Array [
-          Object {
-            "attributes": Object {
-              "slug": "richard-lloyd-parry",
-            },
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Richard Lloyd Parry",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "author",
-          },
-        ],
-        "image": null,
-      },
-      Object {
-        "byline": Array [
-          Object {
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": ", Hanoi",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "inline",
-          },
-        ],
-        "image": null,
-      },
-    ]
-  }
-  columnCount={3}
-  containerHeight={300}
-  containerWidth={100}
-  lineHeight={20}
+<Text
+  allowFontScaling={false}
+  numberOfLines={9}
   style={
     Object {
       "color": "#333333",
@@ -139,5 +77,19 @@ exports[`FrontArticleSummaryContent renders correctly with multiple columns 1`] 
       "marginBottom": 0,
     }
   }
-/>
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        false,
+      ]
+    }
+    textBreakStrategy="simple"
+  >
+    Test
+    
+
+  </Text>
+</Text>
 `;
