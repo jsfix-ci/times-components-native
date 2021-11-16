@@ -1,6 +1,5 @@
 import React, { FC, useCallback, useEffect, useRef } from "react";
 import {
-  Dimensions,
   FlatList,
   NativeEventEmitter,
   NativeModules,
