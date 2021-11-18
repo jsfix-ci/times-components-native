@@ -5,10 +5,11 @@ import { ViewStyle, View } from "react-native";
 interface MagnifierProps {
   color?: string;
   style?: ViewStyle;
+  testID?: string;
 }
 
-const Magnifier: React.FC<MagnifierProps> = ({ color, style }) => (
-  <View style={style}>
+const Magnifier: React.FC<MagnifierProps> = ({ color, style, testID }) => (
+  <View style={style} testID={testID}>
     <RightOrientedGlassMagnifier color={color} />
   </View>
 );

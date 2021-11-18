@@ -87,6 +87,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = ({
                         ? colours.functional.offlineSearchText
                         : undefined
                     }
+                    testID="search-icon"
                   />
                 ) : (
                   !!text && null
@@ -108,6 +109,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = ({
                   value={text}
                   autoFocus
                   editable={isConnected ? isConnected : false}
+                  testID="search-input"
                 />
               </View>
               {text && isIOS ? <XButton onPress={handleResetSearch} /> : null}
@@ -115,6 +117,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = ({
                 <CancelButton
                   onPress={isIOS ? handleCancelSearch : handleResetSearch}
                   isConnected={isConnected}
+                  testID="search-cross-button"
                 />
               )}
             </View>
@@ -122,6 +125,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = ({
               <CancelButton
                 onPress={isIOS ? handleCancelSearch : handleResetSearch}
                 isConnected={isConnected}
+                testID="search-cancel-button"
               />
             )}
           </View>
