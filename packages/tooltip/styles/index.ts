@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 18,
     textAlign: "left",
-    paddingRight: spacing(7),
   },
   close: {
     position: "absolute",
@@ -95,10 +94,28 @@ const styles = StyleSheet.create({
   },
 });
 
-const generateStyles = (options) => {
-  let arrowPlacementStyles,
-    wrapperPlacementStyles = {},
-    containerPlacementStyles = [];
+interface GenerateStyleOptionsProps {
+  arrowOffset: number;
+  flexDirectionColumnReverse: boolean;
+  offsetX: number;
+  offsetY: number;
+  placement: "top" | "right" | "bottom" | "left";
+  width: number;
+}
+
+interface ContainerPlacement {
+  bottom?: number;
+  left?: number;
+  top?: number;
+  right?: number;
+  position?: "relative";
+  marginTop?: number;
+}
+
+const generateStyles = (options: GenerateStyleOptionsProps) => {
+  let arrowPlacementStyles;
+  let wrapperPlacementStyles = {};
+  let containerPlacementStyles: ContainerPlacement[] = [];
 
   switch (options.placement) {
     case "top":
