@@ -25,7 +25,11 @@ export default () => {
 
     it("CancelButton", () => {
       const testInstance = TestRenderer.create(
-        <CancelButton onPress={() => null} isConnected={true} />,
+        <CancelButton
+          onPress={() => null}
+          isConnected={true}
+          testID="search-cancel"
+        />,
       );
       expect(testInstance).toMatchSnapshot();
     });

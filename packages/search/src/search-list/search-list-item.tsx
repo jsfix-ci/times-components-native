@@ -27,7 +27,7 @@ const SearchListItem: FC<SearchListItemProps> = ({ item, onItemPress }) => {
   return (
     <ResponsiveContext.Consumer>
       {({ isTablet }) => (
-        <View style={searchListStyles.container}>
+        <View style={searchListStyles.container} testID="search-results-item">
           <View style={searchListStyles.subContainer}>
             <Link onPress={() => onItemPress(url)}>
               <View

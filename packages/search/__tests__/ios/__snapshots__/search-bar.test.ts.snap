@@ -100,6 +100,7 @@ exports[`Search Bar CancelButton 1`] = `
           },
         ]
       }
+      testID="search-cancel"
     >
       Cancel
     </Text>
@@ -164,6 +165,7 @@ exports[`Search Bar should render correctly 1`] = `
               ],
             }
           }
+          testID="search-icon"
         >
           <RNSVGSvgView
             align="xMidYMid"
@@ -284,6 +286,7 @@ exports[`Search Bar should render correctly 1`] = `
               "width": "100%",
             }
           }
+          testID="search-input"
           value="test"
         />
       </View>
