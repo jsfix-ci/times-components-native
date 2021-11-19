@@ -76,6 +76,7 @@ exports[`Search Bar CancelButton 1`] = `
       "opacity": 1,
     }
   }
+  testID="search-cancel"
 >
   <RNSVGSvgView
     align="xMidYMid"
@@ -190,6 +191,7 @@ exports[`Search Bar should render correctly 1`] = `
               "width": "100%",
             }
           }
+          testID="search-input"
           value="test"
         />
       </View>
@@ -215,6 +217,7 @@ exports[`Search Bar should render correctly 1`] = `
             "opacity": 1,
           }
         }
+        testID="search-cross-button"
       >
         <RNSVGSvgView
           align="xMidYMid"

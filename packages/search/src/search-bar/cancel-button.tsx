@@ -11,9 +11,14 @@ import { colours } from "@times-components-native/styleguide";
 export interface CancelButtonProps {
   onPress: TouchableOpacityProps["onPress"];
   isConnected: boolean | null;
+  testID: string;
 }
 
-const CancelButton: FC<CancelButtonProps> = ({ onPress, isConnected }) => (
+const CancelButton: FC<CancelButtonProps> = ({
+  onPress,
+  isConnected,
+  testID,
+}) => (
   <View style={styles.cancelContainer}>
     <TouchableOpacity onPress={onPress} disabled={!isConnected}>
       <Text
@@ -25,6 +30,7 @@ const CancelButton: FC<CancelButtonProps> = ({ onPress, isConnected }) => (
               : colours.functional.offlineSearchText,
           },
         ]}
+        testID={testID}
       >
         Cancel
       </Text>
