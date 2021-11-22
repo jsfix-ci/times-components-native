@@ -43,7 +43,6 @@ exports[`Tooltip hides tooltip close button on android only 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }

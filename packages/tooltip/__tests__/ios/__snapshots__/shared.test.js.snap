@@ -90,7 +90,6 @@ exports[`Tooltip does not render tooltip if not in tablet 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -232,7 +231,6 @@ exports[`Tooltip renders correctly when type is in tooltips array 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -365,7 +363,6 @@ exports[`Tooltip renders correctly with flexDirectionColumnReverse 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -495,7 +492,6 @@ exports[`Tooltip renders correctly with supplied offsets 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -626,7 +622,6 @@ exports[`Tooltip renders correctly with supplied placement right 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -756,7 +751,6 @@ exports[`Tooltip renders correctly with supplied placement top 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
@@ -894,7 +888,6 @@ exports[`Tooltip renders correctly with supplied width 1`] = `
               "fontSize": 16,
               "lineHeight": 18,
               "paddingHorizontal": 30,
-              "paddingRight": 35,
               "paddingVertical": 20,
               "textAlign": "left",
             }
