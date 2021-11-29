@@ -13,6 +13,7 @@ export const chunkInlineContent = (
   contents: ParagraphContent[],
   contentMeasurements: Measurements,
   contentParameters: ContentParameters,
+  log = false,
 ): ChunkedContent => {
   if (contents.length === 0)
     return { chunks: [], currentInlineContentHeight: 0 };
@@ -21,6 +22,10 @@ export const chunkInlineContent = (
 
   const contentHeight =
     contentMeasurements.itemHeight || contentParameters.contentHeight;
+
+  if (log) console.log("contentHeight: ", contentHeight);
+  if (log)
+    console.log("contentHeightContents: ", JSON.stringify(contents, null, 2));
 
   const chunkedContent = contents.reduce(
     (
@@ -99,6 +104,9 @@ export const chunkInlineContent = (
     },
     { chunks: [], currentInlineContentHeight: 0 },
   );
+
+  if (log)
+    console.log("contentHeight: ", JSON.stringify(chunkedContent, null, 2));
 
   return chunkedContent;
 };

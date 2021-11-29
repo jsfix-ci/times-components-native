@@ -40,16 +40,22 @@ export const InnerMeasureInlineContent: React.FC<
   measurementState,
   renderMeasuredContents,
   skeletonProps,
+  log = false,
 }) => {
   const {
     contents: { lines, heights },
     itemHeight,
   } = measurementState;
-  if (
-    allContentMeasured(content, heights, lines) &&
-    (!itemProps || itemHeight !== null)
-  ) {
-    return renderMeasuredContents(measurementState);
+  const allMeasured = allContentMeasured(content, heights, lines);
+  if (allMeasured && (!itemProps || itemHeight !== null)) {
+    if (log) {
+      console.log("InnerMeasureInlineContent: measured");
+    }
+    return renderMeasuredContents(measurementState, log);
+  }
+
+  if (log) {
+    console.log("InnerMeasureInlineContent: not measured");
   }
 
   return (
@@ -83,6 +89,15 @@ export const MeasureInlineContent: React.FC<Props> = (props) => {
     reducer,
     initialState,
   );
+
+  if (props.log) {
+    console.log(
+      "initialState, measurementState",
+      initialState,
+      measurementState,
+      measurementState.contents.lines,
+    );
+  }
 
   return (
     <InlineMeasurementDispatch.Provider value={measurementDispatch}>

@@ -51,15 +51,6 @@ export const InnerMeasureArticle: React.FC<
   return (
     <ScrollView style={styles.renderOffscreen}>
       <MeasureByline columnParameters={columnParameters} bylines={bylines} />
-      <View style={{ width: columnParameters.columnWidth }}>
-        {articleContents.map((content) => (
-          <MeasureContent
-            key={`ContentMeasuringView:${content.id}`}
-            style={style}
-            content={content}
-          />
-        ))}
-      </View>
     </ScrollView>
   );
 };
@@ -70,6 +61,8 @@ export const MeasureArticle: React.FC<Props> = (props) => {
     reducer,
     initialState,
   );
+
+  return null;
 
   return (
     <MeasurementDispatch.Provider value={measurementDispatch}>

@@ -17,7 +17,7 @@ const globalStyle = {
     paddingRight: spacing(2),
   },
   gutter: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "red",
     maxWidth: "100%",
     width: maxWidth,
     overflow: "visible",

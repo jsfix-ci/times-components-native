@@ -62,6 +62,8 @@ export const ArticleColumns: React.FC<Props> = ({
     columnLineHeight: lineHeight,
   };
 
+  return null;
+
   return (
     <MeasureArticle
       bylines={bylines}

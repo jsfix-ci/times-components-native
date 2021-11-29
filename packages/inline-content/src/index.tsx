@@ -23,6 +23,8 @@ import { renderInlineItem } from "./utils/renderInlineItem";
 import { InlineContentProps } from "./types";
 
 import styles from "./styles";
+import { Italic } from "@times-components-native/article-skeleton/src/article-body/Components";
+import ComponentPicker from "@times-components-native/article-skeleton/src/article-body/Components/ComponentPicker";
 
 const InlineContent = (props: InlineContentProps) => {
   const {
@@ -71,21 +73,24 @@ const InlineContent = (props: InlineContentProps) => {
     renderers({ dropcapsDisabled: true, ...skeletonProps }),
   );
 
-  const Child = useCallback(({ item, index }, inline = false) => {
+  const Child = useCallback(({ item, index }, inline = false, log = false) => {
     item.attributes = { ...item.attributes, inline };
     return (
       <Gutter style={{ overflow: "hidden" }}>
         <ErrorBoundary>
-          {renderChild(item, index.toString(), index)}
+          {renderChild(item, index.toString(), index, log)}
         </ErrorBoundary>
       </Gutter>
     );
   }, []);
 
-  const renderItem = (inline: boolean) => (
+  const renderItem = (inline: boolean, log: boolean = false) => (
     item: ParagraphContent,
     index: number,
-  ) => Child({ item, index }, inline);
+  ) => {
+    if (log) console.info("Rendering Item:", inline, item);
+    return Child({ item, index }, inline, log);
+  };
 
   const paragraphs = inlineContent
     .filter((c) => c.name === "paragraph")
@@ -102,6 +107,158 @@ const InlineContent = (props: InlineContentProps) => {
     contentLineHeight: lineHeight,
     itemWidth: inlineItemWidth,
   };
+
+  console.log("THE THING::: ", JSON.stringify(paragraphs[0], null, 2));
+  console.log("THE THANG::: ", paragraphs[0]);
+
+  if (
+    paragraphs.length === 1 &&
+    paragraphs[0].id === "0-744" &&
+    paragraphs[0].children.length === 1 &&
+    paragraphs[0].children[0].name === "italic" &&
+    paragraphs[0].children[0].children.length === 3
+  ) {
+    console.log(
+      "THE PARA: ",
+      JSON.stringify(paragraphs[0].children[0], null, 2),
+    );
+    console.log(
+      "params:",
+      contentParameters,
+      !isAd ? itemProps : undefined,
+      skeletonProps,
+    );
+    return (
+      <MeasureInlineContent
+        content={paragraphs}
+        contentParameters={contentParameters}
+        itemProps={!isAd ? itemProps : undefined}
+        skeletonProps={skeletonProps}
+        renderMeasuredContents={(contentMeasurements, log) => {
+          console.log("contentMeasurements:", contentMeasurements);
+          const { chunks, currentInlineContentHeight } = chunkInlineContent(
+            paragraphs,
+            contentMeasurements,
+            contentParameters,
+            true,
+          );
+
+          const itemHeight =
+            inlineContentHeight || contentMeasurements.itemHeight || 0;
+
+          const requiredInlineContentHeight = Math.max(
+            currentInlineContentHeight,
+            itemHeight,
+          );
+
+          const chunkedInlineContent = chunks[0] || [];
+          const chunkedOverflowContent = chunks[1] || [];
+
+          const inlineItemToRender = (
+            <View
+              style={[
+                styles.inlineItemContainer,
+                {
+                  width: inlineItemWidth,
+                  height: isAd ? adContainerHeight : itemHeight,
+                },
+              ]}
+            >
+              {renderInlineItem(itemProps)}
+            </View>
+          );
+
+          if (log) {
+            console.warn(
+              "chunkedInlineContent",
+              JSON.stringify(chunks, null, 2),
+              JSON.stringify(chunkedInlineContent[0].children, null, 2),
+            );
+          }
+
+          const newParagraph = [
+            {
+              key: "1",
+              component: "Text",
+              props: {
+                style: {
+                  fontStyle: "italic",
+                },
+              },
+              children: "Clarissa Eden, who ",
+            },
+            {
+              key: "2",
+              component: "Link",
+              props: {
+                style: {
+                  fontStyle: "italic",
+                },
+                href:
+                  "https://www.thetimes.co.uk/article/clarissa-eden-countess-of-avon-dies-aged-101-g0fhbnltw",
+                type: "article",
+                canonicalId:
+                  "clarissa-eden-countess-of-avon-dies-aged-101-g0fhbnltw",
+              },
+              children: "Clarissa Eden, who ",
+            },
+            {
+              key: "3",
+              component: "Text",
+              props: {
+                style: {
+                  fontStyle: "italic",
+                },
+              },
+              children:
+                ", outlived her husband, the former prime minister, by almost 45 years. After Anthony’s death, she indulged all the cultural interests he hadn’t cared for, such as opera — both high and soap. Her friend Hugo Vickers recalled that she was a great fan of Dallas. “I think she thought it was genuine,” he said. “She liked all those oil barons talking about their daddies.”",
+            },
+          ];
+
+          const inlineContentToRender = (
+            <View
+              style={{
+                width: inlineItemWidth,
+                flex: 1,
+                justifyContent: "flex-start",
+                flexWrap: "wrap",
+                alignItems: "flex-start",
+                flexDirection: "row",
+              }}
+            >
+              {newParagraph.map(({ component, props, children, key }) => (
+                <ComponentPicker
+                  key={key}
+                  {...{ component, props, children }}
+                />
+              ))}
+            </View>
+          );
+
+          return (
+            <>
+              <View
+                style={[
+                  styles.container,
+                  {
+                    height: requiredInlineContentHeight,
+                    alignSelf: narrowContent ? "flex-start" : "center",
+                  },
+                  !isArticleTablet && { width: availableWidth },
+                ]}
+              >
+                {isAd
+                  ? [inlineContentToRender, inlineItemToRender]
+                  : [inlineItemToRender, inlineContentToRender]}
+              </View>
+              {chunkedOverflowContent.map(renderItem(false))}
+            </>
+          );
+        }}
+        log={true}
+      />
+    );
+  }
 
   return (
     <MeasureInlineContent
