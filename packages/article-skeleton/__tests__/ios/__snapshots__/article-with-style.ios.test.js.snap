@@ -64,6 +64,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "fontFamily": "TimesModern-Regular",
                       "fontSize": 216,
                       "lineHeight": 153.5625,
+                      "marginHorizontal": 1,
+                      "marginVertical": 1,
                       "paddingTop": 23,
                       "width": 128.8828125,
                     }
@@ -1002,6 +1004,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "fontFamily": "TimesModern-Regular",
                       "fontSize": 216,
                       "lineHeight": 181.6171875,
+                      "marginHorizontal": 1,
+                      "marginVertical": 1,
                       "paddingTop": 23,
                       "width": 148.5,
                     }
@@ -2239,6 +2243,8 @@ exports[`15. an article starting with single quote 1`] = `
                       "fontFamily": "TimesModern-Regular",
                       "fontSize": 216,
                       "lineHeight": 166.11328125,
+                      "marginHorizontal": 1,
+                      "marginVertical": 1,
                       "paddingTop": 23,
                       "width": 171.28125,
                     }
@@ -2391,6 +2397,8 @@ exports[`16. an article starting with double quote 1`] = `
                       "fontFamily": "TimesModern-Regular",
                       "fontSize": 216,
                       "lineHeight": 166.11328125,
+                      "marginHorizontal": 1,
+                      "marginVertical": 1,
                       "paddingTop": 23,
                       "width": 204.50390625,
                     }
