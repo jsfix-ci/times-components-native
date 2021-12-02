@@ -42,7 +42,7 @@ export interface Hit {
   section: string;
   shortHeadline: string;
   url: string;
-  _position: number;
+  __position: number;
   _snippetResult?:
     | {
         content:

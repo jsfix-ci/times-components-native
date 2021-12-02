@@ -13,6 +13,7 @@ export interface XButtonProps {
 
 const XButton: FC<XButtonProps> = ({ onPress, style }) => (
   <TouchableOpacity
+    testID="search-cross-button"
     onPress={onPress}
     style={style}
     hitSlop={{ top: 12, bottom: 12, left: 12, right: 12 }}

@@ -5,6 +5,9 @@ import SearchResults from "@times-components-native/search/src/search-results";
 import { connectSearchBox, InstantSearch } from "react-instantsearch-native";
 import algoliasearch, { SearchClient } from "algoliasearch";
 import { useIsConnected } from "@times-components-native/utils/src/useIsConnected";
+import { SearchProvider } from "./SearchContext";
+
+export const DEFAULT_NUMBER_OF_RESULTS_PER_QUERY = 20;
 
 const { track } = NativeModules.ReactAnalytics;
 
@@ -53,16 +56,18 @@ const Search: FC<SearchProps> = ({ onArticlePress, algoliaConfig }) => {
   }, []);
 
   return (
-    <InstantSearch
-      indexName={algoliaConfig.ALGOLIA_INDEX}
-      searchClient={getSearchClient(algoliaConfig)}
-    >
-      <ConnectedSearchBar />
-      <SearchResults
-        onArticlePress={handleOnArticlePress}
-        isConnected={isConnected}
-      />
-    </InstantSearch>
+    <SearchProvider>
+      <InstantSearch
+        indexName={algoliaConfig.ALGOLIA_INDEX}
+        searchClient={getSearchClient(algoliaConfig)}
+      >
+        <ConnectedSearchBar />
+        <SearchResults
+          onArticlePress={handleOnArticlePress}
+          isConnected={isConnected}
+        />
+      </InstantSearch>
+    </SearchProvider>
   );
 };
 

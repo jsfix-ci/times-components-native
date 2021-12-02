@@ -26,6 +26,7 @@ exports[`XButton Should render correctly 1`] = `
       "opacity": 1,
     }
   }
+  testID="search-cross-button"
 >
   <RNSVGSvgView
     align="xMidYMid"

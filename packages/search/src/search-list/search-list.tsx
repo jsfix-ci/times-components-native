@@ -1,12 +1,18 @@
-import React, { FC, useEffect } from "react";
-import { FlatList, NativeModules } from "react-native";
+import React, { FC, useContext, useEffect } from "react";
+import { FlatList } from "react-native";
 import SearchListItem from "./search-list-item";
 import { Hit } from "../types";
 import ArticleListItemSeparator from "@times-components-native/article-list/src/article-list-item-separator";
 import SearchListLoader from "@times-components-native/search/src/search-list/search-list-loader";
 import { styles } from "./styles/search-list-styles";
 import SearchListEmptyState from "./search-list-empty-state";
-import { TrackingData } from "@times-components-native/types";
+import {
+  trackSearchResultClickedEvent,
+  trackSearchResultsPageView,
+  trackEmptySearchResultsPageView,
+} from "../analytics/search-analytics";
+import { SearchContext } from "../SearchContext";
+import { DEFAULT_NUMBER_OF_RESULTS_PER_QUERY } from "../search";
 
 export interface SearchListProps {
   hits: Hit[];
@@ -14,39 +20,39 @@ export interface SearchListProps {
   fetchMore: () => void;
 }
 
-const { track } = NativeModules.ReactAnalytics;
-
 const SearchList: FC<SearchListProps> = ({
   hits,
   onArticlePress,
   fetchMore,
 }) => {
+  const { searchTerm } = useContext(SearchContext);
+
   const handleFetchMore = () => {
     // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
-    if (hits.length > 0) {
-      return fetchMore();
-    }
+    if (hits.length > 0) return fetchMore();
+  };
+
+  const onItemPress = (hit: Hit) => (url: string) => {
+    const batchNumber =
+      parseInt(String(hit.__position / DEFAULT_NUMBER_OF_RESULTS_PER_QUERY)) +
+      1;
+    trackSearchResultClickedEvent({
+      article_name: hit.headline,
+      other_details: `${batchNumber} : ${searchTerm}`,
+      article_parent_name: hit.section,
+    });
+    onArticlePress(url);
   };
 
   useEffect(() => {
-    const trackingData: TrackingData = {
-      object: "Search",
-      action: "Viewed",
-      component: "Search",
-      attrs: {
-        eventTime: new Date(),
-        pageName: "search results",
-        pageSection: "search",
-      },
-    };
-    track(trackingData);
+    trackSearchResultsPageView();
   }, []);
 
   return (
     <FlatList
       data={hits}
       renderItem={({ item }) => (
-        <SearchListItem item={item} onItemPress={onArticlePress} />
+        <SearchListItem item={item} onItemPress={onItemPress(item)} />
       )}
       ItemSeparatorComponent={ArticleListItemSeparator}
       contentContainerStyle={styles.contentContainer}
@@ -55,16 +61,7 @@ const SearchList: FC<SearchListProps> = ({
           icon="emptyResultsIcon"
           title="Sorry, we found no results"
           message="Please check all words are spelled correctly, or try a different search term"
-          trackingData={{
-            object: "Search",
-            action: "Viewed",
-            component: "Search ",
-            attrs: {
-              eventTime: new Date(),
-              pageName: "no search results",
-              pageSection: "search",
-            },
-          }}
+          track={trackEmptySearchResultsPageView}
         />
       }
       ListFooterComponent={SearchListLoader}

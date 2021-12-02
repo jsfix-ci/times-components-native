@@ -1,18 +1,14 @@
 import React, { useEffect } from "react";
-import { NativeModules } from "react-native";
 import { Text, Image, KeyboardAvoidingView, Platform } from "react-native";
 import { styles } from "./styles/search-list-empty-state-styles";
 import { ImageIcons } from "@times-components-native/icons/src/icons/imageIcons";
-import { TrackingData } from "@times-components-native/types";
-
-const { track } = NativeModules.ReactAnalytics;
 
 interface SearchListEmptyStateProps {
   children?: React.ReactNode;
   message: string;
   title: string;
   icon?: string;
-  trackingData: TrackingData;
+  track: () => void;
 }
 
 function SearchListEmptyState({
@@ -20,10 +16,10 @@ function SearchListEmptyState({
   message,
   title,
   icon = "search",
-  trackingData,
+  track,
 }: SearchListEmptyStateProps) {
   useEffect(() => {
-    track(trackingData);
+    track();
   }, []);
 
   return (
