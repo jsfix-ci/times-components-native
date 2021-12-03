@@ -3,11 +3,12 @@ import WebView, { WebViewMessageEvent } from "react-native-webview";
 import { Linking, Platform, View, Dimensions, PixelRatio } from "react-native";
 import { isTablet } from "react-native-device-info";
 import { WebViewNavigation } from "react-native-webview/lib/WebViewTypes";
-const ratio = PixelRatio.get();
-
-const { width } = Dimensions.get("window");
 
 import styles, { TABLET_AD_HEIGHT } from "./styles";
+import { getAndroidWebViewLayerType } from "@times-components-native/utils/src/android-webview-utils";
+
+const ratio = PixelRatio.get();
+const { width } = Dimensions.get("window");
 
 interface WebviewHeightCallbackSetupProps {
   window: any;
@@ -118,7 +119,7 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
         originWhitelist={["*"]}
         onShouldStartLoadWithRequest={handleRequest}
         startInLoadingState={true}
-        scalesPageToFit={false}
+        scalesPageToFit={Platform.OS === "android" ? true : false}
         scrollEnabled={false}
         source={{
           html: `
@@ -135,7 +136,7 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
         }}
         javaScriptEnabled
         injectedJavaScriptForMainFrameOnly
-        androidLayerType={"software"}
+        androidLayerType={getAndroidWebViewLayerType(Number(Platform.Version))}
       />
     </View>
   );
