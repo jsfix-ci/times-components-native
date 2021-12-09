@@ -16,9 +16,9 @@ const ListVerticalLayout = ({ style, tiles }) => {
       windowSize={3}
       listKey={listKey}
       initialNumToRender={5}
-      keyExtractor={(item) => item.props.tileName}
+      keyExtractor={(item, index) => item.props.tileName || index}
       renderItem={({ item, index }) => (
-        <View key={`${item.props.tileName}`}>
+        <View key={`${item.props.tileName || index}`}>
           {item}
           {index !== tiles.length - 1 ? <ItemRowSeparator /> : null}
         </View>

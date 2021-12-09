@@ -46,7 +46,6 @@ const smallBreakpointStyles = {
     fontFamily: fonts.headline,
     textAlign: "center",
     fontSize: fontSizes.newsletterPuffHeadline,
-    textDecoration: "none",
     marginBottom: spacing(1),
   },
   copy: {
@@ -131,12 +130,9 @@ export const buttonStyles = {
   borderColor: colours.functional.brandColour,
   borderStyle: "solid",
   borderWidth: 2,
-  color: colours.functional.brandColour,
   elevation: 0,
-  fontFamily: fonts.supporting,
   height: 45,
   justifyContent: "center",
-  letterSpacing: 0.2,
   width: "100%",
 };
 

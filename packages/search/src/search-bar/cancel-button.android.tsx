@@ -9,9 +9,13 @@ const ICON_SIZE = 24;
 const CancelButton: FC<CancelButtonProps> = ({
   onPress,
   isConnected,
-  testID,
+  testIDProp,
 }) => (
-  <TouchableOpacity onPress={onPress} disabled={!isConnected} testID={testID}>
+  <TouchableOpacity
+    onPress={onPress}
+    disabled={!isConnected}
+    testID={testIDProp}
+  >
     <IconClose
       fillColour={
         isConnected

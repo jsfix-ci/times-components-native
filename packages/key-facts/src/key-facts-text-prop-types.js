@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  fontStyle: PropTypes.object.isRequired,
+  fontStyle: PropTypes.object,
   item: PropTypes.object.isRequired,
   listIndex: PropTypes.number.isRequired,
   onLinkPress: PropTypes.func,
@@ -9,4 +9,5 @@ export const propTypes = {
 
 export const defaultProps = {
   onLinkPress: () => null,
+  fontStyle: {},
 };

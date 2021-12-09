@@ -6,7 +6,7 @@ import { ItemRowSeparator } from "../shared";
 const VerticalLayout = ({ style, tiles, rowSeparatorStyle }) => (
   <View style={style}>
     {tiles.map((tile, index) => (
-      <Fragment key={`${tile.props.tileName}`}>
+      <Fragment key={`${tile.props.tileName || index}`}>
         {tile}
         {index !== tiles.length - 1 ? (
           <ItemRowSeparator style={rowSeparatorStyle} />

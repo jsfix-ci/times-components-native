@@ -48,7 +48,6 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
           "fontSize": 28,
           "marginBottom": 5,
           "textAlign": "center",
-          "textDecoration": "none",
         }
       }
     >
@@ -100,12 +99,9 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
               "borderColor": "#1D1D1B",
               "borderStyle": "solid",
               "borderWidth": 2,
-              "color": "#1D1D1B",
               "elevation": 0,
-              "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
-              "letterSpacing": 0.2,
               "width": "100%",
             },
           ]
@@ -186,7 +182,6 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
           "fontSize": 28,
           "marginBottom": 5,
           "textAlign": "center",
-          "textDecoration": "none",
         }
       }
     >
@@ -238,12 +233,9 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
               "borderColor": "#1D1D1B",
               "borderStyle": "solid",
               "borderWidth": 2,
-              "color": "#1D1D1B",
               "elevation": 0,
-              "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
-              "letterSpacing": 0.2,
               "width": "100%",
             },
           ]
@@ -353,7 +345,6 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
           "fontSize": 28,
           "marginBottom": 5,
           "textAlign": "center",
-          "textDecoration": "none",
         }
       }
     >
@@ -411,12 +402,9 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
               "borderColor": "#1D1D1B",
               "borderStyle": "solid",
               "borderWidth": 2,
-              "color": "#1D1D1B",
               "elevation": 0,
-              "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
-              "letterSpacing": 0.2,
               "width": "100%",
             },
           ]
@@ -497,7 +485,6 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
           "fontSize": 28,
           "marginBottom": 5,
           "textAlign": "center",
-          "textDecoration": "none",
         }
       }
     >
@@ -549,12 +536,9 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
               "borderColor": "#1D1D1B",
               "borderStyle": "solid",
               "borderWidth": 2,
-              "color": "#1D1D1B",
               "elevation": 0,
-              "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
-              "letterSpacing": 0.2,
               "width": "100%",
             },
           ]
@@ -643,7 +627,6 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
           "fontSize": 28,
           "marginBottom": 5,
           "textAlign": "center",
-          "textDecoration": "none",
         }
       }
     >
@@ -701,12 +684,9 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
               "borderColor": "#1D1D1B",
               "borderStyle": "solid",
               "borderWidth": 2,
-              "color": "#1D1D1B",
               "elevation": 0,
-              "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
-              "letterSpacing": 0.2,
               "width": "100%",
             },
           ]

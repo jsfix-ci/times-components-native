@@ -6,7 +6,7 @@ import { ItemColSeparator } from "../shared";
 const HorizontalLayout = ({ containerStyle, tiles, colSeparatorStyle }) => (
   <View style={containerStyle}>
     {tiles.map(({ tile, style }, index) => (
-      <Fragment key={`${tile.props.tileName}`}>
+      <Fragment key={`${tile.props.tileName || index}`}>
         <View style={style}>{tile}</View>
         {index !== tiles.length - 1 ? (
           <ItemColSeparator style={colSeparatorStyle} />

@@ -117,7 +117,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
                   <CancelButton
                     onPress={isIOS ? handleCancelSearch : handleResetSearch}
                     isConnected={isConnected}
-                    testID="search-cross-button"
+                    testIDProp={"search-cross-button"}
                   />
                 )}
               </View>
@@ -125,7 +125,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
                 <CancelButton
                   onPress={isIOS ? handleCancelSearch : handleResetSearch}
                   isConnected={isConnected}
-                  testID="search-cancel-button"
+                  testIDProp={"search-cancel-button"}
                 />
               )}
             </View>

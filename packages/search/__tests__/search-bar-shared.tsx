@@ -28,7 +28,7 @@ export default () => {
         <CancelButton
           onPress={() => null}
           isConnected={true}
-          testID="search-cancel"
+          testIDProp="search-cancel"
         />,
       );
       expect(testInstance).toMatchSnapshot();

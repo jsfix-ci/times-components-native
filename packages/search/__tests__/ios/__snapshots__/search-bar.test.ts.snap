@@ -85,6 +85,7 @@ exports[`Search Bar CancelButton 1`] = `
         "opacity": 1,
       }
     }
+    testID="search-cancel"
   >
     <Text
       style={
@@ -100,7 +101,6 @@ exports[`Search Bar CancelButton 1`] = `
           },
         ]
       }
-      testID="search-cancel"
     >
       Cancel
     </Text>

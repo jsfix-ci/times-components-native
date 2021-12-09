@@ -6,7 +6,7 @@ import coreRenderers from "@times-components-native/markup";
 import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import styles from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
+const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle = {} }) => (
   <Text style={[styles.text, fontStyle]}>
     {item.children.map((data, listItemIndex) =>
       renderTree(
