@@ -54,8 +54,8 @@ const DropCap: React.FC<Props> = ({
     <View
       style={[
         {
-          width,
-          height,
+          width: dropCapFontSize,
+          height: dropCapFontSize,
         },
       ]}
     >
@@ -66,10 +66,9 @@ const DropCap: React.FC<Props> = ({
             color: dropCapColor,
             fontFamily: fonts[dropCapFont as keyof typeof fonts],
             fontSize: dropCapFontSize,
-            lineHeight: height,
+            lineHeight: dropCapFontSize,
             marginHorizontal: 1,
             marginVertical: 1,
-            paddingTop: additionalPadding,
             width,
           },
         ]}
