@@ -18,6 +18,7 @@ export default () => {
           refine={() => null}
           isSearchStalled={false}
           currentRefinement={"test"}
+          initialSearchTerm={""}
         />,
       );
       expect(testInstance).toMatchSnapshot();

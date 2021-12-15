@@ -24,18 +24,28 @@ const DEBOUNCE_WAIT = 300;
 
 type SearchBarComponentProps = PropsWithChildren<SearchBoxProvided> & {
   isConnected: boolean | null;
+  initialSearchTerm: string;
   shouldFocus?: boolean;
+  onSearchInputChanged?: (searchTerm: string) => void;
 };
 
 export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
-  ({ currentRefinement, refine, isConnected, shouldFocus = false }) => {
+  ({
+    currentRefinement,
+    refine,
+    isConnected,
+    initialSearchTerm,
+    onSearchInputChanged,
+    shouldFocus = false,
+  }) => {
     const { setSearchTerm } = useContext(SearchContext);
-    const [text, setText] = useState(currentRefinement);
+    const [text, setText] = useState(currentRefinement || initialSearchTerm);
     const [hasFocus, setHasFocus] = useState(shouldFocus);
     const field = useRef<TextInput>(null);
 
     useEffect(() => {
       if (setSearchTerm) setSearchTerm(text);
+      refine(text);
     }, [text]);
 
     const debouncedRefine = useCallback(
@@ -46,6 +56,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
     const handleSetText = (val: string) => {
       setText(val);
       debouncedRefine(val);
+      onSearchInputChanged && onSearchInputChanged(val);
     };
 
     const handleResetSearch = () => {

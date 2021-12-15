@@ -13,11 +13,13 @@ const { track } = NativeModules.ReactAnalytics;
 
 export interface SearchProps {
   onArticlePress: (url: string) => void;
+  onSearchInputChanged?: (searchTerm: string) => void;
   algoliaConfig: {
     ALGOLIA_APP_ID: string;
     ALGOLIA_API_KEY: string;
     ALGOLIA_INDEX: string;
   };
+  initialSearchTerm: string;
 }
 
 let searchClient: SearchClient | null = null;
@@ -31,11 +33,21 @@ const getSearchClient = (algoliaConfig: SearchProps["algoliaConfig"]) => {
   return searchClient;
 };
 
-const Search: FC<SearchProps> = ({ onArticlePress, algoliaConfig }) => {
+const Search: FC<SearchProps> = ({
+  onArticlePress,
+  onSearchInputChanged,
+  algoliaConfig,
+  initialSearchTerm,
+}) => {
   const isConnected = useIsConnected();
 
   const ConnectedSearchBar = connectSearchBox((props) => (
-    <SearchBarComponent {...props} isConnected={isConnected} />
+    <SearchBarComponent
+      {...props}
+      isConnected={isConnected}
+      initialSearchTerm={initialSearchTerm}
+      onSearchInputChanged={onSearchInputChanged}
+    />
   ));
 
   const handleOnArticlePress = (url: string) => {
