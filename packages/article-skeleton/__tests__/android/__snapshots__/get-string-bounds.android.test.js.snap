@@ -2,7 +2,7 @@
 
 exports[`should return a bounding box 1`] = `
 Object {
-  "height": 67.5,
+  "height": 69.08203125,
   "width": 61.9189453125,
 }
 `;

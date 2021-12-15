@@ -19,7 +19,7 @@ const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
     dropCapFont: "dropCap",
     dropCapFontSize: 216,
     dropCapText: dropCapText,
-    height: 153.5625,
+    height: 155.4609375,
     inlineContent: [
       {
         name: "paragraph",

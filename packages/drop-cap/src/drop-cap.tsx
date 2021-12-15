@@ -42,7 +42,7 @@ const DropCap: React.FC<Props> = ({
   scale,
   width,
 }) => {
-  const baseAdditionalPadding = Platform.OS === "ios" ? 23 : 20;
+  const baseAdditionalPadding = Platform.OS === "ios" ? 22 : 17;
   const fontSpecificPadding =
     fontAdditionalPaddingMap[Platform.OS][dropCapFont] ?? 0;
   const scaleValue = scaleMap[scale] ?? 1;

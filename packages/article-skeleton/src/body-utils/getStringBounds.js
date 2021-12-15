@@ -13,7 +13,7 @@ export const getStringBounds = (fontSettings, string) => {
     x1 = Math.min(x1, bbox.x1);
     x2 = Math.max(x2, bbox.x2) + 100 * (glyphs.length - 1);
     y1 = Math.min(y1, bbox.y1);
-    y2 = Math.max(y2, bbox.y2);
+    y2 = Math.max(y2, bbox.y2) + 18;
   });
   const width =
     (x2 * fontSize) / font.unitsPerEm - (x1 * fontSize) / font.unitsPerEm;

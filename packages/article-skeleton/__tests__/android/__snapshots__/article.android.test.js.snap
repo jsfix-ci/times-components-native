@@ -67,7 +67,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 153.5625,
+                      "height": 155.4609375,
                       "width": 128.8828125,
                     },
                   ]
@@ -80,10 +80,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         "color": undefined,
                         "fontFamily": "TimesModern-Regular",
                         "fontSize": 216,
-                        "lineHeight": 153.5625,
+                        "lineHeight": 155.4609375,
                         "marginHorizontal": 1,
                         "marginVertical": 1,
-                        "paddingTop": 20,
+                        "paddingTop": 17,
                         "width": 128.8828125,
                       },
                     ]
@@ -1619,7 +1619,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "height": 181.6171875,
+                      "height": 183.515625,
                       "width": 148.5,
                     },
                   ]
@@ -1632,10 +1632,10 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                         "color": undefined,
                         "fontFamily": "TimesModern-Regular",
                         "fontSize": 216,
-                        "lineHeight": 181.6171875,
+                        "lineHeight": 183.515625,
                         "marginHorizontal": 1,
                         "marginVertical": 1,
-                        "paddingTop": 20,
+                        "paddingTop": 17,
                         "width": 148.5,
                       },
                     ]
@@ -3324,7 +3324,7 @@ exports[`15. an article starting with single quote 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 166.11328125,
+                      "height": 169.91015625,
                       "width": 171.28125,
                     },
                   ]
@@ -3337,10 +3337,10 @@ exports[`15. an article starting with single quote 1`] = `
                         "color": undefined,
                         "fontFamily": "TimesModern-Regular",
                         "fontSize": 216,
-                        "lineHeight": 166.11328125,
+                        "lineHeight": 169.91015625,
                         "marginHorizontal": 1,
                         "marginVertical": 1,
-                        "paddingTop": 20,
+                        "paddingTop": 17,
                         "width": 171.28125,
                       },
                     ]
@@ -3523,7 +3523,7 @@ exports[`16. an article starting with double quote 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 166.11328125,
+                      "height": 169.91015625,
                       "width": 204.50390625,
                     },
                   ]
@@ -3536,10 +3536,10 @@ exports[`16. an article starting with double quote 1`] = `
                         "color": undefined,
                         "fontFamily": "TimesModern-Regular",
                         "fontSize": 216,
-                        "lineHeight": 166.11328125,
+                        "lineHeight": 169.91015625,
                         "marginHorizontal": 1,
                         "marginVertical": 1,
-                        "paddingTop": 20,
+                        "paddingTop": 17,
                         "width": 204.50390625,
                       },
                     ]
@@ -6213,7 +6213,7 @@ exports[`20. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "height": 153.5625,
+                      "height": 155.4609375,
                       "width": 58.74609375,
                     },
                   ]
@@ -6226,10 +6226,10 @@ exports[`20. an article with inline paragraph 1`] = `
                         "color": undefined,
                         "fontFamily": "TimesModern-Regular",
                         "fontSize": 216,
-                        "lineHeight": 153.5625,
+                        "lineHeight": 155.4609375,
                         "marginHorizontal": 1,
                         "marginVertical": 1,
-                        "paddingTop": 20,
+                        "paddingTop": 17,
                         "width": 58.74609375,
                       },
                     ]

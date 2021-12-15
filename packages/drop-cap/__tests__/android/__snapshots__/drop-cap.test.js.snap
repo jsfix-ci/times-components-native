@@ -22,7 +22,7 @@ exports[`DropCap renders a dropcap for large scale 1`] = `
           "lineHeight": 84.546,
           "marginHorizontal": 1,
           "marginVertical": 1,
-          "paddingTop": 23.4,
+          "paddingTop": 19.89,
           "width": 103.824,
         },
       ]
@@ -55,7 +55,7 @@ exports[`DropCap renders a dropcap for medium scale 1`] = `
           "lineHeight": 72.468,
           "marginHorizontal": 1,
           "marginVertical": 1,
-          "paddingTop": 20,
+          "paddingTop": 17,
           "width": 88.992,
         },
       ]
@@ -88,7 +88,7 @@ exports[`DropCap renders a dropcap for xlarge scale 1`] = `
           "lineHeight": 92.598,
           "marginHorizontal": 1,
           "marginVertical": 1,
-          "paddingTop": 25.4,
+          "paddingTop": 21.59,
           "width": 113.712,
         },
       ]
@@ -121,7 +121,7 @@ exports[`DropCap renders a dropcap with default font padding if provided font no
           "lineHeight": 72.468,
           "marginHorizontal": 1,
           "marginVertical": 1,
-          "paddingTop": 20,
+          "paddingTop": 17,
           "width": 88.992,
         },
       ]
@@ -154,7 +154,7 @@ exports[`DropCap renders a dropcap with default scale if provided scale unknown 
           "lineHeight": 72.468,
           "marginHorizontal": 1,
           "marginVertical": 1,
-          "paddingTop": 20,
+          "paddingTop": 17,
           "width": 88.992,
         },
       ]
