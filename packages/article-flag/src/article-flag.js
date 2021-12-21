@@ -37,6 +37,7 @@ ArticleFlag.propTypes = {
 ArticleFlag.defaultProps = articleFlagDefaultProps;
 
 const NewArticleFlag = (props) => <ArticleFlag {...props} title="new" />;
+
 const UpdatedArticleFlag = (props) => (
   <ArticleFlag {...props} title="updated" />
 );
@@ -90,6 +91,10 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
     EXCLUSIVE: <ExclusiveArticleFlag color={color} />,
     SPONSORED: <SponsoredArticleFlag color={color} />,
     LONGREAD: <LongReadArticleFlag color={color} />,
+    LIVE: <ArticleFlag color={colours.functional.darkRed} title="live" />,
+    BREAKING: (
+      <ArticleFlag color={colours.functional.darkRed} title="breaking" />
+    ),
   };
 
   const flagsView = (

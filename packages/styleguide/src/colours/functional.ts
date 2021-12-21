@@ -34,6 +34,7 @@ const functionalColours = {
   whiteGrey: "#F5F5F5",
   darkGrey: "#999999",
   red: "#CC0000",
+  darkRed: "#9f0000",
   lightGreyText: "#C2C2C2",
   searchText: "#000",
   offlineSearchText: "#8E8E8E",
