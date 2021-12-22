@@ -63,7 +63,7 @@ exports[`tile u with headline style 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -131,7 +131,7 @@ exports[`tile u without breakpoint 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>

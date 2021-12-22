@@ -67,7 +67,7 @@ exports[`tile k huge 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -140,7 +140,7 @@ exports[`tile k medium 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -213,7 +213,7 @@ exports[`tile k small 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -286,7 +286,7 @@ exports[`tile k smallTablet 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -359,7 +359,7 @@ exports[`tile k wide 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -432,7 +432,7 @@ exports[`tile k without breakpoint should be like small 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>

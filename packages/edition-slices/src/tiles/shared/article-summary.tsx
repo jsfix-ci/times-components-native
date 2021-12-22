@@ -134,7 +134,6 @@ const ArticleSummary: React.FC<Props> = ({
     headline: tileHeadline,
     article: {
       expirableFlags,
-      longRead,
       hasVideo,
       headline,
       shortHeadline,
@@ -196,16 +195,6 @@ const ArticleSummary: React.FC<Props> = ({
     </MarkAsRead>
   );
 
-  const getLongReadFlag = () => {
-    switch (String(label).toLowerCase()) {
-      case "letters to the editor":
-        return false;
-      default:
-        return longRead;
-    }
-    return true;
-  };
-
   const renderFlags = (articleReadState: ArticleReadState) => (
     <MarkAsRead
       articleReadState={articleReadState}
@@ -216,7 +205,7 @@ const ArticleSummary: React.FC<Props> = ({
         {...flagColour}
         style={flagsStyle}
         flags={expirableFlags}
-        longRead={getLongReadFlag()}
+        longRead={false} // disable all long read flags
       />
     </MarkAsRead>
   );

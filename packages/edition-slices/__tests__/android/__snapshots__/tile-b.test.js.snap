@@ -59,7 +59,7 @@ exports[`tile b huge 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -146,7 +146,7 @@ exports[`tile b medium 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -234,7 +234,7 @@ exports[`tile b small 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -321,7 +321,7 @@ exports[`tile b smallTablet 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -408,7 +408,7 @@ exports[`tile b wide 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -495,7 +495,7 @@ exports[`tile b with more teaser 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -583,7 +583,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
               },
             ]
           }
-          longRead={true}
+          longRead={false}
         />
         <Text
           numberOfLines={2}

@@ -1239,8 +1239,6 @@ export interface Article extends ArticleInterface {
   topicConnection: ArticleTopicConnection;
   /** The name of the segment that the article appears in, for example Sport in a newspaper */
   workDesk?: WorkDeskName | null;
-
-  longRead?: boolean | null;
 }
 
 export interface Colour {

@@ -55,7 +55,6 @@ class MockArticle {
       ],
       isTeased: false,
       label: "label",
-      longRead: true,
       content: new MockMarkup().addParagraphs(3).addAds().get(),
       headline: "Venezuela shows how Corbyn’s socialism works",
       publishedTime: new Date(0),

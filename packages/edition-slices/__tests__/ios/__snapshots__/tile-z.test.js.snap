@@ -70,7 +70,7 @@ exports[`tile z huge 1`] = `
                 },
               ]
             }
-            longRead={true}
+            longRead={false}
           />
           <Text
             numberOfLines={2}
@@ -178,7 +178,7 @@ exports[`tile z wide 1`] = `
                 },
               ]
             }
-            longRead={true}
+            longRead={false}
           />
           <Text
             numberOfLines={2}
@@ -286,7 +286,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
                 },
               ]
             }
-            longRead={true}
+            longRead={false}
           />
           <Text
             numberOfLines={2}

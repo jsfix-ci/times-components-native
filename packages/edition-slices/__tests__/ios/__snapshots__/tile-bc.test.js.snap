@@ -69,7 +69,7 @@ exports[`tile bc huge 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -144,7 +144,7 @@ exports[`tile bc medium 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -219,7 +219,7 @@ exports[`tile bc smallTablet 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -294,7 +294,7 @@ exports[`tile bc wide 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -369,7 +369,7 @@ exports[`tile bc without breakpoint 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>

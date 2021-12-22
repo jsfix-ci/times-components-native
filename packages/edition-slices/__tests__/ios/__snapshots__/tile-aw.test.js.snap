@@ -75,7 +75,7 @@ exports[`tile aw landscape huge 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -156,7 +156,7 @@ exports[`tile aw landscape medium 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -237,7 +237,7 @@ exports[`tile aw landscape smallTablet 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
@@ -318,7 +318,7 @@ exports[`tile aw landscape wide 1`] = `
           },
         ]
       }
-      longRead={true}
+      longRead={false}
     />
   </View>
 </Link>
