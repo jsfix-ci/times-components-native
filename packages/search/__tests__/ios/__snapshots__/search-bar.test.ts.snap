@@ -265,7 +265,7 @@ exports[`Search Bar should render correctly 1`] = `
           </RNSVGSvgView>
         </View>
         <TextInput
-          autoFocus={true}
+          autoFocus={false}
           defaultValue="test"
           editable={true}
           keyboardType="web-search"

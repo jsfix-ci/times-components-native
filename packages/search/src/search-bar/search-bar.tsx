@@ -42,6 +42,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
     const [text, setText] = useState(currentRefinement || initialSearchTerm);
     const [hasFocus, setHasFocus] = useState(shouldFocus);
     const field = useRef<TextInput>(null);
+    const autoFocus: boolean = shouldFocus;
 
     useEffect(() => {
       if (setSearchTerm) setSearchTerm(text);
@@ -118,7 +119,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
                         : colours.functional.offlineSearchText
                     }
                     value={text}
-                    autoFocus
+                    autoFocus={autoFocus}
                     editable={isConnected ? isConnected : false}
                     testID="search-input"
                   />

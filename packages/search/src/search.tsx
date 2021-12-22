@@ -40,6 +40,9 @@ const Search: FC<SearchProps> = ({
   initialSearchTerm,
 }) => {
   const isConnected = useIsConnected();
+  const initialSearchTermIsEmpty = (!initialSearchTerm ||
+    initialSearchTerm.length == 0) as boolean;
+  const shouldFocus = initialSearchTermIsEmpty;
 
   const ConnectedSearchBar = connectSearchBox((props) => (
     <SearchBarComponent
@@ -47,6 +50,7 @@ const Search: FC<SearchProps> = ({
       isConnected={isConnected}
       initialSearchTerm={initialSearchTerm}
       onSearchInputChanged={onSearchInputChanged}
+      shouldFocus={shouldFocus}
     />
   ));
 
