@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 import { FontStorage } from "@times-components-native/typeset";
 import { setupDropCap } from "../../src/body-utils/setupDropCap";
+import { Platform } from "react-native";
 
 FontStorage.registerFont(
   "TimesModern-Regular",
@@ -12,14 +13,15 @@ FontStorage.registerFont(
   () => require("@times-components-native/test-utils").TestFont,
 );
 
+const w = Platform.OS === "android" ? 54.0546875 : 50.0546875;
+
 const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
   name: "inlineContent",
   attributes: {
     dropCapColor: "#13354E",
     dropCapFont: "dropCap",
-    dropCapFontSize: 216,
     dropCapText: dropCapText,
-    height: 155.4609375,
+    height: 73.9375,
     inlineContent: [
       {
         name: "paragraph",
@@ -37,7 +39,7 @@ const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
     originalName: "dropcap",
     skeletonProps,
 
-    width: 128.8828125,
+    width: w,
   },
   children: [],
 });

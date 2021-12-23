@@ -3,164 +3,189 @@
 exports[`DropCap renders a dropcap for large scale 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 84.546,
-        "width": 103.824,
-      },
-    ]
+    Object {
+      "height": 84.546,
+      "overflow": "visible",
+      "width": 300,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
-      Array [
-        Object {
-          "color": "#13354E",
-          "fontFamily": "TimesModern-Regular",
-          "fontSize": 126,
-          "lineHeight": 84.546,
-          "marginHorizontal": 1,
-          "marginVertical": 1,
-          "paddingTop": 25.74,
-          "width": 103.824,
-        },
-      ]
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": -2,
+      }
     }
   >
-    A
-  </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#13354E",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 109.90980000000002,
+            "lineHeight": 109.90980000000002,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`DropCap renders a dropcap for medium scale 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 72.468,
-        "width": 88.992,
-      },
-    ]
+    Object {
+      "height": 72.468,
+      "overflow": "visible",
+      "width": 300,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
-      Array [
-        Object {
-          "color": "#13354E",
-          "fontFamily": "TimesModern-Regular",
-          "fontSize": 108,
-          "lineHeight": 72.468,
-          "marginHorizontal": 1,
-          "marginVertical": 1,
-          "paddingTop": 22,
-          "width": 88.992,
-        },
-      ]
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": -2,
+      }
     }
   >
-    A
-  </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#13354E",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 94.20840000000001,
+            "lineHeight": 94.20840000000001,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`DropCap renders a dropcap for xlarge scale 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 92.598,
-        "width": 113.712,
-      },
-    ]
+    Object {
+      "height": 92.598,
+      "overflow": "visible",
+      "width": 300,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
-      Array [
-        Object {
-          "color": "#13354E",
-          "fontFamily": "TimesModern-Regular",
-          "fontSize": 138,
-          "lineHeight": 92.598,
-          "marginHorizontal": 1,
-          "marginVertical": 1,
-          "paddingTop": 27.94,
-          "width": 113.712,
-        },
-      ]
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": -2,
+      }
     }
   >
-    A
-  </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#13354E",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 120.37740000000001,
+            "lineHeight": 120.37740000000001,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`DropCap renders a dropcap with default font padding if provided font not in map 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 72.468,
-        "width": 88.992,
-      },
-    ]
+    Object {
+      "height": 72.468,
+      "overflow": "visible",
+      "width": 300,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
-      Array [
-        Object {
-          "color": "#13354E",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 108,
-          "lineHeight": 72.468,
-          "marginHorizontal": 1,
-          "marginVertical": 1,
-          "paddingTop": 22,
-          "width": 88.992,
-        },
-      ]
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": -2,
+      }
     }
   >
-    A
-  </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#13354E",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 94.20840000000001,
+            "lineHeight": 94.20840000000001,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`DropCap renders a dropcap with default scale if provided scale unknown 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "height": 72.468,
-        "width": 88.992,
-      },
-    ]
+    Object {
+      "height": 72.468,
+      "overflow": "visible",
+      "width": 300,
+    }
   }
 >
-  <Text
-    allowFontScaling={false}
+  <View
     style={
-      Array [
-        Object {
-          "color": "#13354E",
-          "fontFamily": "TimesModern-Regular",
-          "fontSize": 108,
-          "lineHeight": 72.468,
-          "marginHorizontal": 1,
-          "marginVertical": 1,
-          "paddingTop": 22,
-          "width": 88.992,
-        },
-      ]
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": -2,
+      }
     }
   >
-    A
-  </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#13354E",
+            "fontFamily": "TimesModern-Regular",
+            "fontSize": 94.20840000000001,
+            "lineHeight": 94.20840000000001,
+          },
+        ]
+      }
+    >
+      A
+    </Text>
+  </View>
 </View>
 `;

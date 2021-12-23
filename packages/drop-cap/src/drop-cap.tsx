@@ -1,81 +1,49 @@
 import { fonts } from "@times-components-native/styleguide";
 import React from "react";
-import { Platform, Text, View } from "react-native";
-
-const scaleMap: Record<string, number> = {
-  medium: 1,
-  large: 1.17,
-  xlarge: 1.27,
-};
-
-const fontAdditionalPaddingMap: Record<string, Record<string, number>> = {
-  android: {
-    cultureMagazine: 5,
-    dropCap: 0,
-    stMagazine: 7,
-    styleMagazine: 3,
-  },
-  ios: {
-    cultureMagazine: 2,
-    dropCap: 0,
-    stMagazine: 4,
-    styleMagazine: 0,
-  },
-};
-
+import { Text, View } from "react-native";
 interface Props {
   dropCapColor: string;
   dropCapFont: string;
-  dropCapFontSize: number;
   dropCapText: string;
-  height: number;
-  scale: string;
   width: number;
+  height: number;
 }
 
 const DropCap: React.FC<Props> = ({
   dropCapColor,
   dropCapFont,
-  dropCapFontSize,
   dropCapText,
   height,
-  scale,
-  width,
 }) => {
-  const baseAdditionalPadding = Platform.OS === "ios" ? 22 : 17;
-  const fontSpecificPadding =
-    fontAdditionalPaddingMap[Platform.OS][dropCapFont] ?? 0;
-  const scaleValue = scaleMap[scale] ?? 1;
-
-  const additionalPadding =
-    (baseAdditionalPadding + fontSpecificPadding) * scaleValue;
-
   return (
     <View
-      style={[
-        {
-          width,
-          height,
-        },
-      ]}
+      style={{
+        width: 300,
+        height,
+        overflow: "visible",
+      }}
     >
-      <Text
-        allowFontScaling={false}
-        style={[
-          {
-            color: dropCapColor,
-            fontFamily: fonts[dropCapFont as keyof typeof fonts],
-            fontSize: dropCapFontSize,
-            lineHeight: height,
-            marginHorizontal: 1,
-            marginVertical: 1,
-            paddingTop: additionalPadding,
-            width,
-          },
-        ]}
+      <View
+        style={{
+          position: "absolute",
+          top: -2,
+          left: 0,
+        }}
       >
-        {dropCapText}
-      </Text>
+        <Text
+          allowFontScaling={false}
+          style={[
+            {
+              color: dropCapColor,
+              fontFamily: fonts[dropCapFont as keyof typeof fonts],
+              fontSize: height * 1.3,
+              lineHeight: height * 1.3,
+            },
+          ]}
+        >
+          {dropCapText}
+        </Text>
+      </View>
     </View>
   );
 };

@@ -1,9 +1,9 @@
+import { Platform } from "react-native";
 import styleguide, {
   colours,
   fonts,
 } from "@times-components-native/styleguide";
 import { FontStorage } from "@times-components-native/typeset";
-import { Dimensions } from "react-native";
 
 import { getStringBounds } from "./getStringBounds";
 
@@ -98,11 +98,8 @@ export const setupDropCap = (skeletonProps, content) => {
     }),
     color: colours.functional.black,
   };
-  const { fontScale } = Dimensions.get("window");
-  defaultFont.fontSize *= fontScale;
-  defaultFont.lineHeight *= fontScale;
 
-  const fontSize = defaultFont.fontSize * 6;
+  const fontSize = defaultFont.lineHeight * 4;
   const fontSettings = {
     fontFamily: fonts[dropCapFont],
     fontStyle: "",
@@ -113,6 +110,7 @@ export const setupDropCap = (skeletonProps, content) => {
   const font = FontStorage.getFont(fontSettings);
   const { height } = getStringBounds(fontSettings, dropCapText);
   const width = font.getAdvanceWidth(dropCapText, fontSettings.fontSize);
+  const widthOffset = Platform.OS === "android" ? 8 : 12;
 
   return [
     {
@@ -120,13 +118,12 @@ export const setupDropCap = (skeletonProps, content) => {
       attributes: {
         dropCapColor: colours.section[data.section],
         dropCapFont: dropCapFont,
-        dropCapFontSize: fontSize,
         dropCapText,
         height,
         inlineContent: [modifiedFirstParagraph],
         originalName: "dropcap",
         skeletonProps,
-        width,
+        width: width - widthOffset,
       },
       children: [],
     },

@@ -59,44 +59,49 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             <View
               style={
                 Object {
-                  "width": 128.8828125,
+                  "width": 50.0546875,
                 }
               }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": 155.4609375,
-                      "width": 128.8828125,
-                    },
-                  ]
+                  Object {
+                    "height": 73.9375,
+                    "overflow": "visible",
+                    "width": 300,
+                  }
                 }
               >
-                <Text
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 216,
-                        "lineHeight": 155.4609375,
-                        "marginHorizontal": 1,
-                        "marginVertical": 1,
-                        "paddingTop": 22,
-                        "width": 128.8828125,
-                      },
-                    ]
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": -2,
+                    }
                   }
                 >
-                  T
-                </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 96.11875,
+                          "lineHeight": 96.11875,
+                        },
+                      ]
+                    }
+                  >
+                    T
+                  </Text>
+                </View>
               </View>
             </View>
             <View
               style={
                 Object {
-                  "width": 161.1171875,
+                  "width": 239.9453125,
                 }
               }
             >
@@ -1623,44 +1628,49 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             <View
               style={
                 Object {
-                  "width": 148.5,
+                  "width": 59.5,
                 }
               }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": 183.515625,
-                      "width": 148.5,
-                    },
-                  ]
+                  Object {
+                    "height": 87.4453125,
+                    "overflow": "visible",
+                    "width": 300,
+                  }
                 }
               >
-                <Text
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 216,
-                        "lineHeight": 183.515625,
-                        "marginHorizontal": 1,
-                        "marginVertical": 1,
-                        "paddingTop": 22,
-                        "width": 148.5,
-                      },
-                    ]
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": -2,
+                    }
                   }
                 >
-                  Q
-                </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 113.67890625,
+                          "lineHeight": 113.67890625,
+                        },
+                      ]
+                    }
+                  >
+                    Q
+                  </Text>
+                </View>
               </View>
             </View>
             <View
               style={
                 Object {
-                  "width": 141.5,
+                  "width": 230.5,
                 }
               }
             >
@@ -3368,44 +3378,49 @@ exports[`15. an article starting with single quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 171.28125,
+                  "width": 70.46875,
                 }
               }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": 169.91015625,
-                      "width": 171.28125,
-                    },
-                  ]
+                  Object {
+                    "height": 79.98046875,
+                    "overflow": "visible",
+                    "width": 300,
+                  }
                 }
               >
-                <Text
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 216,
-                        "lineHeight": 169.91015625,
-                        "marginHorizontal": 1,
-                        "marginVertical": 1,
-                        "paddingTop": 22,
-                        "width": 171.28125,
-                      },
-                    ]
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": -2,
+                    }
                   }
                 >
-                  ‘S
-                </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 103.974609375,
+                          "lineHeight": 103.974609375,
+                        },
+                      ]
+                    }
+                  >
+                    ‘S
+                  </Text>
+                </View>
               </View>
             </View>
             <View
               style={
                 Object {
-                  "width": 118.71875,
+                  "width": 219.53125,
                 }
               }
             >
@@ -3571,44 +3586,49 @@ exports[`16. an article starting with double quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 204.50390625,
+                  "width": 86.46484375,
                 }
               }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": 169.91015625,
-                      "width": 204.50390625,
-                    },
-                  ]
+                  Object {
+                    "height": 79.98046875,
+                    "overflow": "visible",
+                    "width": 300,
+                  }
                 }
               >
-                <Text
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 216,
-                        "lineHeight": 169.91015625,
-                        "marginHorizontal": 1,
-                        "marginVertical": 1,
-                        "paddingTop": 22,
-                        "width": 204.50390625,
-                      },
-                    ]
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": -2,
+                    }
                   }
                 >
-                  “S
-                </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 103.974609375,
+                          "lineHeight": 103.974609375,
+                        },
+                      ]
+                    }
+                  >
+                    “S
+                  </Text>
+                </View>
               </View>
             </View>
             <View
               style={
                 Object {
-                  "width": 85.49609375,
+                  "width": 203.53515625,
                 }
               }
             >
@@ -6269,44 +6289,49 @@ exports[`20. an article with inline paragraph 1`] = `
             <View
               style={
                 Object {
-                  "width": 58.74609375,
+                  "width": 16.28515625,
                 }
               }
             >
               <View
                 style={
-                  Array [
-                    Object {
-                      "height": 155.4609375,
-                      "width": 58.74609375,
-                    },
-                  ]
+                  Object {
+                    "height": 73.9375,
+                    "overflow": "visible",
+                    "width": 300,
+                  }
                 }
               >
-                <Text
+                <View
                   style={
-                    Array [
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 216,
-                        "lineHeight": 155.4609375,
-                        "marginHorizontal": 1,
-                        "marginVertical": 1,
-                        "paddingTop": 22,
-                        "width": 58.74609375,
-                      },
-                    ]
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": -2,
+                    }
                   }
                 >
-                  I
-                </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 96.11875,
+                          "lineHeight": 96.11875,
+                        },
+                      ]
+                    }
+                  >
+                    I
+                  </Text>
+                </View>
               </View>
             </View>
             <View
               style={
                 Object {
-                  "width": 231.25390625,
+                  "width": 273.71484375,
                 }
               }
             >
