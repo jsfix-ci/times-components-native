@@ -59,7 +59,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             <View
               style={
                 Object {
-                  "width": 50.0546875,
+                  "width": 55.0546875,
                 }
               }
             >
@@ -101,7 +101,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             <View
               style={
                 Object {
-                  "width": 239.9453125,
+                  "width": 234.9453125,
                 }
               }
             >
@@ -1628,7 +1628,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             <View
               style={
                 Object {
-                  "width": 59.5,
+                  "width": 64.5,
                 }
               }
             >
@@ -1670,7 +1670,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             <View
               style={
                 Object {
-                  "width": 230.5,
+                  "width": 225.5,
                 }
               }
             >
@@ -3378,7 +3378,7 @@ exports[`15. an article starting with single quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 70.46875,
+                  "width": 75.46875,
                 }
               }
             >
@@ -3420,7 +3420,7 @@ exports[`15. an article starting with single quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 219.53125,
+                  "width": 214.53125,
                 }
               }
             >
@@ -3586,7 +3586,7 @@ exports[`16. an article starting with double quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 86.46484375,
+                  "width": 91.46484375,
                 }
               }
             >
@@ -3628,7 +3628,7 @@ exports[`16. an article starting with double quote 1`] = `
             <View
               style={
                 Object {
-                  "width": 203.53515625,
+                  "width": 198.53515625,
                 }
               }
             >
@@ -6289,7 +6289,7 @@ exports[`20. an article with inline paragraph 1`] = `
             <View
               style={
                 Object {
-                  "width": 16.28515625,
+                  "width": 21.28515625,
                 }
               }
             >
@@ -6331,7 +6331,7 @@ exports[`20. an article with inline paragraph 1`] = `
             <View
               style={
                 Object {
-                  "width": 273.71484375,
+                  "width": 268.71484375,
                 }
               }
             >

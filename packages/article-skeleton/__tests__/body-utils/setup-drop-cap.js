@@ -13,7 +13,7 @@ FontStorage.registerFont(
   () => require("@times-components-native/test-utils").TestFont,
 );
 
-const w = Platform.OS === "android" ? 54.0546875 : 50.0546875;
+const w = Platform.OS === "android" ? 54.0546875 : 55.0546875;
 
 const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
   name: "inlineContent",

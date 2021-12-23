@@ -110,7 +110,7 @@ export const setupDropCap = (skeletonProps, content) => {
   const font = FontStorage.getFont(fontSettings);
   const { height } = getStringBounds(fontSettings, dropCapText);
   const width = font.getAdvanceWidth(dropCapText, fontSettings.fontSize);
-  const widthOffset = Platform.OS === "android" ? 8 : 12;
+  const widthOffset = Platform.OS === "android" ? 8 : 7;
 
   return [
     {
