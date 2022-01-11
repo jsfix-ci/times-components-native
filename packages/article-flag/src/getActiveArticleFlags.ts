@@ -1,4 +1,6 @@
-const getActiveArticleFlags = (flags) => {
+import { Flag } from "./ArticleFlags.d";
+
+const getActiveArticleFlags = (flags: Array<Flag>) => {
   if (!flags || flags.length === 0) return [];
   return flags
     .map((flag) =>

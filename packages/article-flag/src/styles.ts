@@ -1,6 +1,7 @@
 import { spacing, fontFactory } from "@times-components-native/styleguide";
+import { Platform, StyleSheet } from "react-native";
 
-const shared = {
+const styles = StyleSheet.create({
   bullet: {
     borderRadius: 2.5,
     height: 5,
@@ -18,6 +19,7 @@ const shared = {
     flexDirection: "row",
     flexWrap: "wrap",
     marginBottom: spacing(2),
+    alignItems: "center",
   },
   title: {
     ...fontFactory({
@@ -25,7 +27,7 @@ const shared = {
       fontSize: "cardMetaMobile",
     }),
     fontWeight: "bold",
-    lineHeight: 10,
+    lineHeight: Platform.OS === "android" ? 10 : 11,
     textTransform: "uppercase",
     fontSize: 10,
     letterSpacing: 0,
@@ -39,6 +41,6 @@ const shared = {
     flexDirection: "row",
     marginTop: 0,
   },
-};
+});
 
-export default shared;
+export default styles;

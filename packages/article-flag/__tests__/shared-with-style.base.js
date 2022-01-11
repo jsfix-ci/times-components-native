@@ -1,7 +1,8 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components-native/test-utils";
-import ArticleFlag, { ArticleFlags } from "../src/article-flag";
+import ArticleFlags from "../src/ArticleFlags";
+import ArticleFlag from "../src/ArticleFlag";
 
 export default () => {
   const tests = [

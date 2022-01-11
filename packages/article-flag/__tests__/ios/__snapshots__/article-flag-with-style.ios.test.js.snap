@@ -47,6 +47,7 @@ exports[`2. multiple article flags 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "flexDirection": "row",
       "flexWrap": "wrap",
       "marginBottom": 10,
@@ -251,6 +252,47 @@ exports[`2. multiple article flags 1`] = `
         "marginRight": 15,
       }
     }
-  />
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginTop": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#696969",
+            "borderRadius": 2.5,
+            "height": 5,
+            "marginBottom": 3,
+            "width": 5,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 10,
+            "fontWeight": "bold",
+            "includeFontPadding": false,
+            "letterSpacing": 0,
+            "lineHeight": 11,
+            "marginBottom": 0,
+            "marginLeft": 5,
+            "paddingBottom": 0,
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        longread
+      </Text>
+    </View>
+  </View>
 </View>
 `;

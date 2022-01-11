@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Text, View } from "react-native";
 import {
   ArticleFlags,
-  getActiveFlags,
+  getActiveArticleFlags,
 } from "@times-components-native/article-flag";
 
 import HeaderLabel from "../article-header-label/article-header-label";
@@ -19,7 +19,7 @@ const ArticleHeader = ({
   longRead,
   standfirst,
 }) => {
-  const hasActiveFlags = getActiveFlags(flags).length > 0;
+  const hasActiveFlags = getActiveArticleFlags(flags).length > 0;
 
   return (
     <View
