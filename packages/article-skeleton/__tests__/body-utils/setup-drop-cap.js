@@ -13,7 +13,7 @@ FontStorage.registerFont(
   () => require("@times-components-native/test-utils").TestFont,
 );
 
-const w = Platform.OS === "android" ? 54.0546875 : 55.0546875;
+const w = Platform.OS === "android" ? 53.86375 : 54.86375;
 
 const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
   name: "inlineContent",
@@ -21,7 +21,7 @@ const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
     dropCapColor: "#13354E",
     dropCapFont: "dropCap",
     dropCapText: dropCapText,
-    height: 73.9375,
+    height: 73.71000000000001,
     inlineContent: [
       {
         name: "paragraph",

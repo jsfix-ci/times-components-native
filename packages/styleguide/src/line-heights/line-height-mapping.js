@@ -1,6 +1,6 @@
-const mapping = {
+const lineHeightMapping = {
   body: {
-    bodyMobile: 30,
+    bodyMobile: 25.92, // 18/1.44
     puffLink: 15,
     secondary: 27,
     teaser: 20,
@@ -25,8 +25,8 @@ const mapping = {
   headline: {
     articleHeadline: 45,
     commentsHeadline: 29,
-    headline: 33,
-    infoTitle: 22,
+    headline: 36,
+    infoTitle: 20,
     leadHeadline: 26,
     pageComponentHeadline: 27,
     pageHeadline: 40,
@@ -40,7 +40,7 @@ const mapping = {
   },
   headlineRegular: {
     pageComponentHeadline: 30,
-    smallestHeadline: 26,
+    smallestHeadline: 22,
     strapline: 24,
   },
   stMagazine: {
@@ -64,4 +64,4 @@ const mapping = {
   },
 };
 
-export default mapping;
+export default lineHeightMapping;
