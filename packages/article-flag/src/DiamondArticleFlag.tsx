@@ -8,6 +8,7 @@ const localStyles = StyleSheet.create({
     paddingRight: 8,
     paddingLeft: 10,
     paddingVertical: 4,
+    backgroundColor: colours.functional.darkRed,
   },
   diamondBullet: {
     transform: [{ rotate: "45deg" }],
@@ -25,16 +26,10 @@ const localStyles = StyleSheet.create({
 
 interface DiamondArticleFlagType {
   title: string;
-  color: string;
 }
 
-const DiamondArticleFlag = ({
-  title,
-  color = colours.functional.darkRed,
-}: DiamondArticleFlagType) => (
-  <View
-    style={[styles.view, localStyles.container, { backgroundColor: color }]}
-  >
+const DiamondArticleFlag = ({ title }: DiamondArticleFlagType) => (
+  <View style={[styles.view, localStyles.container]}>
     <View style={[localStyles.diamondBullet]} />
     <Text
       accessibilityLabel={`${title} Flag`}

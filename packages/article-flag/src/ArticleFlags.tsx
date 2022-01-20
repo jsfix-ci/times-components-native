@@ -37,10 +37,8 @@ const ArticleFlagWithPadding = ({
       {type === "EXCLUSIVE" && <ArticleFlag color={col} title="exclusive" />}
       {type === "SPONSORED" && <ArticleFlag color={col} title="sponsored" />}
       {type === "LONGREAD" && <ArticleFlag color={col} title="longread" />}
-      {type === "LIVE" && <DiamondArticleFlag color={col} title={"Live"} />}
-      {type === "BREAKING" && (
-        <DiamondArticleFlag color={col} title={"Breaking"} />
-      )}
+      {type === "LIVE" && <DiamondArticleFlag title={"Live"} />}
+      {type === "BREAKING" && <DiamondArticleFlag title={"Breaking"} />}
     </View>
   );
 };
