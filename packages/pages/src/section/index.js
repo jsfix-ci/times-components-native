@@ -4,11 +4,17 @@ import PropTypes from "prop-types";
 import Responsive from "@times-components-native/responsive";
 import Section from "./section";
 
-const SectionPage = (props) => (
-  <Responsive>
-    <Section {...props} section={JSON.parse(props.section)} />
-  </Responsive>
-);
+const SectionPage = (props) => {
+  return (
+    <Responsive>
+      <Section
+        {...props}
+        section={JSON.parse(props.section)}
+        puzzlesMetaData={props.puzzlesMetaData}
+      />
+    </Responsive>
+  );
+};
 
 SectionPage.propTypes = {
   publicationName: PropTypes.string,

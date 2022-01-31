@@ -149,7 +149,7 @@ class SectionPage extends Component {
   }
 
   render() {
-    const { publicationName, remoteConfig } = this.props;
+    const { publicationName, remoteConfig, puzzlesMetaData } = this.props;
     const {
       readArticles,
       recentlyOpenedPuzzleCount,
@@ -183,6 +183,7 @@ class SectionPage extends Component {
             onPuzzlePress={onPuzzlePress}
             publicationName={publicationName}
             section={section}
+            puzzlesMetaData={puzzlesMetaData}
           />
         </RemoteConfigProvider>
       </SectionContext.Provider>
