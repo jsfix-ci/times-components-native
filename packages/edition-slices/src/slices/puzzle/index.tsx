@@ -13,7 +13,7 @@ function Puzzle({ onPress, slice, puzzleMetaData }: IProps) {
 
   const getOfflineAvailability = (puzzleId: string) => {
     const pmd = puzzleMetaData || [];
-    let isAvailableOffline = false;
+    let isAvailableOffline = true;
     let i = 0;
     for (; i < pmd.length; i++) {
       const puzzle = pmd[i];

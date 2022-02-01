@@ -15,13 +15,17 @@ export default () => {
 
     const initialSectionData = { name: "InitialSection" };
     const updatedSectionData = { name: "UpdatedSection" };
+    const pmd = [{ id: "321", isAvailableOffline: true }];
 
     getSectionData.mockReturnValue(
       Promise.resolve(JSON.stringify(updatedSectionData)),
     );
 
     const testInstance = TestRenderer.create(
-      <Section section={JSON.stringify(initialSectionData)} />,
+      <Section
+        section={JSON.stringify(initialSectionData)}
+        puzzlesMetaData={JSON.stringify(pmd)}
+      />,
     );
 
     const sectionInstance = testInstance.root.findByType("Section");

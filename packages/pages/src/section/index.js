@@ -1,4 +1,5 @@
 import React from "react";
+import { Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Responsive from "@times-components-native/responsive";
@@ -10,7 +11,11 @@ const SectionPage = (props) => {
       <Section
         {...props}
         section={JSON.parse(props.section)}
-        puzzlesMetaData={props.puzzlesMetaData}
+        puzzlesMetaData={
+          Platform.OS === "android"
+            ? JSON.parse(props.puzzlesMetaData)
+            : props.puzzlesMetaData
+        }
       />
     </Responsive>
   );
