@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo } from "react";
 import {
+  FlatList,
   NativeEventEmitter,
   NativeModules,
   ScrollView,
@@ -114,16 +115,17 @@ const MemoisedArticle = React.memo((props) => {
     );
   };
 
-  return (
-    <>
-      <Gutter>
-        <Header width={Math.min(maxWidth, windowWidth)} />
-      </Gutter>
+  const renderItem = ({ item, index }) => {
+    return <ContentChild item={item} index={index} />;
+  };
 
-      {fixedContent.map((item, index) => (
-        <ContentChild key={`fixedContent-${index}`} item={item} index={index} />
-      ))}
-    </>
+  return (
+    <FlatList
+      data={fixedContent}
+      renderItem={renderItem}
+      ListHeaderComponent={<Header width={Math.min(maxWidth, windowWidth)} />}
+      keyExtractor={(_, index) => `fixedContent-${index}`}
+    />
   );
 });
 
@@ -164,14 +166,7 @@ const ArticleWithContent = (props) => {
   return (
     <View style={styles.articleContainer}>
       <Viewport.Tracker>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          nestedScrollEnabled
-          onScroll={handleScroll}
-          scrollEventThrottle={400}
-        >
-          <MemoisedArticle {...props} />
-        </ScrollView>
+        <MemoisedArticle {...props} />
       </Viewport.Tracker>
     </View>
   );
