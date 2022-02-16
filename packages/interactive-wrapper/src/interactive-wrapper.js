@@ -97,7 +97,7 @@ class InteractiveWrapper extends Component {
         scrollEnabled={false}
         source={{ uri }}
         style={{ height }}
-        androidLayerType={"software"}
+        androidLayerType={"none"}
       />
     );
   }

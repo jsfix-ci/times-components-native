@@ -136,7 +136,7 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
         javaScriptEnabled
         injectedJavaScriptForMainFrameOnly
         // Note that changing androidLayerType to "hardware" or "none" causes crashes on Android 12
-        androidLayerType={"software"}
+        androidLayerType={"none"}
       />
     </View>
   );

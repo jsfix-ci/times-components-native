@@ -90,7 +90,7 @@ class InteractiveWrapper extends Component {
         source={{ uri }}
         style={{ height, width: "100%" }}
         onHttpError={this.handleHttpError}
-        androidLayerType={getAndroidWebViewLayerType(Platform.Version)}
+        androidLayerType={"none"}
       />
     );
   }

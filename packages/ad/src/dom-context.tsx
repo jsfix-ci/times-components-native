@@ -241,7 +241,7 @@ const DOMContext = ({
           }
           source={{ baseUrl, html }}
           allowsInlineMediaPlayback={true}
-          androidLayerType={"software"}
+          androidLayerType={"none"}
         />
       )}
       {height !== 0 && (

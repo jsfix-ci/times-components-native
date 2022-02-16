@@ -74,7 +74,7 @@ function WebviewWrapper({ config, id }: IProps) {
       scrollEnabled={false}
       source={{ uri }}
       style={{ height }}
-      androidLayerType={"software"}
+      androidLayerType={"none"}
     />
   );
 }
