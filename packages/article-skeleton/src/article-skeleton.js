@@ -120,12 +120,14 @@ const MemoisedArticle = React.memo((props) => {
   };
 
   return (
-    <FlatList
-      data={fixedContent}
-      renderItem={renderItem}
-      ListHeaderComponent={<Header width={Math.min(maxWidth, windowWidth)} />}
-      keyExtractor={(_, index) => `fixedContent-${index}`}
-    />
+    <Viewport.Tracker> {/* Needed by child ViewportAwareViews */}
+      <FlatList
+        data={fixedContent}
+        renderItem={renderItem}
+        ListHeaderComponent={<Header width={Math.min(maxWidth, windowWidth)} />}
+        keyExtractor={(_, index) => `fixedContent-${index}`}
+      />
+    </Viewport.Tracker>
   );
 });
 
