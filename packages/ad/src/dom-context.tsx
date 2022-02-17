@@ -231,7 +231,7 @@ const DOMContext = ({
     // Note that this ViewportAwareView must be contained by a
     // Viewport.Tracker to work properly
     <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
-      {(Platform.OS === "ios" || loaded) && (
+      {loaded && (
         <WebView
           ref={webViewRef}
           onMessage={handleMessageEvent}
@@ -241,7 +241,7 @@ const DOMContext = ({
           }
           source={{ baseUrl, html }}
           allowsInlineMediaPlayback={true}
-          androidLayerType={"none"}
+          androidLayerType={"hardware"}
         />
       )}
       {height !== 0 && (
