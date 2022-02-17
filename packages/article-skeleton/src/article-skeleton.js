@@ -120,7 +120,7 @@ const MemoisedArticle = React.memo((props) => {
   };
 
   return (
-    <Viewport.Tracker> {/* Needed by child ViewportAwareViews */}
+    <Viewport.Tracker>
       <FlatList
         data={fixedContent}
         renderItem={renderItem}
