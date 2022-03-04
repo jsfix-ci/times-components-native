@@ -2,7 +2,7 @@ const fontSizes = {
   articleHeadline: 45,
   articleMeta: 15,
   body: 18,
-  bodyMobile: 17,
+  bodyMobile: 18,
   button: 16,
   caption: 13,
   cardHeadline: 27,

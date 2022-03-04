@@ -1,5 +1,5 @@
 export interface Flag {
-  expiryTime: string;
+  expiryTime: string | null;
   type: FlagTypes;
 }
 

@@ -3,6 +3,10 @@ import sharedFontSizes from "./font-sizes-base";
 
 const fontSizes = (scale) => {
   switch (scale) {
+    case scales.medium:
+      return {
+        ...sharedFontSizes,
+      };
     case scales.large:
       return {
         ...sharedFontSizes,

@@ -205,7 +205,7 @@ exports[`tile e landscape small 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 20,
+              "fontSize": 22,
               "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
@@ -545,7 +545,7 @@ exports[`tile e portrait small 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 20,
+              "fontSize": 22,
               "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
