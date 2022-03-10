@@ -54,7 +54,26 @@ exports[`2. iconforwardarrow sets a width when height is set 1`] = `
 />
 `;
 
-exports[`3. iconstar sets a width when height is set 1`] = `
+exports[`3. iconnointernet sets a width when height is set 1`] = `
+<RNSVGSvgView
+  bbHeight={50}
+  bbWidth={16}
+  focusable={false}
+  height={50}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 50,
+      "width": 16,
+    }
+  }
+  width={16}
+/>
+`;
+
+exports[`4. iconstar sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-star"
@@ -81,7 +100,7 @@ exports[`3. iconstar sets a width when height is set 1`] = `
 />
 `;
 
-exports[`4. iconcopylink sets a width when height is set 1`] = `
+exports[`5. iconcopylink sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-copy-link"
@@ -108,7 +127,7 @@ exports[`4. iconcopylink sets a width when height is set 1`] = `
 />
 `;
 
-exports[`5. iconsavebookmark sets a width when height is set 1`] = `
+exports[`6. iconsavebookmark sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-bookmark"
@@ -136,7 +155,7 @@ exports[`5. iconsavebookmark sets a width when height is set 1`] = `
 />
 `;
 
-exports[`6. icontwitter sets a width when height is set 1`] = `
+exports[`7. icontwitter sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-twitter"
@@ -164,7 +183,7 @@ exports[`6. icontwitter sets a width when height is set 1`] = `
 />
 `;
 
-exports[`7. iconvideo sets a width when height is set 1`] = `
+exports[`8. iconvideo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video"
@@ -192,7 +211,7 @@ exports[`7. iconvideo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`8. iconvideo360player sets a width when height is set 1`] = `
+exports[`9. iconvideo360player sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video-360-player"
@@ -220,7 +239,7 @@ exports[`8. iconvideo360player sets a width when height is set 1`] = `
 />
 `;
 
-exports[`9. thestlogo sets a width when height is set 1`] = `
+exports[`10. thestlogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-sunday-times"
@@ -248,7 +267,7 @@ exports[`9. thestlogo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`10. thetimeslogo sets a width when height is set 1`] = `
+exports[`11. thetimeslogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-times"
@@ -276,7 +295,7 @@ exports[`10. thetimeslogo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`11. closeicon sets a width when height is set 1`] = `
+exports[`12. closeicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-close"
@@ -303,7 +322,7 @@ exports[`11. closeicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`12. closeroundicon sets a width when height is set 1`] = `
+exports[`13. closeroundicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -329,7 +348,7 @@ exports[`12. closeroundicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`13. glassmagnifiericon sets a width when height is set 1`] = `
+exports[`14. glassmagnifiericon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -355,7 +374,7 @@ exports[`13. glassmagnifiericon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`14. rightorientedglassmagnifier sets a width when height is set 1`] = `
+exports[`15. rightorientedglassmagnifier sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="20"
@@ -380,7 +399,7 @@ exports[`14. rightorientedglassmagnifier sets a width when height is set 1`] = `
 />
 `;
 
-exports[`15. leftchevron sets a width when height is set 1`] = `
+exports[`16. leftchevron sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -406,7 +425,7 @@ exports[`15. leftchevron sets a width when height is set 1`] = `
 />
 `;
 
-exports[`16. deleteicon sets a width when height is set 1`] = `
+exports[`17. deleteicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight={50}
@@ -431,7 +450,7 @@ exports[`16. deleteicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`17. iconcheckmark sets a width when height is set 1`] = `
+exports[`18. iconcheckmark sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight={50}

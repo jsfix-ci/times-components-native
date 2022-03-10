@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 import Link from "@times-components-native/link";
 import { ArticleSummaryHeadline } from "@times-components-native/article-summary";
 import { withPuzzleTileTracking, TileImage } from "../shared";
+import { OfflineTile } from "..";
 import styles from "./styles";
 
 const { puzzleContainer, header, headline, imageContainer } = styles;
 
-const TileAJ = ({ id, image, onPress, title, url }) => {
+const TileAJ = ({ id, image, onPress, title, url, isOffline }) => {
   const crop = image.crop32;
 
   if (!crop) {
@@ -19,7 +20,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => {
     <Link
       key={id}
       linkStyle={puzzleContainer}
-      onPress={() => onPress({ id, title, url })}
+      onPress={isOffline ? () => null : () => onPress({ id, title, url })}
       url={url}
       withStar={false}
     >
@@ -36,6 +37,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => {
         style={imageContainer}
         uri={crop.url}
       />
+      {isOffline ? <OfflineTile /> : null}
     </Link>
   );
 };

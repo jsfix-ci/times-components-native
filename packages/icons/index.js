@@ -1,6 +1,7 @@
 export {
   IconFacebook,
   IconForwardArrow,
+  IconNoInternet,
   IconStar,
   IconCopyLink,
   IconSaveBookmark,

@@ -13,6 +13,7 @@ const Slice = ({
   sectionTitle,
   orientation,
   isTablet,
+  puzzleMetaData,
 }) => {
   const Component = getSlice(
     isInSupplement,
@@ -28,6 +29,7 @@ const Slice = ({
       slice={slice}
       inTodaysEditionSlice={inTodaysEditionSlice}
       adConfig={adConfig}
+      puzzleMetaData={puzzleMetaData}
     />
   ) : null;
 };

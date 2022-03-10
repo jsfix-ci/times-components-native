@@ -24,6 +24,7 @@ import ArticleLink from "./article-link";
 import ArticleEndTracking from "./article-end-tracking";
 import InlineNewsletterPuff from "./inline-newsletter-puff";
 import { useResponsiveContext } from "@times-components-native/responsive";
+import ArticleUpdateHeader from "@times-components-native/article-update-header";
 import get from "lodash.get";
 
 const { track } = NativeModules.ReactAnalytics;
@@ -229,6 +230,30 @@ const ArticleBodyRow = ({
       );
     },
     interactive(key, { id, display, element }) {
+      if (element.value === "article-header") {
+        return (
+          <View
+            key={key}
+            style={[
+              styles.primaryContainer,
+              isArticleTablet && styles.containerTablet,
+              narrowContent && {
+                alignSelf: "stretch",
+                marginLeft: spacing(2),
+              },
+              {
+                paddingHorizontal: 10,
+              },
+            ]}
+          >
+            <ArticleUpdateHeader
+              breaking={element.attributes.breaking}
+              headline={element.attributes.headline}
+              updated={element.attributes.updated}
+            />
+          </View>
+        );
+      }
       if (
         Platform.OS === "ios" &&
         element &&

@@ -25,7 +25,6 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle = {} }) => (
                     url,
                   })
                 }
-                style={styles.link}
                 url={url}
               >
                 {renderedChildren}

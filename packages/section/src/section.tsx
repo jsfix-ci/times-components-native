@@ -1,6 +1,5 @@
 import React, { FC, useCallback, useEffect, useRef } from "react";
 import {
-  Dimensions,
   FlatList,
   NativeEventEmitter,
   NativeModules,
@@ -31,6 +30,10 @@ const styles = styleFactory();
 const { SectionEvents } = NativeModules;
 const sectionEventEmitter = new NativeEventEmitter(SectionEvents);
 
+type TPuzzleMetaData = {
+  id: string;
+  isAvailableOffline: boolean;
+};
 interface Props {
   adConfig: any;
   onArticlePress: OnArticlePress;
@@ -47,18 +50,21 @@ interface Props {
     slices: any;
   };
   scrollToArticleId?: string;
+  puzzlesMetaData?: TPuzzleMetaData[];
 }
 
-const Section: FC<Props> = ({
-  adConfig,
-  onArticlePress,
-  onLinkPress,
-  onPuzzlePress,
-  onPuzzleBarPress,
-  onViewed,
-  receiveChildList,
-  section,
-}) => {
+const Section: FC<Props> = (props) => {
+  const {
+    adConfig,
+    onArticlePress,
+    onLinkPress,
+    onPuzzlePress,
+    onPuzzleBarPress,
+    onViewed,
+    receiveChildList,
+    section,
+    puzzlesMetaData = undefined,
+  } = props;
   const { cover, name, slices, title: sectionTitle } = section;
   const { isTablet, editionBreakpoint, orientation } = useResponsiveContext();
 
@@ -66,8 +72,6 @@ const Section: FC<Props> = ({
   const sliceOffsets = useRef<Record<string, number>>({});
 
   useEffect(() => {
-    console.log("section w: ", Dimensions.get("window").width);
-    console.log("section h: ", Dimensions.get("window").height);
     const sectionEventsListener = sectionEventEmitter.addListener(
       "scrollToArticleId",
       scrollToOffset,
@@ -97,28 +101,31 @@ const Section: FC<Props> = ({
     index,
     item: slice,
     inTodaysEditionSlice,
-  }: any) => (
-    <View
-      onLayout={(event) => {
-        sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
-      }}
-      style={sliceStyles.sliceContainer}
-    >
-      <Slice
-        index={index}
-        length={slices.length}
-        onPress={isPuzzle ? onPuzzlePress : onArticlePress}
-        onLinkPress={onLinkPress}
-        slice={slice}
-        isInSupplement={isSupplementSection(sectionTitle)}
-        inTodaysEditionSlice={inTodaysEditionSlice}
-        adConfig={adConfig}
-        sectionTitle={sectionTitle}
-        orientation={orientation}
-        isTablet={isTablet}
-      />
-    </View>
-  );
+  }: any) => {
+    return (
+      <View
+        onLayout={(event) => {
+          sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
+        }}
+        style={sliceStyles.sliceContainer}
+      >
+        <Slice
+          index={index}
+          length={slices.length}
+          onPress={isPuzzle ? onPuzzlePress : onArticlePress}
+          onLinkPress={onLinkPress}
+          slice={slice}
+          isInSupplement={isSupplementSection(sectionTitle)}
+          inTodaysEditionSlice={inTodaysEditionSlice}
+          adConfig={adConfig}
+          sectionTitle={sectionTitle}
+          orientation={orientation}
+          isTablet={isTablet}
+          puzzleMetaData={isPuzzle ? puzzlesMetaData : null}
+        />
+      </View>
+    );
+  };
 
   const renderItemSeperator = (isPuzzle: boolean) => (
     { leadingItem }: any,

@@ -725,36 +725,27 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             style={
               Array [
                 Object {
+                  "backgroundColor": "#F9F9F9",
+                  "borderColor": "#9f0000",
+                  "borderTopWidth": 2,
                   "marginHorizontal": 10,
                   "marginVertical": 5,
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 16,
                 },
-                false,
               ]
             }
           >
             <Text
               style={
-                Array [
-                  Object {
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
-                    "fontWeight": "400",
-                    "letterSpacing": 1.2,
-                    "marginBottom": 20,
-                  },
-                  false,
-                  Object {
-                    "color": "#FF0000",
-                  },
-                  Object {
-                    "fontFamily": "GillSansMTStd-Medium",
-                    "fontSize": 15,
-                    "lineHeight": 18,
-                  },
-                ]
+                Object {
+                  "fontFamily": "TimesModern-Bold",
+                  "fontSize": 24,
+                  "marginBottom": 20,
+                }
               }
             >
-              EXAMPLE TITLE
+              Example title
             </Text>
             <View
               style={
@@ -777,13 +768,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   style={
                     Array [
                       Object {
-                        "borderRadius": 2.5,
-                        "height": 5,
+                        "backgroundColor": "#9f0000",
+                        "height": 6,
                         "top": 2,
-                        "width": 5,
-                      },
-                      Object {
-                        "backgroundColor": "#FF0000",
+                        "width": 6,
                       },
                     ]
                   }
@@ -825,13 +813,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   style={
                     Array [
                       Object {
-                        "borderRadius": 2.5,
-                        "height": 5,
+                        "backgroundColor": "#9f0000",
+                        "height": 6,
                         "top": 2,
-                        "width": 5,
-                      },
-                      Object {
-                        "backgroundColor": "#FF0000",
+                        "width": 6,
                       },
                     ]
                   }
@@ -864,9 +849,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         Object {
                           "textDecorationLine": "underline",
                         },
-                        Object {
-                          "color": "#006699",
-                        },
+                        Object {},
                       ]
                     }
                   >
@@ -888,13 +871,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   style={
                     Array [
                       Object {
-                        "borderRadius": 2.5,
-                        "height": 5,
+                        "backgroundColor": "#9f0000",
+                        "height": 6,
                         "top": 2,
-                        "width": 5,
-                      },
-                      Object {
-                        "backgroundColor": "#FF0000",
+                        "width": 6,
                       },
                     ]
                   }
@@ -936,13 +916,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   style={
                     Array [
                       Object {
-                        "borderRadius": 2.5,
-                        "height": 5,
+                        "backgroundColor": "#9f0000",
+                        "height": 6,
                         "top": 2,
-                        "width": 5,
-                      },
-                      Object {
-                        "backgroundColor": "#FF0000",
+                        "width": 6,
                       },
                     ]
                   }

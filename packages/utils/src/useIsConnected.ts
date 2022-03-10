@@ -6,7 +6,6 @@ export const useIsConnected = () => {
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener((state) => {
       setIsConnected(state.isConnected);
-      console.log("state is connected: ", state.isConnected);
     });
 
     return () => unsubscribe();

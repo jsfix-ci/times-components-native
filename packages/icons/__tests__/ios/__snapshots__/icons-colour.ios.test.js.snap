@@ -30,7 +30,29 @@ exports[`2. iconforwardarrow renders with different colours 1`] = `
 />
 `;
 
-exports[`3. iconstar renders with different colours 1`] = `
+exports[`3. iconnointernet renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGGroup>
+    <RNSVGDefs>
+      <RNSVGPath />
+    </RNSVGDefs>
+    <RNSVGGroup
+      fill={null}
+    >
+      <RNSVGMask
+        fill={4294967295}
+      >
+        <RNSVGUse />
+      </RNSVGMask>
+      <RNSVGPath
+        fill={4281545523}
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`4. iconstar renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
@@ -41,7 +63,7 @@ exports[`3. iconstar renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`4. iconcopylink renders with different colours 1`] = `
+exports[`5. iconcopylink renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
@@ -52,7 +74,7 @@ exports[`4. iconcopylink renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`5. iconsavebookmark renders with different colours 1`] = `
+exports[`6. iconsavebookmark renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -67,7 +89,7 @@ exports[`5. iconsavebookmark renders with different colours 1`] = `
 />
 `;
 
-exports[`6. icontwitter renders with different colours 1`] = `
+exports[`7. icontwitter renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -82,7 +104,7 @@ exports[`6. icontwitter renders with different colours 1`] = `
 />
 `;
 
-exports[`7. iconvideo renders with different colours 1`] = `
+exports[`8. iconvideo renders with different colours 1`] = `
 Array [
   <ARTShape
     fill={
@@ -111,7 +133,7 @@ Array [
 ]
 `;
 
-exports[`8. iconvideo360player renders with different colours 1`] = `
+exports[`9. iconvideo360player renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -126,7 +148,7 @@ exports[`8. iconvideo360player renders with different colours 1`] = `
 />
 `;
 
-exports[`9. thestlogo renders with different colours 1`] = `
+exports[`10. thestlogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -141,7 +163,7 @@ exports[`9. thestlogo renders with different colours 1`] = `
 />
 `;
 
-exports[`10. thetimeslogo renders with different colours 1`] = `
+exports[`11. thetimeslogo renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -156,7 +178,7 @@ exports[`10. thetimeslogo renders with different colours 1`] = `
 />
 `;
 
-exports[`11. closeicon renders with different colours 1`] = `
+exports[`12. closeicon renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
@@ -167,7 +189,7 @@ exports[`11. closeicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`12. closeroundicon renders with different colours 1`] = `
+exports[`13. closeroundicon renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
 >
@@ -188,7 +210,7 @@ exports[`12. closeroundicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. glassmagnifiericon renders with different colours 1`] = `
+exports[`14. glassmagnifiericon renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
 >
@@ -209,7 +231,7 @@ exports[`13. glassmagnifiericon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`14. rightorientedglassmagnifier renders with different colours 1`] = `
+exports[`15. rightorientedglassmagnifier renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGGroup
@@ -230,7 +252,7 @@ exports[`14. rightorientedglassmagnifier renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`15. leftchevron renders with different colours 1`] = `
+exports[`16. leftchevron renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
 >
@@ -251,7 +273,7 @@ exports[`15. leftchevron renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`16. deleteicon renders with different colours 1`] = `
+exports[`17. deleteicon renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGGroup
@@ -274,7 +296,7 @@ exports[`16. deleteicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`17. iconcheckmark renders with different colours 1`] = `
+exports[`18. iconcheckmark renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath

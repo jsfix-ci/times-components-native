@@ -44,53 +44,7 @@ exports[`4. rgba colour article flag 1`] = `
 </View>
 `;
 
-exports[`5. new article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="new Flag"
-  >
-    new
-  </Text>
-</View>
-`;
-
-exports[`6. updated article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="updated Flag"
-  >
-    updated
-  </Text>
-</View>
-`;
-
-exports[`7. exclusive article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="exclusive Flag"
-  >
-    exclusive
-  </Text>
-</View>
-`;
-
-exports[`8. sponsored article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="sponsored Flag"
-  >
-    sponsored
-  </Text>
-</View>
-`;
-
-exports[`9. long read article flag 1`] = `null`;
-
-exports[`10. article flags 1`] = `
+exports[`5. article flags 1`] = `
 <View>
   <View>
     <View>
@@ -112,11 +66,20 @@ exports[`10. article flags 1`] = `
       </Text>
     </View>
   </View>
-  <View />
+  <View>
+    <View>
+      <View />
+      <Text
+        accessibilityLabel="longread Flag"
+      >
+        longread
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
-exports[`11. article flags with container 1`] = `
+exports[`6. article flags with container 1`] = `
 <View>
   <View>
     <View>
@@ -139,9 +102,18 @@ exports[`11. article flags with container 1`] = `
         </Text>
       </View>
     </View>
-    <View />
+    <View>
+      <View>
+        <View />
+        <Text
+          accessibilityLabel="longread Flag"
+        >
+          longread
+        </Text>
+      </View>
+    </View>
   </View>
 </View>
 `;
 
-exports[`12. article flags with no flags 1`] = `null`;
+exports[`7. article flags with no flags 1`] = `null`;

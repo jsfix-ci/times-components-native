@@ -2,14 +2,8 @@ import React from "react";
 import mockDate from "mockdate";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components-native/test-utils";
-import ArticleFlag, {
-  ArticleFlags,
-  NewArticleFlag,
-  UpdatedArticleFlag,
-  ExclusiveArticleFlag,
-  SponsoredArticleFlag,
-  LongReadArticleFlag,
-} from "../src/article-flag";
+import ArticleFlag from "../src/ArticleFlag";
+import ArticleFlags from "../src/ArticleFlags";
 
 export default () => {
   //  GMT: Thursday, 14 March 2019 16:22:54
@@ -66,46 +60,6 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleFlag color={gqlRgbaColour} title="Coloured Red" />,
         );
-
-        expect(testInstance).toMatchSnapshot();
-      },
-    },
-    {
-      name: "new article flag",
-      test: () => {
-        const testInstance = TestRenderer.create(<NewArticleFlag />);
-
-        expect(testInstance).toMatchSnapshot();
-      },
-    },
-    {
-      name: "updated article flag",
-      test: () => {
-        const testInstance = TestRenderer.create(<UpdatedArticleFlag />);
-
-        expect(testInstance).toMatchSnapshot();
-      },
-    },
-    {
-      name: "exclusive article flag",
-      test: () => {
-        const testInstance = TestRenderer.create(<ExclusiveArticleFlag />);
-
-        expect(testInstance).toMatchSnapshot();
-      },
-    },
-    {
-      name: "sponsored article flag",
-      test: () => {
-        const testInstance = TestRenderer.create(<SponsoredArticleFlag />);
-
-        expect(testInstance).toMatchSnapshot();
-      },
-    },
-    {
-      name: "long read article flag",
-      test: () => {
-        const testInstance = TestRenderer.create(<LongReadArticleFlag />);
 
         expect(testInstance).toMatchSnapshot();
       },

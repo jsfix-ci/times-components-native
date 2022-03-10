@@ -48,7 +48,7 @@ exports[`tile j without breakpoint 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 22,
           "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
