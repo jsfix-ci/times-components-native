@@ -3,10 +3,8 @@ import { Platform, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   bullet: {
-    borderRadius: 2.5,
     height: 5,
     width: 5,
-    marginBottom: 3,
   },
   flagPadding: {
     marginRight: spacing(3),
@@ -30,16 +28,14 @@ const styles = StyleSheet.create({
     lineHeight: Platform.OS === "android" ? 10 : 11,
     textTransform: "uppercase",
     fontSize: 10,
-    letterSpacing: 0,
+    letterSpacing: 1,
     includeFontPadding: false,
-    paddingBottom: spacing(0),
     marginLeft: spacing(1),
     marginBottom: spacing(0),
   },
   view: {
     alignItems: "center",
     flexDirection: "row",
-    marginTop: 0,
   },
 });
 

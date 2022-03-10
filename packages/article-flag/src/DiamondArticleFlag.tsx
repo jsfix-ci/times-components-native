@@ -5,22 +5,21 @@ import styles from "./styles";
 
 const localStyles = StyleSheet.create({
   container: {
+    paddingLeft: 9,
     paddingRight: 8,
-    paddingLeft: 10,
     paddingVertical: 4,
     backgroundColor: colours.functional.darkRed,
   },
-  diamondBullet: {
-    transform: [{ rotate: "45deg" }],
-    height: 4.5,
-    width: 4.5,
+  bullet: {
+    height: 5,
+    width: 5,
     backgroundColor: "white",
   },
   title: {
     color: "white",
-    paddingTop: 2,
     fontFamily: fonts.supporting,
     fontWeight: "500",
+    paddingTop: 3,
   },
 });
 
@@ -30,7 +29,7 @@ interface DiamondArticleFlagType {
 
 const DiamondArticleFlag = ({ title }: DiamondArticleFlagType) => (
   <View style={[styles.view, localStyles.container]}>
-    <View style={[localStyles.diamondBullet]} />
+    <View style={[localStyles.bullet]} />
     <Text
       accessibilityLabel={`${title} Flag`}
       style={[styles.title, localStyles.title]}
