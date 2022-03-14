@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     lineHeight: Platform.OS === "android" ? 10 : 11,
     textTransform: "uppercase",
-    fontSize: 10,
+    fontSize: 12,
     letterSpacing: 1,
     includeFontPadding: false,
     marginLeft: spacing(1),
