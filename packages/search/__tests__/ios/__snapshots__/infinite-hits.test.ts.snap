@@ -55,7 +55,7 @@ exports[`SearchResults should render correctly 1`] = `
         "alignSelf": "center",
         "color": "#696969",
         "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 22,
+        "fontSize": 20,
         "lineHeight": 30,
         "textAlign": "center",
         "width": "90%",

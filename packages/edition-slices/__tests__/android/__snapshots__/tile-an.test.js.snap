@@ -53,7 +53,7 @@ exports[`tile an without breakpoint 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 10,

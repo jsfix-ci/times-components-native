@@ -756,8 +756,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           >
             <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
               style={
                 Object {
                   "fontFamily": "TimesModern-Bold",

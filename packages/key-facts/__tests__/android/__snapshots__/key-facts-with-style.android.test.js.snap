@@ -1,0 +1,1014 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`key facts with title and context theme 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
+        "marginBottom": 20,
+      }
+    }
+  >
+    Example title
+  </Text>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`key facts with title on mobile 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
+        "marginBottom": 20,
+      }
+    }
+  >
+    Example title
+  </Text>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`key facts with title on tablet 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
+        "marginBottom": 20,
+      }
+    }
+  >
+    Example title
+  </Text>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`key facts without title on mobile 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`key facts without title on tablet 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        An example 
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        More example text.
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "paddingLeft": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#9f0000",
+            "height": 6,
+            "top": 2,
+            "width": 6,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "lineHeight": 27,
+            "marginTop": -8,
+            "paddingLeft": 15,
+            "width": "95%",
+          }
+        }
+      >
+        Example text 
+        <Text
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          this is bold 
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontStyle": "italic",
+            }
+          }
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;

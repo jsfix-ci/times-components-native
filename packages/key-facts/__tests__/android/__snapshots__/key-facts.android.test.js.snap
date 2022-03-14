@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. key facts with title 1`] = `
+<View>
+  <Text>
+    Example title
+  </Text>
+  <View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        An example 
+        <Text
+          accessibilityRole="link"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        More example text.
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        Example text 
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          this is bold 
+        </Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`2. key facts without title 1`] = `
+<View>
+  <View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        Example bullet text
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        An example 
+        <Text
+          accessibilityRole="link"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          link
+        </Text>
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        More example text.
+      </Text>
+    </View>
+    <View>
+      <View />
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        Example text 
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          this is bold 
+        </Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          this is in italics.
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
