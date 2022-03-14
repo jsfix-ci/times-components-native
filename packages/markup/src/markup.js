@@ -22,51 +22,93 @@ export default {
   },
   bold(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.bold}>
+      <Text
+        key={key}
+        style={styles.bold}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );
   },
   break(key) {
-    return <Text key={key}>{"\n"}</Text>;
+    return (
+      <Text key={key} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+        {"\n"}
+      </Text>
+    );
   },
   emphasis(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.italic}>
+      <Text
+        key={key}
+        style={styles.italic}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );
   },
   inline(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return (
+      <Text key={key} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+        {renderedChildren}
+      </Text>
+    );
   },
   italic(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.italic}>
+      <Text
+        key={key}
+        style={styles.italic}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );
   },
   paragraph(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return (
+      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+        {renderedChildren}
+      </Text>
+    );
   },
   strong(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.bold}>
+      <Text
+        key={key}
+        style={styles.bold}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );
   },
   subscript(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.subscript}>
+      <Text
+        key={key}
+        style={styles.subscript}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );
   },
   superscript(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.superscript}>
+      <Text
+        key={key}
+        style={styles.superscript}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );

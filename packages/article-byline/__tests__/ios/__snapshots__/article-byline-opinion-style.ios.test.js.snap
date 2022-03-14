@@ -3,6 +3,8 @@
 exports[`1. with a single author 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#850029",
@@ -15,6 +17,8 @@ exports[`1. with a single author 1`] = `
     testID="author"
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -34,6 +38,8 @@ exports[`1. with a single author 1`] = `
 exports[`2. with a very long byline 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#850029",
@@ -46,6 +52,8 @@ exports[`2. with a very long byline 1`] = `
     testID="author"
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -59,6 +67,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -72,6 +82,8 @@ exports[`2. with a very long byline 1`] = `
       , Environment Editor | 
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -85,6 +97,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -98,6 +112,8 @@ exports[`2. with a very long byline 1`] = `
       , Environment Editor | 
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",
@@ -111,6 +127,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#850029",

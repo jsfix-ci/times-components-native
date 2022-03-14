@@ -9,12 +9,16 @@ exports[`1. date and times publication 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="date-time"
   >
     Saturday July 01 2017, 5.32am BST
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="publication-name"
   >

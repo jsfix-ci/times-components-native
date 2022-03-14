@@ -39,6 +39,8 @@ const ArticleHeader = ({
             styles.articleHeadlineSpacer,
           isArticleTablet && styles.articleHeadLineTextTablet,
         ]}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         {headline}
       </Text>

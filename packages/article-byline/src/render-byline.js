@@ -17,7 +17,13 @@ const bylineRenderers = (Component, textStyle, props = {}) => ({
   inline(key, attributes, children) {
     const { className, bylineStyle } = props;
     return (
-      <Text className={className} key={key} style={[textStyle, bylineStyle]}>
+      <Text
+        className={className}
+        key={key}
+        style={[textStyle, bylineStyle]}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {children}
       </Text>
     );
@@ -33,7 +39,12 @@ const renderByline = (Component, ast, textStyle, props = {}) => {
     bylineRenderers(Component, textStyle, props),
   );
   return (
-    <Text testID={"author"} style={textStyle}>
+    <Text
+      testID={"author"}
+      style={textStyle}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       {trees}
     </Text>
   );

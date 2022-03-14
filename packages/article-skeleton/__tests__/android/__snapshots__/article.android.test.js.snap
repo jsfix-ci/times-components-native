@@ -127,6 +127,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 >
                   <View>
                     <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
                       selectable={true}
                       style={
                         Object {
@@ -137,7 +139,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         }
                       }
                     >
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         his being Black History Month, last week
                       </Text>
                     </Text>
@@ -445,6 +450,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -457,6 +464,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             >
               <Text
                 accessibilityRole="link"
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -471,7 +480,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   ]
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Some Link
                 </Text>
               </Text>
@@ -514,6 +526,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -524,7 +538,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Some content
               </Text>
             </Text>
@@ -684,6 +701,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -737,6 +756,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           >
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "fontFamily": "TimesModern-Bold",
@@ -777,6 +798,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 />
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Array [
                       Object {
@@ -822,6 +845,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 />
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Array [
                       Object {
@@ -844,6 +869,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   An example 
                   <Text
                     accessibilityRole="link"
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
                     style={
                       Array [
                         Object {
@@ -880,6 +907,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 />
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Array [
                       Object {
@@ -925,6 +954,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 />
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Array [
                       Object {
@@ -946,6 +977,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 >
                   Example text 
                   <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
                     style={
                       Object {
                         "fontWeight": "bold",
@@ -955,6 +988,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     this is bold 
                   </Text>
                   <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
                     style={
                       Object {
                         "fontStyle": "italic",
@@ -1006,6 +1041,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1016,7 +1053,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 2
               </Text>
             </Text>
@@ -1060,6 +1100,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1070,7 +1112,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 3
               </Text>
             </Text>
@@ -1114,6 +1159,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1124,7 +1171,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 4
               </Text>
             </Text>
@@ -1168,6 +1218,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1178,7 +1230,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 5
               </Text>
             </Text>
@@ -1222,6 +1277,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1232,7 +1289,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 6
               </Text>
             </Text>
@@ -1662,6 +1722,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 >
                   <View>
                     <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
                       selectable={true}
                       style={
                         Object {
@@ -1673,13 +1735,18 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       }
                     >
                       <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
                         style={
                           Object {
                             "fontWeight": "bold",
                           }
                         }
                       >
-                        <Text>
+                        <Text
+                          maxFontSizeMultiplier={2}
+                          minimumFontScale={0.7}
+                        >
                           Some years ago I made the decision to take as a friend a woman who is very opinionated.
                         </Text>
                       </Text>
@@ -1726,6 +1793,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -1737,13 +1806,18 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   When she does come to social events, she dominates.
                 </Text>
               </Text>
@@ -1874,6 +1948,8 @@ exports[`6. an article with heading tags 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1884,7 +1960,10 @@ exports[`6. an article with heading tags 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 2
               </Text>
             </Text>
@@ -1928,6 +2007,8 @@ exports[`6. an article with heading tags 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               style={
                 Object {
                   "color": "#000000",
@@ -1938,7 +2019,10 @@ exports[`6. an article with heading tags 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 This is heading 3
               </Text>
             </Text>
@@ -2066,6 +2150,8 @@ exports[`7. an article with link 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2078,6 +2164,8 @@ exports[`7. an article with link 1`] = `
             >
               <Text
                 accessibilityRole="link"
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -2092,11 +2180,17 @@ exports[`7. an article with link 1`] = `
                   ]
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Jack Dorsey
                 </Text>
               </Text>
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                  said today that while the company was unlikely to open its offices before September, almost all staff could now work permanently from wherever they want.
               </Text>
             </Text>
@@ -2224,6 +2318,8 @@ exports[`8. an article with italic link 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2234,11 +2330,16 @@ exports[`8. an article with italic link 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 In his 2015 book on the tournaments, 
               </Text>
               <Text
                 accessibilityRole="link"
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -2254,18 +2355,26 @@ exports[`8. an article with italic link 1`] = `
                 }
               >
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Object {
                       "fontStyle": "italic",
                     }
                   }
                 >
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     Superforecasting
                   </Text>
                 </Text>
               </Text>
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 , Professor Tetlock said the most accurate predictors all used very similar methods. They used a historical “base rate” for predicting how likely an event was, adjusting constantly in the light of new information.
               </Text>
             </Text>
@@ -2393,6 +2502,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2404,17 +2515,24 @@ exports[`9. an article with bold text followed by bold link 1`] = `
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   2 
                 </Text>
                 <Text
                   accessibilityRole="link"
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Array [
                       Object {
@@ -2429,7 +2547,10 @@ exports[`9. an article with bold text followed by bold link 1`] = `
                     ]
                   }
                 >
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     Becoming by Michelle Obama
                   </Text>
                 </Text>
@@ -2559,6 +2680,8 @@ exports[`10. an article with italic and normal text link 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2569,11 +2692,16 @@ exports[`10. an article with italic and normal text link 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Family Action is one of two charities being supported by 
               </Text>
               <Text
                 accessibilityRole="link"
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -2589,21 +2717,32 @@ exports[`10. an article with italic and normal text link 1`] = `
                 }
               >
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Object {
                       "fontStyle": "italic",
                     }
                   }
                 >
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     The Times
                   </Text>
                 </Text>
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                    Coronavirus Charity Appeal
                 </Text>
               </Text>
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                  to support people in greatest hardship under the restrictions. The second charity is The Big Issue Foundation.
               </Text>
             </Text>
@@ -2731,6 +2870,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2742,6 +2883,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
@@ -2749,13 +2892,18 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
                 }
               >
                 <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                   style={
                     Object {
                       "fontStyle": "italic",
                     }
                   }
                 >
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     Conversations with Friends
                   </Text>
                 </Text>
@@ -2885,6 +3033,8 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -2895,7 +3045,10 @@ exports[`12. an article with text wrapped in inline element 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
               </Text>
             </Text>
@@ -3023,6 +3176,8 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -3033,10 +3188,16 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 20. 
               </Text>
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Participants’ names and general locations will be published if they are the winner of the Competition in accordance with regulatory requirements, both during this and future promotions by the Promoter or any associated or subsidiary company of News Corp UK & Ireland Limited.
               </Text>
             </Text>
@@ -3164,6 +3325,8 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -3175,13 +3338,18 @@ exports[`14. an article with inline inside a bold tag 1`] = `
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Meera Menon, 15, 100min
                 </Text>
               </Text>
@@ -3373,6 +3541,8 @@ exports[`15. an article starting with single quote 1`] = `
                 >
                   <View>
                     <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
                       selectable={true}
                       style={
                         Object {
@@ -3383,7 +3553,10 @@ exports[`15. an article starting with single quote 1`] = `
                         }
                       }
                     >
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
                       </Text>
                     </Text>
@@ -3578,6 +3751,8 @@ exports[`16. an article starting with double quote 1`] = `
                 >
                   <View>
                     <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
                       selectable={true}
                       style={
                         Object {
@@ -3588,7 +3763,10 @@ exports[`16. an article starting with double quote 1`] = `
                         }
                       }
                     >
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
                       </Text>
                     </Text>
@@ -3748,6 +3926,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -3758,31 +3938,47 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
               </Text>
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontStyle": "italic",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Telegraph 
                 </Text>
               </Text>
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
               </Text>
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   When Thatcher joined the campaign trail for the 2001 general election...
                 </Text>
               </Text>
@@ -3825,6 +4021,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -3836,13 +4034,18 @@ exports[`19. renders content 1`] = `
               }
             >
               <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Object {
                     "fontWeight": "bold",
                   }
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
                 </Text>
               </Text>
@@ -3984,6 +4187,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -3994,7 +4199,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
               </Text>
             </Text>
@@ -4036,6 +4244,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4046,7 +4256,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
               </Text>
             </Text>
@@ -4187,6 +4400,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4197,7 +4412,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. 
               </Text>
             </Text>
@@ -4316,6 +4534,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4326,7 +4546,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. 
               </Text>
             </Text>
@@ -4467,6 +4690,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4477,7 +4702,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. 
               </Text>
             </Text>
@@ -4618,6 +4846,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4628,7 +4858,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. 
               </Text>
             </Text>
@@ -4701,6 +4934,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4711,7 +4946,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Thatcher set out, first as party leader and then as prime minister, to overturn the consensus that had shaped postwar British politics and to replace it with a more competitive ethos of free enterprise. She wanted to rescue Britain from the debilitated state to which she believed it had been reduced by socialism and, in the words of her last bravura speech as Prime Minister to the House of Commons, to give back “control to people over their own lives and over their livelihood”. 
               </Text>
             </Text>
@@ -4753,6 +4991,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4763,7 +5003,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 It was time to depart, and she announced this to a meeting of the Cabinet on November 22. With typical courage she then went to the House of Commons to speak in a confidence debate. It was a rousing performance, a reminder of her gallantry, flair and conviction. She had not tired of her mission, but those whom she had led had tired of her. 
               </Text>
             </Text>
@@ -4805,6 +5048,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4815,7 +5060,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Thatcher resigned as Prime Minister on November 28, leaving Downing Street, a little tearfully, though with the partial satisfaction of knowing that she was not to be succeeded by Heseltine but by her own favourite, Major, who had defeated Heseltine and Hurd in the parliamentary ballot to follow her. 
               </Text>
             </Text>
@@ -4857,6 +5105,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4867,7 +5117,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. 
               </Text>
             </Text>
@@ -4909,6 +5162,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4919,7 +5174,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 She returned sporadically, and not always helpfully, to the political fray. Her support for Major waned as he set out on a more pragmatic European policy than her own. She allowed her own more nationalist opinions to seep out into the public domain, and became ever more forceful, outspoken and extreme in her denunciations of the moves towards political and monetary union in Europe. 
               </Text>
             </Text>
@@ -4961,6 +5219,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -4971,7 +5231,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 The division over Europe that had helped to end her years in office yawned ever wider within the Conservative Party, which had once regarded itself as the pro-Europe party.
               </Text>
             </Text>
@@ -5013,6 +5276,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5023,7 +5288,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998.
               </Text>
             </Text>
@@ -5065,6 +5333,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5075,7 +5345,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule.
               </Text>
             </Text>
@@ -5117,6 +5390,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5127,7 +5402,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill.
               </Text>
             </Text>
@@ -5169,6 +5447,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5179,7 +5459,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Thatcher received all the greatest honours that her country could bestow. She became a Fellow of the Royal Society in 1983, received the Order of Merit in 1990, was made a Baroness in 1992 and joined the Garter as a Lady of that Order in 1995.
               </Text>
             </Text>
@@ -5221,6 +5504,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5231,7 +5516,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 She remained a political star until deep into her retirement from full-time politics. Like the greatest divas she could be temperamental and difficult but she was always able to rise to the great occasions, not because of her ability as an orator but because of the passionate strength of her convictions.
               </Text>
             </Text>
@@ -5273,6 +5561,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5283,7 +5573,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her.
               </Text>
             </Text>
@@ -5325,6 +5618,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5335,7 +5630,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Her husband predeceased her. She is survived by their twin children, her daughter Carol and her son Mark, who has inherited his father’s baronetcy.
               </Text>
             </Text>
@@ -5377,6 +5675,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5387,7 +5687,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 The new Parliament was remarkable for the radicalism of the Government’s domestic programme. There were privatisations of steel (1988), water (1989) and electricity (1990-91), and the ailing Rover car firm was sold to British Aerospace. Of the core utilities only rail and coal remained in public ownership. The privatisation measures were largely responsible for extending share ownership from seven per cent to 21 per cent of adults.
               </Text>
             </Text>
@@ -5429,6 +5732,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5439,7 +5744,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Her fall from this political peak three years later had three principal causes. First, learning from the mistakes of the previous Parliament, the new Government embarked on a sweeping programme of reform; yet the flagship of this programme — the launching of the poll tax — was to prove the single most unpopular domestic policy initiative taken by any postwar government. Secondly, Thatcher’s own concerns about developments within the EU, and particularly about moves towards monetary union, put her increasingly at odds with many of her own ministers and MPs. Thirdly, her style of political management brought her into collision with two senior ministers, and after his resignation following illness in 1988 she no longer had her loyal and politically astute deputy Willie Whitelaw to rescue her from the consequences of high-handed rashness in personal dealings.
               </Text>
             </Text>
@@ -5481,6 +5789,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5491,7 +5801,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 On June 11 the Government was returned with a majority of 102 seats over all other parties. Thatcher was the first leader since Lord Liverpool in the 1820s to score three successive general election victories. She was granted a prospect given to no other 20th-century prime minister — a third full term and a clear parliamentary majority. She seemed to be more dominant than ever.
               </Text>
             </Text>
@@ -5533,6 +5846,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5543,7 +5858,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 With a comfortable lead in the polls, a Conservative victory never seemed in doubt, but the Conservative campaign was not a happy one. Labour fought with a new vigour and confidence, and the Conservative team was divided and mutually suspicious. Thatcher had become increasingly concerned that Tebbit, whom she had made party chairman, was trying to promote himself not her, and she inserted her trusted ally, Lord Young, into Conservative Central Office to keep an eye on its chairman. The result was predictable. Backbiting and indecision exploded into a full-scale row on “wobbly Thursday”, a week before polling day, when anxieties about the election’s outcome led to unnecessary expenditure on advertising.
               </Text>
             </Text>
@@ -5585,6 +5903,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5595,7 +5915,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 In the wake of this visit Thatcher faced the prospect of an imminent election with quiet confidence. She had made a major mark on the international scene and, despite a muddled record of domestic reform, she was seen to have presided over a steady economic recovery. Public spending had been increased in the autumn of 1986, taxes were cut in the spring Budget of 1987, and shortly afterwards the Conservatives did well in the local elections. Thatcher asked for a dissolution of Parliament in May.
               </Text>
             </Text>
@@ -5637,6 +5960,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5647,7 +5972,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 But it was as an influential and outspoken western alliance leader that she played her most prominent international role. She remained a loyal ally of President Reagan and the US, and earned Washington’s warm approval for her politically brave decision to allow US military bases in Britain to be used for bombing raids on Libya in 1986. Her loyalty to the alliance earned her the right to express forcefully to the US Administration European concerns about disarmament and the Strategic Defence Initiative before and after Reagan’s summit at Reykjavik with the Soviet leader, Mikhail Gorbachev. She journeyed herself to Moscow to meet Gorbachev in March 1987.
               </Text>
             </Text>
@@ -5689,6 +6017,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5699,7 +6029,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 The Anglo-Irish agreement of 1985 improved relations between the UK and the Republic of Ireland, increased nationalist acceptance of the institutions of Northern Ireland and enhanced understanding and co-operation over Irish policy — not least in relation to terrorists in the US and elsewhere. However, the agreement was criticised by Unionists who refused to accept that its references to the principle of consent served to confirm the constitutional status of the Province. Thatcher, who had been in many respects the most Unionist of Conservative prime ministers, never much cared for this agreement and was to disavow it in her retirement.
               </Text>
             </Text>
@@ -5741,6 +6074,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5751,7 +6086,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Five people were killed in the blast and 34 were injured. Among the dead were Sir Anthony Berry, an MP, and Roberta Wakeham, whose husband John was Tory chief whip. Margaret Tebbit, whose husband Norman was a former Trade and Industry Secretary, was left paralysed and confined to a wheelchair.
               </Text>
             </Text>
@@ -5793,6 +6131,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5803,7 +6143,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 “The bomb attack . . . was an attempt not only to disrupt and terminate our conference. It was an attempt to cripple Her Majesty’s democratically elected Government. That is the scale of the outrage in which we have all shared. And the fact that we are gathered here now, shocked but composed and determined, is a sign not only that this attack has failed, but that all attempts to destroy democracy by terrorism will fail.”
               </Text>
             </Text>
@@ -5845,6 +6188,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5855,7 +6200,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 “I knew that far more important than what I said was the fact that I, as Prime Minister, was still able to say it. I did not dwell long in the speech on what had happened. But I tried to sum up the feelings of all of us.
               </Text>
             </Text>
@@ -5897,6 +6245,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5907,7 +6257,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 In her autobiography, The Downing Street Years (1993), she recalled: “At 2.54am a loud thud shook the room. There were a few seconds’ silence and then there was a second slightly different noise, in fact created by falling masonry. I knew immediately that it was a bomb — perhaps two bombs, a large followed by a smaller device — but at this stage I did not know that the explosion had taken place inside the hotel. Glass from the windows of my sitting room was strewn across the carpet. But I thought that it might be a car bomb outside. (I only realised that the bomb had exploded above us when Penny, John Gummer’s wife, appeared a little later from upstairs, still in her night clothes.) The adjoining bathroom was more severely damaged, though the worst I would have suffered had I been in there were minor cuts. Those who had sought to kill me had placed the bomb in the wrong place.”
               </Text>
             </Text>
@@ -5949,6 +6302,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -5959,7 +6314,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 The same could be said of the Anglo-Irish agreement concluded at Hillsborough in the same year with Dr Garret Fitzgerald’s Fine Gael-Labour Party Government. On October 12, 1984, at the Conservative Party conference in Brighton, Thatcher had almost been killed by an IRA bomb at the Grand Hotel.
               </Text>
             </Text>
@@ -6001,6 +6359,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -6011,11 +6371,16 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 Inevitably the longer that Thatcher remained in office, the more she became a significant figure on the world stage. In Europe she continued to battle successfully for reductions in Britain’s net contributions to the Community. She presided over an improvement in relations with Spain, which led to an agreement over Gibraltar in 1985, and she brought to a successful conclusion discussions with the Chinese over the future of Hong Kong. The Sino-British Joint Declaration, which was ratified in May 1985, represented the pragmatic side of her foreign policy.
               </Text>
               <Text
                 accessibilityRole="link"
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
                 style={
                   Array [
                     Object {
@@ -6030,7 +6395,10 @@ exports[`19. renders content 1`] = `
                   ]
                 }
               >
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   Some Link
                 </Text>
               </Text>
@@ -6073,6 +6441,8 @@ exports[`19. renders content 1`] = `
         >
           <View>
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -6083,7 +6453,10 @@ exports[`19. renders content 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 On the economic front, in the meantime, Thatcher continued to pursue fiscally cautious policies with what seemed to be growing success. Nigel Lawson, whom she had appointed to the Treasury in 1983, was able to point to steady economic growth, low inflation and public borrowing and growing investment. As the Parliament drew towards its end, the Chancellor was able to offer the prospect of increased public spending in areas such as health and education, reductions in taxation and an easing of interest rates. Moreover, in industrial relations, ministers were able to note that disputes were at their lowest level for 50 years.
               </Text>
             </Text>
@@ -6274,6 +6647,8 @@ exports[`20. an article with inline paragraph 1`] = `
                 >
                   <View>
                     <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
                       selectable={true}
                       style={
                         Object {
@@ -6284,25 +6659,38 @@ exports[`20. an article with inline paragraph 1`] = `
                         }
                       }
                     >
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         f you want to look as good as Daniel Craig does, naked, at 52, then you’re going to have to change your breakfast. Begone, buttered toast stuffed into your mouth on the way out of the house. While filming 
                       </Text>
                       <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
                         style={
                           Object {
                             "fontStyle": "italic",
                           }
                         }
                       >
-                        <Text>
+                        <Text
+                          maxFontSizeMultiplier={2}
+                          minimumFontScale={0.7}
+                        >
                           No Time to Die
                         </Text>
                       </Text>
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         , the 
                       </Text>
                       <Text
                         accessibilityRole="link"
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
                         style={
                           Array [
                             Object {
@@ -6317,11 +6705,17 @@ exports[`20. an article with inline paragraph 1`] = `
                           ]
                         }
                       >
-                        <Text>
+                        <Text
+                          maxFontSizeMultiplier={2}
+                          minimumFontScale={0.7}
+                        >
                           latest James Bond film
                         </Text>
                       </Text>
-                      <Text>
+                      <Text
+                        maxFontSizeMultiplier={2}
+                        minimumFontScale={0.7}
+                      >
                         , Craig started the day with rye bread, poached eggs, avocado and kimchi, maybe some kale.
                       </Text>
                     </Text>

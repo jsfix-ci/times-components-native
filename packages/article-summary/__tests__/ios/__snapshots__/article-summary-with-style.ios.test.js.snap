@@ -20,6 +20,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#333333",
@@ -48,6 +50,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -59,7 +63,10 @@ exports[`1. article summary component with a single paragraph 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -126,6 +133,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 exports[`2. article summary content component with the given style 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Object {
       "color": "#696969",
@@ -137,7 +146,10 @@ exports[`2. article summary content component with the given style 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     
     Test
     ...
@@ -147,6 +159,8 @@ exports[`2. article summary content component with the given style 1`] = `
 
 exports[`3. article summary content component with white space height and lineheight 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={4}
   style={
     Object {
@@ -159,7 +173,10 @@ exports[`3. article summary content component with white space height and linehe
     }
   }
 >
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     
     Test
     ...
@@ -169,6 +186,8 @@ exports[`3. article summary content component with white space height and linehe
 
 exports[`4. article summary content component without white space height 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={2}
   style={
     Object {
@@ -181,7 +200,10 @@ exports[`4. article summary content component without white space height 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     
     Test
     ...

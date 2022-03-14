@@ -6,7 +6,10 @@ exports[`1. renders correctly 1`] = `
     data-testid="message-bar"
   >
     <View>
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         test message
       </Text>
       <View>

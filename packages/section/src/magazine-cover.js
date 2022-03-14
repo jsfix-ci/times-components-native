@@ -66,7 +66,11 @@ class MagazineCoverImage extends Component {
         >
           {this.renderImage(styles)}
           <View style={styles.labelWrapper}>
-            <Text style={styles.label}>
+            <Text
+              style={styles.label}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               Tap image to view full magazine cover
             </Text>
           </View>

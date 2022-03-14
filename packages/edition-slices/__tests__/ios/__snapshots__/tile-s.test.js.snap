@@ -18,6 +18,8 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -32,6 +34,8 @@ exports[`tile s huge 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -41,8 +45,13 @@ exports[`tile s huge 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -54,6 +63,8 @@ exports[`tile s huge 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -64,6 +75,8 @@ exports[`tile s huge 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -75,6 +88,8 @@ exports[`tile s huge 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -85,6 +100,8 @@ exports[`tile s huge 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -96,6 +113,8 @@ exports[`tile s huge 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -105,7 +124,10 @@ exports[`tile s huge 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>
@@ -130,6 +152,8 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -144,6 +168,8 @@ exports[`tile s medium 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -153,8 +179,13 @@ exports[`tile s medium 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -166,6 +197,8 @@ exports[`tile s medium 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -176,6 +209,8 @@ exports[`tile s medium 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -187,6 +222,8 @@ exports[`tile s medium 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -197,6 +234,8 @@ exports[`tile s medium 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -208,6 +247,8 @@ exports[`tile s medium 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -217,7 +258,10 @@ exports[`tile s medium 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>
@@ -240,6 +284,8 @@ exports[`tile s no byline 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -253,6 +299,8 @@ exports[`tile s no byline 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -262,8 +310,13 @@ exports[`tile s no byline 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -275,6 +328,8 @@ exports[`tile s no byline 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -285,6 +340,8 @@ exports[`tile s no byline 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -296,6 +353,8 @@ exports[`tile s no byline 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -306,6 +365,8 @@ exports[`tile s no byline 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -335,6 +396,8 @@ exports[`tile s small 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -348,6 +411,8 @@ exports[`tile s small 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -357,8 +422,13 @@ exports[`tile s small 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -370,6 +440,8 @@ exports[`tile s small 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -380,6 +452,8 @@ exports[`tile s small 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -391,6 +465,8 @@ exports[`tile s small 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -401,6 +477,8 @@ exports[`tile s small 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -412,6 +490,8 @@ exports[`tile s small 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -421,7 +501,10 @@ exports[`tile s small 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>
@@ -446,6 +529,8 @@ exports[`tile s smallTablet 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -460,6 +545,8 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -469,8 +556,13 @@ exports[`tile s smallTablet 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -482,6 +574,8 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -492,6 +586,8 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -503,6 +599,8 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -513,6 +611,8 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -524,6 +624,8 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -533,7 +635,10 @@ exports[`tile s smallTablet 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>
@@ -558,6 +663,8 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -572,6 +679,8 @@ exports[`tile s wide 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -581,8 +690,13 @@ exports[`tile s wide 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -594,6 +708,8 @@ exports[`tile s wide 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -604,6 +720,8 @@ exports[`tile s wide 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -615,6 +733,8 @@ exports[`tile s wide 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -625,6 +745,8 @@ exports[`tile s wide 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -636,6 +758,8 @@ exports[`tile s wide 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -645,7 +769,10 @@ exports[`tile s wide 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>
@@ -671,6 +798,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
   >
     LOGO
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -685,6 +814,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -694,8 +825,13 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -707,6 +843,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -717,6 +855,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "color": "#1D1D1B",
@@ -728,6 +868,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -738,6 +880,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       (1978), 
       <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
         style={
           Object {
             "fontStyle": "italic",
@@ -749,6 +893,8 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -758,7 +904,10 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Libby Purves
     </Text>
   </Text>

@@ -40,6 +40,8 @@ exports[`NewsletterPuffButton renders the button with the text \`Saving...\` 1`]
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Array [
         Object {
@@ -103,6 +105,8 @@ exports[`NewsletterPuffButton renders the button with the text \`Sign up to news
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Array [
         Object {

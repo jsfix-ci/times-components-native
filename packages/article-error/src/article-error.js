@@ -19,8 +19,20 @@ const ArticleError = ({ buttonText, refetch, title, message }) => (
           style={[styles.errorImageContainer, { height: 270, width: 240 }]}
         />
 
-        <Text style={styles.errorHeading}>{title}</Text>
-        <Text style={styles.errorMessage}>{message}</Text>
+        <Text
+          style={styles.errorHeading}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {title}
+        </Text>
+        <Text
+          style={styles.errorMessage}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {message}
+        </Text>
       </View>
 
       {refetch && (

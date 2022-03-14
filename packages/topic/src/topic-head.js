@@ -10,7 +10,12 @@ const TopicHead = ({ name, description, isLoading }) => {
     (description || []).length > 0 ? (
       <Fragment>
         <View style={styles.divider} />
-        <Text style={styles.description} testID="topic-description">
+        <Text
+          style={styles.description}
+          testID="topic-description"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           {renderTrees(description, coreRenderers)}
         </Text>
       </Fragment>
@@ -25,6 +30,8 @@ const TopicHead = ({ name, description, isLoading }) => {
           accessibilityRole="header"
           style={styles.name}
           testID="topic-name"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           {name}
         </Text>

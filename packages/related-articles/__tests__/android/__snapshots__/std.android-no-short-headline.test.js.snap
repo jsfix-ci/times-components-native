@@ -6,6 +6,8 @@ exports[`1. no short headline 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       Related articles
     </Text>
@@ -46,12 +48,20 @@ exports[`1. no short headline 1`] = `
                 <Text
                   accessibilityRole="header"
                   aria-level="3"
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
                 >
                   Test Headline
                 </Text>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
+                    <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
                       
                       Summary 125
                       ...
@@ -59,16 +69,28 @@ exports[`1. no short headline 1`] = `
                   </Text>
                 </View>
                 <View>
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     March 13 2015, 6.54pm
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
+                    <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
                       Camilla Long
                     </Text>
-                    <Text>
+                    <Text
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
                       , Environment Editor
                     </Text>
                   </Text>

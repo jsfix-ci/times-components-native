@@ -15,6 +15,8 @@ const KeyFactsTitle = ({ color, fontStyle, title }) => {
         { color },
         fontStyle,
       ]}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       {title.toUpperCase()}
     </Text>

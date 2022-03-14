@@ -9,10 +9,18 @@ type Props = {
 
 const DisabledComments: FC<Props> = ({ onCommentGuidelinesPress }) => (
   <View style={styles.container}>
-    <Text style={styles.headline}>
+    <Text
+      style={styles.headline}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Comments for this article have been turned off
     </Text>
-    <Text style={styles.supporting}>
+    <Text
+      style={styles.supporting}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       For more details, please see our {"\n"}
       <TextLink
         onPress={onCommentGuidelinesPress}

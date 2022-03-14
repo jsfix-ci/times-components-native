@@ -4,6 +4,8 @@ exports[`1. article summary headline component 1`] = `
 <Text
   accessibilityRole="header"
   aria-level="3"
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
 >
   PM hails breakthrough ahead of key Commons vote
 </Text>
@@ -13,6 +15,8 @@ exports[`2. article summary strapline component 1`] = `
 <Text
   accessibilityRole="header"
   aria-level="4"
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
 >
   PM hails breakthrough ahead of key Commons vote
 </Text>

@@ -34,6 +34,8 @@ const CancelButton: FC<CancelButtonProps> = ({
               : colours.functional.offlineSearchText,
           },
         ]}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         Cancel
       </Text>

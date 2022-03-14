@@ -35,6 +35,8 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#006699",
@@ -44,6 +46,8 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
       Manage preferences here
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "margin": "auto",

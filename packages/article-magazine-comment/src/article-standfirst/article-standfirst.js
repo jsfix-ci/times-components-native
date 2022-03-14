@@ -12,6 +12,8 @@ const HeaderStandfirst = ({ standfirst }) => {
       aria-level="2"
       style={styles.standFirst}
       testID="standfirst"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       {standfirst}
     </Text>

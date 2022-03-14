@@ -8,7 +8,12 @@ const styles = stylefactory(editionBreakpoints.small);
 export default {
   bold(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.bold}>
+      <Text
+        key={key}
+        style={styles.bold}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {renderedChildren}
       </Text>
     );

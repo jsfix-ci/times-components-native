@@ -28,6 +28,8 @@ const ArticleSummaryContent = ({
       className={className}
       style={[styles.text, style]}
       {...numberOfLinesProp}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       {renderAst(ast)}
     </Text>

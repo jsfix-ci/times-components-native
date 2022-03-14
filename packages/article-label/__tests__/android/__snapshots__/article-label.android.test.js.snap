@@ -2,6 +2,8 @@
 
 exports[`Article Label test on android renders ArticleLabel 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Object {
       "color": "#008347",
@@ -23,6 +25,8 @@ exports[`Article Label test on android renders ArticleLabel 1`] = `
 
 exports[`Article Label test on android renders ArticleLabel with GraphQL Colour type 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Object {
       "color": "#008347",

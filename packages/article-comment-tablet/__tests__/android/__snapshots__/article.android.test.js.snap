@@ -72,7 +72,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <View>
         <View>
           <View>
-            <Text>
+            <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               Some Short Headline
             </Text>
             <ArticleFlags
@@ -82,10 +85,16 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             <View>
               <View>
                 <View>
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     Friday March 13 2015, 6.54pm
                   </Text>
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     , The Times
                   </Text>
                 </View>
@@ -167,7 +176,10 @@ exports[`4. an article with ads 1`] = `
       <View>
         <View>
           <View>
-            <Text>
+            <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               Some Headline
             </Text>
             <ArticleFlags
@@ -177,10 +189,16 @@ exports[`4. an article with ads 1`] = `
             <View>
               <View>
                 <View>
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     Friday March 13 2015, 6.54pm
                   </Text>
-                  <Text>
+                  <Text
+                    maxFontSizeMultiplier={2}
+                    minimumFontScale={0.7}
+                  >
                     , The Times
                   </Text>
                 </View>

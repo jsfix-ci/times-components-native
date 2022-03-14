@@ -52,6 +52,8 @@ const ArticleTopic = ({
                 accessibilityRole="button"
                 accessibilityTraits="button"
                 style={[styles.text, fontSizeStyle, lineHeightStyle]}
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
               >
                 {name}
               </Text>

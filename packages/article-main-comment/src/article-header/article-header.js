@@ -58,7 +58,13 @@ const ArticleHeader = ({
           isSmallImage
         />
         <Label isVideo={hasVideo} label={label} />
-        <Text style={styles.articleHeadline}>{headline}</Text>
+        <Text
+          style={styles.articleHeadline}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {headline}
+        </Text>
         <ArticleFlags
           flags={flags}
           longRead={getLongReadFlag()}

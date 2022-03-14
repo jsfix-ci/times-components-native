@@ -7,7 +7,11 @@ import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import styles from "./styles";
 
 const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle = {} }) => (
-  <Text style={[styles.text, fontStyle]}>
+  <Text
+    style={[styles.text, fontStyle]}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     {item.children.map((data, listItemIndex) =>
       renderTree(
         data,

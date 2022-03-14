@@ -10,6 +10,8 @@ exports[`EmptySearchMessage should render correctly 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -21,6 +23,8 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Popular thing to search for:
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -31,6 +35,8 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Articles
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -41,6 +47,8 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Topics
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",

@@ -25,7 +25,13 @@ const SearchListItemSnippet: FC<SearchListItemSnippetProps> = ({
       {parsedHit.map((result, index) => (
         <Text style={styles.text} key={index}>
           {result.isHighlighted ? (
-            <Text style={styles.hightlighted}>{result.value}</Text>
+            <Text
+              style={styles.hightlighted}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
+              {result.value}
+            </Text>
           ) : (
             result.value.replace(removeHtmlTags, "")
           )}

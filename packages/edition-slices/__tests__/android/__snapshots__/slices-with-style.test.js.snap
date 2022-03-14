@@ -296,7 +296,9 @@ exports[`2. leaders 1`] = `
           }
         }
       >
-         Leading Articles 
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>
@@ -377,7 +379,9 @@ exports[`2. leaders 2`] = `
           }
         }
       >
-         Leading Articles 
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>
@@ -1009,7 +1013,9 @@ exports[`14. leaders 1`] = `
           }
         }
       >
-         Leading Articles 
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>

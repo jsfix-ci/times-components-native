@@ -61,7 +61,7 @@ const ArticleBylineWithLinks = ({ ast, ...props }) => {
     <Tooltip
       articleId={articleId}
       content={
-        <Text>
+        <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
           To view all articles from this journalist, just tap their name
         </Text>
       }

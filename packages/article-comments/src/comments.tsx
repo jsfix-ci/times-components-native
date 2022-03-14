@@ -36,10 +36,16 @@ const Comments: FC<CommentsProps> = ({
   const { isTablet } = useResponsiveContext();
   return (
     <View style={styles.container} testID="comments">
-      <Text style={styles.headline}>{`${commentCount} ${
-        commentCount === 1 ? "comment" : "comments"
-      }`}</Text>
-      <Text style={styles.supporting}>
+      <Text
+        style={styles.headline}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >{`${commentCount} ${commentCount === 1 ? "comment" : "comments"}`}</Text>
+      <Text
+        style={styles.supporting}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Comments are subject to our community guidelines, which can be
         viewed&nbsp;
         <TextLink
@@ -56,7 +62,9 @@ const Comments: FC<CommentsProps> = ({
         arrowOffset={isTablet ? 43 : 90}
         flexDirectionColumnReverse={!isTablet}
         content={
-          <Text>Tap to read comments and join in with the conversation</Text>
+          <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+            Tap to read comments and join in with the conversation
+          </Text>
         }
         offsetX={isTablet ? 12 : 3}
         offsetY={isTablet ? 0 : 15}

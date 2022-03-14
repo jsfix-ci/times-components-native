@@ -31,7 +31,10 @@ exports[`2. daily universal register - smalltablet 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -246,8 +249,13 @@ exports[`9. leaders slice - smalltablet 1`] = `
         }
       />
       <View>
-        <Text>
-           Leading Articles 
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+           
+          Leading Articles
+           
         </Text>
       </View>
     </View>
@@ -1255,7 +1263,10 @@ exports[`39. daily universal register - medium 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -1470,8 +1481,13 @@ exports[`46. leaders slice - medium 1`] = `
         }
       />
       <View>
-        <Text>
-           Leading Articles 
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+           
+          Leading Articles
+           
         </Text>
       </View>
     </View>
@@ -2479,7 +2495,10 @@ exports[`76. daily universal register - wide 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -2693,8 +2712,13 @@ exports[`83. leaders slice - wide 1`] = `
         }
       />
       <View>
-        <Text>
-           Leading Articles 
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+           
+          Leading Articles
+           
         </Text>
       </View>
     </View>
@@ -3719,7 +3743,10 @@ exports[`113. daily universal register - huge 1`] = `
           }
         }
       />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Daily Universal Register
       </Text>
       <View>
@@ -3947,8 +3974,13 @@ exports[`120. leaders slice - huge 1`] = `
           }
         />
         <View>
-          <Text>
-             Leading Articles 
+          <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
+             
+            Leading Articles
+             
           </Text>
         </View>
       </View>

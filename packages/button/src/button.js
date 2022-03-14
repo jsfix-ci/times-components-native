@@ -32,6 +32,8 @@ const Button = ({
       <Text
         style={[styles.text, fontSizeStyle, lineHeightStyle, textStyle]}
         title={transformedTitle}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         {transformedTitle}
       </Text>

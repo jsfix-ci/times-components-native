@@ -70,7 +70,11 @@ const InlineNewsletterPuff = ({
                 </View>
                 {justSubscribed ? (
                   <View style={styles.subscribedContainer}>
-                    <Text style={styles.subscribedHeadline}>
+                    <Text
+                      style={styles.subscribedHeadline}
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
                       {`You’ve successfully signed up to ${newsletter.title}`}
                     </Text>
                     <View style={styles.preferencesContainer}>
@@ -84,10 +88,32 @@ const InlineNewsletterPuff = ({
                   </View>
                 ) : (
                   <View style={styles.signUpContainer}>
-                    <Text style={styles.signUpLabel}>{label}</Text>
-                    <Text style={styles.signUpHeadline}>{headline}</Text>
-                    <Text style={styles.copy}>{copy}</Text>
-                    <View style={styles.signUpCTAContainer}>
+                    <Text
+                      style={styles.signUpLabel}
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
+                      {label}
+                    </Text>
+                    <Text
+                      style={styles.signUpHeadline}
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
+                      {headline}
+                    </Text>
+                    <Text
+                      style={styles.copy}
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
+                      {copy}
+                    </Text>
+                    <View
+                      style={styles.signUpCTAContainer}
+                      maxFontSizeMultiplier={2}
+                      minimumFontScale={0.7}
+                    >
                       <NewsletterPuffButton
                         enforceTracking
                         newsletterPuffName={newsletter.title}

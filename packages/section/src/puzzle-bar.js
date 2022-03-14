@@ -13,7 +13,12 @@ const PuzzleBar = ({ onPress }) => (
     {({ recentlyOpenedPuzzleCount: count }) =>
       count ? (
         <View style={styles.puzzleBarContainer}>
-          <Text onPress={onPress} style={styles.puzzleBarText}>
+          <Text
+            onPress={onPress}
+            style={styles.puzzleBarText}
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
             {count} recently opened puzzle
             {count > 1 && "s"}
           </Text>

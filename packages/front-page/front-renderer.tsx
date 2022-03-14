@@ -32,6 +32,8 @@ export const getRenderers: GetRenderers = ({
         // @ts-ignore onTextLayout does exist on Text component
         onTextLayout={onParagraphTextLayout}
         textBreakStrategy={textBreakStrategy}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         {attributes?.tab && PARAGRAPH_INDENT_CHAR}
         {renderedChildren}
@@ -41,7 +43,12 @@ export const getRenderers: GetRenderers = ({
   },
   invisible(key, attributes) {
     return (
-      <Text key={key} style={styles.invisible}>
+      <Text
+        key={key}
+        style={styles.invisible}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         {attributes.value}
       </Text>
     );

@@ -88,7 +88,13 @@ const Tooltip: React.FC<TooltipProps> = ({
           >
             <View style={styles.container}>
               {Platform.OS === "ios" && closeButton}
-              <Text style={styles.text}>{content}</Text>
+              <Text
+                style={styles.text}
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
+                {content}
+              </Text>
               <View style={styles.arrow} />
             </View>
           </Animated.View>

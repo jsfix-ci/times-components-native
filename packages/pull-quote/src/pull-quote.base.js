@@ -32,13 +32,27 @@ const PullQuotes = ({
     >
       <Text
         style={[quoteStyleFactory(pullQuoteFont), { color: sectionColour }]}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         &ldquo;
       </Text>
       <PullQuoteContent>{children}</PullQuoteContent>
       <View style={styles.captionContainer}>
-        <Text style={[styles.caption]}>{caption}</Text>
-        <Text style={styles.text}>{caption && text ? `, ${text}` : text}</Text>
+        <Text
+          style={[styles.caption]}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {caption}
+        </Text>
+        <Text
+          style={styles.text}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {caption && text ? `, ${text}` : text}
+        </Text>
         <PullQuoteTwitterLink
           onTwitterLinkPress={onTwitterLinkPress}
           twitter={twitter}

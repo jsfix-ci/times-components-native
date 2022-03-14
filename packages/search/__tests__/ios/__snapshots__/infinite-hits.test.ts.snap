@@ -30,6 +30,8 @@ exports[`SearchResults should render correctly 1`] = `
     }
   />
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "alignSelf": "center",
@@ -46,6 +48,8 @@ exports[`SearchResults should render correctly 1`] = `
     You appear to be offline
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "alignSelf": "center",

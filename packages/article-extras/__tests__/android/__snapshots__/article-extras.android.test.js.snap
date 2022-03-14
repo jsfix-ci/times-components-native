@@ -41,10 +41,16 @@ exports[`2. article extras content on tablet 1`] = `
 
 exports[`3. article extras error 1`] = `
 <View>
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     It looks like you're offline
   </Text>
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     Some features, such as related articles and comments, may not be available
   </Text>
   <View
@@ -53,6 +59,8 @@ exports[`3. article extras error 1`] = `
     focusable={true}
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       title="Retry"
     >
       Retry

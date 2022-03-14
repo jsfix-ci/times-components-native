@@ -55,6 +55,8 @@ const ArticleHeader = ({
               },
               headlineCase ? { textTransform: headlineCase } : null,
             ]}
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
           >
             {headline}
           </Text>

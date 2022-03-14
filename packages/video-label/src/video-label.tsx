@@ -18,7 +18,12 @@ const VideoLabel: FC<VideoLabel> = ({
     <View style={styles.iconContainer}>
       <IconVideo fillColour={color} height={9} />
     </View>
-    <Text testID={childTestID} style={[styles.title, { color }]}>
+    <Text
+      testID={childTestID}
+      style={[styles.title, { color }]}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       {title ? title.toUpperCase() : "VIDEO"}
     </Text>
   </View>

@@ -6,7 +6,13 @@ import { defaultProps, propTypes } from "./article-byline-prop-types";
 import styles from "./styles";
 
 const AuthorComponent = ({ children, bylineStyle }) => (
-  <Text style={[styles.nonLinkText, bylineStyle]}>{children}</Text>
+  <Text
+    style={[styles.nonLinkText, bylineStyle]}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    {children}
+  </Text>
 );
 
 const ArticleByline = ({ ast, ...props }) =>

@@ -3,10 +3,16 @@
 exports[`1. an error view 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Something's gone wrong
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
   </View>
@@ -22,10 +28,16 @@ exports[`2. an error view with header 1`] = `
     Header
   </Text>
   <View>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Something's gone wrong
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
   </View>
@@ -38,7 +50,10 @@ exports[`2. an error view with header 1`] = `
 exports[`3. an empty list 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Empty state
     </Text>
     <View>

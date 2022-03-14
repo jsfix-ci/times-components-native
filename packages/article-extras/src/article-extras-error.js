@@ -8,10 +8,18 @@ import styles from "./styles";
 
 const ArticleExtrasError = ({ refetch }) => (
   <View style={styles.extrasErrorContainer}>
-    <Text style={styles.extrasErrorHeadline}>
+    <Text
+      style={styles.extrasErrorHeadline}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       It looks like you&apos;re offline
     </Text>
-    <Text style={styles.extrasErrorBody}>
+    <Text
+      style={styles.extrasErrorBody}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Some features, such as related articles and comments, may not be available
     </Text>
     <Context.Consumer>
