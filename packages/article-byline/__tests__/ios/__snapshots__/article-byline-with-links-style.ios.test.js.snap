@@ -3,6 +3,8 @@
 exports[`1. with a single author 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -16,6 +18,8 @@ exports[`1. with a single author 1`] = `
   >
     <Text
       accessibilityRole="link"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#006699",
@@ -35,6 +39,8 @@ exports[`1. with a single author 1`] = `
 exports[`2. with a very long byline 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -48,6 +54,8 @@ exports[`2. with a very long byline 1`] = `
   >
     <Text
       accessibilityRole="link"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#006699",
@@ -61,6 +69,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#696969",
@@ -75,6 +85,8 @@ exports[`2. with a very long byline 1`] = `
     </Text>
     <Text
       accessibilityRole="link"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#006699",
@@ -88,6 +100,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#696969",
@@ -102,6 +116,8 @@ exports[`2. with a very long byline 1`] = `
     </Text>
     <Text
       accessibilityRole="link"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#006699",
@@ -115,6 +131,8 @@ exports[`2. with a very long byline 1`] = `
       Camilla Long
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#696969",

@@ -39,6 +39,8 @@ exports[`tile r huge 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -107,6 +109,8 @@ exports[`tile r medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -175,6 +179,8 @@ exports[`tile r smallTablet 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -243,6 +249,8 @@ exports[`tile r wide 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -311,6 +319,8 @@ exports[`tile r without breakpoint should be like medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",

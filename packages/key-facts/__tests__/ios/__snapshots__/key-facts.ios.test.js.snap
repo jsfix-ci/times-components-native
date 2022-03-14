@@ -2,22 +2,33 @@
 
 exports[`1. key facts with title 1`] = `
 <View>
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     EXAMPLE TITLE
   </Text>
   <View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Example bullet text
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         An example 
         <Text
           accessibilityRole="link"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           link
         </Text>
@@ -25,18 +36,30 @@ exports[`1. key facts with title 1`] = `
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         More example text.
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Example text 
-        <Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           this is bold 
         </Text>
-        <Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           this is in italics.
         </Text>
       </Text>
@@ -50,16 +73,24 @@ exports[`2. key facts without title 1`] = `
   <View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Example bullet text
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         An example 
         <Text
           accessibilityRole="link"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           link
         </Text>
@@ -67,18 +98,30 @@ exports[`2. key facts without title 1`] = `
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         More example text.
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Example text 
-        <Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           this is bold 
         </Text>
-        <Text>
+        <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           this is in italics.
         </Text>
       </Text>

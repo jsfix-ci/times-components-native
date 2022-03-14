@@ -13,7 +13,11 @@ const SectionPage = ({ editionId, sectionTitle }) => {
           return <ActivityIndicator size="large" />;
         }
         if (error) {
-          return <Text>{JSON.stringify(error)}</Text>;
+          return (
+            <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+              {JSON.stringify(error)}
+            </Text>
+          );
         }
         const { publicationName: pubName } = edition;
         return edition.sections

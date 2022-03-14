@@ -16,7 +16,12 @@ const styles = StyleSheet.create({
 });
 
 const ResultsMessage = ({ children: message }) => (
-  <Text style={styles.message} testID="results-message">
+  <Text
+    style={styles.message}
+    testID="results-message"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     {message}
   </Text>
 );

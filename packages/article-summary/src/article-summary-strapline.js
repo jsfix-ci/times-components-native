@@ -10,6 +10,8 @@ const ArticleSummaryStrapline = ({ strapline, style }) => (
     accessibilityRole="header"
     aria-level="4"
     style={[styles.strapline, style]}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     {strapline}
   </Text>

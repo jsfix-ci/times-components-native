@@ -14,7 +14,14 @@ const renderHead = (styles, breakpoint) => (
       <View style={styles.mastheadContainer}>
         <MastHead breakpoint={breakpoint} publicationName={publicationName} />
         <View style={styles.headingContainer}>
-          <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
+          <Text
+            style={[styles.heading, styles.text]}
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
+            {" "}
+            Leading Articles{" "}
+          </Text>
         </View>
       </View>
     )}

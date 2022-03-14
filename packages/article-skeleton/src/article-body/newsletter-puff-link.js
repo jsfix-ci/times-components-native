@@ -18,8 +18,18 @@ const NewsletterPuffLink = ({ onPress }) => {
   return (
     <Link url="https://home.thetimes.co.uk/myNews" onPress={onPress}>
       <View style={styles.preferencesView}>
-        <Text style={styles.preferencesText}>Manage preferences here</Text>
-        <View style={styles.iconContainer}>
+        <Text
+          style={styles.preferencesText}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          Manage preferences here
+        </Text>
+        <View
+          style={styles.iconContainer}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
           <IconForwardArrow
             fillColour={colours.functional.action}
             height={12}

@@ -10,7 +10,10 @@ exports[`1. daily universal register 1`] = `
       }
     }
   />
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     Daily Universal Register
   </Text>
   <TileS
@@ -151,8 +154,13 @@ exports[`2. leaders 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>
@@ -187,8 +195,13 @@ exports[`2. leaders 2`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>
@@ -2854,8 +2867,13 @@ exports[`14. leaders 1`] = `
       }
     />
     <View>
-      <Text>
-         Leading Articles 
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+         
+        Leading Articles
+         
       </Text>
     </View>
   </View>

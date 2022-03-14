@@ -32,7 +32,13 @@ export default class Boxes extends Component {
         keyExtractor={({ id }) => id}
         onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => (
-          <Text id={`box-${item.id}`}>Item {item.id}</Text>
+          <Text
+            id={`box-${item.id}`}
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
+            Item {item.id}
+          </Text>
         )}
         viewabilityConfig={viewabilityConfig}
       />

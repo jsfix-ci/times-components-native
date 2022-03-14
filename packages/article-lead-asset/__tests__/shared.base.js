@@ -36,8 +36,12 @@ export const props = {
   // eslint-disable-next-line react/prop-types
   renderCaption: ({ caption }) => (
     <Fragment>
-      <Text>{caption.text}</Text>
-      <Text>{caption.credits}</Text>
+      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+        {caption.text}
+      </Text>
+      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+        {caption.credits}
+      </Text>
     </Fragment>
   ),
   width: 600,

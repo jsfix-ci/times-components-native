@@ -24,7 +24,11 @@ export default class ErrorBoundary extends Component {
       const { attributes } = children || {};
       // Best effort attempt to show any text content
       if (attributes && attributes.value) {
-        return <Text>{attributes.value}</Text>;
+        return (
+          <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+            {attributes.value}
+          </Text>
+        );
       }
     }
 

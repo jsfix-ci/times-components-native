@@ -18,11 +18,18 @@ const TextLink = ({ children, onPress, style, target, url, ...props }) => {
   };
 
   return target ? (
-    <Text {...textProps} target={target}>
+    <Text
+      {...textProps}
+      target={target}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       {children}
     </Text>
   ) : (
-    <Text {...textProps}>{children}</Text>
+    <Text {...textProps} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+      {children}
+    </Text>
   );
 };
 

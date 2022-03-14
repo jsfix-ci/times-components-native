@@ -18,7 +18,9 @@ const renderParagraphWithScale = ({ select }, ast) => {
         paragraph(key, attributes, children, indx, node) {
           return (
             <ArticleParagraph ast={node} key={indx} uid={indx}>
-              <Text>{children}</Text>
+              <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+                {children}
+              </Text>
             </ArticleParagraph>
           );
         },

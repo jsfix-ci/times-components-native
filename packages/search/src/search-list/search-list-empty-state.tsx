@@ -35,8 +35,20 @@ function SearchListEmptyState({
           alignSelf: "center",
         }}
       />
-      <Text style={styles.listEmptyTitle}>{title}</Text>
-      <Text style={styles.listEmptyMessage}>{message}</Text>
+      <Text
+        style={styles.listEmptyTitle}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        {title}
+      </Text>
+      <Text
+        style={styles.listEmptyMessage}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
+        {message}
+      </Text>
       {children}
     </KeyboardAvoidingView>
   );

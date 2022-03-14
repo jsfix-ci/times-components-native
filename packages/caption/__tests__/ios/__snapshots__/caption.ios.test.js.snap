@@ -4,6 +4,8 @@ exports[`1. caption without credits 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
@@ -16,11 +18,15 @@ exports[`2. caption with credits 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS
@@ -33,6 +39,8 @@ exports[`3. caption with credits only 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS
@@ -48,11 +56,15 @@ exports[`4. caption with child 1`] = `
   </Text>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS
@@ -65,6 +77,8 @@ exports[`5. centred caption without credits 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
@@ -77,11 +91,15 @@ exports[`6. centred caption caption with credits 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS
@@ -94,6 +112,8 @@ exports[`7. centred caption caption with credits only 1`] = `
 <View>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS
@@ -109,11 +129,15 @@ exports[`8. centred caption caption with child 1`] = `
   </Text>
   <View>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       Some caption text goes in here
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       testID={null}
     >
       JUST CREDITS

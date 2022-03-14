@@ -12,6 +12,8 @@ const ArticleSummaryHeadline = ({ className, headline, style }) => (
     aria-level="3"
     className={className}
     style={[styles.headline, styles.headlineWrapper, style]}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     {headline}
   </Text>

@@ -44,7 +44,13 @@ const InTodaysEdition: React.FC<Props> = ({
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Text style={styles.heading}>{headingText}</Text>
+        <Text
+          style={styles.heading}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {headingText}
+        </Text>
       </View>
       <View style={styles.itemsContainer}>
         {items.map((item, index) => (

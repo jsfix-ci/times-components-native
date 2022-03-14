@@ -6,7 +6,13 @@ import propTypes from "./article-list-empty-state-prop-types";
 
 const ArticleListEmptyState = ({ message }) => (
   <View style={styles.listEmptyStateContainer}>
-    <Text style={styles.listEmptyMessage}>{message}</Text>
+    <Text
+      style={styles.listEmptyMessage}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
+      {message}
+    </Text>
     <View style={styles.listEmptyWatermarkContainer}>
       <Watermark
         height={watermarkStyles.height}

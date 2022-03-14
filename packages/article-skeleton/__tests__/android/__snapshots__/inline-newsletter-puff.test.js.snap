@@ -26,6 +26,8 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -41,6 +43,8 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -54,6 +58,8 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       Politics. Explained.
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -67,6 +73,8 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -108,6 +116,8 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
         }
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           style={
             Array [
               Object {
@@ -160,6 +170,8 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -175,6 +187,8 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -188,6 +202,8 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -201,6 +217,8 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -242,6 +260,8 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
         }
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           style={
             Array [
               Object {
@@ -323,6 +343,8 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -338,6 +360,8 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -351,6 +375,8 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -364,6 +390,8 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "marginLeft": "auto",
@@ -411,6 +439,8 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
         }
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           style={
             Array [
               Object {
@@ -463,6 +493,8 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -478,6 +510,8 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -491,6 +525,8 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -504,6 +540,8 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -545,6 +583,8 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
         }
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           style={
             Array [
               Object {
@@ -605,6 +645,8 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -620,6 +662,8 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -633,6 +677,8 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",
@@ -646,6 +692,8 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "marginLeft": "auto",
@@ -693,6 +741,8 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
         }
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           style={
             Array [
               Object {
@@ -754,6 +804,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -809,6 +861,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
           }
         >
           <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "color": "#006699",
@@ -818,6 +872,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
             Manage preferences here
           </Text>
           <View
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "margin": "auto",
@@ -902,6 +958,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -957,6 +1015,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
           }
         >
           <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "color": "#006699",
@@ -966,6 +1026,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
             Manage preferences here
           </Text>
           <View
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "margin": "auto",
@@ -1058,6 +1120,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  wid
     }
   >
     <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -1113,6 +1177,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  wid
           }
         >
           <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "color": "#006699",
@@ -1122,6 +1188,8 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  wid
             Manage preferences here
           </Text>
           <View
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
             style={
               Object {
                 "margin": "auto",

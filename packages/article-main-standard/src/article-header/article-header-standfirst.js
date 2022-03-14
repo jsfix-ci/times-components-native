@@ -12,6 +12,8 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
       aria-level="2"
       style={[styles.standFirst, !hasFlags && styles.standFirstWithoutFlags]}
       testID="sub-headline"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       {standfirst}
     </Text>

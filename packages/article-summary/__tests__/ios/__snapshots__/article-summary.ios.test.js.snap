@@ -14,6 +14,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -31,8 +33,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -92,15 +100,26 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph 1.
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
       Test paragraph 2
       ...
@@ -146,40 +165,70 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
 
 exports[`3. article summary component with content including line breaks 1`] = `
 <View>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Review 1
       </Text>
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         
 
       </Text>
        ITV
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         
 
       </Text>
       ★★★★☆
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Review 2
       </Text>
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         
 
       </Text>
        BBC Two
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         
 
       </Text>
       ★★★☆☆
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
       Test paragraph
       ...
@@ -202,11 +251,19 @@ exports[`4. article summary component containing links 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       <Text>
         Sajid Javid
@@ -240,6 +297,8 @@ exports[`5. article summary component with headline and no content 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -264,19 +323,33 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph 1.
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
       Test paragraph 2
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
       ...
     </Text>
@@ -324,11 +397,19 @@ exports[`7. article summary component with no byline 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -346,11 +427,19 @@ exports[`8. article summary component with no label 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -405,8 +494,14 @@ exports[`9. article summary component with no headline 1`] = `
       />
     </View>
   </View>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -433,11 +528,19 @@ exports[`10. article summary component with no date publication 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -491,11 +594,19 @@ exports[`11. article summary component with a video label 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -553,12 +664,16 @@ exports[`12. article summary component with a strapline 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
     accessibilityRole="header"
     aria-level="4"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Strapline
   </Text>
@@ -576,8 +691,14 @@ exports[`12. article summary component with a strapline 1`] = `
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -644,8 +765,14 @@ exports[`13. article summary content component without an ast to render null 1`]
 
 exports[`15. article summary component with no headline and no label title 1`] = `
 <View>
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -660,9 +787,14 @@ exports[`15. article summary component with no headline and no label title 1`] =
 
 exports[`16. article summary content component with white space height 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={5}
 >
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     
     Test paragraph
     ...
@@ -672,9 +804,14 @@ exports[`16. article summary content component with white space height 1`] = `
 
 exports[`17. article summary content component without white space height 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={2}
 >
-  <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     
     Test paragraph
     ...
@@ -696,6 +833,8 @@ exports[`18. article summary component with a single paragraph and flag on table
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -713,8 +852,14 @@ exports[`18. article summary component with a single paragraph and flag on table
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -783,12 +928,16 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
     accessibilityRole="header"
     aria-level="4"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Strapline
   </Text>
@@ -806,8 +955,14 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -875,6 +1030,8 @@ exports[`20. article summary component with hidden label 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -892,8 +1049,14 @@ exports[`20. article summary component with hidden label 1`] = `
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       Test paragraph
       ...
@@ -962,6 +1125,8 @@ exports[`21. article summary component with byline on top 1`] = `
   <Text
     accessibilityRole="header"
     aria-level="3"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
@@ -979,8 +1144,14 @@ exports[`21. article summary component with byline on top 1`] = `
       ]
     }
   />
-  <Text>
-    <Text>
+  <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.
       ...

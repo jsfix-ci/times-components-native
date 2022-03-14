@@ -23,7 +23,7 @@ export const FrontPageByline: React.FC<Props> = ({
         showKeyline && styles.withKeyline,
       ]}
     >
-      <Text>
+      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
         <ArticleByline ast={byline} bylineStyle={styles.bylineStyle} />
       </Text>
     </View>

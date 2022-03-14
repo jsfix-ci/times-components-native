@@ -22,11 +22,21 @@ const DatePublication: FC<DatePublicationProps> = ({
       const showPublicationText = publicationText.trim() !== "";
       return (
         <View style={{ flexDirection: "row" }}>
-          <Text style={style} testID={"date-time"}>
+          <Text
+            style={style}
+            testID={"date-time"}
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
             {dateTime}
           </Text>
           {showPublicationText && (
-            <Text style={style} testID={"publication-name"}>
+            <Text
+              style={style}
+              testID={"publication-name"}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               {publicationText}
             </Text>
           )}

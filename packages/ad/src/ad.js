@@ -139,7 +139,13 @@ export class AdBase extends PureComponent {
       >
         {isInline && (
           <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
-            <Text style={styles.inlineAdTitleText}>Advertisement</Text>
+            <Text
+              style={styles.inlineAdTitleText}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
+              Advertisement
+            </Text>
           </View>
         )}
         {!isLoading && (

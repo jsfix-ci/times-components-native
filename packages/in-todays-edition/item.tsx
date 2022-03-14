@@ -51,11 +51,29 @@ const Item: React.FC<Props> = ({
         key={item.id}
         onPress={onPress}
       >
-        <Text style={styles.itemTitle}>{item.title}</Text>
-        <Text style={styles.itemStrapline}>{item.strapline}</Text>
+        <Text
+          style={styles.itemTitle}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {item.title}
+        </Text>
+        <Text
+          style={styles.itemStrapline}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
+        >
+          {item.strapline}
+        </Text>
         {isLandscape && (
           <View style={styles.itemCTA}>
-            <Text style={styles.itemCTAText}>{ctaText}</Text>
+            <Text
+              style={styles.itemCTAText}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
+              {ctaText}
+            </Text>
             <View style={styles.itemCTAIconContainer}>
               <IconForwardArrow
                 fillColour={colours.functional.red}

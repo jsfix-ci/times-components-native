@@ -6,7 +6,12 @@ import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
 const AuthorComponent = ({ children, className }) => (
-  <Text className={className} style={styles.opinion}>
+  <Text
+    className={className}
+    style={styles.opinion}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     {children}
   </Text>
 );

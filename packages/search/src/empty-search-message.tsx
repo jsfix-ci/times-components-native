@@ -6,10 +6,18 @@ const { container, text, title } = styles;
 
 const EmptySearchMessage = () => (
   <View style={container}>
-    <Text style={title}>Popular thing to search for:</Text>
-    <Text style={text}>Articles</Text>
-    <Text style={text}>Topics</Text>
-    <Text style={text}>Journalists</Text>
+    <Text style={title} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+      Popular thing to search for:
+    </Text>
+    <Text style={text} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+      Articles
+    </Text>
+    <Text style={text} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+      Topics
+    </Text>
+    <Text style={text} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+      Journalists
+    </Text>
   </View>
 );
 

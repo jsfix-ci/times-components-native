@@ -48,6 +48,8 @@ exports[`tile ac huge 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -126,6 +128,8 @@ exports[`tile ac medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -204,6 +208,8 @@ exports[`tile ac smallTablet 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -282,6 +288,8 @@ exports[`tile ac wide 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -360,6 +368,8 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",

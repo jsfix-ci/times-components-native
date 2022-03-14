@@ -3,9 +3,14 @@
 exports[`1. single inline element 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Lindsay McIntosh, Scottish Political Editor
     </Text>
   </Text>
@@ -15,12 +20,20 @@ exports[`1. single inline element 1`] = `
 exports[`2. with the author in the begining 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       , Environment Editor
     </Text>
   </Text>
@@ -30,12 +43,20 @@ exports[`2. with the author in the begining 1`] = `
 exports[`3. with the author at the end 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       RBS Six Nations, 
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Mike Atherton
     </Text>
   </Text>
@@ -45,21 +66,38 @@ exports[`3. with the author at the end 1`] = `
 exports[`4. with multiple authors separated by a pipe 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        | 
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        | 
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -69,21 +107,38 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 exports[`5. with multiple authors separated by text with commas 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       , 
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       , 
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -93,18 +148,32 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 exports[`6. with multiple authors separated by spaces 1`] = `
 <View>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     testID="author"
   >
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
        
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -113,6 +182,8 @@ exports[`6. with multiple authors separated by spaces 1`] = `
 
 exports[`7. null with an empty ast 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   testID="author"
 />
 `;

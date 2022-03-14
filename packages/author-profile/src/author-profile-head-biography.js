@@ -8,7 +8,12 @@ import coreRenderers from "@times-components-native/markup";
 import styles from "./styles";
 
 const AuthorProfileHeadBiography = ({ biography }) => (
-  <Text style={styles.biography} testID="author-bio">
+  <Text
+    style={styles.biography}
+    testID="author-bio"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
+  >
     {renderTrees(biography, coreRenderers)}
   </Text>
 );

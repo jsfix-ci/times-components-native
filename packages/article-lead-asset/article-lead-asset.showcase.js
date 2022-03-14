@@ -31,7 +31,7 @@ const videoLeadAsset = {
 
 // eslint-disable-next-line react/prop-types
 const createCaption = (label) => ({ caption: { text, credits } }) => (
-  <Text>
+  <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
     {label}: {text} {credits}
   </Text>
 );

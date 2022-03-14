@@ -9,12 +9,16 @@ exports[`1. date and times publication 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="date-time"
   >
     Sunday January 01 2017, 2.32pm
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="publication-name"
   >
@@ -32,12 +36,16 @@ exports[`2. date and sundaytimes publication 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="date-time"
   >
     Sunday January 01 2017, 2.32pm
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="publication-name"
   >
@@ -55,6 +63,8 @@ exports[`3. date and no given publication 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="date-time"
   >
@@ -72,6 +82,8 @@ exports[`4. date and no day 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={Object {}}
     testID="date-time"
   >

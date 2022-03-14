@@ -92,7 +92,13 @@ class MessageBar extends Component {
       >
         <View data-testid="message-bar" style={styles.messageBarBodyContainer}>
           <View style={styles.messageBarBody}>
-            <Text style={styles.messageBarText}>{message}</Text>
+            <Text
+              style={styles.messageBarText}
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
+              {message}
+            </Text>
             <View style={styles.messageBarCloseButton}>
               <TouchableOpacity onPress={this.close}>
                 <CloseIcon width="28" height="28" />

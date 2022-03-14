@@ -39,6 +39,8 @@ const Label = ({
     accessibilityLabel={accessibilityLabel}
     style={[styles.title, { color }, style || {}]}
     {...{ rest }}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     {children}
   </Text>

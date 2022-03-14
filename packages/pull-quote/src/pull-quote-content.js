@@ -4,7 +4,9 @@ import { Text } from "react-native";
 import styles from "./styles";
 
 const PullQuoteContent = ({ children }) => (
-  <Text style={styles.content}>{children}</Text>
+  <Text style={styles.content} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+    {children}
+  </Text>
 );
 
 PullQuoteContent.propTypes = {

@@ -23,6 +23,8 @@ const ArticleFlag = ({ title, color }) => (
       accessibilityLabel={`${title} Flag`}
       style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
+      maxFontSizeMultiplier={2}
+      minimumFontScale={0.7}
     >
       {title.toLowerCase()}
     </Text>

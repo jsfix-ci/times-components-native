@@ -5,6 +5,8 @@ exports[`1. article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="No Colour Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     no colour
   </Text>
@@ -16,6 +18,8 @@ exports[`2. red article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -27,6 +31,8 @@ exports[`3. hex colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -38,6 +44,8 @@ exports[`4. rgba colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -49,6 +57,8 @@ exports[`5. new article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="new Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     new
   </Text>
@@ -60,6 +70,8 @@ exports[`6. updated article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="updated Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     updated
   </Text>
@@ -71,6 +83,8 @@ exports[`7. exclusive article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="exclusive Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     exclusive
   </Text>
@@ -82,6 +96,8 @@ exports[`8. sponsored article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="sponsored Flag"
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     sponsored
   </Text>
@@ -97,6 +113,8 @@ exports[`10. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="updated Flag"
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         updated
       </Text>
@@ -107,6 +125,8 @@ exports[`10. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="exclusive Flag"
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         exclusive
       </Text>
@@ -124,6 +144,8 @@ exports[`11. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="updated Flag"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           updated
         </Text>
@@ -134,6 +156,8 @@ exports[`11. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="exclusive Flag"
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           exclusive
         </Text>
