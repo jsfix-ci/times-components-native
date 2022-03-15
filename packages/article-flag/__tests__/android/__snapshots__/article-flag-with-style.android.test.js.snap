@@ -30,6 +30,7 @@ exports[`1. red article flag 1`] = `
         "lineHeight": 10,
         "marginBottom": 0,
         "marginLeft": 5,
+        "paddingTop": 4,
         "textTransform": "uppercase",
       }
     }
@@ -86,6 +87,7 @@ exports[`2. multiple article flags 1`] = `
             "lineHeight": 10,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 4,
             "textTransform": "uppercase",
           }
         }
@@ -130,6 +132,7 @@ exports[`2. multiple article flags 1`] = `
             "lineHeight": 10,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 4,
             "textTransform": "uppercase",
           }
         }
@@ -174,6 +177,7 @@ exports[`2. multiple article flags 1`] = `
             "lineHeight": 10,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 4,
             "textTransform": "uppercase",
           }
         }
@@ -218,6 +222,7 @@ exports[`2. multiple article flags 1`] = `
             "lineHeight": 10,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 4,
             "textTransform": "uppercase",
           }
         }
@@ -262,6 +267,7 @@ exports[`2. multiple article flags 1`] = `
             "lineHeight": 10,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 4,
             "textTransform": "uppercase",
           }
         }

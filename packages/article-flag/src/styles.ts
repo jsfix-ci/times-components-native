@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     includeFontPadding: false,
     marginLeft: spacing(1),
     marginBottom: spacing(0),
+    paddingTop: 4,
   },
   view: {
     alignItems: "center",
