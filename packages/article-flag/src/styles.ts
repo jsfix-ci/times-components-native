@@ -1,5 +1,5 @@
 import { spacing, fontFactory } from "@times-components-native/styleguide";
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   bullet: {
@@ -25,14 +25,13 @@ const styles = StyleSheet.create({
       fontSize: "cardMetaMobile",
     }),
     fontWeight: "bold",
-    lineHeight: Platform.OS === "android" ? 10 : 11,
     textTransform: "uppercase",
     fontSize: 12,
     letterSpacing: 1,
     includeFontPadding: false,
     marginLeft: spacing(1),
     marginBottom: spacing(0),
-    paddingTop: 4,
+    paddingTop: 1,
   },
   view: {
     alignItems: "center",
