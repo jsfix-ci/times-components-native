@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { colours, fonts } from "@times-components-native/styleguide";
 import styles from "./styles";
+import AnimatedBullet from "./AnimatedBullet";
 
 const localStyles = StyleSheet.create({
   container: {
@@ -29,7 +30,7 @@ interface DiamondArticleFlagType {
 
 const DiamondArticleFlag = ({ title }: DiamondArticleFlagType) => (
   <View style={[styles.view, localStyles.container]}>
-    <View style={[localStyles.bullet]} />
+    <AnimatedBullet />
     <Text
       accessibilityLabel={`${title} Flag`}
       style={[styles.title, localStyles.title]}
