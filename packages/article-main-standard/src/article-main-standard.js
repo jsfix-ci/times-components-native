@@ -52,6 +52,10 @@ class ArticlePage extends Component {
     } = article;
     const styles = stylesFactory();
 
+    const isLive = expirableFlags
+      ? expirableFlags.filter((flag) => flag.type === "LIVE").length > 0
+      : false;
+
     return (
       <ResponsiveContext.Consumer>
         {({ isArticleTablet }) => {
@@ -88,10 +92,13 @@ class ArticlePage extends Component {
                 hasVideo={hasVideo}
                 headline={getHeadline(headline, shortHeadline)}
                 isArticleTablet={isArticleTablet}
+                isLive={isLive}
                 label={label}
                 longRead={longRead}
+                publishedTime={publishedTime}
                 standfirst={standfirst}
               />
+
               <ArticleMeta
                 articleId={article.id}
                 bylines={bylines}
