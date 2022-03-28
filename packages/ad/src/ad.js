@@ -137,21 +137,21 @@ export class AdBase extends PureComponent {
         style={[styles.container, style, isInline && styles.inlineAd]}
         testID="article-advertisement"
       >
-        {isInline && (
+        {/* {isInline && (
           <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
             <Text style={styles.inlineAdTitleText}>Advertisement</Text>
           </View>
-        )}
-        {!isLoading && (
-          <DOMContext
-            baseUrl={baseUrl}
-            data={data}
-            onRenderComplete={this.setAdReady}
-            onRenderError={this.setAdError}
-            isInline={isInline}
-            {...sizeProps}
-          />
-        )}
+        )} */}
+        {/* {!isLoading && ( */}
+        <DOMContext
+          baseUrl={baseUrl}
+          data={data}
+          onRenderComplete={this.setAdReady}
+          onRenderError={this.setAdError}
+          isInline={isInline}
+          {...sizeProps}
+        />
+        {/* )} */}
       </View>
     );
   }
