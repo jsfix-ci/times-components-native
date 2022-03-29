@@ -3,6 +3,7 @@ import { Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import Responsive from "@times-components-native/responsive";
+//import data from "../../data.json"; // static data for testing new slice bullet data
 import Section from "./section";
 
 const SectionPage = (props) => {

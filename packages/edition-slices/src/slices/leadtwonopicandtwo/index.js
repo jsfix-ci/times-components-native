@@ -9,6 +9,9 @@ class LeadTwoNoPicAndTwo extends PureComponent {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.bullets = Object.keys(this.props.slice)
+      .filter((key) => key.indexOf("bullet") !== -1)
+      .map((bulletKey) => this.props.slice[bulletKey].article);
   }
 
   renderSmall(breakpoint, orientation) {
@@ -16,11 +19,19 @@ class LeadTwoNoPicAndTwo extends PureComponent {
       onPress,
       slice: { lead1, lead2, support1, support2 },
     } = this.props;
+
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
         orientation={orientation}
-        lead1={<TileF onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead1={
+          <TileF
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+            bullets={this.bullets}
+          />
+        }
         lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
         support1={
           <TileD onPress={onPress} tile={support1} tileName="support1" />
@@ -40,10 +51,13 @@ class LeadTwoNoPicAndTwo extends PureComponent {
   renderMedium(breakpoint, orientation) {
     const {
       onPress,
+      // slice,
       slice: { lead1, lead2, support1, support2 },
     } = this.props;
+    console.log("ONPRESS", onPress);
 
     const Support1 = orientation === "landscape" ? TileAL : TileD;
+
     return (
       <LeadTwoNoPicAndTwoSlice
         orientation={orientation}
@@ -55,6 +69,7 @@ class LeadTwoNoPicAndTwo extends PureComponent {
             tile={lead1}
             tileName="lead1"
             orientation={orientation}
+            bullets={this.bullets}
           />
         }
         lead2={
