@@ -10,7 +10,6 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

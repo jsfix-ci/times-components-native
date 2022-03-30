@@ -5,7 +5,6 @@ exports[`1. video 1`] = `
   accessibilityLabel="Video Splash"
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   testID="splash-component"
 >
   <View>
@@ -70,7 +69,6 @@ exports[`2. video without a poster image 1`] = `
   accessibilityLabel="Video Splash"
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   testID="splash-component"
 >
   <View>
@@ -132,7 +130,6 @@ exports[`3. 360 video 1`] = `
   accessibilityLabel="Video Splash"
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   testID="splash-component"
 >
   <View>

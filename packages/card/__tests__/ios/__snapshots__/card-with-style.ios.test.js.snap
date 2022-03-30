@@ -95,6 +95,7 @@ exports[`2. card with reversed state 1`] = `
 
 exports[`3. card loading state 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "opacity": 1,
@@ -185,6 +186,7 @@ exports[`3. card loading state 1`] = `
 
 exports[`4. card reversed loading state 1`] = `
 <View
+  collapsable={false}
   style={
     Object {
       "opacity": 1,
