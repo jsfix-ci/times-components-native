@@ -12,7 +12,7 @@ exports[`1. single inline element 1`] = `
 </View>
 `;
 
-exports[`2. with the author in the begining 1`] = `
+exports[`2. with the author in the beginning 1`] = `
 <View>
   <Text
     testID="author"

@@ -15,10 +15,8 @@ const ArticleMeta = ({
   bylines,
   hasElementsAbove,
   onAuthorPress,
-  onTooltipPresented,
   publicationName,
   publishedTime,
-  tooltips,
 }) => (
   <View style={[styles.metaContainer, !hasElementsAbove && styles.metaSpacer]}>
     {hasBylineData(bylines) && (
@@ -27,11 +25,6 @@ const ArticleMeta = ({
           articleId={articleId}
           ast={bylines}
           onAuthorPress={onAuthorPress}
-          onTooltipPresented={onTooltipPresented}
-          tooltipArrowOffset={120}
-          tooltips={tooltips}
-          tooltipOffsetX={-95}
-          tooltipOffsetY={54}
         />
       </View>
     )}
