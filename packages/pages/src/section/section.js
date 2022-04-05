@@ -41,6 +41,7 @@ class SectionPage extends Component {
       readArticles: [],
       savedArticles: null,
       section,
+      hasDynamicBullets: props.hasDynamicBullets,
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
@@ -151,6 +152,7 @@ class SectionPage extends Component {
   render() {
     const { publicationName, remoteConfig, puzzlesMetaData } = this.props;
     const {
+      hasDynamicBullets,
       readArticles,
       recentlyOpenedPuzzleCount,
       savedArticles,
@@ -171,6 +173,7 @@ class SectionPage extends Component {
           readArticles,
           recentlyOpenedPuzzleCount,
           savedArticles,
+          hasDynamicBullets,
         }}
       >
         <RemoteConfigProvider config={remoteConfig}>
@@ -195,12 +198,14 @@ SectionPage.propTypes = {
   publicationName: PropTypes.string,
   recentlyOpenedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}),
+  hasDynamicBullets: PropTypes.bool,
 };
 
 SectionPage.defaultProps = {
   publicationName: "TIMES",
   recentlyOpenedPuzzleCount: 0,
   section: null,
+  hasDynamicBullets: false,
 };
 
 export default SectionPage;
