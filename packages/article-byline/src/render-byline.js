@@ -3,6 +3,7 @@ import React from "react";
 import { Text } from "react-native";
 import renderTrees from "@times-components-native/markup-forest";
 import renderers from "@times-components-native/markup";
+import Context from "@times-components-native/context";
 
 const bylineRenderers = (Component, textStyle, props = {}) => ({
   ...renderers,
@@ -17,15 +18,19 @@ const bylineRenderers = (Component, textStyle, props = {}) => ({
   inline(key, attributes, children) {
     const { className, bylineStyle } = props;
     return (
-      <Text
-        className={className}
-        key={key}
-        style={[textStyle, bylineStyle]}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
-        {children}
-      </Text>
+      <Context.Consumer>
+        {({ maxFontSizeMultiplier, minimumFontScale }) => (
+          <Text
+            className={className}
+            key={key}
+            style={[textStyle, bylineStyle]}
+            maxFontSizeMultiplier={maxFontSizeMultiplier}
+            minimumFontScale={minimumFontScale}
+          >
+            {children}
+          </Text>
+        )}
+      </Context.Consumer>
     );
   },
 });

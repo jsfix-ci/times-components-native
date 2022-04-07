@@ -4,6 +4,7 @@ import { View, Text } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import { getNarrowArticleBreakpoint } from "@times-components-native/styleguide";
+import Context from "@times-components-native/context";
 
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 
@@ -133,32 +134,36 @@ export class AdBase extends PureComponent {
     const isInline = display === "inline";
 
     return (
-      <View
-        style={[styles.container, style, isInline && styles.inlineAd]}
-        testID="article-advertisement"
-      >
-        {isInline && (
-          <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
-            <Text
-              style={styles.inlineAdTitleText}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              Advertisement
-            </Text>
+      <Context.Consumer>
+        {({ maxFontSizeMultiplier, minimumFontScale }) => (
+          <View
+            style={[styles.container, style, isInline && styles.inlineAd]}
+            testID="article-advertisement"
+          >
+            {isInline && (
+              <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
+                <Text
+                  style={styles.inlineAdTitleText}
+                  maxFontSizeMultiplier={maxFontSizeMultiplier}
+                  minimumFontScale={minimumFontScale}
+                >
+                  Advertisement
+                </Text>
+              </View>
+            )}
+            {!isLoading && (
+              <DOMContext
+                baseUrl={baseUrl}
+                data={data}
+                onRenderComplete={this.setAdReady}
+                onRenderError={this.setAdError}
+                isInline={isInline}
+                {...sizeProps}
+              />
+            )}
           </View>
         )}
-        {!isLoading && (
-          <DOMContext
-            baseUrl={baseUrl}
-            data={data}
-            onRenderComplete={this.setAdReady}
-            onRenderError={this.setAdError}
-            isInline={isInline}
-            {...sizeProps}
-          />
-        )}
-      </View>
+      </Context.Consumer>
     );
   }
 }
