@@ -44,14 +44,18 @@ const renderByline = (Component, ast, textStyle, props = {}) => {
     bylineRenderers(Component, textStyle, props),
   );
   return (
-    <Text
-      testID={"author"}
-      style={textStyle}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
-      {trees}
-    </Text>
+    <Context.Consumer>
+      {({ maxFontSizeMultiplier, minimumFontScale }) => (
+        <Text
+          testID={"author"}
+          style={textStyle}
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
+          minimumFontScale={minimumFontScale}
+        >
+          {trees}
+        </Text>
+      )}
+    </Context.Consumer>
   );
 };
 

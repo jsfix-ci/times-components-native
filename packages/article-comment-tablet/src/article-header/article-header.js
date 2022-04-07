@@ -24,7 +24,11 @@ const ArticleHeader = ({
 }) => {
   return (
     <Context.Consumer>
-      {({ theme: { headlineFont, headlineCase } }) => (
+      {({
+        theme: { headlineFont, headlineCase },
+        maxFontSizeMultiplier,
+        minimumFontScale,
+      }) => (
         <View style={styles.header}>
           <View style={styles.container}>
             <Label isVideo={hasVideo} label={label} />
@@ -39,8 +43,8 @@ const ArticleHeader = ({
                 },
                 headlineCase ? { textTransform: headlineCase } : null,
               ]}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              minimumFontScale={minimumFontScale}
             >
               {headline}
             </Text>

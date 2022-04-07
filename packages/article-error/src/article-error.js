@@ -3,45 +3,54 @@ import { Image, ScrollView, Text, View } from "react-native";
 import PropTypes from "prop-types";
 
 import Button from "@times-components-native/button";
+import Context from "@times-components-native/context";
 import styles from "./styles";
 
 const errorImage = require("../assets/article-error.png");
 
 const ArticleError = ({ buttonText, refetch, title, message }) => (
-  <ScrollView>
-    <View style={styles.errorContainer}>
-      <View>
-        <Image
-          accessibilityLabel="Error Cartoon"
-          accessible
-          resizeMode="contain"
-          source={errorImage}
-          style={[styles.errorImageContainer, { height: 270, width: 240 }]}
-        />
+  <Context.Consumer>
+    {({ maxFontSizeMultiplier, minimumFontScale }) => (
+      <ScrollView>
+        <View style={styles.errorContainer}>
+          <View>
+            <Image
+              accessibilityLabel="Error Cartoon"
+              accessible
+              resizeMode="contain"
+              source={errorImage}
+              style={[styles.errorImageContainer, { height: 270, width: 240 }]}
+            />
 
-        <Text
-          style={styles.errorHeading}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {title}
-        </Text>
-        <Text
-          style={styles.errorMessage}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {message}
-        </Text>
-      </View>
+            <Text
+              style={styles.errorHeading}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              minimumFontScale={minimumFontScale}
+            >
+              {title}
+            </Text>
+            <Text
+              style={styles.errorMessage}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              minimumFontScale={minimumFontScale}
+            >
+              {message}
+            </Text>
+          </View>
 
-      {refetch && (
-        <View style={styles.buttonWrapper}>
-          <Button style={styles.button} onPress={refetch} title={buttonText} />
+          {refetch && (
+            <View style={styles.buttonWrapper}>
+              <Button
+                style={styles.button}
+                onPress={refetch}
+                title={buttonText}
+              />
+            </View>
+          )}
         </View>
-      )}
-    </View>
-  </ScrollView>
+      </ScrollView>
+    )}
+  </Context.Consumer>
 );
 
 ArticleError.propTypes = {

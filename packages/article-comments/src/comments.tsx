@@ -35,53 +35,58 @@ const Comments: FC<CommentsProps> = ({
 }) => {
   const { isTablet } = useResponsiveContext();
   return (
-    <View style={styles.container} testID="comments">
-      <Text
-        style={styles.headline}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >{`${commentCount} ${commentCount === 1 ? "comment" : "comments"}`}</Text>
-      <Text
-        style={styles.supporting}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
-        Comments are subject to our community guidelines, which can be
-        viewed&nbsp;
-        <TextLink
-          onPress={onCommentGuidelinesPress}
-          style={styles.link}
-          target={null}
-          url={null}
-        >
-          here
-        </TextLink>
-      </Text>
-      <Tooltip
-        articleId={articleId}
-        arrowOffset={isTablet ? 43 : 90}
-        flexDirectionColumnReverse={!isTablet}
-        content={
-          <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-            Tap to read comments and join in with the conversation
-          </Text>
-        }
-        offsetX={isTablet ? 12 : 3}
-        offsetY={isTablet ? 0 : 15}
-        onTooltipPresented={onTooltipPresented}
-        type="commenting"
-        tooltips={tooltips}
-        placement={isTablet ? "right" : "bottom"}
-        width={narrowContent ? 165 : 207}
-      >
-        <Context.Consumer>
-          {() => {
-            const themedStyleguide = styleguide();
-            const fontFactory = themedStyleguide.fontFactory({
-              font: "supporting",
-              fontSize: "button",
-            });
-            return (
+    <Context.Consumer>
+      {({ maxFontSizeMultiplier, minimumFontScale }) => {
+        const themedStyleguide = styleguide();
+        const fontFactory = themedStyleguide.fontFactory({
+          font: "supporting",
+          fontSize: "button",
+        });
+        return (
+          <View style={styles.container} testID="comments">
+            <Text
+              style={styles.headline}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              minimumFontScale={minimumFontScale}
+            >{`${commentCount} ${
+              commentCount === 1 ? "comment" : "comments"
+            }`}</Text>
+            <Text
+              style={styles.supporting}
+              maxFontSizeMultiplier={maxFontSizeMultiplier}
+              minimumFontScale={minimumFontScale}
+            >
+              Comments are subject to our community guidelines, which can be
+              viewed&nbsp;
+              <TextLink
+                onPress={onCommentGuidelinesPress}
+                style={styles.link}
+                target={null}
+                url={null}
+              >
+                here
+              </TextLink>
+            </Text>
+            <Tooltip
+              articleId={articleId}
+              arrowOffset={isTablet ? 43 : 90}
+              flexDirectionColumnReverse={!isTablet}
+              content={
+                <Text
+                  maxFontSizeMultiplier={maxFontSizeMultiplier}
+                  minimumFontScale={minimumFontScale}
+                >
+                  Tap to read comments and join in with the conversation
+                </Text>
+              }
+              offsetX={isTablet ? 12 : 3}
+              offsetY={isTablet ? 0 : 15}
+              onTooltipPresented={onTooltipPresented}
+              type="commenting"
+              tooltips={tooltips}
+              placement={isTablet ? "right" : "bottom"}
+              width={narrowContent ? 165 : 207}
+            >
               <Button
                 fontSize={fontFactory.fontSize}
                 lineHeight={fontFactory.lineHeight}
@@ -89,11 +94,11 @@ const Comments: FC<CommentsProps> = ({
                 style={styles.button}
                 title={commentCount > 0 ? "View comments" : "Post a comment"}
               />
-            );
-          }}
-        </Context.Consumer>
-      </Tooltip>
-    </View>
+            </Tooltip>
+          </View>
+        );
+      }}
+    </Context.Consumer>
   );
 };
 

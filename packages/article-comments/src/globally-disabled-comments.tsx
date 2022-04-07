@@ -1,17 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import styleguide from "@times-components-native/styleguide";
+import Context from "@times-components-native/context";
 
 const GloballyDisabledComments = () => (
-  <View style={styles.container}>
-    <Text
-      style={styles.headline}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
-      Comments are currently unavailable
-    </Text>
-  </View>
+  <Context.Consumer>
+    {({ maxFontSizeMultiplier, minimumFontScale }) => (
+      <View style={styles.container}>
+        <Text
+          style={styles.headline}
+          maxFontSizeMultiplier={maxFontSizeMultiplier}
+          minimumFontScale={minimumFontScale}
+        >
+          Comments are currently unavailable
+        </Text>
+      </View>
+    )}
+  </Context.Consumer>
 );
 
 const { colours, fontFactory, spacing } = styleguide();
