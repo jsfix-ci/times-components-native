@@ -3901,6 +3901,7 @@ Object {
       "topic",
     ],
     "bylines": "Some byline",
+    "canonical_url": "https://url.io",
     "edition_type": "past 6 days",
     "eventTime": "2018-01-01T00:00:00.000Z",
     "headline": "Some Headline",

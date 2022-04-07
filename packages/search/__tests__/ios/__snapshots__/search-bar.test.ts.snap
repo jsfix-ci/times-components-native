@@ -80,7 +80,6 @@ exports[`Search Bar CancelButton 1`] = `
     accessible={true}
     collapsable={false}
     focusable={true}
-    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -313,7 +312,6 @@ exports[`Search Bar should render correctly 1`] = `
             "top": 12,
           }
         }
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

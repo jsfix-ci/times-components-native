@@ -37,6 +37,7 @@ export default (Component) =>
         referral_url: referralUrl || get(data, "referralUrl", ""),
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default"),
+        canonical_url: get(data, "url", ""),
       };
     },
     trackingObjectName: "Article",

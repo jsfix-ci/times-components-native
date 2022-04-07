@@ -75,7 +75,16 @@ exports[`full article with style on mobile 1`] = `
           }
         }
       >
-        <ArticleFlags />
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
       </View>
     </View>
     <View
@@ -230,7 +239,16 @@ exports[`full article with style on tablet 1`] = `
           }
         }
       >
-        <ArticleFlags />
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
       </View>
     </View>
     <View

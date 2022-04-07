@@ -23,13 +23,14 @@ exports[`1. red article flag 1`] = `
       Object {
         "color": "red",
         "fontFamily": "TimesDigitalW04",
-        "fontSize": 10,
+        "fontSize": 12,
         "fontWeight": "bold",
         "includeFontPadding": false,
         "letterSpacing": 1,
-        "lineHeight": 10,
+        "lineHeight": undefined,
         "marginBottom": 0,
         "marginLeft": 5,
+        "paddingTop": 1,
         "textTransform": "uppercase",
       }
     }
@@ -79,13 +80,14 @@ exports[`2. multiple article flags 1`] = `
           Object {
             "color": "#3C81BE",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": "bold",
             "includeFontPadding": false,
             "letterSpacing": 1,
-            "lineHeight": 10,
+            "lineHeight": undefined,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 1,
             "textTransform": "uppercase",
           }
         }
@@ -123,13 +125,14 @@ exports[`2. multiple article flags 1`] = `
           Object {
             "color": "#C51D24",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": "bold",
             "includeFontPadding": false,
             "letterSpacing": 1,
-            "lineHeight": 10,
+            "lineHeight": undefined,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 1,
             "textTransform": "uppercase",
           }
         }
@@ -167,13 +170,14 @@ exports[`2. multiple article flags 1`] = `
           Object {
             "color": "#E34605",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": "bold",
             "includeFontPadding": false,
             "letterSpacing": 1,
-            "lineHeight": 10,
+            "lineHeight": undefined,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 1,
             "textTransform": "uppercase",
           }
         }
@@ -211,13 +215,14 @@ exports[`2. multiple article flags 1`] = `
           Object {
             "color": "#4D4D4D",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": "bold",
             "includeFontPadding": false,
             "letterSpacing": 1,
-            "lineHeight": 10,
+            "lineHeight": undefined,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 1,
             "textTransform": "uppercase",
           }
         }
@@ -255,13 +260,14 @@ exports[`2. multiple article flags 1`] = `
           Object {
             "color": "#696969",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": "bold",
             "includeFontPadding": false,
             "letterSpacing": 1,
-            "lineHeight": 10,
+            "lineHeight": undefined,
             "marginBottom": 0,
             "marginLeft": 5,
+            "paddingTop": 1,
             "textTransform": "uppercase",
           }
         }

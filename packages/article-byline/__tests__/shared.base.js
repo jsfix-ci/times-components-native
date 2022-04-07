@@ -27,7 +27,7 @@ export default (Component) => {
       },
     },
     {
-      name: "with the author in the begining",
+      name: "with the author in the beginning",
       test: () => {
         const testInstance = renderArticleByline({
           ast: authorsFixture.authorInTheBeginning,

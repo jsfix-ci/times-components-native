@@ -116,7 +116,6 @@ exports[`7. card with a loading state 1`] = `
 <ResponsiveContextForMobile>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View>
       <View>
@@ -152,7 +151,6 @@ exports[`8. card with a loading state and no image 1`] = `
 <ResponsiveContextForMobile>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View>
       <View>
@@ -178,7 +176,6 @@ exports[`9. card with reversed loading state 1`] = `
 <ResponsiveContextForMobile>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View>
       <View>
@@ -214,7 +211,6 @@ exports[`10. card with reversed loading state with no image 1`] = `
 <ResponsiveContextForMobile>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View>
       <View>
@@ -399,7 +395,6 @@ exports[`14. card should re-render when high res size changes 2`] = `
 exports[`15. card should re-render when loading state changes 1`] = `
 <View
   collapsable={false}
-  nativeID="animatedComponent"
 >
   <View>
     <View>

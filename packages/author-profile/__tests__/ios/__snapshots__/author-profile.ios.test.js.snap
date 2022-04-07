@@ -210,7 +210,6 @@ exports[`7. an article list header 1`] = `
 <View>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View
       pointerEvents="box-none"
@@ -267,7 +266,6 @@ exports[`8. an article list header with no bio, job title, name or twitter 1`] =
 <View>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
   >
     <View
       pointerEvents="box-none"

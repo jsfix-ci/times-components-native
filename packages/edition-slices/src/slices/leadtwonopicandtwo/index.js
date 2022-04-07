@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { LeadTwoNoPicAndTwoSlice } from "@times-components-native/slice-layout";
+import { SectionContext } from "@times-components-native/context";
 import { TileB, TileD, TileE, TileF, TileX, TileY, TileAL } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
@@ -9,6 +10,9 @@ class LeadTwoNoPicAndTwo extends PureComponent {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.bullets = Object.keys(this.props.slice)
+      .filter((key) => key.indexOf("bullet") !== -1)
+      .map((bulletKey) => this.props.slice[bulletKey].article);
   }
 
   renderSmall(breakpoint, orientation) {
@@ -16,74 +20,99 @@ class LeadTwoNoPicAndTwo extends PureComponent {
       onPress,
       slice: { lead1, lead2, support1, support2 },
     } = this.props;
+
     return (
-      <LeadTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        orientation={orientation}
-        lead1={<TileF onPress={onPress} tile={lead1} tileName="lead1" />}
-        lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
-        support1={
-          <TileD onPress={onPress} tile={support1} tileName="support1" />
-        }
-        support2={
-          <TileE
-            onPress={onPress}
-            tile={support2}
-            tileName="support2"
-            orientation={orientation}
-          />
-        }
-      />
+      <SectionContext.Consumer>
+        {({ hasDynamicBullets }) => {
+          const bullets = hasDynamicBullets ? this.bullets : [];
+          return (
+            <LeadTwoNoPicAndTwoSlice
+              breakpoint={breakpoint}
+              orientation={orientation}
+              lead1={
+                <TileF
+                  onPress={onPress}
+                  tile={lead1}
+                  tileName="lead1"
+                  bullets={bullets}
+                />
+              }
+              lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
+              support1={
+                <TileD onPress={onPress} tile={support1} tileName="support1" />
+              }
+              support2={
+                <TileE
+                  onPress={onPress}
+                  tile={support2}
+                  tileName="support2"
+                  orientation={orientation}
+                />
+              }
+            />
+          );
+        }}
+      </SectionContext.Consumer>
     );
   }
 
   renderMedium(breakpoint, orientation) {
     const {
       onPress,
+      // slice,
       slice: { lead1, lead2, support1, support2 },
     } = this.props;
 
     const Support1 = orientation === "landscape" ? TileAL : TileD;
+
     return (
-      <LeadTwoNoPicAndTwoSlice
-        orientation={orientation}
-        breakpoint={breakpoint}
-        lead1={
-          <TileX
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={lead1}
-            tileName="lead1"
-            orientation={orientation}
-          />
-        }
-        lead2={
-          <TileY
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={lead2}
-            tileName="lead2"
-            orientation={orientation}
-          />
-        }
-        support1={
-          <Support1
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={support1}
-            tileName="support1"
-          />
-        }
-        support2={
-          <TileE
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={support2}
-            tileName="support2"
-            orientation={orientation}
-          />
-        }
-      />
+      <SectionContext.Consumer>
+        {({ hasDynamicBullets }) => {
+          const bullets = hasDynamicBullets ? this.bullets : [];
+          return (
+            <LeadTwoNoPicAndTwoSlice
+              orientation={orientation}
+              breakpoint={breakpoint}
+              lead1={
+                <TileX
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={lead1}
+                  tileName="lead1"
+                  orientation={orientation}
+                  bullets={bullets}
+                />
+              }
+              lead2={
+                <TileY
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={lead2}
+                  tileName="lead2"
+                  orientation={orientation}
+                />
+              }
+              support1={
+                <Support1
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={support1}
+                  tileName="support1"
+                />
+              }
+              support2={
+                <TileE
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={support2}
+                  tileName="support2"
+                  orientation={orientation}
+                />
+              }
+            />
+          );
+        }}
+      </SectionContext.Consumer>
     );
   }
 

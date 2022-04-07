@@ -152,9 +152,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               ]
             }
             color="#1D1D1B"
-            tooltipArrowOffset={120}
-            tooltipOffsetX={-50}
-            tooltipOffsetY={26}
           />
         </View>
         <View />
@@ -280,9 +277,6 @@ exports[`4. an article with ads 1`] = `
               ]
             }
             color="#1D1D1B"
-            tooltipArrowOffset={120}
-            tooltipOffsetX={-50}
-            tooltipOffsetY={26}
           />
         </View>
         <View />

@@ -831,7 +831,6 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1033,7 +1032,6 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
