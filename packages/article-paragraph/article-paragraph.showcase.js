@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ContextProviderWithDefaults } from "@times-components-native/context";
+import Context from "@times-components-native/context";
 import coreRenderers from "@times-components-native/markup";
 import { renderTree } from "@times-components-native/markup-forest";
 import { scales } from "@times-components-native/styleguide";
@@ -17,11 +18,18 @@ const renderParagraphWithScale = ({ select }, ast) => {
         ...coreRenderers,
         paragraph(key, attributes, children, indx, node) {
           return (
-            <ArticleParagraph ast={node} key={indx} uid={indx}>
-              <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-                {children}
-              </Text>
-            </ArticleParagraph>
+            <Context.Consumer>
+              {({ maxFontSizeMultiplier, minimumFontScale }) => {
+                <ArticleParagraph ast={node} key={indx} uid={indx}>
+                  <Text
+                    maxFontSizeMultiplier={maxFontSizeMultiplier}
+                    minimumFontScale={minimumFontScale}
+                  >
+                    {children}
+                  </Text>
+                </ArticleParagraph>;
+              }}
+            </Context.Consumer>
           );
         },
       })}

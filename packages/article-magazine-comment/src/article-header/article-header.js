@@ -31,7 +31,11 @@ const ArticleHeader = ({
 }) => {
   return (
     <Context.Consumer>
-      {({ theme: { headlineFont, headlineCase } }) => (
+      {({
+        theme: { headlineFont, headlineCase },
+        maxFontSizeMultiplier,
+        minimumFontScale,
+      }) => (
         <View style={styles.container}>
           <View style={styles.authorImage}>
             <ModalImage aspectRatio={1} uri={authorImage} rounded />
@@ -48,8 +52,8 @@ const ArticleHeader = ({
               },
               headlineCase ? { textTransform: headlineCase } : null,
             ]}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            maxFontSizeMultiplier={maxFontSizeMultiplier}
+            minimumFontScale={minimumFontScale}
           >
             {headline}
           </Text>

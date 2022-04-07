@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { DateTime } from "luxon";
 import {
   ArticleFlags,
@@ -8,7 +8,7 @@ import {
 } from "@times-components-native/article-flag";
 import styleguide from "@times-components-native/styleguide";
 import DatePublication from "@times-components-native/date-publication";
-import Context from "@times-components-native/context";
+import { Text } from "@times-components-native/text";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -67,45 +67,40 @@ const ArticleHeader = ({
   };
 
   return (
-    <Context.Consumer>
-      {({ maxFontSizeMultiplier, minimumFontScale }) => (
-        <View
-          style={[
-            styles.articleMainContentRow,
-            isArticleTablet && styles.articleMainContentRowTablet,
-            isArticleTablet && styles.headerTablet,
-          ]}
-        >
-          <HeaderLabel isVideo={hasVideo} label={label} />
-          <Text
-            testID={"headline"}
-            selectable
-            style={[
-              styles.articleHeadLineText,
-              !(hasActiveFlags || longRead || standfirst) &&
-                styles.articleHeadlineSpacer,
-              isArticleTablet && styles.articleHeadLineTextTablet,
-            ]}
-            maxFontSizeMultiplier={maxFontSizeMultiplier}
-            minimumFontScale={minimumFontScale}
-          >
-            {headline}
-          </Text>
-          <HeaderStandfirst
-            hasFlags={hasActiveFlags || longRead}
-            standfirst={standfirst}
-          />
-          {(hasActiveFlags || longRead) && (
-            <View style={styles.flags}>
-              <View style={{ flexDirection: "row", alignItems: "center" }}>
-                <ArticleFlags flags={flags} longRead={longRead} />
-                {isLive && getLiveTimeStamp()}
-              </View>
-            </View>
-          )}
+    <View
+      style={[
+        styles.articleMainContentRow,
+        isArticleTablet && styles.articleMainContentRowTablet,
+        isArticleTablet && styles.headerTablet,
+        { borderWidth: 1, borderColor: "green" },
+      ]}
+    >
+      <HeaderLabel isVideo={hasVideo} label={label} />
+      <Text
+        testID={"headline"}
+        selectable
+        style={[
+          styles.articleHeadLineText,
+          !(hasActiveFlags || longRead || standfirst) &&
+            styles.articleHeadlineSpacer,
+          isArticleTablet && styles.articleHeadLineTextTablet,
+        ]}
+      >
+        {headline}
+      </Text>
+      <HeaderStandfirst
+        hasFlags={hasActiveFlags || longRead}
+        standfirst={standfirst}
+      />
+      {(hasActiveFlags || longRead) && (
+        <View style={styles.flags}>
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <ArticleFlags flags={flags} longRead={longRead} />
+            {isLive && getLiveTimeStamp()}
+          </View>
         </View>
       )}
-    </Context.Consumer>
+    </View>
   );
 };
 
