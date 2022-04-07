@@ -35,10 +35,18 @@ const onPuzzlePress = ({ id, title, url }) =>
 class SectionPage extends Component {
   constructor(props) {
     super(props);
+
+    const existingReadArticles =
+      props &&
+      props.readArticles.map((articleId) => ({
+        id: articleId,
+        highlight: false,
+      }));
+
     const { section } = this.props;
     this.state = {
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
-      readArticles: [],
+      readArticles: existingReadArticles || [],
       savedArticles: null,
       section,
       hasDynamicBullets: props.hasDynamicBullets,
@@ -199,6 +207,7 @@ SectionPage.propTypes = {
   recentlyOpenedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}),
   hasDynamicBullets: PropTypes.bool,
+  readArticles: PropTypes.arrayOf(PropTypes.string),
 };
 
 SectionPage.defaultProps = {
@@ -206,6 +215,7 @@ SectionPage.defaultProps = {
   recentlyOpenedPuzzleCount: 0,
   section: null,
   hasDynamicBullets: false,
+  readArticles: [],
 };
 
 export default SectionPage;
