@@ -8,6 +8,7 @@ import {
 } from "@times-components-native/article-flag";
 import styleguide from "@times-components-native/styleguide";
 import DatePublication from "@times-components-native/date-publication";
+import Context from "@times-components-native/context";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -66,41 +67,55 @@ const ArticleHeader = ({
   };
 
   return (
-    <View
-      style={[
-        styles.articleMainContentRow,
-        isArticleTablet && styles.articleMainContentRowTablet,
-        isArticleTablet && styles.headerTablet,
-      ]}
-    >
-      <HeaderLabel isVideo={hasVideo} label={label} />
-      <Text
-        testID={"headline"}
-        selectable
-        style={[
-          styles.articleHeadLineText,
-          !(hasActiveFlags || longRead || standfirst) &&
-            styles.articleHeadlineSpacer,
-          isArticleTablet && styles.articleHeadLineTextTablet,
-        ]}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
-        {headline}
-      </Text>
-      <HeaderStandfirst
-        hasFlags={hasActiveFlags || longRead}
-        standfirst={standfirst}
-      />
-      {(hasActiveFlags || longRead) && (
-        <View style={styles.flags}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <ArticleFlags flags={flags} longRead={longRead} />
-            {isLive && getLiveTimeStamp()}
-          </View>
+    <Context.Consumer>
+      {({ maxFontSizeMultiplier, minimumFontScale }) => (
+        <View
+          style={[
+            styles.articleMainContentRow,
+            isArticleTablet && styles.articleMainContentRowTablet,
+            isArticleTablet && styles.headerTablet,
+            {
+              borderWidth: 1,
+              borderColor: "green",
+            },
+          ]}
+        >
+          {console.log(
+            "MAX: ",
+            maxFontSizeMultiplier,
+            " MIN: ",
+            minimumFontScale,
+          )}
+          <HeaderLabel isVideo={hasVideo} label={label} />
+          <Text
+            testID={"headline"}
+            selectable
+            style={[
+              styles.articleHeadLineText,
+              !(hasActiveFlags || longRead || standfirst) &&
+                styles.articleHeadlineSpacer,
+              isArticleTablet && styles.articleHeadLineTextTablet,
+            ]}
+            maxFontSizeMultiplier
+            minimumFontScale
+          >
+            {headline}
+          </Text>
+          <HeaderStandfirst
+            hasFlags={hasActiveFlags || longRead}
+            standfirst={standfirst}
+          />
+          {(hasActiveFlags || longRead) && (
+            <View style={styles.flags}>
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <ArticleFlags flags={flags} longRead={longRead} />
+                {isLive && getLiveTimeStamp()}
+              </View>
+            </View>
+          )}
         </View>
       )}
-    </View>
+    </Context.Consumer>
   );
 };
 
