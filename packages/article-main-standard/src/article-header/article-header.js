@@ -74,18 +74,8 @@ const ArticleHeader = ({
             styles.articleMainContentRow,
             isArticleTablet && styles.articleMainContentRowTablet,
             isArticleTablet && styles.headerTablet,
-            {
-              borderWidth: 1,
-              borderColor: "green",
-            },
           ]}
         >
-          {console.log(
-            "MAX: ",
-            maxFontSizeMultiplier,
-            " MIN: ",
-            minimumFontScale,
-          )}
           <HeaderLabel isVideo={hasVideo} label={label} />
           <Text
             testID={"headline"}
@@ -96,8 +86,8 @@ const ArticleHeader = ({
                 styles.articleHeadlineSpacer,
               isArticleTablet && styles.articleHeadLineTextTablet,
             ]}
-            maxFontSizeMultiplier
-            minimumFontScale
+            maxFontSizeMultiplier={maxFontSizeMultiplier}
+            minimumFontScale={minimumFontScale}
           >
             {headline}
           </Text>
