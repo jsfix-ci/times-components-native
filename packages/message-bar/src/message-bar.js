@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, Animated, TouchableOpacity } from "react-native";
+import { View, Animated, TouchableOpacity } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components-native/icons";
 import styleFactory from "./styles";
@@ -92,13 +93,7 @@ class MessageBar extends Component {
       >
         <View data-testid="message-bar" style={styles.messageBarBodyContainer}>
           <View style={styles.messageBarBody}>
-            <Text
-              style={styles.messageBarText}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              {message}
-            </Text>
+            <Text style={styles.messageBarText}>{message}</Text>
             <View style={styles.messageBarCloseButton}>
               <TouchableOpacity onPress={this.close}>
                 <CloseIcon width="28" height="28" />

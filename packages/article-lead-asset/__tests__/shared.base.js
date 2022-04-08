@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
+import { Text } from "@times-components-native/text";
 import ArticleLeadAsset from "../src/article-lead-asset";
 import getRatio from "../src/get-ratio";
 
@@ -36,12 +36,8 @@ export const props = {
   // eslint-disable-next-line react/prop-types
   renderCaption: ({ caption }) => (
     <Fragment>
-      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-        {caption.text}
-      </Text>
-      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-        {caption.credits}
-      </Text>
+      <Text>{caption.text}</Text>
+      <Text>{caption.credits}</Text>
     </Fragment>
   ),
   width: 600,

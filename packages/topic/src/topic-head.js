@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import renderTrees from "@times-components-native/markup-forest";
 import coreRenderers from "@times-components-native/markup";
 import { propTypes, defaultProps } from "./topic-head-prop-types";
@@ -10,12 +11,7 @@ const TopicHead = ({ name, description, isLoading }) => {
     (description || []).length > 0 ? (
       <Fragment>
         <View style={styles.divider} />
-        <Text
-          style={styles.description}
-          testID="topic-description"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
+        <Text style={styles.description} testID="topic-description">
           {renderTrees(description, coreRenderers)}
         </Text>
       </Fragment>
@@ -30,8 +26,6 @@ const TopicHead = ({ name, description, isLoading }) => {
           accessibilityRole="header"
           style={styles.name}
           testID="topic-name"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
         >
           {name}
         </Text>

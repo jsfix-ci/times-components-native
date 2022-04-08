@@ -1,9 +1,10 @@
 /* eslint-disable no-undef */
 import React, { PureComponent } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import { getNarrowArticleBreakpoint } from "@times-components-native/styleguide";
+import { Text } from "@times-components-native/text";
 
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 
@@ -139,13 +140,7 @@ export class AdBase extends PureComponent {
       >
         {isInline && (
           <View style={[styles.inlineAdTitle, { width: sizeProps.width }]}>
-            <Text
-              style={styles.inlineAdTitleText}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              Advertisement
-            </Text>
+            <Text style={styles.inlineAdTitleText}>Advertisement</Text>
           </View>
         )}
         {!isLoading && (

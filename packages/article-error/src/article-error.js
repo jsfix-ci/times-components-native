@@ -1,7 +1,8 @@
 import React from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, View } from "react-native";
 import PropTypes from "prop-types";
 
+import { Text } from "@times-components-native/text";
 import Button from "@times-components-native/button";
 import styles from "./styles";
 
@@ -19,20 +20,8 @@ const ArticleError = ({ buttonText, refetch, title, message }) => (
           style={[styles.errorImageContainer, { height: 270, width: 240 }]}
         />
 
-        <Text
-          style={styles.errorHeading}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {title}
-        </Text>
-        <Text
-          style={styles.errorMessage}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {message}
-        </Text>
+        <Text style={styles.errorHeading}>{title}</Text>
+        <Text style={styles.errorMessage}>{message}</Text>
       </View>
 
       {refetch && (

@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`front renderers link text renderer renders link text 1`] = `
-<Text>
+<Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
+>
   Some Text
 </Text>
 `;

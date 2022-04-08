@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import { defaultProps, propTypes } from "./text-link-prop-types";
 
 const styles = StyleSheet.create({
@@ -18,18 +19,11 @@ const TextLink = ({ children, onPress, style, target, url, ...props }) => {
   };
 
   return target ? (
-    <Text
-      {...textProps}
-      target={target}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
+    <Text {...textProps} target={target}>
       {children}
     </Text>
   ) : (
-    <Text {...textProps} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-      {children}
-    </Text>
+    <Text {...textProps}>{children}</Text>
   );
 };
 

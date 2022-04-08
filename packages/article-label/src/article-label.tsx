@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { gqlRgbaToHex } from "@times-components-native/utils";
 import styles from "./style";
 
@@ -28,8 +28,6 @@ const ArticleLabel: FC<ArticleLabelProps> = ({
         styles.title,
         { color: gqlRgbaToHex(color) || (color as string | undefined) },
       ]}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {title.toUpperCase()}
     </Text>

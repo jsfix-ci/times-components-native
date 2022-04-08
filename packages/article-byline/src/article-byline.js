@@ -1,18 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import renderByline from "./render-byline";
 import { defaultProps, propTypes } from "./article-byline-prop-types";
 import styles from "./styles";
 
 const AuthorComponent = ({ children, bylineStyle }) => (
-  <Text
-    style={[styles.nonLinkText, bylineStyle]}
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    {children}
-  </Text>
+  <Text style={[styles.nonLinkText, bylineStyle]}>{children}</Text>
 );
 
 const ArticleByline = ({ ast, ...props }) =>

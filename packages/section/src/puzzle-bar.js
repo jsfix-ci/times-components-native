@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import { SectionContext } from "@times-components-native/context";
 import { IconForwardArrow } from "@times-components-native/icons";
 import { colours } from "@times-components-native/styleguide";
@@ -13,12 +14,7 @@ const PuzzleBar = ({ onPress }) => (
     {({ recentlyOpenedPuzzleCount: count }) =>
       count ? (
         <View style={styles.puzzleBarContainer}>
-          <Text
-            onPress={onPress}
-            style={styles.puzzleBarText}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
+          <Text onPress={onPress} style={styles.puzzleBarText}>
             {count} recently opened puzzle
             {count > 1 && "s"}
           </Text>

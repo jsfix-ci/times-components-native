@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Text, FlatList } from "react-native";
+import { FlatList } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const viewabilityConfig = {
   viewAreaCoveragePercentThreshold: 100,
@@ -32,13 +33,7 @@ export default class Boxes extends Component {
         keyExtractor={({ id }) => id}
         onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => (
-          <Text
-            id={`box-${item.id}`}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            Item {item.id}
-          </Text>
+          <Text id={`box-${item.id}`}>Item {item.id}</Text>
         )}
         viewabilityConfig={viewabilityConfig}
       />

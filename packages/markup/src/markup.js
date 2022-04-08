@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const styles = StyleSheet.create({
   bold: {
@@ -22,93 +23,51 @@ export default {
   },
   bold(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.bold}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.bold}>
         {renderedChildren}
       </Text>
     );
   },
   break(key) {
-    return (
-      <Text key={key} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-        {"\n"}
-      </Text>
-    );
+    return <Text key={key}>{"\n"}</Text>;
   },
   emphasis(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.italic}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.italic}>
         {renderedChildren}
       </Text>
     );
   },
   inline(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-        {renderedChildren}
-      </Text>
-    );
+    return <Text key={key}>{renderedChildren}</Text>;
   },
   italic(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.italic}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.italic}>
         {renderedChildren}
       </Text>
     );
   },
   paragraph(key, attributes, renderedChildren) {
-    return (
-      <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-        {renderedChildren}
-      </Text>
-    );
+    return <Text>{renderedChildren}</Text>;
   },
   strong(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.bold}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.bold}>
         {renderedChildren}
       </Text>
     );
   },
   subscript(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.subscript}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.subscript}>
         {renderedChildren}
       </Text>
     );
   },
   superscript(key, attributes, renderedChildren) {
     return (
-      <Text
-        key={key}
-        style={styles.superscript}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.superscript}>
         {renderedChildren}
       </Text>
     );

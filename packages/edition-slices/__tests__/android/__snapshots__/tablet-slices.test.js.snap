@@ -253,9 +253,7 @@ exports[`9. leaders slice - smalltablet 1`] = `
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
-           
-          Leading Articles
-           
+           Leading Articles 
         </Text>
       </View>
     </View>
@@ -1485,9 +1483,7 @@ exports[`46. leaders slice - medium 1`] = `
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
-           
-          Leading Articles
-           
+           Leading Articles 
         </Text>
       </View>
     </View>
@@ -2716,9 +2712,7 @@ exports[`83. leaders slice - wide 1`] = `
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
-           
-          Leading Articles
-           
+           Leading Articles 
         </Text>
       </View>
     </View>
@@ -3978,9 +3972,7 @@ exports[`120. leaders slice - huge 1`] = `
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
-             
-            Leading Articles
-             
+             Leading Articles 
           </Text>
         </View>
       </View>

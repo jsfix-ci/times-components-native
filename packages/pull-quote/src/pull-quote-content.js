@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import styles from "./styles";
 
 const PullQuoteContent = ({ children }) => (
-  <Text style={styles.content} maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-    {children}
-  </Text>
+  <Text style={styles.content}>{children}</Text>
 );
 
 PullQuoteContent.propTypes = {

@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, TextStyle } from "react-native";
+import { StyleSheet, TextStyle } from "react-native";
+import { Text } from "@times-components-native/text";
 import coreRenderers from "@times-components-native/markup";
 
 type Renderer = (
@@ -32,8 +33,6 @@ export const getRenderers: GetRenderers = ({
         // @ts-ignore onTextLayout does exist on Text component
         onTextLayout={onParagraphTextLayout}
         textBreakStrategy={textBreakStrategy}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         {attributes?.tab && PARAGRAPH_INDENT_CHAR}
         {renderedChildren}
@@ -43,12 +42,7 @@ export const getRenderers: GetRenderers = ({
   },
   invisible(key, attributes) {
     return (
-      <Text
-        key={key}
-        style={styles.invisible}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text key={key} style={styles.invisible}>
         {attributes.value}
       </Text>
     );

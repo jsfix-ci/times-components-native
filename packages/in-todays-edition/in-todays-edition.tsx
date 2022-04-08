@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { getStyles } from "./styles";
 import Item from "./item";
 import { useResponsiveContext } from "@times-components-native/responsive";
@@ -44,13 +45,7 @@ const InTodaysEdition: React.FC<Props> = ({
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Text
-          style={styles.heading}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {headingText}
-        </Text>
+        <Text style={styles.heading}>{headingText}</Text>
       </View>
       <View style={styles.itemsContainer}>
         {items.map((item, index) => (

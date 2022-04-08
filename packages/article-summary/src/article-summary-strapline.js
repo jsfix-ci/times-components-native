@@ -1,20 +1,19 @@
 import React from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
+import { Text as Txt } from "@times-components-native/text";
 import styles from "./styles";
 
 const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryStrapline = ({ strapline, style }) => (
-  <Text
+  <Txt
     accessibilityRole="header"
     aria-level="4"
     style={[styles.strapline, style]}
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     {strapline}
-  </Text>
+  </Txt>
 );
 
 ArticleSummaryStrapline.propTypes = {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import ArticleLeadAsset from "./src/article-lead-asset";
 import { getDimensions } from "@times-components-native/utils";
 
@@ -31,7 +31,7 @@ const videoLeadAsset = {
 
 // eslint-disable-next-line react/prop-types
 const createCaption = (label) => ({ caption: { text, credits } }) => (
-  <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
+  <Text>
     {label}: {text} {credits}
   </Text>
 );

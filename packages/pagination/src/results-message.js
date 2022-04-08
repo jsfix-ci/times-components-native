@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import styleguide from "@times-components-native/styleguide";
 
 const { colours, fontFactory } = styleguide();
@@ -16,12 +17,7 @@ const styles = StyleSheet.create({
 });
 
 const ResultsMessage = ({ children: message }) => (
-  <Text
-    style={styles.message}
-    testID="results-message"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
+  <Text style={styles.message} testID="results-message">
     {message}
   </Text>
 );

@@ -1,16 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import styles from "./styles";
 
 const AuthorProfileHeadJobTitle = ({ jobTitle }) => (
-  <Text
-    accessibilityRole="header"
-    aria-level="2"
-    style={styles.jobTitle}
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
+  <Text accessibilityRole="header" aria-level="2" style={styles.jobTitle}>
     {jobTitle.toLowerCase()}
   </Text>
 );

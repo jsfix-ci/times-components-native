@@ -158,9 +158,7 @@ exports[`2. leaders 1`] = `
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
-         
-        Leading Articles
-         
+         Leading Articles 
       </Text>
     </View>
   </View>
@@ -199,9 +197,7 @@ exports[`2. leaders 2`] = `
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
-         
-        Leading Articles
-         
+         Leading Articles 
       </Text>
     </View>
   </View>
@@ -2871,9 +2867,7 @@ exports[`14. leaders 1`] = `
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
-         
-        Leading Articles
-         
+         Leading Articles 
       </Text>
     </View>
   </View>

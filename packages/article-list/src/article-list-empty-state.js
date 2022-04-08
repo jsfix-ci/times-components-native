@@ -1,18 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import Watermark from "@times-components-native/watermark";
 import styles, { watermarkStyles } from "./styles";
 import propTypes from "./article-list-empty-state-prop-types";
 
 const ArticleListEmptyState = ({ message }) => (
   <View style={styles.listEmptyStateContainer}>
-    <Text
-      style={styles.listEmptyMessage}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
-      {message}
-    </Text>
+    <Text style={styles.listEmptyMessage}>{message}</Text>
     <View style={styles.listEmptyWatermarkContainer}>
       <Watermark
         height={watermarkStyles.height}

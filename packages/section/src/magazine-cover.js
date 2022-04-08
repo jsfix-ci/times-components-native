@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import { editionBreakpoints } from "@times-components-native/styleguide";
-import { Dimensions, Text, View, TouchableOpacity } from "react-native";
+import { Dimensions, View, TouchableOpacity } from "react-native";
+import { Text } from "@times-components-native/text";
 import Image, { ModalImage } from "@times-components-native/image";
 import PropTypes from "prop-types";
 import styleFactory from "./styles/magazine-styles";
@@ -66,11 +67,7 @@ class MagazineCoverImage extends Component {
         >
           {this.renderImage(styles)}
           <View style={styles.labelWrapper}>
-            <Text
-              style={styles.label}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
+            <Text style={styles.label}>
               Tap image to view full magazine cover
             </Text>
           </View>

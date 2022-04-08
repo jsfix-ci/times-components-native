@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import AuthorProfileHeadBaseWithTracking from "./author-profile-head-base";
 import AuthorProfileHeadBiography from "./author-profile-head-biography";
@@ -32,13 +33,7 @@ const AuthorProfileHead = ({
   const renderName = () => {
     if (!name) return null;
     return (
-      <Text
-        accessibilityRole="header"
-        style={styles.name}
-        testID="author-name"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text accessibilityRole="header" style={styles.name} testID="author-name">
         {name}
       </Text>
     );

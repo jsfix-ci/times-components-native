@@ -1,7 +1,8 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import coreRenderers from "@times-components-native/markup";
 import renderTrees from "@times-components-native/markup-forest";
 import { editionBreakpoints } from "@times-components-native/styleguide";
@@ -32,29 +33,11 @@ const TileS = ({
     <View style={styles.container}>
       <View style={styles.titleWrapper}>
         {logo}
-        <Text
-          style={headLineStyles}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {tile.title}
-        </Text>
+        <Text style={headLineStyles}>{tile.title}</Text>
       </View>
-      <Text
-        style={styles.paragraph}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
-        {renderAst(tile.content)}
-      </Text>
+      <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
       {tile.byline && tile.byline.length > 0 && (
-        <Text
-          style={styles.byline}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {renderAst(tile.byline)}
-        </Text>
+        <Text style={styles.byline}>{renderAst(tile.byline)}</Text>
       )}
     </View>
   );

@@ -88,8 +88,13 @@ exports[`SearchListItemByLine should render correctly 1`] = `
 `;
 
 exports[`SearchListItemSnippet should render correctly 1`] = `
-<Text>
+<Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
+>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",
@@ -110,6 +115,8 @@ exports[`SearchListItemSnippet should render correctly 1`] = `
     </Text>
   </Text>
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Object {
         "color": "#696969",

@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { ModalImage } from "@times-components-native/image";
 import Context from "@times-components-native/context";
@@ -48,8 +49,6 @@ const ArticleHeader = ({
               },
               headlineCase ? { textTransform: headlineCase } : null,
             ]}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
           >
             {headline}
           </Text>

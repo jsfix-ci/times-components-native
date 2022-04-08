@@ -1,6 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import renderTrees, {
   propTypes as treePropTypes,
 } from "@times-components-native/markup-forest";
@@ -8,12 +8,7 @@ import coreRenderers from "@times-components-native/markup";
 import styles from "./styles";
 
 const AuthorProfileHeadBiography = ({ biography }) => (
-  <Text
-    style={styles.biography}
-    testID="author-bio"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
+  <Text style={styles.biography} testID="author-bio">
     {renderTrees(biography, coreRenderers)}
   </Text>
 );

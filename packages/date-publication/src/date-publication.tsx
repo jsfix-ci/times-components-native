@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import DateTime from "./date-time";
 import publicationString from "./publication";
 
@@ -22,21 +23,11 @@ const DatePublication: FC<DatePublicationProps> = ({
       const showPublicationText = publicationText.trim() !== "";
       return (
         <View style={{ flexDirection: "row" }}>
-          <Text
-            style={style}
-            testID={"date-time"}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
+          <Text style={style} testID={"date-time"}>
             {dateTime}
           </Text>
           {showPublicationText && (
-            <Text
-              style={style}
-              testID={"publication-name"}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
+            <Text style={style} testID={"publication-name"}>
               {publicationText}
             </Text>
           )}

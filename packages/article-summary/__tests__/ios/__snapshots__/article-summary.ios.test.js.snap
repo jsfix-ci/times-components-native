@@ -265,11 +265,17 @@ exports[`4. article summary component containing links 1`] = `
       minimumFontScale={0.7}
     >
       
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Sajid Javid
       </Text>
        has warned the Home Office to expect an overhaul after the 
-      <Text>
+      <Text
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
+      >
         Windrush scandal
       </Text>
        as he ditches the policy of creating a “hostile

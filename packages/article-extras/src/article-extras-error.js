@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import Button from "@times-components-native/button";
 import Context from "@times-components-native/context";
 import styleguide from "@times-components-native/styleguide";
@@ -8,18 +9,10 @@ import styles from "./styles";
 
 const ArticleExtrasError = ({ refetch }) => (
   <View style={styles.extrasErrorContainer}>
-    <Text
-      style={styles.extrasErrorHeadline}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
+    <Text style={styles.extrasErrorHeadline}>
       It looks like you&apos;re offline
     </Text>
-    <Text
-      style={styles.extrasErrorBody}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
+    <Text style={styles.extrasErrorBody}>
       Some features, such as related articles and comments, may not be available
     </Text>
     <Context.Consumer>

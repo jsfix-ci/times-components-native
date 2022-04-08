@@ -1,5 +1,6 @@
 import React from "react";
-import { ActivityIndicator, Text } from "react-native";
+import { ActivityIndicator } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 import { EditionProvider } from "@times-components-native/provider";
 import withNativeProvider from "./src/with-native-provider";
@@ -13,11 +14,7 @@ const SectionPage = ({ editionId, sectionTitle }) => {
           return <ActivityIndicator size="large" />;
         }
         if (error) {
-          return (
-            <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-              {JSON.stringify(error)}
-            </Text>
-          );
+          return <Text>{JSON.stringify(error)}</Text>;
         }
         const { publicationName: pubName } = edition;
         return edition.sections

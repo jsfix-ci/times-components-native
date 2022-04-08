@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { TextLink } from "@times-components-native/link";
 import { renderTree } from "@times-components-native/markup-forest";
 import coreRenderers from "@times-components-native/markup";
@@ -7,11 +7,7 @@ import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import styles from "./styles";
 
 const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle = {} }) => (
-  <Text
-    style={[styles.text, fontStyle]}
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
+  <Text style={[styles.text, fontStyle]}>
     {item.children.map((data, listItemIndex) =>
       renderTree(
         data,

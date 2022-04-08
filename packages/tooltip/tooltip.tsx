@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from "react";
-import { Animated, Text, TouchableOpacity, View, Platform } from "react-native";
+import { Animated, TouchableOpacity, View, Platform } from "react-native";
+import { Text } from "@times-components-native/text";
 // @ts-ignore
 import { Viewport } from "@skele/components";
 import generateStyles from "./styles";
@@ -88,13 +89,7 @@ const Tooltip: React.FC<TooltipProps> = ({
           >
             <View style={styles.container}>
               {Platform.OS === "ios" && closeButton}
-              <Text
-                style={styles.text}
-                maxFontSizeMultiplier={2}
-                minimumFontScale={0.7}
-              >
-                {content}
-              </Text>
+              <Text style={styles.text}>{content}</Text>
               <View style={styles.arrow} />
             </View>
           </Animated.View>

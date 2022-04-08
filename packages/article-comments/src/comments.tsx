@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { GestureResponderEvent, Text, TextProps, View } from "react-native";
+import { GestureResponderEvent, TextProps, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import Context from "@times-components-native/context";
 import Button from "@times-components-native/button";
@@ -36,16 +37,10 @@ const Comments: FC<CommentsProps> = ({
   const { isTablet } = useResponsiveContext();
   return (
     <View style={styles.container} testID="comments">
-      <Text
-        style={styles.headline}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >{`${commentCount} ${commentCount === 1 ? "comment" : "comments"}`}</Text>
-      <Text
-        style={styles.supporting}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
-      >
+      <Text style={styles.headline}>{`${commentCount} ${
+        commentCount === 1 ? "comment" : "comments"
+      }`}</Text>
+      <Text style={styles.supporting}>
         Comments are subject to our community guidelines, which can be
         viewed&nbsp;
         <TextLink
@@ -62,9 +57,7 @@ const Comments: FC<CommentsProps> = ({
         arrowOffset={isTablet ? 43 : 90}
         flexDirectionColumnReverse={!isTablet}
         content={
-          <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-            Tap to read comments and join in with the conversation
-          </Text>
+          <Text>Tap to read comments and join in with the conversation</Text>
         }
         offsetX={isTablet ? 12 : 3}
         offsetY={isTablet ? 0 : 15}

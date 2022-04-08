@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { DateTime } from "luxon";
 import {
   ArticleFlags,
@@ -8,6 +8,7 @@ import {
 } from "@times-components-native/article-flag";
 import styleguide from "@times-components-native/styleguide";
 import DatePublication from "@times-components-native/date-publication";
+import { Text } from "@times-components-native/text";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -83,8 +84,6 @@ const ArticleHeader = ({
             styles.articleHeadlineSpacer,
           isArticleTablet && styles.articleHeadLineTextTablet,
         ]}
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         {headline}
       </Text>

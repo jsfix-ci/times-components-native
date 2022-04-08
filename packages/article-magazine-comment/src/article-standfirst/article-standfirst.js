@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import styles from "../styles";
 
 const HeaderStandfirst = ({ standfirst }) => {
@@ -12,8 +12,6 @@ const HeaderStandfirst = ({ standfirst }) => {
       aria-level="2"
       style={styles.standFirst}
       testID="standfirst"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {standfirst}
     </Text>

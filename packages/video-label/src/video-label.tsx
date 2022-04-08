@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { IconVideo } from "@times-components-native/icons";
 import styles from "./style";
 
@@ -18,12 +19,7 @@ const VideoLabel: FC<VideoLabel> = ({
     <View style={styles.iconContainer}>
       <IconVideo fillColour={color} height={9} />
     </View>
-    <Text
-      testID={childTestID}
-      style={[styles.title, { color }]}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
+    <Text testID={childTestID} style={[styles.title, { color }]}>
       {title ? title.toUpperCase() : "VIDEO"}
     </Text>
   </View>

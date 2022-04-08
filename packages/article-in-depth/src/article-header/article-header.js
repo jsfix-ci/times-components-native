@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import Context from "@times-components-native/context";
 import { fontFactory } from "@times-components-native/styleguide";
@@ -61,8 +62,6 @@ const ArticleHeader = ({
                 },
                 headlineCase ? { textTransform: headlineCase } : null,
               ]}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
             >
               {headline}
             </Text>

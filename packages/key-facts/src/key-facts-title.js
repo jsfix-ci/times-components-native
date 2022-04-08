@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import propTypes from "./key-facts-title-prop-types";
 import styles from "./styles";
@@ -15,8 +15,6 @@ const KeyFactsTitle = ({ color, fontStyle, title }) => {
         { color },
         fontStyle,
       ]}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {title.toUpperCase()}
     </Text>

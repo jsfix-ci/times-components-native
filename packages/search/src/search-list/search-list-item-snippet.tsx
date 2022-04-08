@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { connectHighlight } from "react-instantsearch-native";
 import { HighlightProps } from "react-instantsearch-core";
 import { Hit } from "../types";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { styles } from "./styles/search-list-item-snippet-styles";
 
 export type SearchListItemSnippetProps = HighlightProps<Hit["_snippetResult"]>;
@@ -25,13 +25,7 @@ const SearchListItemSnippet: FC<SearchListItemSnippetProps> = ({
       {parsedHit.map((result, index) => (
         <Text style={styles.text} key={index}>
           {result.isHighlighted ? (
-            <Text
-              style={styles.hightlighted}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              {result.value}
-            </Text>
+            <Text style={styles.hightlighted}>{result.value}</Text>
           ) : (
             result.value.replace(removeHtmlTags, "")
           )}

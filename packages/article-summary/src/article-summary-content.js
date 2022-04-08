@@ -1,6 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import { renderAst as defaultRenderAst } from "./renderAst";
 import styles from "./styles";
 
@@ -28,8 +28,6 @@ const ArticleSummaryContent = ({
       className={className}
       style={[styles.text, style]}
       {...numberOfLinesProp}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {renderAst(ast)}
     </Text>

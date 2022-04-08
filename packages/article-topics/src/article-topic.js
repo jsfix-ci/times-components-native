@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Context from "@times-components-native/context";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import Link from "@times-components-native/link";
 import Tooltip from "@times-components-native/tooltip";
 import { useResponsiveContext } from "@times-components-native/responsive";
@@ -52,8 +53,6 @@ const ArticleTopic = ({
                 accessibilityRole="button"
                 accessibilityTraits="button"
                 style={[styles.text, fontSizeStyle, lineHeightStyle]}
-                maxFontSizeMultiplier={2}
-                minimumFontScale={0.7}
               >
                 {name}
               </Text>

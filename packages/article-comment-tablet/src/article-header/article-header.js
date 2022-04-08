@@ -1,8 +1,9 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Context from "@times-components-native/context";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { fontFactory } from "@times-components-native/styleguide";
+import { Text } from "@times-components-native/text";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -39,8 +40,6 @@ const ArticleHeader = ({
                 },
                 headlineCase ? { textTransform: headlineCase } : null,
               ]}
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
             >
               {headline}
             </Text>

@@ -17,9 +17,7 @@ exports[`1. button 1`] = `
   }
   underlayColor="#0077B3"
 >
-  <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+  <Txt
     style={
       Object {
         "color": "#FFFFFF",
@@ -32,7 +30,7 @@ exports[`1. button 1`] = `
     title="Test button"
   >
     Test button
-  </Text>
+  </Txt>
 </TouchableHighlight>
 `;
 
@@ -53,9 +51,7 @@ exports[`2. button with font and line-height 1`] = `
   }
   underlayColor="#0077B3"
 >
-  <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+  <Txt
     style={
       Object {
         "color": "#FFFFFF",
@@ -68,7 +64,7 @@ exports[`2. button with font and line-height 1`] = `
     title="Test button"
   >
     Test button
-  </Text>
+  </Txt>
 </TouchableHighlight>
 `;
 
@@ -89,9 +85,7 @@ exports[`should render a Button with custon Text styles 1`] = `
   }
   underlayColor="#0077B3"
 >
-  <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+  <Txt
     style={
       Object {
         "color": "green",
@@ -105,6 +99,6 @@ exports[`should render a Button with custon Text styles 1`] = `
     title="Something else"
   >
     Something else
-  </Text>
+  </Txt>
 </TouchableHighlight>
 `;

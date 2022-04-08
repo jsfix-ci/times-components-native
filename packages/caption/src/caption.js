@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
 
@@ -11,8 +12,6 @@ const renderCredits = (style, credits, testIDCredit) => {
     <Text
       testID={testIDCredit}
       style={[styles.text, styles.credits, style.text, style.credits]}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {credits.toUpperCase()}
     </Text>
@@ -28,8 +27,6 @@ const renderText = (style, text, testIDCaption) => {
     <Text
       testID={testIDCaption}
       style={[styles.text, style.text, style.caption]}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {text}
     </Text>

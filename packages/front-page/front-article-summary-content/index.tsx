@@ -7,7 +7,8 @@ import {
   Markup,
 } from "@times-components-native/fixture-generator/src/types";
 import { ArticleColumns } from "@times-components-native/article-columns/article-columns";
-import { Text, TextStyle } from "react-native";
+import { TextStyle } from "react-native";
+import { Text } from "@times-components-native/text";
 import { transformContentForFront } from "@times-components-native/front-page/utils/transform-content-for-front";
 interface Props {
   summary: Markup;
@@ -31,12 +32,7 @@ const SummaryText: React.FC<SummaryTextProps> = ({
   numberOfLines,
 }) => {
   return ast.length > 0 ? (
-    <Text
-      numberOfLines={numberOfLines}
-      style={style}
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
-    >
+    <Text numberOfLines={numberOfLines} style={style}>
       {renderTrees(ast, getRenderers({ addNewLine: true }))}
     </Text>
   ) : null;
