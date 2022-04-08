@@ -1,5 +1,6 @@
 export { default as IconFacebook } from "./icons/facebook";
 export { default as IconForwardArrow } from "./icons/forward-arrow";
+export { default as IconNoInternet } from "./icons/icon-no-internet";
 export { default as IconStar } from "./icons/star";
 export { default as IconCopyLink } from "./icons/copy-link";
 export { default as IconSaveBookmark } from "./icons/save-bookmark";

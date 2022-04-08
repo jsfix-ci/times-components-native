@@ -78,7 +78,10 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   article content
                 </Text>,
               ]
@@ -92,6 +95,8 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
             style={Object {}}
           >
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -103,7 +108,10 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
               }
               testID="paragraph"
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 article content
               </Text>
             </Text>
@@ -291,7 +299,10 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text>
+                <Text
+                  maxFontSizeMultiplier={2}
+                  minimumFontScale={0.7}
+                >
                   article content
                 </Text>,
               ]
@@ -305,6 +316,8 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
             style={Object {}}
           >
             <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
               selectable={true}
               style={
                 Object {
@@ -316,7 +329,10 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
               }
               testID="paragraph"
             >
-              <Text>
+              <Text
+                maxFontSizeMultiplier={2}
+                minimumFontScale={0.7}
+              >
                 article content
               </Text>
             </Text>
@@ -465,7 +481,10 @@ exports[`InlineContent image renders content and inline image via a render-prop 
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text>
+            <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               article content
             </Text>,
           ]
@@ -479,6 +498,8 @@ exports[`InlineContent image renders content and inline image via a render-prop 
         style={Object {}}
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           selectable={true}
           style={
             Object {
@@ -490,7 +511,10 @@ exports[`InlineContent image renders content and inline image via a render-prop 
           }
           testID="paragraph"
         >
-          <Text>
+          <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
             article content
           </Text>
         </Text>
@@ -616,7 +640,10 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text>
+            <Text
+              maxFontSizeMultiplier={2}
+              minimumFontScale={0.7}
+            >
               article content
             </Text>,
           ]
@@ -630,6 +657,8 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
         style={Object {}}
       >
         <Text
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
           selectable={true}
           style={
             Object {
@@ -641,7 +670,10 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
           }
           testID="paragraph"
         >
-          <Text>
+          <Text
+            maxFontSizeMultiplier={2}
+            minimumFontScale={0.7}
+          >
             article content
           </Text>
         </Text>

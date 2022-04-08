@@ -5,7 +5,6 @@ import { isTablet } from "react-native-device-info";
 import { WebViewNavigation } from "react-native-webview/lib/WebViewTypes";
 
 import styles, { TABLET_AD_HEIGHT } from "./styles";
-import { getAndroidWebViewLayerType } from "@times-components-native/utils/src/android-webview-utils";
 
 const ratio = PixelRatio.get();
 const { width } = Dimensions.get("window");
@@ -136,7 +135,8 @@ const SponsoredAd: React.FC<SponsoredAdProps> = ({ numberOfAds }) => {
         }}
         javaScriptEnabled
         injectedJavaScriptForMainFrameOnly
-        androidLayerType={getAndroidWebViewLayerType(Number(Platform.Version))}
+        // Note that changing androidLayerType to "hardware" or "none" causes crashes on Android 12
+        androidLayerType={"software"}
       />
     </View>
   );

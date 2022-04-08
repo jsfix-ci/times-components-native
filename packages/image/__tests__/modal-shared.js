@@ -113,7 +113,7 @@ export default () => {
           jest.runAllImmediates();
         });
 
-        const [, openButton] = testInstance.root.findAll(
+        const [openButton] = testInstance.root.findAll(
           (node) => node.type === Link,
         );
 

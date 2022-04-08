@@ -2,11 +2,8 @@
 
 exports[`1. key facts with title 1`] = `
 <View>
-  <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    EXAMPLE TITLE
+  <Text>
+    Example title
   </Text>
   <View>
     <View>

@@ -9,7 +9,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-const TileF = ({ onPress, tile }) => (
+const TileF = ({ onPress, tile, bullets }) => (
   <TileLink onPress={onPress} style={styles.container} tile={tile}>
     <TileSummary
       headlineStyle={styles.headline}
@@ -18,6 +18,7 @@ const TileF = ({ onPress, tile }) => (
       summary={getTileSummary(tile, 125)}
       tile={tile}
       summaryStyle={styles.summaryContainer}
+      bullets={bullets}
     />
   </TileLink>
 );

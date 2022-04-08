@@ -1,6 +1,6 @@
 import mockDate from "mockdate";
 import { iterator } from "@times-components-native/test-utils";
-import getActiveFlags from "../src/get-active-flags";
+import getActiveArticleFlags from "../src/getActiveArticleFlags";
 
 export default () => {
   //  GMT: Thursday, 14 March 2019 16:22:54
@@ -21,7 +21,7 @@ export default () => {
           { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
         ];
 
-        expect(getActiveFlags(flags)).toEqual([flags[0]]);
+        expect(getActiveArticleFlags(flags)).toEqual([flags[0]]);
       },
     },
     {
@@ -32,7 +32,7 @@ export default () => {
           { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
         ];
 
-        expect(getActiveFlags(flags)).toEqual([]);
+        expect(getActiveArticleFlags(flags)).toEqual([]);
       },
     },
     {
@@ -43,13 +43,13 @@ export default () => {
           { expiryTime: null, type: "EXCLUSIVE" },
         ];
 
-        expect(getActiveFlags(flags)).toEqual(flags);
+        expect(getActiveArticleFlags(flags)).toEqual(flags);
       },
     },
     {
       name: "returns no flags when no flags are provided",
       test: () => {
-        expect(getActiveFlags([])).toEqual([]);
+        expect(getActiveArticleFlags([])).toEqual([]);
       },
     },
   ];

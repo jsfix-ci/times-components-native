@@ -844,6 +844,7 @@ exports[`25. puzzle - smalltablet 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -867,6 +868,7 @@ exports[`25. puzzle - smalltablet 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -890,6 +892,7 @@ exports[`25. puzzle - smalltablet 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -2073,6 +2076,7 @@ exports[`62. puzzle - medium 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -2096,6 +2100,7 @@ exports[`62. puzzle - medium 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -2119,6 +2124,7 @@ exports[`62. puzzle - medium 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -3315,6 +3321,7 @@ exports[`99. puzzle - wide 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -3338,6 +3345,7 @@ exports[`99. puzzle - wide 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -3361,6 +3369,7 @@ exports[`99. puzzle - wide 1`] = `
             "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
         }
+        isOffline={false}
         title="Times Concise medium No 7881"
         url="/crossword/123"
       />
@@ -4600,6 +4609,7 @@ exports[`136. puzzle - huge 1`] = `
               "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
             }
           }
+          isOffline={false}
           title="Times Concise medium No 7881"
           url="/crossword/123"
         />
@@ -4623,6 +4633,7 @@ exports[`136. puzzle - huge 1`] = `
               "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
             }
           }
+          isOffline={false}
           title="Times Concise medium No 7881"
           url="/crossword/123"
         />
@@ -4646,6 +4657,7 @@ exports[`136. puzzle - huge 1`] = `
               "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
             }
           }
+          isOffline={false}
           title="Times Concise medium No 7881"
           url="/crossword/123"
         />

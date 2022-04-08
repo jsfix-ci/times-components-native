@@ -65,11 +65,13 @@ const DOMContext = ({
 }: DomContextType) => {
   const webViewRef = useRef<WebView>(null);
   const isVisible = useRef(false);
+  // only add additional height if and ad height is provided
+  const adHeight = heightProp
+    ? heightProp + Number(styles.containerAdditionalHeight.height)
+    : 0;
 
   const [loaded, setLoaded] = useState(false);
-  const [height, setHeight] = useState(
-    heightProp + Number(styles.containerAdditionalHeight.height),
-  );
+  const [height, setHeight] = useState(adHeight);
 
   const handleNavigationStateChange = useCallback(
     ({ url }) => {

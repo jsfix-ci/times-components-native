@@ -2,6 +2,8 @@
 
 exports[`FrontArticleSummaryContent renders correctly 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={9}
   style={
     Object {
@@ -15,6 +17,8 @@ exports[`FrontArticleSummaryContent renders correctly 1`] = `
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Array [
         false,
@@ -31,6 +35,8 @@ exports[`FrontArticleSummaryContent renders correctly 1`] = `
 
 exports[`FrontArticleSummaryContent renders correctly with justified text 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   numberOfLines={9}
   style={
     Object {
@@ -45,6 +51,8 @@ exports[`FrontArticleSummaryContent renders correctly with justified text 1`] = 
   }
 >
   <Text
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
     style={
       Array [
         false,

@@ -6,6 +6,7 @@ import Link from "@times-components-native/link";
 import { ArticleSummaryHeadline } from "@times-components-native/article-summary";
 import { editionBreakpoints } from "@times-components-native/styleguide";
 import { withPuzzleTileTracking, TileImage } from "../shared";
+import { OfflineTile } from "..";
 import stylesFactory from "./styles";
 
 const TileAK = ({
@@ -15,6 +16,7 @@ const TileAK = ({
   title,
   url,
   breakpoint = editionBreakpoints.medium,
+  isOffline,
 }) => {
   const crop = image.crop32;
   const styles = stylesFactory(breakpoint);
@@ -28,7 +30,7 @@ const TileAK = ({
     <Link
       key={id}
       linkStyle={puzzleContainer}
-      onPress={() => onPress({ id, title, url })}
+      onPress={isOffline ? () => null : () => onPress({ id, title, url })}
       url={url}
       withStar={false}
     >
@@ -45,6 +47,7 @@ const TileAK = ({
         style={imageContainer}
         uri={crop.url}
       />
+      {isOffline ? <OfflineTile /> : null}
     </Link>
   );
 };

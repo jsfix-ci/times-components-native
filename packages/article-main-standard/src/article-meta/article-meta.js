@@ -16,7 +16,6 @@ function ArticleMeta({
   publicationName,
   publishedTime,
   onAuthorPress,
-  onTooltipPresented,
   tooltips = [],
 }) {
   const withBylineTooltip =
@@ -36,11 +35,6 @@ function ArticleMeta({
               articleId={articleId}
               ast={bylines}
               onAuthorPress={onAuthorPress}
-              onTooltipPresented={onTooltipPresented}
-              tooltipArrowOffset={isArticleTablet ? 130 : 120}
-              tooltips={tooltips}
-              tooltipOffsetX={isArticleTablet ? -20 : 20}
-              tooltipOffsetY={isArticleTablet ? 26 : 38}
             />
           </View>
         </View>

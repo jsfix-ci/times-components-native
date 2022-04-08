@@ -57,6 +57,7 @@ declare module "@times-components-native/utils" {
   type calculateContentWidth = (number, string) => number;
   type clean = <T>(obj: Dictionary<T>) => Dictionary<T>;
   type getHeadline = (headline?: string, shortHeadline?: string) => string;
+  type gqlRgbaToStyle = (color: string) => string | null;
 
   export const clean: clean;
   export const appendToImageURL: appendToImageURL;
@@ -67,6 +68,7 @@ declare module "@times-components-native/utils" {
   export const getCropByPriority: getCropByPriority;
   export const gqlRgbaToHex: gqlRgbaToHex;
   export const getHeadline: getHeadline;
+  export const gqlRgbaToStyle: gqlRgbaToStyle;
 }
 
 declare module "react-native-hooks" {

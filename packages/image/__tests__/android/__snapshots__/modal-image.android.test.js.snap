@@ -13,74 +13,7 @@ exports[`1. modal image 1`] = `
       ]
     }
     visible={false}
-  >
-    <View>
-      <View>
-        <View
-          accessibilityState={
-            Object {
-              "disabled": false,
-            }
-          }
-          focusable={true}
-        >
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/close-button.png",
-              }
-            }
-          />
-        </View>
-      </View>
-      <ImageZoomView
-        enablePreload={true}
-        enableSwipeDown={true}
-        imageUrls={
-          Array [
-            Object {
-              "aspectRatio": 2,
-              "caption": "Caption",
-              "credits": "Credits",
-              "imageIndex": 0,
-              "relativeHeight": 1,
-              "relativeHorizontalOffset": 1,
-              "relativeVerticalOffset": 1,
-              "relativeWidth": 1,
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&offline=true",
-            },
-          ]
-        }
-        index={0}
-        saveToLocalByLongPress={false}
-        useNativeDriver={true}
-      />
-      <View
-        pointerEvents="none"
-      >
-        <View>
-          <View>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-              testID={null}
-            >
-              Caption
-            </Text>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-              testID={null}
-            >
-              CREDITS
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  </Modal>
+  />
   <View
     accessibilityState={
       Object {
@@ -118,55 +51,7 @@ exports[`2. modal image with no caption 1`] = `
       ]
     }
     visible={false}
-  >
-    <View>
-      <View>
-        <View
-          accessibilityState={
-            Object {
-              "disabled": false,
-            }
-          }
-          focusable={true}
-        >
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/close-button.png",
-              }
-            }
-          />
-        </View>
-      </View>
-      <ImageZoomView
-        enablePreload={true}
-        enableSwipeDown={true}
-        imageUrls={
-          Array [
-            Object {
-              "aspectRatio": 2,
-              "caption": undefined,
-              "credits": undefined,
-              "imageIndex": 0,
-              "relativeHeight": 1,
-              "relativeHorizontalOffset": 1,
-              "relativeVerticalOffset": 1,
-              "relativeWidth": 1,
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&offline=true",
-            },
-          ]
-        }
-        index={0}
-        saveToLocalByLongPress={false}
-        useNativeDriver={true}
-      />
-      <View
-        pointerEvents="none"
-      />
-    </View>
-  </Modal>
+  />
   <View
     accessibilityState={
       Object {
@@ -204,74 +89,7 @@ exports[`3. modal image with custom highressize 1`] = `
       ]
     }
     visible={false}
-  >
-    <View>
-      <View>
-        <View
-          accessibilityState={
-            Object {
-              "disabled": false,
-            }
-          }
-          focusable={true}
-        >
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/close-button.png",
-              }
-            }
-          />
-        </View>
-      </View>
-      <ImageZoomView
-        enablePreload={true}
-        enableSwipeDown={true}
-        imageUrls={
-          Array [
-            Object {
-              "aspectRatio": 2,
-              "caption": "Caption",
-              "credits": "Credits",
-              "imageIndex": 0,
-              "relativeHeight": 1,
-              "relativeHorizontalOffset": 1,
-              "relativeVerticalOffset": 1,
-              "relativeWidth": 1,
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&offline=true",
-            },
-          ]
-        }
-        index={0}
-        saveToLocalByLongPress={false}
-        useNativeDriver={true}
-      />
-      <View
-        pointerEvents="none"
-      >
-        <View>
-          <View>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-              testID={null}
-            >
-              Caption
-            </Text>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-              testID={null}
-            >
-              CREDITS
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  </Modal>
+  />
   <View
     accessibilityState={
       Object {

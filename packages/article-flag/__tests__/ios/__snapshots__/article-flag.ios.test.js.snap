@@ -5,8 +5,6 @@ exports[`1. article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="No Colour Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     no colour
   </Text>
@@ -18,8 +16,6 @@ exports[`2. red article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -31,8 +27,6 @@ exports[`3. hex colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -44,77 +38,19 @@ exports[`4. rgba colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     coloured red
   </Text>
 </View>
 `;
 
-exports[`5. new article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="new Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    new
-  </Text>
-</View>
-`;
-
-exports[`6. updated article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="updated Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    updated
-  </Text>
-</View>
-`;
-
-exports[`7. exclusive article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="exclusive Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    exclusive
-  </Text>
-</View>
-`;
-
-exports[`8. sponsored article flag 1`] = `
-<View>
-  <View />
-  <Text
-    accessibilityLabel="sponsored Flag"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-  >
-    sponsored
-  </Text>
-</View>
-`;
-
-exports[`9. long read article flag 1`] = `null`;
-
-exports[`10. article flags 1`] = `
+exports[`5. article flags 1`] = `
 <View>
   <View>
     <View>
       <View />
       <Text
         accessibilityLabel="updated Flag"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         updated
       </Text>
@@ -125,18 +61,25 @@ exports[`10. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="exclusive Flag"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         exclusive
       </Text>
     </View>
   </View>
-  <View />
+  <View>
+    <View>
+      <View />
+      <Text
+        accessibilityLabel="longread Flag"
+      >
+        longread
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
-exports[`11. article flags with container 1`] = `
+exports[`6. article flags with container 1`] = `
 <View>
   <View>
     <View>
@@ -144,8 +87,6 @@ exports[`11. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="updated Flag"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
         >
           updated
         </Text>
@@ -156,16 +97,23 @@ exports[`11. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="exclusive Flag"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
         >
           exclusive
         </Text>
       </View>
     </View>
-    <View />
+    <View>
+      <View>
+        <View />
+        <Text
+          accessibilityLabel="longread Flag"
+        >
+          longread
+        </Text>
+      </View>
+    </View>
   </View>
 </View>
 `;
 
-exports[`12. article flags with no flags 1`] = `null`;
+exports[`7. article flags with no flags 1`] = `null`;

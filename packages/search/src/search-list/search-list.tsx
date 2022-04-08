@@ -12,7 +12,8 @@ import {
   trackEmptySearchResultsPageView,
 } from "../analytics/search-analytics";
 import { SearchContext } from "../SearchContext";
-import { DEFAULT_NUMBER_OF_RESULTS_PER_QUERY } from "../search";
+
+const DEFAULT_NUMBER_OF_RESULTS_PER_QUERY = 20;
 
 export interface SearchListProps {
   hits: Hit[];

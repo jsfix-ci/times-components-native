@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
 import styleguide from "@times-components-native/styleguide";
 
-const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide();
+const { colours, fontFactory, fonts, spacing } = styleguide();
 
 export default StyleSheet.create({
   bullet: {
-    borderRadius: 2.5,
-    height: 5,
+    backgroundColor: colours.functional.darkRed,
+    height: 6,
     top: 2,
-    width: 5,
+    width: 6,
   },
   bulletContainer: {
     flexDirection: "row",
@@ -17,8 +17,13 @@ export default StyleSheet.create({
     width: "100%",
   },
   container: {
+    backgroundColor: colours.functional.backgroundPrimary,
+    borderTopWidth: 2,
+    borderColor: colours.functional.darkRed,
     marginHorizontal: spacing(2),
+    paddingHorizontal: 24,
     marginVertical: spacing(1),
+    paddingVertical: 16,
   },
   containerTablet: {
     alignSelf: "center",
@@ -41,15 +46,9 @@ export default StyleSheet.create({
     width: "95%",
   },
   title: {
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.keyFactsTitle,
-    fontWeight: "400",
-    letterSpacing: 1.2,
+    fontFamily: fonts.headline,
+    fontSize: 24,
     marginBottom: spacing(4),
-  },
-  titleTablet: {
-    paddingRight: spacing(4),
-    width: "20%",
   },
   wrapper: {
     flex: 1,

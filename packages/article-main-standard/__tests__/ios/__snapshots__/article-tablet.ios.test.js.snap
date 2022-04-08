@@ -67,7 +67,16 @@ exports[`1. article main standard - tablet 1`] = `
           }
         }
       >
-        <ArticleFlags />
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <ArticleFlags />
+        </View>
       </View>
     </View>
     <View

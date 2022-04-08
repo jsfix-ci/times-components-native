@@ -13,7 +13,6 @@ exports[`XButton Should render correctly 1`] = `
       "top": 12,
     }
   }
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

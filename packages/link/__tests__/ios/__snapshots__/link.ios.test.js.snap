@@ -9,7 +9,6 @@ exports[`1. renders link 1`] = `
   }
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   style={
     Object {
       "opacity": 1,
@@ -30,7 +29,6 @@ exports[`2. renders link with target 1`] = `
   }
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   style={
     Object {
       "opacity": 1,

@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { hasBylineData } from "@times-components-native/article-byline";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { ModalImage } from "@times-components-native/image";
 import Context from "@times-components-native/context";
@@ -26,23 +25,14 @@ const ArticleHeader = ({
   label,
   longRead,
   onAuthorPress,
-  onTooltipPresented,
   publicationName,
   publishedTime,
   standfirst,
-  tooltips,
 }) => {
-  const withBylineTooltip =
-    hasBylineData(bylines) && tooltips.includes("profile");
   return (
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (
-        <View
-          style={[
-            styles.container,
-            withBylineTooltip && styles.containerWithMargin,
-          ]}
-        >
+        <View style={styles.container}>
           <View style={styles.authorImage}>
             <ModalImage aspectRatio={1} uri={authorImage} rounded />
           </View>
@@ -70,10 +60,8 @@ const ArticleHeader = ({
             bylines={bylines}
             hasElementsAbove={flags.length > 0 || standfirst}
             onAuthorPress={onAuthorPress}
-            onTooltipPresented={onTooltipPresented}
             publicationName={publicationName}
             publishedTime={publishedTime}
-            tooltips={tooltips}
           />
         </View>
       )}

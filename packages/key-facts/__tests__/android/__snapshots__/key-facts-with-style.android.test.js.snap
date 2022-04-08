@@ -4,25 +4,26 @@ exports[`key facts with title and context theme 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
       "marginHorizontal": 10,
       "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
     }
   }
 >
   <Text
     style={
       Object {
-        "color": "#FFFFFF",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "lineHeight": 18,
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
         "marginBottom": 20,
       }
     }
   >
-    EXAMPLE TITLE
+    Example title
   </Text>
   <View
     style={
@@ -44,11 +45,10 @@ exports[`key facts with title and context theme 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -81,11 +81,10 @@ exports[`key facts with title and context theme 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -106,7 +105,6 @@ exports[`key facts with title and context theme 1`] = `
         <Text
           style={
             Object {
-              "color": "#006699",
               "textDecorationLine": "underline",
             }
           }
@@ -128,11 +126,10 @@ exports[`key facts with title and context theme 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -165,11 +162,10 @@ exports[`key facts with title and context theme 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -215,25 +211,26 @@ exports[`key facts with title on mobile 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
       "marginHorizontal": 10,
       "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
     }
   }
 >
   <Text
     style={
       Object {
-        "color": "#1D1D1B",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "lineHeight": 18,
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
         "marginBottom": 20,
       }
     }
   >
-    EXAMPLE TITLE
+    Example title
   </Text>
   <View
     style={
@@ -255,11 +252,10 @@ exports[`key facts with title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -292,11 +288,10 @@ exports[`key facts with title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -317,7 +312,6 @@ exports[`key facts with title on mobile 1`] = `
         <Text
           style={
             Object {
-              "color": "#006699",
               "textDecorationLine": "underline",
             }
           }
@@ -339,11 +333,10 @@ exports[`key facts with title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -376,11 +369,10 @@ exports[`key facts with title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -426,30 +418,26 @@ exports[`key facts with title on tablet 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "marginHorizontal": 0,
-      "marginVertical": 10,
-      "width": "80.8%",
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
     }
   }
 >
   <Text
     style={
       Object {
-        "color": "#1D1D1B",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
-        "fontWeight": "400",
-        "letterSpacing": 1.2,
-        "lineHeight": 18,
+        "fontFamily": "TimesModern-Bold",
+        "fontSize": 24,
         "marginBottom": 20,
-        "paddingRight": 20,
-        "width": "20%",
       }
     }
   >
-    EXAMPLE TITLE
+    Example title
   </Text>
   <View
     style={
@@ -471,11 +459,10 @@ exports[`key facts with title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -508,11 +495,10 @@ exports[`key facts with title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -533,7 +519,6 @@ exports[`key facts with title on tablet 1`] = `
         <Text
           style={
             Object {
-              "color": "#006699",
               "textDecorationLine": "underline",
             }
           }
@@ -555,11 +540,10 @@ exports[`key facts with title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -592,11 +576,10 @@ exports[`key facts with title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -642,8 +625,13 @@ exports[`key facts without title on mobile 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
       "marginHorizontal": 10,
       "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
     }
   }
 >
@@ -667,11 +655,10 @@ exports[`key facts without title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -704,11 +691,10 @@ exports[`key facts without title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -729,7 +715,6 @@ exports[`key facts without title on mobile 1`] = `
         <Text
           style={
             Object {
-              "color": "#006699",
               "textDecorationLine": "underline",
             }
           }
@@ -751,11 +736,10 @@ exports[`key facts without title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -788,11 +772,10 @@ exports[`key facts without title on mobile 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -838,11 +821,13 @@ exports[`key facts without title on tablet 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
-      "flexDirection": "row",
-      "marginHorizontal": 0,
-      "marginVertical": 10,
-      "width": "80.8%",
+      "backgroundColor": "#F9F9F9",
+      "borderColor": "#9f0000",
+      "borderTopWidth": 2,
+      "marginHorizontal": 10,
+      "marginVertical": 5,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
     }
   }
 >
@@ -866,11 +851,10 @@ exports[`key facts without title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -903,11 +887,10 @@ exports[`key facts without title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -928,7 +911,6 @@ exports[`key facts without title on tablet 1`] = `
         <Text
           style={
             Object {
-              "color": "#006699",
               "textDecorationLine": "underline",
             }
           }
@@ -950,11 +932,10 @@ exports[`key facts without title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />
@@ -987,11 +968,10 @@ exports[`key facts without title on tablet 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#103546",
-            "borderRadius": 2.5,
-            "height": 5,
+            "backgroundColor": "#9f0000",
+            "height": 6,
             "top": 2,
-            "width": 5,
+            "width": 6,
           }
         }
       />

@@ -30,14 +30,8 @@ class ArticlePage extends Component {
   }
 
   renderHeader(parentProps) {
-    const {
-      article,
-      onAuthorPress,
-      onImagePress,
-      onTooltipPresented,
-      onVideoPress,
-      tooltips,
-    } = this.props;
+    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
+
     const {
       bylines,
       expirableFlags,
@@ -51,6 +45,10 @@ class ArticlePage extends Component {
       standfirst,
     } = article;
     const styles = stylesFactory();
+
+    const isLive = expirableFlags
+      ? expirableFlags.filter((flag) => flag.type === "LIVE").length > 0
+      : false;
 
     return (
       <ResponsiveContext.Consumer>
@@ -88,19 +86,20 @@ class ArticlePage extends Component {
                 hasVideo={hasVideo}
                 headline={getHeadline(headline, shortHeadline)}
                 isArticleTablet={isArticleTablet}
+                isLive={isLive}
                 label={label}
                 longRead={longRead}
+                publishedTime={publishedTime}
                 standfirst={standfirst}
               />
+
               <ArticleMeta
                 articleId={article.id}
                 bylines={bylines}
                 isArticleTablet={isArticleTablet}
                 onAuthorPress={onAuthorPress}
-                onTooltipPresented={onTooltipPresented}
                 publicationName={publicationName}
                 publishedTime={publishedTime}
-                tooltips={tooltips}
               />
             </Fragment>
           );

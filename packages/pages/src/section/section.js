@@ -35,12 +35,21 @@ const onPuzzlePress = ({ id, title, url }) =>
 class SectionPage extends Component {
   constructor(props) {
     super(props);
+
+    const existingReadArticles =
+      props &&
+      props.readArticles.map((articleId) => ({
+        id: articleId,
+        highlight: false,
+      }));
+
     const { section } = this.props;
     this.state = {
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
-      readArticles: [],
+      readArticles: existingReadArticles || [],
       savedArticles: null,
       section,
+      hasDynamicBullets: props.hasDynamicBullets,
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
@@ -149,8 +158,9 @@ class SectionPage extends Component {
   }
 
   render() {
-    const { publicationName, remoteConfig } = this.props;
+    const { publicationName, remoteConfig, puzzlesMetaData } = this.props;
     const {
+      hasDynamicBullets,
       readArticles,
       recentlyOpenedPuzzleCount,
       savedArticles,
@@ -171,6 +181,7 @@ class SectionPage extends Component {
           readArticles,
           recentlyOpenedPuzzleCount,
           savedArticles,
+          hasDynamicBullets,
         }}
       >
         <RemoteConfigProvider config={remoteConfig}>
@@ -183,6 +194,7 @@ class SectionPage extends Component {
             onPuzzlePress={onPuzzlePress}
             publicationName={publicationName}
             section={section}
+            puzzlesMetaData={puzzlesMetaData}
           />
         </RemoteConfigProvider>
       </SectionContext.Provider>
@@ -194,12 +206,16 @@ SectionPage.propTypes = {
   publicationName: PropTypes.string,
   recentlyOpenedPuzzleCount: PropTypes.number,
   section: PropTypes.shape({}),
+  hasDynamicBullets: PropTypes.bool,
+  readArticles: PropTypes.arrayOf(PropTypes.string),
 };
 
 SectionPage.defaultProps = {
   publicationName: "TIMES",
   recentlyOpenedPuzzleCount: 0,
   section: null,
+  hasDynamicBullets: false,
+  readArticles: [],
 };
 
 export default SectionPage;

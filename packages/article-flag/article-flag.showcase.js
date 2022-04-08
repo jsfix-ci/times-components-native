@@ -1,43 +1,12 @@
 import React from "react";
-import {
-  ArticleFlags,
-  NewArticleFlag,
-  UpdatedArticleFlag,
-  ExclusiveArticleFlag,
-  SponsoredArticleFlag,
-  LongReadArticleFlag,
-} from "./src/article-flag";
+import ArticleFlag from "./src/ArticleFlag";
+import ArticleFlags from "./src/ArticleFlags";
 
 export default {
   children: [
     {
-      component: () => <NewArticleFlag />,
+      component: () => <ArticleFlag color="red" title="New" />,
       name: "Article Flag (New)",
-      type: "story",
-    },
-    {
-      component: () => <UpdatedArticleFlag />,
-      name: "Article Flag (Updated)",
-      type: "story",
-    },
-    {
-      component: () => <ExclusiveArticleFlag />,
-      name: "Article Flag (Exclusive)",
-      type: "story",
-    },
-    {
-      component: () => <SponsoredArticleFlag />,
-      name: "Article Flag (Sponsored)",
-      type: "story",
-    },
-    {
-      component: () => <LongReadArticleFlag />,
-      name: "Article Flag (Long Read)",
-      type: "story",
-    },
-    {
-      component: () => <NewArticleFlag color="blue" />,
-      name: "Article Flag with text colour",
       type: "story",
     },
     {

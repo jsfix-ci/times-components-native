@@ -76,7 +76,92 @@ exports[`2. iconforwardarrow renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`3. iconstar renders 1`] = `
+exports[`3. iconnointernet renders 1`] = `
+<RNSVGSvgView
+  bbHeight={13}
+  bbWidth={20}
+  focusable={false}
+  height={13}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 13,
+      "width": 20,
+    }
+  }
+  title="IconNoInternet"
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGDefs>
+      <RNSVGPath
+        d="7a1dcece211cccfff17f47ab395a591c"
+        name="a"
+      />
+    </RNSVGDefs>
+    <RNSVGGroup
+      fill={null}
+      fillRule={0}
+      propList={
+        Array [
+          "fill",
+          "fillRule",
+        ]
+      }
+    >
+      <RNSVGMask
+        fill={-1}
+        height="100%"
+        maskContentUnits={1}
+        maskTransform={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        maskUnits={0}
+        name="b"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width="100%"
+        x="0%"
+        y="0%"
+      >
+        <RNSVGUse
+          height={0}
+          href="a"
+          width={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGMask>
+      <RNSVGPath
+        d="0cac5299d46fb4b89796ac90183a6c37"
+        fill={-13421773}
+        fillRule={1}
+        mask="b"
+        propList={
+          Array [
+            "fill",
+            "fillRule",
+          ]
+        }
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`4. iconstar renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-star"
@@ -110,7 +195,7 @@ exports[`3. iconstar renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`4. iconcopylink renders 1`] = `
+exports[`5. iconcopylink renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-copy-link"
@@ -149,7 +234,7 @@ exports[`4. iconcopylink renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`5. iconsavebookmark renders 1`] = `
+exports[`6. iconsavebookmark renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-bookmark"
@@ -189,7 +274,7 @@ exports[`5. iconsavebookmark renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`6. icontwitter renders 1`] = `
+exports[`7. icontwitter renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-twitter"
@@ -224,7 +309,7 @@ exports[`6. icontwitter renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`7. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video"
@@ -271,7 +356,7 @@ exports[`7. iconvideo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`8. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video-360-player"
@@ -306,7 +391,7 @@ exports[`8. iconvideo360player renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`9. thestlogo renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-sunday-times"
@@ -341,7 +426,7 @@ exports[`9. thestlogo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`10. thetimeslogo renders 1`] = `
+exports[`11. thetimeslogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="logo-the-times"
@@ -376,7 +461,7 @@ exports[`10. thetimeslogo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`11. closeicon renders 1`] = `
+exports[`12. closeicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-close"
@@ -417,7 +502,7 @@ exports[`11. closeicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`12. closeroundicon renders 1`] = `
+exports[`13. closeroundicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -498,7 +583,7 @@ exports[`12. closeroundicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. glassmagnifiericon renders 1`] = `
+exports[`14. glassmagnifiericon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -579,7 +664,7 @@ exports[`13. glassmagnifiericon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`14. rightorientedglassmagnifier renders 1`] = `
+exports[`15. rightorientedglassmagnifier renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="20"
@@ -674,7 +759,7 @@ exports[`14. rightorientedglassmagnifier renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`15. leftchevron renders 1`] = `
+exports[`16. leftchevron renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -755,7 +840,7 @@ exports[`15. leftchevron renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`16. deleteicon renders 1`] = `
+exports[`17. deleteicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight={13}
@@ -833,7 +918,7 @@ exports[`16. deleteicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`17. iconcheckmark renders 1`] = `
+exports[`18. iconcheckmark renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight={15}

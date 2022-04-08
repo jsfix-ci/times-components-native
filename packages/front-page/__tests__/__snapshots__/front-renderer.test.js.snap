@@ -8,6 +8,8 @@ exports[`front renderers link text renderer renders link text 1`] = `
 
 exports[`front renderers paragraph renderer renders paragraph 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Array [
       Object {
@@ -23,6 +25,8 @@ exports[`front renderers paragraph renderer renders paragraph 1`] = `
 
 exports[`front renderers paragraph renderer renders paragraph with new line at end 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Array [
       false,
@@ -39,6 +43,8 @@ exports[`front renderers paragraph renderer renders paragraph with new line at e
 
 exports[`front renderers paragraph renderer renders paragraph with tab 1`] = `
 <Text
+  maxFontSizeMultiplier={2}
+  minimumFontScale={0.7}
   style={
     Array [
       Object {
