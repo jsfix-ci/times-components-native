@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component, isValidElement } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 
 export default class ErrorBoundary extends Component {
@@ -24,11 +24,7 @@ export default class ErrorBoundary extends Component {
       const { attributes } = children || {};
       // Best effort attempt to show any text content
       if (attributes && attributes.value) {
-        return (
-          <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-            {attributes.value}
-          </Text>
-        );
+        return <Text>{attributes.value}</Text>;
       }
     }
 

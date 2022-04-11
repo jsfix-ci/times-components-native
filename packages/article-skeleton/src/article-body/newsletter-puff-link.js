@@ -10,7 +10,8 @@ import {
 import { colours } from "@times-components-native/styleguide";
 import { styleFactory } from "../styles/inline-newsletter-puff";
 import { useResponsiveContext } from "@times-components-native/responsive";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const NewsletterPuffLink = ({ onPress }) => {
   const { editionBreakpoint: breakpoint } = useResponsiveContext();
@@ -18,18 +19,8 @@ const NewsletterPuffLink = ({ onPress }) => {
   return (
     <Link url="https://home.thetimes.co.uk/myNews" onPress={onPress}>
       <View style={styles.preferencesView}>
-        <Text
-          style={styles.preferencesText}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          Manage preferences here
-        </Text>
-        <View
-          style={styles.iconContainer}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
+        <Text style={styles.preferencesText}>Manage preferences here</Text>
+        <View style={styles.iconContainer}>
           <IconForwardArrow
             fillColour={colours.functional.action}
             height={12}

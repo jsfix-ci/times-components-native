@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Linking, Platform, Text, View } from "react-native";
+import { Linking, Platform, View } from "react-native";
 import { Mutation } from "react-apollo";
 import PropTypes from "prop-types";
-
+import { Text } from "@times-components-native/text";
 import { GetNewsletter } from "@times-components-native/provider";
 import { subscribeNewsletter as subscribeNewsletterMutation } from "@times-components-native/provider-queries";
 import Image, { Placeholder } from "@times-components-native/image";
@@ -70,11 +70,7 @@ const InlineNewsletterPuff = ({
                 </View>
                 {justSubscribed ? (
                   <View style={styles.subscribedContainer}>
-                    <Text
-                      style={styles.subscribedHeadline}
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
-                    >
+                    <Text style={styles.subscribedHeadline}>
                       {`You’ve successfully signed up to ${newsletter.title}`}
                     </Text>
                     <View style={styles.preferencesContainer}>
@@ -88,32 +84,10 @@ const InlineNewsletterPuff = ({
                   </View>
                 ) : (
                   <View style={styles.signUpContainer}>
-                    <Text
-                      style={styles.signUpLabel}
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
-                    >
-                      {label}
-                    </Text>
-                    <Text
-                      style={styles.signUpHeadline}
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
-                    >
-                      {headline}
-                    </Text>
-                    <Text
-                      style={styles.copy}
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
-                    >
-                      {copy}
-                    </Text>
-                    <View
-                      style={styles.signUpCTAContainer}
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
-                    >
+                    <Text style={styles.signUpLabel}>{label}</Text>
+                    <Text style={styles.signUpHeadline}>{headline}</Text>
+                    <Text style={styles.copy}>{copy}</Text>
+                    <View style={styles.signUpCTAContainer}>
                       <NewsletterPuffButton
                         enforceTracking
                         newsletterPuffName={newsletter.title}

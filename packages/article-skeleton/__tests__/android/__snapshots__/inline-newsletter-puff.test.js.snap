@@ -73,8 +73,6 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -217,8 +215,6 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -390,8 +386,6 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "marginLeft": "auto",
@@ -540,8 +534,6 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={Object {}}
     >
       <View
@@ -692,8 +684,6 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "marginLeft": "auto",
@@ -872,8 +862,6 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
             Manage preferences here
           </Text>
           <View
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
             style={
               Object {
                 "margin": "auto",
@@ -1026,8 +1014,6 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
             Manage preferences here
           </Text>
           <View
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
             style={
               Object {
                 "margin": "auto",

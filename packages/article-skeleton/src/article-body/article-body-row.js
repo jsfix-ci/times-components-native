@@ -1,6 +1,7 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { NativeModules, Platform, Text, View } from "react-native";
+import { NativeModules, Platform, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import {
   getNarrowArticleBreakpoint,
   spacing,
@@ -51,22 +52,12 @@ const ArticleBodyRow = ({
 
   return {
     text(key, attributes) {
-      return (
-        <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>
-          {attributes.value}
-        </Text>
-      );
+      return <Text>{attributes.value}</Text>;
     },
     heading2(key, attributes, children, index, tree) {
       return (
         <ArticleParagraphWrapper style={styles.headingContainer} ast={children}>
-          <Text
-            style={styles[tree.name]}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            {children}
-          </Text>
+          <Text style={styles[tree.name]}>{children}</Text>
         </ArticleParagraphWrapper>
       );
     },
@@ -83,15 +74,7 @@ const ArticleBodyRow = ({
       return this.heading2(key, attributes, children, index, tree);
     },
     bold(key, attributes, children) {
-      return (
-        <Text
-          style={styles.bold}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {children}
-        </Text>
-      );
+      return <Text style={styles.bold}>{children}</Text>;
     },
     emphasis(key, attributes, children) {
       return this.bold(key, attributes, children);
@@ -100,15 +83,7 @@ const ArticleBodyRow = ({
       return this.bold(key, attributes, children);
     },
     italic(key, attributes, children) {
-      return (
-        <Text
-          style={styles.italic}
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
-        >
-          {children}
-        </Text>
-      );
+      return <Text style={styles.italic}>{children}</Text>;
     },
     link(key, { href, canonicalId, type }, children) {
       return (
@@ -131,26 +106,14 @@ const ArticleBodyRow = ({
     subscript(key, attributes, children) {
       return (
         <View style={styles.subscriptContainer}>
-          <Text
-            style={styles.subscript}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            {children}
-          </Text>
+          <Text style={styles.subscript}>{children}</Text>
         </View>
       );
     },
     superscript(key, attributes, children) {
       return (
         <View style={styles.superscriptContainer}>
-          <Text
-            style={styles.superscript}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            {children}
-          </Text>
+          <Text style={styles.superscript}>{children}</Text>
         </View>
       );
     },
@@ -166,8 +129,6 @@ const ArticleBodyRow = ({
             onTextLayout={onParagraphTextLayout}
             selectable
             style={styles.defaultFont}
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
           >
             {children}
           </Text>
@@ -355,9 +316,7 @@ const ArticleBodyRow = ({
       );
     },
     break() {
-      return (
-        <Text maxFontSizeMultiplier={2} minimumFontScale={0.7}>{`\n`}</Text>
-      );
+      return <Text>{`\n`}</Text>;
     },
     keyFacts(key, attributes, children, index, tree) {
       return (

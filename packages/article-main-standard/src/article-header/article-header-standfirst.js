@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import styles from "../styles/article-header";
 
 const HeaderStandfirst = ({ hasFlags, standfirst }) => {
@@ -12,8 +12,6 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
       aria-level="2"
       style={[styles.standFirst, !hasFlags && styles.standFirstWithoutFlags]}
       testID="sub-headline"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       {standfirst}
     </Text>
