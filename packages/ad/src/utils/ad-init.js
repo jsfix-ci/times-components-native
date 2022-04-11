@@ -198,6 +198,7 @@ function AdInit({ el, data, platform, eventCallback, window }) {
         googletag.cmd.push(() => {
           try {
             const { slotName, sizes, mappings } = slotConfig;
+            eventCallback("err", `/${networkId}/${adUnit}/${section}`);
             const slot = googletag.defineSlot(
               `/${networkId}/${adUnit}/${section}`,
               sizes,

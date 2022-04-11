@@ -1,7 +1,6 @@
 import React, { useRef, useCallback, useState } from "react";
 import { View, Linking, Platform, Dimensions } from "react-native";
 import { WebView, WebViewMessageEvent } from "react-native-webview";
-// @ts-ignore
 import { Viewport } from "@skele/components";
 import {
   getApplicationName,
@@ -90,16 +89,18 @@ const DOMContext = ({
 
   const handleMessageEvent = useCallback(
     (e: WebViewMessageEvent) => {
-      const json = e.nativeEvent.data;
+      const jsonData = e.nativeEvent.data;
 
       if (
-        json.indexOf("isTngMessage") === -1 &&
-        json.indexOf("unrulyLoaded") === -1
+        jsonData.indexOf("isTngMessage") === -1 &&
+        jsonData.indexOf("unrulyLoaded") === -1
       ) {
         // don't try and process postMessage events from 3rd party scripts
         return;
       }
-      const { type, detail } = JSON.parse(json);
+
+      const { type, detail } = JSON.parse(jsonData);
+
       switch (type) {
         case "renderFailed":
           onRenderError();
@@ -134,13 +135,14 @@ const DOMContext = ({
     isVisible.current = false;
 
     if (webViewRef.current) {
+      const { networkId, adUnit, section } = data;
+      console.log("VIEWPORT UPDATE - OUT DATA", networkId, adUnit, section);
+
       webViewRef.current.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...deviceInfo,
-            visible: false,
-          })});
-        };
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
+        true;
       `);
     }
   }, []);
@@ -153,14 +155,15 @@ const DOMContext = ({
     isVisible.current = true;
 
     if (webViewRef.current) {
+      const { networkId, adUnit, section } = data;
+      console.log("VIEWPORT UPDATE - IN DATA ", networkId, adUnit, section);
+
       webViewRef.current.injectJavaScript(`
-          if (typeof unrulyViewportStatus === "function") {
-            unrulyViewportStatus(${JSON.stringify({
-              ...deviceInfo,
-              visible: true,
-            })})
-          };
-        `);
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
+        true;
+      `);
     }
   }, [webViewRef]);
 
