@@ -97,6 +97,15 @@ fragment baseArticleProps on Article {
   url
 }
 
+fragment bulletTileProps on Tile {
+  article {
+    id
+    url
+    headline
+    shortHeadline
+  }
+}
+
 fragment leadAsset169 on Media {
   __typename
   ... on Video {
@@ -470,6 +479,15 @@ fragment commonSlicesSection on StandardSectionSlice {
       teaser125: teaser(maxCharCount: 125)
       teaser800: teaser(maxCharCount: 800)
     }
+    leadBullet1 {
+      ...bulletTileProps
+		}
+    leadBullet2 {
+			...bulletTileProps
+    } 
+    leadBullet3 {
+      ...bulletTileProps
+    }
   }
   ... on LeadOneFullWidthSlice {
     lead {
@@ -558,6 +576,15 @@ fragment commonSlicesSection on StandardSectionSlice {
       }
       teaser125: teaser(maxCharCount: 125)
       teaser800: teaser(maxCharCount: 800)
+    }
+    lead1Bullet1 {
+      ...bulletTileProps
+    }
+    lead1Bullet2 {
+      ...bulletTileProps
+    }
+    lead1Bullet3 {
+      ...bulletTileProps		
     }
   }
   ... on SecondaryFourSlice {
