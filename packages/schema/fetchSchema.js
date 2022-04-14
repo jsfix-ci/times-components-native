@@ -13,8 +13,7 @@ async function main() {
   try {
     await fetchGql(
       fetch,
-      process.env.GRAPHQL_ENDPOINT ||
-        "https://api.staging-thetimes.co.uk/graphql",
+      process.env.GRAPHQL_ENDPOINT || "https://api.thetimes.co.uk/graphql",
       __dirname,
     );
   } catch (e) {
