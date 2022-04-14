@@ -10,6 +10,10 @@ class LeadOneAndOne extends PureComponent {
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
     this.renderWide = this.renderWide.bind(this);
+    this.bullets = Object.keys(this.props.slice)
+      .filter((key) => key.toLowerCase().indexOf("bullet") !== -1)
+      .filter((key) => this.props.slice[key] !== null)
+      .map((bulletKey) => this.props.slice[bulletKey].article);
   }
 
   renderSmall(breakpoint) {
@@ -20,7 +24,14 @@ class LeadOneAndOne extends PureComponent {
     return (
       <LeadOneAndOneSlice
         breakpoint={breakpoint}
-        lead={<TileA onPress={onPress} tile={lead} tileName="lead" />}
+        lead={
+          <TileA
+            onPress={onPress}
+            tile={lead}
+            tileName="lead"
+            bullets={this.bullets}
+          />
+        }
         support={<TileB onPress={onPress} tile={support} tileName="support" />}
       />
     );
@@ -42,6 +53,7 @@ class LeadOneAndOne extends PureComponent {
             tile={lead}
             tileName="lead"
             orientation={orientation}
+            bullets={this.bullets}
           />
         }
         support={
@@ -72,6 +84,7 @@ class LeadOneAndOne extends PureComponent {
             tile={lead}
             breakpoint={breakpoint}
             tileName="lead"
+            bullets={this.bullets}
           />
         }
         support={

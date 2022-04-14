@@ -32,6 +32,7 @@ interface Props {
   tile: TransformConfiguredTile;
   breakpoint: EditionBreakpointKeys;
   orientation: Orientation;
+  bullets?: string[];
 }
 
 const TileColStandard: FC<Props> = ({
@@ -39,6 +40,7 @@ const TileColStandard: FC<Props> = ({
   tile,
   breakpoint,
   orientation,
+  bullets = [],
 }) => {
   if (!tile.config) return null;
 
@@ -109,6 +111,7 @@ const TileColStandard: FC<Props> = ({
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
+            bullets={bullets}
           />
         )}
       />
