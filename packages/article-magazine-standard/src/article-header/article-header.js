@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { hasBylineData } from "@times-components-native/article-byline";
 import Context from "@times-components-native/context";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { fontFactory } from "@times-components-native/styleguide";
@@ -25,23 +24,15 @@ const ArticleHeader = ({
   label,
   longRead,
   onAuthorPress,
-  onTooltipPresented,
   publicationName,
   publishedTime,
   standfirst,
-  tooltips,
 }) => {
-  const withBylineTooltip =
-    hasBylineData(bylines) && tooltips.includes("profile");
   return (
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (
         <View
-          style={[
-            styles.container,
-            isArticleTablet && styles.tabletContainer,
-            !isArticleTablet && withBylineTooltip && styles.containerWithMargin,
-          ]}
+          style={[styles.container, isArticleTablet && styles.tabletContainer]}
         >
           <Label isVideo={hasVideo} label={label} />
           <Text
@@ -65,10 +56,8 @@ const ArticleHeader = ({
             bylines={bylines}
             isArticleTablet={isArticleTablet}
             onAuthorPress={onAuthorPress}
-            onTooltipPresented={onTooltipPresented}
             publicationName={publicationName}
             publishedTime={publishedTime}
-            tooltips={tooltips}
           />
         </View>
       )}

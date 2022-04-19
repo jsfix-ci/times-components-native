@@ -37,7 +37,7 @@ exports[`Image gracefully handles bad high-res url 1`] = `
         },
         Object {
           "height": undefined,
-          "width": undefined,
+          "width": "100%",
         },
         Object {
           "borderRadius": 0,
@@ -149,7 +149,7 @@ exports[`Image renders 1`] = `
         },
         Object {
           "height": undefined,
-          "width": undefined,
+          "width": "100%",
         },
         Object {
           "borderRadius": 0,
@@ -199,7 +199,7 @@ exports[`Image respects resizeMode 1`] = `
         },
         Object {
           "height": undefined,
-          "width": undefined,
+          "width": "100%",
         },
         Object {
           "borderRadius": 0,

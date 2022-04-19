@@ -27,7 +27,6 @@ Object {
 exports[`4. animations should have a fadein animation wrapper component 1`] = `
 <View
   collapsable={false}
-  nativeID="animatedComponent"
   style={
     Object {
       "opacity": 0,

@@ -31,6 +31,8 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
+  bullets?: string[];
+  onPress?: () => null;
 }
 
 const TileSummary: React.FC<Props> = ({
@@ -55,6 +57,8 @@ const TileSummary: React.FC<Props> = ({
   isDarkStar = false,
   starStyle,
   hideLabel = false,
+  bullets = [],
+  onPress = () => null,
 }) => {
   return (
     <ResponsiveContext.Consumer>
@@ -85,6 +89,8 @@ const TileSummary: React.FC<Props> = ({
               isDarkStar={isDarkStar}
               starStyle={starStyle}
               hideLabel={hideLabel}
+              bullets={bullets}
+              onPress={onPress}
             />
           )}
         </SectionContext.Consumer>

@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import { articleBylinePropTypes } from "@times-components-native/article-byline";
 import DatePublication from "@times-components-native/date-publication";
@@ -13,7 +13,6 @@ import summarise from "./summarise";
 import ArticleSummaryByline from "./article-summary-byline";
 import ArticleSummaryLabel from "./article-summary-label";
 import Read from "@times-components-native/read";
-
 function ArticleSummary({
   articleReadState,
   bylineProps,
@@ -26,6 +25,8 @@ function ArticleSummary({
   strapline,
   saveStar,
   center = false,
+  bullets = [],
+  onPress = () => null,
 }) {
   const { bylineOnTop = false } = bylineProps || {};
 
@@ -54,6 +55,32 @@ function ArticleSummary({
         />
       )}
       {content}
+      {bullets.length > 0 && (
+        <View style={{ marginTop: 16 }}>
+          {bullets.map((bullet, index) => {
+            const key = `bullet-${index}`;
+            return (
+              <View key={key} style={{ flexDirection: "row", marginBottom: 8 }}>
+                <View
+                  style={{
+                    backgroundColor: "black",
+                    height: 8,
+                    marginRight: 8,
+                    marginTop: 6,
+                    width: 8,
+                  }}
+                />
+                <Text
+                  style={{ textDecorationLine: "underline" }}
+                  onPress={() => onPress({ id: bullet.id })}
+                >
+                  {bullet.headline}
+                </Text>
+              </View>
+            );
+          })}
+        </View>
+      )}
       {saveStar}
       {datePublicationProps ? (
         <DatePublication style={styles.metaText} {...datePublicationProps} />

@@ -5,7 +5,6 @@ const metaPropTypes = {
   bylines: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  tooltips: PropTypes.array.isRequired,
 };
 
 export default metaPropTypes;

@@ -67,6 +67,8 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
+  bullets?: string[];
+  onPress?: () => null;
 }
 
 export const getArticleReadState = (
@@ -129,6 +131,8 @@ const ArticleSummary: React.FC<Props> = ({
   isTablet = false,
   starStyle,
   hideLabel = false,
+  bullets = [],
+  onPress = () => null,
 }) => {
   const {
     headline: tileHeadline,
@@ -264,6 +268,8 @@ const ArticleSummary: React.FC<Props> = ({
       saveStar={withStar && renderSaveStar()}
       style={style}
       center={!!centeredStar}
+      bullets={bullets}
+      onPress={onPress}
     />
   );
 };

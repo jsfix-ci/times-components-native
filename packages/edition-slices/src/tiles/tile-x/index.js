@@ -17,6 +17,7 @@ const TileX = ({
   tile,
   breakpoint = editionBreakpoints.medium,
   orientation,
+  bullets,
 }) => {
   const styles = stylesFactory(breakpoint, orientation);
 
@@ -33,6 +34,8 @@ const TileX = ({
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
+            bullets={bullets}
+            onPress={onPress}
           />
         )}
       />
@@ -45,6 +48,7 @@ TileX.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string,
+  bullets: PropTypes.array,
 };
 
 export default TileX;

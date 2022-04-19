@@ -62,9 +62,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                 },
               ]
             }
-            tooltipArrowOffset={120}
-            tooltipOffsetX={-95}
-            tooltipOffsetY={44}
           />
         </View>
         <View>
@@ -141,9 +138,6 @@ exports[`4. an article with ads 1`] = `
                 },
               ]
             }
-            tooltipArrowOffset={120}
-            tooltipOffsetX={-95}
-            tooltipOffsetY={44}
           />
         </View>
         <View>

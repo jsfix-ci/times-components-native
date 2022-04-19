@@ -1,13 +1,20 @@
 import React, { FC, useEffect } from "react";
-import { NativeModules, Keyboard } from "react-native";
+import { NativeModules, Keyboard, Platform } from "react-native";
 import { SearchBarComponent } from "./search-bar/search-bar";
 import SearchResults from "@times-components-native/search/src/search-results";
-import { connectSearchBox, InstantSearch } from "react-instantsearch-native";
+import {
+  connectSearchBox,
+  InstantSearch,
+  Configure,
+} from "react-instantsearch-native";
 import algoliasearch, { SearchClient } from "algoliasearch";
 import { useIsConnected } from "@times-components-native/utils/src/useIsConnected";
 import { SearchProvider } from "./SearchContext";
-
-export const DEFAULT_NUMBER_OF_RESULTS_PER_QUERY = 20;
+import {
+  getDeviceId,
+  getDeviceType,
+  getVersion,
+} from "react-native-device-info";
 
 const { track } = NativeModules.ReactAnalytics;
 
@@ -23,6 +30,7 @@ export interface SearchProps {
 }
 
 let searchClient: SearchClient | null = null;
+
 const getSearchClient = (algoliaConfig: SearchProps["algoliaConfig"]) => {
   if (searchClient) return searchClient;
 
@@ -43,6 +51,15 @@ const Search: FC<SearchProps> = ({
   const initialSearchTermIsEmpty = (!initialSearchTerm ||
     initialSearchTerm.length == 0) as boolean;
   const shouldFocus = initialSearchTermIsEmpty;
+
+  /**
+   * Variables used to segment searches in algolia analytics
+   * using the analyticsTags prop
+   */
+  const platform = getDeviceType();
+  const appVersion = getVersion();
+  const deviceId = getDeviceId();
+  const OS = Platform.OS;
 
   const ConnectedSearchBar = connectSearchBox((props) => (
     <SearchBarComponent
@@ -77,6 +94,10 @@ const Search: FC<SearchProps> = ({
         indexName={algoliaConfig.ALGOLIA_INDEX}
         searchClient={getSearchClient(algoliaConfig)}
       >
+        <Configure
+          analytics={true}
+          analyticsTags={[OS, platform, appVersion, deviceId]}
+        />
         <ConnectedSearchBar />
         <SearchResults
           onArticlePress={handleOnArticlePress}

@@ -38,7 +38,7 @@ uploaded to maven.
 
 ### Prerequisites
 
-- Get the latest code on `develop` for [nu-projectd-times-smartphone-android](https://github.com/newsuk/nu-projectd-times-smartphone-android)
+- Get the latest code on `develop` for [nuk-tnl-app-android-universal](https://github.com/newsuk/nuk-tnl-app-android-universal)
 - Get the latest Android Studio [here](https://developer.android.com/studio/)
 - Install mobile emulator, see details [here](https://developer.android.com/studio/run/managing-avds)
 
@@ -46,11 +46,12 @@ uploaded to maven.
 
 - Run the mobile emulator
 - Run `yarn android:native` in `times-components` to bundles the latest code on-the-fly once the emulator request a bundle.
-- Run `./gradlew assembleGPD` in `nu-projectd-times-smartphone-android` to install the latest android app
+- Run `adb reverse tcp:8081 tcp:8081`
+- Run `./gradlew installGPD` in `nuk-tnl-app-android-universal` to install the latest android app
 - Open the Times app in the mobile emulator
 - Navigate to an article page on the app
 - Reload the article by pressing key `]` to load the react-native article
-- To update the app to the latest times-component, update the dependancy [here](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/mobile/build.gradle#L199) to the android-app version [here](https://github.com/newsuk/times-components/blob/10d3ec6dfaba08b376792fa17d6e2fced5747a7e/android-app/package.json#L3) and reinstall the app on the emulator
+- To update the app to the latest times-components-native, find and update the `uk.co.thetimes:times-xnative` dependency version in `nuk-tnl-app-android-universal`.
 
 ### Locally install Times Component library on devices
 

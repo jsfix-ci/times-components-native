@@ -6,4 +6,5 @@ export default createContext({
   recentlyOpenedPuzzleCount: 0,
   savedArticles: null,
   readArticles: null,
+  hasDynamicBullets: false,
 });

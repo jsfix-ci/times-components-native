@@ -26,14 +26,8 @@ class ArticleMagazineComment extends Component {
   }
 
   renderHeader({ width }) {
-    const {
-      article,
-      onAuthorPress,
-      onImagePress,
-      onTooltipPresented,
-      onVideoPress,
-      tooltips,
-    } = this.props;
+    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
+
     const {
       bylines,
       expirableFlags,
@@ -68,11 +62,9 @@ class ArticleMagazineComment extends Component {
           label={label}
           longRead={longRead}
           onAuthorPress={onAuthorPress}
-          onTooltipPresented={onTooltipPresented}
           publicationName={publicationName}
           publishedTime={publishedTime}
           standfirst={standfirst}
-          tooltips={tooltips}
         />
         <ArticleLeadAsset
           {...getLeadAsset(article)}
