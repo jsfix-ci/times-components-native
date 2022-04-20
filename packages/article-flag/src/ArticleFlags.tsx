@@ -74,7 +74,9 @@ const ArticleFlags = ({
       {allFlags.map(({ type }: any) => (
         <ArticleFlagWithPadding
           key={type}
-          {...{ moreThanOneFlag, type, color }}
+          moreThanOneFlag={moreThanOneFlag}
+          type={type}
+          color={color}
         />
       ))}
     </View>

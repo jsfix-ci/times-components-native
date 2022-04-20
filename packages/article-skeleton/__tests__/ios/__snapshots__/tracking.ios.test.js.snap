@@ -7,6 +7,8 @@ Array [
       "action": "Viewed",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
+        "article_template_name": "standard template",
         "article_topic_tags": Array [
           "football",
           "manchester-united",
@@ -42,6 +44,8 @@ Array [
       "action": "Viewed",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
+        "article_template_name": "standard template",
         "article_topic_tags": Array [
           "football",
           "manchester-united",
@@ -77,6 +81,8 @@ Array [
       "action": "Viewed",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
+        "article_template_name": "standard template",
         "article_topic_tags": Array [
           "football",
           "manchester-united",
