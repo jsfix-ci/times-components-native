@@ -62,7 +62,6 @@ exports[`tile r huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -130,7 +129,6 @@ exports[`tile r medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -198,7 +196,6 @@ exports[`tile r smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -266,7 +263,6 @@ exports[`tile r wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -334,7 +330,6 @@ exports[`tile r without breakpoint should be like medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

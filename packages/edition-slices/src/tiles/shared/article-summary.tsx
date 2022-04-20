@@ -205,12 +205,7 @@ const ArticleSummary: React.FC<Props> = ({
       opacityAnimation={standardOpacity}
       opacity={articleReadOpacity.standard}
     >
-      <ArticleFlags
-        {...flagColour}
-        style={flagsStyle}
-        flags={expirableFlags}
-        longRead={false} // disable all long read flags
-      />
+      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
     </MarkAsRead>
   );
 

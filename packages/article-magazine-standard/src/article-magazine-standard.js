@@ -43,7 +43,6 @@ class ArticleMagazineStandard extends Component {
       hasVideo,
       headline,
       label,
-      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -62,7 +61,6 @@ class ArticleMagazineStandard extends Component {
               headline={getHeadline(headline, shortHeadline)}
               isArticleTablet={isArticleTablet}
               label={label}
-              longRead={longRead}
               onAuthorPress={onAuthorPress}
               onTooltipPresented={onTooltipPresented}
               publicationName={publicationName}

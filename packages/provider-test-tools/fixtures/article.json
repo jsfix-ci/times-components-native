@@ -987,7 +987,6 @@
         }
       ]
     },
-
     {
       "name": "paragraph",
       "attributes": {},
@@ -1118,7 +1117,13 @@
   ],
   "hasVideo": true,
   "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
-  "keywords": ["Supplement", "In", "Depth", "Template", "Style"],
+  "keywords": [
+    "Supplement",
+    "In",
+    "Depth",
+    "Template",
+    "Style"
+  ],
   "label": "Random label",
   "leadAsset": {
     "caption": "Chris Reynolds Gordon at one of his party venues in London",
@@ -1230,7 +1235,6 @@
     "title": "Chris Reynolds Gordon at one of his party venues in London-la",
     "__typename": "Image"
   },
-  "longRead": false,
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
   "relatedArticleSlice": {
@@ -1247,7 +1251,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Patrick Kidd" },
+                    "attributes": {
+                      "value": "Patrick Kidd"
+                    },
                     "children": []
                   }
                 ]
@@ -1302,14 +1308,18 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]
               },
               {
                 "name": "text",
-                "attributes": { "value": " in 1965, aged 17, and the" },
+                "attributes": {
+                  "value": " in 1965, aged 17, and the"
+                },
                 "children": []
               }
             ]
@@ -1333,7 +1343,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]
@@ -1366,7 +1378,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]
@@ -1399,7 +1413,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]
@@ -1432,7 +1448,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]
@@ -1465,7 +1483,9 @@
                 "children": [
                   {
                     "name": "text",
-                    "attributes": { "value": "Bucks Free Press" },
+                    "attributes": {
+                      "value": "Bucks Free Press"
+                    },
                     "children": []
                   }
                 ]

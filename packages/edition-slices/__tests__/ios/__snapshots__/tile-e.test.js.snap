@@ -60,7 +60,6 @@ exports[`tile e landscape huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -139,7 +138,6 @@ exports[`tile e landscape medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -224,7 +222,6 @@ exports[`tile e landscape small 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -321,7 +318,6 @@ exports[`tile e landscape wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -400,7 +396,6 @@ exports[`tile e portrait huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -479,7 +474,6 @@ exports[`tile e portrait medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -564,7 +558,6 @@ exports[`tile e portrait small 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -661,7 +654,6 @@ exports[`tile e portrait smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -740,7 +732,6 @@ exports[`tile e portrait wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>

@@ -72,7 +72,6 @@ exports[`tile ac huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -150,7 +149,6 @@ exports[`tile ac medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -228,7 +226,6 @@ exports[`tile ac smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -306,7 +303,6 @@ exports[`tile ac wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -384,7 +380,6 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

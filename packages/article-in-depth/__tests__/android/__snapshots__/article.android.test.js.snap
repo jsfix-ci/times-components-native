@@ -82,7 +82,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         </Text>
         <ArticleFlags
           color="rgba(255, 255, 255, 1)"
-          longRead={false}
           withContainer={true}
         />
       </View>
@@ -198,7 +197,6 @@ exports[`4. an article with ads 1`] = `
         </Text>
         <ArticleFlags
           color="rgba(255, 255, 255, 1)"
-          longRead={false}
           withContainer={true}
         />
       </View>

@@ -34,7 +34,6 @@ class ArticlePage extends Component {
       hasVideo,
       headline,
       label,
-      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -43,15 +42,6 @@ class ArticlePage extends Component {
     } = article;
     const showLeadAsset = template === "magazinecomment";
 
-    const getLongReadFlag = () => {
-      switch (String(label).toLowerCase()) {
-        case "letters to the editor":
-          return false;
-        default:
-          return longRead;
-      }
-    };
-
     return (
       <View>
         <ArticleHeader
@@ -59,7 +49,6 @@ class ArticlePage extends Component {
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
-          longRead={getLongReadFlag()}
           onAuthorPress={onAuthorPress}
           onImagePress={onImagePress}
           publicationName={publicationName}

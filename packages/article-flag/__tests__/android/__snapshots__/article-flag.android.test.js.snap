@@ -66,16 +66,6 @@ exports[`5. article flags 1`] = `
       </Text>
     </View>
   </View>
-  <View>
-    <View>
-      <View />
-      <Text
-        accessibilityLabel="longread Flag"
-      >
-        longread
-      </Text>
-    </View>
-  </View>
 </View>
 `;
 
@@ -99,16 +89,6 @@ exports[`6. article flags with container 1`] = `
           accessibilityLabel="exclusive Flag"
         >
           exclusive
-        </Text>
-      </View>
-    </View>
-    <View>
-      <View>
-        <View />
-        <Text
-          accessibilityLabel="longread Flag"
-        >
-          longread
         </Text>
       </View>
     </View>

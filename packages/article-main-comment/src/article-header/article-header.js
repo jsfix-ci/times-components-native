@@ -21,7 +21,6 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
-  longRead,
   onAuthorPress,
   onImagePress,
   publicationName,
@@ -31,15 +30,6 @@ const ArticleHeader = ({
 }) => {
   const withBylineTooltip =
     hasBylineData(bylines) && tooltips.includes("profile");
-
-  const getLongReadFlag = () => {
-    switch (String(label).toLowerCase()) {
-      case "letters to the editor":
-        return false;
-      default:
-        return longRead;
-    }
-  };
 
   return (
     <View style={styles.header}>
@@ -59,11 +49,7 @@ const ArticleHeader = ({
         />
         <Label isVideo={hasVideo} label={label} />
         <Text style={styles.articleHeadline}>{headline}</Text>
-        <ArticleFlags
-          flags={flags}
-          longRead={getLongReadFlag()}
-          withContainer
-        />
+        <ArticleFlags flags={flags} withContainer />
         <Standfirst standfirst={standfirst} />
         <Meta
           articleId={articleId}

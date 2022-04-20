@@ -231,50 +231,5 @@ exports[`2. multiple article flags 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "marginRight": 15,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "backgroundColor": "#696969",
-            "height": 5,
-            "width": 5,
-          }
-        }
-      />
-      <Text
-        style={
-          Object {
-            "color": "#696969",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 12,
-            "fontWeight": "bold",
-            "includeFontPadding": false,
-            "letterSpacing": 1,
-            "lineHeight": undefined,
-            "marginBottom": 0,
-            "marginLeft": 5,
-            "paddingTop": 1,
-            "textTransform": "uppercase",
-          }
-        }
-      >
-        longread
-      </Text>
-    </View>
-  </View>
 </View>
 `;

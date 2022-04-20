@@ -46,9 +46,7 @@ exports[`tile m huge 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -99,9 +97,7 @@ exports[`tile m medium 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -159,9 +155,7 @@ exports[`tile m small 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -212,9 +206,7 @@ exports[`tile m smallTablet 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -265,9 +257,7 @@ exports[`tile m wide 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -325,9 +315,7 @@ exports[`tile m without breakpoint should be like small 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags
-      longRead={false}
-    />
+    <ArticleFlags />
   </View>
 </Link>
 `;

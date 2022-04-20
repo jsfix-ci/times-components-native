@@ -70,7 +70,6 @@ exports[`tile al huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -168,7 +167,6 @@ exports[`tile al wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}

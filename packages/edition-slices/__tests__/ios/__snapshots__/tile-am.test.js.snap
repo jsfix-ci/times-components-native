@@ -69,7 +69,6 @@ exports[`tile am without breakpoint 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
