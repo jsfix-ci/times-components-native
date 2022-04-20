@@ -135,7 +135,7 @@ const ArticleSummary: React.FC<Props> = ({
   onPress = () => null,
 }) => {
   const {
-    headline: tileHeadline,
+    headline: overrideHeadline,
     article: {
       expirableFlags,
       hasVideo,
@@ -224,18 +224,29 @@ const ArticleSummary: React.FC<Props> = ({
     />
   );
 
-  const renderHeadline = (articleReadState: ArticleReadState) => (
-    <MarkAsRead
-      articleReadState={articleReadState}
-      opacityAnimation={standardOpacity}
-      opacity={articleReadOpacity.standard}
-    >
-      <ArticleSummaryHeadline
-        headline={tileHeadline || shortHeadline || headline || ""}
-        style={headlineStyle}
-      />
-    </MarkAsRead>
-  );
+  const renderHeadline = (articleReadState: ArticleReadState) => {
+    /**
+     * Order of precedence for the tile headline
+     * 1. 'Override' headline (if present)
+     * 2. Article short headline (default)
+     * 3. Article headline (fallback)
+     */
+    const headlineToDisplay =
+      overrideHeadline || shortHeadline || headline || "";
+
+    return (
+      <MarkAsRead
+        articleReadState={articleReadState}
+        opacityAnimation={standardOpacity}
+        opacity={articleReadOpacity.standard}
+      >
+        <ArticleSummaryHeadline
+          headline={headlineToDisplay}
+          style={headlineStyle}
+        />
+      </MarkAsRead>
+    );
+  };
 
   const renderStrapline = (articleReadState: ArticleReadState) =>
     strapline && (
