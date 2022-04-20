@@ -1,6 +1,5 @@
 import memoize from "memoize-one";
 
-import { setupAd } from "./setupAd";
 import { setupDropCap } from "./setupDropCap";
 import { setupInlineContent } from "./setupInlineContent";
 import { setupArticleEndTracking } from "./setupArticleEndTracking";
@@ -44,8 +43,11 @@ const addIndexToImages = (skeletonProps) => {
 
 export default memoize((skeletonProps) => {
   const props = addIndexToImages(skeletonProps);
+  const {
+    data: { content },
+  } = props;
   return setupArticleEndTracking(
     props,
-    setupInlineContent(props, setupDropCap(props, setupAd(props))),
+    setupInlineContent(props, setupDropCap(props, content)),
   );
 });
