@@ -79,6 +79,32 @@ const MemoisedArticle = React.memo((props) => {
    */
   const renderArticleBodyRowChild = render(articleBodyRowRenderers);
 
+  const getKeyFactsIDs = () => {
+    let keyFactsIDsArray = [];
+    const keyFactsFiltered = props.data.content.filter(
+      (item) => item.name === "keyFacts",
+    );
+
+    const keyFactsFilteredChildren =
+      keyFactsFiltered && keyFactsFiltered[0] && keyFactsFiltered[0].children
+        ? keyFactsFiltered[0].children[0]
+        : false;
+
+    if (keyFactsFilteredChildren) {
+      keyFactsFilteredChildren.children.map((item) =>
+        item.children.map((childItem) => {
+          const href = childItem.attributes.href;
+          if (href.startsWith("#")) {
+            keyFactsIDsArray.push(href.substring(1));
+          }
+        }),
+      );
+    }
+    return keyFactsIDsArray;
+  };
+
+  const keyFactIDs = getKeyFactsIDs();
+
   /**
    * Renders a JSX element
    * The element rendered depends on item.name and the possible
@@ -90,11 +116,12 @@ const MemoisedArticle = React.memo((props) => {
         /**
          * On mount or layout change of component add a ref if item has an ID.
          * if it has an ID it's likely because there is a key fact link to this component.
-         * This could be changed to only create
          */
         onLayout={(event) => {
           if (item.attributes && item.attributes.id) {
-            setLayoutRef(item.attributes.id, event.nativeEvent.layout);
+            if (keyFactIDs && keyFactIDs.includes(item.attributes.id)) {
+              setLayoutRef(item.attributes.id, event.nativeEvent.layout);
+            }
           }
         }}
         style={narrowContent ? styles.keylineWrapper : undefined}
