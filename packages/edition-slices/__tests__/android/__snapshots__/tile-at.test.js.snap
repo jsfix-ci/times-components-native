@@ -75,7 +75,6 @@ exports[`tile at medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -184,7 +183,6 @@ exports[`tile at smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}

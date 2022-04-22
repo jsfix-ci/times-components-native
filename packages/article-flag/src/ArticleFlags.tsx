@@ -13,7 +13,6 @@ const DEFAULT_FLAG_COLOURS = {
   UPDATED: colours.functional.articleFlagUpdated,
   EXCLUSIVE: colours.functional.articleFlagExclusive,
   SPONSORED: colours.functional.tertiary,
-  LONGREAD: colours.functional.secondary,
   LIVE: colours.functional.darkRed,
   BREAKING: colours.functional.darkRed,
 };
@@ -62,13 +61,6 @@ const ArticleFlagWithPadding = ({
           title="sponsored"
         />
       )}
-      {type === "LONGREAD" && (
-        <ArticleFlag
-          allowFontScaling={allowFontScaling}
-          color={col}
-          title="longread"
-        />
-      )}
       {type === "LIVE" && <DiamondArticleFlag title={"Live"} />}
       {type === "BREAKING" && <DiamondArticleFlag title={"Breaking"} />}
     </View>
@@ -78,7 +70,6 @@ const ArticleFlagWithPadding = ({
 interface ArticleFlagsType {
   allowFontScaling?: boolean;
   flags?: Array<Flag>;
-  longRead?: boolean;
   color: string;
   style?: ViewStyle;
   withContainer?: boolean;
@@ -87,29 +78,25 @@ interface ArticleFlagsType {
 const ArticleFlags = ({
   allowFontScaling = true,
   flags = [],
-  longRead = false,
   color,
   style = {},
   withContainer = false,
 }: ArticleFlagsType) => {
   const activeFlags = getActiveArticleFlags(flags);
 
-  const allFlags = [
-    ...activeFlags,
-    ...(longRead ? [{ type: "LONGREAD" }] : []),
-  ];
+  if (!activeFlags.length) return null;
 
-  if (!allFlags.length) return null;
-
-  const moreThanOneFlag = allFlags.length > 1;
+  const moreThanOneFlag = activeFlags.length > 1;
 
   const flagsView = (
     <View style={[styles.flags, style]}>
-      {allFlags.map(({ type }: any) => (
+      {activeFlags.map(({ type }: any) => (
         <ArticleFlagWithPadding
           allowFontScaling={allowFontScaling}
           key={type}
-          {...{ moreThanOneFlag, type, color }}
+          moreThanOneFlag={moreThanOneFlag}
+          type={type}
+          color={color}
         />
       ))}
     </View>

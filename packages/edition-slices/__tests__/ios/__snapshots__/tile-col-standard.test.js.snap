@@ -65,7 +65,6 @@ exports[`tile col standard huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -164,7 +163,6 @@ exports[`tile col standard medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -237,7 +235,6 @@ exports[`tile col standard shows an image 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -319,7 +316,6 @@ exports[`tile col standard shows portrait image when in portrait wide (ipad pro)
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -392,7 +388,6 @@ exports[`tile col standard smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -465,7 +460,6 @@ exports[`tile col standard wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}

@@ -75,7 +75,6 @@ exports[`tile al huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -184,7 +183,6 @@ exports[`tile al wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}

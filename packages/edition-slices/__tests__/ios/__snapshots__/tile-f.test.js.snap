@@ -74,7 +74,6 @@ exports[`tile f without breakpoint 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       allowFontScaling={false}

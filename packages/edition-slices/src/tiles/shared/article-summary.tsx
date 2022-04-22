@@ -135,7 +135,7 @@ const ArticleSummary: React.FC<Props> = ({
   onPress = () => null,
 }) => {
   const {
-    headline: tileHeadline,
+    headline: overrideHeadline,
     article: {
       expirableFlags,
       hasVideo,
@@ -209,6 +209,7 @@ const ArticleSummary: React.FC<Props> = ({
       opacityAnimation={standardOpacity}
       opacity={articleReadOpacity.standard}
     >
+<<<<<<< HEAD
       <ArticleFlags
         allowFontScaling={allowFontScaling}
         {...flagColour}
@@ -216,6 +217,9 @@ const ArticleSummary: React.FC<Props> = ({
         flags={expirableFlags}
         longRead={false} // disable all long read flags
       />
+=======
+      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
+>>>>>>> master
     </MarkAsRead>
   );
 
@@ -229,6 +233,7 @@ const ArticleSummary: React.FC<Props> = ({
     />
   );
 
+<<<<<<< HEAD
   const renderHeadline = (articleReadState: ArticleReadState) => (
     <MarkAsRead
       articleReadState={articleReadState}
@@ -242,6 +247,31 @@ const ArticleSummary: React.FC<Props> = ({
       />
     </MarkAsRead>
   );
+=======
+  const renderHeadline = (articleReadState: ArticleReadState) => {
+    /**
+     * Order of precedence for the tile headline
+     * 1. 'Override' headline (if present)
+     * 2. Article short headline (default)
+     * 3. Article headline (fallback)
+     */
+    const headlineToDisplay =
+      overrideHeadline || shortHeadline || headline || "";
+
+    return (
+      <MarkAsRead
+        articleReadState={articleReadState}
+        opacityAnimation={standardOpacity}
+        opacity={articleReadOpacity.standard}
+      >
+        <ArticleSummaryHeadline
+          headline={headlineToDisplay}
+          style={headlineStyle}
+        />
+      </MarkAsRead>
+    );
+  };
+>>>>>>> master
 
   const renderStrapline = (articleReadState: ArticleReadState) =>
     strapline && (

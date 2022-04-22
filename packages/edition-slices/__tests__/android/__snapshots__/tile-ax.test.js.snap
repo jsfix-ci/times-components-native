@@ -68,7 +68,6 @@ exports[`tile ax landscape huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -142,7 +141,6 @@ exports[`tile ax landscape medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -216,7 +214,6 @@ exports[`tile ax landscape smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -290,7 +287,6 @@ exports[`tile ax landscape wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -364,7 +360,6 @@ exports[`tile ax portrait huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -438,7 +433,6 @@ exports[`tile ax portrait medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -512,7 +506,6 @@ exports[`tile ax portrait smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -586,7 +579,6 @@ exports[`tile ax portrait wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

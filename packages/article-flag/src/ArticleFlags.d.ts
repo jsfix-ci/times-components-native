@@ -8,6 +8,5 @@ export type FlagTypes =
   | "UPDATED"
   | "EXCLUSIVE"
   | "SPONSORED"
-  | "LONGREAD"
   | "LIVE"
   | "BREAKING";

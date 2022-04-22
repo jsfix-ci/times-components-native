@@ -74,7 +74,6 @@ exports[`tile bb landscape huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -154,7 +153,6 @@ exports[`tile bb landscape medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -234,7 +232,6 @@ exports[`tile bb landscape smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -314,7 +311,6 @@ exports[`tile bb landscape wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

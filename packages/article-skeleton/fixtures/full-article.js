@@ -1678,6 +1678,18 @@ const defaultTiles = [
     ],
   },
 ];
+
+const defaultExpirableFlags = [
+  {
+    type: "NEW",
+    expiryTime: "2020-03-13T15:00:00.000Z",
+  },
+  {
+    type: "UPDATED",
+    expiryTime: "2019-03-13T13:00:00.000Z",
+  },
+];
+
 const addProp = (obj, key, value) => {
   if (value != null) {
     return {
@@ -1715,6 +1727,7 @@ const makeDefaultConfig = ({
   template = defaultTemplate,
   tiles = defaultTiles,
   url = defaultUrl,
+  expirableFlags = defaultExpirableFlags,
 } = {}) => ({
   bylines,
   commentCount,
@@ -1741,6 +1754,7 @@ const makeDefaultConfig = ({
   tiles,
   topics,
   url,
+  expirableFlags,
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -1765,6 +1779,7 @@ export default ({ withAds = true, ...config } = {}) => {
     core,
   );
 };
+
 export const testFixture = {
   __typename: "Article",
   bylines: [
@@ -1801,6 +1816,16 @@ export const testFixture = {
         },
       ],
       name: "paragraph",
+    },
+  ],
+  expirableFlags: [
+    {
+      type: "NEW",
+      expiryTime: "2020-03-13T15:00:00.000Z",
+    },
+    {
+      type: "UPDATED",
+      expiryTime: "2019-03-13T13:00:00.000Z",
     },
   ],
   descriptionMarkup: defaultDescriptionMarkup,

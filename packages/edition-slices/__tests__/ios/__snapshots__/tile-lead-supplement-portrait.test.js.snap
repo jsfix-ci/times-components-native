@@ -80,7 +80,6 @@ exports[`tile lead supplement portrait medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -166,7 +165,6 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -252,7 +250,6 @@ exports[`tile lead supplement portrait wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

@@ -91,7 +91,6 @@ fragment baseArticleProps on Article {
   headline
   id
   label
-  longRead
   section
   shortHeadline
   url

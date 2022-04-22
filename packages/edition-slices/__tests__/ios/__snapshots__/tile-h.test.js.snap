@@ -63,7 +63,6 @@ exports[`tile h without breakpoint 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       allowFontScaling={false}

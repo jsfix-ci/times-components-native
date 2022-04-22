@@ -79,7 +79,6 @@ exports[`tile ay huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -166,7 +165,6 @@ exports[`tile ay medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -253,7 +251,6 @@ exports[`tile ay smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -340,7 +337,6 @@ exports[`tile ay wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -427,7 +423,6 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>

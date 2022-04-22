@@ -65,7 +65,6 @@ exports[`tile as huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -164,7 +163,6 @@ exports[`tile as medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -263,7 +261,6 @@ exports[`tile as smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}
@@ -362,7 +359,6 @@ exports[`tile as wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           allowFontScaling={false}

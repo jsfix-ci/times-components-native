@@ -21,7 +21,6 @@ const ArticleHeader = ({
   headline,
   isArticleTablet,
   label,
-  longRead,
   standfirst,
   textColour: rgbTextColour,
 }) => {
@@ -65,12 +64,7 @@ const ArticleHeader = ({
             >
               {headline}
             </Text>
-            <ArticleFlags
-              color={textColour}
-              flags={flags}
-              longRead={longRead}
-              withContainer
-            />
+            <ArticleFlags color={textColour} flags={flags} withContainer />
             <Standfirst color={textColour} standfirst={standfirst} />
           </View>
         </View>
