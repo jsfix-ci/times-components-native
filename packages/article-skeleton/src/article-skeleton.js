@@ -85,12 +85,9 @@ const MemoisedArticle = React.memo((props) => {
       (item) => item.name === "keyFacts",
     );
 
-    const keyFactsFilteredChildren =
-      keyFactsFiltered && keyFactsFiltered[0] && keyFactsFiltered[0].children
-        ? keyFactsFiltered[0].children[0]
-        : false;
+    const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children ?? [];
 
-    if (keyFactsFilteredChildren) {
+    if (keyFactsFilteredChildren.length > 0) {
       keyFactsFilteredChildren.children.map((item) =>
         item.children.map((childItem) => {
           const href = childItem.attributes.href;
