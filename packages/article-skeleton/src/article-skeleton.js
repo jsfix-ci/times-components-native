@@ -85,7 +85,7 @@ const MemoisedArticle = React.memo((props) => {
       (item) => item.name === "keyFacts",
     );
 
-    const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children ?? [];
+    const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children ?? false;
 
     if (keyFactsFilteredChildren.length > 0) {
       keyFactsFilteredChildren.children?.map((item) =>
