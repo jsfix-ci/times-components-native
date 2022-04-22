@@ -14,6 +14,7 @@ import ArticleSummaryByline from "./article-summary-byline";
 import ArticleSummaryLabel from "./article-summary-label";
 import Read from "@times-components-native/read";
 function ArticleSummary({
+  allowFontScaling,
   articleReadState,
   bylineProps,
   content,
@@ -43,6 +44,7 @@ function ArticleSummary({
         <ArticleSummaryLabel
           {...labelProps}
           articleReadState={articleReadState}
+          allowFontScaling={allowFontScaling}
         />
       ) : null}
       {bylineOnTop && byline}
@@ -71,6 +73,7 @@ function ArticleSummary({
                   }}
                 />
                 <Text
+                  allowFontScaling={allowFontScaling}
                   style={{ textDecorationLine: "underline" }}
                   onPress={() => onPress({ id: bullet.id })}
                 >
@@ -91,6 +94,7 @@ function ArticleSummary({
 }
 
 ArticleSummary.propTypes = {
+  allowFontScaling: PropTypes.bool,
   articleReadState: PropTypes.shape({
     read: PropTypes.bool,
     animationOpacity: PropTypes.bool,
@@ -123,6 +127,7 @@ ArticleSummary.propTypes = {
 };
 
 ArticleSummary.defaultProps = {
+  allowFontScaling: true,
   articleReadState: {
     read: false,
     animate: false,

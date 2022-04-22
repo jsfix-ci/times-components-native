@@ -18,6 +18,7 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -34,6 +35,7 @@ exports[`tile s huge 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -113,6 +115,7 @@ exports[`tile s huge 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -152,6 +155,7 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -168,6 +172,7 @@ exports[`tile s medium 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -247,6 +252,7 @@ exports[`tile s medium 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -284,6 +290,7 @@ exports[`tile s no byline 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -299,6 +306,7 @@ exports[`tile s no byline 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -396,6 +404,7 @@ exports[`tile s small 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -411,6 +420,7 @@ exports[`tile s small 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -490,6 +500,7 @@ exports[`tile s small 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -529,6 +540,7 @@ exports[`tile s smallTablet 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -545,6 +557,7 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -624,6 +637,7 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -663,6 +677,7 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -679,6 +694,7 @@ exports[`tile s wide 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -758,6 +774,7 @@ exports[`tile s wide 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -798,6 +815,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
   >
     LOGO
     <Text
+      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -814,6 +832,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </View>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -893,6 +912,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </Text>
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={

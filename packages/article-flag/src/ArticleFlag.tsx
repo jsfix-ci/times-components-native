@@ -5,11 +5,13 @@ import styles from "./styles";
 import { colours } from "@times-components-native/styleguide";
 
 interface ArticleFlag {
+  allowFontScaling?: boolean;
   title: string;
   color: string;
 }
 
 const ArticleFlag = ({
+  allowFontScaling = true,
   title,
   color = colours.functional.primary,
 }: ArticleFlag) => (
@@ -22,6 +24,7 @@ const ArticleFlag = ({
     />
     <Text
       accessibilityLabel={`${title} Flag`}
+      allowFontScaling={allowFontScaling}
       style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >

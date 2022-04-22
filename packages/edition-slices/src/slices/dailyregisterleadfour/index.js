@@ -32,7 +32,9 @@ class DailyRegisterLeadFour extends PureComponent {
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text style={styles.title}>Daily Universal Register</Text>
+        <Text allowFontScaling={false} style={styles.title}>
+          Daily Universal Register
+        </Text>
         <TileS tile={briefing} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
         <TileS tile={onThisDay} breakpoint={breakpoint} />
@@ -88,7 +90,9 @@ class DailyRegisterLeadFour extends PureComponent {
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text style={styles.title}>Daily Universal Register</Text>
+        <Text allowFontScaling={false} style={styles.title}>
+          Daily Universal Register
+        </Text>
         <View style={styles.itemsContainer}>
           <View style={styles.column}>
             <TileS tile={briefing} breakpoint={breakpoint} />

@@ -39,6 +39,7 @@ exports[`1. three related articles 1`] = `
                 <View>
                   <View>
                     <ArticleLabel
+                      allowFontScaling={true}
                       childTestID="article-slug"
                       color="#A31D24"
                       title="first label"
@@ -47,6 +48,7 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={true}
                   aria-level="3"
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
@@ -55,6 +57,7 @@ exports[`1. three related articles 1`] = `
                 </Text>
                 <View>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -121,6 +124,7 @@ exports[`1. three related articles 1`] = `
                 <View>
                   <View>
                     <ArticleLabel
+                      allowFontScaling={true}
                       childTestID="article-slug"
                       color="#008347"
                       title="second label"
@@ -129,6 +133,7 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={true}
                   aria-level="3"
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
@@ -137,6 +142,7 @@ exports[`1. three related articles 1`] = `
                 </Text>
                 <View>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -203,6 +209,7 @@ exports[`1. three related articles 1`] = `
                 <View>
                   <View>
                     <ArticleLabel
+                      allowFontScaling={true}
                       childTestID="article-slug"
                       color="#1A1F24"
                       title="third label"
@@ -211,6 +218,7 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={true}
                   aria-level="3"
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
@@ -219,6 +227,7 @@ exports[`1. three related articles 1`] = `
                 </Text>
                 <View>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >

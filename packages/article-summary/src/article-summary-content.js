@@ -5,6 +5,7 @@ import { renderAst as defaultRenderAst } from "./renderAst";
 import styles from "./styles";
 
 const ArticleSummaryContent = ({
+  allowFontScaling,
   ast,
   className,
   style,
@@ -24,6 +25,7 @@ const ArticleSummaryContent = ({
 
   return ast.length > 0 ? (
     <Text
+      allowFontScaling={allowFontScaling}
       testID={"article-summary-content"}
       className={className}
       style={[styles.text, style]}
@@ -35,12 +37,14 @@ const ArticleSummaryContent = ({
 };
 
 ArticleSummaryContent.propTypes = {
+  allowFontScaling: PropTypes.bool,
   ast: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   className: PropTypes.string,
   style: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
 };
 
 ArticleSummaryContent.defaultProps = {
+  allowFontScaling: true,
   ast: [],
   className: "",
   style: null,

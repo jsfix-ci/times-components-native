@@ -6,6 +6,7 @@ import React, { FC } from "react";
 import { MarkAsRead } from "@times-components-native/article-summary/src/MarkAsRead";
 
 export interface ArticleSummaryLabelProps {
+  allowFontScaling?: boolean;
   articleReadState: {
     read: boolean;
     animate: boolean;
@@ -24,6 +25,7 @@ export interface ArticleSummaryLabelProps {
 }
 
 const ArticleSummaryLabel: FC<ArticleSummaryLabelProps> = ({
+  allowFontScaling = true,
   articleReadState,
   hide = false,
   title,
@@ -38,12 +40,18 @@ const ArticleSummaryLabel: FC<ArticleSummaryLabelProps> = ({
     <View style={styles.labelWrapper}>
       {isVideo ? (
         <VideoLabel
+          allowFontScaling={allowFontScaling}
           childTestID="article-slug"
           title={title}
           color={typeof color === "string" ? color : undefined}
         />
       ) : (
-        <ArticleLabel childTestID="article-slug" title={title} color={color} />
+        <ArticleLabel
+          allowFontScaling={allowFontScaling}
+          childTestID="article-slug"
+          title={title}
+          color={color}
+        />
       )}
     </View>
   );

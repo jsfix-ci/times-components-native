@@ -11,6 +11,7 @@ exports[`1. daily universal register 1`] = `
     }
   />
   <Text
+    allowFontScaling={false}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >

@@ -83,6 +83,7 @@ exports[`tile p without breakpoint 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -104,6 +105,7 @@ exports[`tile p without breakpoint 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -123,6 +125,7 @@ exports[`tile p without breakpoint 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       flags={
         Array [
           Object {

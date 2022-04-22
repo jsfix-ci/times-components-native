@@ -11,6 +11,7 @@ exports[`tile m huge 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -32,6 +33,7 @@ exports[`tile m huge 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -51,6 +53,7 @@ exports[`tile m huge 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>
@@ -68,6 +71,7 @@ exports[`tile m medium 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -89,6 +93,7 @@ exports[`tile m medium 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -108,6 +113,7 @@ exports[`tile m medium 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>
@@ -132,6 +138,7 @@ exports[`tile m small 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -153,6 +160,7 @@ exports[`tile m small 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -172,6 +180,7 @@ exports[`tile m small 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>
@@ -189,6 +198,7 @@ exports[`tile m smallTablet 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -210,6 +220,7 @@ exports[`tile m smallTablet 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -229,6 +240,7 @@ exports[`tile m smallTablet 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>
@@ -246,6 +258,7 @@ exports[`tile m wide 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -267,6 +280,7 @@ exports[`tile m wide 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -286,6 +300,7 @@ exports[`tile m wide 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>
@@ -310,6 +325,7 @@ exports[`tile m without breakpoint should be like small 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -331,6 +347,7 @@ exports[`tile m without breakpoint should be like small 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -350,6 +367,7 @@ exports[`tile m without breakpoint should be like small 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       longRead={false}
     />
   </View>

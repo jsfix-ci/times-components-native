@@ -30,6 +30,7 @@ exports[`tile u with headline style 1`] = `
         }
       >
         <ArticleLabel
+          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -38,6 +39,7 @@ exports[`tile u with headline style 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -57,6 +59,7 @@ exports[`tile u with headline style 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -101,6 +104,7 @@ exports[`tile u without breakpoint 1`] = `
         }
       >
         <ArticleLabel
+          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -109,6 +113,7 @@ exports[`tile u without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -127,6 +132,7 @@ exports[`tile u without breakpoint 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
+      allowFontScaling={false}
       flags={
         Array [
           Object {
