@@ -209,17 +209,12 @@ const ArticleSummary: React.FC<Props> = ({
       opacityAnimation={standardOpacity}
       opacity={articleReadOpacity.standard}
     >
-<<<<<<< HEAD
       <ArticleFlags
         allowFontScaling={allowFontScaling}
         {...flagColour}
         style={flagsStyle}
         flags={expirableFlags}
-        longRead={false} // disable all long read flags
       />
-=======
-      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
->>>>>>> master
     </MarkAsRead>
   );
 
@@ -233,21 +228,6 @@ const ArticleSummary: React.FC<Props> = ({
     />
   );
 
-<<<<<<< HEAD
-  const renderHeadline = (articleReadState: ArticleReadState) => (
-    <MarkAsRead
-      articleReadState={articleReadState}
-      opacityAnimation={standardOpacity}
-      opacity={articleReadOpacity.standard}
-    >
-      <ArticleSummaryHeadline
-        allowFontScaling={false}
-        headline={tileHeadline || shortHeadline || headline || ""}
-        style={headlineStyle}
-      />
-    </MarkAsRead>
-  );
-=======
   const renderHeadline = (articleReadState: ArticleReadState) => {
     /**
      * Order of precedence for the tile headline
@@ -265,13 +245,13 @@ const ArticleSummary: React.FC<Props> = ({
         opacity={articleReadOpacity.standard}
       >
         <ArticleSummaryHeadline
+          allowFontScaling={false}
           headline={headlineToDisplay}
           style={headlineStyle}
         />
       </MarkAsRead>
     );
   };
->>>>>>> master
 
   const renderStrapline = (articleReadState: ArticleReadState) =>
     strapline && (
