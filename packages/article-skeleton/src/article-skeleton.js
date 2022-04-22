@@ -88,7 +88,7 @@ const MemoisedArticle = React.memo((props) => {
     const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children ?? [];
 
     if (keyFactsFilteredChildren.length > 0) {
-      keyFactsFilteredChildren.children.map((item) =>
+      keyFactsFilteredChildren.children?.map((item) =>
         item.children.map((childItem) => {
           const href = childItem.attributes.href;
           if (href.startsWith("#")) {
