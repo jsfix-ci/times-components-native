@@ -70,7 +70,6 @@ exports[`tile an without breakpoint 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={

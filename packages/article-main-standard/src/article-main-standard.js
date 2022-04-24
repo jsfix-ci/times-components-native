@@ -38,7 +38,6 @@ class ArticlePage extends Component {
       hasVideo,
       headline,
       label,
-      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -88,7 +87,6 @@ class ArticlePage extends Component {
                 isArticleTablet={isArticleTablet}
                 isLive={isLive}
                 label={label}
-                longRead={longRead}
                 publishedTime={publishedTime}
                 standfirst={standfirst}
               />

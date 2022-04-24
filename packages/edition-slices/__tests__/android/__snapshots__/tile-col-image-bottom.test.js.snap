@@ -59,7 +59,6 @@ exports[`tile column with image bottom huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -146,7 +145,6 @@ exports[`tile column with image bottom medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -213,7 +211,6 @@ exports[`tile column with image bottom shows an image 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -280,7 +277,6 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -357,7 +353,6 @@ exports[`tile column with image bottom smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -424,7 +419,6 @@ exports[`tile column with image bottom wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}

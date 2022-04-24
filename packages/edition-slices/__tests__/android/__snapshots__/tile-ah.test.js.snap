@@ -127,7 +127,6 @@ exports[`tile ah huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -260,7 +259,6 @@ exports[`tile ah medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -375,7 +373,6 @@ exports[`tile ah smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -508,7 +505,6 @@ exports[`tile ah wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -641,7 +637,6 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

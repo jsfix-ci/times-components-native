@@ -1237,7 +1237,6 @@ const defaultLeadAsset = {
   id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
   title: "Chris Reynolds Gordon at one of his party venues in London",
 };
-const defaultLongRead = false;
 const defaultRelatedArticleSlice = {
   __typename: "StandardSlice",
   items: [
@@ -1941,7 +1940,6 @@ const makeDefaultConfig = ({
   keywords = defaultKeywords,
   label = defaultLabel,
   leadAsset = defaultLeadAsset,
-  longRead = defaultLongRead,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
   shortHeadline = defaultShortHeadline,
@@ -1964,7 +1962,6 @@ const makeDefaultConfig = ({
   keywords,
   label,
   leadAsset,
-  longRead,
   relatedArticleSlice,
   section,
   sharingEnabled,
@@ -2098,7 +2095,6 @@ export const testFixture = {
     id: "id-123",
     title: "Some Title",
   },
-  longRead: false,
   relatedArticleSlice: {
     __typename: "StandardSlice",
     items: [

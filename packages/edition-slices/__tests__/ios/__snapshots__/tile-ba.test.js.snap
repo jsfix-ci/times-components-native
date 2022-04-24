@@ -68,7 +68,6 @@ exports[`tile ba portrait medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -142,7 +141,6 @@ exports[`tile ba portrait smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -216,7 +214,6 @@ exports[`tile ba portrait wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

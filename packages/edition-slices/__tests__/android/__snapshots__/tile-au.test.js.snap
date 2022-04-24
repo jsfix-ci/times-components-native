@@ -62,7 +62,6 @@ exports[`tile au wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

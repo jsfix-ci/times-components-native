@@ -15,7 +15,6 @@ const emptyArticle = {
   hasVideo: null,
   label: null,
   leadAsset: null,
-  longRead: false,
   relatedArticleSlice: null,
   standfirst: null,
   topics: null,

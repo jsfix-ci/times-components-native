@@ -92,7 +92,6 @@ exports[`tile bd medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -192,7 +191,6 @@ exports[`tile bd smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -292,7 +290,6 @@ exports[`tile bd wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>
@@ -392,7 +389,6 @@ exports[`tile bd without breakpoint 1`] = `
               },
             ]
           }
-          longRead={false}
         />
       </View>
     </View>

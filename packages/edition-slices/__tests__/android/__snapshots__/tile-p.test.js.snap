@@ -121,7 +121,6 @@ exports[`tile p without breakpoint 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

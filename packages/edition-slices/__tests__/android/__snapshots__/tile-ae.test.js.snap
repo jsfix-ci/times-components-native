@@ -61,7 +61,6 @@ exports[`tile ae huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={5}
@@ -150,7 +149,6 @@ exports[`tile ae medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={5}
@@ -239,7 +237,6 @@ exports[`tile ae smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={5}
@@ -328,7 +325,6 @@ exports[`tile ae wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={5}
@@ -417,7 +413,6 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={5}

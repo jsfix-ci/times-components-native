@@ -86,7 +86,6 @@ exports[`tile lead supplement landscape huge 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -200,7 +199,6 @@ exports[`tile lead supplement landscape medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -314,7 +312,6 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}
@@ -428,7 +425,6 @@ exports[`tile lead supplement landscape wide 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={2}

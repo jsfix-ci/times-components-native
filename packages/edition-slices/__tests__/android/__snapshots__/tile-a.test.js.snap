@@ -50,7 +50,6 @@ exports[`tile a without breakpoint 1`] = `
           },
         ]
       }
-      longRead={false}
       style={
         Object {
           "marginBottom": -5,

@@ -70,7 +70,6 @@ exports[`tile at medium 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={4}
@@ -168,7 +167,6 @@ exports[`tile at smallTablet 1`] = `
               },
             ]
           }
-          longRead={false}
         />
         <Text
           numberOfLines={4}

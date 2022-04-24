@@ -76,7 +76,6 @@ exports[`tile az portrait medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -158,7 +157,6 @@ exports[`tile az portrait smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>
@@ -240,7 +238,6 @@ exports[`tile az portrait wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
   </View>
 </Link>

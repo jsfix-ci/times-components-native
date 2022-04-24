@@ -73,7 +73,6 @@ export default () => {
               { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
               { expiryTime: "2020-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
             ]}
-            longRead
           />,
         );
 
@@ -89,7 +88,6 @@ export default () => {
               { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
               { expiryTime: "2020-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
             ]}
-            longRead
             withContainer
           />,
         );

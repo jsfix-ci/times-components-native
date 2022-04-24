@@ -12,6 +12,7 @@ jest.mock("@times-components-native/article-flag", () => ({
   NewArticleFlag: "NewArticleFlag",
   SponsoredArticleFlag: "SponsoredArticleFlag",
   UpdatedArticleFlag: "UpdatedArticleFlag",
+  getActiveArticleFlags: jest.fn(),
 }));
 jest.mock("@times-components-native/article-image", () => "ArticleImage");
 jest.mock("@times-components-native/article-label", () => "ArticleLabel");
@@ -30,4 +31,6 @@ jest.mock("@times-components-native/related-articles", () => "RelatedArticles");
 jest.mock("@times-components-native/watermark", () => "Watermark");
 jest.mock("@times-components-native/video", () => "Video");
 jest.mock("@times-components-native/video-label", () => "VideoLabel");
+jest.mock("@times-components-native/video-label", () => "VideoLabel");
+
 mockNativeModules();

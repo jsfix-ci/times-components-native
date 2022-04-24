@@ -52,7 +52,6 @@ exports[`tile y landscape huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -129,7 +128,6 @@ exports[`tile y landscape medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -206,7 +204,6 @@ exports[`tile y landscape smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -283,7 +280,6 @@ exports[`tile y landscape wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -360,7 +356,6 @@ exports[`tile y portrait huge 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -437,7 +432,6 @@ exports[`tile y portrait medium 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -514,7 +508,6 @@ exports[`tile y portrait smallTablet 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={
@@ -591,7 +584,6 @@ exports[`tile y portrait wide 1`] = `
           },
         ]
       }
-      longRead={false}
     />
     <Text
       style={

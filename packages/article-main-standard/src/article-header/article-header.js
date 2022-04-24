@@ -20,7 +20,6 @@ const ArticleHeader = ({
   isArticleTablet,
   isLive,
   label,
-  longRead,
   standfirst,
   publishedTime,
 }) => {
@@ -79,21 +78,17 @@ const ArticleHeader = ({
         selectable
         style={[
           styles.articleHeadLineText,
-          !(hasActiveFlags || longRead || standfirst) &&
-            styles.articleHeadlineSpacer,
+          !(hasActiveFlags || standfirst) && styles.articleHeadlineSpacer,
           isArticleTablet && styles.articleHeadLineTextTablet,
         ]}
       >
         {headline}
       </Text>
-      <HeaderStandfirst
-        hasFlags={hasActiveFlags || longRead}
-        standfirst={standfirst}
-      />
-      {(hasActiveFlags || longRead) && (
+      <HeaderStandfirst hasFlags={hasActiveFlags} standfirst={standfirst} />
+      {hasActiveFlags && (
         <View style={styles.flags}>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <ArticleFlags flags={flags} longRead={longRead} />
+            <ArticleFlags flags={flags} />
             {isLive && getLiveTimeStamp()}
           </View>
         </View>
@@ -109,7 +104,6 @@ ArticleHeader.propTypes = {
   isArticleTablet: PropTypes.bool,
   isLive: PropTypes.bool,
   label: PropTypes.string,
-  longRead: PropTypes.bool,
   standfirst: PropTypes.string,
   publishedTime: PropTypes.string,
 };
@@ -120,7 +114,6 @@ ArticleHeader.defaultProps = {
   isArticleTablet: false,
   isLive: false,
   label: null,
-  longRead: false,
   standfirst: null,
   publishedTime: "",
 };
