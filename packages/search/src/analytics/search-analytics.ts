@@ -24,16 +24,15 @@ interface EventProps {
   article_name: string;
   other_details: string;
   article_parent_name: string;
+  search_term?: string;
 }
 
-export const trackSearchResultClickedEvent: ({
-  article_name,
-  other_details,
-}: EventProps) => void = ({
+export const trackSearchResultClickedEvent = ({
   article_name,
   other_details,
   article_parent_name,
-}) => {
+  search_term = "",
+}: EventProps) => {
   const attrs: NavigationEventAttributes = {
     eventTime: new Date(),
     event_navigation_name: "search results article selected",
@@ -42,6 +41,7 @@ export const trackSearchResultClickedEvent: ({
     article_name: article_name,
     other_details,
     article_parent_name,
+    search_term,
   };
 
   const trackingData = createSearchTrackingData({ attrs });

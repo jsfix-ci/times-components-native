@@ -29,20 +29,23 @@ const SearchList: FC<SearchListProps> = ({
   const { searchTerm } = useContext(SearchContext);
 
   const handleFetchMore = () => {
-    // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
+    // Workaround for iOS FlatList bug (https://github.com/facebook/react-native/issues/16067)
     if (hits.length > 0) return fetchMore();
   };
 
-  const onItemPress = (hit: Hit) => (url: string) => {
+  const onItemPress = (hit: Hit) => {
     const batchNumber =
       parseInt(String(hit.__position / DEFAULT_NUMBER_OF_RESULTS_PER_QUERY)) +
       1;
+
     trackSearchResultClickedEvent({
       article_name: hit.headline,
       other_details: `${batchNumber} : ${searchTerm}`,
       article_parent_name: hit.section,
+      search_term: searchTerm,
     });
-    onArticlePress(url);
+
+    onArticlePress(hit.url);
   };
 
   useEffect(() => {
@@ -53,7 +56,7 @@ const SearchList: FC<SearchListProps> = ({
     <FlatList
       data={hits}
       renderItem={({ item }) => (
-        <SearchListItem item={item} onItemPress={onItemPress(item)} />
+        <SearchListItem item={item} onItemPress={onItemPress} />
       )}
       ItemSeparatorComponent={ArticleListItemSeparator}
       contentContainerStyle={styles.contentContainer}

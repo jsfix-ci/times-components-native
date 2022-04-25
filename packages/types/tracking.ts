@@ -20,6 +20,7 @@ export interface NavigationEventAttributes extends TrackingAttributes {
   article_name: string;
   other_details: string;
   article_parent_name: string;
+  search_term: string;
 }
 
 export type TrackingData = {
