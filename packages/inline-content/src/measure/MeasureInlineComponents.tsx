@@ -58,13 +58,6 @@ export const MeasureContent: React.FC<Props> = memo(
                 payload: lines,
               });
             },
-            onCommentGuidelinesPress: () => null,
-            onCommentsPress: () => null,
-            onRelatedArticlePress: () => null,
-            onTooltipPresented: () => null,
-            tooltips: [],
-            onTopicPress: () => null,
-            scrollToRef: () => null,
           }),
         )}
       </View>

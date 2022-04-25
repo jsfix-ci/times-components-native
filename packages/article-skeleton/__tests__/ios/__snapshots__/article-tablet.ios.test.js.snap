@@ -20,69 +20,74 @@ exports[`1. with inline video 1`] = `
           }
         }
       />
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
+              "alignSelf": "center",
+              "flexDirection": "column",
+              "paddingBottom": 25,
+              "width": 660,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "alignSelf": "center",
-                "flexDirection": "column",
-                "paddingBottom": 25,
-                "width": 660,
+          <Video />
+          <View>
+            <View
+              style={
+                Object {
+                  "paddingLeft": 10,
+                  "paddingTop": 10,
+                }
               }
-            }
-          >
-            <Video />
-            <View>
-              <View
+            >
+              <Text
                 style={
                   Object {
-                    "paddingLeft": 10,
-                    "paddingTop": 10,
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 16,
                   }
                 }
               >
-                <Text
-                  style={
-                    Object {
-                      "color": "#696969",
-                      "fontFamily": "GillSansMTStd-Medium",
-                      "fontSize": 13,
-                      "lineHeight": 16,
-                    }
-                  }
-                >
-                  This is video caption
-                </Text>
-              </View>
+                This is video caption
+              </Text>
             </View>
           </View>
         </View>
       </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
           }
-        >
-          <View />
-        </View>
+        }
+      >
+        <View />
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -121,35 +126,40 @@ exports[`2. with ad on mainstandard 1`] = `
           }
         }
       />
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
           }
-        >
-          <Ad />
-        </View>
+        }
+      >
+        <Ad />
       </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
           }
-        >
-          <View />
-        </View>
+        }
+      >
+        <View />
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -188,35 +198,40 @@ exports[`3. with ad on maincomment 1`] = `
           }
         }
       />
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
           }
-        >
-          <Ad />
-        </View>
+        }
+      >
+        <Ad />
       </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
           }
-        >
-          <View />
-        </View>
+        }
+      >
+        <View />
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "visible",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {

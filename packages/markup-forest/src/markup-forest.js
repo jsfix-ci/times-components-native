@@ -2,25 +2,10 @@ export const render = (renderers) => {
   const run = (tree, key = "0", indx = 0) => {
     const { name, attributes, children } = tree;
     const renderer = renderers[name] || renderers.unknown;
-    let renderedChildren;
-
     if (!renderer) return null;
-
-    /**
-     * Recursively render all child elements
-     */
-    if (children) {
-      renderedChildren = children.map((child, index) =>
-        run(child, `${key}.${index}`, index),
-      );
-    }
-
-    /**
-     * Call the render function returned from renderers
-     * Returns either;
-     *  - A JSX element
-     *  - OR the result of renderedChildren if renderers[name] is undefined
-     */
+    const renderedChildren = children.map((child, index) =>
+      run(child, `${key}.${index}`, index),
+    );
     const result = renderer.call(
       renderers,
       key,
@@ -29,7 +14,6 @@ export const render = (renderers) => {
       indx,
       tree,
     );
-
     return result;
   };
   return run;
