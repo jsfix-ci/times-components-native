@@ -85,15 +85,17 @@ const MemoisedArticle = React.memo((props) => {
       (item) => item.name === "keyFacts",
     );
 
-    const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children ?? false;
+    const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children;
 
-    if (keyFactsFilteredChildren.length > 0) {
-      keyFactsFilteredChildren.children?.map((item) =>
-        item.children.map((childItem) => {
-          const href = childItem.attributes.href;
-          if (href.startsWith("#")) {
-            keyFactsIDsArray.push(href.substring(1));
-          }
+    if (keyFactsFilteredChildren?.length > 0) {
+      keyFactsFilteredChildren.map((keyFactsFilteredChild) =>
+        keyFactsFilteredChild.children.map((item) => {
+          item.children.map((childItem) => {
+            const href = childItem.attributes.href;
+            if (href?.startsWith("#")) {
+              keyFactsIDsArray.push(href.substring(1));
+            }
+          });
         }),
       );
     }
