@@ -30,96 +30,32 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
         }
       >
-        <RCTScrollView
+        <View
           style={
             Object {
-              "transform": Array [
-                Object {
-                  "translateX": -1000,
-                },
-              ],
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
           <View>
-            <View
+            <Text
               style={
                 Object {
-                  "width": 53.86375,
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "height": 73.71000000000001,
-                    "overflow": "visible",
-                    "width": 300,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "left": 0,
-                      "position": "absolute",
-                      "top": -2,
-                    }
-                  }
-                >
-                  <Text
-                    style={
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 95.82300000000001,
-                        "lineHeight": 95.82300000000001,
-                      }
-                    }
-                  >
-                    T
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "width": 236.13625,
-                }
-              }
-            >
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 20,
-                      "paddingLeft": 10,
-                      "paddingRight": 10,
-                    }
-                  }
-                >
-                  <View>
-                    <Text
-                      style={
-                        Object {
-                          "color": "#000000",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 18,
-                          "lineHeight": 25.92,
-                        }
-                      }
-                    >
-                      <Text>
-                        his being Black History Month, last week
-                      </Text>
-                    </Text>
-                  </View>
-                </View>
-              </View>
-            </View>
+              <Text>
+                This being Black History Month, last week
+              </Text>
+            </Text>
           </View>
-        </RCTScrollView>
+        </View>
       </View>
       <View
         style={
@@ -967,104 +903,40 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           }
         }
       >
-        <RCTScrollView
+        <View
           style={
             Object {
-              "transform": Array [
-                Object {
-                  "translateX": -1000,
-                },
-              ],
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
           <View>
-            <View
+            <Text
               style={
                 Object {
-                  "width": 63.28,
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
-              <View
+              <Text
                 style={
                   Object {
-                    "height": 87.17625000000001,
-                    "overflow": "visible",
-                    "width": 300,
+                    "fontWeight": "bold",
                   }
                 }
               >
-                <View
-                  style={
-                    Object {
-                      "left": 0,
-                      "position": "absolute",
-                      "top": -2,
-                    }
-                  }
-                >
-                  <Text
-                    style={
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 113.32912500000002,
-                        "lineHeight": 113.32912500000002,
-                      }
-                    }
-                  >
-                    Q
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "width": 226.72,
-                }
-              }
-            >
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 20,
-                      "paddingLeft": 10,
-                      "paddingRight": 10,
-                    }
-                  }
-                >
-                  <View>
-                    <Text
-                      style={
-                        Object {
-                          "color": "#000000",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 18,
-                          "lineHeight": 25.92,
-                        }
-                      }
-                    >
-                      <Text
-                        style={
-                          Object {
-                            "fontWeight": "bold",
-                          }
-                        }
-                      >
-                        <Text>
-                          Some years ago I made the decision to take as a friend a woman who is very opinionated.
-                        </Text>
-                      </Text>
-                    </Text>
-                  </View>
-                </View>
-              </View>
-            </View>
+                <Text>
+                  Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
+                </Text>
+              </Text>
+            </Text>
           </View>
-        </RCTScrollView>
+        </View>
       </View>
       <View
         style={
@@ -2193,96 +2065,32 @@ exports[`15. an article starting with single quote 1`] = `
           }
         }
       >
-        <RCTScrollView
+        <View
           style={
             Object {
-              "transform": Array [
-                Object {
-                  "translateX": -1000,
-                },
-              ],
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
           <View>
-            <View
+            <Text
               style={
                 Object {
-                  "width": 74.215,
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "height": 79.73437500000001,
-                    "overflow": "visible",
-                    "width": 300,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "left": 0,
-                      "position": "absolute",
-                      "top": -2,
-                    }
-                  }
-                >
-                  <Text
-                    style={
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 103.65468750000002,
-                        "lineHeight": 103.65468750000002,
-                      }
-                    }
-                  >
-                    ‘S
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "width": 215.785,
-                }
-              }
-            >
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 20,
-                      "paddingLeft": 10,
-                      "paddingRight": 10,
-                    }
-                  }
-                >
-                  <View>
-                    <Text
-                      style={
-                        Object {
-                          "color": "#000000",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 18,
-                          "lineHeight": 25.92,
-                        }
-                      }
-                    >
-                      <Text>
-                        orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-                      </Text>
-                    </Text>
-                  </View>
-                </View>
-              </View>
-            </View>
+              <Text>
+                ‘Sorting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+              </Text>
+            </Text>
           </View>
-        </RCTScrollView>
+        </View>
       </View>
       <View
         style={
@@ -2352,96 +2160,32 @@ exports[`16. an article starting with double quote 1`] = `
           }
         }
       >
-        <RCTScrollView
+        <View
           style={
             Object {
-              "transform": Array [
-                Object {
-                  "translateX": -1000,
-                },
-              ],
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
           <View>
-            <View
+            <Text
               style={
                 Object {
-                  "width": 90.16187500000001,
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "height": 79.73437500000001,
-                    "overflow": "visible",
-                    "width": 300,
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "left": 0,
-                      "position": "absolute",
-                      "top": -2,
-                    }
-                  }
-                >
-                  <Text
-                    style={
-                      Object {
-                        "color": undefined,
-                        "fontFamily": "TimesModern-Regular",
-                        "fontSize": 103.65468750000002,
-                        "lineHeight": 103.65468750000002,
-                      }
-                    }
-                  >
-                    “S
-                  </Text>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "width": 199.838125,
-                }
-              }
-            >
-              <View>
-                <View
-                  style={
-                    Object {
-                      "marginBottom": 20,
-                      "paddingLeft": 10,
-                      "paddingRight": 10,
-                    }
-                  }
-                >
-                  <View>
-                    <Text
-                      style={
-                        Object {
-                          "color": "#000000",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 18,
-                          "lineHeight": 25.92,
-                        }
-                      }
-                    >
-                      <Text>
-                        orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-                      </Text>
-                    </Text>
-                  </View>
-                </View>
-              </View>
-            </View>
+              <Text>
+                “Sorting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+              </Text>
+            </Text>
           </View>
-        </RCTScrollView>
+        </View>
       </View>
       <View
         style={

@@ -64,6 +64,10 @@ export default () => {
     scale: 1,
   };
 
+  jest.mock("react-native/Libraries/Utilities/Dimensions", () => ({
+    get: () => ({ fontScale: 1 }),
+  }));
+
   describe("setupDropCap", () => {
     it("should return content untouched if drop caps are disabled", () => {
       expect(
@@ -286,6 +290,21 @@ export default () => {
       expect(contentWithDropCap[0].attributes.dropCapFont).toEqual(
         "styleMagazine",
       );
+    });
+
+    it("should return content untouched if font scale doesn not equal 1", () => {
+      jest.mock("react-native/Libraries/Utilities/Dimensions", () => ({
+        get: () => ({ fontScale: 2 }),
+      }));
+      expect(
+        setupDropCap(
+          {
+            ...skeletonProps,
+            data: { ...skeletonProps.data, template: "mainstandard" },
+          },
+          content,
+        ),
+      ).toEqual(content);
     });
   });
 };

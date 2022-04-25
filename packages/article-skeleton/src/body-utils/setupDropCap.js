@@ -1,4 +1,4 @@
-import { Platform } from "react-native";
+import { Dimensions, Platform } from "react-native";
 import styleguide, {
   colours,
   fonts,
@@ -75,8 +75,9 @@ const extractDropCapText = (node) => {
 
 export const setupDropCap = (skeletonProps, content) => {
   const { data, dropCapFont = "dropCap", scale } = skeletonProps;
-
-  if (isDropcapsDisabled(data)) return content;
+  // Note: font scaling causes text cropping - return if applied
+  const fontIsScaled = Dimensions.get("window").fontScale !== 1;
+  if (isDropcapsDisabled(data) || fontIsScaled) return content;
 
   const firstParagraph = content[0];
 
