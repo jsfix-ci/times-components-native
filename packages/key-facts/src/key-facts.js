@@ -7,12 +7,23 @@ import KeyFactsWrapper from "./key-facts-wrapper";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
 import styles from "./styles";
 
-const KeyFacts = ({ ast, onLinkPress }) => {
+const KeyFacts = ({ ast, onLinkPress, scrollToRef }) => {
   const {
     children,
     attributes: { title },
   } = ast;
   const { children: keyFactsItems } = children[0];
+
+  /**
+   * Triggers scrollTo ref in article-skeleton if the
+   * key fact link has a #id as a ref
+   */
+  const handlePress = (e, other) => {
+    if (other.url.startsWith("#")) {
+      scrollToRef(other.url);
+    }
+    onLinkPress(e, other);
+  };
 
   return (
     <Context.Consumer>
@@ -32,7 +43,7 @@ const KeyFacts = ({ ast, onLinkPress }) => {
                     })}
                     item={item}
                     listIndex={index}
-                    onLinkPress={onLinkPress}
+                    onLinkPress={handlePress}
                   />
                 </View>
               ))}

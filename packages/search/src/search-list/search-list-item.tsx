@@ -19,17 +19,27 @@ const { colours } = styleguide();
 
 export interface SearchListItemProps {
   item: Hit;
-  onItemPress: (url: string) => void;
+  onItemPress: (item: Hit) => void;
 }
 
 const SearchListItem: FC<SearchListItemProps> = ({ item, onItemPress }) => {
-  const { headline, shortHeadline, url } = item;
+  const {
+    headline,
+    shortHeadline,
+    section,
+    label,
+    hasVideo,
+    publishedTime,
+    publicationName,
+    byline,
+  } = item;
+
   return (
     <ResponsiveContext.Consumer>
       {({ isTablet }) => (
         <View style={searchListStyles.container} testID="search-results-item">
           <View style={searchListStyles.subContainer}>
-            <Link onPress={() => onItemPress(url)}>
+            <Link onPress={() => onItemPress(item)}>
               <View
                 style={
                   isTablet
@@ -39,12 +49,12 @@ const SearchListItem: FC<SearchListItemProps> = ({ item, onItemPress }) => {
               >
                 <ArticleSummaryLabel
                   articleReadState={{ animate: false, read: false }}
-                  title={item.label}
-                  isVideo={item.hasVideo}
+                  title={label}
+                  isVideo={hasVideo}
                   color={
-                    (item.section &&
+                    (section &&
                       colours.section[
-                        item.section as keyof typeof colours.section
+                        section as keyof typeof colours.section
                       ]) ||
                     colours.section.default
                   }
@@ -52,11 +62,11 @@ const SearchListItem: FC<SearchListItemProps> = ({ item, onItemPress }) => {
                 <ArticleSummaryHeadline
                   headline={getHeadline(headline, shortHeadline)}
                 />
-                <SearchListItemByLine byline={item.byline} />
+                <SearchListItemByLine byline={byline} />
                 <SearchListItemSnippet attribute="content" hit={item} />
                 <FormattedDate
-                  publishedTime={item.publishedTime}
-                  publicationName={item.publicationName}
+                  publishedTime={publishedTime}
+                  publicationName={publicationName}
                 />
               </View>
             </Link>

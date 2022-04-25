@@ -20,7 +20,7 @@ jest.mock("react-native", () => {
 });
 
 export default () => {
-  describe.only("search analytics", () => {
+  describe("search analytics", () => {
     beforeAll(() => {
       jest.useFakeTimers();
       advanceDateTo(Date.now());
@@ -111,7 +111,7 @@ export default () => {
       });
     });
 
-    it.only("should track search results item clicked correctly", () => {
+    it("should track search results item clicked correctly", () => {
       // When
       trackSearchResultClickedEvent({
         article_name: "article_name",
@@ -134,6 +134,7 @@ export default () => {
           article_name: "article_name",
           article_parent_name: "article_parent_name",
           other_details: "other_details",
+          search_term: "",
         },
       });
     });

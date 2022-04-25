@@ -27,6 +27,7 @@ import InlineNewsletterPuff from "./inline-newsletter-puff";
 import { useResponsiveContext } from "@times-components-native/responsive";
 import ArticleUpdateHeader from "@times-components-native/article-update-header";
 import get from "lodash.get";
+import ArticleExtras from "@times-components-native/article-extras";
 
 const { track } = NativeModules.ReactAnalytics;
 
@@ -43,6 +44,13 @@ const ArticleBodyRow = ({
   analyticsStream,
   narrowContent,
   onParagraphTextLayout,
+  onCommentGuidelinesPress,
+  onCommentsPress,
+  onRelatedArticlePress,
+  onTooltipPresented,
+  tooltips,
+  onTopicPress,
+  scrollToRef,
 }) => {
   const { narrowArticleBreakpoint } = useResponsiveContext();
   const styles = styleFactory({
@@ -315,13 +323,37 @@ const ArticleBodyRow = ({
         </View>
       );
     },
+    footer() {
+      const { id, url, template } = data;
+
+      return (
+        <ArticleExtras
+          analyticsStream={analyticsStream}
+          articleId={id}
+          articleUrl={url}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPress}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTooltipPresented={onTooltipPresented}
+          onTopicPress={onTopicPress}
+          narrowContent={narrowContent}
+          template={template}
+          tooltips={tooltips}
+        />
+      );
+    },
     break() {
       return <Text>{`\n`}</Text>;
     },
     keyFacts(key, attributes, children, index, tree) {
       return (
         <View style={isArticleTablet && styles.containerTablet}>
-          <KeyFacts ast={tree} key={key} onLinkPress={onLinkPress} />
+          <KeyFacts
+            ast={tree}
+            key={key}
+            onLinkPress={onLinkPress}
+            scrollToRef={scrollToRef}
+          />
         </View>
       );
     },
