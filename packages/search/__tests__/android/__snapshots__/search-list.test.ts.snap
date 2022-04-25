@@ -39,7 +39,7 @@ exports[`Search Bar List FormattedDate should render correctly 1`] = `
 </View>
 `;
 
-exports[`SearchListItemByLine should render correctly 1`] = `
+exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
 <View
   style={
     Object {
@@ -79,7 +79,7 @@ exports[`SearchListItemByLine should render correctly 1`] = `
 </View>
 `;
 
-exports[`SearchListItemSnippet should render correctly 1`] = `
+exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
 <Text>
   <Text
     style={
