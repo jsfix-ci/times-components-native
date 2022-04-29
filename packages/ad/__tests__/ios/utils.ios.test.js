@@ -7,6 +7,7 @@ import sharedAdInitUtils from "../utils/ad-init-utils";
 import sharedGenerateConfig from "../utils/generate-config.shared";
 import sharedPrebidConfig from "../utils/prebid-config";
 import logger from "../utils/logger";
+import domContextUtils from "../utils/dom-context-utils";
 
 sharedAdInit();
 sharedAdInitADmantx();
@@ -17,3 +18,4 @@ sharedAdInitUtils();
 sharedGenerateConfig();
 sharedPrebidConfig();
 logger();
+domContextUtils();
