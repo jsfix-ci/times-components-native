@@ -226,15 +226,6 @@ workflows:
                 requires:
                     - publish_android_prod
                     - publish_ios_prod
-
-            - hold_release_beta:
-                context: nuk-tnl-app-universal
-                filters:
-                    branches:
-                        ignore:
-                            - master
-                requires:
-                    - setup
             - publish_android_beta:
                 context: nuk-tnl-app-universal
                 requires:
