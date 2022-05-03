@@ -228,7 +228,6 @@ workflows:
                     - publish_ios_prod
 
             - hold_release_beta:
-                type: approval
                 context: nuk-tnl-app-universal
                 filters:
                     branches:
