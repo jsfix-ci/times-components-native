@@ -213,6 +213,14 @@ workflows:
                     - run_noplatform_tests
                     - run_android_tests
                     - run_ios_tests
+            - release_beta:
+                context: nuk-tnl-app-universal
+                requires: - setup
+                filters:
+                    branches:
+                        only:
+                            - release/*beta*
+                - publish_ios_beta
             - publish_android_prod:
                 context: nuk-tnl-app-universal
                 requires:
@@ -229,9 +237,8 @@ workflows:
             - publish_android_beta:
                 context: nuk-tnl-app-universal
                 requires:
-                    - setup
-
+                    - hold_release_beta
             - publish_ios_beta:
                 context: nuk-tnl-app-universal
                 requires:
-                    - setup
+                    - hold_release_beta
