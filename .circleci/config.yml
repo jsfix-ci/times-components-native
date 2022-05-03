@@ -228,9 +228,5 @@ workflows:
                     - publish_ios_prod
             - publish_android_beta:
                 context: nuk-tnl-app-universal
-                requires:
-                    - hold_release_beta
             - publish_ios_beta:
                 context: nuk-tnl-app-universal
-                requires:
-                    - hold_release_beta
