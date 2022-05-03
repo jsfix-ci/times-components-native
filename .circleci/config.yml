@@ -215,7 +215,8 @@ workflows:
                     - run_ios_tests
             - release_beta:
                 context: nuk-tnl-app-universal
-                requires: - setup
+                requires:
+                    - setup
                 filters:
                     branches:
                         only:
