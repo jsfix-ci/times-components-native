@@ -221,7 +221,6 @@ workflows:
                     branches:
                         only:
                             - release/*beta*
-                - publish_ios_beta
             - publish_android_prod:
                 context: nuk-tnl-app-universal
                 requires:
