@@ -156,16 +156,10 @@ jobs:
                   command: yarn test:ios
                   working_directory: ~/project/
 
-    publish_android_prod:
+    publish_android_artifacts:
         <<: *PUBLISH_ANDROID
 
-    publish_android_beta:
-        <<: *PUBLISH_ANDROID
-
-    publish_ios_prod:
-        <<: *PUBLISH_IOS
-
-    publish_ios_beta:
+    publish_ios_artifacts:
         <<: *PUBLISH_IOS
 
     publish_notes:
@@ -200,7 +194,7 @@ workflows:
                 requires:
                     - setup
 
-            - hold_release_prod:
+            - hold_release:
                 type: approval
                 context: nuk-tnl-app-universal
                 filters:
@@ -212,35 +206,19 @@ workflows:
                     - run_typecheck
                     - run_noplatform_tests
                     - run_android_tests
-                    - run_ios_tests                    
-            - publish_android_prod:
+                    - run_ios_tests
+
+            # Artifact publishing jobs - beta/prod disinctions will be determined in publish-android.sh and publish-ios.sh
+            - publish_android_artifacts:
                 context: nuk-tnl-app-universal
                 requires:
-                    - hold_release_prod
-            - publish_ios_prod:
+                    - hold_release
+            - publish_ios_artifacts:
                 context: nuk-tnl-app-universal
                 requires:
-                    - hold_release_prod
+                    - hold_release
             - publish_notes:
                 context: nuk-tnl-app-universal
                 requires:
-                    - publish_android_prod
-                    - publish_ios_prod
-
-            - hold_release_beta:
-                type: approval
-                context: nuk-tnl-app-universal
-                filters:
-                    branches:
-                        only:
-                            - /^release.*/
-                requires:
-                    - setup
-            - publish_android_beta:
-                context: nuk-tnl-app-universal
-                requires:
-                    - hold_release_beta
-            - publish_ios_beta:
-                context: nuk-tnl-app-universal
-                requires:
-                    - hold_release_beta
+                    - publish_android_artifacts
+                    - publish_ios_artifacts
