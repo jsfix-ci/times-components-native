@@ -189,7 +189,7 @@ workflows:
                     - setup
             - run_typecheck:
                 requires:
-                  - setup
+                    - setup
             - run_noplatform_tests:
                 requires:
                     - setup
@@ -206,13 +206,13 @@ workflows:
                 filters:
                     branches:
                         only:
-                            - master
+                            - /^release.*/
                 requires:
                     - run_lint
                     - run_typecheck
                     - run_noplatform_tests
                     - run_android_tests
-                    - run_ios_tests
+                    - run_ios_tests                    
             - publish_android_prod:
                 context: nuk-tnl-app-universal
                 requires:
@@ -232,8 +232,8 @@ workflows:
                 context: nuk-tnl-app-universal
                 filters:
                     branches:
-                        ignore:
-                            - master
+                        only:
+                            - /^release.*/
                 requires:
                     - setup
             - publish_android_beta:

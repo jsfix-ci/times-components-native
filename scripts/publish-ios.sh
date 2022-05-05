@@ -2,27 +2,28 @@
 set -e
 
 REPO_SLUG="newsuk/times-components-ios-artifacts"
-PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+PACKAGE_VERSION=$(cat ../package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
 TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 2; }
 
 setupEnv () {
-  if [ "$CIRCLE_BRANCH" == "master" ] && [[ $PACKAGE_VERSION != *"beta"* ]]
-  then
-    echo "👉 Setting up enviroment for a production release."
-    ARTIFACTS_REPO_SLUG="$REPO_SLUG"
-    ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
+  if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
+    then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH" 
+    exit 0
+  fi
 
-    RELEASE_DEST="production"
-  elif [[ $PACKAGE_VERSION == *"beta"* ]]
-  then
+  if [[ $PACKAGE_VERSION == *"beta"* ]]
+    then
     echo "👉 Setting up enviroment for a beta release."
     ARTIFACTS_REPO_SLUG="$REPO_SLUG-beta"
     ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
 
     RELEASE_DEST="beta"
   else
-    echo "✋ It looks like you are not on 'master' branch or your version number does't include 'beta'. Will not publish."
-    exit 0
+    echo "👉 Setting up enviroment for a production release."
+    ARTIFACTS_REPO_SLUG="$REPO_SLUG"
+    ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
+
+    RELEASE_DEST="production"
   fi
 }
 
@@ -35,7 +36,7 @@ setup () {
 package () {
     echo "📦 Packaging the repository"
 
-    git clone --quiet --branch master $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
+    git clone --quiet --branch $CIRCLE_BRANCH $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
     rm -rf $TMP_ASSET_DIR/assets
     cp -r lib/ios/assets $TMP_ASSET_DIR
     cp lib/ios/TimesComponents.podspec $TMP_ASSET_DIR
