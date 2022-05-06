@@ -11,7 +11,8 @@ class LeadTwoNoPicAndTwo extends PureComponent {
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
     this.bullets = Object.keys(this.props.slice)
-      .filter((key) => key.indexOf("bullet") !== -1)
+      .filter((key) => key.toLowerCase().indexOf("bullet") !== -1)
+      .filter((key) => this.props.slice[key] !== null)
       .map((bulletKey) => this.props.slice[bulletKey].article);
   }
 

@@ -8,6 +8,7 @@ import {
 } from "@times-components-native/fixture-generator/src/types";
 import { SectionContext } from "@times-components-native/context";
 import { ResponsiveContext } from "@times-components-native/responsive";
+import { OnArticlePress } from "@times-components-native/types";
 
 interface Props {
   bylines?: BylineInput[];
@@ -32,7 +33,7 @@ interface Props {
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
   bullets?: string[];
-  onPress?: () => null;
+  onPress?: OnArticlePress | (() => null);
 }
 
 const TileSummary: React.FC<Props> = ({
