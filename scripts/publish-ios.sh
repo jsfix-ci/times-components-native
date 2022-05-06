@@ -36,7 +36,7 @@ setup () {
 package () {
     echo "📦 Packaging the repository"
 
-    git clone --quiet --branch $CIRCLE_BRANCH $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
+    git clone --quiet --branch master $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
     rm -rf $TMP_ASSET_DIR/assets
     cp -r lib/ios/assets $TMP_ASSET_DIR
     cp lib/ios/TimesComponents.podspec $TMP_ASSET_DIR
