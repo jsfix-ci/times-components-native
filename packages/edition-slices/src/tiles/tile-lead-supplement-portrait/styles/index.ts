@@ -18,7 +18,7 @@ const horizontalPaddingResolver: Record<string, number> = {
   [editionBreakpoints.wide]: spacing(28),
 };
 
-export default (breakpoint: string, summaryHeight: number) =>
+export default (breakpoint: string) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -42,7 +42,6 @@ export default (breakpoint: string, summaryHeight: number) =>
       justifyContent: "center",
       backgroundColor: colours.functional.border,
       paddingHorizontal: horizontalPaddingResolver[breakpoint],
-      paddingVertical: spacing(4),
-      height: summaryHeight,
+      paddingVertical: spacing(12),
     },
   });

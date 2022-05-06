@@ -1,7 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React, { FC } from "react";
 import { editionBreakpoints } from "@times-components-native/styleguide";
-import { useResponsiveContext } from "@times-components-native/responsive";
 import { OnArticlePress } from "@times-components-native/types";
 import { Tile } from "@times-components-native/fixture-generator/src/types";
 
@@ -27,18 +26,13 @@ const TileLeadSupplementPortrait: FC<Props> = ({
 }) => {
   const crop = getTileImage(tile, "crop54");
 
-  const {
-    sectionContentWidth,
-    sectionContentHeightTablet,
-  } = useResponsiveContext();
-
   if (!crop) return null;
 
-  const imageAspectRatio = 5 / 4;
-  const summaryHeight =
-    sectionContentHeightTablet - sectionContentWidth / imageAspectRatio;
+  const imageAspectRatio = 1.25;
 
-  const styles = stylesFactory(breakpoint, summaryHeight);
+  const styles = stylesFactory(breakpoint);
+
+  console.log("styles: ", styles);
 
   const {
     article: { hasVideo },
