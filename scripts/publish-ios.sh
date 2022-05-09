@@ -2,7 +2,7 @@
 set -e
 
 REPO_SLUG="newsuk/times-components-ios-artifacts"
-PACKAGE_VERSION=$(cat ../package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
 TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 2; }
 
 setupEnv () {
@@ -36,7 +36,7 @@ setup () {
 package () {
     echo "📦 Packaging the repository"
 
-    git clone --quiet --branch $CIRCLE_BRANCH $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
+    git clone --quiet --branch master $ARTIFACTS_REPO_SSH $TMP_ASSET_DIR
     rm -rf $TMP_ASSET_DIR/assets
     cp -r lib/ios/assets $TMP_ASSET_DIR
     cp lib/ios/TimesComponents.podspec $TMP_ASSET_DIR
