@@ -28,6 +28,7 @@ const TileA = ({ onPress, tile, bullets }) => {
         tile={tile}
         flagsStyle={styles.flags}
         bullets={bullets}
+        onPress={onPress}
       />
       <TileImage
         aspectRatio={16 / 9}
