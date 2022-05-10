@@ -12,5 +12,9 @@ jest.mock("react-native", () => {
     onPuzzlePress: () => null,
     onSectionLoaded: () => null,
   };
+  rn.NativeModules.ArticleEvents = {
+    addListener: jest.fn(),
+    removeListeners: jest.fn(),
+  };
   return rn;
 });

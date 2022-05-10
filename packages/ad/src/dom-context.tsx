@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { View, Platform, Dimensions } from "react-native";
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Platform,
+  Dimensions,
+  NativeModules,
+  NativeEventEmitter,
+} from "react-native";
 import {
   WebView,
   WebViewMessageEvent,
@@ -29,6 +35,9 @@ interface DomContextType {
   height?: number;
 }
 
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
 const ViewportAwareView = Viewport.Aware(View);
 
 const DOMContext = ({
@@ -48,6 +57,15 @@ const DOMContext = ({
 
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
+
+  useEffect(() => {
+    const updateReadArticlesEventsListener = articleEventEmitter.addListener(
+      "onArticleDisappear",
+      outViewport,
+    );
+
+    return updateReadArticlesEventsListener.remove;
+  }, []);
 
   const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
     if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {

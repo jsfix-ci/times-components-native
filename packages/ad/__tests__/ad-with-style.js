@@ -11,6 +11,7 @@ import {
 } from "@times-components-native/jest-serializer";
 import { iterator } from "@times-components-native/test-utils";
 import adInit from "../src/utils/ad-init";
+import "./mocks";
 import adConfig from "../fixtures/article-ad-config.json";
 import { AdBase } from "../src/ad";
 

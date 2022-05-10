@@ -1,14 +1,9 @@
+import "../mocks";
 import { SponsoredAd } from "@times-components-native/ad";
 import TestRenderer from "react-test-renderer";
 import React from "react";
 import WebView from "react-native-webview";
 import { Linking } from "react-native";
-
-jest.mock("react-native", () => {
-  const rn = jest.requireActual("react-native");
-  rn.NativeModules.Linking = { openURL: jest.fn() };
-  return rn;
-});
 
 describe("SponsoredAd", () => {
   beforeEach(() => {
