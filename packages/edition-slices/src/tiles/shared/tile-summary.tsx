@@ -59,7 +59,7 @@ const TileSummary: React.FC<Props> = ({
   starStyle,
   hideLabel = false,
   bullets = [],
-  onPress = () => null,
+  onPress,
 }) => {
   return (
     <ResponsiveContext.Consumer>
