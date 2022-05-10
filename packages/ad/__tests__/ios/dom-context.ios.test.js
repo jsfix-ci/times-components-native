@@ -1,4 +1,5 @@
 import React from "react";
+import "../mocks";
 import DOMContextNative from "../../src/dom-context";
 import TestRenderer, { act } from "react-test-renderer";
 import * as domContextUtils from "../../src/utils/dom-context-utils";
