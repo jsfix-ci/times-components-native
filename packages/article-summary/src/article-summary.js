@@ -26,7 +26,7 @@ function ArticleSummary({
   saveStar,
   center = false,
   bullets = [],
-  onPress = () => null,
+  onPress,
 }) {
   const { bylineOnTop = false } = bylineProps || {};
 
@@ -120,6 +120,7 @@ ArticleSummary.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
+  onPress: PropTypes.func,
 };
 
 ArticleSummary.defaultProps = {
@@ -138,6 +139,7 @@ ArticleSummary.defaultProps = {
   saveStar: null,
   strapline: null,
   style: null,
+  onPress: () => null,
 };
 
 export {

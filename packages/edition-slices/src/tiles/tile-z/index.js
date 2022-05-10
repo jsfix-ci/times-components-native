@@ -15,7 +15,12 @@ import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
-const TileZ = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
+const TileZ = ({
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.wide,
+  bullets = [],
+}) => {
   const crop = getTileImage(tile, "crop32");
   const styles = styleFactory(breakpoint);
 
@@ -39,6 +44,7 @@ const TileZ = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
               tile={tile}
               whiteSpaceHeight={whiteSpaceHeight}
               withStar={false}
+              bullets={bullets}
             />
           )}
         />
@@ -63,6 +69,7 @@ TileZ.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string,
+  bullets: PropTypes.array,
 };
 
 export default withTileTracking(TileZ);
