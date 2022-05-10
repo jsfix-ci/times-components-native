@@ -6,11 +6,13 @@ export default () => {
     rn.NativeModules.ReactConfig = { timezone: "Europe/London" };
     rn.NativeModules.ArticleEvents = {
       addListener: jest.fn(),
+      removeListeners: jest.fn(),
     };
     rn.NativeModules.SectionEvents = {
       addListener: jest.fn(),
     };
     rn.NativeModules.ReactAnalytics = { track: jest.fn() };
+    rn.NativeModules.Linking = { openURL: jest.fn() };
     return rn;
   });
 };
