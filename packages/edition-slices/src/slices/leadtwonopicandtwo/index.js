@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { LeadTwoNoPicAndTwoSlice } from "@times-components-native/slice-layout";
-import { SectionContext } from "@times-components-native/context";
 import { TileB, TileD, TileE, TileF, TileX, TileY, TileAL } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
@@ -23,37 +22,30 @@ class LeadTwoNoPicAndTwo extends PureComponent {
     } = this.props;
 
     return (
-      <SectionContext.Consumer>
-        {({ hasDynamicBullets }) => {
-          const bullets = hasDynamicBullets ? this.bullets : [];
-          return (
-            <LeadTwoNoPicAndTwoSlice
-              breakpoint={breakpoint}
-              orientation={orientation}
-              lead1={
-                <TileF
-                  onPress={onPress}
-                  tile={lead1}
-                  tileName="lead1"
-                  bullets={bullets}
-                />
-              }
-              lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
-              support1={
-                <TileD onPress={onPress} tile={support1} tileName="support1" />
-              }
-              support2={
-                <TileE
-                  onPress={onPress}
-                  tile={support2}
-                  tileName="support2"
-                  orientation={orientation}
-                />
-              }
-            />
-          );
-        }}
-      </SectionContext.Consumer>
+      <LeadTwoNoPicAndTwoSlice
+        breakpoint={breakpoint}
+        orientation={orientation}
+        lead1={
+          <TileF
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+            bullets={this.bullets}
+          />
+        }
+        lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
+        support1={
+          <TileD onPress={onPress} tile={support1} tileName="support1" />
+        }
+        support2={
+          <TileE
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+            orientation={orientation}
+          />
+        }
+      />
     );
   }
 
@@ -67,53 +59,46 @@ class LeadTwoNoPicAndTwo extends PureComponent {
     const Support1 = orientation === "landscape" ? TileAL : TileD;
 
     return (
-      <SectionContext.Consumer>
-        {({ hasDynamicBullets }) => {
-          const bullets = hasDynamicBullets ? this.bullets : [];
-          return (
-            <LeadTwoNoPicAndTwoSlice
-              orientation={orientation}
-              breakpoint={breakpoint}
-              lead1={
-                <TileX
-                  breakpoint={breakpoint}
-                  onPress={onPress}
-                  tile={lead1}
-                  tileName="lead1"
-                  orientation={orientation}
-                  bullets={bullets}
-                />
-              }
-              lead2={
-                <TileY
-                  breakpoint={breakpoint}
-                  onPress={onPress}
-                  tile={lead2}
-                  tileName="lead2"
-                  orientation={orientation}
-                />
-              }
-              support1={
-                <Support1
-                  breakpoint={breakpoint}
-                  onPress={onPress}
-                  tile={support1}
-                  tileName="support1"
-                />
-              }
-              support2={
-                <TileE
-                  breakpoint={breakpoint}
-                  onPress={onPress}
-                  tile={support2}
-                  tileName="support2"
-                  orientation={orientation}
-                />
-              }
-            />
-          );
-        }}
-      </SectionContext.Consumer>
+      <LeadTwoNoPicAndTwoSlice
+        orientation={orientation}
+        breakpoint={breakpoint}
+        lead1={
+          <TileX
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+            orientation={orientation}
+            bullets={this.bullets}
+          />
+        }
+        lead2={
+          <TileY
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead2}
+            tileName="lead2"
+            orientation={orientation}
+          />
+        }
+        support1={
+          <Support1
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
+        }
+        support2={
+          <TileE
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+            orientation={orientation}
+          />
+        }
+      />
     );
   }
 
