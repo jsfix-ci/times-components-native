@@ -6,7 +6,7 @@ import {
   WebViewNavigation,
 } from "react-native-webview";
 import { Viewport } from "@skele/components";
-import styles, { calculateViewportVisible } from "./styles/index";
+import styles from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
 import { AdInitAsString } from "./utils/ad-init";
 import {
@@ -95,44 +95,8 @@ const DOMContext = ({
     }
   };
 
-  const outViewport = () => {
-    // Logic for pausing OutStream ads which are visible on ios only
-    if (webViewRef.current && Platform.OS === "ios") {
-      const { networkId, adUnit, section } = data;
-
-      // ID for iframe is configured by Google Ad Manager(GAM)
-      webViewRef.current.injectJavaScript(`
-        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
-
-        if (frame) {
-          frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
-        }
-
-        true;
-      `);
-    }
-  };
-
   const loadAd = () => {
     setLoaded(true);
-  };
-
-  const inViewport = () => {
-    // Logic for playing OutStream ads which are visible on ios only
-    if (webViewRef.current && Platform.OS === "ios") {
-      const { networkId, adUnit, section } = data;
-
-      // ID for iframe is configured by Google Ad Manager(GAM)
-      webViewRef.current.injectJavaScript(`
-        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
-
-        if (frame) {
-          frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
-        }
-
-        true;
-      `);
-    }
   };
 
   // NOTE: if this generated code is not working, and you don't know why
@@ -213,13 +177,6 @@ const DOMContext = ({
           source={{ baseUrl, html }}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
-        />
-      )}
-      {height !== 0 && (
-        <ViewportAwareView
-          onViewportEnter={inViewport}
-          onViewportLeave={outViewport}
-          style={calculateViewportVisible(height)}
         />
       )}
     </ViewportAwareView>
