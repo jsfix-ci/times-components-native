@@ -14,6 +14,7 @@ jest.mock("@times-components-native/icons", () => ({
   IconStar: "IconStar",
   IconVideo: "IconVideo",
 }));
+
 jest.mock("react-native", () => {
   const rn = jest.requireActual("react-native");
   rn.NativeModules.SectionEvents = {
@@ -24,6 +25,7 @@ jest.mock("react-native", () => {
 
 import { ResponsiveContext } from "@times-components-native/responsive";
 import { calculateResponsiveContext } from "@times-components-native/responsive/src/calculateResponsiveContext";
+
 jest.mock("@times-components-native/image", () => ({
   __esModule: true,
   default: "TimesImage",
