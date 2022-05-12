@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components-native/slice-layout";
+import { SectionContext } from "@times-components-native/context";
 import { TileA, TileB, TileZ, TileColStandard } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
@@ -22,18 +23,27 @@ class LeadOneAndOne extends PureComponent {
       slice: { lead, support },
     } = this.props;
     return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        lead={
-          <TileA
-            onPress={onPress}
-            tile={lead}
-            tileName="lead"
-            bullets={this.bullets}
-          />
-        }
-        support={<TileB onPress={onPress} tile={support} tileName="support" />}
-      />
+      <SectionContext.Consumer>
+        {({ hasDynamicBullets }) => {
+          const bullets = hasDynamicBullets ? this.bullets : [];
+          return (
+            <LeadOneAndOneSlice
+              breakpoint={breakpoint}
+              lead={
+                <TileA
+                  onPress={onPress}
+                  tile={lead}
+                  tileName="lead"
+                  bullets={bullets}
+                />
+              }
+              support={
+                <TileB onPress={onPress} tile={support} tileName="support" />
+              }
+            />
+          );
+        }}
+      </SectionContext.Consumer>
     );
   }
 
@@ -44,28 +54,35 @@ class LeadOneAndOne extends PureComponent {
     } = this.props;
 
     return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        lead={
-          <TileColStandard
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={lead}
-            tileName="lead"
-            orientation={orientation}
-            bullets={this.bullets}
-          />
-        }
-        support={
-          <TileColStandard
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={support}
-            tileName="support"
-            orientation={orientation}
-          />
-        }
-      />
+      <SectionContext.Consumer>
+        {({ hasDynamicBullets }) => {
+          const bullets = hasDynamicBullets ? this.bullets : [];
+          return (
+            <LeadOneAndOneSlice
+              breakpoint={breakpoint}
+              lead={
+                <TileColStandard
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={lead}
+                  tileName="lead"
+                  orientation={orientation}
+                  bullets={bullets}
+                />
+              }
+              support={
+                <TileColStandard
+                  breakpoint={breakpoint}
+                  onPress={onPress}
+                  tile={support}
+                  tileName="support"
+                  orientation={orientation}
+                />
+              }
+            />
+          );
+        }}
+      </SectionContext.Consumer>
     );
   }
 
@@ -76,27 +93,34 @@ class LeadOneAndOne extends PureComponent {
     } = this.props;
 
     return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        lead={
-          <TileZ
-            onPress={onPress}
-            tile={lead}
-            breakpoint={breakpoint}
-            tileName="lead"
-            bullets={this.bullets}
-          />
-        }
-        support={
-          <TileColStandard
-            onPress={onPress}
-            tile={support}
-            breakpoint={breakpoint}
-            tileName="support"
-            orientation={orientation}
-          />
-        }
-      />
+      <SectionContext.Consumer>
+        {({ hasDynamicBullets }) => {
+          const bullets = hasDynamicBullets ? this.bullets : [];
+          return (
+            <LeadOneAndOneSlice
+              breakpoint={breakpoint}
+              lead={
+                <TileZ
+                  onPress={onPress}
+                  tile={lead}
+                  breakpoint={breakpoint}
+                  tileName="lead"
+                  bullets={bullets}
+                />
+              }
+              support={
+                <TileColStandard
+                  onPress={onPress}
+                  tile={support}
+                  breakpoint={breakpoint}
+                  tileName="support"
+                  orientation={orientation}
+                />
+              }
+            />
+          );
+        }}
+      </SectionContext.Consumer>
     );
   }
 

@@ -8,6 +8,7 @@ import {
   print,
 } from "@times-components-native/jest-serializer";
 import adConfig from "../fixtures/article-ad-config.json";
+import "./mocks";
 import Ad from "../src/ad";
 
 const props = {
