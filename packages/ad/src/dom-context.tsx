@@ -61,7 +61,7 @@ const DOMContext = ({
   useEffect(() => {
     const updateReadArticlesEventsListener = articleEventEmitter.addListener(
       "onArticleDisappear",
-      outViewport,
+      onArticleDisappear,
     );
 
     return updateReadArticlesEventsListener.remove;
@@ -113,6 +113,14 @@ const DOMContext = ({
     }
   };
 
+  const onArticleDisappear = () => {
+    if (webViewRef.current && Platform.OS === "ios") {
+      webViewRef.current.injectJavaScript(`
+          destroySlots();
+      `);
+    }
+  }  
+
   const outViewport = () => {
     // Logic for pausing OutStream ads which are visible on ios only
     if (webViewRef.current && Platform.OS === "ios") {
@@ -125,7 +133,6 @@ const DOMContext = ({
         if (frame) {
           frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
         }
-
         true;
       `);
     }
@@ -136,21 +143,7 @@ const DOMContext = ({
   };
 
   const inViewport = () => {
-    // Logic for playing OutStream ads which are visible on ios only
-    if (webViewRef.current && Platform.OS === "ios") {
-      const { networkId, adUnit, section } = data;
-
-      // ID for iframe is configured by Google Ad Manager(GAM)
-      webViewRef.current.injectJavaScript(`
-        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
-
-        if (frame) {
-          frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
-        }
-
-        true;
-      `);
-    }
+    // no op
   };
 
   // NOTE: if this generated code is not working, and you don't know why
@@ -170,6 +163,11 @@ const DOMContext = ({
             overflow: hidden;
           }
         </style>
+        <script>
+          function destroySlots() {
+            window.googletag.destroySlots();
+          }
+        </script>
         <script>
           window.googletag = window.googletag || {};
           window.googletag.cmd = window.googletag.cmd || [];
