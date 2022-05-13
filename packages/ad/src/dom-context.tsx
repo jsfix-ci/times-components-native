@@ -117,6 +117,7 @@ const DOMContext = ({
     if (webViewRef.current && Platform.OS === "ios") {
       webViewRef.current.injectJavaScript(`
           destroySlots();
+          true;
       `);
     }
   }  
@@ -143,7 +144,18 @@ const DOMContext = ({
   };
 
   const inViewport = () => {
-    // no op
+    // Logic for playing OutStream ads which are visible on ios only
+    if (webViewRef.current && Platform.OS === "ios") {
+      const { networkId, adUnit, section } = data;
+      // ID for iframe is configured by Google Ad Manager(GAM)
+      webViewRef.current.injectJavaScript(`
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+        if (frame) {
+          frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
+        }
+        true;
+      `);
+    }
   };
 
   // NOTE: if this generated code is not working, and you don't know why
