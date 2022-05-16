@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import { View, Platform, Dimensions } from "react-native";
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Platform,
+  Dimensions,
+  NativeModules,
+  NativeEventEmitter,
+} from "react-native";
 import {
   WebView,
   WebViewMessageEvent,
   WebViewNavigation,
 } from "react-native-webview";
 import { Viewport } from "@skele/components";
-import styles from "./styles/index";
+import styles, { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
 import { AdInitAsString } from "./utils/ad-init";
 import {
@@ -29,6 +35,9 @@ interface DomContextType {
   height?: number;
 }
 
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
 const ViewportAwareView = Viewport.Aware(View);
 
 const DOMContext = ({
@@ -48,6 +57,33 @@ const DOMContext = ({
 
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
+
+  useEffect(() => {
+    const onArticleDisappearEventsListener = articleEventEmitter.addListener(
+      "onArticleDisappear",
+      onArticleDisappear,
+    );
+
+    return onArticleDisappearEventsListener.remove;
+  }, []);
+
+  /**
+   * Destroys all ad slots when article is swiped off screen
+   * Uses articleEventEmitter as articles are rendered whilst off screen
+   * causing ads to continue playing when un-muted
+   */
+  const onArticleDisappear = () => {
+    if (webViewRef.current && Platform.OS === "ios") {
+      webViewRef.current.injectJavaScript(`
+        /**
+         *  destroySlots is added in the HTML provided to the webview
+         *  used to destroy any live adverts post swiping away from current article
+         */ 
+        destroySlots();
+        true;
+      `);
+    }
+  };
 
   const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
     if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {
@@ -95,8 +131,51 @@ const DOMContext = ({
     }
   };
 
+  /**
+   * Used by viewport aware component to allow the advert in
+   * the webview to render for android platforms.
+   *
+   * Currently doesn't work with its cause being the android scroll view wrapper.
+   * Read more here - https://nidigitalsolutions.jira.com/browse/TNLT-9065
+   */
   const loadAd = () => {
     setLoaded(true);
+  };
+
+  const outViewport = () => {
+    // Logic for pausing OutStream ads which are visible on ios only
+    if (webViewRef.current && Platform.OS === "ios") {
+      const { networkId, adUnit, section } = data;
+
+      // ID for iframe is configured by Google Ad Manager(GAM)
+      webViewRef.current.injectJavaScript(`
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        if (frame) {
+          frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
+        }
+
+        true;
+      `);
+    }
+  };
+
+  const inViewport = () => {
+    // Logic for playing OutStream ads which are visible on ios only
+    if (webViewRef.current && Platform.OS === "ios") {
+      const { networkId, adUnit, section } = data;
+
+      // ID for iframe is configured by Google Ad Manager(GAM)
+      webViewRef.current.injectJavaScript(`
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        if (frame) {
+          frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
+        }
+
+        true;
+      `);
+    }
   };
 
   // NOTE: if this generated code is not working, and you don't know why
@@ -116,6 +195,11 @@ const DOMContext = ({
             overflow: hidden;
           }
         </style>
+        <script>
+          function destroySlots() {
+            window.googletag.destroySlots();
+          }
+        </script>
         <script>
           window.googletag = window.googletag || {};
           window.googletag.cmd = window.googletag.cmd || [];
@@ -177,6 +261,13 @@ const DOMContext = ({
           source={{ baseUrl, html }}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
+        />
+      )}
+      {height !== 0 && (
+        <ViewportAwareView
+          onViewportEnter={inViewport}
+          onViewportLeave={outViewport}
+          style={calculateViewportVisible(height)}
         />
       )}
     </ViewportAwareView>
