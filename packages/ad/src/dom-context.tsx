@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  View,
-  Platform,
-  Dimensions,
-  NativeModules,
-  NativeEventEmitter,
-} from "react-native";
+import React, { useState } from "react";
+import { View, Platform, Dimensions } from "react-native";
 import {
   WebView,
   WebViewMessageEvent,
@@ -35,8 +29,8 @@ interface DomContextType {
   height?: number;
 }
 
-const { ArticleEvents } = NativeModules;
-const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+// const { ArticleEvents } = NativeModules;
+//const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ViewportAwareView = Viewport.Aware(View);
 
@@ -72,18 +66,6 @@ const DOMContext = ({
    * Uses articleEventEmitter as articles are rendered whilst off screen
    * causing ads to continue playing when un-muted
    */
-  const onArticleDisappear = () => {
-    if (webViewRef.current && Platform.OS === "ios") {
-      webViewRef.current.injectJavaScript(`
-        /**
-         *  destroySlots is added in the HTML provided to the webview
-         *  used to destroy any live adverts post swiping away from current article
-         */ 
-        destroySlots();
-        true;
-      `);
-    }
-  };
 
   const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
     if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {

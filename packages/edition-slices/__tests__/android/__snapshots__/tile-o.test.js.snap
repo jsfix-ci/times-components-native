@@ -35,7 +35,7 @@ exports[`tile n huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -105,7 +105,7 @@ exports[`tile n medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -177,7 +177,7 @@ exports[`tile n small 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -246,7 +246,7 @@ exports[`tile n smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -316,7 +316,7 @@ exports[`tile n wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -388,7 +388,7 @@ exports[`tile n with default star 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}

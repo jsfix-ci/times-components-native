@@ -41,6 +41,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -115,6 +116,7 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -122,6 +124,7 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
       Test paragraph 1.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -176,17 +179,20 @@ exports[`3. article summary component with content including line breaks 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         Review 1
       </Text>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -195,6 +201,7 @@ exports[`3. article summary component with content including line breaks 1`] = `
       </Text>
        ITV
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -204,17 +211,20 @@ exports[`3. article summary component with content including line breaks 1`] = `
       ★★★★☆
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
        
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         Review 2
       </Text>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -223,6 +233,7 @@ exports[`3. article summary component with content including line breaks 1`] = `
       </Text>
        BBC Two
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -232,6 +243,7 @@ exports[`3. article summary component with content including line breaks 1`] = `
       ★★★☆☆
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -270,11 +282,13 @@ exports[`4. article summary component containing links 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -282,6 +296,7 @@ exports[`4. article summary component containing links 1`] = `
       </Text>
        has warned the Home Office to expect an overhaul after the 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -353,6 +368,7 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -360,6 +376,7 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
       Test paragraph 1.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -367,6 +384,7 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
       Test paragraph 2
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -429,6 +447,7 @@ exports[`7. article summary component with no byline 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -461,6 +480,7 @@ exports[`8. article summary component with no label 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -525,6 +545,7 @@ exports[`9. article summary component with no headline 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -567,6 +588,7 @@ exports[`10. article summary component with no date publication 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -636,6 +658,7 @@ exports[`11. article summary component with a video label 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -732,6 +755,7 @@ exports[`12. article summary component with a strapline 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -807,6 +831,7 @@ exports[`15. article summary component with no headline and no label title 1`] =
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -830,6 +855,7 @@ exports[`16. article summary content component with white space height 1`] = `
   numberOfLines={5}
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -848,6 +874,7 @@ exports[`17. article summary content component without white space height 1`] = 
   numberOfLines={2}
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -899,6 +926,7 @@ exports[`18. article summary component with a single paragraph and flag on table
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -1006,6 +1034,7 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -1102,6 +1131,7 @@ exports[`20. article summary component with hidden label 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -1200,6 +1230,7 @@ exports[`21. article summary component with byline on top 1`] = `
     minimumFontScale={0.7}
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >

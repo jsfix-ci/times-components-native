@@ -9,6 +9,7 @@ exports[`1. renders correctly 1`] = `
   >
     <View>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >

@@ -9,6 +9,7 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -18,12 +19,14 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         An example 
         <Text
           accessibilityRole="link"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -34,6 +37,7 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -43,17 +47,20 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         Example text 
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
           this is bold 
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -71,6 +78,7 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -80,12 +88,14 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         An example 
         <Text
           accessibilityRole="link"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -96,6 +106,7 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -105,17 +116,20 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         Example text 
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
           this is bold 
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >

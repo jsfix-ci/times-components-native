@@ -67,6 +67,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -151,6 +152,7 @@ exports[`2. article summary content component with the given style 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -179,6 +181,7 @@ exports[`3. article summary content component with white space height and linehe
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -207,6 +210,7 @@ exports[`4. article summary content component without white space height 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >

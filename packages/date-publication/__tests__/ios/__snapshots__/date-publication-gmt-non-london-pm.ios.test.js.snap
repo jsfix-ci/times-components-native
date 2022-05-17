@@ -9,6 +9,7 @@ exports[`1. date and times publication 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={Object {}}
@@ -17,6 +18,7 @@ exports[`1. date and times publication 1`] = `
     Sunday January 01 2017, 2.32pm GMT
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={Object {}}

@@ -36,6 +36,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -51,6 +52,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -110,6 +112,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -125,6 +128,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -190,6 +194,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -207,6 +212,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -274,6 +280,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -291,6 +298,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -369,6 +377,7 @@ exports[`5. secondary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -384,6 +393,7 @@ exports[`5. secondary image with caption and credits 1`] = `
           Another caption
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={

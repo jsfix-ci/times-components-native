@@ -45,7 +45,7 @@ exports[`tile bb landscape huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -124,7 +124,7 @@ exports[`tile bb landscape medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -203,7 +203,7 @@ exports[`tile bb landscape smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -282,7 +282,7 @@ exports[`tile bb landscape wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}

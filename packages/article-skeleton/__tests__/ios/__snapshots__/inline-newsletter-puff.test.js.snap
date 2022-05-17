@@ -26,6 +26,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -43,6 +44,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -58,6 +60,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -113,6 +116,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -167,6 +171,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -184,6 +189,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -199,6 +205,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -254,6 +261,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -337,6 +345,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -354,6 +363,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -369,6 +379,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -430,6 +441,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -484,6 +496,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -501,6 +514,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -516,6 +530,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -571,6 +586,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -633,6 +649,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -650,6 +667,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -665,6 +683,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -726,6 +745,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
         }
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -789,6 +809,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -845,6 +866,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
           }
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
             style={
@@ -988,6 +1010,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -1044,6 +1067,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
           }
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
             style={

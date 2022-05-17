@@ -35,7 +35,7 @@ exports[`tile h without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -65,7 +65,7 @@ exports[`tile h without breakpoint 1`] = `
       }
     />
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -81,6 +81,7 @@ exports[`tile h without breakpoint 1`] = `
       testID="article-summary-content"
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -91,6 +92,7 @@ exports[`tile h without breakpoint 1`] = `
     </Text>
     <View>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -105,6 +107,7 @@ exports[`tile h without breakpoint 1`] = `
         testID="author"
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={
@@ -120,6 +123,7 @@ exports[`tile h without breakpoint 1`] = `
           Richard Lloyd Parry
         </Text>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           style={

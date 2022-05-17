@@ -34,6 +34,7 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={

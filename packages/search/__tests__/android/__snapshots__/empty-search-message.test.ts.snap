@@ -10,6 +10,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -23,6 +24,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Popular thing to search for:
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -35,6 +37,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Articles
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -47,6 +50,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Topics
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={

@@ -24,6 +24,7 @@ exports[`tile p without breakpoint 1`] = `
     uri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -38,6 +39,7 @@ exports[`tile p without breakpoint 1`] = `
     testID="author"
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -55,6 +57,7 @@ exports[`tile p without breakpoint 1`] = `
       Richard Lloyd Parry
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -83,7 +86,7 @@ exports[`tile p without breakpoint 1`] = `
   >
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -105,7 +108,7 @@ exports[`tile p without breakpoint 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}

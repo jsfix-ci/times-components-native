@@ -47,7 +47,7 @@ exports[`tile z huge 1`] = `
           </View>
           <Text
             accessibilityRole="header"
-            allowFontScaling={false}
+            allowFontScaling={true}
             aria-level="3"
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
@@ -77,7 +77,7 @@ exports[`tile z huge 1`] = `
             }
           />
           <Text
-            allowFontScaling={false}
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
             numberOfLines={2}
@@ -94,6 +94,7 @@ exports[`tile z huge 1`] = `
             testID="article-summary-content"
           >
             <Text
+              allowFontScaling={true}
               maxFontSizeMultiplier={2}
               minimumFontScale={0.7}
             >
@@ -165,7 +166,7 @@ exports[`tile z wide 1`] = `
           </View>
           <Text
             accessibilityRole="header"
-            allowFontScaling={false}
+            allowFontScaling={true}
             aria-level="3"
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
@@ -195,7 +196,7 @@ exports[`tile z wide 1`] = `
             }
           />
           <Text
-            allowFontScaling={false}
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
             numberOfLines={2}
@@ -212,6 +213,7 @@ exports[`tile z wide 1`] = `
             testID="article-summary-content"
           >
             <Text
+              allowFontScaling={true}
               maxFontSizeMultiplier={2}
               minimumFontScale={0.7}
             >
@@ -283,7 +285,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
           </View>
           <Text
             accessibilityRole="header"
-            allowFontScaling={false}
+            allowFontScaling={true}
             aria-level="3"
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
@@ -313,7 +315,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
             }
           />
           <Text
-            allowFontScaling={false}
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
             numberOfLines={2}
@@ -330,6 +332,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
             testID="article-summary-content"
           >
             <Text
+              allowFontScaling={true}
               maxFontSizeMultiplier={2}
               minimumFontScale={0.7}
             >

@@ -37,7 +37,7 @@ exports[`tile col standard huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -67,7 +67,7 @@ exports[`tile col standard huge 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -84,6 +84,7 @@ exports[`tile col standard huge 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -135,7 +136,7 @@ exports[`tile col standard medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -207,7 +208,7 @@ exports[`tile col standard shows an image 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -288,7 +289,7 @@ exports[`tile col standard shows portrait image when in portrait wide (ipad pro)
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -360,7 +361,7 @@ exports[`tile col standard smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -432,7 +433,7 @@ exports[`tile col standard wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -462,7 +463,7 @@ exports[`tile col standard wide 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -479,6 +480,7 @@ exports[`tile col standard wide 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >

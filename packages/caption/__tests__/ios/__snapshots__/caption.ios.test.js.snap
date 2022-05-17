@@ -4,6 +4,7 @@ exports[`1. caption without credits 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -18,6 +19,7 @@ exports[`2. caption with credits 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -25,6 +27,7 @@ exports[`2. caption with credits 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -39,6 +42,7 @@ exports[`3. caption with credits only 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -56,6 +60,7 @@ exports[`4. caption with child 1`] = `
   </Text>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -63,6 +68,7 @@ exports[`4. caption with child 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -77,6 +83,7 @@ exports[`5. centred caption without credits 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -91,6 +98,7 @@ exports[`6. centred caption caption with credits 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -98,6 +106,7 @@ exports[`6. centred caption caption with credits 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -112,6 +121,7 @@ exports[`7. centred caption caption with credits only 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -129,6 +139,7 @@ exports[`8. centred caption caption with child 1`] = `
   </Text>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}
@@ -136,6 +147,7 @@ exports[`8. centred caption caption with child 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       testID={null}

@@ -47,7 +47,7 @@ exports[`tile an without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -77,7 +77,7 @@ exports[`tile an without breakpoint 1`] = `
       }
     />
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -93,6 +93,7 @@ exports[`tile an without breakpoint 1`] = `
       testID="article-summary-content"
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >

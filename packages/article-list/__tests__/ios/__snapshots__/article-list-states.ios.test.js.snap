@@ -4,12 +4,14 @@ exports[`1. an error view 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       Something's gone wrong
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -29,12 +31,14 @@ exports[`2. an error view with header 1`] = `
   </Text>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       Something's gone wrong
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -51,6 +55,7 @@ exports[`3. an empty list 1`] = `
 <View>
   <View>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >

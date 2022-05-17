@@ -15,6 +15,7 @@ exports[`1. pull quote in culture magazine 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -31,6 +32,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     “
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -56,6 +58,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -72,6 +75,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       A caption
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -106,6 +110,7 @@ exports[`2. pull quote in style magazine 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -122,6 +127,7 @@ exports[`2. pull quote in style magazine 1`] = `
     “
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -147,6 +153,7 @@ exports[`2. pull quote in style magazine 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -163,6 +170,7 @@ exports[`2. pull quote in style magazine 1`] = `
       A caption
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -197,6 +205,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -213,6 +222,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     “
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -238,6 +248,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -254,6 +265,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       A caption
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={

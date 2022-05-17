@@ -3,6 +3,7 @@
 exports[`1. article standfirst with content 1`] = `
 <Text
   accessibilityRole="header"
+  allowFontScaling={true}
   aria-level="2"
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
@@ -82,12 +83,14 @@ exports[`6. article meta 1`] = `
   <View>
     <View>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         Monday March 23 2015, 7.39pm
       </Text>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >

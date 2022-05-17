@@ -29,12 +29,14 @@ exports[`1. article with header 1`] = `
                 <View>
                   <View />
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
                     Another ministerial aide, 
                     <Text
                       accessibilityRole="link"
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >
@@ -46,6 +48,7 @@ exports[`1. article with header 1`] = `
                 <View>
                   <View />
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -55,6 +58,7 @@ exports[`1. article with header 1`] = `
                 <View>
                   <View />
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -64,11 +68,13 @@ exports[`1. article with header 1`] = `
                 <View>
                   <View />
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
                     Chuka Umunna, leader of the 
                     <Text
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >
@@ -76,6 +82,7 @@ exports[`1. article with header 1`] = `
                     </Text>
                     , dismissed Mrs May’s 
                     <Text
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >
@@ -94,11 +101,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -106,10 +115,12 @@ exports[`1. article with header 1`] = `
                 </Text>
                 <Text
                   accessibilityRole="link"
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -117,10 +128,12 @@ exports[`1. article with header 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -128,16 +141,19 @@ exports[`1. article with header 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
                 </Text>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -168,6 +184,7 @@ exports[`1. article with header 1`] = `
             <View>
               <View>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -183,15 +200,18 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -208,11 +228,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -242,6 +264,7 @@ exports[`1. article with header 1`] = `
             <View>
               <View>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -334,11 +357,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -363,11 +388,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -460,11 +487,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -545,11 +574,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -642,11 +673,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -739,11 +772,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -767,11 +802,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -787,11 +824,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -807,11 +846,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -827,11 +868,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -839,10 +882,12 @@ exports[`1. article with header 1`] = `
                 </Text>
                 <Text
                   accessibilityRole="link"
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -850,6 +895,7 @@ exports[`1. article with header 1`] = `
                   </Text>
                 </Text>
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -865,11 +911,13 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
@@ -885,21 +933,25 @@ exports[`1. article with header 1`] = `
           <View>
             <View>
               <Text
+                allowFontScaling={true}
                 maxFontSizeMultiplier={2}
                 minimumFontScale={0.7}
                 selectable={true}
               >
                 <Text
+                  allowFontScaling={true}
                   maxFontSizeMultiplier={2}
                   minimumFontScale={0.7}
                 >
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
                     Photographs: Dan Martensen
                   </Text>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -907,6 +959,7 @@ exports[`1. article with header 1`] = `
 
                   </Text>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >

@@ -8,6 +8,7 @@ exports[`1. block 1`] = `
     <View>
       more text 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -22,6 +23,7 @@ exports[`1. block 1`] = `
 
 exports[`1. subscript with fallback 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -36,6 +38,7 @@ exports[`1. subscript with fallback 1`] = `
 
 exports[`2. bold 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -50,6 +53,7 @@ exports[`2. bold 1`] = `
 
 exports[`2. superscript with fallback 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -64,6 +68,7 @@ exports[`2. superscript with fallback 1`] = `
 
 exports[`3. break 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
 >
@@ -74,6 +79,7 @@ exports[`3. break 1`] = `
 
 exports[`4. emphasis 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -90,6 +96,7 @@ exports[`5. image tag 1`] = `<View />`;
 
 exports[`6. inline 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
 >
@@ -99,6 +106,7 @@ exports[`6. inline 1`] = `
 
 exports[`7. italic 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -113,6 +121,7 @@ exports[`7. italic 1`] = `
 
 exports[`8. paragraph 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
 >
@@ -122,6 +131,7 @@ exports[`8. paragraph 1`] = `
 
 exports[`9. strong 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -136,6 +146,7 @@ exports[`9. strong 1`] = `
 
 exports[`10. subscript 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -150,6 +161,7 @@ exports[`10. subscript 1`] = `
 
 exports[`11. subscript with fallback 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -164,6 +176,7 @@ exports[`11. subscript with fallback 1`] = `
 
 exports[`12. superscript 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -178,6 +191,7 @@ exports[`12. superscript 1`] = `
 
 exports[`13. superscript with fallback 1`] = `
 <Text
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={

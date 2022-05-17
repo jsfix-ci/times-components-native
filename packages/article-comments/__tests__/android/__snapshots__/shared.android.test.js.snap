@@ -3,12 +3,14 @@
 exports[`disabled comments 1`] = `
 <View>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     Comments for this article have been turned off
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -17,6 +19,7 @@ exports[`disabled comments 1`] = `
 
     <Text
       accessibilityRole="link"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -29,18 +32,21 @@ exports[`disabled comments 1`] = `
 exports[`enabled comments 1`] = `
 <View>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     123 comments
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -54,6 +60,7 @@ exports[`enabled comments 1`] = `
       focusable={true}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         title="View comments"
@@ -68,6 +75,7 @@ exports[`enabled comments 1`] = `
 exports[`should render disabled-comments if commentsGloballyDisabled 1`] = `
 <View>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -79,18 +87,21 @@ exports[`should render disabled-comments if commentsGloballyDisabled 1`] = `
 exports[`single comment 1`] = `
 <View>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     1 comment
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -104,6 +115,7 @@ exports[`single comment 1`] = `
       focusable={true}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         title="View comments"
@@ -118,18 +130,21 @@ exports[`single comment 1`] = `
 exports[`zero comments 1`] = `
 <View>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     0 comments
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -143,6 +158,7 @@ exports[`zero comments 1`] = `
       focusable={true}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         title="Post a comment"

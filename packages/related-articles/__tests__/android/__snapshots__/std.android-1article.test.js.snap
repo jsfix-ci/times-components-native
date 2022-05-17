@@ -5,6 +5,7 @@ exports[`1. a single related article 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={true}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -62,6 +63,7 @@ exports[`1. a single related article 1`] = `
                     minimumFontScale={0.7}
                   >
                     <Text
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >
@@ -73,6 +75,7 @@ exports[`1. a single related article 1`] = `
                 </View>
                 <View>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
@@ -81,16 +84,19 @@ exports[`1. a single related article 1`] = `
                 </View>
                 <View>
                   <Text
+                    allowFontScaling={true}
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
                     <Text
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >
                       Camilla Long
                     </Text>
                     <Text
+                      allowFontScaling={true}
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >

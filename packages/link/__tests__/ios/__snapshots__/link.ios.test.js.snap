@@ -43,6 +43,7 @@ exports[`2. renders link with target 1`] = `
 exports[`3. renders text link 1`] = `
 <Text
   accessibilityRole="link"
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -58,6 +59,7 @@ exports[`3. renders text link 1`] = `
 exports[`4. text link with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -75,6 +77,7 @@ exports[`4. text link with multiple styles 1`] = `
 exports[`5. text link with children 1`] = `
 <Text
   accessibilityRole="link"
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={
@@ -92,6 +95,7 @@ exports[`5. text link with children 1`] = `
 exports[`6. text link with target 1`] = `
 <Text
   accessibilityRole="link"
+  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   style={

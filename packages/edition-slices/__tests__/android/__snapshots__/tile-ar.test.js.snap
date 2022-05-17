@@ -50,7 +50,7 @@ exports[`tile ar huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -80,7 +80,7 @@ exports[`tile ar huge 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -97,6 +97,7 @@ exports[`tile ar huge 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -161,7 +162,7 @@ exports[`tile ar medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -191,7 +192,7 @@ exports[`tile ar medium 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -208,6 +209,7 @@ exports[`tile ar medium 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -272,7 +274,7 @@ exports[`tile ar smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -302,7 +304,7 @@ exports[`tile ar smallTablet 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -319,6 +321,7 @@ exports[`tile ar smallTablet 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -383,7 +386,7 @@ exports[`tile ar wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -413,7 +416,7 @@ exports[`tile ar wide 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -430,6 +433,7 @@ exports[`tile ar wide 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -494,7 +498,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -524,7 +528,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -541,6 +545,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >

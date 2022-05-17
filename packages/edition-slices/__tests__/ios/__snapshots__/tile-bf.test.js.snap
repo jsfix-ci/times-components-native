@@ -39,7 +39,7 @@ exports[`tile bf huge 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        allowFontScaling={false}
+        allowFontScaling={true}
         aria-level="3"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
@@ -126,7 +126,7 @@ exports[`tile bf medium 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        allowFontScaling={false}
+        allowFontScaling={true}
         aria-level="3"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
@@ -213,7 +213,7 @@ exports[`tile bf smallTablet 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        allowFontScaling={false}
+        allowFontScaling={true}
         aria-level="3"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
@@ -300,7 +300,7 @@ exports[`tile bf wide 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        allowFontScaling={false}
+        allowFontScaling={true}
         aria-level="3"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
@@ -387,7 +387,7 @@ exports[`tile bf without breakpoint should be like medium 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        allowFontScaling={false}
+        allowFontScaling={true}
         aria-level="3"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}

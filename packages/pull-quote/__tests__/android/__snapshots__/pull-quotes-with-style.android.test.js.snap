@@ -13,6 +13,7 @@ exports[`different colours 1`] = `
   }
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -28,6 +29,7 @@ exports[`different colours 1`] = `
     “
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -53,6 +55,7 @@ exports[`different colours 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -68,6 +71,7 @@ exports[`different colours 1`] = `
       A caption
     </Text>
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={

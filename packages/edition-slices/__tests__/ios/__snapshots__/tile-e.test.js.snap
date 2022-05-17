@@ -37,7 +37,7 @@ exports[`tile e landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -120,7 +120,7 @@ exports[`tile e landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -209,7 +209,7 @@ exports[`tile e landscape small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -239,7 +239,7 @@ exports[`tile e landscape small 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -256,6 +256,7 @@ exports[`tile e landscape small 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -316,7 +317,7 @@ exports[`tile e landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -399,7 +400,7 @@ exports[`tile e portrait huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -482,7 +483,7 @@ exports[`tile e portrait medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -571,7 +572,7 @@ exports[`tile e portrait small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -601,7 +602,7 @@ exports[`tile e portrait small 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -618,6 +619,7 @@ exports[`tile e portrait small 1`] = `
           testID="article-summary-content"
         >
           <Text
+            allowFontScaling={true}
             maxFontSizeMultiplier={2}
             minimumFontScale={0.7}
           >
@@ -678,7 +680,7 @@ exports[`tile e portrait smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -761,7 +763,7 @@ exports[`tile e portrait wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
+          allowFontScaling={true}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}

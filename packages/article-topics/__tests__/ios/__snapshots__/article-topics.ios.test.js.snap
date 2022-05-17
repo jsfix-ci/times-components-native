@@ -18,6 +18,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -42,6 +43,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -66,6 +68,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -90,6 +93,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -114,6 +118,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
@@ -181,6 +186,7 @@ exports[`4. article topic 1`] = `
         accessibilityComponentType="button"
         accessibilityRole="button"
         accessibilityTraits="button"
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >

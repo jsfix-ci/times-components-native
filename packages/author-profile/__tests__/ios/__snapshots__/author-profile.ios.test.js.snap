@@ -222,6 +222,7 @@ exports[`7. an article list header 1`] = `
       />
       <Text
         accessibilityRole="header"
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -229,6 +230,7 @@ exports[`7. an article list header 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
+        allowFontScaling={true}
         aria-level="2"
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
@@ -251,6 +253,7 @@ exports[`7. an article list header 1`] = `
       </View>
       <View>
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >

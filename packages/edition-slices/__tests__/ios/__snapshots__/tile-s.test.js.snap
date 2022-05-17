@@ -18,7 +18,7 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -35,7 +35,7 @@ exports[`tile s huge 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -48,10 +48,12 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -65,6 +67,7 @@ exports[`tile s huge 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -77,6 +80,7 @@ exports[`tile s huge 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -90,6 +94,7 @@ exports[`tile s huge 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -102,6 +107,7 @@ exports[`tile s huge 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -115,7 +121,7 @@ exports[`tile s huge 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -128,6 +134,7 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -155,7 +162,7 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -172,7 +179,7 @@ exports[`tile s medium 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -185,10 +192,12 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -202,6 +211,7 @@ exports[`tile s medium 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -214,6 +224,7 @@ exports[`tile s medium 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -227,6 +238,7 @@ exports[`tile s medium 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -239,6 +251,7 @@ exports[`tile s medium 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -252,7 +265,7 @@ exports[`tile s medium 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -265,6 +278,7 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -290,7 +304,7 @@ exports[`tile s no byline 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -306,7 +320,7 @@ exports[`tile s no byline 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -319,10 +333,12 @@ exports[`tile s no byline 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -336,6 +352,7 @@ exports[`tile s no byline 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -348,6 +365,7 @@ exports[`tile s no byline 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -361,6 +379,7 @@ exports[`tile s no byline 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -373,6 +392,7 @@ exports[`tile s no byline 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -404,7 +424,7 @@ exports[`tile s small 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -420,7 +440,7 @@ exports[`tile s small 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -433,10 +453,12 @@ exports[`tile s small 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -450,6 +472,7 @@ exports[`tile s small 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -462,6 +485,7 @@ exports[`tile s small 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -475,6 +499,7 @@ exports[`tile s small 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -487,6 +512,7 @@ exports[`tile s small 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -500,7 +526,7 @@ exports[`tile s small 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -513,6 +539,7 @@ exports[`tile s small 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -540,7 +567,7 @@ exports[`tile s smallTablet 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -557,7 +584,7 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -570,10 +597,12 @@ exports[`tile s smallTablet 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -587,6 +616,7 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -599,6 +629,7 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -612,6 +643,7 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -624,6 +656,7 @@ exports[`tile s smallTablet 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -637,7 +670,7 @@ exports[`tile s smallTablet 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -650,6 +683,7 @@ exports[`tile s smallTablet 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -677,7 +711,7 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -694,7 +728,7 @@ exports[`tile s wide 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -707,10 +741,12 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -724,6 +760,7 @@ exports[`tile s wide 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -736,6 +773,7 @@ exports[`tile s wide 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -749,6 +787,7 @@ exports[`tile s wide 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -761,6 +800,7 @@ exports[`tile s wide 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -774,7 +814,7 @@ exports[`tile s wide 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -787,6 +827,7 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -815,7 +856,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
   >
     LOGO
     <Text
-      allowFontScaling={false}
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
       style={
@@ -832,7 +873,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </View>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -845,10 +886,12 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -862,6 +905,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       , singer-songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -874,6 +918,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       (1987), 53; 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -887,6 +932,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       , composer, songwriter, 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -899,6 +945,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
       </Text>
       (1978), 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         style={
@@ -912,7 +959,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </Text>
   </Text>
   <Text
-    allowFontScaling={false}
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -925,6 +972,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     }
   >
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >

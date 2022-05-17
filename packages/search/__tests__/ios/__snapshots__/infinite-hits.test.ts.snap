@@ -30,6 +30,7 @@ exports[`SearchResults should render correctly 1`] = `
     }
   />
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -48,6 +49,7 @@ exports[`SearchResults should render correctly 1`] = `
     You appear to be offline
   </Text>
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={

@@ -256,6 +256,7 @@ exports[`6. an article list header 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -263,17 +264,20 @@ exports[`6. an article list header 1`] = `
     </Text>
     <View />
     <Text
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
       Test 
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
         italic 
       </Text>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >
@@ -290,6 +294,7 @@ exports[`7. a topic header with no description 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={true}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
