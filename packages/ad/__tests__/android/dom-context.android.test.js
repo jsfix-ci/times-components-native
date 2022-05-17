@@ -73,32 +73,6 @@ describe("android - dom-context", () => {
     expect(onRenderComplete).toHaveBeenCalledTimes(1);
   });
 
-  it("calls webview ref injectJavascript when the ad height is set and viewport in view", () => {
-    const mockInjectJavaScript = jest.fn();
-
-    const webViewRefValue = {
-      current: null,
-    };
-
-    Object.defineProperty(webViewRefValue, "current", {
-      get: jest.fn(() => ({ injectJavaScript: mockInjectJavaScript })),
-      set: jest.fn(() => ({ injectJavaScript: mockInjectJavaScript })),
-    });
-
-    jest.spyOn(React, "useRef").mockReturnValue(webViewRefValue);
-
-    const testInstance = TestRenderer.create(<DOMContextNative height={10} />);
-
-    const viewportAware = testInstance.root.findAllByType("View");
-
-    // calls inViewPort
-    act(() => {
-      viewportAware[1].props.onViewportEnter();
-    });
-
-    expect(webViewRefValue.current.injectJavaScript).not.toHaveBeenCalled();
-  });
-
   it("does not call webview ref injectJavascript when the ad height is not set and viewport NOT in view", () => {
     const mockInjectJavaScript = jest.fn();
 
