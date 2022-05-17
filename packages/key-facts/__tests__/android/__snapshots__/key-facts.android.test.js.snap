@@ -22,11 +22,15 @@ exports[`1. key facts with title 1`] = `
         minimumFontScale={0.7}
       >
         An example 
+<<<<<<< HEAD
         <Text
           accessibilityRole="link"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
+=======
+        <Text>
+>>>>>>> master
           link
         </Text>
       </Text>
@@ -84,11 +88,15 @@ exports[`2. key facts without title 1`] = `
         minimumFontScale={0.7}
       >
         An example 
+<<<<<<< HEAD
         <Text
           accessibilityRole="link"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
+=======
+        <Text>
+>>>>>>> master
           link
         </Text>
       </Text>

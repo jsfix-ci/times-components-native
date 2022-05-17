@@ -5,19 +5,20 @@ PACKAGE_PATH="uk/co/thetimes/times-xnative"
 PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
 
 setupEnv () {
-  if [ "$CIRCLE_BRANCH" == "master" ] && [[ $PACKAGE_VERSION != *"beta"* ]]
-  then
-    echo "👉 Setting up enviroment for a production release."
-    ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
-    RELEASE_DEST="production"
-  elif [[ $PACKAGE_VERSION == *"beta"* ]]
-  then
+  if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
+    then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH" 
+    exit 0
+  fi
+  
+  if [[ $PACKAGE_VERSION == *"beta"* ]]
+    then
     echo "👉 Setting up enviroment for a beta release."
     ARTIFACTORY_URL="$ARTIFACTORY_URL_BETA"
     RELEASE_DEST="beta"
-  else
-    echo "✋ It looks like you are not on 'master' branch or your version number does't include 'beta'. Will not publish."
-    exit 0
+  else 
+    echo "👉 Setting up enviroment for a production release."
+    ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
+    RELEASE_DEST="production"
   fi
 }
 

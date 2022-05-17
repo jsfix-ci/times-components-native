@@ -25,10 +25,9 @@ exports[`tile lead supplement portrait medium 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "height": 534,
         "justifyContent": "center",
         "paddingHorizontal": 50,
-        "paddingVertical": 20,
+        "paddingVertical": 60,
       }
     }
   >
@@ -110,10 +109,9 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "height": 534,
         "justifyContent": "center",
         "paddingHorizontal": 50,
-        "paddingVertical": 20,
+        "paddingVertical": 60,
       }
     }
   >
@@ -195,10 +193,9 @@ exports[`tile lead supplement portrait wide 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "height": 534,
         "justifyContent": "center",
         "paddingHorizontal": 140,
-        "paddingVertical": 20,
+        "paddingVertical": 60,
       }
     }
   >

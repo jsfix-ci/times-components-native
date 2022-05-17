@@ -401,13 +401,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     }
                   >
                     An example 
-                    <Text
-                      style={
-                        Object {
-                          "textDecorationLine": "underline",
-                        }
-                      }
-                    >
+                    <Text>
                       link
                     </Text>
                   </Text>
@@ -2591,13 +2585,7 @@ exports[`17. an article skeleton with responsive items 1`] = `
                     }
                   >
                     An example 
-                    <Text
-                      style={
-                        Object {
-                          "textDecorationLine": "underline",
-                        }
-                      }
-                    >
+                    <Text>
                       link
                     </Text>
                   </Text>

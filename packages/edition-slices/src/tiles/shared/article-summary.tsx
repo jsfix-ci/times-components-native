@@ -25,6 +25,7 @@ import {
   ARTICLE_READ_ANIMATION,
 } from "@times-components-native/styleguide/index";
 import PositionedTileStar from "./positioned-tile-star";
+import { OnArticlePress } from "@times-components-native/types";
 
 type ArticleRead = {
   id: string;
@@ -68,7 +69,7 @@ interface Props {
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
   bullets?: string[];
-  onPress?: () => null;
+  onPress?: OnArticlePress | (() => null);
 }
 
 export const getArticleReadState = (
