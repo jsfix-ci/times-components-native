@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components-native/slice-layout";
-import { SectionContext } from "@times-components-native/context";
 import { TileA, TileB, TileZ, TileColStandard } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
