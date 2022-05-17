@@ -58,14 +58,14 @@ const DOMContext = ({
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
 
-  useEffect(() => {
-    const onArticleDisappearEventsListener = articleEventEmitter.addListener(
-      "onArticleDisappear",
-      onArticleDisappear,
-    );
+  // useEffect(() => {
+  //   const onArticleDisappearEventsListener = articleEventEmitter.addListener(
+  //     "onArticleDisappear",
+  //     onArticleDisappear,
+  //   );
 
-    return onArticleDisappearEventsListener.remove;
-  }, []);
+  //   return onArticleDisappearEventsListener.remove;
+  // }, []);
 
   /**
    * Destroys all ad slots when article is swiped off screen

@@ -10,6 +10,7 @@ function Txt({ children, ...rest }: React.PropsWithChildren<TextProps>) {
           {...rest}
           maxFontSizeMultiplier={maxFontSizeMultiplier}
           minimumFontScale={minimumFontScale}
+          allowFontScaling={true}
         >
           {children}
         </Text>
