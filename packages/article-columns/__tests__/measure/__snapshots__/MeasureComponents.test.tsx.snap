@@ -68,6 +68,7 @@ exports[`MeasureContent renders the content 1`] = `
   onLayout={[Function]}
 >
   <Text
+    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     onTextLayout={[Function]}

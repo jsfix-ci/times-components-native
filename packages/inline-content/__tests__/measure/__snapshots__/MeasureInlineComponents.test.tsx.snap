@@ -29,6 +29,7 @@ exports[`MeasureContent renders the content 1`] = `
   >
     <View>
       <Text
+        allowFontScaling={true}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
         onTextLayout={[Function]}
@@ -44,6 +45,7 @@ exports[`MeasureContent renders the content 1`] = `
         testID="paragraph"
       >
         <Text
+          allowFontScaling={true}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
         >
