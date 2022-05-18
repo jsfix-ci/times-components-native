@@ -1,20 +1,37 @@
 import React from "react";
 import { Text, TextProps } from "react-native";
-import Context from "@times-components-native/context/src/context";
 
-function Txt({ children, ...rest }: React.PropsWithChildren<TextProps>) {
+function Txt({ children, style, ...rest }: React.PropsWithChildren<TextProps>) {
+  const setFontSize = (styleObject) => {
+    const style = { ...styleObject };
+    if (style.hasOwnProperty("fontSize")) {
+      style.fontSize = style.fontSize * 2;
+      style.lineHeight = style.lineHeight * 2;
+    }
+    return style;
+  };
+
+  const getStyleObject = (style) => {
+    let styleObject = {};
+    if (style === undefined) {
+      return styleObject;
+    }
+    //
+    if (style.constructor === Array) {
+      styleObject = style.reduce((style, obj) => {
+        return { ...style, ...obj };
+      });
+      return setFontSize(styleObject);
+    }
+    return setFontSize(style);
+  };
+
+  const styleObject = getStyleObject(style);
+
   return (
-    <Context.Consumer>
-      {({ maxFontSizeMultiplier, minimumFontScale }) => (
-        <Text
-          {...rest}
-          maxFontSizeMultiplier={maxFontSizeMultiplier}
-          minimumFontScale={minimumFontScale}
-        >
-          {children}
-        </Text>
-      )}
-    </Context.Consumer>
+    <Text {...rest} style={styleObject} allowFontScaling={false}>
+      {children}
+    </Text>
   );
 }
 

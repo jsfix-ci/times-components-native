@@ -58,32 +58,32 @@ const DOMContext = ({
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
 
-  useEffect(() => {
-    const onArticleDisappearEventsListener = articleEventEmitter.addListener(
-      "onArticleDisappear",
-      onArticleDisappear,
-    );
+  // useEffect(() => {
+  //   const onArticleDisappearEventsListener = articleEventEmitter.addListener(
+  //     "onArticleDisappear",
+  //     onArticleDisappear,
+  //   );
 
-    return onArticleDisappearEventsListener.remove;
-  }, []);
+  //   return onArticleDisappearEventsListener.remove;
+  // }, []);
 
   /**
    * Destroys all ad slots when article is swiped off screen
    * Uses articleEventEmitter as articles are rendered whilst off screen
    * causing ads to continue playing when un-muted
    */
-  const onArticleDisappear = () => {
-    if (webViewRef.current && Platform.OS === "ios") {
-      webViewRef.current.injectJavaScript(`
-        /**
-         *  destroySlots is added in the HTML provided to the webview
-         *  used to destroy any live adverts post swiping away from current article
-         */ 
-        destroySlots();
-        true;
-      `);
-    }
-  };
+  // const onArticleDisappear = () => {
+  //   if (webViewRef.current && Platform.OS === "ios") {
+  //     webViewRef.current.injectJavaScript(`
+  //       /**
+  //        *  destroySlots is added in the HTML provided to the webview
+  //        *  used to destroy any live adverts post swiping away from current article
+  //        */
+  //       destroySlots();
+  //       true;
+  //     `);
+  //   }
+  // };
 
   const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
     if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {
