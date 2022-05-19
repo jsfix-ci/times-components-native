@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, TextProps } from "react-native";
+import { Text } from "react-native";
 
-function Txt({ children, style, ...rest }: React.PropsWithChildren<TextProps>) {
+function Txt({ children, style, ...rest }) {
   const setFontSize = (styleObject) => {
     const style = { ...styleObject };
-    if (style.hasOwnProperty("fontSize")) {
+    if (style.fontSize !== undefined && style.lineHeight !== undefined) {
       style.fontSize = style.fontSize * 2;
       style.lineHeight = style.lineHeight * 2;
     }
@@ -13,13 +13,13 @@ function Txt({ children, style, ...rest }: React.PropsWithChildren<TextProps>) {
 
   const getStyleObject = (style) => {
     let styleObject = {};
-    if (style === undefined) {
+    if (style === undefined || style === null) {
       return styleObject;
     }
     //
     if (style.constructor === Array) {
-      styleObject = style.reduce((style, obj) => {
-        return { ...style, ...obj };
+      styleObject = style.reduce((s, obj) => {
+        return { ...s, ...obj };
       });
       return setFontSize(styleObject);
     }
