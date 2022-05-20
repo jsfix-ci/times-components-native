@@ -76,9 +76,8 @@ const Section: FC<Props> = (props) => {
       "scrollToArticleId",
       scrollToOffset,
     );
-    return () => {
-      sectionEventsListener.remove();
-    };
+
+    return sectionEventsListener.remove;
   }, []);
 
   const onViewableItemsChanged = useCallback((info) => {
@@ -127,7 +126,7 @@ const Section: FC<Props> = (props) => {
     );
   };
 
-  const renderItemSeperator = (isPuzzle: boolean) => (
+  const renderItemSeparator = (isPuzzle: boolean) => (
     { leadingItem }: any,
     editionBreakpoint: string,
   ) => {
@@ -199,7 +198,7 @@ const Section: FC<Props> = (props) => {
         removeClippedSubviews
         data={data}
         ItemSeparatorComponent={(leadingItem) =>
-          renderItemSeperator(isPuzzle)(leadingItem, editionBreakpoint)
+          renderItemSeparator(isPuzzle)(leadingItem, editionBreakpoint)
         }
         keyExtractor={(item) => item.elementId}
         ListHeaderComponent={getHeaderComponent(isPuzzle, isMagazine)}
