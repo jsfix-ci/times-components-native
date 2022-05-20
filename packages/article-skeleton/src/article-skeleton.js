@@ -154,8 +154,8 @@ const MemoisedArticle = React.memo((props) => {
 const ArticleWithContent = (props) => {
   const { onArticleRead, data } = props;
   const articleReadTimerDuration = 6000;
-  let [hasBeenRead, setHasBeenRead] = useState(false);
-  let [articleReadDelayTimeoutID, setArticleReadDelayTimeoutId] = useState();
+  let hasBeenRead = false;
+  let articleReadDelay = null;
 
   /**
    * Ref for scroll view stored to allow scrollToRef
@@ -196,13 +196,11 @@ const ArticleWithContent = (props) => {
 
   const setArticleReadTimeout = (articleId) => {
     if (articleId === data.id && !hasBeenRead) {
-      const timeoutId = setTimeout(() => {
+      articleReadDelay = setTimeout(() => {
         setArticleRead();
       }, articleReadTimerDuration);
-
-      setArticleReadDelayTimeoutId(timeoutId);
     } else {
-      clearTimeout(articleReadDelayTimeoutID);
+      clearTimeout(articleReadDelay);
     }
   };
 
@@ -217,7 +215,7 @@ const ArticleWithContent = (props) => {
 
   const setArticleRead = () => {
     if (hasBeenRead) return;
-    setHasBeenRead(true);
+    hasBeenRead = true;
     onArticleRead && onArticleRead(data.id);
   };
 
