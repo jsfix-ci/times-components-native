@@ -74,7 +74,7 @@ function ArticleSummary({
                   style={{ textDecorationLine: "underline" }}
                   onPress={() => onPress({ id: bullet.id })}
                 >
-                  {bullet.headline}
+                  {bullet.shortHeadline}
                 </Text>
               </View>
             );
