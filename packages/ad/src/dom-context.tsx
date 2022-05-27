@@ -1,26 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import {
-  View,
-  Linking,
-  Platform,
-  Dimensions,
-  NativeModules,
-} from "react-native";
+import { View, Linking, Platform, NativeModules } from "react-native";
 import { WebView } from "react-native-webview";
-// @ts-ignore
-// import { Viewport } from "@skele/components";
-// import {
-//   getApplicationName,
-//   getBuildNumber,
-//   getBundleId,
-//   getDeviceId,
-//   getReadableVersion,
-//   getVersion,
-// } from "react-native-device-info";
-// import logger from "./utils/logger";
-// import styles, { calculateViewportVisible } from "./styles/index";
-
-const { width: screenWidth } = Dimensions.get("screen");
 
 interface DomContextType {
   baseUrl?: string;
@@ -47,15 +27,7 @@ export const openURLInBrowser = (url: string = "") =>
     return Linking.openURL(url);
   });
 
-const DOMContext = ({
-  // isInline = true,
-  // onRenderError = () => null,
-  // onRenderComplete = () => null,
-  // height: heightProp = 0,
-  data = {},
-  width = screenWidth,
-  baseUrl = "",
-}: DomContextType) => {
+const DOMContext = ({ data = {}, baseUrl = "" }: DomContextType) => {
   const webViewRef = useRef<WebView>(null);
 
   useEffect(() => {
@@ -71,8 +43,11 @@ const DOMContext = ({
   }, []);
 
   const handleMessageEvent = (e) => {
-    console.log(e);
+    console.log("EVENT HERE - ", e.nativeEvent.data);
   };
+
+  const accountId = `${NativeModules.ReactConfig.sourcepointAccountId}`;
+  const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
 
   /**
    * The following HTML renders the ad lib by running a script which loads an iframe
@@ -104,7 +79,7 @@ const DOMContext = ({
           window.nuk = {
             "ads": {
               "blocked": false,
-              "commercialSection": "${data.pageTargeting.section}",
+              "commercialSection": "${String(data.pageTargeting.section)}",
               "pageTitle": "",
               "editionDate": "2022-03-15",
               "editionId": "de0bc2ca-c21e-4082-89b3-a2cd7d23254e",
@@ -114,7 +89,7 @@ const DOMContext = ({
               }
             },
             "article": {
-              "articleId": "${data.pageTargeting.aid}",
+              "articleId": "${String(data.pageTargeting.aid)}",
             },
             "user": {
               "isLoggedIn": true,
@@ -129,15 +104,37 @@ const DOMContext = ({
             "config":{
               "mmsDomain": "https://cmp.thetimes.co.uk",
               "wrapperAPIOrigin": "https://wrapper-api.sp-prod.net/tcfv2",
-              "accountId": ${NativeModules.ReactConfig.sourcepointAccountId},
+              "accountId": "${String(accountId)}",
               "propertyId": 9751,
-              "authId": "${NativeModules.ReactConfig.sourcepointAuthId}",
+              "authId": "${String(authId)}",
             }
           }
         </script>
 
         <script type="text/javascript" src="https://gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js"></script>
 
+        <script>
+
+          // Used to test if the sourcepoint auth Id was sent to the webview
+          (${function (window, id) {
+            // post message sends event to the WebView onMessage handler
+            // allowing us to log out what happens inside the webview
+            window.ReactNativeWebView.postMessage(
+              "EVENT HERE - auth id being passed into webview" + id,
+            );
+          }.toString()})(window, "${String(authId)}")
+          
+          // Used to show that source point is connected in our webview
+          // https://documentation.sourcepoint.com/api/gdpr-tcf-v2-api/iab-__tcfapi-function#gettcdata-command 
+          window.__tcfapi('getTCData', 2, function (data) {
+            (${function (datainternal, window) {
+              window.ReactNativeWebView.postMessage(
+                JSON.stringify(datainternal),
+              );
+            }.toString()})(data, window)
+          })
+
+        </script>
       </head>
       <body>
           <div id="ad-news"></div>
@@ -147,32 +144,6 @@ const DOMContext = ({
       </body>
     </html>
     `;
-
-  // const foo = `
-  //     <html>
-  //       <body>
-  //         <div id="ad-mpu"></div>
-
-  //         <script>
-  //           window.theTimesBaseUrl = "${String(baseUrl)}";
-  //           window.postMessage = function(data) {
-  //             var message = typeof data === "string" ? data : JSON.stringify(data);
-  //             window.ReactNativeWebView.postMessage(message);
-  //           };
-  //           (${webviewEventCallbackSetupAsString})({window});
-  //         </script>
-  //         <script>
-  //         (${AdInitAsString})({
-  //           el: document.querySelector("#ad-mpu"),
-  //           eventCallback: eventCallback,
-  //           data: ${JSON.stringify(data)},
-  //           platform: "native",
-  //           window
-  //         }).init();
-  //         </script>
-  //       </body>
-  //     </html>
-  //   `;
 
   return (
     <View style={{ height: 270, width: 300 }}>
