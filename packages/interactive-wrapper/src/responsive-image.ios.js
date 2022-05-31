@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Image, ImageBackground } from "react-native";
-import { screenWidth } from "@times-components-native/utils";
 import PropTypes from "prop-types";
 
 const deckUrl = (id) =>
@@ -37,7 +36,6 @@ class ResponsiveImageInteractive extends Component {
         uri: d.data.Image,
         width: parseInt(d.data.Size, 10),
       }))
-      .filter((d) => d.width <= screenWidth())
       .sort((a, b) => a.width - b.width);
     if (images.length) {
       const image = images[images.length - 1];
