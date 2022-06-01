@@ -6,9 +6,14 @@ const withArticleSaveTracking = (Component) =>
       {
         actionName: "Pressed",
         eventName: "onArticleSavePress",
-        getAttrs: ({ articleId, savedArticles }) => ({
+        getAttrs: ({
+          articleId,
+          savedArticles,
+          headline = "unknown headline",
+        }) => ({
           articleId,
           isSaved: !savedArticles[articleId],
+          articleHeadline: headline,
         }),
         trackingName: "ArticleSave/Unsave",
       },

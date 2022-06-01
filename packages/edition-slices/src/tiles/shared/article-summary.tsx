@@ -217,6 +217,7 @@ const ArticleSummary: React.FC<Props> = ({
       centeredStar={centeredStar}
       underneathTextStar={underneathTextStar}
       style={starStyle}
+      headline={headline}
     />
   );
 

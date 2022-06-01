@@ -25,7 +25,7 @@ const StarWithTracking = withArticleSaveTracking(
   },
 );
 
-const TileStar = ({ articleId, isDark, style }) => (
+const TileStar = ({ articleId, isDark, style, headline }) => (
   <SectionContext.Consumer>
     {({ onArticleSavePress, savedArticles }) =>
       onArticleSavePress ? (
@@ -35,6 +35,7 @@ const TileStar = ({ articleId, isDark, style }) => (
           isDark={isDark}
           onArticleSavePress={onArticleSavePress}
           savedArticles={savedArticles}
+          headline={headline}
         />
       ) : null
     }
@@ -45,11 +46,13 @@ TileStar.propTypes = {
   articleId: PropTypes.string.isRequired,
   style: PropTypes.shape({}),
   isDark: PropTypes.bool,
+  headline: PropTypes.string,
 };
 
 TileStar.defaultProps = {
   style: null,
   isDark: false,
+  headline: undefined,
 };
 
 export default TileStar;
