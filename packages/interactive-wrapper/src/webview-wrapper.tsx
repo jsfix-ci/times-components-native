@@ -27,7 +27,7 @@ function WebviewWrapper({ config, id }: IProps) {
   const scriptToInject = `window.postMessage = function(data) {
     window.ReactNativeWebView.postMessage(data);
   };(${webviewEventCallbackSetup})({window});`;
-  const [height, setHeight] = useState(1);
+  const [height, setHeight] = useState(30);
   const webview = useRef<WebView>(null);
 
   const openURLInBrowser = (url: string) => {

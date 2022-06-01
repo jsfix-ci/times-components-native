@@ -28,6 +28,7 @@ import {
   SupplementSecondaryTwoAndTwoSlice,
 } from "./slices";
 import { sectionConfigs } from "@times-components-native/section/src/utils";
+import InteractiveSlice from "./slices/InteractiveSlice";
 
 const { sectionTitles } = sectionConfigs;
 
@@ -88,6 +89,7 @@ const sliceMap = (isInSupplement, sectionTitle, orientation, isTablet) => {
     TopSecondaryTwoNoPicAndTwoSlice: TopSecondarySlice,
     TopSecondaryFourSlice: TopSecondarySlice,
     SectionAd,
+    Interactive: InteractiveSlice,
   };
 };
 

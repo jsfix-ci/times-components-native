@@ -103,6 +103,7 @@ const Section: FC<Props> = (props) => {
   }: any) => {
     return (
       <View
+        key={index}
         onLayout={(event) => {
           sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
         }}
@@ -163,9 +164,25 @@ const Section: FC<Props> = (props) => {
     });
   }
 
-  const data = isPuzzle
+  let data = isPuzzle
     ? createPuzzleData(isTablet, sectionTitle)(slices, editionBreakpoint)
     : prepareSlicesForRender(isTablet, sectionTitle, orientation)(slices);
+
+  // Adding mock interactive here
+  const interactive = {
+    name: "Interactive",
+    id: "f31b2c8f-fdda-4ce0-96ca-e9a53860b7c6",
+    interactiveConfig: {
+      dev: false,
+      environment: "prod",
+      platform: "ios",
+      version: "7.13.1",
+    },
+  };
+
+  data = data.reduce((result, item) => [...result, item, interactive], []);
+
+  console.log("EVENT HERE - ", data);
 
   if (slices) receiveChildList(data);
 
@@ -224,6 +241,7 @@ Section.defaultProps = {
 const sliceStyles = StyleSheet.create({
   sliceContainer: {
     flex: 1,
+    minHeight: 300,
   },
 });
 
