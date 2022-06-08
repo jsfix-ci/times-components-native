@@ -16,7 +16,9 @@ exports[`1. key facts with title 1`] = `
       <View />
       <Text>
         An example 
-        <Text>
+        <Text
+          accessibilityRole="link"
+        >
           link
         </Text>
       </Text>
@@ -56,7 +58,9 @@ exports[`2. key facts without title 1`] = `
       <View />
       <Text>
         An example 
-        <Text>
+        <Text
+          accessibilityRole="link"
+        >
           link
         </Text>
       </Text>
