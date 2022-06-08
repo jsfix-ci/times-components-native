@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import {
   NativeEventEmitter,
   NativeModules,
+  Platform,
   ScrollView,
   View,
 } from "react-native";
@@ -187,10 +188,15 @@ const ArticleWithContent = (props) => {
     const id = idToScrollTo.substring(1);
 
     if (layoutRefs[id]) {
-      scrollRef.scrollTo({
-        y: layoutRefs[id].y,
-        animated: true,
-      });
+      const y = layoutRefs[id].y;
+      if (Platform.OS === "android") {
+        ArticleEvents.scrollToY(y);
+      } else {
+        scrollRef.scrollTo({
+          y,
+          animated: true,
+        });
+      }
     }
   };
 
