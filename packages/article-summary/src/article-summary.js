@@ -57,7 +57,11 @@ function ArticleSummary({
       )}
       {content}
       {bullets.length > 0 && (
-        <View style={{ marginTop: 16 }}>
+        <View
+          style={{
+            marginTop: 16,
+          }}
+        >
           {bullets.map((bullet, index) => {
             const key = `bullet-${index}`;
             return (
@@ -82,6 +86,8 @@ function ArticleSummary({
                 <Text
                   style={{
                     color: colours.functional.primary,
+                    flex: 1,
+                    flexWrap: "wrap",
                     fontFamily: fonts.bodyBold,
                     textDecorationLine: "underline",
                   }}
