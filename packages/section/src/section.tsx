@@ -180,7 +180,10 @@ const Section: FC<Props> = (props) => {
     },
   };
 
-  data = data.reduce((result, item) => [...result, item, interactive], []);
+  data = data.reduce(
+    (result: any, item: any) => [...result, item, interactive],
+    [],
+  );
 
   console.log("EVENT HERE - ", data);
 

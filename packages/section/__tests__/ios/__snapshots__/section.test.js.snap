@@ -5,6 +5,7 @@ exports[`Front Page section 1`] = `
   style={
     Object {
       "flex": 1,
+      "minHeight": 300,
     }
   }
 >
@@ -77,10 +78,60 @@ exports[`Sunday Times magazine section 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
           }
         }
       >
         <StandardSlice />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
       </View>
     </View>
   </View>
@@ -152,10 +203,60 @@ exports[`Times magazine section 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
           }
         }
       >
         <StandardSlice />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
       </View>
     </View>
   </View>
@@ -295,6 +396,7 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
           }
         }
       >
@@ -317,6 +419,56 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
           }
         }
       >
@@ -339,6 +491,56 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
           }
         }
       >
@@ -361,6 +563,56 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
           }
         }
       >
@@ -383,6 +635,56 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
           }
         }
       />
@@ -403,98 +705,37 @@ exports[`section page 1`] = `
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
           }
         }
       >
-        <LeadTwoNoPicAndTwoSlice />
-      </View>
-      <View>
         <View
           style={
             Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
+              "marginBottom": 20,
             }
           }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SecondaryOneSlice />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
             }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SecondaryFourSlice />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SecondaryTwoNoPicAndTwoSlice />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SecondaryTwoNoPicAndTwoSlice />
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
       </View>
       <View>
         <View
@@ -527,6 +768,7 @@ exports[`should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
           }
         }
       >
@@ -549,10 +791,109 @@ exports[`should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for
         style={
           Object {
             "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
           }
         }
       >
         <SecondaryTwoNoPicAndTwoSlice />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 0,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "minHeight": 300,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <RNCWebView
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "flex": 1,
+                  "height": 30,
+                  "overflow": "hidden",
+                }
+              }
+            />
+          </View>
+        </View>
       </View>
     </View>
   </View>
