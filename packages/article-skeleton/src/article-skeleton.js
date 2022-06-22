@@ -92,9 +92,11 @@ const MemoisedArticle = React.memo((props) => {
       keyFactsFilteredChildren.map((keyFactsFilteredChild) =>
         keyFactsFilteredChild.children.map((item) => {
           item.children.map((childItem) => {
-            const href = childItem.attributes.href;
-            if (href?.startsWith("#")) {
-              keyFactsIDsArray.push(href.substring(1));
+            if (childItem) {
+              const href = childItem.attributes?.href || null;
+              if (href?.startsWith("#")) {
+                keyFactsIDsArray.push(href.substring(1));
+              }
             }
           });
         }),

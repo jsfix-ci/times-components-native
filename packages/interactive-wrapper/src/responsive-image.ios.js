@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, Image, ImageBackground } from "react-native";
 import PropTypes from "prop-types";
+import { screenWidth } from "@times-components-native/utils";
 
 const deckUrl = (id) =>
   `https://gobble.timesdev.tools/deck/api/deck-post-action/${id}`;
@@ -36,6 +37,12 @@ class ResponsiveImageInteractive extends Component {
         uri: d.data.Image,
         width: parseInt(d.data.Size, 10),
       }))
+      .filter((d) => {
+        if (d.uri.includes(".gif")) {
+          return true;
+        }
+        return d.width <= screenWidth();
+      })
       .sort((a, b) => a.width - b.width);
     if (images.length) {
       const image = images[images.length - 1];
