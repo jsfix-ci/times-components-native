@@ -168,25 +168,6 @@ const Section: FC<Props> = (props) => {
     ? createPuzzleData(isTablet, sectionTitle)(slices, editionBreakpoint)
     : prepareSlicesForRender(isTablet, sectionTitle, orientation)(slices);
 
-  // Adding mock interactive here
-  const interactive = {
-    name: "Interactive",
-    id: "f31b2c8f-fdda-4ce0-96ca-e9a53860b7c6",
-    interactiveConfig: {
-      dev: false,
-      environment: "prod",
-      platform: "ios",
-      version: "7.13.1",
-    },
-  };
-
-  data = data.reduce(
-    (result: any, item: any) => [...result, item, interactive],
-    [],
-  );
-
-  console.log("EVENT HERE - ", data);
-
   if (slices) receiveChildList(data);
 
   const scrollToOffset = (event: { articleId: string }) => {
@@ -244,7 +225,6 @@ Section.defaultProps = {
 const sliceStyles = StyleSheet.create({
   sliceContainer: {
     flex: 1,
-    minHeight: 300,
   },
 });
 
