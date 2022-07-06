@@ -164,9 +164,25 @@ const Section: FC<Props> = (props) => {
     });
   }
 
-  const data = isPuzzle
+  let data = isPuzzle
     ? createPuzzleData(isTablet, sectionTitle)(slices, editionBreakpoint)
     : prepareSlicesForRender(isTablet, sectionTitle, orientation)(slices);
+
+  const interactive = {
+    name: "Interactive",
+    id: "f31b2c8f-fdda-4ce0-96ca-e9a53860b7c6",
+    interactiveConfig: {
+      dev: false,
+      environment: "prod",
+      platform: "ios",
+      version: "7.13.1",
+    },
+  };
+
+  data = data.reduce(
+    (result: any, item: any) => [...result, item, interactive],
+    [],
+  );
 
   if (slices) receiveChildList(data);
 

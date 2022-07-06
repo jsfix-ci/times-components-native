@@ -1,8 +1,11 @@
 import React from "react";
 import { ResponsiveSlice } from "../shared";
-import { WebviewWrapper } from "@times-components-native/interactive-wrapper";
+import {
+  InteractiveWrapper,
+  WebviewWrapper
+} from "@times-components-native/interactive-wrapper";
 import { spacing } from "@times-components-native/styleguide";
-import { View } from "react-native";
+import { Platform, View } from "react-native";
 
 const RenderInteractive = (interactiveConfig, id) => (
   <View
@@ -10,7 +13,11 @@ const RenderInteractive = (interactiveConfig, id) => (
       marginBottom: spacing(4),
     }}
   >
-    <WebviewWrapper config={interactiveConfig} id={id} />
+    {Platform.OS === "android" ? (
+      <InteractiveWrapper config={interactiveConfig} id={id} />
+    ) : (
+      <WebviewWrapper config={interactiveConfig} id={id} />
+    )}
   </View>
 );
 
