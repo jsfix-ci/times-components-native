@@ -2,7 +2,7 @@ import React from "react";
 import { ResponsiveSlice } from "../shared";
 import {
   InteractiveWrapper,
-  WebviewWrapper
+  WebviewWrapper,
 } from "@times-components-native/interactive-wrapper";
 import { spacing } from "@times-components-native/styleguide";
 import { Platform, View } from "react-native";
