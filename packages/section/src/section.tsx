@@ -164,7 +164,7 @@ const Section: FC<Props> = (props) => {
     });
   }
 
-  let data = isPuzzle
+  const data = isPuzzle
     ? createPuzzleData(isTablet, sectionTitle)(slices, editionBreakpoint)
     : prepareSlicesForRender(isTablet, sectionTitle, orientation)(slices);
 
