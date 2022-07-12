@@ -135,12 +135,7 @@ export class AdBase extends PureComponent {
 
     return (
       <View
-        style={[
-          styles.container,
-          style,
-          isInline && styles.inlineAd,
-          { borderWidth: 1, borderColor: "green" },
-        ]}
+        style={[styles.container, style, isInline && styles.inlineAd]}
         testID="article-advertisement"
       >
         {isInline && (
