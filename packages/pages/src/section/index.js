@@ -7,6 +7,7 @@ import Responsive from "@times-components-native/responsive";
 import Section from "./section";
 
 const SectionPage = (props) => {
+  console.log("SECTION PAGE");
   return (
     <Responsive>
       <Section

@@ -100,6 +100,7 @@ export class AdBase extends PureComponent {
   };
 
   render() {
+    console.log("AD...");
     const {
       baseUrl,
       display,
@@ -134,7 +135,12 @@ export class AdBase extends PureComponent {
 
     return (
       <View
-        style={[styles.container, style, isInline && styles.inlineAd]}
+        style={[
+          styles.container,
+          style,
+          isInline && styles.inlineAd,
+          { borderWidth: 1, borderColor: "green" },
+        ]}
         testID="article-advertisement"
       >
         {isInline && (
