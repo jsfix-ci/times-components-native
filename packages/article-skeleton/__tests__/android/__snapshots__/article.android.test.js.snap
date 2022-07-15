@@ -862,17 +862,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     }
                   >
                     An example 
-                    <Text
-                      accessibilityRole="link"
-                      style={
-                        Array [
-                          Object {
-                            "textDecorationLine": "underline",
-                          },
-                          Object {},
-                        ]
-                      }
-                    >
+                    <Text>
                       link
                     </Text>
                   </Text>

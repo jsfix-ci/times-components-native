@@ -191,7 +191,7 @@ const ArticleWithContent = (props) => {
 
     if (layoutRefs[id]) {
       const y = layoutRefs[id].y;
-      if (Platform.OS === "android") {
+      if (Platform.OS === "android" && ArticleEvents.scrollToY) {
         ArticleEvents.scrollToY(y);
       } else {
         scrollRef.scrollTo({
