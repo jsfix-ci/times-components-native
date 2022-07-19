@@ -100,7 +100,7 @@
     "react-instantsearch-core": "6.9.0",
     "react-instantsearch-native": "6.9.0",
     "react-native": "0.69.0",
-    "react-native-autoheight-webview": "1.5.8",
+    "react-native-autoheight-webview": "github:iou90/react-native-autoheight-webview#58a68c4cf8c84cdcefca21116afd20443a930d90",
     "react-native-device-info": "7.3.1",
     "react-native-image-zoom-viewer": "3.0.1",
     "react-native-navigation": "7.20.0",
