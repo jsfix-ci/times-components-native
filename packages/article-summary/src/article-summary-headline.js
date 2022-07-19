@@ -1,10 +1,7 @@
-import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import React from "react";
 import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const ArticleSummaryHeadline = ({
   className,
@@ -30,7 +27,6 @@ ArticleSummaryHeadline.propTypes = {
   allowFontScaling: PropTypes.bool,
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: ViewPropTypesStyle,
 };
 
 ArticleSummaryHeadline.defaultProps = {
