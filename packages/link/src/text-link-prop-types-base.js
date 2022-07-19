@@ -1,7 +1,8 @@
-import { Text } from "react-native";
 import PropTypes from "prop-types";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 
-const { style: StylePropType } = Text.propTypes;
+const { style: ViewPropTypesStyle } = ViewPropTypes;
+
 export const basePropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
@@ -10,7 +11,7 @@ export const basePropTypes = {
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
   onPress: PropTypes.func.isRequired,
-  style: StylePropType,
+  style: ViewPropTypesStyle,
   target: PropTypes.string,
   url: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };

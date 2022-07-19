@@ -1,5 +1,6 @@
 import React from "react";
-import { TouchableOpacity, ViewPropTypes } from "react-native";
+import { TouchableOpacity } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 
 const Link = ({
