@@ -64,7 +64,6 @@ interface Props {
   underneathTextStar?: boolean;
   centeredStar?: boolean;
   isDarkStar?: boolean;
-  isTablet: boolean;
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
@@ -73,7 +72,6 @@ interface Props {
 }
 
 export const getArticleReadState = (
-  isTablet: boolean,
   readArticles: Array<ArticleRead> | null,
   articleId: string,
   isLive: boolean = false,
@@ -86,12 +84,10 @@ export const getArticleReadState = (
     };
   }
   return {
-    read:
-      isTablet && (readArticles?.some((obj) => obj.id === articleId) ?? false),
+    read: readArticles?.some((obj) => obj.id === articleId) ?? false,
     animate:
-      isTablet &&
-      (readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
-        false),
+      readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
+      false,
   };
 };
 
@@ -139,7 +135,6 @@ const ArticleSummary: React.FC<Props> = ({
   underneathTextStar = false,
   centeredStar = false,
   isDarkStar = false,
-  isTablet = false,
   starStyle,
   hideLabel = false,
   bullets = [],
@@ -189,7 +184,6 @@ const ArticleSummary: React.FC<Props> = ({
   };
 
   const articleReadState = getArticleReadState(
-    isTablet,
     readArticles,
     id,
     getIsLiveState(),
