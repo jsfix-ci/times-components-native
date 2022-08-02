@@ -114,10 +114,10 @@ const DOMContext = ({ data = {}, baseUrl = "" }: DomContextType) => {
 
       </head>
       <body>
-          <div id="ad-news"></div>
+          <div id="ad-header"></div>
 
           <script src="https://ads.thetimes.co.uk/prebid.times_render.min.js" defer=""></script>
-          <script src="https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-xxxx-testing-adlib-on-tnl-apps/ads.times_render.min.js" defer=""></script>
+          <script src="https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-xxxx-testing-adlib-on-tnl-apps/ads.times_render.min.js?sdjflsd" defer=""></script>
       </body>
     </html>
     `;
