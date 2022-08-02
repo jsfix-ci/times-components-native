@@ -19,7 +19,7 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
     try {
       return decodeURIComponent(headline);
     } catch (e) {
-      console.log("uri error: ", e);
+      console.error("uri error: ", e);
       return "";
     }
   };
