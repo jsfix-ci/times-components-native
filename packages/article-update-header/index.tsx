@@ -12,12 +12,10 @@ interface IProps {
 }
 
 function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
-  // const dt = DateTime.fromISO(updated).setLocale("en-GB");
-  const dt = DateTime.fromISO(updated).setZone("Europe/London");
-  console.log("");
-  console.log("UPDATED: ", updated);
-  console.log("::: :::");
-  console.log("DT: ", dt);
+  const defaultZone = "Europe/London";
+  const locale = "en-GB";
+  const userZone = DateTime.local().zoneName;
+  const dt = DateTime.fromISO(updated).setLocale(locale).setZone(defaultZone);
   const { colours, fonts } = styleguide();
 
   const getHeadlineSafely = () => {
@@ -62,6 +60,8 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                   style={{
                     color: colours.functional.brandColour,
                     fontFamily: fonts.supporting,
+                    borderWidth: 1,
+                    borderColor: "red",
                   }}
                 >
                   {dt.toRelative()} |{" "}
@@ -72,7 +72,11 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                     fontFamily: fonts.supporting,
                   }}
                 >
-                  {dt.toLocaleString(DateTime.TIME_SIMPLE).toLocaleLowerCase()}
+                  {`${dt
+                    .toLocaleString(DateTime.TIME_24_SIMPLE)
+                    .toLocaleLowerCase()} ${
+                    userZone !== defaultZone ? dt.offsetNameShort : ""
+                  }`}
                 </Text>
               </View>
             </View>
