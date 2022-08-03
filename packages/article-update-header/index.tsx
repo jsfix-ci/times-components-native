@@ -12,7 +12,12 @@ interface IProps {
 }
 
 function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
-  const dt = DateTime.fromISO(updated).setLocale("en-US");
+  // const dt = DateTime.fromISO(updated).setLocale("en-GB");
+  const dt = DateTime.fromISO(updated).setZone("Europe/London");
+  console.log("");
+  console.log("UPDATED: ", updated);
+  console.log("::: :::");
+  console.log("DT: ", dt);
   const { colours, fonts } = styleguide();
 
   const getHeadlineSafely = () => {
