@@ -1,4 +1,10 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   NativeEventEmitter,
   NativeModules,
@@ -157,7 +163,7 @@ const MemoisedArticle = React.memo((props) => {
 const ArticleWithContent = (props) => {
   const { onArticleRead, data } = props;
   const articleReadTimerDuration = 6000;
-  let hasBeenRead = false;
+  const hasBeenRead = useRef(false);
   let articleReadDelay = null;
 
   /**
@@ -176,34 +182,37 @@ const ArticleWithContent = (props) => {
    */
   const [layoutRefs, setLayoutRefs] = useState({});
 
-  const setLayoutRef = (id, nativeEventLayout) => {
+  const setLayoutRef = useCallback((id, nativeEventLayout) => {
     setLayoutRefs((refs) => {
       refs[id] = nativeEventLayout;
       return refs;
     });
-  };
+  }, []);
 
   /**
    * Scrolls to a ref if it exists in layout refs
    */
-  const scrollToRef = (idToScrollTo) => {
-    const id = idToScrollTo.substring(1);
+  const scrollToRef = useCallback(
+    (idToScrollTo) => {
+      const id = idToScrollTo.substring(1);
 
-    if (layoutRefs[id]) {
-      const y = layoutRefs[id].y;
-      if (Platform.OS === "android" && ArticleEvents.scrollToY) {
-        ArticleEvents.scrollToY(y);
-      } else {
-        scrollRef.scrollTo({
-          y,
-          animated: true,
-        });
+      if (layoutRefs[id]) {
+        const y = layoutRefs[id].y;
+        if (Platform.OS === "android" && ArticleEvents.scrollToY) {
+          ArticleEvents.scrollToY(y);
+        } else {
+          scrollRef.scrollTo({
+            y,
+            animated: true,
+          });
+        }
       }
-    }
-  };
+    },
+    [layoutRefs, scrollRef],
+  );
 
   const setArticleReadTimeout = (articleId) => {
-    if (articleId === data.id && !hasBeenRead) {
+    if (articleId === data.id && !hasBeenRead.current) {
       articleReadDelay = setTimeout(() => {
         setArticleRead();
       }, articleReadTimerDuration);
@@ -222,13 +231,13 @@ const ArticleWithContent = (props) => {
   }, []);
 
   const setArticleRead = () => {
-    if (hasBeenRead) return;
-    hasBeenRead = true;
+    if (hasBeenRead.current) return;
+    hasBeenRead.current = true;
     onArticleRead && onArticleRead(data.id);
   };
 
   const handleScroll = () => {
-    !hasBeenRead && setArticleRead();
+    !hasBeenRead.current && setArticleRead();
   };
 
   return (
