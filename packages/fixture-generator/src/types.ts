@@ -1546,7 +1546,7 @@ export interface Edition {
 
   sections?: (Section | null)[] | null;
   /** Current version of the edition (used primarily for caching) */
-  revision: BigInt;
+  revision: bigint;
   /** List of images in the edition */
   images: ImagesPaged;
 }
@@ -2280,7 +2280,7 @@ export interface ArticlesQueryArgs {
 export interface EditionQueryArgs {
   id: string;
 
-  minRevision?: BigInt | null;
+  minRevision?: bigint | null;
 }
 export interface EditionsQueryArgs {
   updatedSince?: DateTime | null;
