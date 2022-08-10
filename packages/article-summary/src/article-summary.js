@@ -60,7 +60,6 @@ function ArticleSummary({
         <View
           style={{
             marginTop: 16,
-            opacity: articleReadState.read ? 0.5 : 1,
           }}
         >
           {bullets.map((bullet, index) => {
