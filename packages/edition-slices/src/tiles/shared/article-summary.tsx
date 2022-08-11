@@ -44,6 +44,15 @@ type MarkAsReadProps = {
   opacity: number;
 };
 
+export type Bullet = {
+  id: string;
+  shortHeadline: string;
+};
+
+type BulletWithReadState = Bullet & {
+  readState: ArticleReadState;
+};
+
 interface Props {
   bylines?: BylineInput[];
   bylineStyle?: StyleProp<ViewStyle>;
@@ -67,7 +76,7 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
-  bullets?: string[];
+  bullets?: Bullet[];
   onPress?: OnArticlePress | (() => null);
 }
 
@@ -189,6 +198,13 @@ const ArticleSummary: React.FC<Props> = ({
     getIsLiveState(),
   );
 
+  const bulletsWithReadState: BulletWithReadState[] = bullets?.length
+    ? bullets.map((bullet) => ({
+        ...bullet,
+        readState: getArticleReadState(readArticles, id, getIsLiveState()),
+      }))
+    : [];
+
   useEffect(() => {
     if (!articleReadState.animate) return;
 
@@ -306,7 +322,7 @@ const ArticleSummary: React.FC<Props> = ({
       saveStar={withStar && renderSaveStar()}
       style={style}
       center={!!centeredStar}
-      bullets={bullets}
+      bullets={bulletsWithReadState}
       onPress={onPress}
     />
   );
