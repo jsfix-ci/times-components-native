@@ -119,19 +119,18 @@ export class AdBase extends PureComponent {
 
     if (hasError || offline) return null;
 
-    const sizeProps =
-      !isAdReady || hasError
-        ? { width: 0, height: 0 }
-        : {
-            height: config.maxSizes.height,
-            width:
-              width ||
-              (narrowContent
-                ? getNarrowArticleBreakpoint(screenWidth).content
-                : screenWidth),
-          };
+    const sizeProps = {
+      height: config.maxSizes.height,
+      width:
+        width ||
+        (narrowContent
+          ? getNarrowArticleBreakpoint(screenWidth).content
+          : screenWidth),
+    };
 
     const isInline = display === "inline";
+
+    console.log("SIZE PROPS: ", sizeProps);
 
     return (
       <View
