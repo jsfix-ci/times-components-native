@@ -100,7 +100,6 @@ export class AdBase extends PureComponent {
   };
 
   render() {
-    console.log("AD...");
     const {
       baseUrl,
       display,
@@ -129,8 +128,6 @@ export class AdBase extends PureComponent {
     };
 
     const isInline = display === "inline";
-
-    console.log("SIZE PROPS: ", sizeProps);
 
     return (
       <View
