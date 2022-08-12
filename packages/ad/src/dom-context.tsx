@@ -86,7 +86,6 @@ const DOMContext = ({
   };
 
   const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
-    console.log("handle navigation change");
     if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {
       webViewRef.current?.stopLoading();
       openURLInBrowser(url);
@@ -104,15 +103,13 @@ const DOMContext = ({
    */
   const handleMessageEvent = (e: WebViewMessageEvent) => {
     const jsonData = e.nativeEvent.data;
+    const data = JSON.parse(jsonData);
+    const { type, detail } = data;
 
     // Don't process postMessage events from 3rd party scripts
     if (jsonData.indexOf("isTngMessage") === -1) {
       return;
     }
-
-    const { type, detail } = JSON.parse(jsonData);
-
-    console.log("DETAIL");
 
     switch (type) {
       case "renderFailed":
@@ -181,10 +178,6 @@ const DOMContext = ({
     }
   };
 
-  // NOTE: if this generated code is not working, and you don't know why
-  // because React Native doesn't report errors in webview JS code, try
-  // connecting a debugger to the app, console.log(html), copy and paste
-  // the HTML into a file and run it in a browser.
   const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
   const html = `
   <html>
@@ -232,13 +225,22 @@ const DOMContext = ({
         }
       }
     </script>
-
     <script type="text/javascript" src="https://gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js"></script>
-
+    <script>
+      window.theTimesBaseUrl = "${String(baseUrl)}";
+      window.postMessage = function(data) {
+      var message = typeof data === "string" ? data : JSON.stringify(data);
+      window.ReactNativeWebView.postMessage(message);
+      };
+      (${webviewEventCallbackSetupAsString})({window});
+    </script>
   </head>
   <body>
-      <div id="ad-news"></div>
-
+  <script>
+  </script>
+      <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
+        <div id="ad-news"></div>
+      </div>
       <script src="https://ads.thetimes.co.uk/prebid.times_render.min.js" defer=""></script>
       <script src="https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-xxxx-testing-adlib-on-tnl-apps/ads.times_render.min.js?sdjflsd" defer=""></script>
   </body>
@@ -246,52 +248,25 @@ const DOMContext = ({
     `;
 
   return (
-    <View
-      style={{
-        height,
-        alignItems: "center",
-        justifyContent: "center",
-        width,
-      }}
-    >
-      <WebView
-        ref={webViewRef}
-        onMessage={handleMessageEvent}
-        onNavigationStateChange={handleNavigationStateChange}
-        source={{ html, baseUrl }}
-        originWhitelist={
-          Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-        }
-        style={{
-          height,
-          width,
-        }}
-        allowsInlineMediaPlayback={true}
-        androidLayerType={"software"}
-      />
-    </View>
-    // <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
-    //   {(Platform.OS === "ios" || loaded) && (
-    //     <WebView
-    //       ref={webViewRef}
-    //       onMessage={handleMessageEvent}
-    //       onNavigationStateChange={handleNavigationStateChange}
-    //       originWhitelist={
-    //         Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-    //       }
-    //       source={{ baseUrl, html }}
-    //       allowsInlineMediaPlayback={true}
-    //       androidLayerType={"software"}
-    //     />
-    //   )}
-    //   {height !== 0 && (
-    //     <ViewportAwareView
-    //       onViewportEnter={inViewport}
-    //       onViewportLeave={outViewport}
-    //       style={calculateViewportVisible(height)}
-    //     />
-    //   )}
-    // </ViewportAwareView>
+    <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
+      {(Platform.OS === "ios" || loaded) && (
+        <WebView
+          ref={webViewRef}
+          onMessage={handleMessageEvent}
+          onNavigationStateChange={handleNavigationStateChange}
+          source={{ html, baseUrl }}
+          originWhitelist={
+            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
+          }
+          style={{
+            height,
+            width,
+          }}
+          allowsInlineMediaPlayback={true}
+          androidLayerType={"software"}
+        />
+      )}
+    </ViewportAwareView>
   );
 };
 
