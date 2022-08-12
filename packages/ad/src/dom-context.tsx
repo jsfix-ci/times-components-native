@@ -14,7 +14,7 @@ import {
 import { Viewport } from "@skele/components";
 import styles, { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
-import { AdInitAsString } from "./utils/ad-init";
+// import { AdInitAsString } from "./utils/ad-init";
 import {
   hasDifferentOrigin,
   isUrlChildOfBaseUrl,
@@ -264,6 +264,13 @@ const DOMContext = ({
           }}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
+        />
+      )}
+      {height !== 0 && (
+        <ViewportAwareView
+          onViewportEnter={inViewport}
+          onViewportLeave={outViewport}
+          style={calculateViewportVisible(height)}
         />
       )}
     </ViewportAwareView>
