@@ -63,10 +63,11 @@ const TileSummary: React.FC<Props> = ({
 }) => {
   return (
     <ResponsiveContext.Consumer>
-      {() => (
+      {({ isTablet }) => (
         <SectionContext.Consumer>
           {({ readArticles }) => (
             <ArticleSummary
+              isTablet={isTablet}
               bylines={bylines}
               bylineStyle={bylineStyle}
               bylineOnTop={bylineOnTop}
