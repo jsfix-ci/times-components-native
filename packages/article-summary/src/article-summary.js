@@ -71,6 +71,7 @@ function ArticleSummary({
                   flexDirection: "row",
                   marginBottom: 8,
                   paddingVertical: 2,
+                  opacity: bullet.readState?.read ? 0.5 : 1,
                 }}
                 onPress={() => onPress({ id: bullet.id })}
               >

@@ -5,6 +5,14 @@ import KeyFactsText from "../src/key-facts-text";
 import data from "../fixtures/key-facts-test.json";
 import { Platform } from "react-native";
 
+jest.mock("react-native", () => {
+  const rn = jest.requireActual("react-native");
+  rn.NativeModules.ArticleEvents = {
+    scrollToY: jest.fn(),
+  };
+  return rn;
+});
+
 export default () => {
   it("handle the click event", () => {
     const mockLinkPress = jest.fn();

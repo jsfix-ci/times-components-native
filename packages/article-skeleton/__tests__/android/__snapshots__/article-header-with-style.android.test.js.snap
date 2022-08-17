@@ -30,9 +30,7 @@ exports[`1. article with header 1`] = `
                   <View />
                   <Text>
                     Another ministerial aide, 
-                    <Text
-                      accessibilityRole="link"
-                    >
+                    <Text>
                       Robert Courts
                     </Text>
                     , resigned saying that he could not look himself in the mirror if he backed the Chequers proposals.
