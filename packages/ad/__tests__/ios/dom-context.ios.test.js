@@ -1,8 +1,11 @@
 import React from "react";
-import "../mocks";
+//import "../mocks";
+import { mockNativeModules } from "@times-components-native/mocks";
 import DOMContextNative from "../../src/dom-context";
 import TestRenderer from "react-test-renderer";
 import * as domContextUtils from "../../src/utils/dom-context-utils";
+
+mockNativeModules();
 
 // prevent function sources appearing in snapshots
 jest.mock(
@@ -15,6 +18,10 @@ jest.mock("../../src/utils/ad-init", () => ({
 jest.mock("react-native-webview", () => ({ WebView: "WebView" }));
 
 describe("ios - dom-context", () => {
+  beforeEach(() => {
+    mockNativeModules();
+  });
+
   afterEach(() => {
     jest.resetModules();
     jest.clearAllMocks();
