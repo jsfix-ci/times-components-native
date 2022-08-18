@@ -103,7 +103,12 @@ const DOMContext = ({
    */
   const handleMessageEvent = (e: WebViewMessageEvent) => {
     const jsonData = e.nativeEvent.data;
-    const data = JSON.parse(jsonData);
+    let data;
+    try {
+      data = JSON.parse(jsonData);
+    } catch (error) {
+      return;
+    }
     const { type, detail } = data;
 
     // Don't process postMessage events from 3rd party scripts
