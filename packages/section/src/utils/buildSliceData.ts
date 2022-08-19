@@ -26,7 +26,7 @@ export const buildSliceData = memoizeOne(
       const currentSlice = transformSlice(newSlices[idx]);
       let generatedId = currentSlice.id;
       Object.keys(currentSlice).forEach((key) => {
-        if (currentSlice[key].article) {
+        if (currentSlice[key] !== null && currentSlice[key].article) {
           generatedId += currentSlice[key].article.id;
         }
       });

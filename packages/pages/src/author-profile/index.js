@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { NativeModules } from "react-native";
 import PropTypes from "prop-types";
 import AuthorProfile from "@times-components-native/author-profile";
@@ -11,7 +11,19 @@ const {
   onTwitterLinkPress,
 } = NativeModules.AuthorProfileEvents;
 
-const AuthorProfilePage = ({ authorSlug }) => {
+const AuthorProfilePage = ({ authorSlug, deeplink_value = null }) => {
+  useEffect(() => {
+    if (deeplink_value) {
+      track({
+        attrs: {
+          eventTime: new Date(),
+          pageName: "AuthorProfile",
+        },
+        ...deeplink_value,
+      });
+    }
+  }, [deeplink_value]);
+
   const AuthorProfileView = withNativeProvider(
     <AuthorProfileProvider
       articleImageRatio="4:3"

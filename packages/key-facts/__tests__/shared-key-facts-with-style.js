@@ -19,6 +19,16 @@ import {
   withTabletContext,
 } from "@times-components-native/test-utils";
 
+// scrollToY
+// eslint-disable-next-line global-require
+jest.mock("react-native", () => {
+  const rn = jest.requireActual("react-native");
+  rn.NativeModules.ArticleEvents = {
+    scrollToY: jest.fn(),
+  };
+  return rn;
+});
+
 export default () => {
   addSerializers(
     expect,

@@ -6,6 +6,7 @@ Array [
     Object {
       "action": "Pressed",
       "attrs": Object {
+        "articleHeadline": "Venezuela shows how Corbyn’s socialism works",
         "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
         "edition_type": "past 6 days",
         "isSaved": true,
@@ -26,6 +27,7 @@ Array [
     Object {
       "action": "Pressed",
       "attrs": Object {
+        "articleHeadline": "Venezuela shows how Corbyn’s socialism works",
         "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
         "edition_type": "past 6 days",
         "isSaved": false,

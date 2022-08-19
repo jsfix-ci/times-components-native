@@ -820,17 +820,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   >
                     An example 
                     <Text
-                      accessibilityRole="link"
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
-                      style={
-                        Array [
-                          Object {
-                            "textDecorationLine": "underline",
-                          },
-                          Object {},
-                        ]
-                      }
                     >
                       link
                     </Text>
@@ -2555,7 +2546,7 @@ exports[`10. an article with italic and normal text link 1`] = `
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
-                     Coronavirus Charity Appeal
+                    Coronavirus Charity Appeal
                   </Text>
                 </Text>
                 <Text

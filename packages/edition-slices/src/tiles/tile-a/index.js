@@ -9,7 +9,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-const TileA = ({ onPress, tile }) => {
+const TileA = ({ onPress, tile, bullets }) => {
   const crop = getTileImage(tile, "crop169");
 
   if (!crop) {
@@ -27,6 +27,8 @@ const TileA = ({ onPress, tile }) => {
         style={styles.summaryContainer}
         tile={tile}
         flagsStyle={styles.flags}
+        bullets={bullets}
+        onPress={onPress}
       />
       <TileImage
         aspectRatio={16 / 9}
@@ -44,6 +46,7 @@ const TileA = ({ onPress, tile }) => {
 TileA.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
+  bullets: PropTypes.array,
 };
 
 export default withTileTracking(TileA);

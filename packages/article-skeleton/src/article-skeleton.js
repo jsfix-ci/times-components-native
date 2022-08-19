@@ -1,7 +1,14 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   NativeEventEmitter,
   NativeModules,
+  Platform,
   ScrollView,
   View,
 } from "react-native";
@@ -91,9 +98,11 @@ const MemoisedArticle = React.memo((props) => {
       keyFactsFilteredChildren.map((keyFactsFilteredChild) =>
         keyFactsFilteredChild.children.map((item) => {
           item.children.map((childItem) => {
-            const href = childItem.attributes.href;
-            if (href?.startsWith("#")) {
-              keyFactsIDsArray.push(href.substring(1));
+            if (childItem) {
+              const href = childItem.attributes?.href || null;
+              if (href?.startsWith("#")) {
+                keyFactsIDsArray.push(href.substring(1));
+              }
             }
           });
         }),
@@ -154,8 +163,8 @@ const MemoisedArticle = React.memo((props) => {
 const ArticleWithContent = (props) => {
   const { onArticleRead, data } = props;
   const articleReadTimerDuration = 6000;
-  let [hasBeenRead, setHasBeenRead] = useState(false);
-  let [articleReadDelayTimeoutID, setArticleReadDelayTimeoutId] = useState();
+  const hasBeenRead = useRef(false);
+  let articleReadDelay = null;
 
   /**
    * Ref for scroll view stored to allow scrollToRef
@@ -173,36 +182,42 @@ const ArticleWithContent = (props) => {
    */
   const [layoutRefs, setLayoutRefs] = useState({});
 
-  const setLayoutRef = (id, nativeEventLayout) => {
+  const setLayoutRef = useCallback((id, nativeEventLayout) => {
     setLayoutRefs((refs) => {
       refs[id] = nativeEventLayout;
       return refs;
     });
-  };
+  }, []);
 
   /**
    * Scrolls to a ref if it exists in layout refs
    */
-  const scrollToRef = (idToScrollTo) => {
-    const id = idToScrollTo.substring(1);
+  const scrollToRef = useCallback(
+    (idToScrollTo) => {
+      const id = idToScrollTo.substring(1);
 
-    if (layoutRefs[id]) {
-      scrollRef.scrollTo({
-        y: layoutRefs[id].y,
-        animated: true,
-      });
-    }
-  };
+      if (layoutRefs[id]) {
+        const y = layoutRefs[id].y;
+        if (Platform.OS === "android" && ArticleEvents.scrollToY) {
+          ArticleEvents.scrollToY(y);
+        } else {
+          scrollRef.scrollTo({
+            y,
+            animated: true,
+          });
+        }
+      }
+    },
+    [layoutRefs, scrollRef],
+  );
 
   const setArticleReadTimeout = (articleId) => {
-    if (articleId === data.id && !hasBeenRead) {
-      const timeoutId = setTimeout(() => {
+    if (articleId === data.id && !hasBeenRead.current) {
+      articleReadDelay = setTimeout(() => {
         setArticleRead();
       }, articleReadTimerDuration);
-
-      setArticleReadDelayTimeoutId(timeoutId);
     } else {
-      clearTimeout(articleReadDelayTimeoutID);
+      clearTimeout(articleReadDelay);
     }
   };
 
@@ -216,13 +231,13 @@ const ArticleWithContent = (props) => {
   }, []);
 
   const setArticleRead = () => {
-    if (hasBeenRead) return;
-    setHasBeenRead(true);
+    if (hasBeenRead.current) return;
+    hasBeenRead.current = true;
     onArticleRead && onArticleRead(data.id);
   };
 
   const handleScroll = () => {
-    !hasBeenRead && setArticleRead();
+    !hasBeenRead.current && setArticleRead();
   };
 
   return (

@@ -1,6 +1,7 @@
 export type FontsKeys =
   | "body"
   | "bodyRegular"
+  | "bodyBold"
   | "bodyRegularSmallCaps"
   | "cultureMagazine"
   | "dropCap"
@@ -14,6 +15,7 @@ export type FontsKeys =
 const fonts: Record<FontsKeys, string> = {
   body: "TimesDigitalW04",
   bodyRegular: "TimesDigitalW04-Regular",
+  bodyBold: "TimesDigitalW04-Bold",
   bodyRegularSmallCaps: "TimesDigitalW04-RegularSC",
   cultureMagazine: "Flama-Bold",
   dropCap: "TimesModern-Regular",

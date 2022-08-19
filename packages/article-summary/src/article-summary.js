@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import { articleBylinePropTypes } from "@times-components-native/article-byline";
 import DatePublication from "@times-components-native/date-publication";
+import { Text } from "@times-components-native/text";
 
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";
@@ -13,6 +14,7 @@ import summarise from "./summarise";
 import ArticleSummaryByline from "./article-summary-byline";
 import ArticleSummaryLabel from "./article-summary-label";
 import Read from "@times-components-native/read";
+import styleguide from "@times-components-native/styleguide";
 function ArticleSummary({
   allowFontScaling,
   articleReadState,
@@ -27,10 +29,10 @@ function ArticleSummary({
   saveStar,
   center = false,
   bullets = [],
-  onPress = () => null,
+  onPress,
 }) {
   const { bylineOnTop = false } = bylineProps || {};
-
+  const { colours, fonts } = styleguide();
   const byline = bylineProps ? (
     <ArticleSummaryByline
       {...bylineProps}
@@ -58,11 +60,24 @@ function ArticleSummary({
       )}
       {content}
       {bullets.length > 0 && (
-        <View style={{ marginTop: 16 }}>
+        <View
+          style={{
+            marginTop: 16,
+          }}
+        >
           {bullets.map((bullet, index) => {
             const key = `bullet-${index}`;
             return (
-              <View key={key} style={{ flexDirection: "row", marginBottom: 8 }}>
+              <TouchableOpacity
+                key={key}
+                style={{
+                  flexDirection: "row",
+                  marginBottom: 8,
+                  paddingVertical: 2,
+                  opacity: bullet.readState?.read ? 0.5 : 1,
+                }}
+                onPress={() => onPress({ id: bullet.id })}
+              >
                 <View
                   style={{
                     backgroundColor: "black",
@@ -73,13 +88,17 @@ function ArticleSummary({
                   }}
                 />
                 <Text
-                  allowFontScaling={allowFontScaling}
-                  style={{ textDecorationLine: "underline" }}
-                  onPress={() => onPress({ id: bullet.id })}
+                  style={{
+                    color: colours.functional.primary,
+                    flex: 1,
+                    flexWrap: "wrap",
+                    fontFamily: fonts.bodyBold,
+                    textDecorationLine: "underline",
+                  }}
                 >
-                  {bullet.headline}
+                  {bullet.shortHeadline}
                 </Text>
-              </View>
+              </TouchableOpacity>
             );
           })}
         </View>
@@ -124,6 +143,7 @@ ArticleSummary.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
+  onPress: PropTypes.func,
 };
 
 ArticleSummary.defaultProps = {
@@ -143,6 +163,7 @@ ArticleSummary.defaultProps = {
   saveStar: null,
   strapline: null,
   style: null,
+  onPress: () => null,
 };
 
 export {

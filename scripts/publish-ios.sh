@@ -6,23 +6,24 @@ PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $
 TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 2; }
 
 setupEnv () {
-  if [ "$CIRCLE_BRANCH" == "master" ] && [[ $PACKAGE_VERSION != *"beta"* ]]
-  then
-    echo "👉 Setting up enviroment for a production release."
-    ARTIFACTS_REPO_SLUG="$REPO_SLUG"
-    ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
+  if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
+    then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH" 
+    exit 0
+  fi
 
-    RELEASE_DEST="production"
-  elif [[ $PACKAGE_VERSION == *"beta"* ]]
-  then
+  if [[ $PACKAGE_VERSION == *"beta"* ]]
+    then
     echo "👉 Setting up enviroment for a beta release."
     ARTIFACTS_REPO_SLUG="$REPO_SLUG-beta"
     ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
 
     RELEASE_DEST="beta"
   else
-    echo "✋ It looks like you are not on 'master' branch or your version number does't include 'beta'. Will not publish."
-    exit 0
+    echo "👉 Setting up enviroment for a production release."
+    ARTIFACTS_REPO_SLUG="$REPO_SLUG"
+    ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
+
+    RELEASE_DEST="production"
   fi
 }
 

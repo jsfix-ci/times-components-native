@@ -26,12 +26,14 @@ import {
   Tile,
 } from "@times-components-native/fixture-generator/src/types";
 import { Orientation } from "@times-components-native/responsive/src/types";
+import { Bullet } from "../../tiles/shared/article-summary";
 
 interface Props {
   onPress: OnArticlePress;
   tile: TransformConfiguredTile;
   breakpoint: EditionBreakpointKeys;
   orientation: Orientation;
+  bullets?: Bullet[];
 }
 
 const TileColStandard: FC<Props> = ({
@@ -39,6 +41,7 @@ const TileColStandard: FC<Props> = ({
   tile,
   breakpoint,
   orientation,
+  bullets = [],
 }) => {
   if (!tile.config) return null;
 
@@ -109,6 +112,8 @@ const TileColStandard: FC<Props> = ({
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
+            bullets={bullets}
+            onPress={onPress}
           />
         )}
       />

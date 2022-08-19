@@ -14,6 +14,15 @@ interface IProps {
 function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
   const dt = DateTime.fromISO(updated).setLocale("en-US");
   const { colours, fonts } = styleguide();
+
+  const getHeadlineSafely = () => {
+    try {
+      return decodeURIComponent(headline);
+    } catch (e) {
+      console.log("uri error: ", e);
+      return "";
+    }
+  };
   return (
     <ResponsiveContext.Consumer>
       {({ isArticleTablet }) => {
@@ -69,7 +78,7 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                 fontSize: isArticleTablet ? 36 : 30,
               }}
             >
-              {decodeURIComponent(headline)}
+              {getHeadlineSafely()}
             </Text>
           </View>
         );

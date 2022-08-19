@@ -15,8 +15,6 @@ const ArticleComments: FC<Props> = ({
   narrowContent,
   onCommentGuidelinesPress,
   onCommentsPress,
-  onTooltipPresented,
-  tooltips,
   url,
 }) => {
   const config = useRemoteConfigContext();
@@ -38,8 +36,6 @@ const ArticleComments: FC<Props> = ({
       narrowContent={narrowContent}
       onCommentGuidelinesPress={onCommentGuidelinesPress}
       onCommentsPress={onCommentsPress}
-      onTooltipPresented={onTooltipPresented}
-      tooltips={tooltips}
       url={url}
     />
   );

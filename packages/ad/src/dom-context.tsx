@@ -1,31 +1,29 @@
-import React, { useRef, useCallback, useState } from "react";
-import { View, Linking, Platform, Dimensions } from "react-native";
-import { WebView, WebViewMessageEvent } from "react-native-webview";
-// @ts-ignore
-import { Viewport } from "@skele/components";
+import React, { useEffect, useState } from "react";
 import {
-  getApplicationName,
-  getBuildNumber,
-  getBundleId,
-  getDeviceId,
-  getReadableVersion,
-  getVersion,
-} from "react-native-device-info";
-import logger from "./utils/logger";
+  View,
+  Platform,
+  Dimensions,
+  NativeModules,
+  NativeEventEmitter,
+} from "react-native";
+import {
+  WebView,
+  WebViewMessageEvent,
+  WebViewNavigation,
+} from "react-native-webview";
+import { Viewport } from "@skele/components";
 import styles, { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
 import { AdInitAsString } from "./utils/ad-init";
+import {
+  hasDifferentOrigin,
+  isUrlChildOfBaseUrl,
+  openURLInBrowser,
+  urlHasBridgePrefix,
+} from "./utils/dom-context-utils";
+import logger from "./utils/logger";
 
 const { width: screenWidth } = Dimensions.get("screen");
-
-const deviceInfo = {
-  applicationName: getApplicationName(),
-  buildNumber: getBuildNumber(),
-  bundleId: getBundleId(),
-  deviceId: getDeviceId(),
-  readableVersion: getReadableVersion(),
-  version: getVersion(),
-};
 
 interface DomContextType {
   baseUrl?: string;
@@ -37,22 +35,10 @@ interface DomContextType {
   height?: number;
 }
 
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
 const ViewportAwareView = Viewport.Aware(View);
-
-export const hasDifferentOrigin = (url: string, baseUrl: string) =>
-  url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
-
-export const urlHasBridgePrefix = (url: string) =>
-  url.indexOf("react-js-navigation://") === 0;
-
-export const isUrlChildOfBaseUrl = (url: string, baseUrl: string) =>
-  url.indexOf(baseUrl) > -1 && url !== baseUrl;
-
-export const openURLInBrowser = (url: string = "") =>
-  Linking.canOpenURL(url).then((supported) => {
-    if (!supported) throw new Error("Can't open url " + url);
-    return Linking.openURL(url);
-  });
 
 const DOMContext = ({
   height: heightProp = 0,
@@ -63,9 +49,8 @@ const DOMContext = ({
   isInline = true,
   width = screenWidth,
 }: DomContextType) => {
-  const webViewRef = useRef<WebView>(null);
-  const isVisible = useRef(false);
-  // only add additional height if and ad height is provided
+  const webViewRef = React.useRef<WebView>(null);
+
   const adHeight = heightProp
     ? heightProp + Number(styles.containerAdditionalHeight.height)
     : 0;
@@ -73,96 +58,125 @@ const DOMContext = ({
   const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
 
-  const handleNavigationStateChange = useCallback(
-    ({ url }) => {
-      if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {
-        webViewRef.current?.stopLoading();
-        openURLInBrowser(url);
-      }
-      // CATCH ADS INSIDE "times.co.uk" domain.
-      if (isUrlChildOfBaseUrl(url, baseUrl)) {
-        webViewRef.current?.stopLoading();
-        openURLInBrowser(url);
-      }
-    },
-    [baseUrl, webViewRef],
-  );
+  useEffect(() => {
+    const onArticleDisappearEventsListener = articleEventEmitter.addListener(
+      "onArticleDisappear",
+      onArticleDisappear,
+    );
 
-  const handleMessageEvent = useCallback(
-    (e: WebViewMessageEvent) => {
-      const json = e.nativeEvent.data;
+    return onArticleDisappearEventsListener.remove;
+  }, []);
 
-      if (
-        json.indexOf("isTngMessage") === -1 &&
-        json.indexOf("unrulyLoaded") === -1
-      ) {
-        // don't try and process postMessage events from 3rd party scripts
-        return;
-      }
-      const { type, detail } = JSON.parse(json);
-      switch (type) {
-        case "renderFailed":
-          onRenderError();
-          break;
-        case "unrulyLoaded": {
-          if (loaded && isVisible.current) {
-            inViewport();
-          }
-          break;
-        }
-        case "renderComplete":
-          onRenderComplete();
-          break;
-        case "setAdWebViewHeight": {
-          const adHeight = detail.height;
-          const webViewHeight =
-            adHeight > 1
-              ? adHeight + styles.containerAdditionalHeight.height
-              : 0;
-
-          setHeight(isInline ? adHeight : webViewHeight);
-          break;
-        }
-        default:
-          if (data.debug) logger(type, detail);
-      }
-    },
-    [onRenderError, onRenderComplete, webViewRef],
-  );
-
-  const outViewport = useCallback(() => {
-    isVisible.current = false;
-
-    if (webViewRef.current) {
+  /**
+   * Destroys all ad slots when article is swiped off screen
+   * Uses articleEventEmitter as articles are rendered whilst off screen
+   * causing ads to continue playing when un-muted
+   */
+  const onArticleDisappear = () => {
+    if (webViewRef.current && Platform.OS === "ios") {
       webViewRef.current.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...deviceInfo,
-            visible: false,
-          })});
-        };
+        /**
+         *  destroySlots is added in the HTML provided to the webview
+         *  used to destroy any live adverts post swiping away from current article
+         */ 
+        destroySlots();
+        true;
       `);
     }
-  }, []);
+  };
 
-  const loadAd = useCallback(() => {
-    setLoaded(true);
-  }, []);
-
-  const inViewport = useCallback(() => {
-    isVisible.current = true;
-
-    if (webViewRef.current) {
-      webViewRef.current.injectJavaScript(`
-          if (typeof unrulyViewportStatus === "function") {
-            unrulyViewportStatus(${JSON.stringify({
-              ...deviceInfo,
-              visible: true,
-            })})
-          };
-        `);
+  const handleNavigationStateChange = ({ url }: WebViewNavigation) => {
+    if (!urlHasBridgePrefix(url) && hasDifferentOrigin(url, baseUrl)) {
+      webViewRef.current?.stopLoading();
+      openURLInBrowser(url);
     }
-  }, [webViewRef]);
+    // CATCH ADS INSIDE "times.co.uk" domain.
+    if (isUrlChildOfBaseUrl(url, baseUrl)) {
+      webViewRef.current?.stopLoading();
+      openURLInBrowser(url);
+    }
+  };
+
+  /**
+   * Handles data transfer from the advert webview using eventCallback function calls,
+   * eventCallback calls can be found in ad-init.js
+   */
+  const handleMessageEvent = (e: WebViewMessageEvent) => {
+    const jsonData = e.nativeEvent.data;
+
+    // Don't process postMessage events from 3rd party scripts
+    if (jsonData.indexOf("isTngMessage") === -1) {
+      return;
+    }
+
+    const { type, detail } = JSON.parse(jsonData);
+
+    switch (type) {
+      case "renderFailed":
+        onRenderError();
+        break;
+      case "renderComplete":
+        onRenderComplete();
+        break;
+      case "setAdWebViewHeight": {
+        const adHeight = detail.height;
+        const webViewHeight =
+          adHeight > 1 ? adHeight + styles.containerAdditionalHeight.height : 0;
+
+        setHeight(isInline ? adHeight : webViewHeight);
+        break;
+      }
+      default:
+        if (data.debug) logger(type, detail);
+    }
+  };
+
+  /**
+   * Used by viewport aware component to allow the advert in
+   * the webview to render for android platforms.
+   *
+   * Currently doesn't work with its cause being the android scroll view wrapper.
+   * Read more here - https://nidigitalsolutions.jira.com/browse/TNLT-9065
+   */
+  const loadAd = () => {
+    setLoaded(true);
+  };
+
+  const outViewport = () => {
+    // Logic for pausing OutStream ads which are visible on ios only
+    if (webViewRef.current && Platform.OS === "ios") {
+      const { networkId, adUnit, section } = data;
+
+      // ID for iframe is configured by Google Ad Manager(GAM)
+      webViewRef.current.injectJavaScript(`
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        if (frame) {
+          frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
+        }
+
+        true;
+      `);
+    }
+  };
+
+  const inViewport = () => {
+    // Logic for playing OutStream ads which are visible on ios only
+    if (webViewRef.current && Platform.OS === "ios") {
+      const { networkId, adUnit, section } = data;
+
+      // ID for iframe is configured by Google Ad Manager(GAM)
+      webViewRef.current.injectJavaScript(`
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+
+        if (frame) {
+          frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
+        }
+
+        true;
+      `);
+    }
+  };
 
   // NOTE: if this generated code is not working, and you don't know why
   // because React Native doesn't report errors in webview JS code, try
@@ -181,6 +195,11 @@ const DOMContext = ({
             overflow: hidden;
           }
         </style>
+        <script>
+          function destroySlots() {
+            window.googletag.destroySlots();
+          }
+        </script>
         <script>
           window.googletag = window.googletag || {};
           window.googletag.cmd = window.googletag.cmd || [];
@@ -205,7 +224,7 @@ const DOMContext = ({
         </script>
         </head>
         <body>
-          <div></div>
+          <div id="ad-mpu"></div>
           <script>
             window.theTimesBaseUrl = "${String(baseUrl)}";
             window.postMessage = function(data) {
@@ -216,7 +235,7 @@ const DOMContext = ({
           </script>
           <script>
           (${AdInitAsString})({
-            el: document.getElementsByTagName("div")[0],
+            el: document.querySelector("#ad-mpu"),
             eventCallback: eventCallback,
             data: ${JSON.stringify(data)},
             platform: "native",

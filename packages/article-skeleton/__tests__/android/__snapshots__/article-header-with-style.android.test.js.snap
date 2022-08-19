@@ -34,7 +34,6 @@ exports[`1. article with header 1`] = `
                   >
                     Another ministerial aide, 
                     <Text
-                      accessibilityRole="link"
                       maxFontSizeMultiplier={2}
                       minimumFontScale={0.7}
                     >

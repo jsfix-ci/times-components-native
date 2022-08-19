@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleProp, TextStyle, ViewStyle } from "react-native";
-import ArticleSummary from "./article-summary";
+import ArticleSummary, { Bullet } from "./article-summary";
 import {
   BylineInput,
   Markup,
@@ -8,6 +8,7 @@ import {
 } from "@times-components-native/fixture-generator/src/types";
 import { SectionContext } from "@times-components-native/context";
 import { ResponsiveContext } from "@times-components-native/responsive";
+import { OnArticlePress } from "@times-components-native/types";
 
 interface Props {
   bylines?: BylineInput[];
@@ -31,8 +32,8 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
-  bullets?: string[];
-  onPress?: () => null;
+  bullets?: Bullet[];
+  onPress?: OnArticlePress | (() => null);
 }
 
 const TileSummary: React.FC<Props> = ({
@@ -58,7 +59,7 @@ const TileSummary: React.FC<Props> = ({
   starStyle,
   hideLabel = false,
   bullets = [],
-  onPress = () => null,
+  onPress,
 }) => {
   return (
     <ResponsiveContext.Consumer>

@@ -7,6 +7,7 @@ Home of The Times' `react native` components used in the mobile and tablet apps.
 - [Getting Started](#getting-started)
 - [Native Apps & TCN](#native-apps--tcn)
 - [Testing](#testing)
+- [Branching Model](#branching-model)
 - [Releases](#releases)
 - [Miscellaneous](#miscellaneous)
 - [Contributing](#contributing)
@@ -41,7 +42,7 @@ For step by step guide, see the corresponding documentation for [android](./lib/
 
 ## Testing
 
-There is a mixture of different checks & tests split acrossing linting, typechecking and unit tests.
+There is a mixture of different checks & tests split across linting, typechecking and unit tests.
 
 ```
 yarn lint
@@ -51,23 +52,94 @@ yarn test:ios
 yarn test:common
 ```
 
+## Branching Model
+
+In TCN we follow a Trunk based approach for our branching model.
+
+This means we have a `master` branch that is used to branch off for feature branches, short lived `feature` branches for larger pieces of work, and long lived `release` branches which have hot fixes applied to.
+
+This approach was decided on after trying GitFlow which was found to be cumbersome and slow in its approach to releases.
+
+### Master Branch
+
+`format: master`
+
+This is the main 'trunk' that lives for the lifetime of the project.
+When developing you should branch off this to create a feature branch.
+
+### Feature Branch
+
+`format: feat/TNLT-XXX-new-feature-branch-name`
+
+This is a short lived branch that holds new features being built and tested or even hot fixes for an existing release branch. 
+
+It is recommended you use feature branches for larger changes that need reviewed and to avoid siloing of knowledge, amongst other reasons for reviewing changes.
+
+Once reviewed and tests are passing you should squash & merge your branch into master.
+
+### Release Branch
+
+`format: release/X.X.X`
+
+Release branches will live for as long as that version is in production. Regular pruning should take place to delete unused release branches. 
+
+Release branches are never merged back into master as master already has these changes. You may see merge conflicts in the PR but these can be ignored.
+
+Changes should never be made on a release branch, changes should be made in master and cherry picked into the release branch. More on this in [Hot Fixes](#hot-fixes)
+
 ## Releases
 
-##### Production Releases
+### Production Releases
 
-The release to production pipeline comes with a _hold_ step on CircleCI for builds running on the `master` branch. Once you bump the version in a PR, merge your PR and trigger the `hold_release_prod` step in the build. This will publish the artifacts, for iOS in the artifacts repo and for Android in JFrog.
+To release a production build use the following steps;
+- bump version in feature branch and merge into master 
+  - branch format - `chore/feature-release-X.X.X`
+  - commit format - `chore(NO_JIRA): feature release X.X.X`
+- create a new release branch with the format - `release/X.X.X`
+- when tests and builds pass you can select `hold_release` to release a production build
 
-![Prod@3x](https://user-images.githubusercontent.com/6333409/88397111-64af2600-cdbb-11ea-8f7f-bbcc17d45200.png)
+This publishes the builds to the following locations;
 
-##### Beta / Patch Releases
+- iOS - https://github.com/newsuk/times-components-ios-artifacts/tags
+- Android - <NEWS_ARTIFACTORY_URL>/times-components-android-artifacts
 
-Similar to the production releases, you can triger builds with the `hold_release_beta` step from all branches (apart from `master`) as long as the version in `package.json` is a beta version (includes the word beta). Once the "hold" step is approved, the pipeline will build and push to the beta artifacts repos (different location to prod).
 
-![Beta@3x](https://user-images.githubusercontent.com/6333409/88397120-67aa1680-cdbb-11ea-871d-ca454c0fb691.png)
+### Beta Releases
 
-##### Updating the native apps
+To release a beta production use the following steps;
+- bump version in feature branch and merge into master - `chore/feature-release-X.X.X-beta`
+  - branch format - `chore/feature-release-X.X.X-beta`
+  - commit format - `chore(NO_JIRA): feature release X.X.X-beta`
+- create a new release branch with the format - `release/X.X.X-beta`
+- when tests and builds pass you can select `hold_release` to release a beta build
 
-Once a release is published, you will have to bump the version in the native apps. That would be the `Podfile` for `iOS` and the `build.gradle` file for Android.
+This publishes the builds to the following locations;
+
+- iOS - https://github.com/newsuk/times-components-ios-artifacts-BETA/tags
+- Android - <NEWS_ARTIFACTORY_URL>/times-components-android-artifacts-beta
+
+### Hot Fixes
+
+When a bug is found in a pre-existing release you may want to push a fix to that release.
+
+To do this you can;
+- create a feature branch to make and test changes and go through the process of merging feature into master
+- check out the existing release branch you are updating and cherry-pick the merge-commit 
+	- `git cherry-pick -m 1 -x <MERGE_COMMIT_SHA>`
+- checkout a new release branch off of the existing release branch and bump the version to match in the branch name
+	- e.g if you are on `release/1.0.0` and adding a hotfix, your new branch will be `release/1.0.1`
+- now create a build by selecting the `hold_release` option in circleci for your new release branch
+- clean up by deleting this latest release branch
+
+`NB:` This extra release branch step is required due to an issue with `conventional-github-releaser` referencing the branch name in some way to check if an existing release exists for that version. 
+So even if we update the version in package.json the publish notes step fails.
+
+
+### Updating the native apps
+
+Once a release is published you will have to bump the version in the native apps.
+
+These are found in `Podfile` for `iOS` and `build.gradle` for Android.
 
 ## Miscellaneous
 

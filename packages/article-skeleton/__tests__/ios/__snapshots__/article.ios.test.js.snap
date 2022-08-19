@@ -2587,7 +2587,7 @@ exports[`10. an article with italic and normal text link 1`] = `
                     maxFontSizeMultiplier={2}
                     minimumFontScale={0.7}
                   >
-                     Coronavirus Charity Appeal
+                    Coronavirus Charity Appeal
                   </Text>
                 </Text>
                 <Text

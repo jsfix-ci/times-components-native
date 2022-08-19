@@ -189,8 +189,6 @@ function AdInit({ el, data, platform, eventCallback, window }) {
     gpt: {
       url: "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
 
-      // what is data
-
       setSlotTargeting(
         slotConfig,
         { networkId, adUnit, section, slotTargeting } = data,
@@ -198,6 +196,7 @@ function AdInit({ el, data, platform, eventCallback, window }) {
         googletag.cmd.push(() => {
           try {
             const { slotName, sizes, mappings } = slotConfig;
+
             const slot = googletag.defineSlot(
               `/${networkId}/${adUnit}/${section}`,
               sizes,

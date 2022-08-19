@@ -806,6 +806,7 @@ export enum Flag {
   Exclusive = "EXCLUSIVE",
   Updated = "UPDATED",
   Sponsored = "SPONSORED",
+  Live = "LIVE",
 }
 
 export enum SectionName {

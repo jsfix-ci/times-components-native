@@ -21,8 +21,9 @@ const KeyFacts = ({ ast, onLinkPress, scrollToRef }) => {
   const handlePress = (e, other) => {
     if (other.url.startsWith("#")) {
       scrollToRef(other.url);
+    } else {
+      onLinkPress(e, other);
     }
-    onLinkPress(e, other);
   };
 
   return (

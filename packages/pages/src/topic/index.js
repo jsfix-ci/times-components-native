@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NativeModules } from "react-native";
 import PropTypes from "prop-types";
 import Topic from "@times-components-native/topic";
@@ -8,7 +8,19 @@ import withNativeProvider from "../with-native-provider";
 const { onArticlePress } = NativeModules.TopicEvents;
 const { track } = NativeModules.ReactAnalytics;
 
-const TopicPage = ({ topicSlug }) => {
+const TopicPage = ({ topicSlug, deeplink_value = null }) => {
+  useEffect(() => {
+    if (deeplink_value) {
+      track({
+        attrs: {
+          eventTime: new Date(),
+          pageName: "Topic",
+        },
+        ...deeplink_value,
+      });
+    }
+  }, [deeplink_value]);
+
   const TopicPageView = withNativeProvider(
     <TopicProvider debounceTimeMs={250} page={1} pageSize={20} slug={topicSlug}>
       {({ topic, isLoading, error, page, pageSize, refetch }) => (
