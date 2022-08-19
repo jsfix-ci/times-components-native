@@ -10,9 +10,14 @@ export const render = (renderers) => {
      * Recursively render all child elements
      */
     if (children) {
-      renderedChildren = children.map((child, index) =>
-        run(child, `${key}.${index}`, index),
-      );
+      renderedChildren = children.map((child, index) => {
+        if (name === "link") {
+          if (child.name === "text") {
+            child.attributes.value = child.attributes?.value.trim();
+          }
+        }
+        return run(child, `${key}.${index}`, index);
+      });
     }
 
     /**
