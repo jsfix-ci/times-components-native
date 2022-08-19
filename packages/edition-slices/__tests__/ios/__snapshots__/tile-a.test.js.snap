@@ -18,7 +18,6 @@ exports[`tile a without breakpoint 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -27,7 +26,6 @@ exports[`tile a without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -46,7 +44,6 @@ exports[`tile a without breakpoint 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {

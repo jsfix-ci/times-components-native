@@ -24,7 +24,6 @@ exports[`1. video label with a title 1`] = `
     />
   </View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -71,7 +70,6 @@ exports[`2. video label without a title shows video 1`] = `
     />
   </View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={
@@ -118,7 +116,6 @@ exports[`3. video label with the black default colour 1`] = `
     />
   </View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
     style={

@@ -5,7 +5,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -14,7 +13,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -36,7 +34,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -102,7 +99,6 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
 <View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -110,7 +106,6 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -171,7 +166,6 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
 exports[`3. article summary component with content including line breaks 1`] = `
 <View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -248,7 +242,6 @@ exports[`4. article summary component containing links 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -257,7 +250,6 @@ exports[`4. article summary component containing links 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -265,7 +257,6 @@ exports[`4. article summary component containing links 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -303,7 +294,6 @@ exports[`5. article summary component with headline and no content 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -312,7 +302,6 @@ exports[`5. article summary component with headline and no content 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -331,7 +320,6 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -340,7 +328,6 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -348,7 +335,6 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -416,7 +402,6 @@ exports[`7. article summary component with no byline 1`] = `
 <View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -424,7 +409,6 @@ exports[`7. article summary component with no byline 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -448,7 +432,6 @@ exports[`8. article summary component with no label 1`] = `
 <View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -456,7 +439,6 @@ exports[`8. article summary component with no label 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -512,7 +494,6 @@ exports[`9. article summary component with no headline 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -520,7 +501,6 @@ exports[`9. article summary component with no headline 1`] = `
     </View>
   </View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -545,7 +525,6 @@ exports[`10. article summary component with no date publication 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -554,7 +533,6 @@ exports[`10. article summary component with no date publication 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -562,7 +540,6 @@ exports[`10. article summary component with no date publication 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -614,7 +591,6 @@ exports[`11. article summary component with a video label 1`] = `
   <View>
     <View>
       <VideoLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -623,7 +599,6 @@ exports[`11. article summary component with a video label 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -631,7 +606,6 @@ exports[`11. article summary component with a video label 1`] = `
     Test Headline
   </Text>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -687,7 +661,6 @@ exports[`12. article summary component with a strapline 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Test label"
@@ -696,7 +669,6 @@ exports[`12. article summary component with a strapline 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -705,7 +677,6 @@ exports[`12. article summary component with a strapline 1`] = `
   </Text>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="4"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -727,7 +698,6 @@ exports[`12. article summary component with a strapline 1`] = `
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -802,7 +772,6 @@ exports[`13. article summary content component without an ast to render null 1`]
 exports[`15. article summary component with no headline and no label title 1`] = `
 <View>
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -824,7 +793,6 @@ exports[`15. article summary component with no headline and no label title 1`] =
 
 exports[`16. article summary content component with white space height 1`] = `
 <Text
-  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   numberOfLines={5}
@@ -842,7 +810,6 @@ exports[`16. article summary content component with white space height 1`] = `
 
 exports[`17. article summary content component without white space height 1`] = `
 <Text
-  allowFontScaling={true}
   maxFontSizeMultiplier={2}
   minimumFontScale={0.7}
   numberOfLines={2}
@@ -863,7 +830,6 @@ exports[`18. article summary component with a single paragraph and flag on table
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Camilla Long"
@@ -872,7 +838,6 @@ exports[`18. article summary component with a single paragraph and flag on table
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -894,7 +859,6 @@ exports[`18. article summary component with a single paragraph and flag on table
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -961,7 +925,6 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Camilla Long"
@@ -970,7 +933,6 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -979,7 +941,6 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   </Text>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="4"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -1001,7 +962,6 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -1075,7 +1035,6 @@ exports[`20. article summary component with hidden label 1`] = `
 <View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -1097,7 +1056,6 @@ exports[`20. article summary component with hidden label 1`] = `
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >
@@ -1164,7 +1122,6 @@ exports[`21. article summary component with byline on top 1`] = `
   <View>
     <View>
       <ArticleLabel
-        allowFontScaling={true}
         childTestID="article-slug"
         color="#333333"
         title="Camilla Long"
@@ -1173,7 +1130,6 @@ exports[`21. article summary component with byline on top 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    allowFontScaling={true}
     aria-level="3"
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
@@ -1195,7 +1151,6 @@ exports[`21. article summary component with byline on top 1`] = `
     }
   />
   <Text
-    allowFontScaling={true}
     maxFontSizeMultiplier={2}
     minimumFontScale={0.7}
   >

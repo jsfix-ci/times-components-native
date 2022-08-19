@@ -32,7 +32,6 @@ exports[`2. daily universal register - smalltablet 1`] = `
       }
     />
     <Text
-      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -1263,7 +1262,6 @@ exports[`39. daily universal register - medium 1`] = `
       }
     />
     <Text
-      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -2494,7 +2492,6 @@ exports[`76. daily universal register - wide 1`] = `
       }
     />
     <Text
-      allowFontScaling={false}
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
     >
@@ -3741,7 +3738,6 @@ exports[`113. daily universal register - huge 1`] = `
         }
       />
       <Text
-        allowFontScaling={false}
         maxFontSizeMultiplier={2}
         minimumFontScale={0.7}
       >

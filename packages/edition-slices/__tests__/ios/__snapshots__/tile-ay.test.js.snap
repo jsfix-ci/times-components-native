@@ -41,7 +41,6 @@ exports[`tile ay huge 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -50,7 +49,6 @@ exports[`tile ay huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -70,7 +68,6 @@ exports[`tile ay huge 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -127,7 +124,6 @@ exports[`tile ay medium 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -136,7 +132,6 @@ exports[`tile ay medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -156,7 +151,6 @@ exports[`tile ay medium 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -213,7 +207,6 @@ exports[`tile ay smallTablet 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -222,7 +215,6 @@ exports[`tile ay smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -242,7 +234,6 @@ exports[`tile ay smallTablet 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -299,7 +290,6 @@ exports[`tile ay wide 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -308,7 +298,6 @@ exports[`tile ay wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -328,7 +317,6 @@ exports[`tile ay wide 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -385,7 +373,6 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -394,7 +381,6 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -414,7 +400,6 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {

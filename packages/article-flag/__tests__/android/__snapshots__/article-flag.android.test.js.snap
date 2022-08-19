@@ -5,7 +5,8 @@ exports[`1. article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="No Colour Flag"
-    allowFontScaling={true}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     no colour
   </Text>
@@ -17,7 +18,8 @@ exports[`2. red article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    allowFontScaling={true}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -29,7 +31,8 @@ exports[`3. hex colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    allowFontScaling={true}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -41,7 +44,8 @@ exports[`4. rgba colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
-    allowFontScaling={true}
+    maxFontSizeMultiplier={2}
+    minimumFontScale={0.7}
   >
     coloured red
   </Text>
@@ -55,7 +59,8 @@ exports[`5. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="updated Flag"
-        allowFontScaling={true}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         updated
       </Text>
@@ -66,7 +71,8 @@ exports[`5. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="exclusive Flag"
-        allowFontScaling={true}
+        maxFontSizeMultiplier={2}
+        minimumFontScale={0.7}
       >
         exclusive
       </Text>
@@ -83,7 +89,8 @@ exports[`6. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="updated Flag"
-          allowFontScaling={true}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           updated
         </Text>
@@ -94,7 +101,8 @@ exports[`6. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="exclusive Flag"
-          allowFontScaling={true}
+          maxFontSizeMultiplier={2}
+          minimumFontScale={0.7}
         >
           exclusive
         </Text>

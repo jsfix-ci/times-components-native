@@ -88,7 +88,6 @@ exports[`tile ah huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -111,7 +110,6 @@ exports[`tile ah huge 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -131,7 +129,6 @@ exports[`tile ah huge 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -233,7 +230,6 @@ exports[`tile ah medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -256,7 +252,6 @@ exports[`tile ah medium 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -276,7 +271,6 @@ exports[`tile ah medium 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -378,7 +372,6 @@ exports[`tile ah smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -400,7 +393,6 @@ exports[`tile ah smallTablet 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -502,7 +494,6 @@ exports[`tile ah wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -525,7 +516,6 @@ exports[`tile ah wide 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -545,7 +535,6 @@ exports[`tile ah wide 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -647,7 +636,6 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -670,7 +658,6 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="4"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -690,7 +677,6 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {

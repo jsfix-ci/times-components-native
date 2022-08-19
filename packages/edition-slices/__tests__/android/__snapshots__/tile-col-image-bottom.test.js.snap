@@ -27,7 +27,6 @@ exports[`tile column with image bottom huge 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -36,7 +35,6 @@ exports[`tile column with image bottom huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -55,7 +53,6 @@ exports[`tile column with image bottom huge 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -66,7 +63,6 @@ exports[`tile column with image bottom huge 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -124,7 +120,6 @@ exports[`tile column with image bottom medium 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -133,7 +128,6 @@ exports[`tile column with image bottom medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -152,7 +146,6 @@ exports[`tile column with image bottom medium 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -195,7 +188,6 @@ exports[`tile column with image bottom shows an image 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -204,7 +196,6 @@ exports[`tile column with image bottom shows an image 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -223,7 +214,6 @@ exports[`tile column with image bottom shows an image 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -266,7 +256,6 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -275,7 +264,6 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -294,7 +282,6 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -347,7 +334,6 @@ exports[`tile column with image bottom smallTablet 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -356,7 +342,6 @@ exports[`tile column with image bottom smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -375,7 +360,6 @@ exports[`tile column with image bottom smallTablet 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -418,7 +402,6 @@ exports[`tile column with image bottom wide 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -427,7 +410,6 @@ exports[`tile column with image bottom wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -446,7 +428,6 @@ exports[`tile column with image bottom wide 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -457,7 +438,6 @@ exports[`tile column with image bottom wide 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}

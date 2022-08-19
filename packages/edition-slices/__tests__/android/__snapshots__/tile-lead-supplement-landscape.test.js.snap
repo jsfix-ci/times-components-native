@@ -53,7 +53,6 @@ exports[`tile lead supplement landscape huge 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -62,7 +61,6 @@ exports[`tile lead supplement landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -82,7 +80,6 @@ exports[`tile lead supplement landscape huge 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -93,7 +90,6 @@ exports[`tile lead supplement landscape huge 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -177,7 +173,6 @@ exports[`tile lead supplement landscape medium 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -186,7 +181,6 @@ exports[`tile lead supplement landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -206,7 +200,6 @@ exports[`tile lead supplement landscape medium 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -217,7 +210,6 @@ exports[`tile lead supplement landscape medium 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -301,7 +293,6 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -310,7 +301,6 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -330,7 +320,6 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -341,7 +330,6 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}
@@ -425,7 +413,6 @@ exports[`tile lead supplement landscape wide 1`] = `
             }
           >
             <ArticleLabel
-              allowFontScaling={false}
               childTestID="article-slug"
               color="#005B8D"
               title="label"
@@ -434,7 +421,6 @@ exports[`tile lead supplement landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          allowFontScaling={false}
           aria-level="3"
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
@@ -454,7 +440,6 @@ exports[`tile lead supplement landscape wide 1`] = `
           This is tile headline
         </Text>
         <ArticleFlags
-          allowFontScaling={false}
           flags={
             Array [
               Object {
@@ -465,7 +450,6 @@ exports[`tile lead supplement landscape wide 1`] = `
           }
         />
         <Text
-          allowFontScaling={false}
           maxFontSizeMultiplier={2}
           minimumFontScale={0.7}
           numberOfLines={2}

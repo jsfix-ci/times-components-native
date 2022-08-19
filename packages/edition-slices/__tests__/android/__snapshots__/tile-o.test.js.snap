@@ -26,7 +26,6 @@ exports[`tile n huge 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -35,7 +34,6 @@ exports[`tile n huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -55,7 +53,6 @@ exports[`tile n huge 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [
@@ -96,7 +93,6 @@ exports[`tile n medium 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -105,7 +101,6 @@ exports[`tile n medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -125,7 +120,6 @@ exports[`tile n medium 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [
@@ -168,7 +162,6 @@ exports[`tile n small 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -177,7 +170,6 @@ exports[`tile n small 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -196,7 +188,6 @@ exports[`tile n small 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [
@@ -237,7 +228,6 @@ exports[`tile n smallTablet 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -246,7 +236,6 @@ exports[`tile n smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -266,7 +255,6 @@ exports[`tile n smallTablet 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [
@@ -307,7 +295,6 @@ exports[`tile n wide 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -316,7 +303,6 @@ exports[`tile n wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -336,7 +322,6 @@ exports[`tile n wide 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [
@@ -379,7 +364,6 @@ exports[`tile n with default star 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#CCC"
           title="label"
@@ -388,7 +372,6 @@ exports[`tile n with default star 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -407,7 +390,6 @@ exports[`tile n with default star 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       color="#CCC"
       flags={
         Array [

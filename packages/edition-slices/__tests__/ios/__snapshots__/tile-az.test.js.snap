@@ -41,7 +41,6 @@ exports[`tile az portrait medium 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -50,7 +49,6 @@ exports[`tile az portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -72,7 +70,6 @@ exports[`tile az portrait medium 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -127,7 +124,6 @@ exports[`tile az portrait smallTablet 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -136,7 +132,6 @@ exports[`tile az portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -158,7 +153,6 @@ exports[`tile az portrait smallTablet 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -213,7 +207,6 @@ exports[`tile az portrait wide 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -222,7 +215,6 @@ exports[`tile az portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -244,7 +236,6 @@ exports[`tile az portrait wide 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {

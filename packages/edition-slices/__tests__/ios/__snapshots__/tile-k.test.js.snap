@@ -35,7 +35,6 @@ exports[`tile k huge 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -44,7 +43,6 @@ exports[`tile k huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -63,7 +61,6 @@ exports[`tile k huge 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -112,7 +109,6 @@ exports[`tile k medium 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -121,7 +117,6 @@ exports[`tile k medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -140,7 +135,6 @@ exports[`tile k medium 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -189,7 +183,6 @@ exports[`tile k small 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -198,7 +191,6 @@ exports[`tile k small 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -217,7 +209,6 @@ exports[`tile k small 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -266,7 +257,6 @@ exports[`tile k smallTablet 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -275,7 +265,6 @@ exports[`tile k smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -294,7 +283,6 @@ exports[`tile k smallTablet 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -343,7 +331,6 @@ exports[`tile k wide 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -352,7 +339,6 @@ exports[`tile k wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -371,7 +357,6 @@ exports[`tile k wide 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
@@ -420,7 +405,6 @@ exports[`tile k without breakpoint should be like small 1`] = `
         }
       >
         <ArticleLabel
-          allowFontScaling={false}
           childTestID="article-slug"
           color="#005B8D"
           title="label"
@@ -429,7 +413,6 @@ exports[`tile k without breakpoint should be like small 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      allowFontScaling={false}
       aria-level="3"
       maxFontSizeMultiplier={2}
       minimumFontScale={0.7}
@@ -448,7 +431,6 @@ exports[`tile k without breakpoint should be like small 1`] = `
       This is tile headline
     </Text>
     <ArticleFlags
-      allowFontScaling={false}
       flags={
         Array [
           Object {
