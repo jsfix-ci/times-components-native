@@ -33,17 +33,11 @@ const TileS = ({
     <View style={styles.container}>
       <View style={styles.titleWrapper}>
         {logo}
-        <Text allowFontScaling={false} style={headLineStyles}>
-          {tile.title}
-        </Text>
+        <Text style={headLineStyles}>{tile.title}</Text>
       </View>
-      <Text allowFontScaling={false} style={styles.paragraph}>
-        {renderAst(tile.content)}
-      </Text>
+      <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
       {tile.byline && tile.byline.length > 0 && (
-        <Text allowFontScaling={false} style={styles.byline}>
-          {renderAst(tile.byline)}
-        </Text>
+        <Text style={styles.byline}>{renderAst(tile.byline)}</Text>
       )}
     </View>
   );

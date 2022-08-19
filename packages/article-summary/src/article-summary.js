@@ -16,7 +16,6 @@ import ArticleSummaryLabel from "./article-summary-label";
 import Read from "@times-components-native/read";
 import styleguide from "@times-components-native/styleguide";
 function ArticleSummary({
-  allowFontScaling,
   articleReadState,
   bylineProps,
   content,
@@ -46,7 +45,6 @@ function ArticleSummary({
         <ArticleSummaryLabel
           {...labelProps}
           articleReadState={articleReadState}
-          allowFontScaling={allowFontScaling}
         />
       ) : null}
       {bylineOnTop && byline}
@@ -113,7 +111,6 @@ function ArticleSummary({
 }
 
 ArticleSummary.propTypes = {
-  allowFontScaling: PropTypes.bool,
   articleReadState: PropTypes.shape({
     read: PropTypes.bool,
     animationOpacity: PropTypes.bool,
@@ -147,7 +144,6 @@ ArticleSummary.propTypes = {
 };
 
 ArticleSummary.defaultProps = {
-  allowFontScaling: true,
   articleReadState: {
     read: false,
     animate: false,

@@ -6,14 +6,8 @@ import styles from "./styles";
 
 const { style: TextStylePropTypes } = Text.propTypes;
 
-const ArticleSummaryHeadline = ({
-  allowFontScaling,
-  className,
-  headline,
-  style,
-}) => (
+const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <Txt
-    allowFontScaling={allowFontScaling}
     testID={"article-summary-headline"}
     accessibilityRole="header"
     aria-level="3"
@@ -25,14 +19,12 @@ const ArticleSummaryHeadline = ({
 );
 
 ArticleSummaryHeadline.propTypes = {
-  allowFontScaling: PropTypes.bool,
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
   style: TextStylePropTypes,
 };
 
 ArticleSummaryHeadline.defaultProps = {
-  allowFontScaling: true,
   className: "",
   style: {},
 };

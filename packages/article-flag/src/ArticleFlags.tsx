@@ -18,14 +18,12 @@ const DEFAULT_FLAG_COLOURS = {
 };
 
 interface ArticleFlagWithPaddingType {
-  allowFontScaling?: boolean;
   color: string;
   moreThanOneFlag: boolean;
   type: FlagTypes;
 }
 
 const ArticleFlagWithPadding = ({
-  allowFontScaling = true,
   moreThanOneFlag,
   type,
   color,
@@ -33,34 +31,10 @@ const ArticleFlagWithPadding = ({
   const col = color || DEFAULT_FLAG_COLOURS[type];
   return (
     <View key={type} style={moreThanOneFlag && styles.flagPadding}>
-      {type === "NEW" && (
-        <ArticleFlag
-          allowFontScaling={allowFontScaling}
-          color={col}
-          title="new"
-        />
-      )}
-      {type === "UPDATED" && (
-        <ArticleFlag
-          allowFontScaling={allowFontScaling}
-          color={col}
-          title={"updated"}
-        />
-      )}
-      {type === "EXCLUSIVE" && (
-        <ArticleFlag
-          allowFontScaling={allowFontScaling}
-          color={col}
-          title="exclusive"
-        />
-      )}
-      {type === "SPONSORED" && (
-        <ArticleFlag
-          allowFontScaling={allowFontScaling}
-          color={col}
-          title="sponsored"
-        />
-      )}
+      {type === "NEW" && <ArticleFlag color={col} title="new" />}
+      {type === "UPDATED" && <ArticleFlag color={col} title={"updated"} />}
+      {type === "EXCLUSIVE" && <ArticleFlag color={col} title="exclusive" />}
+      {type === "SPONSORED" && <ArticleFlag color={col} title="sponsored" />}
       {type === "LIVE" && <DiamondArticleFlag title={"Live"} />}
       {type === "BREAKING" && <DiamondArticleFlag title={"Breaking"} />}
     </View>
@@ -68,7 +42,6 @@ const ArticleFlagWithPadding = ({
 };
 
 interface ArticleFlagsType {
-  allowFontScaling?: boolean;
   flags?: Array<Flag>;
   color: string;
   style?: ViewStyle;
@@ -76,7 +49,6 @@ interface ArticleFlagsType {
 }
 
 const ArticleFlags = ({
-  allowFontScaling = true,
   flags = [],
   color,
   style = {},
@@ -92,7 +64,6 @@ const ArticleFlags = ({
     <View style={[styles.flags, style]}>
       {activeFlags.map(({ type }: any) => (
         <ArticleFlagWithPadding
-          allowFontScaling={allowFontScaling}
           key={type}
           moreThanOneFlag={moreThanOneFlag}
           type={type}

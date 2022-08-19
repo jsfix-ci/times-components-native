@@ -1,17 +1,16 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { gqlRgbaToStyle } from "@times-components-native/utils";
 import styles from "./styles";
 import { colours } from "@times-components-native/styleguide";
 
 interface ArticleFlag {
-  allowFontScaling?: boolean;
   title: string;
   color: string;
 }
 
 const ArticleFlag = ({
-  allowFontScaling = true,
   title,
   color = colours.functional.primary,
 }: ArticleFlag) => (
@@ -24,7 +23,6 @@ const ArticleFlag = ({
     />
     <Text
       accessibilityLabel={`${title} Flag`}
-      allowFontScaling={allowFontScaling}
       style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >

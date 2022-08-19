@@ -242,7 +242,6 @@ const ArticleSummary: React.FC<Props> = ({
       opacity={articleReadOpacity.summary}
     >
       <ArticleSummaryContent
-        allowFontScaling={false}
         ast={summary}
         style={summaryStyle}
         lineHeight={(summaryStyle && summaryStyle.lineHeight) || undefined}
@@ -252,21 +251,13 @@ const ArticleSummary: React.FC<Props> = ({
     </MarkAsRead>
   );
 
-  const renderFlags = (
-    allowFontScaling: boolean,
-    articleReadState: ArticleReadState,
-  ) => (
+  const renderFlags = (articleReadState: ArticleReadState) => (
     <MarkAsRead
       articleReadState={articleReadState}
       opacityAnimation={standardOpacity}
       opacity={articleReadOpacity.standard}
     >
-      <ArticleFlags
-        allowFontScaling={allowFontScaling}
-        {...flagColour}
-        style={flagsStyle}
-        flags={expirableFlags}
-      />
+      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
     </MarkAsRead>
   );
 
@@ -298,7 +289,6 @@ const ArticleSummary: React.FC<Props> = ({
         opacity={articleReadOpacity.standard}
       >
         <ArticleSummaryHeadline
-          allowFontScaling={false}
           headline={headlineToDisplay}
           style={headlineStyle}
         />
@@ -313,17 +303,12 @@ const ArticleSummary: React.FC<Props> = ({
         opacityAnimation={straplineOpacity}
         opacity={articleReadOpacity.standard}
       >
-        <ArticleSummaryStrapline
-          allowFontScaling={false}
-          strapline={strapline}
-          style={straplineStyle}
-        />
+        <ArticleSummaryStrapline strapline={strapline} style={straplineStyle} />
       </MarkAsRead>
     );
 
   return (
     <ArticleSummaryComponent
-      allowFontScaling={false}
       articleReadState={articleReadState}
       bylineProps={bylines ? { ast: bylines, bylineStyle, bylineOnTop } : null}
       content={summary && renderContent(articleReadState)}
