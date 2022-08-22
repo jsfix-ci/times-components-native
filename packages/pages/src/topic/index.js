@@ -16,6 +16,8 @@ const TopicPage = ({ topicSlug, deeplink_value = null }) => {
           eventTime: new Date(),
           pageName: "Topic",
         },
+        object: "Topic",
+        action: "Viewed",
         ...deeplink_value,
       });
     }
