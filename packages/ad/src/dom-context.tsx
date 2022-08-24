@@ -50,7 +50,6 @@ const DOMContext = (props: DomContextType) => {
     isInline = true,
     width = screenWidth,
   } = props;
-  console.log("PROPS: ", props);
   const webViewRef = React.useRef<WebView>(null);
 
   const adHeight = heightProp
