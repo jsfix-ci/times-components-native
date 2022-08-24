@@ -40,15 +40,17 @@ const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ViewportAwareView = Viewport.Aware(View);
 
-const DOMContext = ({
-  height: heightProp = 0,
-  baseUrl = "",
-  onRenderComplete = () => null,
-  onRenderError = () => null,
-  data = {},
-  isInline = true,
-  width = screenWidth,
-}: DomContextType) => {
+const DOMContext = (props: DomContextType) => {
+  const {
+    height: heightProp = 0,
+    baseUrl = "",
+    onRenderComplete = () => null,
+    onRenderError = () => null,
+    data = {},
+    isInline = true,
+    width = screenWidth,
+  } = props;
+  console.log("PROPS: ", props);
   const webViewRef = React.useRef<WebView>(null);
 
   const adHeight = heightProp
@@ -244,10 +246,9 @@ const DOMContext = ({
   <script>
   </script>
       <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
-        <div id="ad-news"></div>
+        <div id="${data.slotName}"></div>
       </div>
-      <script src="https://ads.thetimes.co.uk/prebid.times_render.min.js" defer=""></script>
-      <script src="https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-xxxx-testing-adlib-on-tnl-apps/ads.times_render.min.js?sdjflsd" defer=""></script>
+      <script src="https://ads.thetimes.co.uk/branches/feat/scb-1984-tnl-app-al-brand/ads.times_ios.min.js" defer=""></script>
   </body>
 </html>
     `;
