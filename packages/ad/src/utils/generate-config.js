@@ -45,7 +45,7 @@ export const sizeMap = {
   "ad-singleMPU": sizes.singleMPU,
   "native-double-mpu": sizes.doubleMPU,
   "ad-doubleMPU": sizes.doubleMPU,
-  "ad-leaderboard": sizes.section,
+  "ad-leaderboard": sizes.leaderboard,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
   pixelteads: sizes.pixel,

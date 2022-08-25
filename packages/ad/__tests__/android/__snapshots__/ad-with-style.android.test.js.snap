@@ -3,22 +3,74 @@
 exports[`1. multiple ad slots 1`] = `
 Array [
   <View
-    className="IS2"
+    className="IS5"
     testID="article-advertisement"
   >
     <View
-      className="IS1"
+      className="IS4"
       inViewport={false}
-    />
+    >
+      <View
+        className="IS2"
+      >
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          allowsInlineMediaPlayback={true}
+          androidHardwareAccelerationDisabled={false}
+          androidLayerType="software"
+          cacheEnabled={true}
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          messagingModuleName="WebViewMessageHandler1"
+          overScrollMode="always"
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          setSupportMultipleWindows={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
+    </View>
   </View>,
   <View
-    className="IS2"
+    className="IS5"
     testID="article-advertisement"
   >
     <View
-      className="IS1"
+      className="IS4"
       inViewport={false}
-    />
+    >
+      <View
+        className="IS2"
+      >
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          allowsInlineMediaPlayback={true}
+          androidHardwareAccelerationDisabled={false}
+          androidLayerType="software"
+          cacheEnabled={true}
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          messagingModuleName="WebViewMessageHandler2"
+          overScrollMode="always"
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          setSupportMultipleWindows={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
+    </View>
   </View>,
 ]
 `;

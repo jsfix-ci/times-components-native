@@ -112,7 +112,7 @@ export class AdBase extends PureComponent {
       width,
     } = this.props;
 
-    const { hasError, isAdReady, offline } = this.state;
+    const { hasError, offline } = this.state;
     const config = getSlotConfig(slotName, width || screenWidth, orientation);
     const data = determineData(config, this.props);
     console.log("CONFIG", config);
