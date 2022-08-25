@@ -43,7 +43,11 @@ export default () => {
   it("key facts with title on mobile", () => {
     const testInstance = TestRenderer.create(
       withMobileContext(
-        <KeyFacts ast={dataWithTitle} onLinkPress={() => null} />,
+        <KeyFacts
+          ast={dataWithTitle}
+          onLinkPress={() => null}
+          analyticsStream={() => null}
+        />,
       ),
     );
 
@@ -53,7 +57,11 @@ export default () => {
   it("key facts with title on tablet", () => {
     const testInstance = TestRenderer.create(
       withTabletContext(
-        <KeyFacts ast={dataWithTitle} onLinkPress={() => null} />,
+        <KeyFacts
+          ast={dataWithTitle}
+          onLinkPress={() => null}
+          analyticsStream={() => null}
+        />,
       ),
     );
 
@@ -63,7 +71,11 @@ export default () => {
   it("key facts without title on tablet", () => {
     setIsTablet(true);
     const testInstance = TestRenderer.create(
-      <KeyFacts ast={dataWithoutTitle} onLinkPress={() => null} />,
+      <KeyFacts
+        ast={dataWithoutTitle}
+        onLinkPress={() => null}
+        analyticsStream={() => null}
+      />,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -72,7 +84,11 @@ export default () => {
   it("key facts without title on mobile", () => {
     const testInstance = TestRenderer.create(
       withMobileContext(
-        <KeyFacts ast={dataWithoutTitle} onLinkPress={() => null} />,
+        <KeyFacts
+          ast={dataWithoutTitle}
+          onLinkPress={() => null}
+          analyticsStream={() => null}
+        />,
       ),
     );
 
@@ -88,7 +104,11 @@ export default () => {
         <ContextProviderWithDefaults
           value={{ theme: { scale, sectionColour } }}
         >
-          <KeyFacts ast={dataWithTitle} onLinkPress={() => null} />
+          <KeyFacts
+            ast={dataWithTitle}
+            onLinkPress={() => null}
+            analyticsStream={() => null}
+          />
         </ContextProviderWithDefaults>,
       ),
     );
