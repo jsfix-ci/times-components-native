@@ -6,6 +6,10 @@ import KeyFactsText from "./key-facts-text";
 import KeyFactsWrapper from "./key-facts-wrapper";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
 import styles from "./styles";
+import {
+  withTrackEvents,
+  withTrackingContext,
+} from "@times-components-native/tracking";
 
 const KeyFacts = ({ ast, onLinkPress, scrollToRef }) => {
   const {
@@ -59,4 +63,30 @@ const KeyFacts = ({ ast, onLinkPress, scrollToRef }) => {
 KeyFacts.propTypes = propTypes;
 KeyFacts.defaultProps = defaultProps;
 
-export default KeyFacts;
+export default withTrackingContext(
+  withTrackEvents(KeyFacts, {
+    analyticsEvents: [
+      {
+        actionName: "click",
+        eventName: "onPress",
+        trackingName: "KeyMoment",
+        getAttrs: ({ headline }) => ({
+          article_parent_name: `${headline}`,
+          event_navigation_name: `in-article component clicked : key moments : interactive`,
+          event_navigation_browsing_method: "click",
+        }),
+      },
+    ],
+  }),
+  {
+    getAttrs: ({ headline }) => ({
+      event_navigation_action: "navigation",
+      event_navigation_name:
+        "in-article component displayed : key moments : interactive",
+      article_parent_name: `${headline}`,
+      event_navigation_browsing_method: "scroll",
+    }),
+    trackingName: "KeyMoment",
+    trackingObjectName: "KeyMoment",
+  },
+);
