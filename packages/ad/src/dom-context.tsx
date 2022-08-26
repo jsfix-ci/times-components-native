@@ -14,7 +14,6 @@ import {
 import { Viewport } from "@skele/components";
 import styles, { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
-// import { AdInitAsString } from "./utils/ad-init";
 import {
   hasDifferentOrigin,
   isUrlChildOfBaseUrl,
@@ -56,7 +55,7 @@ const DOMContext = (props: DomContextType) => {
     ? heightProp + Number(styles.containerAdditionalHeight.height)
     : 0;
 
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
   const [height, setHeight] = useState(adHeight);
 
   useEffect(() => {
