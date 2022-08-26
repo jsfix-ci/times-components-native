@@ -19,6 +19,8 @@ const AuthorProfilePage = ({ authorSlug, deeplink_value = null }) => {
           eventTime: new Date(),
           pageName: "AuthorProfile",
         },
+        object: "AuthorProfile",
+        action: "Viewed",
         ...deeplink_value,
       });
     }
