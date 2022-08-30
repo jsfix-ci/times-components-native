@@ -153,7 +153,7 @@ const ArticleBodyRow = ({
           key={key}
           adConfig={adConfig}
           narrowContent={narrowContent}
-          slotName="native-inline-ad"
+          slotName="ad-singleMPU"
           {...attributes}
         />
       );

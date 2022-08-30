@@ -7,7 +7,7 @@ export const insertSectionAd = (isTablet: boolean) => (slices: any[]) => {
     ...slices.slice(0, adSlotIndex),
     {
       name: "SectionAd",
-      slotName: "native-section-ad",
+      slotName: "ad-leaderboard",
     },
     ...slices.slice(adSlotIndex),
   ];
