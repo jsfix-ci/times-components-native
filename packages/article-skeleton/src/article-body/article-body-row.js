@@ -353,10 +353,12 @@ const ArticleBodyRow = ({
       return (
         <View style={isArticleTablet && styles.containerTablet}>
           <KeyFacts
+            analyticsStream={analyticsStream}
             ast={tree}
             key={key}
             onLinkPress={onLinkPress}
             scrollToRef={scrollToRef}
+            headline={decodeURIComponent(attributes.headline)}
           />
         </View>
       );

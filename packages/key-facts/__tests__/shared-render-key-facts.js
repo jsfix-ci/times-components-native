@@ -10,7 +10,11 @@ export default (renderComponent) => {
       name: "key facts with title",
       test: () => {
         const output = renderComponent(
-          <KeyFacts ast={data} onLinkPress={() => null} />,
+          <KeyFacts
+            ast={data}
+            onLinkPress={() => null}
+            analyticsStream={() => null}
+          />,
         );
 
         expect(output).toMatchSnapshot();
@@ -20,7 +24,11 @@ export default (renderComponent) => {
       name: "key facts without title",
       test: () => {
         const output = renderComponent(
-          <KeyFacts ast={dataNoTitle} onLinkPress={() => null} />,
+          <KeyFacts
+            ast={dataNoTitle}
+            onLinkPress={() => null}
+            analyticsStream={() => null}
+          />,
         );
 
         expect(output).toMatchSnapshot();
