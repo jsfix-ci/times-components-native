@@ -246,7 +246,7 @@ const DOMContext = (props: DomContextType) => {
       <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
         <div id="${data.slotName}"></div>
       </div>
-      <script src="https://ads.thetimes.co.uk/branches/feat/scb-1984-tnl-app-al-brand/ads.times_ios.min.js" defer=""></script>
+      <script src="https://ads.thetimes.co.uk/ads.times_ios.min.js " defer=""></script>
   </body>
 </html>
     `;
