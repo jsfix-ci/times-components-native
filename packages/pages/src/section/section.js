@@ -62,26 +62,17 @@ class SectionPage extends Component {
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
-    DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
-    DeviceEventEmitter.addListener(
-      "updateReadArticles",
-      this.updateReadArticles,
-    );
+    this.updateSASubscription = DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
+    this.updateSDSubscription = DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
+    this.updateRASubscription = DeviceEventEmitter.addListener("updateReadArticles", this.updateReadArticles);
     this.syncAppData();
   }
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.removeListener("updateSavedArticles", this.syncAppData);
-    DeviceEventEmitter.removeListener(
-      "updateSectionData",
-      this.updateSectionData,
-    );
-    DeviceEventEmitter.removeListener(
-      "updateReadArticles",
-      this.updateReadArticles,
-    );
+    this.updateSASubscription.remove();
+    this.updateSDSubscription.remove();
+    this.updateRASubscription.remove();
   }
 
   onAppStateChange(nextAppState) {
@@ -121,11 +112,11 @@ class SectionPage extends Component {
         const savedArticles = !articleIds
           ? null
           : articleIds.reduce((saved, id) => {
-              // eslint-disable-next-line no-param-reassign
-              saved[id] = true;
+            // eslint-disable-next-line no-param-reassign
+            saved[id] = true;
 
-              return saved;
-            }, {});
+            return saved;
+          }, {});
 
         this.setState({
           savedArticles,
