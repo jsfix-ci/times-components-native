@@ -44,9 +44,9 @@ task removeReactArchives(type: Delete) {
 clean.dependsOn(removeGraphQlFiles)
 clean.dependsOn(removeReactArchives)
 
-task generateReactArchives {
+task generateReactArchives() {
     subprojects { subproject ->
-        apply plugin: 'maven'
+        apply plugin: 'maven-publish'
         def reactSubprojects = [
             "xnative-rn-svg",
             "xnative-rn-webview",
@@ -58,20 +58,21 @@ task generateReactArchives {
 
         if (reactSubprojects.contains(subproject.name)) {
             task generateReactArchive(type: Upload) {
-                configuration = subproject.configurations.archives
-                repositories.mavenDeployer {
-                    repository url: "file://${reactRepositoryPath}"
-
-                    pom.project {
+                publishing {
+                  repositories.maven {
+                    url = "file://${reactRepositoryPath}"
+                  }
+                  publications {
+                    maven(MavenPublication) {
                         groupId 'uk.co.thetimes'
                         artifactId subproject.name
                         version tcnPackageJson.version
                     }
+                  }
                 }
             }
-
             generateReactArchives.dependsOn(generateReactArchive)
-        }
+      }
     }
 
     task reactNativeCopy(type: Copy) {
@@ -89,17 +90,25 @@ task generateReactArchives {
         }
 
         task createHermesPom {
-          apply plugin: 'maven'
-
+          apply plugin: 'maven-publish'
           description "Generates pom file for Hermes Engine"
-          pom {
-            project {
-              groupId 'com.facebook.hermes'
-              artifactId 'hermes-engine'
-              version hermesVersion
-              packaging 'aar'
+          publishing {
+            repositories.maven {
+              //TODO review by Android team guys, unsure wether this is the right syntax to replace the below line
+              //.writeTo("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
+              url = "$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom"
             }
-          }.writeTo("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
+            publications {
+              maven(MavenPublication) {
+                pom {
+                    groupId 'com.facebook.hermes'
+                    artifactId 'hermes-engine'
+                    version hermesVersion
+                    packaging 'aar'
+                }
+              }
+            }
+          }
         }
         hermesCopy.dependsOn(hermesCopyArchive)
         hermesCopy.dependsOn(createHermesPom)

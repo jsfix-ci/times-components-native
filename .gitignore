@@ -67,6 +67,7 @@ jsconfig.json
 # Bundles
 ios/Index/
 ios/Pods/
+vendor/bundle
 
 ios/main.jsbundle
 ios/main.jsbundle.meta
