@@ -62,18 +62,9 @@ class SectionPage extends Component {
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
-    this.updateSASubscription = DeviceEventEmitter.addListener(
-      "updateSavedArticles",
-      this.syncAppData,
-    );
-    this.updateSDSubscription = DeviceEventEmitter.addListener(
-      "updateSectionData",
-      this.updateSectionData,
-    );
-    this.updateRASubscription = DeviceEventEmitter.addListener(
-      "updateReadArticles",
-      this.updateReadArticles,
-    );
+    this.updateSASubscription = DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
+    this.updateSDSubscription = DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
+    this.updateRASubscription = DeviceEventEmitter.addListener("updateReadArticles", this.updateReadArticles);
     this.syncAppData();
   }
 
@@ -121,11 +112,11 @@ class SectionPage extends Component {
         const savedArticles = !articleIds
           ? null
           : articleIds.reduce((saved, id) => {
-              // eslint-disable-next-line no-param-reassign
-              saved[id] = true;
+            // eslint-disable-next-line no-param-reassign
+            saved[id] = true;
 
-              return saved;
-            }, {});
+            return saved;
+          }, {});
 
         this.setState({
           savedArticles,
