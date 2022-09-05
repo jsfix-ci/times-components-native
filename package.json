@@ -11,7 +11,7 @@
   "scripts": {
     "start": "rnstl && react-native start --config ./app/metro.config.js",
     "depcheck": "depcheck --config=./.depcheckrc",
-    "lint": "eslint . && yarn depcheck",
+    "lint": "eslint",
     "ios:native": "react-native start --config ./lib/ios/metro.config.js",
     "ios:build-lib": "yarn ios:build-lib:js && yarn ios:build-lib:update-version",
     "ios:build-lib:js": "mkdir -p lib/ios/assets/js && mkdir -p lib/ios/assets/res/graphql && cp ./packages/provider-queries/src/*.graphql ./lib/ios/assets/res/graphql",
