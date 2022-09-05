@@ -45,6 +45,7 @@ const TileZ = ({
               whiteSpaceHeight={whiteSpaceHeight}
               withStar={false}
               bullets={bullets}
+              onPress={onPress}
             />
           )}
         />

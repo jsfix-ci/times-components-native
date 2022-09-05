@@ -22,7 +22,7 @@ describe("insertSectionAd", () => {
       { id: "a", name: "LeadersSlice" },
       { id: "b", name: "DailyUniversalRegister" },
       { id: "c", name: "OtherSlice" },
-      { name: "SectionAd", slotName: "native-section-ad" },
+      { name: "SectionAd", slotName: "ad-leaderboard" },
       { id: "d", name: "LeadersSlice" },
     ]);
   });
