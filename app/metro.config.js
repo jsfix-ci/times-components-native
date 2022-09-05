@@ -13,14 +13,14 @@ module.exports = (async () => {
       babelTransformerPath: require.resolve(
         "@bam.tech/react-native-graphql-transformer",
       ),
-    },
-    serializer: {
       getTransformOptions: async () => ({
         transform: {
           experimentalImportSupport: false,
           inlineRequires: true,
         },
       }),
+    },
+    serializer: {
       getModulesRunBeforeMainModule: () => [
         path.join(
           root,
