@@ -19,7 +19,7 @@ const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
             url={makeTopicUrl({ slug })}
             testIDProp="topic"
           >
-            <View style={[styles.container, styles.borderHighlight]}>
+            <View style={[styles.container]}>
               <Text
                 accessibilityComponentType="button"
                 accessibilityRole="button"

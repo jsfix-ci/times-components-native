@@ -65,9 +65,9 @@ export const InnerMeasureInlineContent: React.FC<
           width: contentParameters.contentWidth,
         }}
       >
-        {content.map((contentItem) => (
+        {content.map((contentItem, index) => (
           <MeasureContent
-            key={`InlineContentMeasuringView:${contentItem.id}`}
+            key={`InlineContentMeasuringView:${contentItem.id}-${index}`}
             skeletonProps={skeletonProps}
             content={contentItem}
           />
