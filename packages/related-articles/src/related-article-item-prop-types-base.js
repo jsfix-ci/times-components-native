@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+
+
 import { propTypes as treePropType } from "@times-components-native/markup-forest";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
