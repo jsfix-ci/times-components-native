@@ -24,6 +24,7 @@ publish_android: &PUBLISH_ANDROID
                 command: |
                     cd ~/project/
                     yarn android:clean-lib:aar
+                    yarn android:build-lib
                     yarn android:publish-lib:aar:remote
                     bash ./scripts/publish-android.sh
                 working_directory: ~/project/
