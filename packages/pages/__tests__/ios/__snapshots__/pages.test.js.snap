@@ -4,10 +4,10 @@ exports[`adConfig is set correctly 1`] = `
 Object {
   "adUnit": "thetimes.mob.ios",
   "bidInitialiser": Promise {
-    "_U": 0,
-    "_V": 1,
-    "_W": undefined,
-    "_X": null,
+    "_1": 0,
+    "_2": 1,
+    "_3": undefined,
+    "_4": null,
   },
   "bidderSlots": Array [],
   "biddersConfig": Object {},
@@ -43,10 +43,10 @@ exports[`article page 1`] = `
     Object {
       "adUnit": "thetimes.mob.ios",
       "bidInitialiser": Promise {
-        "_U": 0,
-        "_V": 1,
-        "_W": undefined,
-        "_X": null,
+        "_1": 0,
+        "_2": 1,
+        "_3": undefined,
+        "_4": null,
       },
       "bidderSlots": Array [],
       "biddersConfig": Object {},

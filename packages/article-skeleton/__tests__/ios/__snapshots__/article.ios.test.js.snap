@@ -565,10 +565,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               Object {
                 "adUnit": "mockAdUnit",
                 "bidInitialiser": Promise {
-                  "_U": 0,
-                  "_V": 1,
-                  "_W": undefined,
-                  "_X": null,
+                  "_1": 0,
+                  "_2": 1,
+                  "_3": undefined,
+                  "_4": null,
                 },
                 "bidderSlots": Array [
                   "header",
@@ -4182,10 +4182,10 @@ exports[`19. renders content 1`] = `
               Object {
                 "adUnit": "mockAdUnit",
                 "bidInitialiser": Promise {
-                  "_U": 0,
-                  "_V": 1,
-                  "_W": undefined,
-                  "_X": null,
+                  "_1": 0,
+                  "_2": 1,
+                  "_3": undefined,
+                  "_4": null,
                 },
                 "bidderSlots": Array [
                   "header",
