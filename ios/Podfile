@@ -13,10 +13,10 @@ target 'TimesComponents' do
   use_react_native!(
     :path => config["reactNativePath"],
     # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => true
+    :hermes_enabled => true,
     # :fabric_enabled => flags[:fabric_enabled],
 	  # An absolute path to your application root.
-	  :app_path => "#{Pod::Config.instance.installation_root}/.."
+	  :app_path => "#{Pod::Config.instance.installation_root}/..",
   )
 
   target 'TimesComponentsTests' do
