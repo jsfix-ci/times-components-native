@@ -1,9 +1,12 @@
 import React from "react";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleExtrasProvider } from "@times-components-native/provider";
 import ArticleExtrasError from "./article-extras-error";
 import ArticleExtrasContent from "./article-extras-content";
+import { Viewport } from "@skele/components";
+
+const ViewportAwareView = Viewport.Aware(View);
 
 const ArticleExtras = ({
   analyticsStream,
@@ -20,28 +23,29 @@ const ArticleExtras = ({
 }) => (
   <ArticleExtrasProvider debounceTimeMs={0} id={articleId}>
     {({ article, error, isLoading, refetch }) => {
-      if (isLoading) {
-        return <ActivityIndicator size="large" />;
-      }
-      if (error) {
-        return <ArticleExtrasError refetch={refetch} />;
-      }
-
       return (
-        <ArticleExtrasContent
-          analyticsStream={analyticsStream}
-          article={article}
-          articleId={articleId}
-          articleUrl={articleUrl}
-          onCommentGuidelinesPress={onCommentGuidelinesPress}
-          onCommentsPress={onCommentsPress}
-          onRelatedArticlePress={onRelatedArticlePress}
-          onTopicPress={onTopicPress}
-          onTooltipPresented={onTooltipPresented}
-          narrowContent={narrowContent}
-          template={template}
-          tooltips={tooltips}
-        />
+        <ViewportAwareView onViewportEnter={refetch}>
+          {isLoading ? (
+            <ActivityIndicator size="large" />
+          ) : error ? (
+            <ArticleExtrasError refetch={refetch} />
+          ) : (
+            <ArticleExtrasContent
+              analyticsStream={analyticsStream}
+              article={article}
+              articleId={articleId}
+              articleUrl={articleUrl}
+              onCommentGuidelinesPress={onCommentGuidelinesPress}
+              onCommentsPress={onCommentsPress}
+              onRelatedArticlePress={onRelatedArticlePress}
+              onTopicPress={onTopicPress}
+              onTooltipPresented={onTooltipPresented}
+              narrowContent={narrowContent}
+              template={template}
+              tooltips={tooltips}
+            />
+          )}
+        </ViewportAwareView>
       );
     }}
   </ArticleExtrasProvider>
