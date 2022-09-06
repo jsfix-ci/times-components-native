@@ -36,6 +36,7 @@ const ArticleBase = ({
   refetch,
   omitErrors,
   scale,
+  fontScale,
   sectionName: pageSection,
   remoteConfig,
   tooltips,
@@ -53,6 +54,7 @@ const ArticleBase = ({
   const theme = {
     ...themeFactory(section, template),
     scale: scale || defaults.theme.scale,
+    fontScale: fontScale ? fontScale / 100 : undefined,
   };
 
   const interactiveConfig = {

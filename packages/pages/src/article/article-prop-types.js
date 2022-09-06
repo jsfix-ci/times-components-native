@@ -9,6 +9,7 @@ export const propTypes = {
   referralUrl: PropTypes.string,
   refetch: PropTypes.func,
   scale: PropTypes.string,
+  fontScale: PropTypes.number,
   sectionName: PropTypes.string,
   showInteractives: PropTypes.bool,
   remoteConfig: PropTypes.shape({
@@ -26,6 +27,7 @@ export const defaultProps = {
   referralUrl: null,
   refetch: () => null,
   scale: null,
+  fontScale: null,
   sectionName: null,
   showInteractives: false,
   remoteConfig: {

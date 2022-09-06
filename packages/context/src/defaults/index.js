@@ -10,5 +10,6 @@ export default {
   minimumFontScale: 0.7,
   theme: {
     scale: scales.medium,
+    fontScale: 1,
   },
 };
