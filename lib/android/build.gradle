@@ -19,6 +19,7 @@ buildscript {
 }
 
 def reactRepositoryPath = "$rootDir/repo"
+def hermesVersion = new JsonSlurper().parseText(file("$rootDir/../../node_modules/hermes-engine/package.json").text).version
 def graphQlFilesPath = './xnative/src/main/res/raw'
 
 allprojects {
@@ -44,7 +45,7 @@ task removeReactArchives(type: Delete) {
 clean.dependsOn(removeGraphQlFiles)
 clean.dependsOn(removeReactArchives)
 
-task generateReactArchives() {
+task generateReactArchives {
     subprojects { subproject ->
         apply plugin: 'maven-publish'
         def reactSubprojects = [
@@ -55,9 +56,9 @@ task generateReactArchives() {
             "xnative-rn-community-art",
         ]
         def tcnPackageJson = new JsonSlurper().parseText(file("$rootDir/../../package.json").text)
-
+        
         if (reactSubprojects.contains(subproject.name)) {
-            task generateReactArchive(type: Upload) {
+            task generateReactArchive {
                 publishing {
                   repositories.maven {
                     url = "file://${reactRepositoryPath}"
@@ -81,7 +82,6 @@ task generateReactArchives() {
     }
 
     task hermesCopy {
-        def hermesVersion = new JsonSlurper().parseText(file("$rootDir/../../node_modules/hermes-engine/package.json").text).version
 
         task hermesCopyArchive(type: Copy) {
           from('../../node_modules/hermes-engine/android/hermes-release.aar')
@@ -89,17 +89,15 @@ task generateReactArchives() {
           rename('hermes-release.aar', "hermes-engine-${hermesVersion}.aar")
         }
 
-        task createHermesPom {
+        task generateHermesArchive {
           apply plugin: 'maven-publish'
           description "Generates pom file for Hermes Engine"
           publishing {
             repositories.maven {
-              //TODO review by Android team guys, unsure wether this is the right syntax to replace the below line
-              //.writeTo("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
-              url = "$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom"
+              url = reactRepositoryPath
             }
             publications {
-              maven(MavenPublication) {
+              Hermes(MavenPublication) {
                 pom {
                     groupId 'com.facebook.hermes'
                     artifactId 'hermes-engine'
@@ -111,7 +109,8 @@ task generateReactArchives() {
           }
         }
         hermesCopy.dependsOn(hermesCopyArchive)
-        hermesCopy.dependsOn(createHermesPom)
+        hermesCopy.dependsOn(generateHermesArchive)
+        hermesCopy.dependsOn(generatePomFileForHermesPublication)
     }
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
     task graphQlCopy(type: Copy) {
@@ -123,4 +122,10 @@ task generateReactArchives() {
     generateReactArchives.dependsOn(hermesCopy)
     generateReactArchives.dependsOn(reactNativeCopy)
     generateReactArchives.dependsOn(graphQlCopy)
+}
+
+model {
+    tasks.generatePomFileForHermesPublication {
+        destination = file("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
+    }
 }
