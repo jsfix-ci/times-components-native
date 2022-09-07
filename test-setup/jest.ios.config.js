@@ -8,7 +8,7 @@ module.exports = {
   setupFiles: [
     "<rootDir>/test-setup/setup-jest.js",
     "jest-plugin-context/setup",
-    "jest-date-mock",
+    // "jest-date-mock",
   ],
   setupFilesAfterEnv: [],
   rootDir: "../",
