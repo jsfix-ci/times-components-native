@@ -44,35 +44,38 @@ task removeReactArchives(type: Delete) {
 
 clean.dependsOn(removeGraphQlFiles)
 clean.dependsOn(removeReactArchives)
+def reactSubprojects = [
+    "xnative-rn-svg",
+    "xnative-rn-webview",
+    "xnative-rn-device-info",
+    "xnative-rn-community-netinfo",
+    "xnative-rn-community-art",
+]
 
 task generateReactArchives {
     subprojects { subproject ->
         apply plugin: 'maven-publish'
-        def reactSubprojects = [
-            "xnative-rn-svg",
-            "xnative-rn-webview",
-            "xnative-rn-device-info",
-            "xnative-rn-community-netinfo",
-            "xnative-rn-community-art",
-        ]
         def tcnPackageJson = new JsonSlurper().parseText(file("$rootDir/../../package.json").text)
-        
+
         if (reactSubprojects.contains(subproject.name)) {
             task generateReactArchive {
                 publishing {
                   repositories.maven {
-                    url = "file://${reactRepositoryPath}"
+                    url = reactRepositoryPath
                   }
                   publications {
-                    maven(MavenPublication) {
+                    ReactDependency(MavenPublication) {
                         groupId 'uk.co.thetimes'
                         artifactId subproject.name
                         version tcnPackageJson.version
+                        artifact("$buildDir/outputs/aar/${subproject.name}-release.aar")
                     }
                   }
                 }
             }
-            generateReactArchives.dependsOn(generateReactArchive)
+            generateReactArchive.dependsOn(":${subproject.name}:assembleRelease")
+            publishReactDependencyPublicationToMavenRepository.dependsOn(generateReactArchive)
+            generateReactArchives.dependsOn(publishReactDependencyPublicationToMavenRepository)
       }
     }
 
