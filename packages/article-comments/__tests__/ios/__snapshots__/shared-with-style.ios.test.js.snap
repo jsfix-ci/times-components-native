@@ -114,41 +114,31 @@ exports[`enabled comments 1`] = `
   <View
     style={
       Object {
-        "flexDirection": "column-reverse",
-        "justifyContent": "space-between",
-        "zIndex": 9999,
+        "alignItems": "center",
+        "backgroundColor": "#006699",
+        "borderRadius": 2,
+        "height": 45,
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 25,
+        "minWidth": 100,
+        "width": 215,
       }
     }
   >
-    <View
+    <Text
       style={
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#006699",
-          "borderRadius": 2,
-          "height": 45,
-          "justifyContent": "center",
-          "marginBottom": 0,
-          "marginTop": 25,
-          "minWidth": 100,
-          "width": 215,
+          "color": "#FFFFFF",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 16,
+          "lineHeight": 16,
+          "paddingTop": 5,
         }
       }
     >
-      <Text
-        style={
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 16,
-            "lineHeight": 16,
-            "paddingTop": 5,
-          }
-        }
-      >
-        View comments
-      </Text>
-    </View>
+      View comments
+    </Text>
   </View>
 </View>
 `;

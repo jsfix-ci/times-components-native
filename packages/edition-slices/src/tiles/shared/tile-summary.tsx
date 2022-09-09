@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleProp, TextStyle, ViewStyle } from "react-native";
-import ArticleSummary from "./article-summary";
+import ArticleSummary, { Bullet } from "./article-summary";
 import {
   BylineInput,
   Markup,
@@ -32,7 +32,7 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
-  bullets?: string[];
+  bullets?: Bullet[];
   onPress?: OnArticlePress | (() => null);
 }
 

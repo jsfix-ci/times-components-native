@@ -28,7 +28,7 @@ export default [
             name: "text",
             children: [],
             attributes: {
-              value: " Coronavirus Charity Appeal",
+              value: "Coronavirus Charity Appeal",
             },
           },
         ],

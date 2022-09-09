@@ -91,5 +91,13 @@ export default () => {
         animate: true,
       });
     });
+    test("returns false for read articles if the article is live and isTablet is true", () => {
+      expect(
+        getArticleReadState(true, [{ read: true, animate: false }], "x", true),
+      ).toEqual({
+        read: false,
+        animate: false,
+      });
+    });
   });
 };

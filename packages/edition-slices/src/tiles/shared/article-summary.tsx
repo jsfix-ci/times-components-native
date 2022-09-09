@@ -44,6 +44,15 @@ type MarkAsReadProps = {
   opacity: number;
 };
 
+export type Bullet = {
+  id: string;
+  shortHeadline: string;
+};
+
+type BulletWithReadState = Bullet & {
+  readState: ArticleReadState;
+};
+
 interface Props {
   bylines?: BylineInput[];
   bylineStyle?: StyleProp<ViewStyle>;
@@ -68,7 +77,7 @@ interface Props {
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
-  bullets?: string[];
+  bullets?: Bullet[];
   onPress?: OnArticlePress | (() => null);
 }
 
@@ -76,14 +85,24 @@ export const getArticleReadState = (
   isTablet: boolean,
   readArticles: Array<ArticleRead> | null,
   articleId: string,
-): ArticleReadState => ({
-  read:
-    isTablet && (readArticles?.some((obj) => obj.id === articleId) ?? false),
-  animate:
-    isTablet &&
-    (readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
-      false),
-});
+  isLive: boolean = false,
+): ArticleReadState => {
+  // override read state whilst article is LIVE
+  if (isLive) {
+    return {
+      read: false,
+      animate: false,
+    };
+  }
+  return {
+    read:
+      isTablet && (readArticles?.some((obj) => obj.id === articleId) ?? false),
+    animate:
+      isTablet &&
+      (readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
+        false),
+  };
+};
 
 export const MarkAsRead = ({
   children,
@@ -163,7 +182,39 @@ const ArticleSummary: React.FC<Props> = ({
   const [straplineOpacity] = useState(new Animated.Value(1));
   const [summaryOpacity] = useState(new Animated.Value(1));
 
-  const articleReadState = getArticleReadState(isTablet, readArticles, id);
+  const getIsLiveState = () => {
+    const isLive = false;
+    if (expirableFlags && expirableFlags.length) {
+      const hasLiveFlag = expirableFlags.filter((flag) => {
+        if (flag) {
+          return flag?.type === "LIVE";
+        }
+        return false;
+      });
+      return hasLiveFlag.length > 0;
+    }
+
+    return isLive;
+  };
+
+  const articleReadState = getArticleReadState(
+    isTablet,
+    readArticles,
+    id,
+    getIsLiveState(),
+  );
+
+  const bulletsWithReadState: BulletWithReadState[] = bullets?.length
+    ? bullets.map((bullet) => ({
+        ...bullet,
+        readState: getArticleReadState(
+          isTablet,
+          readArticles,
+          id,
+          getIsLiveState(),
+        ),
+      }))
+    : [];
 
   useEffect(() => {
     if (!articleReadState.animate) return;
@@ -200,15 +251,21 @@ const ArticleSummary: React.FC<Props> = ({
     </MarkAsRead>
   );
 
-  const renderFlags = (articleReadState: ArticleReadState) => (
-    <MarkAsRead
-      articleReadState={articleReadState}
-      opacityAnimation={standardOpacity}
-      opacity={articleReadOpacity.standard}
-    >
-      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
-    </MarkAsRead>
-  );
+  const renderFlags = (articleReadState: ArticleReadState) => {
+    return (
+      <MarkAsRead
+        articleReadState={articleReadState}
+        opacityAnimation={standardOpacity}
+        opacity={articleReadOpacity.standard}
+      >
+        <ArticleFlags
+          {...flagColour}
+          style={flagsStyle}
+          flags={expirableFlags}
+        />
+      </MarkAsRead>
+    );
+  };
 
   const renderSaveStar = () => (
     <PositionedTileStar
@@ -276,7 +333,7 @@ const ArticleSummary: React.FC<Props> = ({
       saveStar={withStar && renderSaveStar()}
       style={style}
       center={!!centeredStar}
-      bullets={bullets}
+      bullets={bulletsWithReadState}
       onPress={onPress}
     />
   );
