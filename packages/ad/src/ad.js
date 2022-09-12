@@ -113,23 +113,20 @@ export class AdBase extends PureComponent {
       width,
     } = this.props;
 
-    const { hasError, isAdReady, offline } = this.state;
+    const { hasError, offline } = this.state;
     const config = getSlotConfig(slotName, width || screenWidth, orientation);
     const data = determineData(config, this.props);
 
     if (hasError || offline) return null;
 
-    const sizeProps =
-      !isAdReady || hasError
-        ? { width: 0, height: 0 }
-        : {
-            height: config.maxSizes.height,
-            width:
-              width ||
-              (narrowContent
-                ? getNarrowArticleBreakpoint(screenWidth).content
-                : screenWidth),
-          };
+    const sizeProps = {
+      height: config.maxSizes.height,
+      width:
+        width ||
+        (narrowContent
+          ? getNarrowArticleBreakpoint(screenWidth).content
+          : screenWidth),
+    };
 
     const isInline = display === "inline";
 

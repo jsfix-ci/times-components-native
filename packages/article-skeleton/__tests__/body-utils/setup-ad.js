@@ -110,7 +110,7 @@ export default () => {
         createParagraph("e"),
         {
           name: "ad",
-          attributes: { slotName: "native-leaderboard" },
+          attributes: { slotName: "ad-leaderboard" },
           children: [],
         },
         { name: "image", children: [] },
@@ -157,7 +157,7 @@ export default () => {
         createParagraph("e"),
         {
           name: "ad",
-          attributes: { slotName: "native-single-mpu" },
+          attributes: { slotName: "ad-singleMPU" },
           children: [],
         },
         { name: "image", children: [] },
@@ -196,7 +196,7 @@ export default () => {
           attributes: {
             width: 300,
             height: 250,
-            slotName: "native-single-mpu",
+            slotName: "ad-singleMPU",
             inlineContent: [
               createParagraph("e"),
               createParagraph("f"),
@@ -245,7 +245,7 @@ export default () => {
           attributes: {
             width: 300,
             height: 250,
-            slotName: "native-single-mpu",
+            slotName: "ad-singleMPU",
             inlineContent: [
               createParagraph("e"),
               createParagraph("f"),
@@ -299,7 +299,7 @@ export default () => {
           attributes: {
             width: 300,
             height: 600,
-            slotName: "native-double-mpu",
+            slotName: "ad-doubleMPU",
             inlineContent: [
               createParagraph("e"),
               createParagraph("f"),
@@ -354,7 +354,7 @@ export default () => {
           attributes: {
             width: 300,
             height: 250,
-            slotName: "native-single-mpu",
+            slotName: "ad-singleMPU",
             inlineContent: [createParagraph("e"), createParagraph("f")],
             originalName: "ad",
             skeletonProps: newSkeletonProps,

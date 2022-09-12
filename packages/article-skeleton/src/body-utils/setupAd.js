@@ -50,9 +50,7 @@ const setupArticleMpuAd = (
       {
         name: "ad",
         attributes: {
-          slotName: isCommentTemplate
-            ? "native-single-mpu"
-            : "native-leaderboard",
+          slotName: isCommentTemplate ? "ad-singleMPU" : "ad-leaderboard",
         },
         children: [],
       },
@@ -63,8 +61,8 @@ const setupArticleMpuAd = (
   const slotName =
     numberOfParagraphs < singleMPUThreshold ||
     hasNonParagraphContentBeforeThreshold
-      ? "native-single-mpu"
-      : "native-double-mpu";
+      ? "ad-singleMPU"
+      : "ad-doubleMPU";
 
   const { height, width } = sizeMap[slotName][0];
 

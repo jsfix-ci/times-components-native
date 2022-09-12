@@ -17,7 +17,11 @@ const renderKeyFacts = ({ ast, select, hasScaling = false }) => {
   return (
     <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
       <Responsive>
-        <KeyFacts ast={ast} onLinkPress={() => null} />
+        <KeyFacts
+          ast={ast}
+          onLinkPress={() => null}
+          analyticsStream={() => null}
+        />
       </Responsive>
     </ContextProviderWithDefaults>
   );

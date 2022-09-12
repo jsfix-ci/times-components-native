@@ -75,14 +75,20 @@ class SectionPage extends Component {
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
-    DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
 
-    articleEventEmitter.addListener("onFontScaleChanged", (test) => {
-      console.log("+++ arguments", test);
-    });
+    // articleEventEmitter.addListener("onFontScaleChanged", (test) => {
+    //   console.log("+++ arguments", test);
+    // });
 
-    DeviceEventEmitter.addListener(
+    this.updateSASubscription = DeviceEventEmitter.addListener(
+      "updateSavedArticles",
+      this.syncAppData,
+    );
+    this.updateSDSubscription = DeviceEventEmitter.addListener(
+      "updateSectionData",
+      this.updateSectionData,
+    );
+    this.updateRASubscription = DeviceEventEmitter.addListener(
       "updateReadArticles",
       this.updateReadArticles,
     );
@@ -91,15 +97,9 @@ class SectionPage extends Component {
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.removeListener("updateSavedArticles", this.syncAppData);
-    DeviceEventEmitter.removeListener(
-      "updateSectionData",
-      this.updateSectionData,
-    );
-    DeviceEventEmitter.removeListener(
-      "updateReadArticles",
-      this.updateReadArticles,
-    );
+    this.updateSASubscription.remove();
+    this.updateSDSubscription.remove();
+    this.updateRASubscription.remove();
   }
 
   onAppStateChange(nextAppState) {

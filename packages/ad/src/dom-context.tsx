@@ -14,7 +14,6 @@ import {
 import { Viewport } from "@skele/components";
 import styles, { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
-import { AdInitAsString } from "./utils/ad-init";
 import {
   hasDifferentOrigin,
   isUrlChildOfBaseUrl,
@@ -40,15 +39,16 @@ const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ViewportAwareView = Viewport.Aware(View);
 
-const DOMContext = ({
-  height: heightProp = 0,
-  baseUrl = "",
-  onRenderComplete = () => null,
-  onRenderError = () => null,
-  data = {},
-  isInline = true,
-  width = screenWidth,
-}: DomContextType) => {
+const DOMContext = (props: DomContextType) => {
+  const {
+    height: heightProp = 0,
+    baseUrl = "",
+    onRenderComplete = () => null,
+    onRenderError = () => null,
+    data = {},
+    isInline = true,
+    width = screenWidth,
+  } = props;
   const webViewRef = React.useRef<WebView>(null);
 
   const adHeight = heightProp
@@ -103,13 +103,18 @@ const DOMContext = ({
    */
   const handleMessageEvent = (e: WebViewMessageEvent) => {
     const jsonData = e.nativeEvent.data;
+    let data;
+    try {
+      data = JSON.parse(jsonData);
+    } catch (error) {
+      return;
+    }
+    const { type, detail } = data;
 
     // Don't process postMessage events from 3rd party scripts
     if (jsonData.indexOf("isTngMessage") === -1) {
       return;
     }
-
-    const { type, detail } = JSON.parse(jsonData);
 
     switch (type) {
       case "renderFailed":
@@ -178,87 +183,89 @@ const DOMContext = ({
     }
   };
 
-  // NOTE: if this generated code is not working, and you don't know why
-  // because React Native doesn't report errors in webview JS code, try
-  // connecting a debugger to the app, console.log(html), copy and paste
-  // the HTML into a file and run it in a browser.
+  const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
   const html = `
-      <html>
-        <head>
-        <meta name="viewport" content="initial-scale=1,user-scalable=no">
-        <style>
-          html, body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+  <html>
+  <head>
+    <meta name="viewport" content="initial-scale=1,user-scalable=no">
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      window.nuk = {
+        "ads": {
+          "blocked": false,
+          "commercialSection": "comment",
+          "pageTitle": "",
+          "editionDate": "2022-07-12",
+          "editionId": "2ac1b6ed-c6b3-470a-a71c-5ffe911302fb",
+          "tuples": {
+            "cont": "art",
+            "path": "article/the-tory-right-favours-betrayal-over-reality-btfwrhhh6",
+            "cpn": "${String(authId)}"
+          },
+          "user": {
+            "isLoggedIn": true,
           }
-        </style>
-        <script>
-          function destroySlots() {
-            window.googletag.destroySlots();
-          }
-        </script>
-        <script>
-          window.googletag = window.googletag || {};
-          window.googletag.cmd = window.googletag.cmd || [];
-          window.pbjs = window.pbjs || {};
-          window.pbjs.que = window.pbjs.que || [];
-          window.apstag = {
-            _Q: [],
-            addToQueue(action, d) {
-              this._Q.push([action, d]);
-            },
-            fetchBids() {
-              this.addToQueue("f", arguments);
-            },
-            init() {
-              this.addToQueue("i", arguments);
-            },
-            setDisplayBids() { return null; },
-            targetingKeys() {
-              return [];
-            }
-          };
-        </script>
-        </head>
-        <body>
-          <div id="ad-mpu"></div>
-          <script>
-            window.theTimesBaseUrl = "${String(baseUrl)}";
-            window.postMessage = function(data) {
-              var message = typeof data === "string" ? data : JSON.stringify(data);
-              window.ReactNativeWebView.postMessage(message);
-            };
-            (${webviewEventCallbackSetupAsString})({window});
-          </script>
-          <script>
-          (${AdInitAsString})({
-            el: document.querySelector("#ad-mpu"),
-            eventCallback: eventCallback,
-            data: ${JSON.stringify(data)},
-            platform: "native",
-            window
-          }).init();
-          </script>
-        </body>
-      </html>
+        },
+        
+      };
+    </script>
+    <script>
+      !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 6); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
+    </script>
+    <script type="text/javascript">
+      window._sp_ = {
+        "config":{
+          "mmsDomain": "https://cmp.thetimes.co.uk",
+          "wrapperAPIOrigin": "https://wrapper-api.sp-prod.net/tcfv2",
+          "accountId": 259,
+          "propertyId": 5049,
+          "authId": "${String(authId)}",
+        }
+      }
+    </script>
+    <script type="text/javascript" src="https://gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js"></script>
+    <script>
+      window.theTimesBaseUrl = "${String(baseUrl)}";
+      window.postMessage = function(data) {
+      var message = typeof data === "string" ? data : JSON.stringify(data);
+      window.ReactNativeWebView.postMessage(message);
+      };
+      (${webviewEventCallbackSetupAsString})({window});
+    </script>
+  </head>
+  <body>
+  <script>
+  </script>
+      <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
+        <div id="${data.slotName}"></div>
+      </div>
+      <script src="https://ads.thetimes.co.uk/ads.times_ios.min.js " defer=""></script>
+  </body>
+</html>
     `;
 
   return (
-    // Note that this ViewportAwareView must be contained by a
-    // Viewport.Tracker to work properly
     <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
       {(Platform.OS === "ios" || loaded) && (
         <WebView
           ref={webViewRef}
           onMessage={handleMessageEvent}
           onNavigationStateChange={handleNavigationStateChange}
+          source={{ html, baseUrl }}
           originWhitelist={
             Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
           }
-          source={{ baseUrl, html }}
+          style={{
+            height,
+            width,
+          }}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
         />

@@ -149,7 +149,7 @@ const ArticleBodyRow = ({
           key={key}
           adConfig={adConfig}
           narrowContent={narrowContent}
-          slotName="native-inline-ad"
+          slotName="ad-singleMPU"
           {...attributes}
         />
       );
@@ -349,10 +349,12 @@ const ArticleBodyRow = ({
       return (
         <View style={isArticleTablet && styles.containerTablet}>
           <KeyFacts
+            analyticsStream={analyticsStream}
             ast={tree}
             key={key}
             onLinkPress={onLinkPress}
             scrollToRef={scrollToRef}
+            headline={decodeURIComponent(attributes.headline)}
           />
         </View>
       );

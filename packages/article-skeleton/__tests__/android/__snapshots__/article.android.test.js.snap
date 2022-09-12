@@ -570,7 +570,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 },
               }
             }
-            slotName="native-inline-ad"
+            slotName="ad-singleMPU"
           />
         </View>
       </View>
@@ -4119,7 +4119,7 @@ exports[`19. renders content 1`] = `
                 },
               }
             }
-            slotName="native-inline-ad"
+            slotName="ad-singleMPU"
           />
         </View>
       </View>
