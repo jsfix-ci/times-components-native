@@ -9,6 +9,7 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 import { scales } from "@times-components-native/styleguide";
 import { MessageManager } from "@times-components-native/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
+import ArticleTakeover from "@times-components-native/article-takeover";
 
 export const getComponentByTemplate = (template, isArticleTablet) => {
   const templates = {
@@ -19,6 +20,7 @@ export const getComponentByTemplate = (template, isArticleTablet) => {
     magazinestandard: ArticleMagazineStandard,
     maincomment: isArticleTablet ? ArticleCommentTablet : ArticleMainComment,
     mainstandard: ArticleMainStandard,
+    takeoverpage: ArticleTakeover,
   };
 
   return templates[template] || ArticleMainStandard;
@@ -37,9 +39,7 @@ const Article = (props) => {
   const { leadAsset, template } = article || {};
 
   let { content } = article || {};
-  if (template === "takeoverpage") {
-    throw new TakeoverBailout("Aborted react render: Takeover page");
-  }
+
   let onImagePressArticle = useMemo(() => {
     if (onImagePress) {
       content = addIndexesToInlineImages(content, leadAsset);
@@ -59,8 +59,21 @@ const Article = (props) => {
   };
 
   return (
-    <MessageManager animate delay={3000} scale={scales.medium}>
-      <Component {...newProps} onImagePress={onImagePressArticle} />
+    <MessageManager
+      animate
+      delay={3000}
+      scale={scales.medium}
+      onLayout={({ nativeEvent }) => {
+        console.log("JOSH 66 =====", nativeEvent);
+      }}
+    >
+      <Component
+        {...newProps}
+        onImagePress={onImagePressArticle}
+        onLayout={({ nativeEvent }) => {
+          console.log("JOSH 55 =====", nativeEvent);
+        }}
+      />
     </MessageManager>
   );
 };
