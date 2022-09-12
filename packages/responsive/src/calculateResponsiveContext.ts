@@ -21,7 +21,7 @@ export const calculateResponsiveContext = (
   height: number,
   fontScale: number,
 ): ContextType => ({
-  editionBreakpoint: getEditionBreakpoint(width),
+  editionBreakpoint: getEditionBreakpoint(width / fontScale),
   narrowArticleBreakpoint: getNarrowArticleBreakpoint(width),
   fontScale,
   isTablet: isTablet ? isTablet() : false,

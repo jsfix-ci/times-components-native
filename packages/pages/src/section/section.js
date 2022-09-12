@@ -1,12 +1,21 @@
 import React, { Component } from "react";
-import { AppState, DeviceEventEmitter, NativeModules } from "react-native";
+import {
+  AppState,
+  DeviceEventEmitter,
+  NativeEventEmitter,
+  NativeModules,
+} from "react-native";
 import PropTypes from "prop-types";
 
-import { SectionContext } from "@times-components-native/context";
+import {
+  ContextProviderWithDefaults,
+  SectionContext,
+} from "@times-components-native/context";
 import Section from "@times-components-native/section";
 import trackSection from "./track-section";
 import adTargetConfig from "./ad-targeting-config";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
+import Responsive from "@times-components-native/responsive";
 
 const {
   getOpenedPuzzleCount,
@@ -32,6 +41,9 @@ const onLinkPress = ({ url, isExternal = true }) =>
 const onPuzzlePress = ({ id, title, url }) =>
   onPuzzlePressBridge(url, title, id);
 
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
 class SectionPage extends Component {
   constructor(props) {
     super(props);
@@ -45,6 +57,7 @@ class SectionPage extends Component {
 
     const { section } = this.props;
     this.state = {
+      fontScale: props ? props.fontScale : 1,
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
       readArticles: existingReadArticles || [],
       savedArticles: null,
@@ -64,6 +77,11 @@ class SectionPage extends Component {
     AppState.addEventListener("change", this.onAppStateChange);
     DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
     DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
+
+    articleEventEmitter.addListener("onFontScaleChanged", (test) => {
+      console.log("+++ arguments", test);
+    });
+
     DeviceEventEmitter.addListener(
       "updateReadArticles",
       this.updateReadArticles,
@@ -147,6 +165,10 @@ class SectionPage extends Component {
     }
   }
 
+  updateFontScale(fontScale) {
+    console.log("+++ UPDATE", fontScale);
+  }
+
   toggleArticleSaveStatus(save, articleId) {
     const { savedArticles } = this.state;
     savedArticles[articleId] = save || undefined;
@@ -165,6 +187,7 @@ class SectionPage extends Component {
       recentlyOpenedPuzzleCount,
       savedArticles,
       section,
+      fontScale,
     } = this.state;
 
     const adConfig = adTargetConfig({
@@ -182,21 +205,32 @@ class SectionPage extends Component {
           recentlyOpenedPuzzleCount,
           savedArticles,
           hasDynamicBullets,
+          fontScale,
         }}
       >
-        <RemoteConfigProvider config={remoteConfig}>
-          <Section
-            adConfig={adConfig}
-            analyticsStream={trackSection}
-            onArticlePress={onArticlePress}
-            onLinkPress={onLinkPress}
-            onPuzzleBarPress={onPuzzleBarPress}
-            onPuzzlePress={onPuzzlePress}
-            publicationName={publicationName}
-            section={section}
-            puzzlesMetaData={puzzlesMetaData}
-          />
-        </RemoteConfigProvider>
+        <ContextProviderWithDefaults
+          value={{
+            theme: { fontScale: fontScale ? fontScale / 100 : undefined },
+          }}
+        >
+          <Responsive
+            fontScaleOverride={fontScale ? fontScale / 100 : undefined}
+          >
+            <RemoteConfigProvider config={remoteConfig}>
+              <Section
+                adConfig={adConfig}
+                analyticsStream={trackSection}
+                onArticlePress={onArticlePress}
+                onLinkPress={onLinkPress}
+                onPuzzleBarPress={onPuzzleBarPress}
+                onPuzzlePress={onPuzzlePress}
+                publicationName={publicationName}
+                section={section}
+                puzzlesMetaData={puzzlesMetaData}
+              />
+            </RemoteConfigProvider>
+          </Responsive>
+        </ContextProviderWithDefaults>
       </SectionContext.Provider>
     );
   }
@@ -208,6 +242,7 @@ SectionPage.propTypes = {
   section: PropTypes.shape({}),
   hasDynamicBullets: PropTypes.bool,
   readArticles: PropTypes.arrayOf(PropTypes.string),
+  fontScale: PropTypes.number,
 };
 
 SectionPage.defaultProps = {
@@ -216,6 +251,7 @@ SectionPage.defaultProps = {
   section: null,
   hasDynamicBullets: false,
   readArticles: [],
+  fontScale: 1,
 };
 
 export default SectionPage;

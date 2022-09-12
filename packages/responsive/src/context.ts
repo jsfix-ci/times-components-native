@@ -3,8 +3,8 @@ import { getDimensions } from "@times-components-native/utils";
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 import { ContextType } from "./types";
 
-const { width, height, fontScale } = getDimensions();
+const { width, height } = getDimensions();
 
 export default createContext<ContextType>(
-  calculateResponsiveContext(width, height, fontScale),
+  calculateResponsiveContext(width, height, 1),
 );

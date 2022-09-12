@@ -31,6 +31,7 @@ import {
   getCropByPriority,
   isTemplateWithLeadAssetInGallery,
 } from "@times-components-native/utils";
+import { useAppContext } from "@times-components-native/context";
 
 const { ArticleEvents } = NativeModules;
 const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
@@ -240,6 +241,8 @@ const ArticleWithContent = (props) => {
     !hasBeenRead.current && setArticleRead();
   };
 
+  const { theme } = useAppContext();
+
   return (
     <View style={styles.articleContainer}>
       <Viewport.Tracker>
@@ -252,6 +255,7 @@ const ArticleWithContent = (props) => {
         >
           <MemoisedArticle
             {...props}
+            fontScale={theme?.fontScale || 1}
             scrollRef={scrollRef}
             layoutRefs={layoutRefs}
             setLayoutRef={setLayoutRef}

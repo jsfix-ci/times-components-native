@@ -26,9 +26,10 @@ const DatePublication: FC<DatePublicationProps> = ({
         <View
           style={{
             flexDirection: "row",
+            alignItems: "flex-start",
           }}
         >
-          <Text style={style}>
+          <Text style={[style, { textAlign: "left" }]}>
             <Text style={style} testID={"date-time"}>
               {dateTime}
             </Text>

@@ -12,8 +12,15 @@ interface DimensionChangeEvent {
   window: ScaledSize;
 }
 
-const ResponsiveProvider: React.FC = ({ children }) => {
-  const { fontScale, width, height } = getDimensions();
+interface ResponsiveProviderProps {
+  fontScale: number;
+}
+
+const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
+  children,
+  fontScale,
+}) => {
+  const { width, height } = getDimensions();
 
   const appState = useRef<string>(AppState.currentState);
 
@@ -27,11 +34,10 @@ const ResponsiveProvider: React.FC = ({ children }) => {
   );
 
   const onDimensionChange = ({
-    window: { fontScale, width, height },
+    window: { width, height },
   }: DimensionChangeEvent) => {
     // Prevents issue with odd orientation switch when app put in background
     if (/inactive|background/.test(appState.current)) return;
-
     setState(calculateResponsiveContext(width, height, fontScale));
   };
 

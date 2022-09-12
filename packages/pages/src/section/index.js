@@ -2,23 +2,24 @@ import React from "react";
 import { Platform } from "react-native";
 import PropTypes from "prop-types";
 
-import Responsive from "@times-components-native/responsive";
 // import data from "../../data.json"; // static data for testing new slice bullet data
 import Section from "./section";
 
 const SectionPage = (props) => {
+  React.useEffect(() => {
+    console.log("+++ props ", props.fontScale);
+  }, [props]);
+
   return (
-    <Responsive>
-      <Section
-        {...props}
-        section={JSON.parse(props.section)}
-        puzzlesMetaData={
-          Platform.OS === "android"
-            ? JSON.parse(props.puzzlesMetaData)
-            : props.puzzlesMetaData
-        }
-      />
-    </Responsive>
+    <Section
+      {...props}
+      section={JSON.parse(props.section)}
+      puzzlesMetaData={
+        Platform.OS === "android"
+          ? JSON.parse(props.puzzlesMetaData)
+          : props.puzzlesMetaData
+      }
+    />
   );
 };
 

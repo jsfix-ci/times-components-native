@@ -7,4 +7,5 @@ export default createContext({
   savedArticles: null,
   readArticles: null,
   hasDynamicBullets: false,
+  fontScale: 1,
 });

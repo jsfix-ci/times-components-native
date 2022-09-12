@@ -12,6 +12,8 @@ import trackArticle from "./track-article";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
 
 const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
+const { fontScale: fontScaleBridge } = NativeModules;
+const { getFontScale } = NativeModules.ReactConfig;
 
 const {
   onArticlePress,
@@ -63,6 +65,12 @@ const ArticleBase = ({
     platform: Platform.OS,
     version: appVersion,
   };
+
+  // getFontScale().then((res) => {
+  //   console.log("test +++", res);
+  // });
+
+  // console.log("+++fontScaleBridge+++", fontScaleBridge, getFontScale());
 
   return (
     <ContextProviderWithDefaults value={{ theme }}>
