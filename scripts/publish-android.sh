@@ -8,7 +8,7 @@ ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
 setupEnv () {
   if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
     then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH"
-    exit 0
+    exit 1
   fi
 }
 
@@ -19,7 +19,7 @@ checkIfVersionExists () {
 
   if [ $STATUS -eq 200 ]; then
     echo "✋ Skipping publishing: Version $PACKAGE_VERSION already exists in the artifacts repo."
-    exit 0
+    exit 1
   fi
 }
 
