@@ -15,14 +15,12 @@ exports[`1. renders correctly with an image lead asset 1`] = `
     uri="https://crop169.io/"
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     Chris Reynolds Gordon at one of his party venues in London
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     The credits
   </Text>
@@ -45,14 +43,12 @@ exports[`2. renders correctly with a video lead asset 1`] = `
     width={600}
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     Chris Reynolds Gordon at one of his party venues in London
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     The credits
   </Text>

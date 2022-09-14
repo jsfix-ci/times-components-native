@@ -49,8 +49,7 @@ exports[`tile lead supplement portrait medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -130,8 +129,7 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -211,8 +209,7 @@ exports[`tile lead supplement portrait wide 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",

@@ -15,8 +15,7 @@ exports[`FrontPageByline renders with container style 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <ArticleByline
       ast={
@@ -61,8 +60,7 @@ exports[`FrontPageByline renders with keyline 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <ArticleByline
       ast={
@@ -102,8 +100,7 @@ exports[`FrontPageByline renders without keyline 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <ArticleByline
       ast={

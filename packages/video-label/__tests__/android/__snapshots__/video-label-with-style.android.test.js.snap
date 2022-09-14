@@ -24,8 +24,7 @@ exports[`1. video label with a title 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#008347",
@@ -70,8 +69,7 @@ exports[`2. video label without a title shows video 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#008347",
@@ -116,8 +114,7 @@ exports[`3. video label with the black default colour 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "black",

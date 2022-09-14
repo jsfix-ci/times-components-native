@@ -13,8 +13,7 @@ exports[`1. pull quote in culture magazine 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#1D1D1B",
@@ -29,8 +28,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     “
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -54,8 +52,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     }
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -69,8 +66,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       A caption
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -100,8 +96,7 @@ exports[`2. pull quote in style magazine 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#1D1D1B",
@@ -116,8 +111,7 @@ exports[`2. pull quote in style magazine 1`] = `
     “
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -141,8 +135,7 @@ exports[`2. pull quote in style magazine 1`] = `
     }
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -156,8 +149,7 @@ exports[`2. pull quote in style magazine 1`] = `
       A caption
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -187,8 +179,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#1D1D1B",
@@ -203,8 +194,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     “
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -228,8 +218,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     }
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -243,8 +232,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       A caption
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",

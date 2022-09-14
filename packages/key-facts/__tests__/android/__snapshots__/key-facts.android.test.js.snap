@@ -9,8 +9,7 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Example bullet text
       </Text>
@@ -18,14 +17,12 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         An example 
         <Text
           accessibilityRole="link"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           link
         </Text>
@@ -34,8 +31,7 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         More example text.
       </Text>
@@ -43,19 +39,16 @@ exports[`1. key facts with title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Example text 
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           this is bold 
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           this is in italics.
         </Text>
@@ -71,8 +64,7 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Example bullet text
       </Text>
@@ -80,14 +72,12 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         An example 
         <Text
           accessibilityRole="link"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           link
         </Text>
@@ -96,8 +86,7 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         More example text.
       </Text>
@@ -105,19 +94,16 @@ exports[`2. key facts without title 1`] = `
     <View>
       <View />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Example text 
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           this is bold 
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           this is in italics.
         </Text>

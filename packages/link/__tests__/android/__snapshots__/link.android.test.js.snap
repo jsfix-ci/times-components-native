@@ -43,8 +43,7 @@ exports[`2. renders link with target 1`] = `
 exports[`3. renders text link 1`] = `
 <Text
   accessibilityRole="link"
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   style={
     Object {
       "textDecorationLine": "underline",
@@ -58,8 +57,7 @@ exports[`3. renders text link 1`] = `
 exports[`4. text link with multiple styles 1`] = `
 <Text
   accessibilityRole="link"
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   style={
     Object {
       "backgroundColor": "blue",
@@ -75,8 +73,7 @@ exports[`4. text link with multiple styles 1`] = `
 exports[`5. text link with children 1`] = `
 <Text
   accessibilityRole="link"
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   style={
     Object {
       "textDecorationLine": "underline",
@@ -92,8 +89,7 @@ exports[`5. text link with children 1`] = `
 exports[`6. text link with target 1`] = `
 <Text
   accessibilityRole="link"
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   style={
     Object {
       "textDecorationLine": "underline",

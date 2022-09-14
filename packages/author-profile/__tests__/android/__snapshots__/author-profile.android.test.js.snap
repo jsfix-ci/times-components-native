@@ -222,16 +222,14 @@ exports[`7. an article list header 1`] = `
       />
       <Text
         accessibilityRole="header"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Name
       </Text>
       <Text
         accessibilityRole="header"
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         job title
       </Text>
@@ -251,8 +249,7 @@ exports[`7. an article list header 1`] = `
       </View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           Camilla Long
         </Text>

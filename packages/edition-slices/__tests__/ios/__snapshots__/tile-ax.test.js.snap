@@ -38,9 +38,8 @@ exports[`tile ax landscape huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -108,9 +107,8 @@ exports[`tile ax landscape medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -178,9 +176,8 @@ exports[`tile ax landscape smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -248,9 +245,8 @@ exports[`tile ax landscape wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -318,9 +314,8 @@ exports[`tile ax portrait huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -388,9 +383,8 @@ exports[`tile ax portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -458,9 +452,8 @@ exports[`tile ax portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -528,9 +521,8 @@ exports[`tile ax portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",

@@ -23,9 +23,8 @@ exports[`tile aj without breakpoint 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#333333",

@@ -32,8 +32,7 @@ exports[`2. daily universal register - smalltablet 1`] = `
       }
     />
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Daily Universal Register
     </Text>
@@ -250,8 +249,7 @@ exports[`9. leaders slice - smalltablet 1`] = `
       />
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
            Leading Articles 
         </Text>
@@ -1262,8 +1260,7 @@ exports[`39. daily universal register - medium 1`] = `
       }
     />
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Daily Universal Register
     </Text>
@@ -1480,8 +1477,7 @@ exports[`46. leaders slice - medium 1`] = `
       />
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
            Leading Articles 
         </Text>
@@ -2492,8 +2488,7 @@ exports[`76. daily universal register - wide 1`] = `
       }
     />
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Daily Universal Register
     </Text>
@@ -2709,8 +2704,7 @@ exports[`83. leaders slice - wide 1`] = `
       />
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
            Leading Articles 
         </Text>
@@ -3738,8 +3732,7 @@ exports[`113. daily universal register - huge 1`] = `
         }
       />
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Daily Universal Register
       </Text>
@@ -3969,8 +3962,7 @@ exports[`120. leaders slice - huge 1`] = `
         />
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
              Leading Articles 
           </Text>

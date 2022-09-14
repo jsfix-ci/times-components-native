@@ -6,10 +6,6 @@ import PropTypes from "prop-types";
 import Section from "./section";
 
 const SectionPage = (props) => {
-  React.useEffect(() => {
-    console.log("+++ props ", props.fontScale);
-  }, [props]);
-
   return (
     <Section
       {...props}

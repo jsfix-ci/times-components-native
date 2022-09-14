@@ -2,10 +2,19 @@ import React from "react";
 import { DeviceEventEmitter, NativeModules } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components-native/test-utils";
-import "./mocks";
 import Section from "../src/section";
 
 jest.mock("@times-components-native/section", () => "Section");
+NativeModules.SectionEvents.getSectionData = jest
+  .fn()
+  .mockReturnValue(Promise.resolve("{}"));
+NativeModules.ReactConfig = {
+  adNetworkId: "dummy-ad-network-id",
+  cookieEid: "dummy-cookie-eid",
+  deviceId: "dummy-device-id",
+  graphqlEndPont: "dummy-end-point",
+  operatingSystemVersion: "123",
+};
 
 export default () => {
   it("section data gets updated through the bridge on updateSectionData event", async () => {

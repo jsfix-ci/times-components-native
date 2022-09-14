@@ -15,6 +15,8 @@ jest.mock("@times-components-native/section", () => {
   );
 });
 
+NativeModules.SectionEvents.getOpenedPuzzleCount = jest.fn();
+
 export default () => {
   it("puzzle count uses initial prop and gets updated with the bridge", async () => {
     const {

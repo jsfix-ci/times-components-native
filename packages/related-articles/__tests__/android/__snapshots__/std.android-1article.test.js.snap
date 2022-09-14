@@ -6,8 +6,7 @@ exports[`1. a single related article 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Related articles
     </Text>
@@ -48,19 +47,16 @@ exports[`1. a single related article 1`] = `
                 <Text
                   accessibilityRole="header"
                   aria-level="3"
-                  maxFontSizeMultiplier={2}
-                  minimumFontScale={0.7}
+                  allowFontScaling={false}
                 >
                   Test Short Headline
                 </Text>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       
                       Summary 125
@@ -70,26 +66,22 @@ exports[`1. a single related article 1`] = `
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     March 13 2015, 6.54pm
                   </Text>
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       Camilla Long
                     </Text>
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       , Environment Editor
                     </Text>

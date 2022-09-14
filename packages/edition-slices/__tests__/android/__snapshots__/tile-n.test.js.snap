@@ -52,8 +52,7 @@ exports[`tile n huge 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -137,8 +136,7 @@ exports[`tile n medium 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -156,8 +154,7 @@ exports[`tile n medium 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#CCC",
@@ -240,8 +237,7 @@ exports[`tile n small 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -259,8 +255,7 @@ exports[`tile n small 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#696969",
@@ -342,8 +337,7 @@ exports[`tile n smallTablet 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -361,8 +355,7 @@ exports[`tile n smallTablet 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#CCC",
@@ -444,8 +437,7 @@ exports[`tile n wide 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -463,8 +455,7 @@ exports[`tile n wide 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#CCC",
@@ -547,8 +538,7 @@ exports[`tile n with default star 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -566,8 +556,7 @@ exports[`tile n with default star 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#696969",
@@ -650,8 +639,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="3"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#FFFFFF",
@@ -669,8 +657,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="4"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         style={
           Object {
             "color": "#696969",

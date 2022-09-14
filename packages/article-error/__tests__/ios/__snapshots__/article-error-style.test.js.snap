@@ -33,8 +33,7 @@ exports[`renders correctly with style 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "alignSelf": "center",
@@ -50,8 +49,7 @@ exports[`renders correctly with style 1`] = `
           Something's gone wrong
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -90,8 +88,7 @@ exports[`renders correctly with style 1`] = `
           }
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
             style={
               Object {
                 "color": "#FFFFFF",

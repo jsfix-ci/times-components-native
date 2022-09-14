@@ -11,8 +11,7 @@ exports[`1. daily universal register 1`] = `
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     Daily Universal Register
   </Text>
@@ -155,8 +154,7 @@ exports[`2. leaders 1`] = `
     />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
          Leading Articles 
       </Text>
@@ -194,8 +192,7 @@ exports[`2. leaders 2`] = `
     />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
          Leading Articles 
       </Text>
@@ -2864,8 +2861,7 @@ exports[`14. leaders 1`] = `
     />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
          Leading Articles 
       </Text>

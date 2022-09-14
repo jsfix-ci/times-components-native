@@ -4,8 +4,7 @@ exports[`1. article standfirst with content 1`] = `
 <Text
   accessibilityRole="header"
   aria-level="2"
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
 >
   This is a standfirst
 </Text>
@@ -82,14 +81,12 @@ exports[`6. article meta 1`] = `
   <View>
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Monday March 23 2015, 7.39pm
       </Text>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         , The Times
       </Text>

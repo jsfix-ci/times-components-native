@@ -26,8 +26,7 @@ exports[`tile ak huge 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -84,8 +83,7 @@ exports[`tile ak medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -142,8 +140,7 @@ exports[`tile ak smallTablet 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -200,8 +197,7 @@ exports[`tile ak wide 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -258,8 +254,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
     <Text
       accessibilityRole="header"
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",

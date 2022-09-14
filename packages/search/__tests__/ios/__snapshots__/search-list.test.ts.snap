@@ -4,13 +4,13 @@ exports[`Search Bar List FormattedDate should render correctly 1`] = `
 <View
   style={
     Object {
+      "alignItems": "flex-start",
       "flexDirection": "row",
     }
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -18,27 +18,40 @@ exports[`Search Bar List FormattedDate should render correctly 1`] = `
         "fontSize": 13,
         "lineHeight": 15,
         "marginVertical": 10,
+        "textAlign": "left",
       }
     }
-    testID="date-time"
   >
-    Tuesday September 08 2020, 12.01am BST
-  </Text>
-  <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 13,
-        "lineHeight": 15,
-        "marginVertical": 10,
+    <Text
+      allowFontScaling={false}
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginVertical": 10,
+        }
       }
-    }
-    testID="publication-name"
-  >
-    , The Times
+      testID="date-time"
+    >
+      Tuesday September 08 2020, 12.01am BST
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+          "marginVertical": 10,
+        }
+      }
+      testID="publication-name"
+    >
+      , The Times
+    </Text>
   </Text>
 </View>
 `;
@@ -52,8 +65,7 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -66,19 +78,15 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
     testID="author"
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#333333",
-            "flexDirection": "row",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 13,
-            "lineHeight": 15,
-          },
-          undefined,
-        ]
+        Object {
+          "color": "#333333",
+          "flexDirection": "row",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": 15,
+        }
       }
     >
       Bojan Pancevski, Brussels
@@ -89,12 +97,11 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
 
 exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
 <Text
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
+  style={Object {}}
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -103,8 +110,7 @@ exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
     }
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#000000",
@@ -115,8 +121,7 @@ exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
     </Text>
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",

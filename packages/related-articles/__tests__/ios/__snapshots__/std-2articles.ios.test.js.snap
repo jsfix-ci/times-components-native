@@ -5,9 +5,8 @@ exports[`1. two related articles 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
     >
       Related articles
     </Text>
@@ -47,20 +46,17 @@ exports[`1. two related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
-                  maxFontSizeMultiplier={2}
-                  minimumFontScale={0.7}
                 >
                   First Short Headline
                 </Text>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       
                       Summary 125
@@ -70,20 +66,21 @@ exports[`1. two related articles 1`] = `
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
-                    March 13 2015, 6.54pm
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      March 13 2015, 6.54pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       Camilla Long, Environment Editor
                     </Text>
@@ -129,20 +126,17 @@ exports[`1. two related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
-                  maxFontSizeMultiplier={2}
-                  minimumFontScale={0.7}
                 >
                   Second Short Headline
                 </Text>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       
                       Summary 125
@@ -152,20 +146,21 @@ exports[`1. two related articles 1`] = `
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
-                    January 17 2018, 12.00pm
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      January 17 2018, 12.00pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
                   <Text
-                    maxFontSizeMultiplier={2}
-                    minimumFontScale={0.7}
+                    allowFontScaling={false}
                   >
                     <Text
-                      maxFontSizeMultiplier={2}
-                      minimumFontScale={0.7}
+                      allowFontScaling={false}
                     >
                       Camilla Long, Environment Editor
                     </Text>

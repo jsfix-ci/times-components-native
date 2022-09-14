@@ -9,14 +9,12 @@ exports[`1. page error 1`] = `
       source="90626bc96bb7fbe8283024ef6a680492"
     />
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Something's gone wrong
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>

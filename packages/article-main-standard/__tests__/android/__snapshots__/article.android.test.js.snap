@@ -52,8 +52,7 @@ exports[`1. an article 1`] = `
         />
       </View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
@@ -61,8 +60,7 @@ exports[`1. an article 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Some Standfirst
       </Text>
@@ -113,14 +111,12 @@ exports[`1. an article 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             Friday March 13 2015, 6.54pm
           </Text>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             , The Times
           </Text>
@@ -141,8 +137,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
     <View />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Short Headline
@@ -164,14 +159,12 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             Friday March 13 2015, 6.54pm
           </Text>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             , The Times
           </Text>
@@ -188,8 +181,7 @@ exports[`5. an article with ads 1`] = `
     <View />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
@@ -211,14 +203,12 @@ exports[`5. an article with ads 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             Friday March 13 2015, 6.54pm
           </Text>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             , The Times
           </Text>
@@ -281,8 +271,7 @@ exports[`6. an article with no byline 1`] = `
         />
       </View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
@@ -290,8 +279,7 @@ exports[`6. an article with no byline 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Some Standfirst
       </Text>
@@ -321,14 +309,12 @@ exports[`6. an article with no byline 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             Friday March 13 2015, 6.54pm
           </Text>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             , The Times
           </Text>
@@ -384,8 +370,7 @@ exports[`7. an article with no label 1`] = `
     </View>
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
@@ -393,8 +378,7 @@ exports[`7. an article with no label 1`] = `
       <Text
         accessibilityRole="header"
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Some Standfirst
       </Text>
@@ -445,14 +429,12 @@ exports[`7. an article with no label 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             Friday March 13 2015, 6.54pm
           </Text>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             , The Times
           </Text>

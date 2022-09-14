@@ -39,23 +39,15 @@ exports[`NewsletterPuffButton renders the button with the text \`Saving...\` 1`]
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
-      Array [
-        Object {
-          "color": "#FFFFFF",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 16,
-          "lineHeight": 16,
-          "paddingTop": 5,
-        },
-        null,
-        null,
-        Object {
-          "color": "#1D1D1B",
-        },
-      ]
+      Object {
+        "color": "#1D1D1B",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 16,
+        "lineHeight": 16,
+        "paddingTop": 5,
+      }
     }
     title="Saving…"
   >
@@ -103,23 +95,15 @@ exports[`NewsletterPuffButton renders the button with the text \`Sign up to news
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
-      Array [
-        Object {
-          "color": "#FFFFFF",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 16,
-          "lineHeight": 16,
-          "paddingTop": 5,
-        },
-        null,
-        null,
-        Object {
-          "color": "#1D1D1B",
-        },
-      ]
+      Object {
+        "color": "#1D1D1B",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 16,
+        "lineHeight": 16,
+        "paddingTop": 5,
+      }
     }
     title="Sign up now"
   >

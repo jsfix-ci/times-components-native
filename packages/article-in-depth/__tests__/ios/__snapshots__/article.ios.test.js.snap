@@ -78,8 +78,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           Some Short Headline
         </Text>
@@ -157,16 +156,18 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <View>
           <View>
             <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
+              allowFontScaling={false}
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              , The Times
+              <Text
+                allowFontScaling={false}
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                allowFontScaling={false}
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>
@@ -202,8 +203,7 @@ exports[`4. an article with ads 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           Some Headline
         </Text>
@@ -281,16 +281,18 @@ exports[`4. an article with ads 1`] = `
         <View>
           <View>
             <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
+              allowFontScaling={false}
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              maxFontSizeMultiplier={2}
-              minimumFontScale={0.7}
-            >
-              , The Times
+              <Text
+                allowFontScaling={false}
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                allowFontScaling={false}
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>

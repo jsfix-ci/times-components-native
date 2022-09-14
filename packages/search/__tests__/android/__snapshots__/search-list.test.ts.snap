@@ -9,8 +9,7 @@ exports[`Search Bar List FormattedDate should render correctly 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -25,8 +24,7 @@ exports[`Search Bar List FormattedDate should render correctly 1`] = `
     Tuesday September 08 2020, 12.01am BST
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -52,8 +50,7 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -66,8 +63,7 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
     testID="author"
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Array [
           Object {
@@ -89,12 +85,10 @@ exports[`Search Bar List SearchListItemByLine should render correctly 1`] = `
 
 exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
 <Text
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -103,8 +97,7 @@ exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
     }
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
         Object {
           "color": "#000000",
@@ -115,8 +108,7 @@ exports[`Search Bar List SearchListItemSnippet should render correctly 1`] = `
     </Text>
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",

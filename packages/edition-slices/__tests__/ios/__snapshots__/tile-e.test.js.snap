@@ -36,9 +36,8 @@ exports[`tile e landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -116,9 +115,8 @@ exports[`tile e landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -202,9 +200,8 @@ exports[`tile e landscape small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -230,8 +227,7 @@ exports[`tile e landscape small 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -246,8 +242,7 @@ exports[`tile e landscape small 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -305,9 +300,8 @@ exports[`tile e landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -385,9 +379,8 @@ exports[`tile e portrait huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -465,9 +458,8 @@ exports[`tile e portrait medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -551,9 +543,8 @@ exports[`tile e portrait small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -579,8 +570,7 @@ exports[`tile e portrait small 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -595,8 +585,7 @@ exports[`tile e portrait small 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -654,9 +643,8 @@ exports[`tile e portrait smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -734,9 +722,8 @@ exports[`tile e portrait wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",

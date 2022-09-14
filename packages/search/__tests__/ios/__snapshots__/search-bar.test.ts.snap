@@ -10,8 +10,7 @@ exports[`EmptySearchMessage 1`] = `
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -23,8 +22,7 @@ exports[`EmptySearchMessage 1`] = `
     Popular thing to search for:
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -35,8 +33,7 @@ exports[`EmptySearchMessage 1`] = `
     Articles
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -47,8 +44,7 @@ exports[`EmptySearchMessage 1`] = `
     Topics
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -95,20 +91,15 @@ exports[`Search Bar CancelButton 1`] = `
     testID="search-cancel"
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 18,
-            "lineHeight": undefined,
-            "marginTop": 5,
-          },
-          Object {
-            "color": "#000000",
-          },
-        ]
+        Object {
+          "color": "#000000",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 18,
+          "lineHeight": undefined,
+          "marginTop": 5,
+        }
       }
     >
       Cancel
@@ -274,11 +265,11 @@ exports[`Search Bar should render correctly 1`] = `
           </RNSVGSvgView>
         </View>
         <TextInput
+          allowFontScaling={false}
           autoFocus={false}
           defaultValue="test"
           editable={true}
           keyboardType="web-search"
-          maxFontSizeMultiplier={2}
           onBlur={[Function]}
           onChangeText={[Function]}
           onFocus={[Function]}

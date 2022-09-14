@@ -5,20 +5,19 @@ exports[`1. date and times publication 1`] = `
   style={
     Object {
       "flexDirection": "row",
+      "alignItems": "flex-start",
     }
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="date-time"
   >
     Saturday July 01 2017, 3.32pm
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="publication-name"
   >
@@ -32,20 +31,19 @@ exports[`2. date and sundaytimes publication 1`] = `
   style={
     Object {
       "flexDirection": "row",
+      "alignItems": "flex-start",
     }
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="date-time"
   >
     Saturday July 01 2017, 3.32pm
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="publication-name"
   >
@@ -59,12 +57,12 @@ exports[`3. date and no given publication 1`] = `
   style={
     Object {
       "flexDirection": "row",
+      "alignItems": "flex-start",
     }
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="date-time"
   >
@@ -78,12 +76,12 @@ exports[`4. date and no day 1`] = `
   style={
     Object {
       "flexDirection": "row",
+      "alignItems": "flex-start",
     }
   }
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
     style={Object {}}
     testID="date-time"
   >

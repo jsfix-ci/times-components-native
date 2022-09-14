@@ -4,7 +4,12 @@ import {
   addDimensionsListener,
   removeDimensionsListener,
 } from "@times-components-native/utils";
-import { AppState, ScaledSize } from "react-native";
+import {
+  AppState,
+  NativeEventEmitter,
+  NativeModules,
+  ScaledSize,
+} from "react-native";
 import ResponsiveContext from "./context";
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 
@@ -15,6 +20,9 @@ interface DimensionChangeEvent {
 interface ResponsiveProviderProps {
   fontScale: number;
 }
+
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
   children,
@@ -38,7 +46,7 @@ const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
   }: DimensionChangeEvent) => {
     // Prevents issue with odd orientation switch when app put in background
     if (/inactive|background/.test(appState.current)) return;
-    setState(calculateResponsiveContext(width, height, fontScale));
+    setState(calculateResponsiveContext(width, height, state.fontScale));
   };
 
   useEffect(() => {

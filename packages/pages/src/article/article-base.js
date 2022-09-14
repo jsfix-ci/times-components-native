@@ -1,5 +1,5 @@
-import React from "react";
-import { NativeModules, Platform } from "react-native";
+import React, { useEffect } from "react";
+import { NativeEventEmitter, NativeModules, Platform } from "react-native";
 import Article from "@times-components-native/article";
 import {
   ContextProviderWithDefaults,
@@ -10,10 +10,11 @@ import adTargetConfig from "./ad-targeting-config";
 import { defaultProps, propTypes } from "./article-prop-types";
 import trackArticle from "./track-article";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
+import Responsive from "@times-components-native/responsive";
 
 const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
-const { fontScale: fontScaleBridge } = NativeModules;
-const { getFontScale } = NativeModules.ReactConfig;
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const {
   onArticlePress,
@@ -53,11 +54,19 @@ const ArticleBase = ({
           article,
           sectionName: section,
         });
-  const theme = {
-    ...themeFactory(section, template),
-    scale: scale || defaults.theme.scale,
-    fontScale: fontScale ? fontScale / 100 : undefined,
-  };
+
+  const [fontScaleToUse, setFontScaleToUse] = React.useState(
+    fontScale ? fontScale / 100 : 1,
+  );
+
+  const theme = React.useMemo(
+    () => ({
+      ...themeFactory(section, template),
+      scale: scale || defaults.theme.scale,
+      fontScale: fontScaleToUse,
+    }),
+    [fontScaleToUse],
+  );
 
   const interactiveConfig = {
     dev: devInteractives,
@@ -66,49 +75,62 @@ const ArticleBase = ({
     version: appVersion,
   };
 
-  // getFontScale().then((res) => {
-  //   console.log("test +++", res);
-  // });
+  const onFontScaleChange = (newVal) => {
+    if (newVal) {
+      setFontScaleToUse(newVal / 100);
+    }
+  };
 
-  // console.log("+++fontScaleBridge+++", fontScaleBridge, getFontScale());
+  useEffect(() => {
+    articleEventEmitter.addListener("onFontScaleChanged", onFontScaleChange);
+
+    return () => {
+      articleEventEmitter.removeListener(
+        "onFontScaleChanged",
+        onFontScaleChange,
+      );
+    };
+  }, []);
 
   return (
     <ContextProviderWithDefaults value={{ theme }}>
-      <RemoteConfigProvider config={remoteConfig}>
-        <Article
-          adConfig={adConfig}
-          analyticsStream={trackArticle}
-          article={article}
-          error={omitErrors ? null : error}
-          interactiveConfig={interactiveConfig}
-          isLoading={isLoading || (omitErrors && error)}
-          onArticleRead={onArticleRead}
-          onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
-          onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
-          onCommentsPress={(event, { articleId: id, url }) =>
-            onCommentsPress(id, url)
-          }
-          onImagePress={onImagePress}
-          onLinkPress={(event, { type, url }) => {
-            if (type === "article") {
-              onArticlePress(url);
-            } else if (type === "topic") {
-              onTopicPress(url);
-            } else {
-              onLinkPress(url);
+      <Responsive fontScale={fontScaleToUse}>
+        <RemoteConfigProvider config={remoteConfig}>
+          <Article
+            adConfig={adConfig}
+            analyticsStream={trackArticle}
+            article={article}
+            error={omitErrors ? null : error}
+            interactiveConfig={interactiveConfig}
+            isLoading={isLoading || (omitErrors && error)}
+            onArticleRead={onArticleRead}
+            onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
+            onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
+            onCommentsPress={(event, { articleId: id, url }) =>
+              onCommentsPress(id, url)
             }
-          }}
-          onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
-          onTopicPress={(event, { slug }) => onTopicPress(slug)}
-          onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
-          onTooltipPresented={onTooltipPresented}
-          onVideoPress={(event, info) => onVideoPress(info)}
-          pageSection={pageSection}
-          referralUrl={referralUrl}
-          refetch={refetch}
-          tooltips={tooltips}
-        />
-      </RemoteConfigProvider>
+            onImagePress={onImagePress}
+            onLinkPress={(event, { type, url }) => {
+              if (type === "article") {
+                onArticlePress(url);
+              } else if (type === "topic") {
+                onTopicPress(url);
+              } else {
+                onLinkPress(url);
+              }
+            }}
+            onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
+            onTopicPress={(event, { slug }) => onTopicPress(slug)}
+            onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
+            onTooltipPresented={onTooltipPresented}
+            onVideoPress={(event, info) => onVideoPress(info)}
+            pageSection={pageSection}
+            referralUrl={referralUrl}
+            refetch={refetch}
+            tooltips={tooltips}
+          />
+        </RemoteConfigProvider>
+      </Responsive>
     </ContextProviderWithDefaults>
   );
 };

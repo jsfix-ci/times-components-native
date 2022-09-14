@@ -62,6 +62,7 @@ export default () => {
     isArticleTablet: true,
     narrowContent: false,
     scale: 1,
+    fontScale: 1,
   };
 
   jest.mock("react-native/Libraries/Utilities/Dimensions", () => ({
@@ -271,6 +272,7 @@ export default () => {
           isArticleTablet: true,
           narrowContent: false,
           scale: 1,
+          fontScale: 1,
         },
         content,
       );

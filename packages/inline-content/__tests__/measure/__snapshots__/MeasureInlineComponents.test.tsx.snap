@@ -29,8 +29,7 @@ exports[`MeasureContent renders the content 1`] = `
   >
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         onTextLayout={[Function]}
         selectable={true}
         style={
@@ -44,8 +43,7 @@ exports[`MeasureContent renders the content 1`] = `
         testID="paragraph"
       >
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
         >
           abc
         </Text>

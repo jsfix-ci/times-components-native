@@ -9,8 +9,7 @@ exports[`1. video label with a title 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+     allowFontScaling={false}
   >
     SWIMMING
   </Text>
@@ -26,8 +25,7 @@ exports[`2. video label without a title shows video 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     VIDEO
   </Text>
@@ -43,8 +41,7 @@ exports[`3. video label with null title shows video 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     VIDEO
   </Text>
@@ -60,8 +57,7 @@ exports[`4. video label with the black default colour 1`] = `
     />
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     VIDEO
   </Text>

@@ -36,9 +36,8 @@ exports[`tile ad huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -64,8 +63,7 @@ exports[`tile ad huge 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -80,8 +78,7 @@ exports[`tile ad huge 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -130,9 +127,8 @@ exports[`tile ad medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -199,9 +195,8 @@ exports[`tile ad smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -268,9 +263,8 @@ exports[`tile ad wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -296,8 +290,7 @@ exports[`tile ad wide 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -312,8 +305,7 @@ exports[`tile ad wide 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -362,9 +354,8 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",

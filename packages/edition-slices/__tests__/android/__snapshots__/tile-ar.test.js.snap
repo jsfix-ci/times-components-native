@@ -50,8 +50,7 @@ exports[`tile ar huge 1`] = `
         <Text
           accessibilityRole="header"
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -77,8 +76,7 @@ exports[`tile ar huge 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -93,8 +91,7 @@ exports[`tile ar huge 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -157,8 +154,7 @@ exports[`tile ar medium 1`] = `
         <Text
           accessibilityRole="header"
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -184,8 +180,7 @@ exports[`tile ar medium 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -200,8 +195,7 @@ exports[`tile ar medium 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -264,8 +258,7 @@ exports[`tile ar smallTablet 1`] = `
         <Text
           accessibilityRole="header"
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -291,8 +284,7 @@ exports[`tile ar smallTablet 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -307,8 +299,7 @@ exports[`tile ar smallTablet 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -371,8 +362,7 @@ exports[`tile ar wide 1`] = `
         <Text
           accessibilityRole="header"
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -398,8 +388,7 @@ exports[`tile ar wide 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -414,8 +403,7 @@ exports[`tile ar wide 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -478,8 +466,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
         <Text
           accessibilityRole="header"
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -505,8 +492,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           }
         />
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -521,8 +507,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           testID="article-summary-content"
         >
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.

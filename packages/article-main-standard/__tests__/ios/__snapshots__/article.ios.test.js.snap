@@ -52,17 +52,15 @@ exports[`1. an article 1`] = `
         />
       </View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
       </Text>
       <Text
         accessibilityRole="header"
+        allowFontScaling={false}
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         Some Standfirst
       </Text>
@@ -113,16 +111,18 @@ exports[`1. an article 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
-            Friday March 13 2015, 6.54pm
-          </Text>
-          <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            , The Times
+            <Text
+              allowFontScaling={false}
+            >
+              Friday March 13 2015, 6.54pm GMT
+            </Text>
+            <Text
+              allowFontScaling={false}
+            >
+              , The Times
+            </Text>
           </Text>
         </View>
       </View>
@@ -141,8 +141,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
     <View />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Short Headline
@@ -164,16 +163,18 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
-            Friday March 13 2015, 6.54pm
-          </Text>
-          <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            , The Times
+            <Text
+              allowFontScaling={false}
+            >
+              Friday March 13 2015, 6.54pm GMT
+            </Text>
+            <Text
+              allowFontScaling={false}
+            >
+              , The Times
+            </Text>
           </Text>
         </View>
       </View>
@@ -188,8 +189,7 @@ exports[`5. an article with ads 1`] = `
     <View />
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
@@ -211,16 +211,18 @@ exports[`5. an article with ads 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
-            Friday March 13 2015, 6.54pm
-          </Text>
-          <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            , The Times
+            <Text
+              allowFontScaling={false}
+            >
+              Friday March 13 2015, 6.54pm GMT
+            </Text>
+            <Text
+              allowFontScaling={false}
+            >
+              , The Times
+            </Text>
           </Text>
         </View>
       </View>
@@ -281,17 +283,15 @@ exports[`6. an article with no byline 1`] = `
         />
       </View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
       </Text>
       <Text
         accessibilityRole="header"
+        allowFontScaling={false}
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         Some Standfirst
       </Text>
@@ -321,16 +321,18 @@ exports[`6. an article with no byline 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
-            Friday March 13 2015, 6.54pm
-          </Text>
-          <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            , The Times
+            <Text
+              allowFontScaling={false}
+            >
+              Friday March 13 2015, 6.54pm GMT
+            </Text>
+            <Text
+              allowFontScaling={false}
+            >
+              , The Times
+            </Text>
           </Text>
         </View>
       </View>
@@ -384,17 +386,15 @@ exports[`7. an article with no label 1`] = `
     </View>
     <View>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
         selectable={true}
       >
         Some Headline
       </Text>
       <Text
         accessibilityRole="header"
+        allowFontScaling={false}
         aria-level="2"
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
       >
         Some Standfirst
       </Text>
@@ -445,16 +445,18 @@ exports[`7. an article with no label 1`] = `
       <View>
         <View>
           <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
+            allowFontScaling={false}
           >
-            Friday March 13 2015, 6.54pm
-          </Text>
-          <Text
-            maxFontSizeMultiplier={2}
-            minimumFontScale={0.7}
-          >
-            , The Times
+            <Text
+              allowFontScaling={false}
+            >
+              Friday March 13 2015, 6.54pm GMT
+            </Text>
+            <Text
+              allowFontScaling={false}
+            >
+              , The Times
+            </Text>
           </Text>
         </View>
       </View>

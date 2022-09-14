@@ -33,6 +33,9 @@ const {
   onPuzzlePress: () => null,
 };
 
+const { ArticleEvents } = NativeModules;
+const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
 const onArticlePress = ({ id, isPuff = false }) =>
   onArticlePressBridge(id, isPuff);
 const onLinkPress = ({ url, isExternal = true }) =>
@@ -41,12 +44,21 @@ const onLinkPress = ({ url, isExternal = true }) =>
 const onPuzzlePress = ({ id, title, url }) =>
   onPuzzlePressBridge(url, title, id);
 
-const { ArticleEvents } = NativeModules;
-const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
-
 class SectionPage extends Component {
   constructor(props) {
     super(props);
+
+    console.log("********");
+    console.log("********");
+    console.log("********");
+    console.log("********");
+    console.log("********");
+    console.log("********", props.fontScale);
+    console.log("********");
+    console.log("********");
+    console.log("********");
+    console.log("********");
+    console.log("********");
 
     const existingReadArticles =
       props &&
@@ -57,7 +69,7 @@ class SectionPage extends Component {
 
     const { section } = this.props;
     this.state = {
-      fontScale: props ? props.fontScale : 1,
+      fontScaleToUse: props?.fontScale ? props.fontScale / 100 : 1,
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
       readArticles: existingReadArticles || [],
       savedArticles: null,
@@ -76,9 +88,10 @@ class SectionPage extends Component {
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
 
-    // articleEventEmitter.addListener("onFontScaleChanged", (test) => {
-    //   console.log("+++ arguments", test);
-    // });
+    articleEventEmitter.addListener(
+      "onFontScaleChanged",
+      this.onFontScaleChange,
+    );
 
     this.updateSASubscription = DeviceEventEmitter.addListener(
       "updateSavedArticles",
@@ -100,6 +113,10 @@ class SectionPage extends Component {
     this.updateSASubscription.remove();
     this.updateSDSubscription.remove();
     this.updateRASubscription.remove();
+    articleEventEmitter.removeListener(
+      "onFontScaleChanged",
+      this.onFontScaleChange,
+    );
   }
 
   onAppStateChange(nextAppState) {
@@ -107,6 +124,12 @@ class SectionPage extends Component {
       this.syncAppData();
     }
   }
+
+  onFontScaleChange = (newVal) => {
+    if (newVal) {
+      this.setState({ fontScaleToUse: newVal / 100 });
+    }
+  };
 
   onArticleSavePress(save, articleId) {
     this.toggleArticleSaveStatus(save, articleId);
@@ -165,10 +188,6 @@ class SectionPage extends Component {
     }
   }
 
-  updateFontScale(fontScale) {
-    console.log("+++ UPDATE", fontScale);
-  }
-
   toggleArticleSaveStatus(save, articleId) {
     const { savedArticles } = this.state;
     savedArticles[articleId] = save || undefined;
@@ -187,7 +206,7 @@ class SectionPage extends Component {
       recentlyOpenedPuzzleCount,
       savedArticles,
       section,
-      fontScale,
+      fontScaleToUse,
     } = this.state;
 
     const adConfig = adTargetConfig({
@@ -205,17 +224,15 @@ class SectionPage extends Component {
           recentlyOpenedPuzzleCount,
           savedArticles,
           hasDynamicBullets,
-          fontScale,
+          fontScale: fontScaleToUse,
         }}
       >
         <ContextProviderWithDefaults
           value={{
-            theme: { fontScale: fontScale ? fontScale / 100 : undefined },
+            theme: { fontScale: fontScaleToUse },
           }}
         >
-          <Responsive
-            fontScaleOverride={fontScale ? fontScale / 100 : undefined}
-          >
+          <Responsive fontScale={fontScaleToUse}>
             <RemoteConfigProvider config={remoteConfig}>
               <Section
                 adConfig={adConfig}

@@ -13,9 +13,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -34,12 +33,10 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -99,26 +96,22 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
 <View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph 1.
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
        
       Test paragraph 2
@@ -166,31 +159,26 @@ exports[`2. article summary component with multiple paragraphs 1`] = `
 exports[`3. article summary component with content including line breaks 1`] = `
 <View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Review 1
       </Text>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         
 
       </Text>
        ITV
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         
 
@@ -198,27 +186,23 @@ exports[`3. article summary component with content including line breaks 1`] = `
       ★★★★☆
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
        
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Review 2
       </Text>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         
 
       </Text>
        BBC Two
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         
 
@@ -226,8 +210,7 @@ exports[`3. article summary component with content including line breaks 1`] = `
       ★★★☆☆
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
        
       Test paragraph
@@ -250,31 +233,26 @@ exports[`4. article summary component containing links 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Sajid Javid
       </Text>
        has warned the Home Office to expect an overhaul after the 
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         Windrush scandal
       </Text>
@@ -302,9 +280,8 @@ exports[`5. article summary component with headline and no content 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -328,33 +305,28 @@ exports[`6. article summary component with empty content at the end trimmed 1`] 
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph 1.
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
        
       Test paragraph 2
     </Text>
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
        
       ...
@@ -402,19 +374,16 @@ exports[`7. article summary component with no byline 1`] = `
 <View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -432,19 +401,16 @@ exports[`8. article summary component with no label 1`] = `
 <View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -501,12 +467,10 @@ exports[`9. article summary component with no headline 1`] = `
     </View>
   </View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -533,19 +497,16 @@ exports[`10. article summary component with no date publication 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -599,19 +560,16 @@ exports[`11. article summary component with a video label 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -669,17 +627,15 @@ exports[`12. article summary component with a strapline 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="4"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Strapline
   </Text>
@@ -698,12 +654,10 @@ exports[`12. article summary component with a strapline 1`] = `
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -772,12 +726,10 @@ exports[`13. article summary content component without an ast to render null 1`]
 exports[`15. article summary component with no headline and no label title 1`] = `
 <View>
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -793,13 +745,11 @@ exports[`15. article summary component with no headline and no label title 1`] =
 
 exports[`16. article summary content component with white space height 1`] = `
 <Text
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   numberOfLines={5}
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     
     Test paragraph
@@ -810,13 +760,11 @@ exports[`16. article summary content component with white space height 1`] = `
 
 exports[`17. article summary content component without white space height 1`] = `
 <Text
-  maxFontSizeMultiplier={2}
-  minimumFontScale={0.7}
+  allowFontScaling={false}
   numberOfLines={2}
 >
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     
     Test paragraph
@@ -838,9 +786,8 @@ exports[`18. article summary component with a single paragraph and flag on table
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -859,12 +806,10 @@ exports[`18. article summary component with a single paragraph and flag on table
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -933,17 +878,15 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="4"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Strapline
   </Text>
@@ -962,12 +905,10 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -1035,9 +976,8 @@ exports[`20. article summary component with hidden label 1`] = `
 <View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Test Headline
   </Text>
@@ -1056,12 +996,10 @@ exports[`20. article summary component with hidden label 1`] = `
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       Test paragraph
@@ -1130,9 +1068,8 @@ exports[`21. article summary component with byline on top 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
   >
     Top medal for forces dog who took a bite out of the Taliban
   </Text>
@@ -1151,12 +1088,10 @@ exports[`21. article summary component with byline on top 1`] = `
     }
   />
   <Text
-    maxFontSizeMultiplier={2}
-    minimumFontScale={0.7}
+    allowFontScaling={false}
   >
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       
       The special forces dog fought on under fire, even after shrapnel from Taliban grenades tore into his belly and legs, blew out a front tooth and damaged his right ear.

@@ -49,9 +49,8 @@ exports[`tile aw landscape huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -131,9 +130,8 @@ exports[`tile aw landscape medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -213,9 +211,8 @@ exports[`tile aw landscape smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",
@@ -295,9 +292,8 @@ exports[`tile aw landscape wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
       style={
         Object {
           "color": "#1D1D1B",

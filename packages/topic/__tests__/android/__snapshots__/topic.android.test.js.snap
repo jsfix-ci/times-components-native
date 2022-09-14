@@ -256,26 +256,22 @@ exports[`6. an article list header 1`] = `
   <View>
     <Text
       accessibilityRole="header"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Test Name
     </Text>
     <View />
     <Text
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       Test 
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         italic 
       </Text>
       <Text
-        maxFontSizeMultiplier={2}
-        minimumFontScale={0.7}
+        allowFontScaling={false}
       >
         bold
       </Text>
@@ -290,8 +286,7 @@ exports[`7. a topic header with no description 1`] = `
   <View>
     <Text
       accessibilityRole="header"
-      maxFontSizeMultiplier={2}
-      minimumFontScale={0.7}
+      allowFontScaling={false}
     >
       No Desc
     </Text>

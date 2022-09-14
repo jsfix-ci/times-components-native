@@ -12,15 +12,13 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           Some caption
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           SOME CREDIT
@@ -57,8 +55,7 @@ exports[`6. image with no display only shows given caption 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           Some caption
@@ -75,8 +72,7 @@ exports[`7. image with no display only shows given credits 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           SOME CREDIT
@@ -108,15 +104,13 @@ exports[`8. primary image renders with caption and credits 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           Some caption
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           SOME CREDIT
@@ -150,15 +144,13 @@ exports[`9. primary image with given resolutions 1`] = `
     <View>
       <View>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           Some caption
         </Text>
         <Text
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
+          allowFontScaling={false}
           testID={null}
         >
           SOME CREDIT

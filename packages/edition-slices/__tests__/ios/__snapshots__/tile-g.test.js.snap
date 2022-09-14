@@ -67,9 +67,8 @@ exports[`tile g huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -167,9 +166,8 @@ exports[`tile g medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -265,9 +263,8 @@ exports[`tile g small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -365,9 +362,8 @@ exports[`tile g smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -465,9 +461,8 @@ exports[`tile g wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
@@ -565,9 +560,8 @@ exports[`tile g without breakpoint should be like small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
-          maxFontSizeMultiplier={2}
-          minimumFontScale={0.7}
           style={
             Object {
               "color": "#333333",
