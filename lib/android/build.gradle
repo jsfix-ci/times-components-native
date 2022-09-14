@@ -112,8 +112,8 @@ task generateReactArchives {
           }
         }
         hermesCopy.dependsOn(hermesCopyArchive)
-        hermesCopy.dependsOn(generateHermesArchive)
         hermesCopy.dependsOn(generatePomFileForHermesPublication)
+        hermesCopy.dependsOn(generateHermesArchive)
     }
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
     task graphQlCopy(type: Copy) {
