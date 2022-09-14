@@ -31,7 +31,7 @@ publishTar () {
 }
 
 publish () {
-  echo "🚀 Publishing $PACKAGE_PATH to the JFrog: ${ARTIFACTORY_URL}"
+  echo "🚀 Publishing $LIB_DIR/repo to the JFrog: ${ARTIFACTORY_URL}"
   LIB_DIR="./lib/android"
 
   # Upload contents of repo folder
@@ -43,5 +43,5 @@ publish () {
 }
 
 setupEnv
-checkIfVersionExists
+# checkIfVersionExists
 publish
