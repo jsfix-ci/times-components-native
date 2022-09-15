@@ -49,6 +49,7 @@ const DOMContext = (props: DomContextType) => {
     isInline = true,
     width = screenWidth,
   } = props;
+
   const webViewRef = React.useRef<WebView>(null);
 
   const adHeight = heightProp
@@ -200,13 +201,11 @@ const DOMContext = (props: DomContextType) => {
       window.nuk = {
         "ads": {
           "blocked": false,
-          "commercialSection": "comment",
+          "commercialSection": "${data.pageTargeting.section}",
           "pageTitle": "",
-          "editionDate": "2022-07-12",
-          "editionId": "2ac1b6ed-c6b3-470a-a71c-5ffe911302fb",
           "tuples": {
-            "cont": "art",
-            "path": "article/the-tory-right-favours-betrayal-over-reality-btfwrhhh6",
+            "cont": "",
+            "path": "",
             "cpn": "${String(authId)}"
           },
           "user": {
@@ -255,6 +254,9 @@ const DOMContext = (props: DomContextType) => {
     <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
       {(Platform.OS === "ios" || loaded) && (
         <WebView
+          cacheEnabled={false}
+          cacheMode={"LOAD_NO_CACHE"}
+          incognito={true}
           ref={webViewRef}
           onMessage={handleMessageEvent}
           onNavigationStateChange={handleNavigationStateChange}
