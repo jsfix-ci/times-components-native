@@ -3,27 +3,17 @@ set -e
 
 PACKAGE_PATH="uk/co/thetimes/times-xnative"
 PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
 
 setupEnv () {
   if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
     then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH" 
     exit 0
   fi
-  
-  if [[ $PACKAGE_VERSION == *"beta"* ]]
-    then
-    echo "👉 Setting up enviroment for a beta release."
-    ARTIFACTORY_URL="$ARTIFACTORY_URL_BETA"
-    RELEASE_DEST="beta"
-  else 
-    echo "👉 Setting up enviroment for a production release."
-    ARTIFACTORY_URL="$ARTIFACTORY_URL_PROD"
-    RELEASE_DEST="production"
-  fi
 }
 
 checkIfVersionExists () {
-  echo "👀 Checking if the current version($PACKAGE_VERSION) exists in $RELEASE_DEST."
+  echo "👀 Checking if the current version($PACKAGE_VERSION) exists "
 
   STATUS=$(curl -s -o /dev/null -w '%{http_code}' -u${ARTIFACTORY_USER}:${ARTIFACTORY_API_KEY} "$ARTIFACTORY_URL/$PACKAGE_PATH/$PACKAGE_VERSION/")
 
@@ -41,7 +31,7 @@ publishTar () {
 }
 
 publish () {
-  echo "🚀 Publishing $PACKAGE_PATH to the JFrog(${RELEASE_DEST}): ${ARTIFACTORY_URL}"
+  echo "🚀 Publishing $PACKAGE_PATH to the JFrog: ${ARTIFACTORY_URL}"
   LIB_DIR="./lib/android"
 
   # Upload contents of repo folder
@@ -49,7 +39,7 @@ publish () {
   ls -d */ | cut -f1 -d'/' | while read line ; do publishTar $line ; done
   cd -
 
-  echo "👻 Success! Release ${PACKAGE_VERSION} published to JFrog($RELEASE_DEST)"
+  echo "👻 Success! Release ${PACKAGE_VERSION} published to JFrog"
 }
 
 setupEnv
