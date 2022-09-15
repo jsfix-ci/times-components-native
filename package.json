@@ -1,7 +1,7 @@
 {
   "name": "times-components-native",
   "private": true,
-  "version": "10.0.6",
+  "version": "10.0.7",
   "description": "A collection of react-native components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
@@ -14,7 +14,7 @@
     "lint": "eslint",
     "ios:native": "react-native start --config ./lib/ios/metro.config.js",
     "ios:build-lib": "yarn ios:build-lib:js && yarn ios:build-lib:update-version",
-    "ios:build-lib:js": "mkdir -p lib/ios/assets/js && mkdir -p lib/ios/assets/res/graphql && cp ./packages/provider-queries/src/*.graphql ./lib/ios/assets/res/graphql",
+    "ios:build-lib:js": "mkdir -p lib/ios/assets/js && mkdir -p lib/ios/assets/res/graphql && cp ./packages/provider-queries/src/*.graphql ./lib/ios/assets/res/graphql && react-native bundle --platform ios --dev false --entry-file lib/ios/index.ios.js --bundle-output lib/ios/assets/js/index.ios.bundle --assets-dest lib/ios/assets/res/",
     "ios:build-lib:update-version": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > lib/ios/assets/js/version.meta",
     "android:native": "react-native start --config ./lib/android/metro.config.js",
     "android:build-lib": "yarn android:build-lib:js && yarn android:build-lib:aar",
