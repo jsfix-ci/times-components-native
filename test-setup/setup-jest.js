@@ -36,6 +36,18 @@ jest.mock("react-native", () => {
     getSectionData: jest.fn().mockReturnValue(Promise.resolve("{}")),
   };
   rn.NativeModules.ReactAnalytics = { track: jest.fn() };
+
+  rn.NativeModules.ReactConfig = {
+    ...rn.NativeModules.ReactConfig,
+    adNetworkId: "dummy-ad-network-id",
+    cookieEid: "dummy-cookie-eid",
+    deviceId: "dummy-device-id",
+    graphqlEndPont: "dummy-end-point",
+    operatingSystemVersion: "123",
+  };
+
+  rn.AppState.removeEventListener = jest.fn();
+
   return rn;
 });
 

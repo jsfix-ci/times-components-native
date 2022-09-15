@@ -20,13 +20,6 @@ jest.mock("@times-components-native/section", () => {
   );
 });
 
-NativeModules.SectionEvents.getSavedArticles = jest
-  .fn()
-  .mockReturnValue(Promise.resolve([]));
-NativeModules.SectionEvents.onArticleSavePress = jest
-  .fn()
-  .mockReturnValue(Promise.resolve(true));
-
 function deferred() {
   let resolve;
   let reject;
@@ -39,6 +32,13 @@ function deferred() {
 
 export default () => {
   beforeEach(() => {
+    NativeModules.SectionEvents.getSavedArticles = jest
+      .fn()
+      .mockReturnValue(Promise.resolve([]));
+    NativeModules.SectionEvents.onArticleSavePress = jest
+      .fn()
+      .mockReturnValue(Promise.resolve(true));
+
     const {
       SectionEvents: { getSavedArticles, onArticleSavePress },
     } = NativeModules;

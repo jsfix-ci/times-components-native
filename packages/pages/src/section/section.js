@@ -47,19 +47,6 @@ const onPuzzlePress = ({ id, title, url }) =>
 class SectionPage extends Component {
   constructor(props) {
     super(props);
-
-    console.log("********");
-    console.log("********");
-    console.log("********");
-    console.log("********");
-    console.log("********");
-    console.log("********", props.fontScale);
-    console.log("********");
-    console.log("********");
-    console.log("********");
-    console.log("********");
-    console.log("********");
-
     const existingReadArticles =
       props &&
       props.readArticles.map((articleId) => ({
