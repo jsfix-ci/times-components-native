@@ -96,9 +96,6 @@ task generateReactArchives {
           apply plugin: 'maven-publish'
           description "Generates pom file for Hermes Engine"
           publishing {
-            repositories.maven {
-              url = reactRepositoryPath
-            }
             publications {
               Hermes(MavenPublication) {
                 pom {
