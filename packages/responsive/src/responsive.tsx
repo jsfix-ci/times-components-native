@@ -4,12 +4,7 @@ import {
   addDimensionsListener,
   removeDimensionsListener,
 } from "@times-components-native/utils";
-import {
-  AppState,
-  NativeEventEmitter,
-  NativeModules,
-  ScaledSize,
-} from "react-native";
+import { AppState, ScaledSize } from "react-native";
 import ResponsiveContext from "./context";
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 
@@ -20,9 +15,6 @@ interface DimensionChangeEvent {
 interface ResponsiveProviderProps {
   fontScale: number;
 }
-
-const { ArticleEvents } = NativeModules;
-const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
   children,
@@ -58,6 +50,10 @@ const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
       removeDimensionsListener("change", listener);
     };
   }, []);
+
+  useEffect(() => {
+    setState(calculateResponsiveContext(width, height, fontScale));
+  }, [fontScale]);
 
   return (
     <ResponsiveContext.Provider value={state}>
