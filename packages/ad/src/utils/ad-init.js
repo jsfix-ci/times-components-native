@@ -143,7 +143,7 @@ function AdInit({ el, data, platform, eventCallback, window }) {
             decorator: "json",
             filter: "default",
             type: "URL",
-            body: location.href,
+            body: location?.href || '',
           }),
         );
 
