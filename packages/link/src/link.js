@@ -1,6 +1,6 @@
 import React from "react";
 import { TouchableOpacity, ViewPropTypes } from "react-native";
-import PropTypes from "prop-types";
+import PropTypes, { string } from "prop-types";
 
 const Link = ({
   children,
@@ -27,7 +27,8 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 Link.propTypes = {
   disabled: PropTypes.bool,
   linkStyle: ViewPropTypesStyle,
-  onPress: PropTypes.func.isRequired,
+  onPress: PropTypes.func.isRequired, testIDProp,
+  testIDProp: string
 };
 
 Link.defaultProps = {
