@@ -33,8 +33,8 @@ declare module "@times-components-native/styleguide" {
 declare module "@times-components-native/utils" {
   import { Crop } from "@times-components-native/fixture-generator/src/types";
   import { TimesImage } from "@times-components-native/types";
+  //  eslint-disable-next-line
   import { string } from "prop-types";
-
   type appendToImageURL = (
     url: string,
     key: string,

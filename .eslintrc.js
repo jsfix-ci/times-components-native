@@ -46,59 +46,69 @@ module.exports = {
           "**/scripts/**",
           "**/storybook/**",
         ],
-        "optionalDependencies": false
       }
     ],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "specialLink": ["url"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
-      }
-    ],
-    "no-restricted-properties": [
-      2,
-      {
-        "object": "React",
-        "property": "Component",
-        "message": "Please destruct Component from React."
-      },
-      {
-        "object": "React",
-        "property": "PureComponent",
-        "message": "Please destruct PureComponent from React."
-      }
-    ],
-    "graphql/template-strings": [
-      "error",
-      {
-        "env": "apollo",
-        "schemaJson": schemaJson
-      }
-    ],
-    "react/display-name": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
-    "@typescript-eslint/no-inferrable-types": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    // Typescript specific to revist when majority TS codebase
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "react/prop-types": "off",
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".android.js", ".ios.js"]
-      }
+  "jsx-a11y/anchor-is-valid": [
+    "error",
+    {
+      "specialLink": ["url"],
+      "aspects": ["noHref", "invalidHref", "preferButton"]
+    }
+  ],
+  "no-restricted-properties": [
+    2,
+    {
+      "object": "React",
+      "property": "Component",
+      "message": "Please destruct Component from React."
     },
-    "react": {
-      "version": "detect"
+    {
+      "object": "React",
+      "property": "PureComponent",
+      "message": "Please destruct PureComponent from React."
+    }
+  ],
+  "graphql/template-strings": [
+    "error",
+    {
+      "env": "apollo",
+      "schemaJson": schemaJson
+    }
+  ],
+  "react/display-name": "off",
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+  "react-hooks/rules-of-hooks": "error",
+  "react-hooks/exhaustive-deps": "off",
+  "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+  "@typescript-eslint/no-inferrable-types": "off",
+  "@typescript-eslint/no-non-null-assertion": "off",
+  "@typescript-eslint/ban-ts-comment": "off",
+  // Typescript specific to revist when majority TS codebase
+  "@typescript-eslint/no-var-requires": "off",
+  "@typescript-eslint/explicit-module-boundary-types": "off",
+  "@typescript-eslint/no-explicit-any": "off",
+  "react/prop-types": "off",
+},
+  "settings": {
+  "import/resolver": {
+    "node": {
+      "extensions": [
+        ".js",
+        ".android.js",
+        ".ios.js",
+        ".ts",
+        ".ios.ts",
+        ".android.ts",
+        ".jsx",
+        ".tsx",
+        ".ios.tsx",
+        ".android.tsx"
+      ]
     }
   },
-  "root": true
+  "react": {
+    "version": "detect"
+  }
+},
+"root": true
 };

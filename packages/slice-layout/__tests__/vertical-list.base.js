@@ -29,7 +29,8 @@ export default (renderComponent) => {
         const wrapper = renderComponent(
           <ListVerticalLayout
             tiles={[
-              <test key="0" tile={{ article: { id: "testId" } }} />,
+              // eslint-disable-next-line
+              <test key="0" tile={{ article: { id: 'testId' } }} />,
               createItem("standard-1"),
               createItem("standard-2"),
             ]}
