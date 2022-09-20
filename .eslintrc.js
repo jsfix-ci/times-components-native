@@ -46,7 +46,6 @@ module.exports = {
           "**/scripts/**",
           "**/storybook/**",
         ],
-        "optionalDependencies": false
       }
     ],
     "jsx-a11y/anchor-is-valid": [
@@ -93,12 +92,23 @@ module.exports = {
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".android.js", ".ios.js"]
+        "extensions": [
+          ".js",
+          ".android.js",
+          ".ios.js",
+          ".ts",
+          ".ios.ts",
+          ".android.ts",
+          ".jsx",
+          ".tsx",
+          ".ios.tsx",
+          ".android.tsx"
+        ]
       }
     },
     "react": {
       "version": "detect"
     }
   },
-  "root": true
+  "root": true,
 };

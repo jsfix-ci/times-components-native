@@ -2,8 +2,8 @@
 
 import Adapter from "enzyme-adapter-react-16";
 import Enzyme from "enzyme";
-import { NativeModules } from 'react-native';
-import mockRNCNetInfo from '@react-native-community/netinfo/jest/netinfo-mock.js';
+import { NativeModules } from "react-native";
+import mockRNCNetInfo from "@react-native-community/netinfo/jest/netinfo-mock.js";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -21,7 +21,7 @@ jest.mock("react-native-device-info", () => {
   };
 });
 
-jest.mock('@react-native-community/netinfo', () => mockRNCNetInfo);
+jest.mock("@react-native-community/netinfo", () => mockRNCNetInfo);
 
 jest.mock("react-native-image-zoom-viewer", () => "ImageZoomView");
 
