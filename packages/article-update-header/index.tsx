@@ -60,8 +60,6 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                   style={{
                     color: colours.functional.brandColour,
                     fontFamily: fonts.supporting,
-                    borderWidth: 1,
-                    borderColor: "red",
                   }}
                 >
                   {dt.toRelative()} |{" "}
