@@ -73,7 +73,7 @@ const getUrls = (images: ImageContent[], mainImage: MainImage) => {
 };
 
 const ModalImage: FC<ModalImageProps> = ({
-  testIDProp = 'modalImage',
+  testIDProp = "modalImage",
   aspectRatio,
   images: initialImages = [],
   caption,
@@ -229,7 +229,8 @@ const ModalImage: FC<ModalImageProps> = ({
       <Link
         onPress={handleShowModal}
         // @ts-ignore Type 'string' is not assignable to type 'null | undefined'.ts(2322)
-        testIDProp={testIDProp}>
+        testIDProp={testIDProp}
+      >
         <Image
           aspectRatio={aspectRatio}
           relativeHeight={relativeHeight}

@@ -27,8 +27,8 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 Link.propTypes = {
   disabled: PropTypes.bool,
   linkStyle: ViewPropTypesStyle,
-  onPress: PropTypes.func.isRequired, testIDProp,
-  testIDProp: string
+  onPress: PropTypes.func.isRequired,
+  testIDProp: string,
 };
 
 Link.defaultProps = {

@@ -26,7 +26,7 @@
     "android:build-lib:aar": "cd lib/android && ./gradlew generateReactArchives && ./gradlew assemble && cd -",
     "android:publish-lib:aar:remote": "cd lib/android && ./gradlew publish && cd -",
     "android:publish-lib:aar:local": "cd lib/android && ./gradlew publishToMavenLocal && cd -",
-    "prettier": "prettier-eslint --config .prettierrc.js --write {,packages,*/**/}*.{js,jsx,json,ts,tsx}",
+    "prettier": "prettier-eslint --config .prettierrc.js --write \"{,packages,*/**/}*.{js,jsx,json,ts,tsx}\"",
     "postinstall": "yarn gen:types && node ./scripts/fetch-fonts",
     "gen:types": "node packages/schema/fetchSchema.js && gql-gen",
     "test:ios": "jest --config test-setup/jest.ios.config.js",

@@ -22,7 +22,7 @@ exports[`1. modal image 1`] = `
     }
     collapsable={false}
     focusable={true}
-    testID={null}
+    testID="modalImage"
   >
     <View
       accessibilityIgnoresInvertColors={true}
@@ -62,7 +62,7 @@ exports[`2. modal image with no caption 1`] = `
     }
     collapsable={false}
     focusable={true}
-    testID={null}
+    testID="modalImage"
   >
     <View
       accessibilityIgnoresInvertColors={true}
@@ -102,7 +102,7 @@ exports[`3. modal image with custom highressize 1`] = `
     }
     collapsable={false}
     focusable={true}
-    testID={null}
+    testID="modalImage"
   >
     <View
       accessibilityIgnoresInvertColors={true}
