@@ -88,6 +88,15 @@ exports[`tile col standard huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -156,6 +165,15 @@ exports[`tile col standard medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -224,6 +242,15 @@ exports[`tile col standard shows an image 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -301,6 +328,15 @@ exports[`tile col standard shows portrait image when in portrait wide (ipad pro)
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -369,6 +405,15 @@ exports[`tile col standard smallTablet 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -460,5 +505,14 @@ exports[`tile col standard wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

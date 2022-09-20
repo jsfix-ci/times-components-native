@@ -96,6 +96,18 @@ exports[`tile bd medium 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -196,6 +208,18 @@ exports[`tile bd smallTablet 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -296,6 +320,18 @@ exports[`tile bd wide 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -396,6 +432,18 @@ exports[`tile bd without breakpoint 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;

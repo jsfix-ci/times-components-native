@@ -69,6 +69,15 @@ exports[`tile k huge 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -140,6 +149,15 @@ exports[`tile k medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -215,6 +233,15 @@ exports[`tile k small 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -286,6 +313,15 @@ exports[`tile k smallTablet 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -361,6 +397,15 @@ exports[`tile k wide 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -432,6 +477,15 @@ exports[`tile k without breakpoint should be like small 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

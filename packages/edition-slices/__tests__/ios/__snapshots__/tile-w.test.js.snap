@@ -98,6 +98,15 @@ exports[`tile w huge 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -209,6 +218,15 @@ exports[`tile w medium 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -320,6 +338,15 @@ exports[`tile w smallTablet 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -431,6 +458,15 @@ exports[`tile w wide 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -542,6 +578,15 @@ exports[`tile w without breakpoint should be like medium 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}

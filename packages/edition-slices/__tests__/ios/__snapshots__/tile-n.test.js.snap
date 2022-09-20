@@ -79,6 +79,15 @@ exports[`tile n huge 1`] = `
           ]
         }
       />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "marginTop": "auto",
+            "paddingTop": 5,
+          }
+        }
+      />
     </View>
   </View>
 </Link>
@@ -181,6 +190,15 @@ exports[`tile n medium 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -282,6 +300,15 @@ exports[`tile n small 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -382,6 +409,15 @@ exports[`tile n smallTablet 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -482,6 +518,15 @@ exports[`tile n wide 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -583,6 +628,15 @@ exports[`tile n with default star 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -684,5 +738,14 @@ exports[`tile n without breakpoint should be like small 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

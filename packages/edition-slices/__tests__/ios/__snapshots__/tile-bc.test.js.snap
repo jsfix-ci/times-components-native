@@ -71,6 +71,15 @@ exports[`tile bc huge 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -144,6 +153,15 @@ exports[`tile bc medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -221,6 +239,15 @@ exports[`tile bc smallTablet 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -296,6 +323,15 @@ exports[`tile bc wide 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -369,6 +405,15 @@ exports[`tile bc without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

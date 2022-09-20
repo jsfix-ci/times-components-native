@@ -20,9 +20,6 @@ jest.mock("react-native-device-info", () => {
   };
 });
 
-// const rn = require("react-native");
-// jest.spyOn(rn, 'addListener')
-
 jest.mock("react-native", () => {
   const rn = jest.requireActual("react-native");
 
@@ -34,6 +31,9 @@ jest.mock("react-native", () => {
     addListener: jest.fn(),
     onSectionLoaded: jest.fn(),
     getSectionData: jest.fn().mockReturnValue(Promise.resolve("{}")),
+    onArticleSavePress: jest.fn().mockReturnValue(Promise.resolve(true)),
+    getSavedArticles: jest.fn().mockReturnValue(Promise.resolve([])),
+    getOpenedPuzzleCount: jest.fn(),
   };
   rn.NativeModules.ReactAnalytics = { track: jest.fn() };
 
@@ -47,6 +47,8 @@ jest.mock("react-native", () => {
   };
 
   rn.AppState.removeEventListener = jest.fn();
+
+  rn.NativeModules.NativeFetch = { ...rn.NativeModules.NativeFetch };
 
   return rn;
 });

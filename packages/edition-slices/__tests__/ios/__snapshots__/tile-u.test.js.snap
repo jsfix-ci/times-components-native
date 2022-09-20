@@ -72,6 +72,15 @@ exports[`tile u with headline style 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -144,6 +153,15 @@ exports[`tile u without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

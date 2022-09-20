@@ -6,6 +6,7 @@ import Responsive, { ResponsiveContext } from "../src/responsive";
 import shared from "./shared.base";
 
 import * as Utils from "@times-components-native/utils";
+import { delay } from "@times-components-native/test-utils";
 
 jest.mock("@times-components-native/utils", () => ({
   __esModule: true,
@@ -44,12 +45,14 @@ export default () => {
     expect(testInstance).toMatchSnapshot("after width update");
   });
 
-  it("addDimensionListener is called on mount", () => {
+  it("addDimensionListener is called on mount", async () => {
     jest.spyOn(Utils, "addDimensionsListener");
 
     TestRenderer.create(
       <Responsive>{(context) => JSON.stringify(context)}</Responsive>,
     );
+
+    await delay(0);
 
     TestRenderer.act(() => {
       expect(Utils.addDimensionsListener).toBeCalled();

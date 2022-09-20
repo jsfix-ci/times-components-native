@@ -57,6 +57,15 @@ exports[`tile a without breakpoint 1`] = `
         }
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}

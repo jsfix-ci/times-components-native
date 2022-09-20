@@ -82,6 +82,15 @@ exports[`tile h without breakpoint 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
     <View>
       <Text
         allowFontScaling={false}

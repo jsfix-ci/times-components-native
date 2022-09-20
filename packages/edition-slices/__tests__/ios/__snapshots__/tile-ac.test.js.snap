@@ -74,6 +74,15 @@ exports[`tile ac huge 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -150,6 +159,15 @@ exports[`tile ac medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -230,6 +248,15 @@ exports[`tile ac smallTablet 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -308,6 +335,15 @@ exports[`tile ac wide 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -384,6 +420,15 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>

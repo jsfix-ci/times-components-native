@@ -127,6 +127,15 @@ exports[`tile p without breakpoint 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;

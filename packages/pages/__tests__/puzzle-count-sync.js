@@ -1,8 +1,8 @@
 import React from "react";
+import "./mocks";
 import { NativeModules } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components-native/test-utils";
-import "./mocks";
 import SectionPage from "../src/section/section";
 
 jest.mock("@times-components-native/section", () => {
@@ -14,8 +14,6 @@ jest.mock("@times-components-native/section", () => {
     </SectionContext.Consumer>
   );
 });
-
-NativeModules.SectionEvents.getOpenedPuzzleCount = jest.fn();
 
 export default () => {
   it("puzzle count uses initial prop and gets updated with the bridge", async () => {
@@ -39,7 +37,7 @@ export default () => {
     expect(testInstance.toJSON()).toEqual(`${initialCount}`);
 
     // Updated Count with native bridge
-    await delay(0);
+    await delay(1000);
     expect(testInstance.toJSON()).toEqual(`${count}`);
   });
 };

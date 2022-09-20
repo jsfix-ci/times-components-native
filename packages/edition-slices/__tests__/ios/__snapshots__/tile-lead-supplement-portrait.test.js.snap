@@ -76,6 +76,15 @@ exports[`tile lead supplement portrait medium 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -156,6 +165,15 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -234,6 +252,15 @@ exports[`tile lead supplement portrait wide 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>

@@ -75,7 +75,7 @@ class SectionPage extends Component {
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
 
-    articleEventEmitter.addListener(
+    this.updateFontScaleSubscription = DeviceEventEmitter.addListener(
       "onFontScaleChanged",
       this.onFontScaleChange,
     );
@@ -97,13 +97,11 @@ class SectionPage extends Component {
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    this.updateSASubscription.remove();
-    this.updateSDSubscription.remove();
-    this.updateRASubscription.remove();
-    articleEventEmitter.removeListener(
-      "onFontScaleChanged",
-      this.onFontScaleChange,
-    );
+    this.updateSASubscription && this.updateSASubscription.remove();
+    this.updateSDSubscription && this.updateSDSubscription.remove();
+    this.updateRASubscription && this.updateRASubscription.remove();
+    this.updateFontScaleSubscription &&
+      this.updateFontScaleSubscription.remove();
   }
 
   onAppStateChange(nextAppState) {

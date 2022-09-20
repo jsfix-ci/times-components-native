@@ -111,6 +111,15 @@ exports[`tile lead supplement landscape huge 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -228,6 +237,15 @@ exports[`tile lead supplement landscape medium 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -345,6 +363,15 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -462,6 +489,15 @@ exports[`tile lead supplement landscape wide 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>

@@ -98,6 +98,15 @@ exports[`tile z huge 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -209,6 +218,15 @@ exports[`tile z wide 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -320,6 +338,15 @@ exports[`tile z without breakpoint should be like wide 1`] = `
         </View>
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}

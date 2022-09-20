@@ -76,6 +76,15 @@ exports[`tile y landscape huge 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -156,6 +165,15 @@ exports[`tile y landscape medium 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -236,6 +254,15 @@ exports[`tile y landscape smallTablet 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -316,6 +343,15 @@ exports[`tile y landscape wide 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -396,6 +432,15 @@ exports[`tile y portrait huge 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -476,6 +521,15 @@ exports[`tile y portrait medium 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -556,6 +610,15 @@ exports[`tile y portrait smallTablet 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -636,6 +699,15 @@ exports[`tile y portrait wide 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
