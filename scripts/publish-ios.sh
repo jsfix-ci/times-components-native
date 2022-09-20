@@ -6,11 +6,6 @@ PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $
 TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 2; }
 
 setupEnv () {
-  if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
-    then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH" 
-    exit 0
-  fi
-
   if [[ $PACKAGE_VERSION == *"beta"* ]]
     then
     echo "👉 Setting up enviroment for a beta release."
@@ -19,6 +14,10 @@ setupEnv () {
 
     RELEASE_DEST="beta"
   else
+    if [ "$CIRCLE_BRANCH" != "release/$PACKAGE_VERSION" ]
+      then echo "✋ It looks like you 'release' branch name doesn't match your package version. Will not publish. $CIRCLE_BRANCH"
+      exit 1
+    fi
     echo "👉 Setting up enviroment for a production release."
     ARTIFACTS_REPO_SLUG="$REPO_SLUG"
     ARTIFACTS_REPO_SSH="git@github.com:$ARTIFACTS_REPO_SLUG.git"
@@ -50,7 +49,7 @@ checkIfVersionExists () {
 
     if [ $(git tag -l "$PACKAGE_VERSION") ]; then
         echo "✋ Skipping publishing: Version $PACKAGE_VERSION already exists in the artifacts repo."
-        exit 0
+        exit 1
     fi
 }
 

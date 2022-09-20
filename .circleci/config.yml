@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  github-cli: circleci/github-cli@2.1.0
+
 publish_android: &PUBLISH_ANDROID
     executor: android
     steps:
@@ -7,15 +10,15 @@ publish_android: &PUBLISH_ANDROID
         - attach_workspace:
                 at: ./
         - run:
-            name: Install Node 12.4.1
+            name: Install Node 14.18.2
             command: |
               set +e
               wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
               export NVM_DIR="$HOME/.nvm"
               [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
               [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-              nvm install 12.14.1
-              nvm alias default 12.14.1
+              nvm install 14.18.2
+              nvm alias default 14.18.2
 
               echo 'export NVM_DIR="$HOME/.nvm"' >> $BASH_ENV
               echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
@@ -45,7 +48,7 @@ publish_ios: &PUBLISH_IOS
 executors:
     node:
         docker:
-            - image: circleci/node:12.14.1
+            - image: circleci/node:14.18.2
         resource_class: 2xlarge
     android:
         docker:
@@ -159,6 +162,20 @@ jobs:
     publish_android_artifacts:
         <<: *PUBLISH_ANDROID
 
+    trigger_android_build:
+        executor: node
+        steps:
+            - github-cli/install
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                name: Open Android PR
+                command: |
+                    cd ~/project/
+                    bash ./scripts/trigger-android-build.sh
+                working_directory: ~/project/
+
     publish_ios_artifacts:
         <<: *PUBLISH_IOS
 
@@ -222,3 +239,7 @@ workflows:
                 requires:
                     - publish_android_artifacts
                     - publish_ios_artifacts
+            - trigger_android_build:
+                context: nuk-tnl-app-universal
+                requires:
+                    - publish_notes

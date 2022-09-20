@@ -44,6 +44,15 @@ type MarkAsReadProps = {
   opacity: number;
 };
 
+export type Bullet = {
+  id: string;
+  shortHeadline: string;
+};
+
+type BulletWithReadState = Bullet & {
+  readState: ArticleReadState;
+};
+
 interface Props {
   bylines?: BylineInput[];
   bylineStyle?: StyleProp<ViewStyle>;
@@ -64,14 +73,16 @@ interface Props {
   underneathTextStar?: boolean;
   centeredStar?: boolean;
   isDarkStar?: boolean;
+  isTablet: boolean;
   starStyle?: StyleProp<ViewStyle>;
   hideLabel?: boolean;
   whiteSpaceHeight?: number;
-  bullets?: string[];
+  bullets?: Bullet[];
   onPress?: OnArticlePress | (() => null);
 }
 
 export const getArticleReadState = (
+  isTablet: boolean,
   readArticles: Array<ArticleRead> | null,
   articleId: string,
   isLive: boolean = false,
@@ -84,10 +95,12 @@ export const getArticleReadState = (
     };
   }
   return {
-    read: readArticles?.some((obj) => obj.id === articleId) ?? false,
+    read:
+      isTablet && (readArticles?.some((obj) => obj.id === articleId) ?? false),
     animate:
-      readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
-      false,
+      isTablet &&
+      (readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
+        false),
   };
 };
 
@@ -135,6 +148,7 @@ const ArticleSummary: React.FC<Props> = ({
   underneathTextStar = false,
   centeredStar = false,
   isDarkStar = false,
+  isTablet = false,
   starStyle,
   hideLabel = false,
   bullets = [],
@@ -184,10 +198,23 @@ const ArticleSummary: React.FC<Props> = ({
   };
 
   const articleReadState = getArticleReadState(
+    isTablet,
     readArticles,
     id,
     getIsLiveState(),
   );
+
+  const bulletsWithReadState: BulletWithReadState[] = bullets?.length
+    ? bullets.map((bullet) => ({
+        ...bullet,
+        readState: getArticleReadState(
+          isTablet,
+          readArticles,
+          id,
+          getIsLiveState(),
+        ),
+      }))
+    : [];
 
   useEffect(() => {
     if (!articleReadState.animate) return;
@@ -306,7 +333,7 @@ const ArticleSummary: React.FC<Props> = ({
       saveStar={withStar && renderSaveStar()}
       style={style}
       center={!!centeredStar}
-      bullets={bullets}
+      bullets={bulletsWithReadState}
       onPress={onPress}
     />
   );

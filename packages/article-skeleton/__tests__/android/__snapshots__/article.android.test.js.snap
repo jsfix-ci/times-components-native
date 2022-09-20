@@ -619,7 +619,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 },
               }
             }
-            slotName="native-inline-ad"
+            slotName="ad-singleMPU"
           />
         </View>
       </View>
@@ -2543,7 +2543,7 @@ exports[`10. an article with italic and normal text link 1`] = `
                     </Text>
                   </Text>
                   <Text>
-                     Coronavirus Charity Appeal
+                    Coronavirus Charity Appeal
                   </Text>
                 </Text>
                 <Text>
@@ -4166,7 +4166,7 @@ exports[`19. renders content 1`] = `
                 },
               }
             }
-            slotName="native-inline-ad"
+            slotName="ad-singleMPU"
           />
         </View>
       </View>

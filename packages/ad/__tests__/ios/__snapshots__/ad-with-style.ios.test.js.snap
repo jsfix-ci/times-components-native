@@ -3,11 +3,11 @@
 exports[`1. multiple ad slots 1`] = `
 Array [
   <View
-    className="IS4"
+    className="IS5"
     testID="article-advertisement"
   >
     <View
-      className="IS3"
+      className="IS4"
       inViewport={false}
     >
       <View
@@ -16,8 +16,10 @@ Array [
         <RNCWebView
           allowsInlineMediaPlayback={true}
           androidLayerType="software"
-          cacheEnabled={true}
+          cacheEnabled={false}
+          cacheMode="LOAD_NO_CACHE"
           className="IS1"
+          incognito={true}
           injectedJavaScriptBeforeContentLoadedForMainFrameOnly={true}
           injectedJavaScriptForMainFrameOnly={true}
           javaScriptEnabled={true}
@@ -25,14 +27,18 @@ Array [
           useSharedProcessPool={true}
         />
       </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
     </View>
   </View>,
   <View
-    className="IS4"
+    className="IS5"
     testID="article-advertisement"
   >
     <View
-      className="IS3"
+      className="IS4"
       inViewport={false}
     >
       <View
@@ -41,8 +47,10 @@ Array [
         <RNCWebView
           allowsInlineMediaPlayback={true}
           androidLayerType="software"
-          cacheEnabled={true}
+          cacheEnabled={false}
+          cacheMode="LOAD_NO_CACHE"
           className="IS1"
+          incognito={true}
           injectedJavaScriptBeforeContentLoadedForMainFrameOnly={true}
           injectedJavaScriptForMainFrameOnly={true}
           javaScriptEnabled={true}
@@ -50,6 +58,10 @@ Array [
           useSharedProcessPool={true}
         />
       </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
     </View>
   </View>,
 ]

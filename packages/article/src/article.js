@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import ArticleMagazineComment from "@times-components-native/article-magazine-comment";
 import ArticleInDepth from "@times-components-native/article-in-depth";
 import ArticleMagazineStandard from "@times-components-native/article-magazine-standard";
@@ -40,12 +40,15 @@ const Article = (props) => {
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
-  let onImagePressArticle = null;
-  if (onImagePress) {
-    content = addIndexesToInlineImages(content, leadAsset);
-    const mediaList = getMediaList(content, leadAsset);
-    onImagePressArticle = (index) => onImagePress(index, mediaList);
-  }
+  let onImagePressArticle = useMemo(() => {
+    if (onImagePress) {
+      content = addIndexesToInlineImages(content, leadAsset);
+      const mediaList = getMediaList(content, leadAsset);
+      return (index) => onImagePress(index, mediaList);
+    }
+    return null;
+  }, []);
+
   const Component = getComponentByTemplate(template, isArticleTablet);
   const newProps = {
     ...props,
