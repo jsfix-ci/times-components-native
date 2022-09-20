@@ -61,8 +61,8 @@ exports[`tile lead supplement landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#1D1D1B",
@@ -111,6 +111,15 @@ exports[`tile lead supplement landscape huge 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -178,8 +187,8 @@ exports[`tile lead supplement landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#1D1D1B",
@@ -228,6 +237,15 @@ exports[`tile lead supplement landscape medium 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -295,8 +313,8 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#1D1D1B",
@@ -345,6 +363,15 @@ exports[`tile lead supplement landscape smallTablet 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -412,8 +439,8 @@ exports[`tile lead supplement landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#1D1D1B",
@@ -462,6 +489,15 @@ exports[`tile lead supplement landscape wide 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 0,
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>

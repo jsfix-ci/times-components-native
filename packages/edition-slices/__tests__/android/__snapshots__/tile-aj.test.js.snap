@@ -23,8 +23,8 @@ exports[`tile aj without breakpoint 1`] = `
   >
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",

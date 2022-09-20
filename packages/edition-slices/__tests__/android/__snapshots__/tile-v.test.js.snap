@@ -44,8 +44,8 @@ exports[`tile v without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -68,6 +68,15 @@ exports[`tile v without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

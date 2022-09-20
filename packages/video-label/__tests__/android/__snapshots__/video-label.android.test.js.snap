@@ -9,7 +9,7 @@ exports[`1. video label with a title 1`] = `
     />
   </View>
   <Text
-     allowFontScaling={false}
+    allowFontScaling={false}
   >
     SWIMMING
   </Text>

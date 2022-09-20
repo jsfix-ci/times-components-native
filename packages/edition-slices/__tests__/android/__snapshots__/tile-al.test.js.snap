@@ -46,8 +46,8 @@ exports[`tile al huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -98,6 +98,15 @@ exports[`tile al huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -147,8 +156,8 @@ exports[`tile al wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -199,5 +208,14 @@ exports[`tile al wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

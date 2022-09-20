@@ -96,6 +96,7 @@ exports[`phone full article with style 1`] = `
           <View
             style={
               Object {
+                "alignItems": "flex-start",
                 "flexDirection": "row",
               }
             }
@@ -108,23 +109,36 @@ exports[`phone full article with style 1`] = `
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginTop": 5,
+                  "textAlign": "left",
                 }
               }
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 5,
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginTop": 5,
+                  }
                 }
-              }
-            >
-              , The Times
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginTop": 5,
+                  }
+                }
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>
@@ -230,6 +244,7 @@ exports[`tablet full article with style 1`] = `
           <View
             style={
               Object {
+                "alignItems": "flex-start",
                 "flexDirection": "row",
               }
             }
@@ -242,23 +257,36 @@ exports[`tablet full article with style 1`] = `
                   "fontSize": 13,
                   "lineHeight": 15,
                   "marginTop": 5,
+                  "textAlign": "left",
                 }
               }
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#696969",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                  "marginTop": 5,
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginTop": 5,
+                  }
                 }
-              }
-            >
-              , The Times
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 15,
+                    "marginTop": 5,
+                  }
+                }
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>

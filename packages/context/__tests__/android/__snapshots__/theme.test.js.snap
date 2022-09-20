@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContextProviderWithDefaults adds defaults to the provided context 1`] = `"{\\"maxFontSizeMultiplier\\":2,\\"minimumFontScale\\":0.7,\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+exports[`ContextProviderWithDefaults adds defaults to the provided context 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
 
-exports[`article context with default values 1`] = `"{\\"maxFontSizeMultiplier\\":2,\\"minimumFontScale\\":0.7,\\"theme\\":{\\"scale\\":\\"medium\\"}}"`;
+exports[`article context with default values 1`] = `"{\\"theme\\":{\\"scale\\":\\"medium\\",\\"fontScale\\":1}}"`;
 
 exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
 
-exports[`section context with default values 1`] = `"{\\"onArticleSavePress\\":null,\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0,\\"savedArticles\\":null,\\"readArticles\\":null,\\"hasDynamicBullets\\":false}"`;
+exports[`section context with default values 1`] = `"{\\"onArticleSavePress\\":null,\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0,\\"savedArticles\\":null,\\"readArticles\\":null,\\"hasDynamicBullets\\":false,\\"fontScale\\":1}"`;
 
 exports[`section context with inline values 1`] = `"{\\"publicationName\\":\\"SUNDAYTIMES\\",\\"recentlyOpenedPuzzleCount\\":123,\\"savedArticles\\":{\\"dummy-article-id-1\\":true,\\"dummy-article-id-2\\":true}}"`;

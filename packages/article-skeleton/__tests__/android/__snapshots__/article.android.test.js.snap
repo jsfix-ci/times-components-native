@@ -45,45 +45,112 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             ]
           }
         >
-          <View
+          <RCTScrollView
             style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                false,
-                undefined,
-                false,
-                Object {},
-              ]
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": -1000,
+                  },
+                ],
+              }
             }
           >
             <View>
-              <Text
-                allowFontScaling={false}
-                selectable={true}
+              <View
                 style={
                   Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 18,
-                    "lineHeight": 25.92,
+                    "width": 53.86375,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
+                  style={
+                    Object {
+                      "height": 73.71000000000001,
+                      "overflow": "visible",
+                      "width": 300,
+                    }
+                  }
                 >
-                  This being Black History Month, last week
-                </Text>
-              </Text>
+                  <View
+                    style={
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": -2,
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": undefined,
+                            "fontFamily": "TimesModern-Regular",
+                            "fontSize": 95.82300000000001,
+                            "lineHeight": 95.82300000000001,
+                          },
+                        ]
+                      }
+                    >
+                      T
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "width": 236.13625,
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "paddingLeft": 10,
+                          "paddingRight": 10,
+                        },
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        Object {},
+                      ]
+                    }
+                  >
+                    <View>
+                      <Text
+                        allowFontScaling={false}
+                        selectable={true}
+                        style={
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "TimesDigitalW04",
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          his being Black History Month, last week
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
+          </RCTScrollView>
         </View>
       </View>
       <View>
@@ -407,17 +474,13 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   accessibilityRole="link"
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
+                      "textDecorationLine": "underline",
+                    }
                   }
                 >
                   <Text
@@ -648,16 +711,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 <Text
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "color": "#696969",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 13,
-                        "lineHeight": 20,
-                      },
-                      undefined,
-                      undefined,
-                    ]
+                    Object {
+                      "color": "#696969",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 13,
+                      "lineHeight": 20,
+                    }
                   }
                 >
                   This is video caption
@@ -744,22 +803,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   <Text
                     allowFontScaling={false}
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                          "marginTop": -8,
-                          "paddingLeft": 15,
-                          "width": "95%",
-                        },
-                        Object {
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
                     }
                   >
                     Example bullet text
@@ -790,22 +842,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   <Text
                     allowFontScaling={false}
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                          "marginTop": -8,
-                          "paddingLeft": 15,
-                          "width": "95%",
-                        },
-                        Object {
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
                     }
                   >
                     An example 
@@ -841,22 +886,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   <Text
                     allowFontScaling={false}
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                          "marginTop": -8,
-                          "paddingLeft": 15,
-                          "width": "95%",
-                        },
-                        Object {
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
                     }
                   >
                     More example text.
@@ -887,22 +925,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   <Text
                     allowFontScaling={false}
                     style={
-                      Array [
-                        Object {
-                          "color": "#333333",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                          "marginTop": -8,
-                          "paddingLeft": 15,
-                          "width": "95%",
-                        },
-                        Object {
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 16,
-                          "lineHeight": 27,
-                        },
-                      ]
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
                     }
                   >
                     Example text 
@@ -1537,54 +1568,121 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             ]
           }
         >
-          <View
+          <RCTScrollView
             style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                false,
-                undefined,
-                false,
-                Object {},
-              ]
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": -1000,
+                  },
+                ],
+              }
             }
           >
             <View>
-              <Text
-                allowFontScaling={false}
-                selectable={true}
+              <View
                 style={
                   Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 18,
-                    "lineHeight": 25.92,
+                    "width": 63.28,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
                   style={
                     Object {
-                      "fontWeight": "bold",
+                      "height": 87.17625000000001,
+                      "overflow": "visible",
+                      "width": 300,
                     }
                   }
                 >
-                  <Text
-                    allowFontScaling={false}
+                  <View
+                    style={
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": -2,
+                      }
+                    }
                   >
-                    Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
-                  </Text>
-                </Text>
-              </Text>
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": undefined,
+                            "fontFamily": "TimesModern-Regular",
+                            "fontSize": 113.32912500000002,
+                            "lineHeight": 113.32912500000002,
+                          },
+                        ]
+                      }
+                    >
+                      Q
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "width": 226.72,
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "paddingLeft": 10,
+                          "paddingRight": 10,
+                        },
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        Object {},
+                      ]
+                    }
+                  >
+                    <View>
+                      <Text
+                        allowFontScaling={false}
+                        selectable={true}
+                        style={
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "TimesDigitalW04",
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          style={
+                            Object {
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          <Text
+                            allowFontScaling={false}
+                          >
+                            Some years ago I made the decision to take as a friend a woman who is very opinionated.
+                          </Text>
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
+          </RCTScrollView>
         </View>
       </View>
       <View>
@@ -1970,17 +2068,13 @@ exports[`7. an article with link 1`] = `
                   accessibilityRole="link"
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
+                      "textDecorationLine": "underline",
+                    }
                   }
                 >
                   <Text
@@ -2129,17 +2223,13 @@ exports[`8. an article with italic link 1`] = `
                   accessibilityRole="link"
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
+                      "textDecorationLine": "underline",
+                    }
                   }
                 >
                   <Text
@@ -2305,17 +2395,13 @@ exports[`9. an article with bold text followed by bold link 1`] = `
                     accessibilityRole="link"
                     allowFontScaling={false}
                     style={
-                      Array [
-                        Object {
-                          "textDecorationLine": "underline",
-                        },
-                        Object {
-                          "color": "#006699",
-                          "fontFamily": "TimesDigitalW04",
-                          "fontSize": 18,
-                          "lineHeight": 25.92,
-                        },
-                      ]
+                      Object {
+                        "color": "#006699",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 18,
+                        "lineHeight": 25.92,
+                        "textDecorationLine": "underline",
+                      }
                     }
                   >
                     <Text
@@ -2460,17 +2546,13 @@ exports[`10. an article with italic and normal text link 1`] = `
                   accessibilityRole="link"
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
+                      "textDecorationLine": "underline",
+                    }
                   }
                 >
                   <Text
@@ -3149,45 +3231,112 @@ exports[`15. an article starting with single quote 1`] = `
             ]
           }
         >
-          <View
+          <RCTScrollView
             style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                false,
-                undefined,
-                false,
-                Object {},
-              ]
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": -1000,
+                  },
+                ],
+              }
             }
           >
             <View>
-              <Text
-                allowFontScaling={false}
-                selectable={true}
+              <View
                 style={
                   Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 18,
-                    "lineHeight": 25.92,
+                    "width": 74.215,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
+                  style={
+                    Object {
+                      "height": 79.73437500000001,
+                      "overflow": "visible",
+                      "width": 300,
+                    }
+                  }
                 >
-                  ‘Sorting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-                </Text>
-              </Text>
+                  <View
+                    style={
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": -2,
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": undefined,
+                            "fontFamily": "TimesModern-Regular",
+                            "fontSize": 103.65468750000002,
+                            "lineHeight": 103.65468750000002,
+                          },
+                        ]
+                      }
+                    >
+                      ‘S
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "width": 215.785,
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "paddingLeft": 10,
+                          "paddingRight": 10,
+                        },
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        Object {},
+                      ]
+                    }
+                  >
+                    <View>
+                      <Text
+                        allowFontScaling={false}
+                        selectable={true}
+                        style={
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "TimesDigitalW04",
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
+          </RCTScrollView>
         </View>
       </View>
       <View>
@@ -3280,45 +3429,112 @@ exports[`16. an article starting with double quote 1`] = `
             ]
           }
         >
-          <View
+          <RCTScrollView
             style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                false,
-                undefined,
-                false,
-                Object {},
-              ]
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": -1000,
+                  },
+                ],
+              }
             }
           >
             <View>
-              <Text
-                allowFontScaling={false}
-                selectable={true}
+              <View
                 style={
                   Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 18,
-                    "lineHeight": 25.92,
+                    "width": 90.16187500000001,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
+                <View
+                  style={
+                    Object {
+                      "height": 79.73437500000001,
+                      "overflow": "visible",
+                      "width": 300,
+                    }
+                  }
                 >
-                  “Sorting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-                </Text>
-              </Text>
+                  <View
+                    style={
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": -2,
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": undefined,
+                            "fontFamily": "TimesModern-Regular",
+                            "fontSize": 103.65468750000002,
+                            "lineHeight": 103.65468750000002,
+                          },
+                        ]
+                      }
+                    >
+                      “S
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "width": 199.838125,
+                  }
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "paddingLeft": 10,
+                          "paddingRight": 10,
+                        },
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        Object {},
+                      ]
+                    }
+                  >
+                    <View>
+                      <Text
+                        allowFontScaling={false}
+                        selectable={true}
+                        style={
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "TimesDigitalW04",
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
+          </RCTScrollView>
         </View>
       </View>
       <View>
@@ -5921,17 +6137,13 @@ exports[`19. renders content 1`] = `
                   accessibilityRole="link"
                   allowFontScaling={false}
                   style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
+                      "textDecorationLine": "underline",
+                    }
                   }
                 >
                   <Text
@@ -6092,92 +6304,155 @@ exports[`20. an article with inline paragraph 1`] = `
             ]
           }
         >
-          <View
+          <RCTScrollView
             style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                false,
-                undefined,
-                false,
-                Object {},
-              ]
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": -1000,
+                  },
+                ],
+              }
             }
           >
             <View>
-              <Text
-                allowFontScaling={false}
-                selectable={true}
+              <View
                 style={
                   Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 18,
-                    "lineHeight": 25.92,
+                    "width": 20.198125,
                   }
                 }
               >
-                <Text
-                  allowFontScaling={false}
-                >
-                  If you want to look as good as Daniel Craig does, naked, at 52, then you’re going to have to change your breakfast. Begone, buttered toast stuffed into your mouth on the way out of the house. While filming 
-                </Text>
-                <Text
-                  allowFontScaling={false}
+                <View
                   style={
                     Object {
-                      "fontStyle": "italic",
+                      "height": 73.71000000000001,
+                      "overflow": "visible",
+                      "width": 300,
                     }
                   }
                 >
-                  <Text
-                    allowFontScaling={false}
+                  <View
+                    style={
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": -2,
+                      }
+                    }
                   >
-                    No Time to Die
-                  </Text>
-                </Text>
-                <Text
-                  allowFontScaling={false}
-                >
-                  , the 
-                </Text>
-                <Text
-                  accessibilityRole="link"
-                  allowFontScaling={false}
-                  style={
-                    Array [
-                      Object {
-                        "textDecorationLine": "underline",
-                      },
-                      Object {
-                        "color": "#006699",
-                        "fontFamily": "TimesDigitalW04",
-                        "fontSize": 18,
-                        "lineHeight": 25.92,
-                      },
-                    ]
+                    <Text
+                      allowFontScaling={false}
+                      style={
+                        Array [
+                          Object {
+                            "color": undefined,
+                            "fontFamily": "TimesModern-Regular",
+                            "fontSize": 95.82300000000001,
+                            "lineHeight": 95.82300000000001,
+                          },
+                        ]
+                      }
+                    >
+                      I
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "width": 269.801875,
                   }
-                >
-                  <Text
-                    allowFontScaling={false}
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "paddingLeft": 10,
+                          "paddingRight": 10,
+                        },
+                        Object {
+                          "marginBottom": 20,
+                        },
+                        false,
+                        false,
+                        false,
+                        false,
+                        Object {},
+                      ]
+                    }
                   >
-                    latest James Bond film
-                  </Text>
-                </Text>
-                <Text
-                  allowFontScaling={false}
-                >
-                  , Craig started the day with rye bread, poached eggs, avocado and kimchi, maybe some kale.
-                </Text>
-              </Text>
+                    <View>
+                      <Text
+                        allowFontScaling={false}
+                        selectable={true}
+                        style={
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "TimesDigitalW04",
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          f you want to look as good as Daniel Craig does, naked, at 52, then you’re going to have to change your breakfast. Begone, buttered toast stuffed into your mouth on the way out of the house. While filming 
+                        </Text>
+                        <Text
+                          allowFontScaling={false}
+                          style={
+                            Object {
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          <Text
+                            allowFontScaling={false}
+                          >
+                            No Time to Die
+                          </Text>
+                        </Text>
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          , the 
+                        </Text>
+                        <Text
+                          accessibilityRole="link"
+                          allowFontScaling={false}
+                          style={
+                            Object {
+                              "color": "#006699",
+                              "fontFamily": "TimesDigitalW04",
+                              "fontSize": 18,
+                              "lineHeight": 25.92,
+                              "textDecorationLine": "underline",
+                            }
+                          }
+                        >
+                          <Text
+                            allowFontScaling={false}
+                          >
+                            latest James Bond film
+                          </Text>
+                        </Text>
+                        <Text
+                          allowFontScaling={false}
+                        >
+                          , Craig started the day with rye bread, poached eggs, avocado and kimchi, maybe some kale.
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
             </View>
-          </View>
+          </RCTScrollView>
         </View>
       </View>
       <View>

@@ -228,8 +228,8 @@ exports[`7. an article list header 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="2"
         allowFontScaling={false}
+        aria-level="2"
       >
         job title
       </Text>

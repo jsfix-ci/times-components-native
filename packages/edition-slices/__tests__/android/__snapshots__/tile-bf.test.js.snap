@@ -38,8 +38,8 @@ exports[`tile bf huge 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#333333",
@@ -66,6 +66,15 @@ exports[`tile bf huge 1`] = `
         }
       />
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <View
     style={
@@ -121,8 +130,8 @@ exports[`tile bf medium 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#333333",
@@ -149,6 +158,15 @@ exports[`tile bf medium 1`] = `
         }
       />
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <View
     style={
@@ -204,8 +222,8 @@ exports[`tile bf smallTablet 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#333333",
@@ -232,6 +250,15 @@ exports[`tile bf smallTablet 1`] = `
         }
       />
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <View
     style={
@@ -287,8 +314,8 @@ exports[`tile bf wide 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#333333",
@@ -315,6 +342,15 @@ exports[`tile bf wide 1`] = `
         }
       />
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <View
     style={
@@ -370,8 +406,8 @@ exports[`tile bf without breakpoint should be like medium 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#333333",
@@ -398,6 +434,15 @@ exports[`tile bf without breakpoint should be like medium 1`] = `
         }
       />
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
   <View
     style={

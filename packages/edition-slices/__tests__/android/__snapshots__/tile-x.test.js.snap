@@ -36,8 +36,8 @@ exports[`tile x landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -54,8 +54,8 @@ exports[`tile x landscape huge 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -105,6 +105,15 @@ exports[`tile x landscape huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -144,8 +153,8 @@ exports[`tile x landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -162,8 +171,8 @@ exports[`tile x landscape medium 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -213,6 +222,15 @@ exports[`tile x landscape medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -252,8 +270,8 @@ exports[`tile x landscape smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -270,8 +288,8 @@ exports[`tile x landscape smallTablet 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -321,6 +339,15 @@ exports[`tile x landscape smallTablet 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -360,8 +387,8 @@ exports[`tile x landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -378,8 +405,8 @@ exports[`tile x landscape wide 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -429,6 +456,15 @@ exports[`tile x landscape wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -468,8 +504,8 @@ exports[`tile x portrait huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -486,8 +522,8 @@ exports[`tile x portrait huge 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -537,6 +573,15 @@ exports[`tile x portrait huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -576,8 +621,8 @@ exports[`tile x portrait medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -594,8 +639,8 @@ exports[`tile x portrait medium 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -645,6 +690,15 @@ exports[`tile x portrait medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -684,8 +738,8 @@ exports[`tile x portrait smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -702,8 +756,8 @@ exports[`tile x portrait smallTablet 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -753,6 +807,15 @@ exports[`tile x portrait smallTablet 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -792,8 +855,8 @@ exports[`tile x portrait wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -810,8 +873,8 @@ exports[`tile x portrait wide 1`] = `
         </Text>
         <Text
           accessibilityRole="header"
-          aria-level="4"
           allowFontScaling={false}
+          aria-level="4"
           style={
             Object {
               "color": "#333333",
@@ -861,5 +924,14 @@ exports[`tile x portrait wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

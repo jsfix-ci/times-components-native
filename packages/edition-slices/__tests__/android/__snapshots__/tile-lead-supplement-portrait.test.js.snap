@@ -48,8 +48,8 @@ exports[`tile lead supplement portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -74,6 +74,15 @@ exports[`tile lead supplement portrait medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -128,8 +137,8 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -154,6 +163,15 @@ exports[`tile lead supplement portrait smallTablet 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -208,8 +226,8 @@ exports[`tile lead supplement portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -234,6 +252,15 @@ exports[`tile lead supplement portrait wide 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>

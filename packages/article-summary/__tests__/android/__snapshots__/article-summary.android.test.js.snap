@@ -634,8 +634,8 @@ exports[`12. article summary component with a strapline 1`] = `
   </Text>
   <Text
     accessibilityRole="header"
-    aria-level="4"
     allowFontScaling={false}
+    aria-level="4"
   >
     Test Strapline
   </Text>
@@ -885,8 +885,8 @@ exports[`19. article summary component with a strapline and flag on tablet 1`] =
   </Text>
   <Text
     accessibilityRole="header"
-    aria-level="4"
     allowFontScaling={false}
+    aria-level="4"
   >
     Test Strapline
   </Text>

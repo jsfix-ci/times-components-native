@@ -173,11 +173,11 @@ exports[`Search Bar should render correctly 1`] = `
         }
       >
         <TextInput
+          allowFontScaling={false}
           autoFocus={false}
           defaultValue="test"
           editable={true}
           keyboardType="web-search"
-          allowFontScaling={false}
           onBlur={[Function]}
           onChangeText={[Function]}
           onFocus={[Function]}

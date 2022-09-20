@@ -4,24 +4,33 @@ exports[`1. date and times publication 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
       "alignItems": "flex-start",
+      "flexDirection": "row",
     }
   }
 >
   <Text
     allowFontScaling={false}
-    style={Object {}}
-    testID="date-time"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
   >
-    Sunday January 01 2017, 4.32am
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={Object {}}
-    testID="publication-name"
-  >
-    , The Times
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="date-time"
+    >
+      Sunday January 01 2017, 4.32am GMT
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="publication-name"
+    >
+      , The Times
+    </Text>
   </Text>
 </View>
 `;
@@ -30,24 +39,33 @@ exports[`2. date and sundaytimes publication 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
       "alignItems": "flex-start",
+      "flexDirection": "row",
     }
   }
 >
   <Text
     allowFontScaling={false}
-    style={Object {}}
-    testID="date-time"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
   >
-    Sunday January 01 2017, 4.32am
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={Object {}}
-    testID="publication-name"
-  >
-    , The Sunday Times
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="date-time"
+    >
+      Sunday January 01 2017, 4.32am GMT
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="publication-name"
+    >
+      , The Sunday Times
+    </Text>
   </Text>
 </View>
 `;
@@ -56,17 +74,26 @@ exports[`3. date and no given publication 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
       "alignItems": "flex-start",
+      "flexDirection": "row",
     }
   }
 >
   <Text
     allowFontScaling={false}
-    style={Object {}}
-    testID="date-time"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
   >
-    Sunday January 01 2017, 4.32am
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="date-time"
+    >
+      Sunday January 01 2017, 4.32am GMT
+    </Text>
   </Text>
 </View>
 `;
@@ -75,17 +102,26 @@ exports[`4. date and no day 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
       "alignItems": "flex-start",
+      "flexDirection": "row",
     }
   }
 >
   <Text
     allowFontScaling={false}
-    style={Object {}}
-    testID="date-time"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
   >
-    January 01 2017, 4.32am
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="date-time"
+    >
+      January 01 2017, 4.32am GMT
+    </Text>
   </Text>
 </View>
 `;

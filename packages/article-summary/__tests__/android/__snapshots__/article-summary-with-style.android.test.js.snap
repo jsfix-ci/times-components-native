@@ -19,8 +19,8 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </View>
   <Text
     accessibilityRole="header"
-    aria-level="3"
     allowFontScaling={false}
+    aria-level="3"
     style={
       Object {
         "color": "#333333",

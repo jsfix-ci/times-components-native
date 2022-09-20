@@ -51,8 +51,8 @@ exports[`tile n huge 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -77,6 +77,15 @@ exports[`tile n huge 1`] = `
               "type": "EXCLUSIVE",
             },
           ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "marginTop": "auto",
+            "paddingTop": 5,
+          }
         }
       />
     </View>
@@ -135,8 +144,8 @@ exports[`tile n medium 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -153,8 +162,8 @@ exports[`tile n medium 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#CCC",
@@ -181,6 +190,15 @@ exports[`tile n medium 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -236,8 +254,8 @@ exports[`tile n small 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -254,8 +272,8 @@ exports[`tile n small 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#696969",
@@ -282,6 +300,15 @@ exports[`tile n small 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -336,8 +363,8 @@ exports[`tile n smallTablet 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -354,8 +381,8 @@ exports[`tile n smallTablet 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#CCC",
@@ -382,6 +409,15 @@ exports[`tile n smallTablet 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -436,8 +472,8 @@ exports[`tile n wide 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -454,8 +490,8 @@ exports[`tile n wide 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#CCC",
@@ -482,6 +518,15 @@ exports[`tile n wide 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -537,8 +582,8 @@ exports[`tile n with default star 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -555,8 +600,8 @@ exports[`tile n with default star 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#696969",
@@ -583,6 +628,15 @@ exports[`tile n with default star 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -638,8 +692,8 @@ exports[`tile n without breakpoint should be like small 1`] = `
       </View>
       <Text
         accessibilityRole="header"
-        aria-level="3"
         allowFontScaling={false}
+        aria-level="3"
         style={
           Object {
             "color": "#FFFFFF",
@@ -656,8 +710,8 @@ exports[`tile n without breakpoint should be like small 1`] = `
       </Text>
       <Text
         accessibilityRole="header"
-        aria-level="4"
         allowFontScaling={false}
+        aria-level="4"
         style={
           Object {
             "color": "#696969",
@@ -684,5 +738,14 @@ exports[`tile n without breakpoint should be like small 1`] = `
       />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

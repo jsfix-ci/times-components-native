@@ -158,12 +158,16 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             <Text
               allowFontScaling={false}
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              allowFontScaling={false}
-            >
-              , The Times
+              <Text
+                allowFontScaling={false}
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                allowFontScaling={false}
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>
@@ -279,12 +283,16 @@ exports[`4. an article with ads 1`] = `
             <Text
               allowFontScaling={false}
             >
-              Friday March 13 2015, 6.54pm
-            </Text>
-            <Text
-              allowFontScaling={false}
-            >
-              , The Times
+              <Text
+                allowFontScaling={false}
+              >
+                Friday March 13 2015, 6.54pm GMT
+              </Text>
+              <Text
+                allowFontScaling={false}
+              >
+                , The Times
+              </Text>
             </Text>
           </View>
         </View>

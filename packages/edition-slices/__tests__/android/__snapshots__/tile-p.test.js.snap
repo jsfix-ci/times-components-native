@@ -80,8 +80,8 @@ exports[`tile p without breakpoint 1`] = `
   >
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -100,8 +100,8 @@ exports[`tile p without breakpoint 1`] = `
     </Text>
     <Text
       accessibilityRole="header"
-      aria-level="4"
       allowFontScaling={false}
+      aria-level="4"
       style={
         Object {
           "color": "#696969",
@@ -125,6 +125,15 @@ exports[`tile p without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

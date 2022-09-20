@@ -38,8 +38,8 @@ exports[`tile ax landscape huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -65,7 +65,25 @@ exports[`tile ax landscape huge 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -107,8 +125,8 @@ exports[`tile ax landscape medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -134,7 +152,25 @@ exports[`tile ax landscape medium 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -176,8 +212,8 @@ exports[`tile ax landscape smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -203,7 +239,25 @@ exports[`tile ax landscape smallTablet 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -245,8 +299,8 @@ exports[`tile ax landscape wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -272,7 +326,25 @@ exports[`tile ax landscape wide 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -314,8 +386,8 @@ exports[`tile ax portrait huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -341,7 +413,25 @@ exports[`tile ax portrait huge 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -383,8 +473,8 @@ exports[`tile ax portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -410,7 +500,25 @@ exports[`tile ax portrait medium 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -452,8 +560,8 @@ exports[`tile ax portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -479,7 +587,25 @@ exports[`tile ax portrait smallTablet 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -521,8 +647,8 @@ exports[`tile ax portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#1D1D1B",
@@ -548,6 +674,24 @@ exports[`tile ax portrait wide 1`] = `
         ]
       }
     />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

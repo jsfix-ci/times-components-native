@@ -4,23 +4,33 @@ exports[`1. date and times publication 1`] = `
 <View
   style={
     Object {
+      "alignItems": "flex-start",
       "flexDirection": "row",
     }
   }
 >
   <Text
     allowFontScaling={false}
-    style={Object {}}
-    testID="date-time"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
   >
-    Saturday July 01 2017, 5.32am BST
-  </Text>
-  <Text
-    allowFontScaling={false}
-    style={Object {}}
-    testID="publication-name"
-  >
-    , The Times
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="date-time"
+    >
+      Saturday July 01 2017, 5.32am BST
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={Object {}}
+      testID="publication-name"
+    >
+      , The Times
+    </Text>
   </Text>
 </View>
 `;

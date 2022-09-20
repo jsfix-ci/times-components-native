@@ -67,8 +67,8 @@ exports[`tile g huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -95,6 +95,18 @@ exports[`tile g huge 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -166,8 +178,8 @@ exports[`tile g medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -194,6 +206,18 @@ exports[`tile g medium 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -263,8 +287,8 @@ exports[`tile g small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -291,6 +315,18 @@ exports[`tile g small 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -362,8 +398,8 @@ exports[`tile g smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -390,6 +426,18 @@ exports[`tile g smallTablet 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -461,8 +509,8 @@ exports[`tile g wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -489,6 +537,18 @@ exports[`tile g wide 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -560,8 +620,8 @@ exports[`tile g without breakpoint should be like small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -588,6 +648,18 @@ exports[`tile g without breakpoint should be like small 1`] = `
         />
       </View>
     </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "bottom": 10,
+          "marginBottom": -15,
+          "marginTop": "auto",
+          "paddingTop": 5,
+          "position": "relative",
+        }
+      }
+    />
   </View>
 </Link>
 `;

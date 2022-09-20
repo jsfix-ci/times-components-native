@@ -43,8 +43,8 @@ exports[`tile ba portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -68,6 +68,15 @@ exports[`tile ba portrait medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -117,8 +126,8 @@ exports[`tile ba portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -142,6 +151,15 @@ exports[`tile ba portrait smallTablet 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -191,8 +209,8 @@ exports[`tile ba portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -216,6 +234,15 @@ exports[`tile ba portrait wide 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

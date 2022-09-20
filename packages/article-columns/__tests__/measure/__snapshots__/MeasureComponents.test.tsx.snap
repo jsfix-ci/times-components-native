@@ -71,12 +71,10 @@ exports[`MeasureContent renders the content 1`] = `
     allowFontScaling={false}
     onTextLayout={[Function]}
     style={
-      Array [
-        Object {
-          "fontSize": 14,
-          "lineHeight": 18,
-        },
-      ]
+      Object {
+        "fontSize": 14,
+        "lineHeight": 18,
+      }
     }
     textBreakStrategy="simple"
   >

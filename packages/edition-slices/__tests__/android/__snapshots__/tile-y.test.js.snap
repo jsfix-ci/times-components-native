@@ -28,8 +28,8 @@ exports[`tile y landscape huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -76,6 +76,15 @@ exports[`tile y landscape huge 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -108,8 +117,8 @@ exports[`tile y landscape medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -156,6 +165,15 @@ exports[`tile y landscape medium 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -188,8 +206,8 @@ exports[`tile y landscape smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -236,6 +254,15 @@ exports[`tile y landscape smallTablet 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -268,8 +295,8 @@ exports[`tile y landscape wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -316,6 +343,15 @@ exports[`tile y landscape wide 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -348,8 +384,8 @@ exports[`tile y portrait huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -396,6 +432,15 @@ exports[`tile y portrait huge 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -428,8 +473,8 @@ exports[`tile y portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -476,6 +521,15 @@ exports[`tile y portrait medium 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -508,8 +562,8 @@ exports[`tile y portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -556,6 +610,15 @@ exports[`tile y portrait smallTablet 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;
@@ -588,8 +651,8 @@ exports[`tile y portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
-      aria-level="3"
       allowFontScaling={false}
+      aria-level="3"
       style={
         Object {
           "color": "#333333",
@@ -636,6 +699,15 @@ exports[`tile y portrait wide 1`] = `
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;

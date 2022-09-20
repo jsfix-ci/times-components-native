@@ -35,8 +35,8 @@ exports[`tile column with image bottom huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -84,6 +84,15 @@ exports[`tile column with image bottom huge 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -125,8 +134,8 @@ exports[`tile column with image bottom medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -149,6 +158,15 @@ exports[`tile column with image bottom medium 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -192,8 +210,8 @@ exports[`tile column with image bottom shows an image 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -216,6 +234,15 @@ exports[`tile column with image bottom shows an image 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -259,8 +286,8 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -283,6 +310,15 @@ exports[`tile column with image bottom shows portrait image when in portrait wid
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -336,8 +372,8 @@ exports[`tile column with image bottom smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -360,6 +396,15 @@ exports[`tile column with image bottom smallTablet 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -403,8 +448,8 @@ exports[`tile column with image bottom wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
-          aria-level="3"
           allowFontScaling={false}
+          aria-level="3"
           style={
             Object {
               "color": "#333333",
@@ -452,6 +497,15 @@ exports[`tile column with image bottom wide 1`] = `
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>

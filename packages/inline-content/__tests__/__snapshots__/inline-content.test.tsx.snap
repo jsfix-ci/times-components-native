@@ -78,11 +78,9 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text
-                  allowFontScaling={false}
-                >
+                <Txt>
                   article content
-                </Text>,
+                </Txt>,
               ]
             }
             attributes={
@@ -93,8 +91,7 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
             narrowContent={false}
             style={Object {}}
           >
-            <Text
-              allowFontScaling={false}
+            <Txt
               selectable={true}
               style={
                 Object {
@@ -106,12 +103,10 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
               }
               testID="paragraph"
             >
-              <Text
-                allowFontScaling={false}
-              >
+              <Txt>
                 article content
-              </Text>
-            </Text>
+              </Txt>
+            </Txt>
           </ArticleParagraphWrapper>
         </ErrorBoundary>
       </Gutter>
@@ -296,11 +291,9 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text
-                  allowFontScaling={false}
-                >
+                <Txt>
                   article content
-                </Text>,
+                </Txt>,
               ]
             }
             attributes={
@@ -311,8 +304,7 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
             narrowContent={false}
             style={Object {}}
           >
-            <Text
-              allowFontScaling={false}
+            <Txt
               selectable={true}
               style={
                 Object {
@@ -324,12 +316,10 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
               }
               testID="paragraph"
             >
-              <Text
-                allowFontScaling={false}
-              >
+              <Txt>
                 article content
-              </Text>
-            </Text>
+              </Txt>
+            </Txt>
           </ArticleParagraphWrapper>
         </ErrorBoundary>
       </Gutter>
@@ -475,11 +465,9 @@ exports[`InlineContent image renders content and inline image via a render-prop 
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text
-              allowFontScaling={false}
-            >
+            <Txt>
               article content
-            </Text>,
+            </Txt>,
           ]
         }
         attributes={
@@ -490,8 +478,7 @@ exports[`InlineContent image renders content and inline image via a render-prop 
         narrowContent={false}
         style={Object {}}
       >
-        <Text
-          allowFontScaling={false}
+        <Txt
           selectable={true}
           style={
             Object {
@@ -503,12 +490,10 @@ exports[`InlineContent image renders content and inline image via a render-prop 
           }
           testID="paragraph"
         >
-          <Text
-            allowFontScaling={false}
-          >
+          <Txt>
             article content
-          </Text>
-        </Text>
+          </Txt>
+        </Txt>
       </ArticleParagraphWrapper>
     </ErrorBoundary>
   </Gutter>
@@ -631,11 +616,9 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text
-              allowFontScaling={false}
-            >
+            <Txt>
               article content
-            </Text>,
+            </Txt>,
           ]
         }
         attributes={
@@ -646,8 +629,7 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
         narrowContent={false}
         style={Object {}}
       >
-        <Text
-          allowFontScaling={false}
+        <Txt
           selectable={true}
           style={
             Object {
@@ -659,12 +641,10 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
           }
           testID="paragraph"
         >
-          <Text
-            allowFontScaling={false}
-          >
+          <Txt>
             article content
-          </Text>
-        </Text>
+          </Txt>
+        </Txt>
       </ArticleParagraphWrapper>
     </ErrorBoundary>
   </Gutter>
