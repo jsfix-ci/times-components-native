@@ -42,7 +42,7 @@ export default {
           link(key, attributes, renderedChildren) {
             return {
               element: (
-                <Text href={attributes?.href || ''} key={key}>
+                <Text href={attributes?.href || ""} key={key}>
                   {renderedChildren}
                 </Text>
               ),

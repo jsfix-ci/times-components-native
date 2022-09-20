@@ -11,6 +11,6 @@ describe("safeDecodeURIComponent", () => {
     expect(safeDecodeURIComponent(null)).toEqual("null");
     //@ts-ignore test
     expect(safeDecodeURIComponent()).toEqual("undefined");
-    expect(safeDecodeURIComponent('%%%%32324')).toEqual("");
+    expect(safeDecodeURIComponent("%%%%32324")).toEqual("");
   });
 });
