@@ -1,10 +1,3 @@
-import { getAdSizes, getMaxSizes, getSlotConfig } from "./generate-config";
-import { prebidConfig, getPrebidSlotConfig } from "./prebid-config";
+import { getSlotConfig } from "./generate-config";
 
-export {
-  getAdSizes,
-  getMaxSizes,
-  getSlotConfig,
-  prebidConfig,
-  getPrebidSlotConfig,
-};
+export { getSlotConfig };

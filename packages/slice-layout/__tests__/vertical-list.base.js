@@ -36,7 +36,6 @@ export default (renderComponent) => {
             ]}
           />,
         );
-
         expect(wrapper).toMatchSnapshot();
       },
     },

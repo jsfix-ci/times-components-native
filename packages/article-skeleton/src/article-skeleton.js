@@ -74,6 +74,7 @@ const MemoisedArticle = React.memo((props) => {
    *    [elementName as string]: (tree, key, indx) => JSX.Element
    * }
    */
+
   const articleBodyRowRenderers = getArticleBodyRowRenderers({
     ...props,
     images,

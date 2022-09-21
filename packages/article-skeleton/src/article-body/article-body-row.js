@@ -148,14 +148,14 @@ const ArticleBodyRow = ({
         </ArticleParagraphWrapper>
       );
     },
-    ad(key, attributes) {
+    ad(key) {
       return (
         <Ad
-          key={key}
           adConfig={adConfig}
+          keyId={key}
+          key={key}
           narrowContent={narrowContent}
-          slotName="ad-singleMPU"
-          {...attributes}
+          slotName="ad-inarticle-mpu"
         />
       );
     },

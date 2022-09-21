@@ -275,7 +275,6 @@ describe("The showcase converter should", () => {
     const event = {
       test: "test",
     };
-
     const showcase = {
       children: [
         {

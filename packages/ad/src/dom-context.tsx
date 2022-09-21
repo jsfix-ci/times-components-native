@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import {
-  View,
-  Platform,
   Dimensions,
-  NativeModules,
   NativeEventEmitter,
+  NativeModules,
+  Platform,
+  View,
 } from "react-native";
 import {
   WebView,
   WebViewMessageEvent,
   WebViewNavigation,
 } from "react-native-webview";
+import { isTablet } from "react-native-device-info";
 import { Viewport } from "@skele/components";
-import styles, { calculateViewportVisible } from "./styles/index";
+import { calculateViewportVisible } from "./styles/index";
 import { webviewEventCallbackSetupAsString } from "./utils/webview-event-callback-setup";
 import {
   hasDifferentOrigin,
@@ -20,18 +21,18 @@ import {
   openURLInBrowser,
   urlHasBridgePrefix,
 } from "./utils/dom-context-utils";
-import logger from "./utils/logger";
+
+const config = NativeModules.ReactConfig;
 
 const { width: screenWidth } = Dimensions.get("screen");
 
 interface DomContextType {
-  baseUrl?: string;
-  onRenderComplete?: () => null;
-  onRenderError?: () => null;
-  data?: any;
-  isInline?: boolean;
-  width?: number;
-  height?: number;
+  baseUrl: string;
+  height: number;
+  keyId?: string;
+  sectionName: string;
+  slotName?: string;
+  width: number;
 }
 
 const { ArticleEvents } = NativeModules;
@@ -41,30 +42,39 @@ const ViewportAwareView = Viewport.Aware(View);
 
 const DOMContext = (props: DomContextType) => {
   const {
-    height: heightProp = 0,
-    baseUrl = "",
-    onRenderComplete = () => null,
-    onRenderError = () => null,
-    data = {},
-    isInline = true,
+    keyId = "",
+    height,
+    baseUrl,
+    sectionName,
+    slotName = "ad-inarticle-mpu",
     width = screenWidth,
   } = props;
 
+  const getSlotId = () => {
+    const slotId = slotName;
+    switch (Number(keyId)) {
+      case 12:
+        return `${slotId}-1`;
+      case 18:
+        return `${slotId}-2`;
+      default:
+        return slotId;
+    }
+  };
+  const slotId = getSlotId();
   const webViewRef = React.useRef<WebView>(null);
-
-  const adHeight = heightProp
-    ? heightProp + Number(styles.containerAdditionalHeight.height)
-    : 0;
-
-  const [loaded, setLoaded] = useState(false);
-  const [height, setHeight] = useState(adHeight);
+  const [loadAd, setLoadAd] = useState(false);
+  const [adHeight, setAdHeight] = useState(0);
+  const [padding, setPadding] = useState(0);
+  const networkId = config.adNetworkId;
+  const adUnit =
+    Platform.OS === "ios" ? "thetimes.mob.ios" : "thetimes.mob.android";
 
   useEffect(() => {
     const onArticleDisappearEventsListener = articleEventEmitter.addListener(
       "onArticleDisappear",
       onArticleDisappear,
     );
-
     return onArticleDisappearEventsListener.remove;
   }, []);
 
@@ -74,13 +84,10 @@ const DOMContext = (props: DomContextType) => {
    * causing ads to continue playing when un-muted
    */
   const onArticleDisappear = () => {
-    if (webViewRef.current && Platform.OS === "ios") {
+    if (webViewRef.current) {
       webViewRef.current.injectJavaScript(`
-        /**
-         *  destroySlots is added in the HTML provided to the webview
-         *  used to destroy any live adverts post swiping away from current article
-         */ 
-        destroySlots();
+         newsUkAdLibrary.dynamicRemoveSlotRender("${slotId}")
+         .then(newsUkAdLibrary.dynamicSlotRender(newsUkAdLibrary.getSlotConfigsById("${slotId}")));
         true;
       `);
     }
@@ -98,64 +105,29 @@ const DOMContext = (props: DomContextType) => {
     }
   };
 
-  /**
-   * Handles data transfer from the advert webview using eventCallback function calls,
-   * eventCallback calls can be found in ad-init.js
-   */
-  const handleMessageEvent = (e: WebViewMessageEvent) => {
-    const jsonData = e.nativeEvent.data;
-    let data;
+  const handleMessageEvent = (event: WebViewMessageEvent) => {
     try {
-      data = JSON.parse(jsonData);
-    } catch (error) {
-      return;
-    }
-    const { type, detail } = data;
-
-    // Don't process postMessage events from 3rd party scripts
-    if (jsonData.indexOf("isTngMessage") === -1) {
-      return;
-    }
-
-    switch (type) {
-      case "renderFailed":
-        onRenderError();
-        break;
-      case "renderComplete":
-        onRenderComplete();
-        break;
-      case "setAdWebViewHeight": {
-        const adHeight = detail.height;
-        const webViewHeight =
-          adHeight > 1 ? adHeight + styles.containerAdditionalHeight.height : 0;
-
-        setHeight(isInline ? adHeight : webViewHeight);
-        break;
+      const data = JSON.parse(event.nativeEvent.data);
+      switch (data.type) {
+        case "slotOnload":
+          setAdHeight(height);
+          setPadding(20);
+          return;
+        default:
+          return;
       }
-      default:
-        if (data.debug) logger(type, detail);
+    } catch (error) {
+      console.log("AD JSON ERROR: ", error);
+      return;
     }
-  };
-
-  /**
-   * Used by viewport aware component to allow the advert in
-   * the webview to render for android platforms.
-   *
-   * Currently doesn't work with its cause being the android scroll view wrapper.
-   * Read more here - https://nidigitalsolutions.jira.com/browse/TNLT-9065
-   */
-  const loadAd = () => {
-    setLoaded(true);
   };
 
   const outViewport = () => {
     // Logic for pausing OutStream ads which are visible on ios only
     if (webViewRef.current && Platform.OS === "ios") {
-      const { networkId, adUnit, section } = data;
-
       // ID for iframe is configured by Google Ad Manager(GAM)
       webViewRef.current.injectJavaScript(`
-        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${sectionName}_0');
 
         if (frame) {
           frame.contentWindow.postMessage({target: 'nexd', action: 'pause'});
@@ -169,11 +141,9 @@ const DOMContext = (props: DomContextType) => {
   const inViewport = () => {
     // Logic for playing OutStream ads which are visible on ios only
     if (webViewRef.current && Platform.OS === "ios") {
-      const { networkId, adUnit, section } = data;
-
       // ID for iframe is configured by Google Ad Manager(GAM)
       webViewRef.current.injectJavaScript(`
-        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${section}_0');
+        var frame = document.getElementById('google_ads_iframe_/${networkId}/${adUnit}/${sectionName}_0');
 
         if (frame) {
           frame.contentWindow.postMessage({target: 'nexd', action: 'resume'});
@@ -201,18 +171,17 @@ const DOMContext = (props: DomContextType) => {
       window.nuk = {
         "ads": {
           "blocked": false,
-          "commercialSection": "${data.pageTargeting.section}",
-          "pageTitle": "",
+          "commercialSection": ${sectionName},
           "tuples": {
-            "cont": "",
+            "cont": "${slotName === "ad-section" ? "sec" : "art"}",
             "path": "",
-            "cpn": "${String(authId)}"
+            "cpn": "${String(authId)}",
+            "device": ${isTablet() ? "tablet" : "mobile"},
           },
-          "user": {
-            "isLoggedIn": true,
-          }
         },
-        
+        "user": {
+          "isLoggedIn": true,
+        }
       };
     </script>
     <script>
@@ -240,19 +209,36 @@ const DOMContext = (props: DomContextType) => {
     </script>
   </head>
   <body>
-  <script>
-  </script>
-      <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
-        <div id="${data.slotName}"></div>
+      <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${padding}px; padding-bottom: ${padding}px;">
+        <div id="${slotId}"></div>
       </div>
-      <script src="https://ads.thetimes.co.uk/ads.times_ios.min.js " defer=""></script>
+      <script src="${
+        Platform.OS === "ios"
+          ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/revert-1043-revert-1037-SCB-2046_additional_ad_slots_tnl_ios/ads.times_ios.min.js"
+          : "https://ads.thetimes.co.uk/ads.times_android.min.js"
+      }" ></script>
+      <script defer>
+        function checkForGoogleTag() {
+          if (window.googletag && window.googletag.pubadsReady) {
+            window.googletag.pubads().addEventListener('slotOnload', function(event) {
+              window.ReactNativeWebView.postMessage('{"type":"slotOnload"}')
+            });
+            return;
+          }
+          window.setTimeout(checkForGoogleTag, 100);
+        }
+        checkForGoogleTag();
+      </script>
   </body>
 </html>
     `;
 
   return (
-    <ViewportAwareView onViewportEnter={loadAd} style={{ height, width }}>
-      {(Platform.OS === "ios" || loaded) && (
+    <ViewportAwareView
+      onViewportEnter={() => setLoadAd(true)}
+      style={{ height: adHeight + padding * 2, width }}
+    >
+      {loadAd && (
         <WebView
           cacheEnabled={false}
           cacheMode={"LOAD_NO_CACHE"}
@@ -265,14 +251,17 @@ const DOMContext = (props: DomContextType) => {
             Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
           }
           style={{
-            height,
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+            height: adHeight,
             width,
           }}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
         />
       )}
-      {height !== 0 && (
+      {adHeight !== 0 && (
         <ViewportAwareView
           onViewportEnter={inViewport}
           onViewportLeave={outViewport}
