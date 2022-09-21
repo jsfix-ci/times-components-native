@@ -61,7 +61,10 @@ class SectionPage extends Component {
   }
 
   componentDidMount() {
-    AppState.addEventListener("change", this.onAppStateChange);
+    this.appListener = AppState.addEventListener(
+      "change",
+      this.onAppStateChange,
+    );
     this.updateSASubscription = DeviceEventEmitter.addListener(
       "updateSavedArticles",
       this.syncAppData,
@@ -78,7 +81,7 @@ class SectionPage extends Component {
   }
 
   componentWillUnmount() {
-    AppState.removeEventListener("change", this.onAppStateChange);
+    this.appListener && this.appListener.remove();
     this.updateSASubscription.remove();
     this.updateSDSubscription.remove();
     this.updateRASubscription.remove();

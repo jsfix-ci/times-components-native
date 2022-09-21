@@ -1,7 +1,6 @@
 export * from "./src/screen";
 export * from "./src/strings";
 export * from "./src/uri";
-export * from "./src/dimensions-util";
 export * from "./src/subscript-superscript-mapper";
 export * from "./src/get-all-article-images";
 export * from "./src/is-template-with-lead-asset-in-gallery";
@@ -20,3 +19,5 @@ export { default as gqlRgbaToStyle } from "./src/gql-rgba-to-style";
 export { default as getSectionFromTiles } from "./src/get-section-from-tiles";
 export { default as appendToImageURL } from "./src/append-to-image-url";
 export { default as getAndroidNavHeight } from "./src/get-android-nav-height";
+
+// If you miss Dimensions check the new hook https://reactnative.dev/docs/0.68/usewindowdimensions
