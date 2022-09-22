@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  AppState,
-  DeviceEventEmitter,
-  NativeEventEmitter,
-  NativeModules,
-} from "react-native";
+import { AppState, DeviceEventEmitter, NativeModules } from "react-native";
 import PropTypes from "prop-types";
 
 import {
@@ -32,9 +27,6 @@ const {
   onPuzzleBarPress: () => null,
   onPuzzlePress: () => null,
 };
-
-const { ArticleEvents } = NativeModules;
-const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const onArticlePress = ({ id, isPuff = false }) =>
   onArticlePressBridge(id, isPuff);

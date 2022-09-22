@@ -7,7 +7,7 @@ function Txt({ children, style, ...rest }: React.PropsWithChildren<TextProps>) {
     const style = { ...styleObject };
     if (
       typeof style.fontSize === "number" &&
-      style.lineHeight === "number" &&
+      typeof style.lineHeight === "number" &&
       typeof fontScale === "number"
     ) {
       style.fontSize = style.fontSize * fontScale;

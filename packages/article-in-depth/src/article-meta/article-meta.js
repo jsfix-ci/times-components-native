@@ -31,11 +31,11 @@ const ArticleMeta = ({
                 ast={bylines}
                 color={sectionColour || colours.section.default}
                 onAuthorPress={onAuthorPress}
+                centered={isArticleTablet}
               />
             )}
           </Context.Consumer>
         </View>
-        {isArticleTablet && <View style={styles.separator} />}
       </Fragment>
     )}
     <View style={styles.meta}>

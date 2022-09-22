@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NativeEventEmitter, NativeModules, Platform } from "react-native";
+import { DeviceEventEmitter, NativeModules, Platform } from "react-native";
 import Article from "@times-components-native/article";
 import {
   ContextProviderWithDefaults,
@@ -13,9 +13,6 @@ import { RemoteConfigProvider } from "@times-components-native/remote-config";
 import Responsive from "@times-components-native/responsive";
 
 const { appVersion = "", environment = "prod" } = NativeModules.ReactConfig;
-const { ArticleEvents } = NativeModules;
-const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
-
 const {
   onArticlePress,
   onArticleRead,
@@ -82,13 +79,13 @@ const ArticleBase = ({
   };
 
   useEffect(() => {
-    articleEventEmitter.addListener("onFontScaleChanged", onFontScaleChange);
+    const fontChangeListener = DeviceEventEmitter.addListener(
+      "onFontScaleChanged",
+      onFontScaleChange,
+    );
 
     return () => {
-      articleEventEmitter.removeListener(
-        "onFontScaleChanged",
-        onFontScaleChange,
-      );
+      fontChangeListener.remove();
     };
   }, []);
 
