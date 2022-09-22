@@ -46,31 +46,4 @@ export default () => {
     setDimension({ height: 500, width: 1000 });
     expect(testInstance).toMatchSnapshot("after width update");
   });
-
-  it("addDimensionListener is called on mount", async () => {
-    jest.spyOn(Utils, "addDimensionsListener");
-
-    TestRenderer.create(
-      <Responsive>{(context) => JSON.stringify(context)}</Responsive>,
-    );
-
-    await delay(0);
-
-    TestRenderer.act(() => {
-      expect(Utils.addDimensionsListener).toBeCalled();
-    });
-  });
-
-  // it("removeDimensionListener is called on mount", () => {
-  //   jest.spyOn(Utils, "removeDimensionsListener");
-
-  //   let reactTestRenderer = TestRenderer.create(
-  //     <Responsive>{(context) => JSON.stringify(context)}</Responsive>,
-  //   );
-  //   reactTestRenderer.unmount();
-
-  //   TestRenderer.act(() => {
-  //     expect(Utils.removeDimensionsListener).toBeCalled();
-  //   });
-  // });
 };

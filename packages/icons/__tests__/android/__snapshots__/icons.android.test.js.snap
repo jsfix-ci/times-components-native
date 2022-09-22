@@ -1,371 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. closeicon renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-close"
-  bbHeight={28}
-  bbWidth={20}
-  focusable={false}
-  height={28}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 28,
-      "width": 20,
-    }
-  }
-  title="Close Icon"
-  vbHeight={28}
-  vbWidth={28}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="e47f4fab4bd751d2d3ea1eb7a66c492a"
-      fill={-1}
-      propList={
-        Array [
-          "fill",
-          "stroke",
-        ]
-      }
-      stroke={-1}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`2. closeroundicon renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
->
-  <RNSVGGroup
-    fill={null}
-    propList={
-      Array [
-        "fill",
-      ]
-    }
-  >
-    <RNSVGMask
-      height="24"
-      maskContentUnits={1}
-      maskTransform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-      maskUnits={1}
-      name="mask0"
-      width="24"
-      x="0"
-      y="0"
-    >
-      <RNSVGPath
-        d="cd67056d1c615108b0fd5958a48ba530"
-        fill={-1}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-      />
-    </RNSVGMask>
-    <RNSVGGroup
-      mask="mask0"
-    >
-      <RNSVGRect
-        fill={-1}
-        height="24"
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        width="24"
-        x={0}
-        y={0}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`3. deleteicon renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={13}
-  bbWidth={20}
-  focusable={false}
-  height={13}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 13,
-      "width": 20,
-    }
-  }
-  vbHeight={13}
-  vbWidth={13}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={null}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    >
-      <RNSVGGroup
-        propList={
-          Array [
-            "stroke",
-          ]
-        }
-        stroke={-16777216}
-      >
-        <RNSVGGroup>
-          <RNSVGGroup>
-            <RNSVGGroup>
-              <RNSVGPath
-                d="82883c468bb29880d6174ba97462d6b5"
-                matrix={
-                  Array [
-                    -1,
-                    0,
-                    0,
-                    1,
-                    13,
-                    0,
-                  ]
-                }
-              />
-              <RNSVGPath
-                d="82883c468bb29880d6174ba97462d6b5"
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-              />
-            </RNSVGGroup>
-          </RNSVGGroup>
-        </RNSVGGroup>
-      </RNSVGGroup>
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`4. glassmagnifiericon renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
->
-  <RNSVGGroup
-    fill={null}
-    propList={
-      Array [
-        "fill",
-      ]
-    }
-  >
-    <RNSVGMask
-      height="24"
-      maskContentUnits={1}
-      maskTransform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-      maskUnits={1}
-      name="mask0"
-      width="24"
-      x="0"
-      y="0"
-    >
-      <RNSVGPath
-        d="2c41920950a9a5d401dd544b3c729ca3"
-        fill={-1}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-      />
-    </RNSVGMask>
-    <RNSVGGroup
-      mask="mask0"
-    >
-      <RNSVGRect
-        fill={-1}
-        height="24"
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        width="24"
-        x={0}
-        y={0}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`5. iconcheckmark renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={15}
-  bbWidth={20}
-  focusable={false}
-  height={15}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 15,
-      "width": 20,
-    }
-  }
-  vbHeight={512}
-  vbWidth={512}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="8b88ef71fa40ed4105a0ce4099357cf6"
-      fill={null}
-      propList={
-        Array [
-          "fill",
-          "stroke",
-          "strokeWidth",
-          "strokeLinecap",
-          "strokeMiterlimit",
-        ]
-      }
-      stroke={-1728053248}
-      strokeLinecap={2}
-      strokeMiterlimit={10}
-      strokeWidth="44"
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`6. iconcopylink renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-copy-link"
-  bbHeight={15}
-  bbWidth={20}
-  focusable={false}
-  height={15}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 15,
-      "width": 20,
-    }
-  }
-  title="IconCopyLink"
-  vbHeight={15}
-  vbWidth={15}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="9caedb2f218a37cd4660f2ab42e9b771"
-      fill={-9868951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`7. iconfacebook renders 1`] = `
+exports[`1. iconfacebook renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-facebook"
@@ -405,7 +40,7 @@ exports[`7. iconfacebook renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`8. iconforwardarrow renders 1`] = `
+exports[`2. iconforwardarrow renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-forward-arrow"
@@ -441,7 +76,7 @@ exports[`8. iconforwardarrow renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`9. iconnointernet renders 1`] = `
+exports[`3. iconnointernet renders 1`] = `
 <RNSVGSvgView
   bbHeight={13}
   bbWidth={20}
@@ -526,7 +161,80 @@ exports[`9. iconnointernet renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`10. iconsavebookmark renders 1`] = `
+exports[`4. iconstar renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-save-star"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="IconStar"
+  vbHeight={18}
+  vbWidth={18}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="20db890d0ec5651ed550568cd37b5875"
+      fill={-16750951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`5. iconcopylink renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-copy-link"
+  bbHeight={15}
+  bbWidth={20}
+  focusable={false}
+  height={15}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 15,
+      "width": 20,
+    }
+  }
+  title="IconCopyLink"
+  vbHeight={15}
+  vbWidth={15}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="9caedb2f218a37cd4660f2ab42e9b771"
+      fill={-9868951}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`6. iconsavebookmark renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-save-bookmark"
@@ -566,41 +274,7 @@ exports[`10. iconsavebookmark renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`11. iconstar renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-save-star"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-    }
-  }
-  title="IconStar"
-  vbHeight={18}
-  vbWidth={18}
-  width={20}
->
-  <RNSVGGroup>
-    <RNSVGPath
-      d="20db890d0ec5651ed550568cd37b5875"
-      fill={-16750951}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`12. icontwitter renders 1`] = `
+exports[`7. icontwitter renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-twitter"
@@ -635,7 +309,7 @@ exports[`12. icontwitter renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video"
@@ -682,7 +356,7 @@ exports[`13. iconvideo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`14. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-video-360-player"
@@ -717,7 +391,118 @@ exports[`14. iconvideo360player renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`15. leftchevron renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="logo-the-sunday-times"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="TheSTLogo"
+  vbHeight={20}
+  vbWidth={29}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="0f4e958f2b4ff0e7612914c8ca56d8f6"
+      fill={-1}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`11. thetimeslogo renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="logo-the-times"
+  bbWidth={20}
+  focusable={false}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+    }
+  }
+  title="TheTimesLogo"
+  vbHeight={20}
+  vbWidth={20}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="9d34e249e9f10c48ae181fd7ef01d8e7"
+      fill={-1}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`12. closeicon renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-close"
+  bbHeight={28}
+  bbWidth={20}
+  focusable={false}
+  height={28}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 28,
+      "width": 20,
+    }
+  }
+  title="Close Icon"
+  vbHeight={28}
+  vbWidth={28}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="e47f4fab4bd751d2d3ea1eb7a66c492a"
+      fill={-1}
+      propList={
+        Array [
+          "fill",
+          "stroke",
+        ]
+      }
+      stroke={-1}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`13. closeroundicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -769,7 +554,7 @@ exports[`15. leftchevron renders 1`] = `
       y="0"
     >
       <RNSVGPath
-        d="eb7ae37f7126e506a57cb4857dd791e9"
+        d="cd67056d1c615108b0fd5958a48ba530"
         fill={-1}
         propList={
           Array [
@@ -798,7 +583,88 @@ exports[`15. leftchevron renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`16. rightorientedglassmagnifier renders 1`] = `
+exports[`14. glassmagnifiericon renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
+  focusable={false}
+  height="24"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
+    }
+  }
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
+>
+  <RNSVGGroup
+    fill={null}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+  >
+    <RNSVGMask
+      height="24"
+      maskContentUnits={1}
+      maskTransform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      maskUnits={1}
+      name="mask0"
+      width="24"
+      x="0"
+      y="0"
+    >
+      <RNSVGPath
+        d="2c41920950a9a5d401dd544b3c729ca3"
+        fill={-1}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      />
+    </RNSVGMask>
+    <RNSVGGroup
+      mask="mask0"
+    >
+      <RNSVGRect
+        fill={-1}
+        height="24"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width="24"
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`15. rightorientedglassmagnifier renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="20"
@@ -893,71 +759,205 @@ exports[`16. rightorientedglassmagnifier renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`17. thestlogo renders 1`] = `
+exports[`16. leftchevron renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  aria-label="logo-the-sunday-times"
-  bbWidth={20}
+  bbHeight="24"
+  bbWidth="24"
+  fill="none"
   focusable={false}
+  height="24"
   meetOrSlice={0}
   minX={0}
   minY={0}
-  role="img"
   style={
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "flex": 0,
+      "height": 24,
+      "width": 24,
     }
   }
-  title="TheSTLogo"
-  vbHeight={20}
-  vbWidth={29}
-  width={20}
+  vbHeight={24}
+  vbWidth={24}
+  width="24"
 >
-  <RNSVGGroup>
-    <RNSVGPath
-      d="0f4e958f2b4ff0e7612914c8ca56d8f6"
-      fill={-1}
-      propList={
+  <RNSVGGroup
+    fill={null}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+  >
+    <RNSVGMask
+      height="24"
+      maskContentUnits={1}
+      maskTransform={
         Array [
-          "fill",
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
         ]
       }
-    />
+      maskUnits={1}
+      name="mask0"
+      width="24"
+      x="0"
+      y="0"
+    >
+      <RNSVGPath
+        d="eb7ae37f7126e506a57cb4857dd791e9"
+        fill={-1}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      />
+    </RNSVGMask>
+    <RNSVGGroup
+      mask="mask0"
+    >
+      <RNSVGRect
+        fill={-1}
+        height="24"
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        width="24"
+        x={0}
+        y={0}
+      />
+    </RNSVGGroup>
   </RNSVGGroup>
 </RNSVGSvgView>
 `;
 
-exports[`18. thetimeslogo renders 1`] = `
+exports[`17. deleteicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  aria-label="logo-the-times"
+  bbHeight={13}
   bbWidth={20}
   focusable={false}
+  height={13}
   meetOrSlice={0}
   minX={0}
   minY={0}
-  role="img"
   style={
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "flex": 0,
+      "height": 13,
+      "width": 20,
     }
   }
-  title="TheTimesLogo"
-  vbHeight={20}
-  vbWidth={20}
+  vbHeight={13}
+  vbWidth={13}
   width={20}
 >
   <RNSVGGroup>
-    <RNSVGPath
-      d="9d34e249e9f10c48ae181fd7ef01d8e7"
-      fill={-1}
+    <RNSVGGroup
+      fill={null}
       propList={
         Array [
           "fill",
         ]
       }
+    >
+      <RNSVGGroup
+        propList={
+          Array [
+            "stroke",
+          ]
+        }
+        stroke={-16777216}
+      >
+        <RNSVGGroup>
+          <RNSVGGroup>
+            <RNSVGGroup>
+              <RNSVGPath
+                d="82883c468bb29880d6174ba97462d6b5"
+                matrix={
+                  Array [
+                    -1,
+                    0,
+                    0,
+                    1,
+                    13,
+                    0,
+                  ]
+                }
+              />
+              <RNSVGPath
+                d="82883c468bb29880d6174ba97462d6b5"
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              />
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`18. iconcheckmark renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight={15}
+  bbWidth={20}
+  focusable={false}
+  height={15}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 0,
+      "height": 15,
+      "width": 20,
+    }
+  }
+  vbHeight={512}
+  vbWidth={512}
+  width={20}
+>
+  <RNSVGGroup>
+    <RNSVGPath
+      d="8b88ef71fa40ed4105a0ce4099357cf6"
+      fill={null}
+      propList={
+        Array [
+          "fill",
+          "stroke",
+          "strokeWidth",
+          "strokeLinecap",
+          "strokeMiterlimit",
+        ]
+      }
+      stroke={-1728053248}
+      strokeLinecap={2}
+      strokeMiterlimit={10}
+      strokeWidth="44"
     />
   </RNSVGGroup>
 </RNSVGSvgView>

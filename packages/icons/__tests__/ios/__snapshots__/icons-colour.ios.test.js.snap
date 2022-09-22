@@ -1,16 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. closeicon renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={4294626014}
-      stroke={4294626014}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`1. iconfacebook renders with different colours 1`] = `
 <ARTShape
   fill={
@@ -26,27 +15,6 @@ exports[`1. iconfacebook renders with different colours 1`] = `
 />
 `;
 
-exports[`2. closeroundicon renders with different colours 1`] = `
-<RNSVGSvgView
-  fill="none"
->
-  <RNSVGGroup
-    fill={null}
-  >
-    <RNSVGMask>
-      <RNSVGPath
-        fill={4294967295}
-      />
-    </RNSVGMask>
-    <RNSVGGroup>
-      <RNSVGRect
-        fill={4294967295}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`2. iconforwardarrow renders with different colours 1`] = `
 <ARTShape
   fill={
@@ -60,29 +28,6 @@ exports[`2. iconforwardarrow renders with different colours 1`] = `
   }
   stroke={null}
 />
-`;
-
-exports[`3. deleteicon renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={null}
-    >
-      <RNSVGGroup
-        stroke={4278190080}
-      >
-        <RNSVGGroup>
-          <RNSVGGroup>
-            <RNSVGGroup>
-              <RNSVGPath />
-              <RNSVGPath />
-            </RNSVGGroup>
-          </RNSVGGroup>
-        </RNSVGGroup>
-      </RNSVGGroup>
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
 `;
 
 exports[`3. iconnointernet renders with different colours 1`] = `
@@ -107,44 +52,12 @@ exports[`3. iconnointernet renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`4. glassmagnifiericon renders with different colours 1`] = `
-<RNSVGSvgView
-  fill="none"
->
-  <RNSVGGroup
-    fill={null}
-  >
-    <RNSVGMask>
-      <RNSVGPath
-        fill={4294967295}
-      />
-    </RNSVGMask>
-    <RNSVGGroup>
-      <RNSVGRect
-        fill={4294967295}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`4. iconstar renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
     <RNSVGPath
       fill={4294626014}
       stroke={4290838510}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`5. iconcheckmark renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={null}
-      stroke={2566914048}
     />
   </RNSVGGroup>
 </RNSVGSvgView>
@@ -161,33 +74,7 @@ exports[`5. iconcopylink renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`6. iconcopylink renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={4294626014}
-      stroke={4290838510}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`6. iconsavebookmark renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
-`;
-
-exports[`7. iconfacebook renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -214,21 +101,6 @@ exports[`7. icontwitter renders with different colours 1`] = `
     ]
   }
   stroke="#c0ffee"
-/>
-`;
-
-exports[`8. iconforwardarrow renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={null}
 />
 `;
 
@@ -261,44 +133,7 @@ Array [
 ]
 `;
 
-exports[`9. iconnointernet renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGDefs>
-      <RNSVGPath />
-    </RNSVGDefs>
-    <RNSVGGroup
-      fill={null}
-    >
-      <RNSVGMask
-        fill={4294967295}
-      >
-        <RNSVGUse />
-      </RNSVGMask>
-      <RNSVGPath
-        fill={4281545523}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`9. iconvideo360player renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
-`;
-
-exports[`10. iconsavebookmark renders with different colours 1`] = `
 <ARTShape
   fill={
     Array [
@@ -328,17 +163,6 @@ exports[`10. thestlogo renders with different colours 1`] = `
 />
 `;
 
-exports[`11. iconstar renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGPath
-      fill={4294626014}
-      stroke={4290838510}
-    />
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`11. thetimeslogo renders with different colours 1`] = `
 <ARTShape
   fill={
@@ -365,21 +189,6 @@ exports[`12. closeicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`12. icontwitter renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
-`;
-
 exports[`13. closeroundicon renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
@@ -401,72 +210,7 @@ exports[`13. closeroundicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. iconvideo renders with different colours 1`] = `
-Array [
-  <ARTShape
-    fill={
-      Array [
-        0,
-        0.9803921568627451,
-        0.792156862745098,
-        0.8705882352941177,
-        1,
-      ]
-    }
-    stroke="#c0ffee"
-  />,
-  <ARTShape
-    fill={
-      Array [
-        0,
-        0.9803921568627451,
-        0.792156862745098,
-        0.8705882352941177,
-        1,
-      ]
-    }
-    stroke="#c0ffee"
-  />,
-]
-`;
-
 exports[`14. glassmagnifiericon renders with different colours 1`] = `
-<RNSVGSvgView
-  fill="none"
->
-  <RNSVGGroup
-    fill={null}
-  >
-    <RNSVGMask>
-      <RNSVGPath
-        fill={4294967295}
-      />
-    </RNSVGMask>
-    <RNSVGGroup>
-      <RNSVGRect
-        fill={4294967295}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
-exports[`14. iconvideo360player renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
-`;
-
-exports[`15. leftchevron renders with different colours 1`] = `
 <RNSVGSvgView
   fill="none"
 >
@@ -529,27 +273,6 @@ exports[`16. leftchevron renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`16. rightorientedglassmagnifier renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup>
-    <RNSVGGroup
-      fill={null}
-    >
-      <RNSVGGroup
-        stroke={4278190080}
-      >
-        <RNSVGGroup>
-          <RNSVGGroup>
-            <RNSVGCircle />
-            <RNSVGPath />
-          </RNSVGGroup>
-        </RNSVGGroup>
-      </RNSVGGroup>
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
-`;
-
 exports[`17. deleteicon renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
@@ -573,21 +296,6 @@ exports[`17. deleteicon renders with different colours 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`17. thestlogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
-`;
-
 exports[`18. iconcheckmark renders with different colours 1`] = `
 <RNSVGSvgView>
   <RNSVGGroup>
@@ -597,19 +305,4 @@ exports[`18. iconcheckmark renders with different colours 1`] = `
     />
   </RNSVGGroup>
 </RNSVGSvgView>
-`;
-
-exports[`18. thetimeslogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke="#c0ffee"
-/>
 `;

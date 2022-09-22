@@ -1,32 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. closeicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-close"
-  bbHeight={50}
-  bbWidth={28}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 28,
-    }
-  }
-  title="Close Icon"
-  vbHeight={28}
-  vbWidth={28}
-  width={28}
-/>
-`;
-
 exports[`1. iconfacebook sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
@@ -38,32 +11,6 @@ exports[`1. iconfacebook sets a width when height is set 1`] = `
 />
 `;
 
-exports[`2. closeroundicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
-/>
-`;
-
 exports[`2. iconforwardarrow sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
@@ -72,31 +19,6 @@ exports[`2. iconforwardarrow sets a width when height is set 1`] = `
       "width": 29.166666666666668,
     }
   }
-/>
-`;
-
-exports[`3. deleteicon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={50}
-  bbWidth={13}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 13,
-    }
-  }
-  vbHeight={13}
-  vbWidth={13}
-  width={13}
 />
 `;
 
@@ -116,32 +38,6 @@ exports[`3. iconnointernet sets a width when height is set 1`] = `
     }
   }
   width={16}
-/>
-`;
-
-exports[`4. glassmagnifiericon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
 />
 `;
 
@@ -172,59 +68,7 @@ exports[`4. iconstar sets a width when height is set 1`] = `
 />
 `;
 
-exports[`5. iconcheckmark sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight={50}
-  bbWidth={15}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 15,
-    }
-  }
-  vbHeight={512}
-  vbWidth={512}
-  width={15}
-/>
-`;
-
 exports[`5. iconcopylink sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-copy-link"
-  bbHeight={50}
-  bbWidth={15}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 15,
-    }
-  }
-  title="Copy link to clipboard"
-  vbHeight={15}
-  vbWidth={15}
-  width={15}
-/>
-`;
-
-exports[`6. iconcopylink sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-copy-link"
@@ -262,34 +106,12 @@ exports[`6. iconsavebookmark sets a width when height is set 1`] = `
 />
 `;
 
-exports[`7. iconfacebook sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 25,
-    }
-  }
-/>
-`;
-
 exports[`7. icontwitter sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
       "height": 50,
       "width": 62.5,
-    }
-  }
-/>
-`;
-
-exports[`8. iconforwardarrow sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 58.333333333333336,
-      "width": 29.166666666666668,
     }
   }
 />
@@ -306,42 +128,12 @@ exports[`8. iconvideo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`9. iconnointernet sets a width when height is set 1`] = `
-<RNSVGSvgView
-  bbHeight={50}
-  bbWidth={16}
-  focusable={false}
-  height={50}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 16,
-    }
-  }
-  width={16}
-/>
-`;
-
 exports[`9. iconvideo360player sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
       "height": 50,
       "width": 54,
-    }
-  }
-/>
-`;
-
-exports[`10. iconsavebookmark sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 16,
-      "width": 12,
     }
   }
 />
@@ -355,33 +147,6 @@ exports[`10. thestlogo sets a width when height is set 1`] = `
       "width": 50,
     }
   }
-/>
-`;
-
-exports[`11. iconstar sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  aria-label="icon-save-star"
-  bbHeight={50}
-  bbWidth={50}
-  focusable={false}
-  height={50}
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 50,
-      "width": 50,
-    }
-  }
-  title="Save star"
-  vbHeight={18}
-  vbWidth={18}
-  width={50}
 />
 `;
 
@@ -423,17 +188,6 @@ exports[`12. closeicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`12. icontwitter sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 62.5,
-    }
-  }
-/>
-`;
-
 exports[`13. closeroundicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
@@ -460,55 +214,7 @@ exports[`13. closeroundicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`13. iconvideo sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 85,
-    }
-  }
-/>
-`;
-
 exports[`14. glassmagnifiericon sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="24"
-  bbWidth="24"
-  fill="none"
-  focusable={false}
-  height="24"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 24,
-      "width": 24,
-    }
-  }
-  vbHeight={24}
-  vbWidth={24}
-  width="24"
-/>
-`;
-
-exports[`14. iconvideo360player sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 54,
-    }
-  }
-/>
-`;
-
-exports[`15. leftchevron sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="24"
@@ -585,31 +291,6 @@ exports[`16. leftchevron sets a width when height is set 1`] = `
 />
 `;
 
-exports[`16. rightorientedglassmagnifier sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
-  bbHeight="20"
-  bbWidth="22"
-  focusable={false}
-  height="20"
-  meetOrSlice={0}
-  minX={0}
-  minY={0}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "flex": 0,
-      "height": 20,
-      "width": 22,
-    }
-  }
-  vbHeight={18}
-  vbWidth={20}
-  width="22"
-/>
-`;
-
 exports[`17. deleteicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
@@ -635,17 +316,6 @@ exports[`17. deleteicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`17. thestlogo sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 34.48275862068965,
-      "width": 50,
-    }
-  }
-/>
-`;
-
 exports[`18. iconcheckmark sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
@@ -668,16 +338,5 @@ exports[`18. iconcheckmark sets a width when height is set 1`] = `
   vbHeight={512}
   vbWidth={512}
   width={15}
-/>
-`;
-
-exports[`18. thetimeslogo sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 50,
-      "width": 50,
-    }
-  }
 />
 `;
