@@ -5,7 +5,11 @@ import Context from "@times-components-native/context/src/context";
 function Txt({ children, style, ...rest }: React.PropsWithChildren<TextProps>) {
   const setFontSize = (styleObject: any, fontScale = 1) => {
     const style = { ...styleObject };
-    if (style.fontSize !== undefined && style.lineHeight !== undefined) {
+    if (
+      typeof style.fontSize === "number" &&
+      style.lineHeight === "number" &&
+      typeof fontScale === "number"
+    ) {
       style.fontSize = style.fontSize * fontScale;
       style.lineHeight = style.lineHeight * fontScale;
     }
