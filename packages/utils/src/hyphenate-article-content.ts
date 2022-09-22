@@ -26,7 +26,7 @@ const hyphenateContentItem = (contentItem: Markup) => {
 };
 
 export const hyphenateArticleContent = (content: Markup[]) => {
-  return content.map((contentItem) => {
+  return content.map(contentItem => {
     if (contentItem.name === "paragraph") {
       return hyphenateContentItem(contentItem);
     } else {

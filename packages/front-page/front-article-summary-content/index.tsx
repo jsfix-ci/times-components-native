@@ -36,7 +36,7 @@ const SummaryText: React.FC<SummaryTextProps> = ({
     </Text>
   ) : null;
 };
-const FrontArticleSummaryContent: React.FC<Props> = (props) => {
+const FrontArticleSummaryContent: React.FC<Props> = props => {
   const {
     contentHeight,
     contentWidth,

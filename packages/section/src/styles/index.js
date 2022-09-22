@@ -13,7 +13,7 @@ const separatorSpacingResolver = {
   [editionBreakpoints.huge]: spacing(22.6),
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   listItemContainer: {
     paddingHorizontal: spacing(2),
     paddingVertical: spacing(2),

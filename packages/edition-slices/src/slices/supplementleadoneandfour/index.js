@@ -112,7 +112,7 @@ const renderLandscape = (props, breakpoint, orientation) => {
   );
 };
 
-const SupplementLeadOneAndFour = (props) => {
+const SupplementLeadOneAndFour = props => {
   const { orientation } = useResponsiveContext();
 
   const renderPort = (breakpoint, orientation) =>

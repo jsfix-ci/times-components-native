@@ -12,7 +12,7 @@ jest.mock("@times-components-native/provider", () =>
   require("./mock-provider"),
 );
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "tracking information",

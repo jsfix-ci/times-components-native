@@ -7,7 +7,7 @@ import { TIMES_TEAL } from "./utils/colors";
 import * as ViewsIDs from "./navigation/ids";
 import ttf from "../fonts";
 
-Object.keys(ttf).forEach((fontName) => {
+Object.keys(ttf).forEach(fontName => {
   FontStorage.registerFont(fontName, (ttf as any)[fontName]);
 });
 

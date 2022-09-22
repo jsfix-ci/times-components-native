@@ -2,7 +2,7 @@ import { withTrackingContext } from "@times-components-native/tracking";
 import getHeadline from "./utils";
 import standardRoles from "./roles";
 
-export default (Component) =>
+export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ slice }) => {
       const { items, sliceName } = slice;

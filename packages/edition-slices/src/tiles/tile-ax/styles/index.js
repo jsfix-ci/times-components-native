@@ -32,7 +32,7 @@ const sharedHeadlineStyle = {
   color: colours.functional.brandColour,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     flex: 1,
     paddingHorizontal: spacing(2),

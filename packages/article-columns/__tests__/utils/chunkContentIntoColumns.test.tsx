@@ -19,11 +19,11 @@ const createTextWithNumberOfLines = (
   offset = 0,
 ): string =>
   range(numberOfLines)
-    .map((i) => `line${i + offset}`)
+    .map(i => `line${i + offset}`)
     .join("");
 
 const createLinesWithNumberOfLines = (numberOfLines: number): Line[] =>
-  range(numberOfLines).map((i) => ({ text: `line${i}` }));
+  range(numberOfLines).map(i => ({ text: `line${i}` }));
 
 const createParagraphWithText = (
   text: string,

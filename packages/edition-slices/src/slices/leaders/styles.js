@@ -94,4 +94,4 @@ const breakPointsStyles = {
   [editionBreakpoints.huge]: wideBreakpointStyles,
 };
 
-export default (breakpoint) => breakPointsStyles[breakpoint];
+export default breakpoint => breakPointsStyles[breakpoint];

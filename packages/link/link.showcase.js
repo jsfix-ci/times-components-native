@@ -4,7 +4,7 @@ import { CenteredDecorator } from "@times-components-native/storybook";
 import { colours } from "@times-components-native/styleguide";
 import Link, { TextLink } from "./src/link";
 
-const BigSquare = (props) => (
+const BigSquare = props => (
   <View
     style={{
       backgroundColor: colours.functional.backgroundSecondary,
@@ -71,7 +71,7 @@ export default {
     {
       component: (_, { action }) => (
         <Link
-          onPress={(e) => {
+          onPress={e => {
             e.preventDefault();
             action("onPress")(e);
           }}

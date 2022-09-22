@@ -9,9 +9,7 @@ import Context, {
 export default () => {
   it("article context with default values", () => {
     const testInstance = TestRenderer.create(
-      <Context.Consumer>
-        {(context) => JSON.stringify(context)}
-      </Context.Consumer>,
+      <Context.Consumer>{context => JSON.stringify(context)}</Context.Consumer>,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -23,7 +21,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <Context.Provider value={{ theme: { scale, sectionColour } }}>
         <Context.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </Context.Consumer>
       </Context.Provider>,
     );
@@ -34,7 +32,7 @@ export default () => {
   it("section context with default values", () => {
     const testInstance = TestRenderer.create(
       <SectionContext.Consumer>
-        {(context) => JSON.stringify(context)}
+        {context => JSON.stringify(context)}
       </SectionContext.Consumer>,
     );
 
@@ -55,7 +53,7 @@ export default () => {
         }}
       >
         <SectionContext.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </SectionContext.Consumer>
       </SectionContext.Provider>,
     );
@@ -72,7 +70,7 @@ export default () => {
           value={{ theme: { scale, sectionColour } }}
         >
           <Context.Consumer>
-            {(context) => JSON.stringify(context)}
+            {context => JSON.stringify(context)}
           </Context.Consumer>
         </ContextProviderWithDefaults>,
       );

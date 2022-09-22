@@ -1,6 +1,6 @@
 import React from "react";
-import { TouchableNativeFeedback, View, } from "react-native";
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+import { TouchableNativeFeedback, View } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 
 const Link = ({ children, linkStyle, onPress, disabled }) => (

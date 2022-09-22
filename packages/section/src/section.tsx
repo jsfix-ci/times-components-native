@@ -53,7 +53,7 @@ interface Props {
   puzzlesMetaData?: TPuzzleMetaData[];
 }
 
-const Section: FC<Props> = (props) => {
+const Section: FC<Props> = props => {
   const {
     adConfig,
     onArticlePress,
@@ -80,7 +80,7 @@ const Section: FC<Props> = (props) => {
     return sectionEventsListener.remove;
   }, []);
 
-  const onViewableItemsChanged = useCallback((info) => {
+  const onViewableItemsChanged = useCallback(info => {
     if (!onViewed || !info.changed || !info.changed.length) return [];
 
     return info.changed
@@ -103,7 +103,7 @@ const Section: FC<Props> = (props) => {
   }: any) => {
     return (
       <View
-        onLayout={(event) => {
+        onLayout={event => {
           sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
         }}
         style={sliceStyles.sliceContainer}
@@ -191,16 +191,16 @@ const Section: FC<Props> = (props) => {
   return (
     <Viewport.Tracker>
       <FlatList
-        ref={(ref) => (flatListRef.current = ref)}
+        ref={ref => (flatListRef.current = ref)}
         contentContainerStyle={
           isTablet && isPuzzle && styles.additionalContainerPadding
         }
         removeClippedSubviews
         data={data}
-        ItemSeparatorComponent={(leadingItem) =>
+        ItemSeparatorComponent={leadingItem =>
           renderItemSeparator(isPuzzle)(leadingItem, editionBreakpoint)
         }
-        keyExtractor={(item) => item.elementId}
+        keyExtractor={item => item.elementId}
         ListHeaderComponent={getHeaderComponent(isPuzzle, isMagazine)}
         nestedScrollEnabled
         onViewableItemsChanged={onViewed ? onViewableItemsChanged : null}

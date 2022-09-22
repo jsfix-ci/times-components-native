@@ -127,7 +127,7 @@ class RelatedArticleItem extends Component {
               content={
                 showSummary && (
                   <View style={summaryStyle}>
-                    {summaryLengths.map((item) => {
+                    {summaryLengths.map(item => {
                       const summaryClassSuffix = `${item}Class`;
                       const summaryClass = summaryType
                         ? `${summaryType}Summary`

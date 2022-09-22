@@ -6,7 +6,7 @@ import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import MessageBar from "../src/message-bar";
 
-export default (animate) => [
+export default animate => [
   {
     name: "renders correctly",
     test: async () => {

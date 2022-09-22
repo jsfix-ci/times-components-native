@@ -18,7 +18,7 @@ jest.mock(
       }
     };
 
-    const setIsTablet = (isTablet) =>
+    const setIsTablet = isTablet =>
       setDimension(
         isTablet
           ? {

@@ -12,7 +12,7 @@ import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles";
 import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles";
 import draftStandard3RelatedArticlesFixture from "./fixtures/standard/3-draft-article.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

@@ -65,5 +65,5 @@ const stylesResolver = {
   [editionBreakpoints.huge]: wideBreakpointStyles,
 };
 
-export default (breakpoint) =>
+export default breakpoint =>
   Object.assign(smallBreakpointStyles, stylesResolver[breakpoint]);

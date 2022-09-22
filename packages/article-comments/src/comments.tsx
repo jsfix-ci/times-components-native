@@ -53,7 +53,7 @@ const Comments: FC<CommentsProps> = ({
             <Button
               fontSize={fontFactory.fontSize}
               lineHeight={fontFactory.lineHeight}
-              onPress={(e) => onCommentsPress(e, { articleId, url })}
+              onPress={e => onCommentsPress(e, { articleId, url })}
               style={styles.button}
               title={commentCount > 0 ? "View comments" : "Post a comment"}
             />

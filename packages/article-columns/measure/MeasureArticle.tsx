@@ -23,7 +23,7 @@ const allContentMeasured = (
   lines: { [key: string]: Line[] },
 ) => {
   return (
-    contentToMeasure.filter((c) => heights[c.id!] && lines[c.id!]).length ===
+    contentToMeasure.filter(c => heights[c.id!] && lines[c.id!]).length ===
     contentToMeasure.length
   );
 };
@@ -52,7 +52,7 @@ export const InnerMeasureArticle: React.FC<
     <ScrollView style={styles.renderOffscreen}>
       <MeasureByline columnParameters={columnParameters} bylines={bylines} />
       <View style={{ width: columnParameters.columnWidth }}>
-        {articleContents.map((content) => (
+        {articleContents.map(content => (
           <MeasureContent
             key={`ContentMeasuringView:${content.id}`}
             style={style}
@@ -65,7 +65,7 @@ export const InnerMeasureArticle: React.FC<
 };
 
 /* istanbul ignore next */
-export const MeasureArticle: React.FC<Props> = (props) => {
+export const MeasureArticle: React.FC<Props> = props => {
   const [measurementState, measurementDispatch] = useReducer(
     reducer,
     initialState,

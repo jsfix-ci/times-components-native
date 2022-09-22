@@ -87,7 +87,7 @@ const fonts = [
 
 const download = (source, dest) =>
   fetch(source).then(
-    (res) =>
+    res =>
       new Promise((resolve, reject) => {
         const stream = fs.createWriteStream(dest);
 
@@ -101,7 +101,7 @@ const download = (source, dest) =>
 const generate = (file, fontName, fontFamily) =>
   exec(
     `fontforge -lang=ff -c 'Open($1); SetFondName("${fontFamily}"); SetFontNames("${fontName}", "${fontFamily}", "${fontName}"); Generate("${file}");' ${file}`,
-  ).catch((e) => console.error(e)); // eslint-disable-line no-console
+  ).catch(e => console.error(e)); // eslint-disable-line no-console
 
 fs.promises.mkdir(fontDir, { recursive: true }).then(() =>
   Promise.all(

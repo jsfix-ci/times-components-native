@@ -6,7 +6,7 @@ import { TileAJ, TileAK } from "./src/tiles";
 
 const puzzle = mockPuzzleSlice();
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

@@ -3,13 +3,13 @@ import { Group } from "@react-native-community/art";
 import PropTypes from "prop-types";
 
 const G = ({ fill, stroke, strokeWidth, opacity, children }) => {
-  const onlyAssignedProps = (props) => (key) => props[key] !== null;
-  const reconstructProps = (props) => (obj, key) => ({
+  const onlyAssignedProps = props => key => props[key] !== null;
+  const reconstructProps = props => (obj, key) => ({
     [key]: props[key],
     ...obj,
   });
 
-  const childrenWithProps = React.Children.map(children, (child) => {
+  const childrenWithProps = React.Children.map(children, child => {
     const originalProps = child.props;
     const cleanProps = Object.keys(originalProps)
       .filter(onlyAssignedProps(originalProps))

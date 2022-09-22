@@ -42,7 +42,7 @@ class CardContent extends Component {
       showImage,
     } = this.props;
 
-    const renderImage = (isArticleTablet) => {
+    const renderImage = isArticleTablet => {
       if (!showImage) return null;
 
       return (

@@ -17,7 +17,7 @@ import { scales, themeFactory } from "@times-components-native/styleguide";
 import storybookReporter from "@times-components-native/tealium-utils";
 import Article from "./src/article";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -96,7 +96,7 @@ export const makeArticleConfiguration = ({
   return mask;
 };
 
-const makeArticle = (configuration) => (article) => {
+const makeArticle = configuration => article => {
   const configuredArticle = { ...article };
   const extraContent = [];
 
@@ -170,7 +170,7 @@ class ArticleConfigurator extends Component {
           id,
         }),
       }),
-    ).then((mocks) => this.setState({ mocks }));
+    ).then(mocks => this.setState({ mocks }));
   }
 
   componentDidUpdate(prevProps) {
@@ -189,7 +189,7 @@ class ArticleConfigurator extends Component {
                 id,
               }),
             }),
-          ).then((mocks) => this.setState({ mocks, reRendering: false })),
+          ).then(mocks => this.setState({ mocks, reRendering: false })),
       );
     }
   }
@@ -225,9 +225,7 @@ const renderArticle = ({
       const data = {
         ...article,
         backgroundColour: inDepthBackgroundColour,
-        descriptionMarkup: [
-          article.content.find((m) => m.name === "paragraph"),
-        ],
+        descriptionMarkup: [article.content.find(m => m.name === "paragraph")],
         template,
         textColour: inDepthTextColour,
         section,
@@ -278,10 +276,9 @@ const renderArticle = ({
   </ArticleProvider>
 );
 
-const selectScales = (select) => select("Scale", scales, scales.medium);
-const selectSection = (select) => select("Section", sections, "News");
-const selectTemplate = (select) =>
-  select("Template", templates, "mainstandard");
+const selectScales = select => select("Scale", scales, scales.medium);
+const selectSection = select => select("Section", sections, "News");
+const selectTemplate = select => select("Template", templates, "mainstandard");
 
 const renderArticleConfig = ({
   boolean,

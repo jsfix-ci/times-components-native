@@ -39,7 +39,7 @@ export default () => {
           <ArticleTopics onPress={onPress} topics={topicData} />,
         );
 
-        const [link] = testInstance.root.findAll((node) => node.type === Link);
+        const [link] = testInstance.root.findAll(node => node.type === Link);
 
         link.props.onPress("event");
 
@@ -63,7 +63,7 @@ export default () => {
           />,
         );
 
-        const [link] = testInstance.root.findAll((node) => node.type === Link);
+        const [link] = testInstance.root.findAll(node => node.type === Link);
 
         link.props.onPress("event");
 

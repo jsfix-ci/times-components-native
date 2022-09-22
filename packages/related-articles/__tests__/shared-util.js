@@ -18,7 +18,7 @@ export const hasVideoTests = util.hasVideoTests;
 
 export const noShortHeadlineTests = util.noShortHeadlineTests;
 
-export const oneArticleTests = util.oneArticleTests((fixture) => [
+export const oneArticleTests = util.oneArticleTests(fixture => [
   {
     name: "callback triggered on related article press",
     test() {

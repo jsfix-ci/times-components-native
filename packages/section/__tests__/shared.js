@@ -30,7 +30,7 @@ jest.mock("@times-components-native/responsive", () => ({
 jest.mock("../../edition-slices/src/slices", () => {
   const sliceMap = jest.requireActual("../../edition-slices/src/slices");
   const slicesMock = {};
-  Object.keys(sliceMap).forEach((key) => {
+  Object.keys(sliceMap).forEach(key => {
     slicesMock[key] = key;
   });
   return slicesMock;

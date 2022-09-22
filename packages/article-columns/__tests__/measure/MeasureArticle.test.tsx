@@ -68,7 +68,7 @@ describe("MeasureArticle", () => {
         columnParameters={columnParameters}
         style={style}
         articleContents={[paragraphA]}
-        renderMeasuredContents={(articleMeasurements) => (
+        renderMeasuredContents={articleMeasurements => (
           <CaptureContents articleMeasurements={articleMeasurements} />
         )}
         measurementState={{

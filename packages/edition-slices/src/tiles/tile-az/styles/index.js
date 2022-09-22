@@ -23,7 +23,7 @@ const horizontalPaddingResolver = {
   [editionBreakpoints.wide]: spacing(28),
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     flex: 1,
     borderBottomWidth: 1,

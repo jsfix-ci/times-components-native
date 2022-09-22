@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import { setupInlineContent } from "../../src/body-utils/setupInlineContent";
 
-const createParagraph = (textValue) => ({
+const createParagraph = textValue => ({
   name: "paragraph",
   children: [{ name: "text", attributes: { value: textValue }, children: [] }],
 });
@@ -40,7 +40,7 @@ export default () => {
 
       it("should return content untouched if nothing to inline", () => {
         const contentWithoutImages = contentWithImages.filter(
-          (item) => item.name !== "image",
+          item => item.name !== "image",
         );
         expect(setupInlineContent(skeletonProps, contentWithoutImages)).toEqual(
           contentWithoutImages,

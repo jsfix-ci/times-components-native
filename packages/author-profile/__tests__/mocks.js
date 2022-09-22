@@ -11,7 +11,7 @@ jest.mock("@times-components-native/link", () => ({
   TextLink: "TextLink",
 }));
 jest.mock("@times-components-native/pagination", () => {
-  const id = (x) => x;
+  const id = x => x;
 
   return {
     withPageState: id,

@@ -4,7 +4,7 @@ import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { SupplementLeadOneAndFourV2Slice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "supplement lead one and four v2 - smallTablet",

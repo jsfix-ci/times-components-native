@@ -4,7 +4,7 @@ import { Text, Image } from "react-native";
 import { colours, spacing } from "@times-components-native/styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
 
-const renderExampleText = (color) => (
+const renderExampleText = color => (
   <Text style={{ color }}>Some example text</Text>
 );
 

@@ -4,7 +4,7 @@ import { iterator } from "@times-components-native/test-utils";
 import Card from "@times-components-native/card";
 import RelatedArticles from "../src/related-articles";
 
-export const testSummary = (summary) => [
+export const testSummary = summary => [
   {
     attributes: {},
     children: [
@@ -49,7 +49,7 @@ const beforeAndAfterEach = () => {
   });
 };
 
-export const noArticlesTests = ({ fixture }) => (renderComponent) => {
+export const noArticlesTests = ({ fixture }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -98,7 +98,7 @@ export const noArticlesTests = ({ fixture }) => (renderComponent) => {
   iterator(tests);
 };
 
-export const hasVideoTests = ({ fixture, name }) => (renderComponent) => {
+export const hasVideoTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -119,9 +119,7 @@ export const hasVideoTests = ({ fixture, name }) => (renderComponent) => {
   iterator(tests);
 };
 
-export const noShortHeadlineTests = ({ fixture, name }) => (
-  renderComponent,
-) => {
+export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -154,9 +152,10 @@ export const noShortHeadlineTests = ({ fixture, name }) => (
   iterator(tests);
 };
 
-export const oneArticleTests = (platform = () => []) => ({ fixture, name }) => (
-  renderComponent,
-) => {
+export const oneArticleTests = (platform = () => []) => ({
+  fixture,
+  name,
+}) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -190,7 +189,7 @@ export const oneArticleTests = (platform = () => []) => ({ fixture, name }) => (
   iterator(tests);
 };
 
-export const twoArticlesTests = ({ fixture, name }) => (renderComponent) => {
+export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -223,7 +222,7 @@ export const twoArticlesTests = ({ fixture, name }) => (renderComponent) => {
   iterator(tests);
 };
 
-export const threeArticlesTests = ({ fixture, name }) => (renderComponent) => {
+export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [
@@ -255,9 +254,10 @@ export const threeArticlesTests = ({ fixture, name }) => (renderComponent) => {
   iterator(tests);
 };
 
-export const threeArticlesWithLeadAssetOverrideTests = ({ fixture, name }) => (
-  renderComponent,
-) => {
+export const threeArticlesWithLeadAssetOverrideTests = ({
+  fixture,
+  name,
+}) => renderComponent => {
   beforeAndAfterEach();
 
   const tests = [

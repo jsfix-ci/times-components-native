@@ -64,7 +64,7 @@ describe("MeasureInlineContent", () => {
       <InnerMeasureInlineContent
         contentParameters={contentParameters}
         content={[paragraphA]}
-        renderMeasuredContents={(contentMeasurements) => (
+        renderMeasuredContents={contentMeasurements => (
           <CaptureContents contentMeasurements={contentMeasurements} />
         )}
         skeletonProps={{ some: "props" }}
@@ -112,7 +112,7 @@ describe("MeasureInlineContent", () => {
       <InnerMeasureInlineContent
         contentParameters={contentParameters}
         content={[paragraphA]}
-        renderMeasuredContents={(contentMeasurements) => (
+        renderMeasuredContents={contentMeasurements => (
           <CaptureContents contentMeasurements={contentMeasurements} />
         )}
         skeletonProps={{ some: "props" }}

@@ -12,13 +12,13 @@ const editorialLambdaSlug = "prod/component";
 class InteractiveWrapper extends Component {
   static openURLInBrowser(url) {
     return Linking.canOpenURL(url)
-      .then((supported) => {
+      .then(supported => {
         if (!supported) {
           return console.error("Cant open url", url); // eslint-disable-line no-console
         }
         return Linking.openURL(url);
       })
-      .catch((err) => console.error("An error occurred", err)); // eslint-disable-line no-console
+      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
   constructor(props) {
@@ -39,13 +39,13 @@ class InteractiveWrapper extends Component {
     }
   }
 
-  handleHttpError = (event) => {
+  handleHttpError = event => {
     if (event?.nativeEvent?.statusCode >= 400) {
       this.setState({ hasError: true });
     }
   };
 
-  updateHeight = (passedHeight) => {
+  updateHeight = passedHeight => {
     const { height } = this.state;
     if (passedHeight !== height && Math.abs(passedHeight - height) > 5) {
       this.setState({ height: passedHeight });
@@ -77,11 +77,11 @@ class InteractiveWrapper extends Component {
 
     return (
       <AutoHeightWebView
-        onSizeUpdated={(size) => this.updateHeight(size.height)}
+        onSizeUpdated={size => this.updateHeight(size.height)}
         scalesPageToFit={false}
         automaticallyAdjustContentInsets={false}
         onLoadEnd={this.onLoadEnd}
-        ref={(ref) => {
+        ref={ref => {
           this.webview = ref;
         }}
         scrollEnabled={false}

@@ -3,7 +3,7 @@ import { DateTime } from "luxon";
 import { withTrackingContext } from "@times-components-native/tracking";
 import { getActiveArticleFlags } from "@times-components-native/article-flag";
 
-export default (Component) =>
+export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, referralUrl = "" }) => {
       const published = DateTime.fromJSDate(
@@ -22,9 +22,7 @@ export default (Component) =>
 
       let articleTemplateName = "standard template";
 
-      const articleWasLive = data?.expirableFlags?.some(
-        (x) => x.type === "LIVE",
-      );
+      const articleWasLive = data?.expirableFlags?.some(x => x.type === "LIVE");
 
       if (articleWasLive) {
         articleTemplateName = "live template";
@@ -33,7 +31,7 @@ export default (Component) =>
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
-          ? data.topics.map((topic) => topic.slug)
+          ? data.topics.map(topic => topic.slug)
           : [],
         bylines: get(
           data,

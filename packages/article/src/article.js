@@ -31,7 +31,7 @@ export class TakeoverBailout extends Error {
   }
 }
 
-const Article = (props) => {
+const Article = props => {
   const { isArticleTablet } = useResponsiveContext();
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
@@ -44,7 +44,7 @@ const Article = (props) => {
     if (onImagePress) {
       content = addIndexesToInlineImages(content, leadAsset);
       const mediaList = getMediaList(content, leadAsset);
-      return (index) => onImagePress(index, mediaList);
+      return index => onImagePress(index, mediaList);
     }
     return null;
   }, []);

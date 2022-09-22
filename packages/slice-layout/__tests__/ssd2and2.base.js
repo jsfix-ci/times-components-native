@@ -5,7 +5,7 @@ import createItem from "./utils";
 import { SupplementSecondaryTwoAndTwoSlice } from "../src/slice-layout";
 import styles from "../src/templates/supplementsecondarytwoandtwo/styles";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "supplement secondary two and two - small",

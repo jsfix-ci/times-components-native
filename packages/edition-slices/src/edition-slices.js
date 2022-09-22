@@ -31,16 +31,16 @@ import { sectionConfigs } from "@times-components-native/section/src/utils";
 
 const { sectionTitles } = sectionConfigs;
 
-const selectLeadOneAndFourSlice = (isInTabletSupplement) =>
+const selectLeadOneAndFourSlice = isInTabletSupplement =>
   isInTabletSupplement ? SupplementLeadOneAndFourV2Slice : LeadOneAndFourSlice;
 
-const selectLeadOneAndOneSlice = (isInTabletSupplement) =>
+const selectLeadOneAndOneSlice = isInTabletSupplement =>
   isInTabletSupplement ? SupplementLeadOneAndOneSlice : LeadOneAndOneSlice;
 
-const selectSecondaryFourSlice = (isInTabletSupplement) =>
+const selectSecondaryFourSlice = isInTabletSupplement =>
   isInTabletSupplement ? SupplementSecondaryFourSlice : SecondaryFourSlice;
 
-const selectSecondaryOneSlice = (isInTabletSupplement) =>
+const selectSecondaryOneSlice = isInTabletSupplement =>
   isInTabletSupplement ? SupplementSecondaryOneSlice : SecondaryOneSlice;
 
 const selectSecondaryTwoAndTwoSlice = (isTablet, isInSupplement) =>

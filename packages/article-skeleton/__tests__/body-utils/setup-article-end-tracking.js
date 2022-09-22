@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import { setupArticleEndTracking } from "../../src/body-utils/setupArticleEndTracking";
 
-const createParagraph = (textValue) => ({
+const createParagraph = textValue => ({
   name: "paragraph",
   children: [{ name: "text", attributes: { value: textValue }, children: [] }],
 });

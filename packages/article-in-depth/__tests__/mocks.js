@@ -12,7 +12,7 @@ jest.mock("@times-components-native/article-extras", () => "ArticleExtras");
 jest.mock("@times-components-native/article-error", () => "ArticleError");
 jest.mock("@times-components-native/article-flag", () => ({
   ArticleFlags: "ArticleFlags",
-  getActiveArticleFlags: (flags) => flags,
+  getActiveArticleFlags: flags => flags,
 }));
 jest.mock("@times-components-native/article-image", () => "ArticleImage");
 jest.mock("@times-components-native/article-label", () => "ArticleLabel");

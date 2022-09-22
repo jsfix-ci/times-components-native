@@ -32,7 +32,7 @@ const smallBreakpointStyles = {
   },
 };
 
-export default (breakpoint) =>
+export default breakpoint =>
   breakpoint === editionBreakpoints.small
     ? smallBreakpointStyles
     : sharedStyles;

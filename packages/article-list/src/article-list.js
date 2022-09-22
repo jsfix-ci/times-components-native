@@ -57,8 +57,8 @@ class ArticleList extends Component {
     if (!info.changed.length) return [];
 
     return info.changed
-      .filter((viewableItem) => viewableItem.isViewable)
-      .map((viewableItem) => onViewed(viewableItem.item, articles));
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(viewableItem => onViewed(viewableItem.item, articles));
   }
 
   fetchMoreOnEndReached(data) {
@@ -73,7 +73,7 @@ class ArticleList extends Component {
     return new Promise((res, rej) =>
       fetchMore(data.length)
         .then(() => this.setState({ loadingMore: false }, res))
-        .catch((error) =>
+        .catch(error =>
           this.setState(
             {
               loadingMore: false,
@@ -210,7 +210,7 @@ class ArticleList extends Component {
             <ArticleListItemSeparator />
           </View>
         )}
-        keyExtractor={(item) => item.elementId}
+        keyExtractor={item => item.elementId}
         ListFooterComponent={articleListFooter}
         ListHeaderComponent={articleListHeader}
         nestedScrollEnabled

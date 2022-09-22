@@ -11,10 +11,10 @@ class LeadOneAndOne extends PureComponent {
     this.renderMedium = this.renderMedium.bind(this);
     this.renderWide = this.renderWide.bind(this);
     this.bullets = Object.keys(this.props.slice)
-      .filter((key) => key.toLowerCase().indexOf("bullet") !== -1)
-      .filter((key) => this.props.slice[key] !== null)
+      .filter(key => key.toLowerCase().indexOf("bullet") !== -1)
+      .filter(key => this.props.slice[key] !== null)
       .sort((a, b) => a.localeCompare(b))
-      .map((bulletKey) => this.props.slice[bulletKey].article);
+      .map(bulletKey => this.props.slice[bulletKey].article);
   }
 
   renderSmall(breakpoint) {

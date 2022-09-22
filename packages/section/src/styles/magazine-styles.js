@@ -50,7 +50,7 @@ const hugeStyle = {
   },
 };
 
-export default (breakpoint) => {
+export default breakpoint => {
   if (breakpoint === editionBreakpoints.huge) {
     return hugeStyle;
   }

@@ -6,7 +6,7 @@ import { ResponsiveSlice } from "../shared";
 
 import styleFactory from "./styles";
 
-const SupplementLeadOneAndOne = (props) => {
+const SupplementLeadOneAndOne = props => {
   const render = (breakpoint, orientation) => {
     const {
       onPress,

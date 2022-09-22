@@ -146,7 +146,7 @@ const slicesWithPubLogo = [
 
 jest.spyOn(Dimensions, "get").mockReturnValue({ width: 500, height: 700 });
 
-const testsWithPublictaion = (publicationName) =>
+const testsWithPublictaion = publicationName =>
   slicesWithPubLogo.map(({ mock, name, Slice }) => ({
     name,
     test: () => {

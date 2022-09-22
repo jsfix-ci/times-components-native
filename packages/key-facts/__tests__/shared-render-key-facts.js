@@ -4,7 +4,7 @@ import KeyFacts from "../src/key-facts";
 import data from "../fixtures/key-facts-test.json";
 import dataNoTitle from "../fixtures/key-facts-no-title-test.json";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "key facts with title",

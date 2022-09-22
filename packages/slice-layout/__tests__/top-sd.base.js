@@ -4,7 +4,7 @@ import { iterator } from "@times-components-native/test-utils";
 import createItem from "./utils";
 import { TopSecondarySlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "top secondary - smallTablet",

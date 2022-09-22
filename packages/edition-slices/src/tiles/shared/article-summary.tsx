@@ -96,10 +96,10 @@ export const getArticleReadState = (
   }
   return {
     read:
-      isTablet && (readArticles?.some((obj) => obj.id === articleId) ?? false),
+      isTablet && (readArticles?.some(obj => obj.id === articleId) ?? false),
     animate:
       isTablet &&
-      (readArticles?.some((obj) => obj.highlight && obj.id === articleId) ??
+      (readArticles?.some(obj => obj.highlight && obj.id === articleId) ??
         false),
   };
 };
@@ -185,7 +185,7 @@ const ArticleSummary: React.FC<Props> = ({
   const getIsLiveState = () => {
     const isLive = false;
     if (expirableFlags && expirableFlags.length) {
-      const hasLiveFlag = expirableFlags.filter((flag) => {
+      const hasLiveFlag = expirableFlags.filter(flag => {
         if (flag) {
           return flag?.type === "LIVE";
         }
@@ -205,7 +205,7 @@ const ArticleSummary: React.FC<Props> = ({
   );
 
   const bulletsWithReadState: BulletWithReadState[] = bullets?.length
-    ? bullets.map((bullet) => ({
+    ? bullets.map(bullet => ({
         ...bullet,
         readState: getArticleReadState(
           isTablet,

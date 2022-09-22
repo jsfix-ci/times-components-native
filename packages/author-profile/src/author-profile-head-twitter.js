@@ -11,7 +11,7 @@ const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
       <IconTwitter height={15} width={15} />
     </View>
     <TextLink
-      onPress={(e) => onTwitterLinkPress(e, { twitter, url })}
+      onPress={e => onTwitterLinkPress(e, { twitter, url })}
       style={styles.twitterLink}
       testID="twitterLink"
       url={url}

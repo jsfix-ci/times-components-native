@@ -41,7 +41,7 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         />
       </View>
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 125)}

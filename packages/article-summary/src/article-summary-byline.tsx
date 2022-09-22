@@ -10,7 +10,7 @@ export interface ArticleSummaryBylineProps {
   ast: any;
 }
 
-const ArticleSummaryByline: FC<ArticleSummaryBylineProps> = (props) => {
+const ArticleSummaryByline: FC<ArticleSummaryBylineProps> = props => {
   const { ast, articleReadState } = props;
 
   if (!ast || ast.length === 0) return null;

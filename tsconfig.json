@@ -21,16 +21,16 @@
     "target": "esnext"
   },
   "exclude": [
-        "node_modules",
-        "babel.config.js",
-        "metro.config.js",
-        "index.ios.js",
-        "android.ios.js",
-        "build",
-        "dist",
-        "**/*.js",
-        "**/*.jsx",
-        "**/*.json", // Don't try and check JSON files
-        "**/*.svg"
-    ]
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "index.ios.js",
+    "android.ios.js",
+    "build",
+    "dist",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json", // Don't try and check JSON files
+    "**/*.svg"
+  ]
 }
