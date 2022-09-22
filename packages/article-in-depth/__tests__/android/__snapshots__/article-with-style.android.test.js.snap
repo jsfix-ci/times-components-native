@@ -702,7 +702,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
+          "flexDirection": "column",
           "justifyContent": "center",
           "width": "100%",
         }
@@ -719,17 +719,6 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       >
         <ArticleBylineWithLinks />
       </View>
-      <View
-        style={
-          Object {
-            "borderRightColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "height": 15,
-            "marginRight": 10,
-            "paddingLeft": 10,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -891,7 +880,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
+          "flexDirection": "column",
           "justifyContent": "center",
           "width": "100%",
         }
@@ -908,17 +897,6 @@ exports[`tablet full article with style in the style magazine 1`] = `
       >
         <ArticleBylineWithLinks />
       </View>
-      <View
-        style={
-          Object {
-            "borderRightColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "height": 15,
-            "marginRight": 10,
-            "paddingLeft": 10,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -1079,7 +1057,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
+          "flexDirection": "column",
           "justifyContent": "center",
           "width": "100%",
         }
@@ -1096,17 +1074,6 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       >
         <ArticleBylineWithLinks />
       </View>
-      <View
-        style={
-          Object {
-            "borderRightColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "height": 15,
-            "marginRight": 10,
-            "paddingLeft": 10,
-          }
-        }
-      />
       <View
         style={
           Object {

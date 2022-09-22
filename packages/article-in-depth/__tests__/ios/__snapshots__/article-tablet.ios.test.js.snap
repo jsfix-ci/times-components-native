@@ -96,7 +96,7 @@ exports[`1. article in depth - tablet 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
+          "flexDirection": "column",
           "justifyContent": "center",
           "width": "100%",
         }
@@ -113,17 +113,6 @@ exports[`1. article in depth - tablet 1`] = `
       >
         <ArticleBylineWithLinks />
       </View>
-      <View
-        style={
-          Object {
-            "borderRightColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "height": 15,
-            "marginRight": 10,
-            "paddingLeft": 10,
-          }
-        }
-      />
       <View
         style={
           Object {
