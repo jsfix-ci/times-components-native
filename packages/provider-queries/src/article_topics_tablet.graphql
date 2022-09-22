@@ -1,5 +1,5 @@
 fragment topics on Article {
-  topics(maxCount:5) {
+  topics(maxCount: 5) {
     name
     slug
   }

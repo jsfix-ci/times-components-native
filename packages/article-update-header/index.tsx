@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { ResponsiveContext } from "@times-components-native/responsive";
 import styleguide from "@times-components-native/styleguide";
+import { safeDecodeURIComponent } from "@times-components-native/utils";
 
 interface IProps {
   breaking?: boolean;
@@ -15,14 +16,6 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
   const dt = DateTime.fromISO(updated).setLocale("en-US");
   const { colours, fonts } = styleguide();
 
-  const getHeadlineSafely = () => {
-    try {
-      return decodeURIComponent(headline);
-    } catch (e) {
-      console.log("uri error: ", e);
-      return "";
-    }
-  };
   return (
     <ResponsiveContext.Consumer>
       {({ isArticleTablet }) => {
@@ -78,7 +71,7 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                 fontSize: isArticleTablet ? 36 : 30,
               }}
             >
-              {getHeadlineSafely()}
+              {safeDecodeURIComponent(headline)}
             </Text>
           </View>
         );

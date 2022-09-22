@@ -124,52 +124,7 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
           },
         ]
       }
-    >
-      <Ad
-        adConfig={Object {}}
-        baseUrl="some-base-url"
-        contextUrl="some-context-url"
-        defaultFont={
-          Object {
-            "lineHeight": 26,
-          }
-        }
-        display="inline"
-        height={600}
-        inlineContent={
-          Array [
-            Object {
-              "children": Array [
-                Object {
-                  "attributes": Object {
-                    "value": "article content",
-                  },
-                  "children": Array [],
-                  "name": "text",
-                },
-              ],
-              "name": "paragraph",
-            },
-          ]
-        }
-        isLoading={false}
-        narrowContent={false}
-        originalName="ad"
-        skeletonProps={
-          Object {
-            "data": Array [],
-            "isArticleTablet": true,
-            "isTablet": true,
-            "narrowContent": false,
-            "scale": 1,
-            "windowWidth": 1000,
-          }
-        }
-        slotName="native-inline-ad-c"
-        style={Object {}}
-        width={300}
-      />
-    </View>
+    />
   </View>
 </React.Fragment>
 `;

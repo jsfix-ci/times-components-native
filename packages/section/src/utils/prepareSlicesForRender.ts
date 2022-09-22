@@ -11,5 +11,5 @@ export const prepareSlicesForRender = (
   pipe(
     buildSliceData(isTablet, sectionTitle),
     consecutiveItemsFlagger(orientation),
-    insertSectionAd(isTablet),
+    insertSectionAd(),
   );

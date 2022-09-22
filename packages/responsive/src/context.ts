@@ -1,9 +1,9 @@
 import { createContext } from "react";
-import { getDimensions } from "@times-components-native/utils";
+import { Dimensions } from "react-native";
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 import { ContextType } from "./types";
 
-const { width, height } = getDimensions();
+const { width, height } = Dimensions.get("window");
 
 export default createContext<ContextType>(
   calculateResponsiveContext(width, height, 1),

@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 import React from "react";
+import { Dimensions } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { setDimension } from "@times-components-native/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
@@ -14,6 +15,7 @@ jest.mock("@times-components-native/utils", () => ({
   addDimensionsListener: () => null,
   removeDimensionsListener: () => null,
 }));
+jest.spyOn(Dimensions, "get").mockReturnValue({ width: 500, height: 1000 });
 
 jest.mock("react-native-safe-area-context", () => ({
   initialWindowMetrics: {

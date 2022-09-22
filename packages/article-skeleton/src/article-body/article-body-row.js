@@ -28,6 +28,7 @@ import { useResponsiveContext } from "@times-components-native/responsive";
 import ArticleUpdateHeader from "@times-components-native/article-update-header";
 import get from "lodash.get";
 import ArticleExtras from "@times-components-native/article-extras";
+import { safeDecodeURIComponent } from "@times-components-native/utils";
 
 const { track } = NativeModules.ReactAnalytics;
 
@@ -143,14 +144,14 @@ const ArticleBodyRow = ({
         </ArticleParagraphWrapper>
       );
     },
-    ad(key, attributes) {
+    ad(key) {
       return (
         <Ad
-          key={key}
           adConfig={adConfig}
+          keyId={key}
+          key={key}
           narrowContent={narrowContent}
-          slotName="ad-singleMPU"
-          {...attributes}
+          slotName="ad-inarticle-mpu"
         />
       );
     },
@@ -299,10 +300,10 @@ const ArticleBodyRow = ({
             analyticsStream={analyticsStream}
             key={key}
             code={code}
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         );
       }
@@ -354,7 +355,7 @@ const ArticleBodyRow = ({
             key={key}
             onLinkPress={onLinkPress}
             scrollToRef={scrollToRef}
-            headline={decodeURIComponent(attributes.headline)}
+            headline={safeDecodeURIComponent(attributes.headline)}
           />
         </View>
       );

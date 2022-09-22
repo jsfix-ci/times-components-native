@@ -8,7 +8,6 @@ import {
 } from "@times-components-native/context";
 import Section from "@times-components-native/section";
 import trackSection from "./track-section";
-import adTargetConfig from "./ad-targeting-config";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
 import Responsive from "@times-components-native/responsive";
 
@@ -65,13 +64,14 @@ class SectionPage extends Component {
   }
 
   componentDidMount() {
-    AppState.addEventListener("change", this.onAppStateChange);
-
     this.updateFontScaleSubscription = DeviceEventEmitter.addListener(
       "onFontScaleChanged",
       this.onFontScaleChange,
     );
-
+    this.appListener = AppState.addEventListener(
+      "change",
+      this.onAppStateChange,
+    );
     this.updateSASubscription = DeviceEventEmitter.addListener(
       "updateSavedArticles",
       this.syncAppData,
@@ -88,12 +88,11 @@ class SectionPage extends Component {
   }
 
   componentWillUnmount() {
-    AppState.removeEventListener("change", this.onAppStateChange);
-    this.updateSASubscription && this.updateSASubscription.remove();
-    this.updateSDSubscription && this.updateSDSubscription.remove();
-    this.updateRASubscription && this.updateRASubscription.remove();
-    this.updateFontScaleSubscription &&
-      this.updateFontScaleSubscription.remove();
+    this.appListener && this.appListener.remove();
+    this.updateSASubscription.remove();
+    this.updateSDSubscription.remove();
+    this.updateRASubscription.remove();
+    this.updateFontScaleSubscription.remove();
   }
 
   onAppStateChange(nextAppState) {
@@ -186,10 +185,6 @@ class SectionPage extends Component {
       fontScaleToUse,
     } = this.state;
 
-    const adConfig = adTargetConfig({
-      sectionName: section.name,
-    });
-
     return (
       <SectionContext.Provider
         value={{
@@ -212,7 +207,7 @@ class SectionPage extends Component {
           <Responsive fontScale={fontScaleToUse}>
             <RemoteConfigProvider config={remoteConfig}>
               <Section
-                adConfig={adConfig}
+                adConfig={{ sectionName: section.name }}
                 analyticsStream={trackSection}
                 onArticlePress={onArticlePress}
                 onLinkPress={onLinkPress}

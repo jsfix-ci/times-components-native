@@ -4,7 +4,6 @@ import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components-native/styleguide";
 import { delay } from "@times-components-native/test-utils";
 import MessageManager from "../src/message-manager";
-import MessageBar from "../src/message-bar";
 import Context from "../src/message-context";
 
 const TestConsumer = () => (

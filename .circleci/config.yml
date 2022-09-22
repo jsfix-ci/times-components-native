@@ -121,7 +121,7 @@ jobs:
             at: ./
         - run:
             name: Run Type Check
-            command: yarn typecheck
+            command: yarn tsc
             working_directory: ~/project/
 
     run_noplatform_tests:

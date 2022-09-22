@@ -6,7 +6,6 @@ import {
   defaults,
 } from "@times-components-native/context";
 import { themeFactory } from "@times-components-native/styleguide";
-import adTargetConfig from "./ad-targeting-config";
 import { defaultProps, propTypes } from "./article-prop-types";
 import trackArticle from "./track-article";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
@@ -27,7 +26,6 @@ const {
 } = NativeModules.ArticleEvents;
 
 const ArticleBase = ({
-  adTestMode,
   article,
   devInteractives,
   error,
@@ -43,14 +41,6 @@ const ArticleBase = ({
 }) => {
   const { section: articleSection, template } = article || {};
   const section = pageSection || articleSection || "default";
-  const adConfig =
-    isLoading || error
-      ? {}
-      : adTargetConfig({
-          adTestMode,
-          article,
-          sectionName: section,
-        });
 
   const [fontScaleToUse, setFontScaleToUse] = React.useState(
     fontScale ? fontScale / 100 : 1,
@@ -94,7 +84,7 @@ const ArticleBase = ({
       <Responsive fontScale={fontScaleToUse}>
         <RemoteConfigProvider config={remoteConfig}>
           <Article
-            adConfig={adConfig}
+            adConfig={{ sectionName: section }}
             analyticsStream={trackArticle}
             article={article}
             error={omitErrors ? null : error}

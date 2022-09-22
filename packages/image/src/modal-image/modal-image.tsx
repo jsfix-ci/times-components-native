@@ -2,7 +2,7 @@ import React, { FC, Fragment, useCallback, useState } from "react";
 import { ImageProps, Modal, SafeAreaView, StyleProp, View } from "react-native";
 import Url from "url-parse";
 import ImageViewer from "react-native-image-zoom-viewer";
-import Button from "@times-components-native/link";
+import Link from "@times-components-native/link";
 import { ResponsiveContext } from "@times-components-native/responsive";
 import { ImageContent } from "@times-components-native/types";
 import CloseButton from "../close-button";
@@ -73,7 +73,7 @@ const getUrls = (images: ImageContent[], mainImage: MainImage) => {
 };
 
 const ModalImage: FC<ModalImageProps> = ({
-  testIDProp,
+  testIDProp = "modalImage",
   aspectRatio,
   images: initialImages = [],
   caption,
@@ -155,8 +155,9 @@ const ModalImage: FC<ModalImageProps> = ({
 
   if (onImagePress && !isSmallImage) {
     return (
-      <Button
+      <Link
         onPress={() => onImagePress(currentIndex)}
+        // @ts-ignore Type 'string' is not assignable to type 'null | undefined'.ts(2322)
         testIDProp={testIDProp}
       >
         <Image
@@ -170,7 +171,7 @@ const ModalImage: FC<ModalImageProps> = ({
           style={imageStyles}
           captionText={caption && caption.text ? caption.text : ""}
         />
-      </Button>
+      </Link>
     );
   }
 
@@ -225,7 +226,11 @@ const ModalImage: FC<ModalImageProps> = ({
           </ResponsiveContext.Consumer>
         </View>
       </Modal>
-      <Button onPress={handleShowModal} testIDProp={testIDProp}>
+      <Link
+        onPress={handleShowModal}
+        // @ts-ignore Type 'string' is not assignable to type 'null | undefined'.ts(2322)
+        testIDProp={testIDProp}
+      >
         <Image
           aspectRatio={aspectRatio}
           relativeHeight={relativeHeight}
@@ -236,7 +241,7 @@ const ModalImage: FC<ModalImageProps> = ({
           rounded={rounded}
           style={imageStyles}
         />
-      </Button>
+      </Link>
     </View>
   );
 };

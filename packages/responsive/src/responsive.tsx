@@ -1,10 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import {
-  getDimensions,
-  addDimensionsListener,
-  removeDimensionsListener,
-} from "@times-components-native/utils";
-import { AppState, ScaledSize } from "react-native";
+import { AppState, ScaledSize, Dimensions } from "react-native";
 import ResponsiveContext from "./context";
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 
@@ -20,7 +15,7 @@ const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
   children,
   fontScale,
 }) => {
-  const { width, height } = getDimensions();
+  const { width, height } = Dimensions.get("window");
 
   const appState = useRef<string>(AppState.currentState);
 
@@ -42,12 +37,15 @@ const ResponsiveProvider: React.FC<ResponsiveProviderProps> = ({
   };
 
   useEffect(() => {
-    AppState.addEventListener("change", onAppStateChange);
-    const listener = addDimensionsListener("change", onDimensionChange);
+    const appListener = AppState.addEventListener("change", onAppStateChange);
+    const dimensionsListener = Dimensions.addEventListener(
+      "change",
+      onDimensionChange,
+    );
 
     return () => {
-      AppState.removeEventListener("change", onAppStateChange);
-      removeDimensionsListener("change", listener);
+      appListener.remove();
+      dimensionsListener.remove();
     };
   }, []);
 

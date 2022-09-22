@@ -1,14 +1,9 @@
-export const insertSectionAd = (isTablet: boolean) => (slices: any[]) => {
+export const insertSectionAd = () => (slices: any[]) => {
   const adSlotIndex = 3; // 0 based index
-
-  if (!isTablet || slices.length <= adSlotIndex) return slices;
 
   return [
     ...slices.slice(0, adSlotIndex),
-    {
-      name: "SectionAd",
-      slotName: "ad-leaderboard",
-    },
+    { name: "SectionAd", slotName: "ad-section" },
     ...slices.slice(adSlotIndex),
   ];
 };

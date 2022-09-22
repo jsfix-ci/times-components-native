@@ -1,7 +1,7 @@
 // global Intl
 import { iterator } from "@times-components-native/test-utils";
 import "./mock-timezone-london";
-import { isBST, getUTCTime, isLondonTimezone } from "../src/date";
+import { isBST, getUTCTime } from "../src/date";
 
 export default () => {
   const realIntl = Intl;

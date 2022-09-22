@@ -275,11 +275,11 @@ describe("The showcase converter should", () => {
     const event = {
       test: "test",
     };
-
     const showcase = {
       children: [
         {
           component: (_, { action }) => (
+            //eslint-disable-next-line
             <div onPress={action(event)}>Hello World!</div>
           ),
           name: "My Story",
