@@ -108,15 +108,7 @@ function ArticleUpdateHeader({ breaking = false, headline, updated }: IProps) {
                       fontFamily: fonts.supporting,
                     }}
                   >
-                    {`${dt.toLocaleString({ month: "long" })} `}
-                  </Text>
-                  <Text
-                    style={{
-                      color: colours.functional.secondary,
-                      fontFamily: fonts.supporting,
-                    }}
-                  >
-                    {`${dt.toLocaleString({ day: "2-digit" })}`}
+                    {`${dt.toFormat("MMMM d")} `}
                   </Text>
                 </View>
               )}
