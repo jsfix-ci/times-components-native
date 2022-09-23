@@ -59,21 +59,8 @@ const Article = (props) => {
   };
 
   return (
-    <MessageManager
-      animate
-      delay={3000}
-      scale={scales.medium}
-      onLayout={({ nativeEvent }) => {
-        console.log("JOSH 66 =====", nativeEvent);
-      }}
-    >
-      <Component
-        {...newProps}
-        onImagePress={onImagePressArticle}
-        onLayout={({ nativeEvent }) => {
-          console.log("JOSH 55 =====", nativeEvent);
-        }}
-      />
+    <MessageManager animate delay={3000} scale={scales.medium}>
+      <Component {...newProps} onImagePress={onImagePressArticle} />
     </MessageManager>
   );
 };

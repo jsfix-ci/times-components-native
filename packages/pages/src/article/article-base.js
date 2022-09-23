@@ -39,7 +39,6 @@ const ArticleBase = ({
   sectionName: pageSection,
   remoteConfig,
   tooltips,
-  test,
 }) => {
   const { section: articleSection, template } = article || {};
   const section = pageSection || articleSection || "default";
@@ -55,8 +54,6 @@ const ArticleBase = ({
     ...themeFactory(section, template),
     scale: scale || defaults.theme.scale,
   };
-
-  console.log("test", test);
 
   const interactiveConfig = {
     dev: devInteractives,
