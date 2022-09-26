@@ -1,7 +1,7 @@
 import scales from "../scales";
 import sharedFontSizes from "./font-sizes-base";
 
-const fontSizes = (scale) => {
+const fontSizes = scale => {
   switch (scale) {
     case scales.medium:
       return {

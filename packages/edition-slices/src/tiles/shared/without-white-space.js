@@ -27,7 +27,7 @@ class WithoutWhiteSpace extends Component {
     return (
       <View
         style={[styles, { flex: 1 }]}
-        onLayout={(e) =>
+        onLayout={e =>
           !isContainerRendered &&
           this.setState({
             containerHeight: e.nativeEvent.layout.height,
@@ -36,7 +36,7 @@ class WithoutWhiteSpace extends Component {
         }
       >
         <View
-          onLayout={(e) =>
+          onLayout={e =>
             !isContentRendered &&
             this.setState({
               contentHeight: e.nativeEvent.layout.height,

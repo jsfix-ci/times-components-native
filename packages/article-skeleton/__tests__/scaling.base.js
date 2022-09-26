@@ -7,7 +7,7 @@ import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 import { withMobileContext } from "@times-components-native/test-utils";
 
-export default (renderComponent) => [
+export default renderComponent => [
   {
     name: "scaled medium full article",
     test: () => {

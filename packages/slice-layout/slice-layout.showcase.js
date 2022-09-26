@@ -30,9 +30,9 @@ const colours = [
   { backgroundColor: "blue", id: 4 },
 ];
 
-const createItems = (noOfItems) =>
+const createItems = noOfItems =>
   colours
-    .map((colour) => {
+    .map(colour => {
       const { backgroundColor, id } = colour;
       if (id > noOfItems) return false;
       return (
@@ -43,7 +43,7 @@ const createItems = (noOfItems) =>
         />
       );
     })
-    .filter((item) => item !== false);
+    .filter(item => item !== false);
 
 const Lead = () => (
   <View style={[{ height: "100%" }, { backgroundColor: "orange" }]} />
@@ -65,7 +65,7 @@ const Support4 = () => (
   <View style={[{ minHeight: 150 }, { backgroundColor: "blue" }]} />
 );
 
-const breakpointSelect = (select) =>
+const breakpointSelect = select =>
   select("Breakpoints:", editionBreakpoints, "small");
 
 export default {

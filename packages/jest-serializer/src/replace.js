@@ -16,7 +16,7 @@ export const meltNative = {
   View: justChildren,
 };
 
-export const replaceTransform = (config) => (accum, node, props, children) => {
+export const replaceTransform = config => (accum, node, props, children) => {
   if (config[node.type] === undefined) {
     return {
       accum,
@@ -47,4 +47,4 @@ export const replaceTransform = (config) => (accum, node, props, children) => {
   };
 };
 
-export default (config) => traverse(print, replaceTransform(config));
+export default config => traverse(print, replaceTransform(config));

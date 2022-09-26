@@ -4,13 +4,13 @@ import { SupplementSecondaryTwoAndTwoSlice } from "@times-components-native/slic
 import { TileBC, TileBD, TileBE } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const SupplementSecondaryTwoAndTwo = (props) => {
+const SupplementSecondaryTwoAndTwo = props => {
   const {
     onPress,
     slice: { secondary1, secondary2, support1, support2 },
   } = props;
 
-  const renderStacked = (breakpoint) => (
+  const renderStacked = breakpoint => (
     <SupplementSecondaryTwoAndTwoSlice
       breakpoint={breakpoint}
       secondary1={
@@ -48,7 +48,7 @@ const SupplementSecondaryTwoAndTwo = (props) => {
     />
   );
 
-  const renderHorizontal = (breakpoint) => (
+  const renderHorizontal = breakpoint => (
     <SupplementSecondaryTwoAndTwoSlice
       breakpoint={breakpoint}
       secondary1={

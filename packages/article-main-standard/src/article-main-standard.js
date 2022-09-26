@@ -46,7 +46,7 @@ class ArticlePage extends Component {
     const styles = stylesFactory();
 
     const isLive = expirableFlags
-      ? expirableFlags.filter((flag) => flag.type === "LIVE").length > 0
+      ? expirableFlags.filter(flag => flag.type === "LIVE").length > 0
       : false;
 
     return (

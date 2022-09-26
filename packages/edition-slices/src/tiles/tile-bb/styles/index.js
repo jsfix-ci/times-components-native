@@ -11,7 +11,7 @@ const fontSizeResolver = {
   [editionBreakpoints.huge]: 24,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     flexDirection: "row",
     padding: spacing(2),

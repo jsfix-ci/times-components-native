@@ -4,8 +4,8 @@ import { SupplementSecondaryFourSlice } from "@times-components-native/slice-lay
 import { TileAY } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const SupplementSecondaryFour = (props) => {
-  const render = (breakpoint) => {
+const SupplementSecondaryFour = props => {
+  const render = breakpoint => {
     const {
       onPress,
       slice: { isConsecutive, secondary1, secondary2, secondary3, secondary4 },

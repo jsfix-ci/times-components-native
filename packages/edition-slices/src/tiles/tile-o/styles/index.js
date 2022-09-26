@@ -31,7 +31,7 @@ const sharedStyles = {
   },
 };
 
-const smallBreakpointStyles = (breakpoint) => ({
+const smallBreakpointStyles = breakpoint => ({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
@@ -46,7 +46,7 @@ const smallBreakpointStyles = (breakpoint) => ({
   },
 });
 
-const mediumBreakpointStyles = (breakpoint) => ({
+const mediumBreakpointStyles = breakpoint => ({
   ...sharedStyles,
   headlineStyle: {
     ...sharedStyles.headlineStyle,
@@ -56,7 +56,7 @@ const mediumBreakpointStyles = (breakpoint) => ({
   },
 });
 
-export default (breakpoint) =>
+export default breakpoint =>
   breakpoint === editionBreakpoints.small
     ? smallBreakpointStyles(breakpoint)
     : mediumBreakpointStyles(breakpoint);

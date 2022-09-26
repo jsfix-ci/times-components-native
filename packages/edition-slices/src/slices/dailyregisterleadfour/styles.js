@@ -101,4 +101,4 @@ const stylesResolver = {
   huge: wideBreakpointStyle,
 };
 
-export default (breakpoint) => stylesResolver[breakpoint];
+export default breakpoint => stylesResolver[breakpoint];

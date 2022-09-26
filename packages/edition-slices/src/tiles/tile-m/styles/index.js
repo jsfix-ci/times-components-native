@@ -80,4 +80,4 @@ const breakPointsStyles = {
   [editionBreakpoints.huge]: hugeBreakpointStyle,
 };
 
-export default (breakpoint) => breakPointsStyles[breakpoint];
+export default breakpoint => breakPointsStyles[breakpoint];

@@ -3,7 +3,7 @@ import { spacing } from "@times-components-native/styleguide";
 import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
 
-const nativeStyles = (scale) => {
+const nativeStyles = scale => {
   const sharedStyles = sharedStylesFactory(scale);
   return {
     ...sharedStyles,
@@ -14,7 +14,7 @@ const nativeStyles = (scale) => {
   };
 };
 
-const styles = (scale) =>
+const styles = scale =>
   StyleSheet.create({
     ...globalStyle,
     ...nativeStyles(scale),

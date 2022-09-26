@@ -6,7 +6,7 @@ const MockReactInstantSearch = jest.genMockFromModule(
 
 const fakeHits = require("./mock-hits.json");
 
-MockReactInstantSearch.connectInfiniteHits = (Component) => () => (
+MockReactInstantSearch.connectInfiniteHits = Component => () => (
   <Component
     hits={fakeHits}
     refineNext={() => null}
@@ -15,7 +15,7 @@ MockReactInstantSearch.connectInfiniteHits = (Component) => () => (
     currentRefinement="Elvis"
   />
 );
-MockReactInstantSearch.connectHighlight = (Component) => () => (
+MockReactInstantSearch.connectHighlight = Component => () => (
   <Component
     hits={fakeHits}
     highlight={() => [
@@ -24,8 +24,8 @@ MockReactInstantSearch.connectHighlight = (Component) => () => (
     ]}
   />
 );
-MockReactInstantSearch.connectSearchBox = (Component) => () => (
+MockReactInstantSearch.connectSearchBox = Component => () => (
   <Component hits={fakeHits} />
 );
-MockReactInstantSearch.InstantSearch = (Component) => () => <Component />;
+MockReactInstantSearch.InstantSearch = Component => () => <Component />;
 module.exports = MockReactInstantSearch;

@@ -278,7 +278,7 @@ const slices = [
   },
 ];
 
-const tabletTester = (type) =>
+const tabletTester = type =>
   slices.map(({ mock, name, Slice, orientation, sliceProps }) => ({
     name: `${name} - ${type}`,
     test: () => {

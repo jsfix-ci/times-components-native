@@ -9,7 +9,7 @@ import { adConfig } from "./ad-mock";
 import { withMobileContext } from "@times-components-native/test-utils";
 
 const findComponents = (testInstance, componentName) =>
-  testInstance.root.findAll((node) => {
+  testInstance.root.findAll(node => {
     if (typeof node.type === "string") {
       return node.type.includes(componentName);
     }
@@ -23,7 +23,7 @@ const emptyArticle = {
   standfirst: null,
 };
 
-export const snapshotTests = (renderComponent) => [
+export const snapshotTests = renderComponent => [
   {
     name: "an error",
     test() {
@@ -122,7 +122,7 @@ const negativeTests = [
         />,
       );
 
-      const textNodes = testRenderer.root.findAll((node) => {
+      const textNodes = testRenderer.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&

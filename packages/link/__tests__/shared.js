@@ -2,7 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import Link, { TextLink } from "../src/link";
 
-export default (Text) => [
+export default Text => [
   {
     name: "renders link",
     test() {

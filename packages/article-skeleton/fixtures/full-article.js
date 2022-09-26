@@ -664,8 +664,8 @@ export const nestedContent = [
     children: []
       .concat(
         ...longContent
-          .filter((n) => n.name === "paragraph")
-          .map((p) => [{ name: "break" }, { name: "break" }, ...p.children]),
+          .filter(n => n.name === "paragraph")
+          .map(p => [{ name: "break" }, { name: "break" }, ...p.children]),
       )
       .slice(2),
   },
@@ -677,8 +677,8 @@ export const styledNestedContent = [
     children: []
       .concat(
         ...longContent
-          .filter((n) => n.name === "paragraph")
-          .map((p) => [
+          .filter(n => n.name === "paragraph")
+          .map(p => [
             {
               name: "bold",
               children: [

@@ -21,7 +21,7 @@ export const splitPuzzlesBySlices = (
 
 export const filterPuzzles = (puzzles: any[], editionBreakpoint: string) =>
   editionBreakpoint === editionBreakpoints.small
-    ? puzzles.filter((puzzle) => !puzzle.hideOnMobile)
+    ? puzzles.filter(puzzle => !puzzle.hideOnMobile)
     : puzzles;
 
 export const createPuzzleData = (isTablet: boolean, sectionTitle: string) => (

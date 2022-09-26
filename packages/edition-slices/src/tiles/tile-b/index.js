@@ -29,7 +29,7 @@ const TileB = ({
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <WithoutWhiteSpace
         style={styles.summaryContainer}
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={headLineStyles}
             summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}

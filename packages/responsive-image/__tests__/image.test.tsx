@@ -45,7 +45,7 @@ test("Image loads high-res", async () => {
     await jest.runAllImmediates();
   });
   const images = component.root.findAllByType(Image);
-  images.forEach((img) => "onLoadEnd" in img.props && img.props.onLoadEnd());
+  images.forEach(img => "onLoadEnd" in img.props && img.props.onLoadEnd());
   await act(async () => {
     await jest.runAllImmediates();
   });
@@ -81,7 +81,7 @@ test("Image gracefully handles bad high-res url", async () => {
   });
 
   const images = component.root.findAllByType(Image);
-  images.forEach((image) => "onError" in image.props && image.props.onError());
+  images.forEach(image => "onError" in image.props && image.props.onError());
 
   expect(component).toMatchSnapshot();
 });

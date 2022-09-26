@@ -11,7 +11,7 @@ import videoLabelFixture from "./fixtures/video-label";
 import reviewFixture from "./fixtures/review";
 import straplineFixture from "./fixtures/strapline";
 
-const story = (m) => <View style={{ padding: 20 }}>{m}</View>;
+const story = m => <View style={{ padding: 20 }}>{m}</View>;
 const isArticleTablet = true;
 
 export default {

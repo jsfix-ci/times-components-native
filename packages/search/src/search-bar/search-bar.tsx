@@ -50,7 +50,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
     }, [text]);
 
     const debouncedRefine = useCallback(
-      debounce((nextValue) => refine(nextValue), DEBOUNCE_WAIT),
+      debounce(nextValue => refine(nextValue), DEBOUNCE_WAIT),
       [],
     );
 

@@ -142,7 +142,7 @@ export const transformSlice = (isTablet: boolean, sectionTitle: string) => (
   if (!isTablet) return slice;
 
   const transformation = sliceTransformations.find(
-    (st) =>
+    st =>
       st.name == slice.name &&
       st.sectionTitle.toUpperCase() === sectionTitle.toUpperCase(),
   );
@@ -169,7 +169,7 @@ export const transformSlice = (isTablet: boolean, sectionTitle: string) => (
   }
 
   const mergedTileConfig = Object.keys(slice)
-    .filter((sliceKey) => Object.keys(baseConfig).includes(sliceKey))
+    .filter(sliceKey => Object.keys(baseConfig).includes(sliceKey))
     .reduce((acc, tileName) => {
       return {
         ...acc,

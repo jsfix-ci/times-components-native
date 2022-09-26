@@ -37,7 +37,7 @@ class SectionPage extends Component {
 
     const existingReadArticles =
       props &&
-      props.readArticles.map((articleId) => ({
+      props.readArticles.map(articleId => ({
         id: articleId,
         highlight: false,
       }));
@@ -143,7 +143,7 @@ class SectionPage extends Component {
       section: { id },
     } = this.props;
     if (getSectionData) {
-      getSectionData(id).then((data) => {
+      getSectionData(id).then(data => {
         this.setState({ section: JSON.parse(data) });
       });
     }

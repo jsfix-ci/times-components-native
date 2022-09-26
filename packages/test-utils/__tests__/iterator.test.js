@@ -3,7 +3,7 @@ import { iterator } from "../index";
 import { Text } from "react-native";
 import renderer from "react-test-renderer";
 
-const exampleTest = (ordinal) => {
+const exampleTest = ordinal => {
   const TextComponent = <Text>This is the {ordinal} test</Text>;
   const wrapper = renderer.create(TextComponent);
   expect(wrapper).toMatchSnapshot();

@@ -3,7 +3,7 @@ import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { SecondaryFourSlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   it(`1. secondary four - small`, () => {
     const output = renderComponent(
       <SecondaryFourSlice

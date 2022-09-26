@@ -62,8 +62,8 @@ class RelatedArticles extends Component {
         <RelatedArticlesHeading />
         <StandardSlice
           itemCount={items.length}
-          renderItems={(config) =>
-            items.map((item) =>
+          renderItems={config =>
+            items.map(item =>
               renderArticleItem(config, item.article, item.leadAsset),
             )
           }

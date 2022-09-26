@@ -9,7 +9,7 @@ interface Dimensions {
   width: number;
   height: number;
 }
-export const MeasureContainer: React.FC<Props> = (props) => {
+export const MeasureContainer: React.FC<Props> = props => {
   const [
     containerDimensions,
     setContainerDimensions,
@@ -18,7 +18,7 @@ export const MeasureContainer: React.FC<Props> = (props) => {
   return (
     <View
       style={{ flex: 1 }}
-      onLayout={(e) => {
+      onLayout={e => {
         const { height, width } = e.nativeEvent.layout;
         setContainerDimensions({ height, width });
       }}

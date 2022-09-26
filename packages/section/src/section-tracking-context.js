@@ -2,12 +2,12 @@ import get from "lodash.get";
 import { DateTime } from "luxon";
 import { withTrackingContext } from "@times-components-native/tracking";
 
-export default (Component) =>
+export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ section, publicationName }) => {
       const { slices } = section;
       const firstSlice = slices[0];
-      const nonName = Object.keys(firstSlice).filter((n) => n !== "name")[0];
+      const nonName = Object.keys(firstSlice).filter(n => n !== "name")[0];
       const { article: data } = firstSlice[nonName] || {};
       const published = DateTime.fromJSDate(
         new Date(get(data, "publishedTime", "")),

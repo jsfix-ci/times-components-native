@@ -37,7 +37,7 @@ const TileAT = ({ onPress, tile }) => {
         hasVideo={hasVideo}
       />
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 800)}

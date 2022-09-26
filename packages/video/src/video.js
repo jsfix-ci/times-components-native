@@ -23,7 +23,7 @@ const Video = ({
 }) => (
   <Touchable
     accessibilityLabel="Video Splash"
-    onPress={(e) => {
+    onPress={e => {
       onVideoPress(e, {
         accountId,
         policyKey,

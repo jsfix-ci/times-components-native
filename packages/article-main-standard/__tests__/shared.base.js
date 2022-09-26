@@ -20,7 +20,7 @@ const emptyArticle = {
   topics: null,
 };
 
-export const snapshotTests = (renderComponent) => [
+export const snapshotTests = renderComponent => [
   {
     name: "an article",
     test() {
@@ -225,7 +225,7 @@ const negativeTests = [
         ),
       );
 
-      const textNodes = testInstance.root.findAll((node) => {
+      const textNodes = testInstance.root.findAll(node => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&

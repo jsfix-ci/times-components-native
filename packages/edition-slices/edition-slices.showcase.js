@@ -44,9 +44,9 @@ import {
   SupplementSecondaryTwoAndTwoSlice,
 } from "./src/slices";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
-    (args) => ["[SyntheticEvent (storybook prevented default)]", ...args],
+    args => ["[SyntheticEvent (storybook prevented default)]", ...args],
   ]);
 
 const publications = {

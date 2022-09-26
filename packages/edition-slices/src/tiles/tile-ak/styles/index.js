@@ -18,7 +18,7 @@ const containerHeightResolver = {
   [editionBreakpoints.huge]: 243,
 };
 
-const styles = (breakpoint) => ({
+const styles = breakpoint => ({
   header: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),

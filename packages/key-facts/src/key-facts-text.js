@@ -24,7 +24,7 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle = {} }) => (
               return (
                 <TextLink
                   key={key}
-                  onPress={(e) =>
+                  onPress={e =>
                     onLinkPress(e, {
                       canonicalId,
                       type,

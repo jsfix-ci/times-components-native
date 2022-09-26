@@ -39,7 +39,7 @@ const TileAL = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
         hasVideo={hasVideo}
       />
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 800)}

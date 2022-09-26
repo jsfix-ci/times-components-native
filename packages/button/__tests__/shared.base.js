@@ -2,7 +2,7 @@ import React from "react";
 import { iterator } from "@times-components-native/test-utils";
 import Button from "../src/button";
 
-export default (renderMethod) => {
+export default renderMethod => {
   const tests = [
     {
       name: "button",

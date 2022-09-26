@@ -1,6 +1,6 @@
 import styleguide from "@times-components-native/styleguide";
 
-const sharedStyles = (scale) => {
+const sharedStyles = scale => {
   const { colours, fontFactory, spacing } = styleguide({ scale });
   return {
     ad: {

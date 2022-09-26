@@ -20,7 +20,7 @@ import get from "lodash.get";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 import adConfig from "./fixtures/article-ad-config.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -28,7 +28,7 @@ const preventDefaultedAction = (decorateAction) =>
     },
   ]);
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
   emptyStateMessage:
@@ -58,7 +58,7 @@ export default {
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -68,7 +68,7 @@ export default {
             pageSize,
             slug,
           })}
-          render={(mocks) => (
+          render={mocks => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -110,7 +110,7 @@ export default {
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesNoImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               longSummaryLength: 360,
               shortSummaryLength: 220,
@@ -122,7 +122,7 @@ export default {
             pageSize,
             slug,
           })}
-          render={(mocks) => (
+          render={mocks => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesNoImagesProvider
                 debounceTimeMs={0}
@@ -162,7 +162,7 @@ export default {
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -183,7 +183,7 @@ export default {
             pageSize,
             slug,
           })}
-          render={(mocks) => (
+          render={mocks => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -240,7 +240,7 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: (iteration) => ({
+              articleVariables: iteration => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
@@ -250,7 +250,7 @@ export default {
               pageSize,
               slug,
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <AuthorArticlesWithImagesProvider
                   debounceTimeMs={0}
@@ -311,7 +311,7 @@ export default {
           params={makeAuthorParams({
             articleError: () => new Error("Some Error"),
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -321,7 +321,7 @@ export default {
             pageSize,
             slug,
           })}
-          render={(mocks) => (
+          render={mocks => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -363,7 +363,7 @@ export default {
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -373,7 +373,7 @@ export default {
             pageSize,
             slug,
           })}
-          render={(mocks) => (
+          render={mocks => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}

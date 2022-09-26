@@ -103,7 +103,7 @@ const ArticleBodyRow = ({
           testID={"hyperlink"}
           url={href}
           style={styles.articleLink}
-          onPress={(e) =>
+          onPress={e =>
             onLinkPress(e, {
               canonicalId,
               type,

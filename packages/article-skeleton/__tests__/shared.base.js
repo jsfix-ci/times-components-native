@@ -370,7 +370,7 @@ export const fixtureArgs = {
   ],
 };
 
-export const snapshotTests = (renderComponent) => [
+export const snapshotTests = renderComponent => [
   {
     name: "a full article with all content items with dropcap template",
     test() {

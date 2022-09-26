@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-const getMaxSizes = (adSizes) => {
+const getMaxSizes = adSizes => {
   if (!adSizes) {
     return { height: 0, width: 0 };
   }
@@ -24,7 +24,7 @@ const getAdSizes = (adSizeMap, width) => {
 };
 
 const getSlotConfig = (slotName, width, orientation) => {
-  const mappingsForOrientation = sizes.native.filter((mapping) =>
+  const mappingsForOrientation = sizes.native.filter(mapping =>
     mapping.orientation.includes(orientation),
   );
   const adSizes = getAdSizes(mappingsForOrientation, width);

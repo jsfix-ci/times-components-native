@@ -12,7 +12,7 @@ import {
 import { getStyle } from "./styles";
 import { useResponsiveContext } from "@times-components-native/responsive";
 
-const getAspectRatio = (crop) => (crop === "crop32" ? 3 / 2 : 5 / 4);
+const getAspectRatio = crop => (crop === "crop32" ? 3 / 2 : 5 / 4);
 
 const TileAFront = ({ onPress, tile, orientation }) => {
   const { windowWidth, windowHeight } = useResponsiveContext();

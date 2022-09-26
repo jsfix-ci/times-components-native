@@ -1,4 +1,4 @@
-export const setupAd = (skeletonProps) => {
+export const setupAd = skeletonProps => {
   const {
     data: { content },
   } = skeletonProps;

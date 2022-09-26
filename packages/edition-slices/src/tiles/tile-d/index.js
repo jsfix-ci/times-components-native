@@ -38,7 +38,7 @@ const TileD = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         hasVideo={hasVideo}
       />
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             style={styles.summaryContainer}

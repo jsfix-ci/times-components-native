@@ -16,7 +16,7 @@ const BodyParagraph = ({
 }) => {
   const { inline } = attributes || false;
   const { isArticleTablet, narrowArticleBreakpoint } = useResponsiveContext();
-  const getNarrowContentStyle = (width) => [styles.narrow, { maxWidth: width }];
+  const getNarrowContentStyle = width => [styles.narrow, { maxWidth: width }];
 
   return (
     <View

@@ -14,10 +14,10 @@ const getMediaList = (content, leadAsset) => {
   }
 
   const inlineMediaList = ast.filter(
-    (item) => item.name === "image" || item.name === "video",
+    item => item.name === "image" || item.name === "video",
   );
 
-  inlineMediaList.forEach((item) => {
+  inlineMediaList.forEach(item => {
     let inlineMedia;
 
     if (item.name === "video") {
@@ -48,7 +48,7 @@ const addIndexesToInlineImages = (content, leadAsset) => {
   const mutatedContent = content || [];
   let index = leadAsset ? 1 : 0;
 
-  mutatedContent.forEach((item) => {
+  mutatedContent.forEach(item => {
     const contentItem = item;
     if (contentItem.name === "image" || contentItem.name === "video") {
       contentItem.attributes.imageIndex = index;

@@ -3,10 +3,10 @@ import { Path } from "@react-native-community/art";
 import PropTypes from "prop-types";
 import SVGPath from "./path";
 
-const toCoordinates = (points) =>
+const toCoordinates = points =>
   points
     .split(/,|\s+/)
-    .map((n) => Number.parseFloat(n))
+    .map(n => Number.parseFloat(n))
     .reduce((currentPoints, coordinate, index) => {
       if (index % 2 === 0) {
         return [...currentPoints, { x: coordinate }];

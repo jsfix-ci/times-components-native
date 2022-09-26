@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 

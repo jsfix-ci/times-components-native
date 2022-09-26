@@ -79,4 +79,4 @@ const stylesResolver = {
   [editionBreakpoints.huge]: hugeBreakpointStyles,
 };
 
-export default (breakpoint) => stylesResolver[breakpoint];
+export default breakpoint => stylesResolver[breakpoint];

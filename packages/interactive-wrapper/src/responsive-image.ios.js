@@ -3,7 +3,7 @@ import { View, Image, ImageBackground } from "react-native";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components-native/utils";
 
-const deckUrl = (id) =>
+const deckUrl = id =>
   `https://gobble.timesdev.tools/deck/api/deck-post-action/${id}`;
 
 class ResponsiveImageInteractive extends Component {
@@ -32,12 +32,12 @@ class ResponsiveImageInteractive extends Component {
       body: { data },
     } = await res.json();
     const images = data
-      .filter((dat) => dat.type === "image")
-      .map((d) => ({
+      .filter(dat => dat.type === "image")
+      .map(d => ({
         uri: d.data.Image,
         width: parseInt(d.data.Size, 10),
       }))
-      .filter((d) => {
+      .filter(d => {
         if (d.uri.includes(".gif")) {
           return true;
         }

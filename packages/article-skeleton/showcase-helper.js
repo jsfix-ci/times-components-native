@@ -72,7 +72,7 @@ const TestHeader = () => (
   </View>
 );
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -80,8 +80,8 @@ const preventDefaultedAction = (decorateAction) =>
     },
   ]);
 
-const selectScales = (select) => select("Scale", scales, scales.medium);
-const selectSection = (select) =>
+const selectScales = select => select("Scale", scales, scales.medium);
+const selectSection = select =>
   select("Section", pick(colours.section, sections), colours.section.default);
 
 const renderArticleSkeleton = ({

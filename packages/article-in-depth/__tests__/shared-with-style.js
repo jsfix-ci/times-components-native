@@ -124,7 +124,7 @@ const article = articleFixture({
   ],
 });
 
-const themeForSection = (section) => ({
+const themeForSection = section => ({
   theme: {
     ...themeFactory(section, "indepth"),
     scale: "medium",
