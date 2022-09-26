@@ -1,5 +1,5 @@
 import { Platform } from "react-native";
-export { version } from './package.json';
+export { version } from "./package.json";
 
 //TODO explore how to expose the tokens
 export const appToken = Platform.select({
