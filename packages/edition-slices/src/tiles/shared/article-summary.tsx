@@ -312,7 +312,7 @@ const ArticleSummary: React.FC<Props> = ({
       articleReadState={articleReadState}
       bylineProps={bylines ? { ast: bylines, bylineStyle, bylineOnTop } : null}
       content={summary && renderContent(articleReadState)}
-      flags={renderFlags(false, articleReadState)}
+      flags={renderFlags(articleReadState)}
       headline={renderHeadline(articleReadState)}
       labelProps={{
         color:
