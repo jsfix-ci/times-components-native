@@ -32,6 +32,8 @@ const TileLeadSupplementPortrait: FC<Props> = ({
 
   const styles = stylesFactory(breakpoint);
 
+  console.log("styles: ", styles);
+
   const {
     article: { hasVideo },
   } = tile;

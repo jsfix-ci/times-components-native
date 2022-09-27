@@ -73,29 +73,29 @@ WithTrackingContext.propTypes = {
 };
 
 export default () => {
-  // it("default section page click tracking", () => {
-  //   const edition = new MockEdition().get();
+  it("default section page click tracking", () => {
+    const edition = new MockEdition().get();
 
-  //   const stream = jest.fn();
-  //   const onArticlePress = jest.fn();
+    const stream = jest.fn();
+    const onArticlePress = jest.fn();
 
-  //   const testInstance = TestRenderer.create(
-  //     <WithTrackingContext
-  //       onArticlePress={onArticlePress}
-  //       onPuzzlePress={() => null}
-  //       section={edition.sections[0]}
-  //       stream={stream}
-  //     />,
-  //   );
-  //   const [link] = testInstance.root.findAllByType(Link);
+    const testInstance = TestRenderer.create(
+      <WithTrackingContext
+        onArticlePress={onArticlePress}
+        onPuzzlePress={() => null}
+        section={edition.sections[0]}
+        stream={stream}
+      />,
+    );
+    const [link] = testInstance.root.findAllByType(Link);
 
-  //   link.props.onPress();
+    link.props.onPress();
 
-  //   const [[call]] = stream.mock.calls;
+    const [[call]] = stream.mock.calls;
 
-  //   expect(call).toMatchSnapshot();
-  //   expect(onArticlePress.mock.calls).toMatchSnapshot("onArticlePress");
-  // });
+    expect(call).toMatchSnapshot();
+    expect(onArticlePress.mock.calls).toMatchSnapshot("onArticlePress");
+  });
 
   it("puzzle section page click tracking", () => {
     const edition = new MockEdition().get();

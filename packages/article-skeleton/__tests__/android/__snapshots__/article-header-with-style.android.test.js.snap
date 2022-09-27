@@ -381,72 +381,6 @@ exports[`1. article with header 1`] = `
       </View>
       <View>
         <View>
-          <Ad
-            adConfig={
-              Object {
-                "adUnit": "mockAdUnit",
-                "bidInitialiser": Promise {
-                  "_1": 0,
-                  "_2": 1,
-                  "_3": undefined,
-                  "_4": null,
-                },
-                "bidderSlots": Array [
-                  "header",
-                  "inline-ad",
-                ],
-                "biddersConfig": Object {
-                  "bidders": Object {
-                    "amazon": Object {
-                      "accountId": "3360",
-                    },
-                    "appnexus": Object {
-                      "placementId": "5823281",
-                    },
-                    "criteo": Object {
-                      "zoneMap": Object {
-                        "120x600": "764877",
-                      },
-                    },
-                    "ix": Object {
-                      "siteId": "188830",
-                    },
-                    "pubmatic": Object {
-                      "accountId": "156034",
-                      "adSlotPrefix": "Thetimes",
-                    },
-                    "rubicon": Object {
-                      "accountId": "14062",
-                      "siteId": "70608",
-                      "zoneId": "335918",
-                    },
-                  },
-                  "bucketSize": 0.25,
-                  "maxBid": 15,
-                  "minPrice": 0.01,
-                  "timeout": 3000,
-                },
-                "globalSlots": Array [
-                  "ad-pixel",
-                  "ad-pixelskin",
-                  "ad-pixelteads",
-                ],
-                "networkId": "mockNetwork",
-                "pageTargeting": Object {
-                  "title": "Title",
-                },
-                "slotTargeting": Object {
-                  "path": "/news",
-                },
-              }
-            }
-            keyId="12"
-            slotName="ad-inarticle-mpu"
-          />
-        </View>
-      </View>
-      <View>
-        <View>
           <View>
             <View>
               <Text
@@ -467,10 +401,10 @@ exports[`1. article with header 1`] = `
               Object {
                 "adUnit": "mockAdUnit",
                 "bidInitialiser": Promise {
-                  "_1": 0,
-                  "_2": 1,
-                  "_3": undefined,
-                  "_4": null,
+                  "_U": 0,
+                  "_V": 1,
+                  "_W": undefined,
+                  "_X": null,
                 },
                 "bidderSlots": Array [
                   "header",
@@ -521,8 +455,7 @@ exports[`1. article with header 1`] = `
                 },
               }
             }
-            keyId="14"
-            slotName="ad-inarticle-mpu"
+            slotName="ad-singleMPU"
           />
         </View>
       </View>
@@ -631,72 +564,6 @@ exports[`1. article with header 1`] = `
               </Text>
             </View>
           </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <Ad
-            adConfig={
-              Object {
-                "adUnit": "mockAdUnit",
-                "bidInitialiser": Promise {
-                  "_1": 0,
-                  "_2": 1,
-                  "_3": undefined,
-                  "_4": null,
-                },
-                "bidderSlots": Array [
-                  "header",
-                  "inline-ad",
-                ],
-                "biddersConfig": Object {
-                  "bidders": Object {
-                    "amazon": Object {
-                      "accountId": "3360",
-                    },
-                    "appnexus": Object {
-                      "placementId": "5823281",
-                    },
-                    "criteo": Object {
-                      "zoneMap": Object {
-                        "120x600": "764877",
-                      },
-                    },
-                    "ix": Object {
-                      "siteId": "188830",
-                    },
-                    "pubmatic": Object {
-                      "accountId": "156034",
-                      "adSlotPrefix": "Thetimes",
-                    },
-                    "rubicon": Object {
-                      "accountId": "14062",
-                      "siteId": "70608",
-                      "zoneId": "335918",
-                    },
-                  },
-                  "bucketSize": 0.25,
-                  "maxBid": 15,
-                  "minPrice": 0.01,
-                  "timeout": 3000,
-                },
-                "globalSlots": Array [
-                  "ad-pixel",
-                  "ad-pixelskin",
-                  "ad-pixelteads",
-                ],
-                "networkId": "mockNetwork",
-                "pageTargeting": Object {
-                  "title": "Title",
-                },
-                "slotTargeting": Object {
-                  "path": "/news",
-                },
-              }
-            }
-            keyId="18"
-            slotName="ad-inarticle-mpu"
-          />
         </View>
       </View>
       <View>

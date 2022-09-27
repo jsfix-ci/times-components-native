@@ -13,7 +13,20 @@ exports[`renderInlineItem renders a pull quote if pullQuote itemProps passed 1`]
 </PullQuote>
 `;
 
-exports[`renderInlineItem renders an ad if ad itemProps passed 1`] = `null`;
+exports[`renderInlineItem renders an ad if ad itemProps passed 1`] = `
+<Ad
+  adConfig={Object {}}
+  baseUrl="some-url"
+  contextUrl="some-context-url"
+  display="inline"
+  height={600}
+  isLoading={false}
+  originalName="ad"
+  slotName="native-inline-ad-c"
+  style={Object {}}
+  width={300}
+/>
+`;
 
 exports[`renderInlineItem renders an inline article image if image itemProps passed 1`] = `
 <ArticleImage

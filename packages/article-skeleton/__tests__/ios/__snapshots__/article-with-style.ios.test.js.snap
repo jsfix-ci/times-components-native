@@ -622,20 +622,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <Ad />
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
-          }
-        >
           <View
             style={
               Object {
@@ -3037,20 +3023,6 @@ exports[`17. an article skeleton with responsive items 1`] = `
               </Text>
             </View>
           </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
-          }
-        >
-          <Ad />
         </View>
       </View>
       <View>

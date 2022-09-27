@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { SectionContext } from "@times-components-native/context";
 import Section from "@times-components-native/section";
 import trackSection from "./track-section";
+import adTargetConfig from "./ad-targeting-config";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
 
 const {
@@ -169,6 +170,10 @@ class SectionPage extends Component {
       section,
     } = this.state;
 
+    const adConfig = adTargetConfig({
+      sectionName: section.name,
+    });
+
     return (
       <SectionContext.Provider
         value={{
@@ -184,7 +189,7 @@ class SectionPage extends Component {
       >
         <RemoteConfigProvider config={remoteConfig}>
           <Section
-            adConfig={{ sectionName: section.name }}
+            adConfig={adConfig}
             analyticsStream={trackSection}
             onArticlePress={onArticlePress}
             onLinkPress={onLinkPress}

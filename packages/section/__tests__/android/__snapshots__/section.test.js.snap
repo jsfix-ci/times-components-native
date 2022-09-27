@@ -82,28 +82,6 @@ exports[`Sunday Times magazine section 1`] = `
       >
         <StandardSlice />
       </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SectionAd />
-      </View>
     </View>
   </View>
 </RCTScrollView>
@@ -178,28 +156,6 @@ exports[`Times magazine section 1`] = `
         }
       >
         <StandardSlice />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SectionAd />
       </View>
     </View>
   </View>
@@ -597,28 +553,6 @@ exports[`should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for
         }
       >
         <SecondaryTwoNoPicAndTwoSlice />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#DBDBDB",
-              "height": 1,
-              "marginHorizontal": 0,
-            }
-          }
-        />
-      </View>
-    </View>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <SectionAd />
       </View>
     </View>
   </View>

@@ -8,7 +8,6 @@ ignores: [
   "*babel-*",
   "conventional-github-releaser",
   "depcheck",
-  "eslint",
   "eslint-*",
   "global",
   "graphql-code-generator",
