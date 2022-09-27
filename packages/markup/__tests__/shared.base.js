@@ -20,7 +20,7 @@ import subscriptWithFallback from "../fixtures/subscript-fallback.json";
 import superscript from "../fixtures/superscript.json";
 import superscriptWithFallback from "../fixtures/superscript-fallback.json";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "block",

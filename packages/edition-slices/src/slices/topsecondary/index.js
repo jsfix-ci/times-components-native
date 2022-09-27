@@ -89,7 +89,7 @@ const renderLandscape = (props, breakpoint) => {
   );
 };
 
-const TopSecondary = (props) => {
+const TopSecondary = props => {
   const renderSlice = (breakpoint, orientation) =>
     orientation === "portrait"
       ? renderPortrait(props, breakpoint)

@@ -23,6 +23,6 @@ jest.mock("@times-components-native/utils", () => {
 
   return {
     ...actualUtils,
-    convertToPixels: (points) => points - 1,
+    convertToPixels: points => points - 1,
   };
 });

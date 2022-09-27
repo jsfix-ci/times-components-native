@@ -4,7 +4,7 @@ import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { LeadTwoNoPicAndTwoVariant2Slice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "lead two no pic and two - tablet - landscape",

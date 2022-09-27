@@ -16,7 +16,7 @@ import { scales, themeFactory } from "@times-components-native/styleguide";
 import storybookReporter from "@times-components-native/tealium-utils";
 import ArticleInDepth from "./src/article-in-depth";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -109,7 +109,7 @@ const mockArticle = ({
 }) => (
   <MockFixture
     params={params}
-    render={(mocks) => (
+    render={mocks => (
       <MockedProvider mocks={mocks}>
         {renderArticle({
           adConfig,
@@ -124,8 +124,8 @@ const mockArticle = ({
   />
 );
 
-const selectScales = (select) => select("Scale", scales, scales.medium);
-const selectSection = (select) =>
+const selectScales = select => select("Scale", scales, scales.medium);
+const selectSection = select =>
   sections[select("Section", sections, "The Sunday Times Magazine")];
 
 export default {

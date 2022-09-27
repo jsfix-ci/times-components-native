@@ -26,7 +26,7 @@ const allContentMeasured = (
   lines: { [key: string]: Line[] },
 ) => {
   return (
-    contentToMeasure.filter((c) => heights[c.id!] && lines[c.id!]).length ===
+    contentToMeasure.filter(c => heights[c.id!] && lines[c.id!]).length ===
     contentToMeasure.length
   );
 };
@@ -78,7 +78,7 @@ export const InnerMeasureInlineContent: React.FC<
 };
 
 /* istanbul ignore next */
-export const MeasureInlineContent: React.FC<Props> = (props) => {
+export const MeasureInlineContent: React.FC<Props> = props => {
   const [measurementState, measurementDispatch] = useReducer(
     reducer,
     initialState,

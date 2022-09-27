@@ -122,7 +122,7 @@ const stylesResolver = {
   [editionBreakpoints.huge]: hugeBreakpointStyle,
 };
 
-export const styleFactory = (breakpoint) => stylesResolver[breakpoint];
+export const styleFactory = breakpoint => stylesResolver[breakpoint];
 
 export const buttonStyles = {
   alignItems: "center",

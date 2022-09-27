@@ -17,7 +17,7 @@ const TileAE = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 800)}

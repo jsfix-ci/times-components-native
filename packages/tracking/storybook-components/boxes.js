@@ -20,8 +20,8 @@ export default class Boxes extends Component {
     const { boxes, onViewed } = this.props;
     if (info.changed) {
       info.changed
-        .filter((viewableItem) => viewableItem.isViewable)
-        .map((viewableItem) => onViewed(viewableItem.item, boxes));
+        .filter(viewableItem => viewableItem.isViewable)
+        .map(viewableItem => onViewed(viewableItem.item, boxes));
     }
   }
 

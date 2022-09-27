@@ -188,7 +188,7 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
-          getAttrs: (props) => ({
+          getAttrs: props => ({
             id: props.someKey,
             myKey: "myVal",
           }),

@@ -14,7 +14,7 @@ const TestConsumer = () => (
   </Context.Consumer>
 );
 
-export default (animate) => [
+export default animate => [
   {
     name: "renders correctly",
     test: async () => {

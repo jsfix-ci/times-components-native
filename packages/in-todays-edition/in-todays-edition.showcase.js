@@ -10,9 +10,9 @@ import Responsive, {
 
 import InTodaysEditionData from "./fixtures/in-todays-edition.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
-    (args) => ["[SyntheticEvent (storybook prevented default)]", ...args],
+    args => ["[SyntheticEvent (storybook prevented default)]", ...args],
   ]);
 
 const StoryContainer = ({ children }) => {

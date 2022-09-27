@@ -15,7 +15,7 @@ const isParagraph = (content: ArticleContent): content is ParagraphContent =>
   content.name === "paragraph";
 
 const justifyLastLine = (contents: ArticleContent[]): ArticleContent[] =>
-  contents.map((content) =>
+  contents.map(content =>
     isParagraph(content) && content.attributes?.split
       ? appendInvisibleLineToArticleContent(content)
       : content,

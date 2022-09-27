@@ -31,7 +31,7 @@ export const props = {
     ratio: "16:9",
     url: "https://crop169.io/",
   },
-  getImageCrop: (leadAsset) => leadAsset.crop169,
+  getImageCrop: leadAsset => leadAsset.crop169,
   leadAsset: imageLeadAsset,
   // eslint-disable-next-line react/prop-types
   renderCaption: ({ caption }) => (

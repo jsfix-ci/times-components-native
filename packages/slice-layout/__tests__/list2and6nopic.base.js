@@ -5,7 +5,7 @@ import createItem from "./utils";
 import { ListTwoAndSixNoPic } from "../src/slice-layout";
 import styles from "../src/templates/listtwoandsixnopic/styles";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "list two and six no pic - small",

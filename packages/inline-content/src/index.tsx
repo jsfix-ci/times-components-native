@@ -88,7 +88,7 @@ const InlineContent = (props: InlineContentProps) => {
   ) => Child({ item, index }, inline);
 
   const paragraphs = inlineContent
-    .filter((c) => c.name === "paragraph")
+    .filter(c => c.name === "paragraph")
     .map(assignWithId(windowWidth));
 
   const itemProps = getInlineItemProps(props, inlineItemWidth);
@@ -109,7 +109,7 @@ const InlineContent = (props: InlineContentProps) => {
       contentParameters={contentParameters}
       itemProps={!isAd ? itemProps : undefined}
       skeletonProps={skeletonProps}
-      renderMeasuredContents={(contentMeasurements) => {
+      renderMeasuredContents={contentMeasurements => {
         const { chunks, currentInlineContentHeight } = chunkInlineContent(
           paragraphs,
           contentMeasurements,

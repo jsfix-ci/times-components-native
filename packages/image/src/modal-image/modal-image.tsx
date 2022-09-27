@@ -60,7 +60,7 @@ const getUrls = (images: ImageContent[], mainImage: MainImage) => {
     ];
   }
 
-  return images.map((image) => {
+  return images.map(image => {
     const offlineUrl = new Url(image.attributes.url, true);
     offlineUrl.query.offline = "true";
 

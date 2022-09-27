@@ -35,8 +35,8 @@ class ListComponent extends Component {
 
   onViewableItemsChanged({ info }) {
     const { onViewed } = this.props;
-    const filtered = info.changed.filter((item) => item.isViewable);
-    filtered.forEach((item) => onViewed(item));
+    const filtered = info.changed.filter(item => item.isViewable);
+    filtered.forEach(item => onViewed(item));
   }
 
   render() {

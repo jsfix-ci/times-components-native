@@ -9,7 +9,7 @@ jest.mock(
   () => require("./mock-loading-provider"), // eslint-disable-line global-require
 );
 jest.mock("@times-components-native/tracking", () => {
-  const id = (x) => x;
+  const id = x => x;
 
   return {
     withTrackEvents: id,
@@ -17,7 +17,7 @@ jest.mock("@times-components-native/tracking", () => {
   };
 });
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "an article list loading",

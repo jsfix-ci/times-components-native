@@ -9,7 +9,7 @@ jest.mock("@times-components-native/provider", () =>
   require("./mock-provider"),
 );
 jest.mock("@times-components-native/tracking", () => {
-  const id = (x) => x;
+  const id = x => x;
 
   return {
     withTrackEvents: id,
@@ -17,7 +17,7 @@ jest.mock("@times-components-native/tracking", () => {
   };
 });
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "an article list header",
@@ -27,7 +27,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
@@ -45,7 +45,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(

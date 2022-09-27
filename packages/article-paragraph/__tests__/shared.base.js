@@ -5,7 +5,7 @@ import emptyParagraphData from "./fixtures/empty-paragraph.json";
 import renderParagraph from "./renderer";
 import { withMobileContext } from "@times-components-native/test-utils";
 
-const renderComponent = (component) =>
+const renderComponent = component =>
   TestRenderer.create(withMobileContext(component));
 
 export default () => {

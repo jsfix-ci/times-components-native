@@ -12,7 +12,7 @@ const articleData = {
   keywords: ["this", "is", "a", "headline"],
 };
 
-export default (makeTest) => {
+export default makeTest => {
   it("article page", () => {
     expect(
       makeTest(

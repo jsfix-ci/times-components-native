@@ -5,7 +5,7 @@ import { TextLink } from "@times-components-native/link";
 import styleFactory from "../styles/article-body";
 import articleLinkTrackingEvents from "./article-link-tracking-events";
 
-const ArticleLink = (props) => (
+const ArticleLink = props => (
   <Context.Consumer>
     {({ theme: { scale } }) => {
       const styles = styleFactory(scale);

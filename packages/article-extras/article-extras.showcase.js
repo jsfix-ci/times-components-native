@@ -7,7 +7,7 @@ import {
 } from "@times-components-native/provider-test-tools";
 import ArticleExtras from "./src/article-extras";
 
-const renderExtras = (props) => (
+const renderExtras = props => (
   <MockFixture
     params={makeParams({
       ...props,
@@ -15,7 +15,7 @@ const renderExtras = (props) => (
         id: "dummy-article-id",
       }),
     })}
-    render={(mocks) => (
+    render={mocks => (
       <MockedProvider mocks={mocks}>
         <ScrollView>
           <ArticleExtras

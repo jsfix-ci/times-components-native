@@ -4,7 +4,7 @@ import Responsive from "@times-components-native/responsive";
 import { getPuzzleSlices } from "@times-components-native/fixture-generator";
 import { PuzzleSlice } from "./src/slices";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

@@ -84,7 +84,7 @@ const ResponsiveImage = memo(
 
     const borderRadius = rounded ? 9999 : 0;
 
-    const imageRef = useCallback((event) => {
+    const imageRef = useCallback(event => {
       const { width } = event.nativeEvent.layout;
       setWidth(width);
       if (onLayout) onLayout(event);

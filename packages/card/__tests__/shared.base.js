@@ -20,11 +20,11 @@ const ResponsiveContextForMobile = ({ children }) => (
   </ResponsiveContext.Provider>
 );
 
-export default (renderComponent) => {
+export default renderComponent => {
   // magic to stop the React Native Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 
-  const renderComponentForMobile = (component) => (
+  const renderComponentForMobile = component => (
     <ResponsiveContextForMobile>
       {renderComponent(component)}
     </ResponsiveContextForMobile>

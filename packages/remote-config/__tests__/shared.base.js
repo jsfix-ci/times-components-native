@@ -15,7 +15,7 @@ export default () => {
         }}
       >
         <RemoteConfigContext.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </RemoteConfigContext.Consumer>
       </RemoteConfigProvider>,
     );
@@ -34,7 +34,7 @@ export default () => {
         }}
       >
         <RemoteConfigContext.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </RemoteConfigContext.Consumer>
       </RemoteConfigProvider>,
     );

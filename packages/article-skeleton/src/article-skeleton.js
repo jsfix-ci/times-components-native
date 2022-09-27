@@ -47,14 +47,14 @@ const getAllImages = (template, leadAsset, fixedContent) => {
           imageIndex: 0,
         },
       },
-      ...fixedContent.filter((node) => node.name === "image"),
+      ...fixedContent.filter(node => node.name === "image"),
     ];
   }
 
-  return fixedContent.filter((node) => node.name === "image");
+  return fixedContent.filter(node => node.name === "image");
 };
 
-const MemoisedArticle = React.memo((props) => {
+const MemoisedArticle = React.memo(props => {
   const { Header, data, isArticleTablet, narrowContent, setLayoutRef } = props;
   const { content, template, leadAsset } = data;
 
@@ -91,15 +91,15 @@ const MemoisedArticle = React.memo((props) => {
   const getKeyFactsIDs = () => {
     let keyFactsIDsArray = [];
     const keyFactsFiltered = props.data.content.filter(
-      (item) => item.name === "keyFacts",
+      item => item.name === "keyFacts",
     );
 
     const keyFactsFilteredChildren = keyFactsFiltered?.[0]?.children;
 
     if (keyFactsFilteredChildren?.length > 0) {
-      keyFactsFilteredChildren.map((keyFactsFilteredChild) =>
-        keyFactsFilteredChild.children.map((item) => {
-          item.children.map((childItem) => {
+      keyFactsFilteredChildren.map(keyFactsFilteredChild =>
+        keyFactsFilteredChild.children.map(item => {
+          item.children.map(childItem => {
             if (childItem) {
               const href = childItem.attributes?.href || null;
               if (href?.startsWith("#")) {
@@ -127,7 +127,7 @@ const MemoisedArticle = React.memo((props) => {
          * On mount or layout change of component add a ref if item has an ID.
          * if it has an ID it's likely because there is a key fact link to this component.
          */
-        onLayout={(event) => {
+        onLayout={event => {
           if (item.attributes && item.attributes.id) {
             if (keyFactIDs && keyFactIDs.includes(item.attributes.id)) {
               setLayoutRef(item.attributes.id, event.nativeEvent.layout);
@@ -162,7 +162,7 @@ const MemoisedArticle = React.memo((props) => {
   );
 });
 
-const ArticleWithContent = (props) => {
+const ArticleWithContent = props => {
   const { onArticleRead, data } = props;
   const articleReadTimerDuration = 6000;
   const hasBeenRead = useRef(false);
@@ -185,7 +185,7 @@ const ArticleWithContent = (props) => {
   const [layoutRefs, setLayoutRefs] = useState({});
 
   const setLayoutRef = useCallback((id, nativeEventLayout) => {
-    setLayoutRefs((refs) => {
+    setLayoutRefs(refs => {
       refs[id] = nativeEventLayout;
       return refs;
     });
@@ -195,7 +195,7 @@ const ArticleWithContent = (props) => {
    * Scrolls to a ref if it exists in layout refs
    */
   const scrollToRef = useCallback(
-    (idToScrollTo) => {
+    idToScrollTo => {
       const id = idToScrollTo.substring(1);
 
       if (layoutRefs[id]) {
@@ -213,7 +213,7 @@ const ArticleWithContent = (props) => {
     [layoutRefs, scrollRef],
   );
 
-  const setArticleReadTimeout = (articleId) => {
+  const setArticleReadTimeout = articleId => {
     if (articleId === data.id && !hasBeenRead.current) {
       articleReadDelay = setTimeout(() => {
         setArticleRead();
@@ -252,7 +252,7 @@ const ArticleWithContent = (props) => {
           nestedScrollEnabled
           onScroll={handleScroll}
           scrollEventThrottle={400}
-          ref={(ref) => setScrollRef(ref)}
+          ref={ref => setScrollRef(ref)}
         >
           <MemoisedArticle
             {...props}
@@ -275,7 +275,7 @@ ArticleWithContent.propTypes = {
   tooltips: [],
 };
 
-const ArticleSkeleton = (props) => {
+const ArticleSkeleton = props => {
   const { data } = props;
 
   if (!data) {

@@ -15,7 +15,7 @@ const Svg = ({ width, viewBox, children }) => {
 
   const [shapeX, shapeY, shapeWidth, shapeHeight] = viewBox
     .split(" ")
-    .map((n) => Number.parseInt(n, 10));
+    .map(n => Number.parseInt(n, 10));
   const scale = width / shapeWidth;
   const transform = new Transform().translate(-shapeX, -shapeY);
 

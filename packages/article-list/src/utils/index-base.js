@@ -1,6 +1,6 @@
 import get from "lodash.get";
 
-const getImageUri = (item) =>
+const getImageUri = item =>
   get(
     item,
     "leadAsset.crop.url",

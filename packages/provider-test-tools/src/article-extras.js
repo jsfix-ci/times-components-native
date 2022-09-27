@@ -2,7 +2,7 @@ import { MockList } from "graphql-tools";
 import { articleExtras as articleExtrasQuery } from "@times-components-native/provider-queries";
 import article from "../fixtures/article.json";
 
-const convertRatio = (ratio) => {
+const convertRatio = ratio => {
   if (ratio === "16:9") {
     return "320/180";
   }
@@ -27,8 +27,8 @@ export default ({
   commentsEnabled = true,
   chooseMedia = () => ({ __typename: "Image" }),
   error = () => null,
-  makeArticle = (x) => x,
-  makeRelatedArticle = (x) => x,
+  makeArticle = x => x,
+  makeRelatedArticle = x => x,
   relatedArticleCount = 3,
   variables = () => null,
 }) => {

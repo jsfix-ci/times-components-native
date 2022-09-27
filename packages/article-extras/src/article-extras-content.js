@@ -32,7 +32,7 @@ const ArticleExtrasContent = ({
     topics,
   } = article;
 
-  const getNarrowContentStyle = (width) => [styles.narrow, { width }];
+  const getNarrowContentStyle = width => [styles.narrow, { width }];
 
   return (
     <View

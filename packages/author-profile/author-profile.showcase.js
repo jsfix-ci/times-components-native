@@ -15,7 +15,7 @@ import storybookReporter from "@times-components-native/tealium-utils";
 import AuthorProfile from "./src/author-profile";
 import adConfig from "@times-components-native/ad/fixtures/article-ad-config.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -23,7 +23,7 @@ const preventDefaultedAction = (decorateAction) =>
     },
   ]);
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
@@ -39,7 +39,7 @@ const slug = "deborah-haynes";
 const makeAuthorProfile = (decorateAction, params) => (
   <MockFixture
     params={params}
-    render={(mocks) => (
+    render={mocks => (
       <MockedProvider mocks={mocks}>
         <AuthorProfileProvider
           articleImageRatio={articleImageRatio}
@@ -81,7 +81,7 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -107,7 +107,7 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesNoImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               longSummaryLength: 360,
               shortSummaryLength: 220,
@@ -159,7 +159,7 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -180,7 +180,7 @@ export default {
           makeParams({
             articleError: () => new Error("Broken Page"),
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -198,10 +198,10 @@ export default {
         makeAuthorProfile(
           decorateAction,
           makeParams({
-            articleError: (iteration) =>
+            articleError: iteration =>
               iteration === 2 ? new Error("Broken Page") : null,
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -220,7 +220,7 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,

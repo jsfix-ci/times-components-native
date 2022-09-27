@@ -53,7 +53,7 @@ export default () => {
           jest.runAllImmediates();
         });
 
-        testInstance.root.findAllByType(Image).forEach((img) =>
+        testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
             nativeEvent: { layout: { height: 350, width: 700 } },
           }),
@@ -91,7 +91,7 @@ export default () => {
           jest.runAllImmediates();
         });
 
-        testInstance.root.findAllByType(Image).forEach((img) =>
+        testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
             nativeEvent: { layout: { height: 350, width: 700 } },
           }),
@@ -114,7 +114,7 @@ export default () => {
         });
 
         const [openButton] = testInstance.root.findAll(
-          (node) => node.type === Link,
+          node => node.type === Link,
         );
 
         openButton.props.onPress();
@@ -123,7 +123,7 @@ export default () => {
           jest.runAllImmediates();
         });
 
-        const modal = testInstance.root.find((node) => node.type === Modal);
+        const modal = testInstance.root.find(node => node.type === Modal);
 
         expect(modal.props.visible).toBe(true);
       },
@@ -140,7 +140,7 @@ export default () => {
         });
 
         const [closeButton] = testInstance.root.findAll(
-          (node) => node.type === Link,
+          node => node.type === Link,
         );
 
         closeButton.props.onPress();
@@ -149,7 +149,7 @@ export default () => {
           jest.runAllImmediates();
         });
 
-        const modal = testInstance.root.find((node) => node.type === Modal);
+        const modal = testInstance.root.find(node => node.type === Modal);
 
         expect(modal.props.visible).toBe(false);
       },

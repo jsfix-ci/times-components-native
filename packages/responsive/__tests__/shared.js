@@ -6,9 +6,6 @@ import { setDimension } from "@times-components-native/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 import shared from "./shared.base";
 
-import * as Utils from "@times-components-native/utils";
-import { delay } from "@times-components-native/test-utils";
-
 jest.mock("@times-components-native/utils", () => ({
   __esModule: true,
   getDimensions: () => ({ width: 500, height: 1000 }),
@@ -37,7 +34,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <Responsive>
         <ResponsiveContext.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </ResponsiveContext.Consumer>
       </Responsive>,
     );

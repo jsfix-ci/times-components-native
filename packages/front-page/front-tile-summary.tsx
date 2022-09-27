@@ -117,7 +117,7 @@ const TileSummaryContainer: React.FC<{
   );
 };
 
-const FrontTileSummary: React.FC<Props> = (props) => {
+const FrontTileSummary: React.FC<Props> = props => {
   const {
     bylineMarginBottom,
     straplineMarginTop,
@@ -150,19 +150,19 @@ const FrontTileSummary: React.FC<Props> = (props) => {
         <TileSummaryContainer hidden key={"unmeasured"} {...{ containerStyle }}>
           <View
             testID={"headlineWrapper"}
-            onLayout={(e) => setHeadlineHeight(e.nativeEvent.layout.height)}
+            onLayout={e => setHeadlineHeight(e.nativeEvent.layout.height)}
           >
             {renderHeadline(props)}
           </View>
           <View
             testID={"straplineWrapper"}
-            onLayout={(e) => setStraplineHeight(e.nativeEvent.layout.height)}
+            onLayout={e => setStraplineHeight(e.nativeEvent.layout.height)}
           >
             {renderStrapline(props)}
           </View>
           <View
             testID={"bylineWrapper"}
-            onLayout={(e) => setBylineHeight(e.nativeEvent.layout.height)}
+            onLayout={e => setBylineHeight(e.nativeEvent.layout.height)}
           >
             {renderByline(props)}
           </View>

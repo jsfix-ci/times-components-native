@@ -7,7 +7,7 @@ import { isTemplateWithLeadAssetInGallery } from "@times-components-native/utils
 
 export { getStringBounds } from "./getStringBounds";
 
-const addIndexToImages = (skeletonProps) => {
+const addIndexToImages = skeletonProps => {
   if (!skeletonProps?.data) {
     return skeletonProps;
   }
@@ -15,7 +15,7 @@ const addIndexToImages = (skeletonProps) => {
   const { template, leadAsset, content } = skeletonProps.data;
 
   let index = isTemplateWithLeadAssetInGallery(template, leadAsset) ? 1 : 0;
-  const contentWithImageIndex = content.map((node) => {
+  const contentWithImageIndex = content.map(node => {
     if (node.name !== "image" || node.attributes?.imageIndex) {
       return node;
     }
@@ -41,7 +41,7 @@ const addIndexToImages = (skeletonProps) => {
   };
 };
 
-export default memoize((skeletonProps) => {
+export default memoize(skeletonProps => {
   const props = addIndexToImages(skeletonProps);
   const {
     data: { content },

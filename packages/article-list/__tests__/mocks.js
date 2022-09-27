@@ -15,7 +15,7 @@ jest.mock("@times-components-native/image", () => "Image");
 jest.mock("@times-components-native/link", () => "Link");
 jest.mock("@times-components-native/pagination", () => "Pagination");
 jest.mock("@times-components-native/tracking", () => {
-  const mockTracking = (component) => component;
+  const mockTracking = component => component;
   return {
     withTrackEvents: mockTracking,
     withTrackingContext: mockTracking,

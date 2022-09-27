@@ -14,7 +14,7 @@ jest.mock("@times-components-native/provider", () =>
   require("./mock-provider"),
 );
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "a twitter link press raises the expected tracking event",
@@ -31,7 +31,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const ArticleListHeader = authorProfileTrackingContext(
@@ -49,7 +49,7 @@ export default (props) => {
         );
 
         const twitterLink = articleListHeader.root.find(
-          (node) => node.props.testID === "twitterLink",
+          node => node.props.testID === "twitterLink",
         );
 
         twitterLink.props.onPress("event");

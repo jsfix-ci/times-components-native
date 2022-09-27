@@ -11,7 +11,7 @@ const fontSizeResolver = {
   [editionBreakpoints.huge]: 45,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   headlineStyle: {
     fontFamily: fonts.headlineRegular,
     fontSize: fontSizeResolver[breakpoint],

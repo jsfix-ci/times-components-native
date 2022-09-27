@@ -16,7 +16,7 @@ const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
       {({ makeTopicUrl }) => (
         <View style={styles.spacer}>
           <Link
-            onPress={(e) => onPress(e, { name, slug })}
+            onPress={e => onPress(e, { name, slug })}
             url={makeTopicUrl({ slug })}
             testIDProp="topic"
           >

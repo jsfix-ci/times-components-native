@@ -26,7 +26,7 @@ export const MeasureContent: React.FC<Props> = memo(
 
     return (
       <View
-        onLayout={(event) => {
+        onLayout={event => {
           const height = Math.floor(event.nativeEvent.layout.height);
           dispatch({
             type: "SET_INLINE_CONTENT_HEIGHT",
@@ -86,7 +86,7 @@ export const MeasureItem: React.FC<{
   return (
     <View
       style={{ width }}
-      onLayout={(event) => {
+      onLayout={event => {
         const height = event.nativeEvent.layout.height;
         dispatch({
           type: "SET_INLINE_ITEM_HEIGHT",

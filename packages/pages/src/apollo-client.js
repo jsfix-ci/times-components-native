@@ -14,7 +14,7 @@ const link = NativeFetch
       fetch: (uri, opts) =>
         NativeFetch.fetch(uri, opts).then(
           // eslint-disable-next-line no-undef
-          (responseBody) => new Response(responseBody),
+          responseBody => new Response(responseBody),
         ),
       uri: graphqlEndPoint,
     })

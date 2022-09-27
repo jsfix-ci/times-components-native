@@ -14,7 +14,7 @@ const quoteMargins = {
   },
 };
 
-const quoteStyleFactory = (fontName) => ({
+const quoteStyleFactory = fontName => ({
   ...(quoteMargins[fontName] || {}),
   fontFamily: fonts[fontName] || fonts.headlineRegular,
   fontSize: 75,

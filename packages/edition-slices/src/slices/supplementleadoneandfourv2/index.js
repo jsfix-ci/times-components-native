@@ -7,7 +7,7 @@ import {
   TileLeadSupplementLandscape,
 } from "../../tiles";
 
-const SupplementLeadOneAndFourV2 = (props) => {
+const SupplementLeadOneAndFourV2 = props => {
   const { editionBreakpoint: breakpoint, orientation } = useResponsiveContext();
 
   const {

@@ -18,7 +18,7 @@ export const MeasureContent: React.FC<Props> = memo(({ content, style }) => {
 
   return (
     <View
-      onLayout={(event) => {
+      onLayout={event => {
         const height = Math.floor(event.nativeEvent.layout.height);
         dispatch({
           type: "SET_CONTENT_HEIGHT",
@@ -59,7 +59,7 @@ export const MeasureByline: React.FC<{
   return (
     <View
       style={{ width: columnParameters.columnWidth }}
-      onLayout={(event) => {
+      onLayout={event => {
         const height = event.nativeEvent.layout.height;
         dispatch({
           type: "SET_BYLINE_HEIGHT",

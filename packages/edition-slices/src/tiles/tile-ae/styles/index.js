@@ -12,7 +12,7 @@ const headlineFontResolver = {
   [editionBreakpoints.huge]: 35,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     flex: 1,
     paddingHorizontal: spacing(2),

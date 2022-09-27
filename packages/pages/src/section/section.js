@@ -40,7 +40,7 @@ class SectionPage extends Component {
     super(props);
     const existingReadArticles =
       props &&
-      props.readArticles.map((articleId) => ({
+      props.readArticles.map(articleId => ({
         id: articleId,
         highlight: false,
       }));
@@ -101,7 +101,7 @@ class SectionPage extends Component {
     }
   }
 
-  onFontScaleChange = (newVal) => {
+  onFontScaleChange = newVal => {
     if (newVal) {
       this.setState({ fontScaleToUse: newVal / 100 });
     }
@@ -158,7 +158,7 @@ class SectionPage extends Component {
       section: { id },
     } = this.props;
     if (getSectionData) {
-      getSectionData(id).then((data) => {
+      getSectionData(id).then(data => {
         this.setState({ section: JSON.parse(data) });
       });
     }

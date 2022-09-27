@@ -1,7 +1,7 @@
 import traverse from "./traverse";
 import print from "./printers";
 
-export const replacePropTransform = (replacer) => (
+export const replacePropTransform = replacer => (
   accum,
   node,
   props,
@@ -23,5 +23,5 @@ export const replacePropTransform = (replacer) => (
   };
 };
 
-export default (replacer = (x) => x) =>
+export default (replacer = x => x) =>
   traverse(print, replacePropTransform(replacer));

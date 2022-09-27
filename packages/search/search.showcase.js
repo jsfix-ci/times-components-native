@@ -3,7 +3,7 @@ import storybookReporter from "@times-components-native/tealium-utils";
 
 import Search from "./src/search";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -11,12 +11,12 @@ const preventDefaultedAction = (decorateAction) =>
     },
   ]);
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
 });
 
-const makeSearch = (decorateAction) => <Search {...getProps(decorateAction)} />;
+const makeSearch = decorateAction => <Search {...getProps(decorateAction)} />;
 
 export default {
   children: [

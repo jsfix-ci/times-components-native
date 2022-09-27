@@ -44,7 +44,7 @@ const createDropCapNode = (dropCapText, truncatedText, skeletonProps) => ({
   children: [],
 });
 
-const createParagraph = (textValue) => ({
+const createParagraph = textValue => ({
   name: "paragraph",
   children: [{ name: "text", attributes: { value: textValue }, children: [] }],
 });

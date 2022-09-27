@@ -19,7 +19,7 @@ const ResponsiveContextForMobile = ({ children }) => (
   </ResponsiveContext.Provider>
 );
 
-export default (renderMethod) => {
+export default renderMethod => {
   jest.useFakeTimers();
 
   const tests = [

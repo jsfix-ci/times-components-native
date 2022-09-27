@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import { TileBF } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
-const SupplementSecondaryOneSlice = (props) => {
+const SupplementSecondaryOneSlice = props => {
   const {
     onPress,
     slice: { secondary },
   } = props;
 
-  const renderSlice = (breakpoint) => (
+  const renderSlice = breakpoint => (
     <TileBF
       onPress={onPress}
       tile={secondary}

@@ -7,7 +7,7 @@ interface Dictionary<T> {
 const clean = <T>(obj: Dictionary<T>) => {
   return omitBy(
     obj,
-    (x) => x === undefined || Number.isNaN((x as unknown) as number),
+    x => x === undefined || Number.isNaN((x as unknown) as number),
   );
 };
 

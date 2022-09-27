@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // import data from "../../data.json"; // static data for testing new slice bullet data
 import Section from "./section";
 
-const SectionPage = (props) => {
+const SectionPage = props => {
   return (
     <Section
       {...props}
