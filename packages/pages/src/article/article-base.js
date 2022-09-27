@@ -62,7 +62,7 @@ const ArticleBase = ({
     version: appVersion,
   };
 
-  const onFontScaleChange = (newVal) => {
+  const onFontScaleChange = newVal => {
     if (newVal) {
       setFontScaleToUse(newVal / 100);
     }

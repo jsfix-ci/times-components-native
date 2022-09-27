@@ -17,9 +17,9 @@ const determineData = (config, props) => {
 
   const allSlotConfigs = adConfig.globalSlots
     .concat(adConfig.bidderSlots)
-    .map((slot) => getSlotConfig(slot, screenWidth, orientation));
+    .map(slot => getSlotConfig(slot, screenWidth, orientation));
 
-  const slots = adConfig.bidderSlots.map((slot) =>
+  const slots = adConfig.bidderSlots.map(slot =>
     getPrebidSlotConfig(
       slot,
       adConfig.slotTargeting.section,
@@ -67,14 +67,14 @@ export class AdBase extends PureComponent {
 
   componentDidMount() {
     NetInfo.fetch()
-      .then((state) => {
+      .then(state => {
         const { isConnected } = state;
         this.setState({
           offline: !isConnected,
         });
       })
       .then(() => {
-        this.unsubscribe = NetInfo.addEventListener((state) => {
+        this.unsubscribe = NetInfo.addEventListener(state => {
           const { offline } = this.state;
           const { isConnected } = state;
           if (isConnected && offline) {
@@ -155,7 +155,7 @@ export class AdBase extends PureComponent {
   }
 }
 
-const Ad = (props) => {
+const Ad = props => {
   const { windowWidth, orientation } = useResponsiveContext();
   return (
     <AdBase {...props} screenWidth={windowWidth} orientation={orientation} />

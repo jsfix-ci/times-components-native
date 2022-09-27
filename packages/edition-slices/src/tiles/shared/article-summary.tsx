@@ -28,7 +28,7 @@ import PositionedTileStar from "./positioned-tile-star";
 import { OnArticlePress } from "@times-components-native/types";
 
 type ArticleRead = {
-id: string;
+  id: string;
   highlight: boolean;
 };
 
