@@ -108,9 +108,10 @@ const DOMContext = (props: DomContextType) => {
   const handleMessageEvent = (event: WebViewMessageEvent) => {
     try {
       const data = JSON.parse(event.nativeEvent.data);
+      //console.log("AD DATA: ", data);
       switch (data.type) {
-        case "slotOnload":
-          setAdHeight(height);
+        case "slotOnLoad":
+          setAdHeight(data.size);
           setPadding(20);
           return;
         default:
@@ -118,6 +119,7 @@ const DOMContext = (props: DomContextType) => {
       }
     } catch (error) {
       console.log("AD JSON ERROR: ", error);
+      console.log(event.nativeEvent.data);
       return;
     }
   };
@@ -220,8 +222,10 @@ const DOMContext = (props: DomContextType) => {
       <script defer>
         function checkForGoogleTag() {
           if (window.googletag && window.googletag.pubadsReady) {
-            window.googletag.pubads().addEventListener('slotOnload', function(event) {
-              window.ReactNativeWebView.postMessage('{"type":"slotOnload"}')
+            window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+              const DEFAULT_VALUE = 0;
+              const res = JSON.stringify({size: event && event.size ? event.size[1] || DEFAULT_VALUE : DEFAULT_VALUE, "type":"slotOnLoad"});
+              window.ReactNativeWebView.postMessage(res)
             });
             return;
           }

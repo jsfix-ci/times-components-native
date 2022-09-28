@@ -28,6 +28,7 @@ import ArticleUpdateHeader from "@times-components-native/article-update-header"
 import get from "lodash.get";
 import ArticleExtras from "@times-components-native/article-extras";
 import { safeDecodeURIComponent } from "@times-components-native/utils";
+import { isTablet } from "react-native-device-info";
 
 const { track } = NativeModules.ReactAnalytics;
 
@@ -155,7 +156,7 @@ const ArticleBodyRow = ({
           keyId={key}
           key={key}
           narrowContent={narrowContent}
-          slotName="ad-inarticle-mpu"
+          slotName={isTablet ? "ad-section" : "ad-inarticle-mpu"}
         />
       );
     },
