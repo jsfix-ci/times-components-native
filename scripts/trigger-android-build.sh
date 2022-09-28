@@ -24,7 +24,7 @@ if [ "$cur_version" == "$new_version" ]; then
 fi
 
 # Check if GraphQL queries changed since last TCN version
-graphql_changes=$(git diff v"$cur_version" v"$new_version" -- ./packages/provider-queries/src/*.graphql)
+graphql_changes=$(git diff "$cur_version" "$new_version" -- ./packages/provider-queries/src/*.graphql)
 
 
 cd "$android_dir"
