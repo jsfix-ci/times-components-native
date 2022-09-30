@@ -163,7 +163,7 @@ jobs:
         <<: *PUBLISH_ANDROID
 
     trigger_android_build:
-        executor: node
+        executor: android
         steps:
             - github-cli/install
             - checkout
