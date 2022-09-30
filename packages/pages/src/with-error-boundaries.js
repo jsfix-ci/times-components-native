@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NativeModules } from "react-native";
-
+import NewRelic from "newrelic-react-native-agent";
 import ArticleError from "@times-components-native/article-error";
 
 const { componentCaughtError } = NativeModules.ReactAnalytics;
@@ -18,6 +18,15 @@ export const withErrorBoundaries = (WrappedComponent, extras = {}) =>
 
     componentDidCatch(error, errorInfo) {
       componentCaughtError(error.message, errorInfo.componentStack);
+      const isFatal = false;
+      NewRelic.NRMAModularAgentWrapper.execute(
+        "recordStack",
+        "Pages" + error.name,
+        error.message + "\n" + error.cause,
+        errorInfo.componentStack + "\n\n\n" + error.stack,
+        isFatal,
+        NewRelic.JSAppVersion,
+      );
     }
 
     render() {
