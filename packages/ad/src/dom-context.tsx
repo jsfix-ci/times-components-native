@@ -216,7 +216,7 @@ const DOMContext = (props: DomContextType) => {
       </div>
       <script src="${
         Platform.OS === "ios"
-          ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/revert-1043-revert-1037-SCB-2046_additional_ad_slots_tnl_ios/ads.times_ios.min.js"
+          ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
           : "https://ads.thetimes.co.uk/ads.times_android.min.js"
       }" ></script>
       <script defer>
