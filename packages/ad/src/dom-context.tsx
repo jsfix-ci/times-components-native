@@ -204,8 +204,9 @@ const DOMContext = (props: DomContextType) => {
     <script>
       window.theTimesBaseUrl = "${String(baseUrl)}";
       window.postMessage = function(data) {
-      var message = typeof data === "string" ? data : JSON.stringify(data);
-      window.ReactNativeWebView.postMessage(message);
+        const message = typeof data === "string" ? data : JSON.stringify(data);
+        console.log("🚀 ~ file: dom-context.tsx ~ line 208 ~ DOMContext ~ message", message)
+        window.ReactNativeWebView.postMessage(message);
       };
       (${webviewEventCallbackSetupAsString})({window});
     </script>
@@ -219,12 +220,15 @@ const DOMContext = (props: DomContextType) => {
           ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
           : "https://ads.thetimes.co.uk/ads.times_android.min.js"
       }" ></script>
-      <script defer>
+      <script>
         function checkForGoogleTag() {
-          if (window.googletag && window.googletag.pubadsReady) {
+          if (window.nuk && window.googletag && window.googletag.pubadsReady) {
+              console.log("🚀 ~ file: dom-context.tsx ~ line 226 ~ checkForGoogleTag ~ indow.nuk", indow.nuk)
             window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
               const DEFAULT_VALUE = 0;
-              const res = JSON.stringify({size: event && event.size ? event.size[1] || DEFAULT_VALUE : DEFAULT_VALUE, "type":"slotOnLoad"});
+              const size = event && event.size ? event.size[1] || DEFAULT_VALUE : DEFAULT_VALUE;
+              const res = JSON.stringify({ "size": size, "type":"slotOnLoad" });
+              console.log("🚀 ~ file: dom-context.tsx ~ line 230 ~ window.googletag.pubads ~ res", res)
               window.ReactNativeWebView.postMessage(res)
             });
             return;
