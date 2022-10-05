@@ -5,7 +5,6 @@ import "./mocks";
 
 import Ad from "@times-components-native/ad";
 
-
 //@ts-ignore TODO hydrate mock with sensible values and remove skip
 const adConfig = { sectionName: "News", bidderSlots: [], globalSlots: [] };
 
