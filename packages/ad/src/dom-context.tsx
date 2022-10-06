@@ -24,7 +24,7 @@ import {
 
 const config = NativeModules.ReactConfig;
 
-const { width: screenWidth } = Dimensions.get("screen");
+const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 
 interface DomContextType {
   baseUrl: string;
@@ -111,7 +111,8 @@ const DOMContext = (props: DomContextType) => {
       //console.log("AD DATA: ", data);
       switch (data.type) {
         case "slotOnLoad":
-          setAdHeight(data.size);
+          const isOneByOne = data.size[0] == 1 && data.size[1] == 1;
+          setAdHeight(isOneByOne ? screenHeight : data.size[1]);
           setPadding(20);
           return;
         default:
@@ -219,12 +220,14 @@ const DOMContext = (props: DomContextType) => {
           ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
           : "https://ads.thetimes.co.uk/ads.times_android.min.js"
       }" ></script>
-      <script defer>
+      <script>
         function checkForGoogleTag() {
           if (window.googletag && window.googletag.pubadsReady) {
             window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-              const DEFAULT_VALUE = 0;
-              const res = JSON.stringify({size: event && event.size ? event.size[1] || DEFAULT_VALUE : DEFAULT_VALUE, "type":"slotOnLoad"});
+              const size = event && event.size || [0,0];
+              // for debug-forensic sake
+              window.lastEventSize = size;
+              const res = JSON.stringify({ "size": size, "type":"slotOnLoad"});
               window.ReactNativeWebView.postMessage(res)
             });
             return;
@@ -237,10 +240,26 @@ const DOMContext = (props: DomContextType) => {
 </html>
     `;
 
+  const webViewStyle = {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    height: adHeight,
+    width,
+  };
+  console.log("🚀 ~ file: dom-context.tsx ~ line 254 ~ DOMContext ~ webViewStyle", webViewStyle)
+  const viewPortStyle = {
+    height: adHeight + padding * 2,
+    width,
+  };
+  console.log("🚀 ~ file: dom-context.tsx ~ line 258 ~ DOMContext ~ viewPortStyle", viewPortStyle)
+
+  const source = { html, baseUrl };
+
   return (
     <ViewportAwareView
       onViewportEnter={() => setLoadAd(true)}
-      style={{ height: adHeight + padding * 2, width }}
+      style={viewPortStyle}
     >
       {loadAd && (
         <WebView
@@ -261,6 +280,7 @@ const DOMContext = (props: DomContextType) => {
             height: adHeight,
             width,
           }}
+          style={webViewStyle}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
         />
