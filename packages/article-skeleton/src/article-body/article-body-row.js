@@ -277,17 +277,16 @@ const ArticleBodyRow = ({
           attributes: { "deck-id": deckId },
         } = element;
 
+        const style = [
+          styles.interactiveContainer,
+          isArticleTablet && styles.interactiveContainerTablet,
+          isArticleTablet &&
+            display === "fullwidth" &&
+            styles.interactiveContainerFullWidth,
+        ];
+
         return (
-          <View
-            key={key}
-            style={[
-              styles.interactiveContainer,
-              isArticleTablet && styles.interactiveContainerTablet,
-              isArticleTablet &&
-                display === "fullwidth" &&
-                styles.interactiveContainerFullWidth,
-            ]}
-          >
+          <View key={key} style={style}>
             <InteractiveWrapper.ResponsiveImageInteractive
               deckId={deckId}
               key={key}

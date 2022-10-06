@@ -26,6 +26,14 @@ const config = NativeModules.ReactConfig;
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 
+const originWhitelist =
+  Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined;
+
+const adScriptSrc =
+  Platform.OS === "ios"
+    ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
+    : "https://ads.thetimes.co.uk/ads.times_android.min.js";
+
 interface DomContextType {
   baseUrl: string;
   height: number;
@@ -110,11 +118,16 @@ const DOMContext = (props: DomContextType) => {
       const data = JSON.parse(event.nativeEvent.data);
       //console.log("AD DATA: ", data);
       switch (data.type) {
-        case "slotOnLoad":
+        case "slotOnLoad": {
+          console.log(
+            "🚀 ___________________dom-context.tsx:L123 event.size",
+            data.size,
+          );
           const isOneByOne = data.size[0] == 1 && data.size[1] == 1;
           setAdHeight(isOneByOne ? screenHeight : data.size[1]);
           setPadding(20);
           return;
+        }
         default:
           return;
       }
@@ -215,11 +228,7 @@ const DOMContext = (props: DomContextType) => {
       <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${padding}px; padding-bottom: ${padding}px;">
         <div id="${slotId}"></div>
       </div>
-      <script src="${
-        Platform.OS === "ios"
-          ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
-          : "https://ads.thetimes.co.uk/ads.times_android.min.js"
-      }" ></script>
+      <script src="${adScriptSrc}" ></script>
       <script>
         function checkForGoogleTag() {
           if (window.googletag && window.googletag.pubadsReady) {
@@ -247,12 +256,18 @@ const DOMContext = (props: DomContextType) => {
     height: adHeight,
     width,
   };
-  console.log("🚀 ~ file: dom-context.tsx ~ line 254 ~ DOMContext ~ webViewStyle", webViewStyle)
+  console.log(
+    "🚀 ~ file: dom-context.tsx ~ line 254 ~ DOMContext ~ webViewStyle",
+    webViewStyle,
+  );
   const viewPortStyle = {
     height: adHeight + padding * 2,
     width,
   };
-  console.log("🚀 ~ file: dom-context.tsx ~ line 258 ~ DOMContext ~ viewPortStyle", viewPortStyle)
+  console.log(
+    "🚀 ~ file: dom-context.tsx ~ line 258 ~ DOMContext ~ viewPortStyle",
+    viewPortStyle,
+  );
 
   const source = { html, baseUrl };
 
@@ -269,17 +284,9 @@ const DOMContext = (props: DomContextType) => {
           ref={webViewRef}
           onMessage={handleMessageEvent}
           onNavigationStateChange={handleNavigationStateChange}
-          source={{ html, baseUrl }}
-          originWhitelist={
-            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-          }
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            flex: 1,
-            height: adHeight,
-            width,
-          }}
+          source={source}
+          originWhitelist={originWhitelist}
+          //@ts-ignore style
           style={webViewStyle}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
