@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import {
   Dimensions,
   NativeEventEmitter,
@@ -21,6 +21,7 @@ import {
   openURLInBrowser,
   urlHasBridgePrefix,
 } from "./utils/dom-context-utils";
+import reducer, { ActionTypes } from "./reducer";
 
 const config = NativeModules.ReactConfig;
 
@@ -48,6 +49,8 @@ const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ViewportAwareView = Viewport.Aware(View);
 
+const PADDING = 20;
+
 const DOMContext = (props: DomContextType) => {
   const {
     keyId = "",
@@ -71,9 +74,11 @@ const DOMContext = (props: DomContextType) => {
   };
   const slotId = getSlotId();
   const webViewRef = React.useRef<WebView>(null);
-  const [loadAd, setLoadAd] = useState(false);
-  const [adHeight, setAdHeight] = useState(0);
-  const [padding, setPadding] = useState(0);
+  const [state, dispatch] = useReducer(reducer, {
+    loadAd: false,
+    adHeight: 0,
+    padding: 0,
+  });
   const networkId = config.adNetworkId;
   const adUnit =
     Platform.OS === "ios" ? "thetimes.mob.ios" : "thetimes.mob.android";
@@ -124,8 +129,11 @@ const DOMContext = (props: DomContextType) => {
             data.size,
           );
           const isOneByOne = data.size[0] == 1 && data.size[1] == 1;
-          setAdHeight(isOneByOne ? screenHeight : data.size[1]);
-          setPadding(20);
+          dispatch({
+            type: ActionTypes.setAdHeight,
+            payload: isOneByOne ? screenHeight : data.size[1],
+          });
+          dispatch({ type: ActionTypes.setPadding, payload: PADDING });
           return;
         }
         default:
@@ -225,7 +233,9 @@ const DOMContext = (props: DomContextType) => {
     </script>
   </head>
   <body>
-      <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${padding}px; padding-bottom: ${padding}px;">
+      <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${
+        state.padding
+      }px; padding-bottom: ${state.padding}px;">
         <div id="${slotId}"></div>
       </div>
       <script src="${adScriptSrc}" ></script>
@@ -253,7 +263,7 @@ const DOMContext = (props: DomContextType) => {
     alignItems: "center",
     justifyContent: "center",
     flex: 1,
-    height: adHeight,
+    height: state.adHeight,
     width,
   };
   console.log(
@@ -261,7 +271,7 @@ const DOMContext = (props: DomContextType) => {
     webViewStyle,
   );
   const viewPortStyle = {
-    height: adHeight + padding * 2,
+    height: state.adHeight + state.padding * 2,
     width,
   };
   console.log(
@@ -273,10 +283,15 @@ const DOMContext = (props: DomContextType) => {
 
   return (
     <ViewportAwareView
-      onViewportEnter={() => setLoadAd(true)}
+      onViewportEnter={() =>
+        dispatch({
+          type: ActionTypes.setLoadAd,
+          payload: true,
+        })
+      }
       style={viewPortStyle}
     >
-      {loadAd && (
+      {state.loadAd && (
         <WebView
           cacheEnabled={false}
           cacheMode={"LOAD_NO_CACHE"}
@@ -292,7 +307,7 @@ const DOMContext = (props: DomContextType) => {
           androidLayerType={"software"}
         />
       )}
-      {adHeight !== 0 && (
+      {state.adHeight !== 0 && (
         <ViewportAwareView
           onViewportEnter={inViewport}
           onViewportLeave={outViewport}

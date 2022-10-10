@@ -1,4 +1,4 @@
-enum ActionTypes {
+export enum ActionTypes {
   setAdHeight = "SET_AD_HEIGHT",
   setLoadAd = "SET_LOAD_AD",
   setPadding = "SET_PADDING",
@@ -19,7 +19,7 @@ type setPadding = {
   payload: number;
 };
 
-type ReducerAction = setAdHeight | setLoadAdAction | setPadding;
+type ReducerActions = setAdHeight | setLoadAdAction | setPadding;
 
 interface IState {
   loadAd: boolean;
@@ -29,12 +29,13 @@ interface IState {
 
 const reducer = (
   state: IState,
-  action: ReducerAction,
+  action: ReducerActions,
 ): {
   adHeight: number;
   loadAd: boolean;
   padding: number;
 } => {
+  console.log("Action", action);
   switch (action.type) {
     case ActionTypes.setAdHeight:
       return {
