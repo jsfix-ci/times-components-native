@@ -35,7 +35,6 @@ const reducer = (
   loadAd: boolean;
   padding: number;
 } => {
-  console.log("Action", action);
   switch (action.type) {
     case ActionTypes.setAdHeight:
       return {
