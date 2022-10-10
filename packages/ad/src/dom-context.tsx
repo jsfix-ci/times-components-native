@@ -183,16 +183,16 @@ const DOMContext = (props: DomContextType) => {
         padding: 0;
       }
     </style>
-    <script>
+    <script type="text/javascript">
       window.nuk = {
         "ads": {
           "blocked": false,
-          "commercialSection": ${sectionName},
+          "commercialSection": "${sectionName}",
           "tuples": {
             "cont": "${slotName === "ad-section" ? "sec" : "art"}",
             "path": "",
             "cpn": "${String(authId)}",
-            "device": ${isTablet() ? "tablet" : "mobile"},
+            "device": "${isTablet() ? "tablet" : "mobile"}",
           },
         },
         "user": {
