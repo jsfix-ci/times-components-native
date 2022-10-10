@@ -151,7 +151,7 @@ const ArticleBodyRow = ({
           keyId={key}
           key={key}
           narrowContent={narrowContent}
-          slotName="ad-inarticle-mpu"
+          slotName={"ad-inarticle-mpu"}
         />
       );
     },
