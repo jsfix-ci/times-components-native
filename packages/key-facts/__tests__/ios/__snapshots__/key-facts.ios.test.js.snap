@@ -8,16 +8,21 @@ exports[`1. key facts with title 1`] = `
   <View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         Example bullet text
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         An example 
         <Text
           accessibilityRole="link"
+          allowFontScaling={false}
         >
           link
         </Text>
@@ -25,18 +30,26 @@ exports[`1. key facts with title 1`] = `
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         More example text.
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         Example text 
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           this is bold 
         </Text>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           this is in italics.
         </Text>
       </Text>
@@ -50,16 +63,21 @@ exports[`2. key facts without title 1`] = `
   <View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         Example bullet text
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         An example 
         <Text
           accessibilityRole="link"
+          allowFontScaling={false}
         >
           link
         </Text>
@@ -67,18 +85,26 @@ exports[`2. key facts without title 1`] = `
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         More example text.
       </Text>
     </View>
     <View>
       <View />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         Example text 
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           this is bold 
         </Text>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           this is in italics.
         </Text>
       </Text>

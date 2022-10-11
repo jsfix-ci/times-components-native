@@ -11,6 +11,7 @@ exports[`1. caption with container and text styles 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "green",
@@ -24,6 +25,7 @@ exports[`1. caption with container and text styles 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "green",
@@ -53,6 +55,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "green",
@@ -66,6 +69,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "green",
@@ -95,6 +99,7 @@ exports[`3. caption with only container styles 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -108,6 +113,7 @@ exports[`3. caption with only container styles 1`] = `
       Some caption text goes in here
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",

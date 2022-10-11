@@ -49,6 +49,7 @@ exports[`tile az portrait medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -75,6 +76,15 @@ exports[`tile az portrait medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -130,6 +140,7 @@ exports[`tile az portrait smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -156,6 +167,15 @@ exports[`tile az portrait smallTablet 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -211,6 +231,7 @@ exports[`tile az portrait wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -237,6 +258,15 @@ exports[`tile az portrait wide 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginTop": 0,
+          "paddingTop": 5,
+        }
       }
     />
   </View>

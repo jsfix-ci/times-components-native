@@ -49,6 +49,7 @@ exports[`tile ay huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -78,6 +79,15 @@ exports[`tile ay huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -130,6 +140,7 @@ exports[`tile ay medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -159,6 +170,15 @@ exports[`tile ay medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -211,6 +231,7 @@ exports[`tile ay smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -240,6 +261,15 @@ exports[`tile ay smallTablet 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -292,6 +322,7 @@ exports[`tile ay wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -321,6 +352,15 @@ exports[`tile ay wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -373,6 +413,7 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -402,5 +443,14 @@ exports[`tile ay without breakpoint should be like medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

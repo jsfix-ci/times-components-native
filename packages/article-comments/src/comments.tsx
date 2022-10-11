@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { GestureResponderEvent, Text, TextProps, View } from "react-native";
+import { GestureResponderEvent, TextProps, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import Context from "@times-components-native/context";
 import Button from "@times-components-native/button";
 import { TextLink } from "@times-components-native/link";
@@ -43,8 +44,8 @@ const Comments: FC<CommentsProps> = ({
         </TextLink>
       </Text>
       <Context.Consumer>
-        {({ theme: { scale } }) => {
-          const themedStyleguide = styleguide({ scale });
+        {() => {
+          const themedStyleguide = styleguide();
           const fontFactory = themedStyleguide.fontFactory({
             font: "supporting",
             fontSize: "button",

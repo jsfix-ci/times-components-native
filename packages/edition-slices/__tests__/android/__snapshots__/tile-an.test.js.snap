@@ -46,12 +46,13 @@ exports[`tile an without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 10,
@@ -72,6 +73,7 @@ exports[`tile an without breakpoint 1`] = `
       }
     />
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -84,12 +86,23 @@ exports[`tile an without breakpoint 1`] = `
       }
       testID="article-summary-content"
     >
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
   </View>
 </Link>
 `;

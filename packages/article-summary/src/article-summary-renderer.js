@@ -1,6 +1,6 @@
 import React from "react";
 import coreRenderers from "@times-components-native/markup";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const renderer = {
   ...coreRenderers,
@@ -19,7 +19,7 @@ const renderer = {
   teaser(key, { isSingle }, renderedChildren) {
     const padding = isSingle ? "" : " ";
     return (
-      <Text key={key}>
+      <Text>
         {padding}
         {renderedChildren}
         ...

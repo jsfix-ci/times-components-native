@@ -1,9 +1,10 @@
 import React, { FC } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { gqlRgbaToHex } from "@times-components-native/utils";
 import styles from "./style";
 
 export type ArticleLabelProps = {
+  allowFontScaling?: boolean;
   color?:
     | string
     | {
@@ -17,12 +18,14 @@ export type ArticleLabelProps = {
 };
 
 const ArticleLabel: FC<ArticleLabelProps> = ({
+  allowFontScaling = true,
   color = "black",
   title,
   childTestID,
 }) => {
   return (
     <Text
+      allowFontScaling={allowFontScaling}
       testID={childTestID}
       style={[
         styles.title,

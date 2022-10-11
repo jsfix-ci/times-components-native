@@ -7,7 +7,9 @@ exports[`1. block 1`] = `
     and there is some 
     <View>
       more text 
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         and in here
       </Text>
     </View>
@@ -19,6 +21,7 @@ exports[`1. block 1`] = `
 
 exports[`1. subscript with fallback 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,
@@ -31,6 +34,7 @@ exports[`1. subscript with fallback 1`] = `
 
 exports[`2. bold 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontWeight": "bold",
@@ -43,6 +47,7 @@ exports[`2. bold 1`] = `
 
 exports[`2. superscript with fallback 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,
@@ -54,7 +59,9 @@ exports[`2. superscript with fallback 1`] = `
 `;
 
 exports[`3. break 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+>
   
 
 </Text>
@@ -62,6 +69,7 @@ exports[`3. break 1`] = `
 
 exports[`4. emphasis 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontStyle": "italic",
@@ -75,13 +83,16 @@ exports[`4. emphasis 1`] = `
 exports[`5. image tag 1`] = `<View />`;
 
 exports[`6. inline 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+>
   some other text here
 </Text>
 `;
 
 exports[`7. italic 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontStyle": "italic",
@@ -93,13 +104,16 @@ exports[`7. italic 1`] = `
 `;
 
 exports[`8. paragraph 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+>
   This is the text for paragraph one
 </Text>
 `;
 
 exports[`9. strong 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontWeight": "bold",
@@ -112,6 +126,7 @@ exports[`9. strong 1`] = `
 
 exports[`10. subscript 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,
@@ -124,6 +139,7 @@ exports[`10. subscript 1`] = `
 
 exports[`11. subscript with fallback 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,
@@ -136,6 +152,7 @@ exports[`11. subscript with fallback 1`] = `
 
 exports[`12. superscript 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,
@@ -148,6 +165,7 @@ exports[`12. superscript 1`] = `
 
 exports[`13. superscript with fallback 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "fontSize": 10,

@@ -13,6 +13,7 @@ exports[`different colours 1`] = `
   }
 >
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#850029",
@@ -26,6 +27,7 @@ exports[`different colours 1`] = `
     “
   </Text>
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#333333",
@@ -49,6 +51,7 @@ exports[`different colours 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -62,6 +65,7 @@ exports[`different colours 1`] = `
       A caption
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",

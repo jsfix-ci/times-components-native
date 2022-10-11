@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleProp, Text, View, ViewStyle } from "react-native";
+import { StyleProp, View, ViewStyle } from "react-native";
+import { Text } from "@times-components-native/text";
 import ArticleByline from "@times-components-native/article-byline";
 import styleFactory from "./styles";
 import { Markup } from "@times-components-native/fixture-generator/src/types";
@@ -23,7 +24,7 @@ export const FrontPageByline: React.FC<Props> = ({
         showKeyline && styles.withKeyline,
       ]}
     >
-      <Text allowFontScaling={false}>
+      <Text>
         <ArticleByline ast={byline} bylineStyle={styles.bylineStyle} />
       </Text>
     </View>

@@ -17,11 +17,7 @@ exports[`FrontArticleSummaryContent renders correctly 1`] = `
 >
   <Text
     allowFontScaling={false}
-    style={
-      Array [
-        false,
-      ]
-    }
+    style={Object {}}
     textBreakStrategy="simple"
   >
     Test
@@ -49,11 +45,7 @@ exports[`FrontArticleSummaryContent renders correctly with justified text 1`] = 
 >
   <Text
     allowFontScaling={false}
-    style={
-      Array [
-        false,
-      ]
-    }
+    style={Object {}}
     textBreakStrategy="simple"
   >
     Test

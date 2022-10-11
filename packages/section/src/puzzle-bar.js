@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import { SectionContext } from "@times-components-native/context";
 import { IconForwardArrow } from "@times-components-native/icons";
 import { colours } from "@times-components-native/styleguide";

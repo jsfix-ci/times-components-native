@@ -1,6 +1,7 @@
 import React from "react";
 import Context from "@times-components-native/context";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import Link from "@times-components-native/link";
 import { withTrackEvents } from "@times-components-native/tracking";
 import styles from "./styles";

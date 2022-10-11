@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import Adapter from "enzyme-adapter-react-16";
 import Enzyme from "enzyme";
 import { NativeModules } from "react-native";
@@ -19,6 +18,39 @@ jest.mock("react-native-device-info", () => {
     getReadableVersion: jest.fn(),
     getVersion: jest.fn(),
   };
+});
+
+jest.mock("react-native", () => {
+  const rn = jest.requireActual("react-native");
+
+  rn.NativeModules.ArticleEvents = {
+    addListener: jest.fn(),
+    onArticleLoaded: jest.fn(),
+  };
+  rn.NativeModules.SectionEvents = {
+    addListener: jest.fn(),
+    onSectionLoaded: jest.fn(),
+    getSectionData: jest.fn().mockReturnValue(Promise.resolve("{}")),
+    onArticleSavePress: jest.fn().mockReturnValue(Promise.resolve(true)),
+    getSavedArticles: jest.fn().mockReturnValue(Promise.resolve([])),
+    getOpenedPuzzleCount: jest.fn(),
+  };
+  rn.NativeModules.ReactAnalytics = { track: jest.fn() };
+
+  rn.NativeModules.ReactConfig = {
+    ...rn.NativeModules.ReactConfig,
+    adNetworkId: "dummy-ad-network-id",
+    cookieEid: "dummy-cookie-eid",
+    deviceId: "dummy-device-id",
+    graphqlEndPont: "dummy-end-point",
+    operatingSystemVersion: "123",
+  };
+
+  rn.AppState.removeEventListener = jest.fn();
+
+  rn.NativeModules.NativeFetch = { ...rn.NativeModules.NativeFetch };
+
+  return rn;
 });
 
 jest.mock("@react-native-community/netinfo", () => mockRNCNetInfo);

@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, TextProps, TextStyle } from "react-native";
+import { TextProps, TextStyle } from "react-native";
+import { Text } from "@times-components-native/text";
 import { colours } from "@times-components-native/styleguide";
 import { StyleSheet } from "react-native";
 import { spacing, fontFactory } from "@times-components-native/styleguide";

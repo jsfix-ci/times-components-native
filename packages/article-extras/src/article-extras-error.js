@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import Button from "@times-components-native/button";
 import Context from "@times-components-native/context";
 import styleguide from "@times-components-native/styleguide";

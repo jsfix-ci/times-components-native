@@ -8,5 +8,6 @@ export default {
   makeTopicUrl: ({ slug }) => `/topic/${slug}`,
   theme: {
     scale: scales.medium,
+    fontScale: 1,
   },
 };

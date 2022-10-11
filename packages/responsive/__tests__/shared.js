@@ -6,6 +6,12 @@ import { setDimension } from "@times-components-native/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 import shared from "./shared.base";
 
+jest.mock("@times-components-native/utils", () => ({
+  __esModule: true,
+  getDimensions: () => ({ width: 500, height: 1000 }),
+  addDimensionsListener: () => null,
+  removeDimensionsListener: () => null,
+}));
 jest.spyOn(Dimensions, "get").mockReturnValue({ width: 500, height: 1000 });
 
 jest.mock("react-native-safe-area-context", () => ({

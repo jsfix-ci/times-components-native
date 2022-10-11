@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 import { useAppContext } from "@times-components-native/context";
 import { useResponsiveContext } from "@times-components-native/responsive";

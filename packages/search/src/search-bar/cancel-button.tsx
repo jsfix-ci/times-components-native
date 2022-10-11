@@ -1,10 +1,6 @@
 import React, { FC } from "react";
-import {
-  Text,
-  TouchableOpacity,
-  TouchableOpacityProps,
-  View,
-} from "react-native";
+import { TouchableOpacity, TouchableOpacityProps, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { styles } from "./styles/cancel-button-styles";
 import { colours } from "@times-components-native/styleguide";
 

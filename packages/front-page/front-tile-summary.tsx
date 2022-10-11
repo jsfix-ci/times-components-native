@@ -73,7 +73,6 @@ const renderHeadline = (props: Props) => {
     <ArticleSummaryHeadline
       headline={tileHeadline || shortHeadline || headline}
       style={[headlineStyle, { marginBottom: 0 }]}
-      allowFontScaling={false}
     />
   );
 };
@@ -86,7 +85,6 @@ const renderStrapline = (props: Props) => {
     <ArticleSummaryStrapline
       strapline={strapline}
       style={[straplineStyle, { marginBottom: 0 }]}
-      allowFontScaling={false}
     />
   );
 };

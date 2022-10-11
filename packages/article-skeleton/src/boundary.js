@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component, isValidElement } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 
 export default class ErrorBoundary extends Component {

@@ -10,6 +10,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
   }
 >
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -21,6 +22,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Popular thing to search for:
   </Text>
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -31,6 +33,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Articles
   </Text>
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -41,6 +44,7 @@ exports[`EmptySearchMessage should render correctly 1`] = `
     Topics
   </Text>
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",

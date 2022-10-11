@@ -10,7 +10,9 @@ exports[`1. daily universal register 1`] = `
       }
     }
   />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Daily Universal Register
   </Text>
   <TileS
@@ -151,7 +153,9 @@ exports[`2. leaders 1`] = `
       }
     />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
          Leading Articles 
       </Text>
     </View>
@@ -187,7 +191,9 @@ exports[`2. leaders 2`] = `
       }
     />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
          Leading Articles 
       </Text>
     </View>
@@ -2854,7 +2860,9 @@ exports[`14. leaders 1`] = `
       }
     />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
          Leading Articles 
       </Text>
     </View>

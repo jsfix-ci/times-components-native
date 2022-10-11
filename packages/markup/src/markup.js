@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const styles = StyleSheet.create({
   bold: {
@@ -48,7 +49,7 @@ export default {
     );
   },
   paragraph(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return <Text>{renderedChildren}</Text>;
   },
   strong(key, attributes, renderedChildren) {
     return (

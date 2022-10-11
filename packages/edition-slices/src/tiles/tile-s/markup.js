@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { editionBreakpoints } from "@times-components-native/styleguide";
 import stylefactory from "./styles";
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, Animated, TouchableOpacity } from "react-native";
+import { View, Animated, TouchableOpacity } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components-native/icons";
 import styleFactory from "./styles";

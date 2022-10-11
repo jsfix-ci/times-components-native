@@ -36,6 +36,7 @@ exports[`tile e landscape huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -59,6 +60,15 @@ exports[`tile e landscape huge 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -114,6 +124,7 @@ exports[`tile e landscape medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -137,6 +148,15 @@ exports[`tile e landscape medium 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -198,12 +218,13 @@ exports[`tile e landscape small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
@@ -224,6 +245,7 @@ exports[`tile e landscape small 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -237,12 +259,23 @@ exports[`tile e landscape small 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -294,6 +327,7 @@ exports[`tile e landscape wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -317,6 +351,15 @@ exports[`tile e landscape wide 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -372,6 +415,7 @@ exports[`tile e portrait huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -395,6 +439,15 @@ exports[`tile e portrait huge 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -450,6 +503,7 @@ exports[`tile e portrait medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -473,6 +527,15 @@ exports[`tile e portrait medium 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -534,12 +597,13 @@ exports[`tile e portrait small 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
@@ -560,6 +624,7 @@ exports[`tile e portrait small 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -573,12 +638,23 @@ exports[`tile e portrait small 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
           </Text>
         </Text>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
+          }
+        />
       </View>
     </View>
   </View>
@@ -630,6 +706,7 @@ exports[`tile e portrait smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -653,6 +730,15 @@ exports[`tile e portrait smallTablet 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>
@@ -708,6 +794,7 @@ exports[`tile e portrait wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -731,6 +818,15 @@ exports[`tile e portrait wide 1`] = `
                 "type": "EXCLUSIVE",
               },
             ]
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "marginTop": "auto",
+              "paddingTop": 5,
+            }
           }
         />
       </View>

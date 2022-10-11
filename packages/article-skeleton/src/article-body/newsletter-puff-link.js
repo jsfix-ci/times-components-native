@@ -10,7 +10,8 @@ import {
 import { colours } from "@times-components-native/styleguide";
 import { styleFactory } from "../styles/inline-newsletter-puff";
 import { useResponsiveContext } from "@times-components-native/responsive";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const NewsletterPuffLink = ({ onPress }) => {
   const { editionBreakpoint: breakpoint } = useResponsiveContext();

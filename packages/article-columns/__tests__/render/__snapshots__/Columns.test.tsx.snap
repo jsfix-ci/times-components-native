@@ -19,12 +19,10 @@ exports[`SingleColumn renders correctly 1`] = `
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "fontSize": 14,
-            "lineHeight": 18,
-          },
-        ]
+        Object {
+          "fontSize": 14,
+          "lineHeight": 18,
+        }
       }
       textBreakStrategy="simple"
     >

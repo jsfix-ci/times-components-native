@@ -44,6 +44,7 @@ exports[`tile bc huge 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -68,6 +69,15 @@ exports[`tile bc huge 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -118,6 +128,7 @@ exports[`tile bc medium 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -142,6 +153,15 @@ exports[`tile bc medium 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -192,6 +212,7 @@ exports[`tile bc smallTablet 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -216,6 +237,15 @@ exports[`tile bc smallTablet 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -266,6 +296,7 @@ exports[`tile bc wide 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -290,6 +321,15 @@ exports[`tile bc wide 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -340,6 +380,7 @@ exports[`tile bc without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -364,6 +405,15 @@ exports[`tile bc without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

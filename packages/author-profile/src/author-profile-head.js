@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { propTypes, defaultProps } from "./author-profile-head-prop-types";
 import AuthorProfileHeadBaseWithTracking from "./author-profile-head-base";
 import AuthorProfileHeadBiography from "./author-profile-head-biography";

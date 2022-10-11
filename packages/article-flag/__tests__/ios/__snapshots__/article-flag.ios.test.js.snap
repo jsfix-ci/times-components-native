@@ -5,6 +5,7 @@ exports[`1. article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="No Colour Flag"
+    allowFontScaling={false}
   >
     no colour
   </Text>
@@ -16,6 +17,7 @@ exports[`2. red article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    allowFontScaling={false}
   >
     coloured red
   </Text>
@@ -27,6 +29,7 @@ exports[`3. hex colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    allowFontScaling={false}
   >
     coloured red
   </Text>
@@ -38,6 +41,7 @@ exports[`4. rgba colour article flag 1`] = `
   <View />
   <Text
     accessibilityLabel="Coloured Red Flag"
+    allowFontScaling={false}
   >
     coloured red
   </Text>
@@ -51,6 +55,7 @@ exports[`5. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="updated Flag"
+        allowFontScaling={false}
       >
         updated
       </Text>
@@ -61,6 +66,7 @@ exports[`5. article flags 1`] = `
       <View />
       <Text
         accessibilityLabel="exclusive Flag"
+        allowFontScaling={false}
       >
         exclusive
       </Text>
@@ -77,6 +83,7 @@ exports[`6. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="updated Flag"
+          allowFontScaling={false}
         >
           updated
         </Text>
@@ -87,6 +94,7 @@ exports[`6. article flags with container 1`] = `
         <View />
         <Text
           accessibilityLabel="exclusive Flag"
+          allowFontScaling={false}
         >
           exclusive
         </Text>

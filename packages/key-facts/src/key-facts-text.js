@@ -1,5 +1,6 @@
 import React from "react";
-import { NativeModules, Platform, Text } from "react-native";
+import { Text } from "@times-components-native/text";
+import { NativeModules, Platform } from "react-native";
 import { TextLink } from "@times-components-native/link";
 import { renderTree } from "@times-components-native/markup-forest";
 import coreRenderers from "@times-components-native/markup";

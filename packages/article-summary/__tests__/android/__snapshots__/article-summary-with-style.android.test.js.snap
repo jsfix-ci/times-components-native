@@ -19,6 +19,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </View>
   <Text
     accessibilityRole="header"
+    allowFontScaling={false}
     aria-level="3"
     style={
       Object {
@@ -48,6 +49,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <Text
+    allowFontScaling={false}
     style={
       Object {
         "color": "#696969",
@@ -59,7 +61,9 @@ exports[`1. article summary component with a single paragraph 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       
       Test paragraph
       ...
@@ -126,6 +130,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 exports[`2. article summary content component with the given style 1`] = `
 <Text
+  allowFontScaling={false}
   style={
     Object {
       "color": "#696969",
@@ -137,7 +142,9 @@ exports[`2. article summary content component with the given style 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     
     Test
     ...
@@ -147,6 +154,7 @@ exports[`2. article summary content component with the given style 1`] = `
 
 exports[`3. article summary content component with white space height and lineheight 1`] = `
 <Text
+  allowFontScaling={false}
   numberOfLines={4}
   style={
     Object {
@@ -159,7 +167,9 @@ exports[`3. article summary content component with white space height and linehe
     }
   }
 >
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     
     Test
     ...
@@ -169,6 +179,7 @@ exports[`3. article summary content component with white space height and linehe
 
 exports[`4. article summary content component without white space height 1`] = `
 <Text
+  allowFontScaling={false}
   numberOfLines={2}
   style={
     Object {
@@ -181,7 +192,9 @@ exports[`4. article summary content component without white space height 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     
     Test
     ...

@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import { defaultProps, propTypes } from "./text-link-prop-types";
 
 const styles = StyleSheet.create({

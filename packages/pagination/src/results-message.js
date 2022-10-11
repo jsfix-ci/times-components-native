@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import styleguide from "@times-components-native/styleguide";
 
 const { colours, fontFactory } = styleguide();

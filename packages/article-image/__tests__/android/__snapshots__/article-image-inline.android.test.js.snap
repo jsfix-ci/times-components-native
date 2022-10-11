@@ -51,6 +51,7 @@ exports[`1. inline image (landscape) with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -64,6 +65,7 @@ exports[`1. inline image (landscape) with caption and credits 1`] = `
           Landscape caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -136,6 +138,7 @@ exports[`2. inline image (portrait) with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -149,6 +152,7 @@ exports[`2. inline image (portrait) with caption and credits 1`] = `
           Portrait caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",

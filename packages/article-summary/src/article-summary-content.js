@@ -1,6 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
 import PropTypes from "prop-types";
+import { Text } from "@times-components-native/text";
 import { renderAst as defaultRenderAst } from "./renderAst";
 import styles from "./styles";
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { styles } from "./styles/empty-search-message-styles";
 
 const { container, text, title } = styles;

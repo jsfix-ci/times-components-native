@@ -1,7 +1,8 @@
 import React from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, View } from "react-native";
 import PropTypes from "prop-types";
 
+import { Text } from "@times-components-native/text";
 import Button from "@times-components-native/button";
 import styles from "./styles";
 

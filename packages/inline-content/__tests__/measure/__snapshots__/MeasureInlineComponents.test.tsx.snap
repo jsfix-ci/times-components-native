@@ -36,13 +36,16 @@ exports[`MeasureContent renders the content 1`] = `
           Object {
             "color": "#000000",
             "fontFamily": "TimesDigitalW04",
-            "fontSize": 36,
-            "lineHeight": 52,
+            "fontSize": 18,
+            "lineHeight": 25.92,
           }
         }
         testID="paragraph"
       >
-        <Text>
+        <Text
+          allowFontScaling={false}
+          style={Object {}}
+        >
           abc
         </Text>
       </Text>

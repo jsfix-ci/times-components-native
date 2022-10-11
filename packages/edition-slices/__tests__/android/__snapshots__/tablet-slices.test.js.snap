@@ -31,7 +31,9 @@ exports[`2. daily universal register - smalltablet 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -246,7 +248,9 @@ exports[`9. leaders slice - smalltablet 1`] = `
         }
       />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
            Leading Articles 
         </Text>
       </View>
@@ -1255,7 +1259,9 @@ exports[`39. daily universal register - medium 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -1470,7 +1476,9 @@ exports[`46. leaders slice - medium 1`] = `
         }
       />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
            Leading Articles 
         </Text>
       </View>
@@ -2479,7 +2487,9 @@ exports[`76. daily universal register - wide 1`] = `
         }
       }
     />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Daily Universal Register
     </Text>
     <View>
@@ -2693,7 +2703,9 @@ exports[`83. leaders slice - wide 1`] = `
         }
       />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
            Leading Articles 
         </Text>
       </View>
@@ -3719,7 +3731,9 @@ exports[`113. daily universal register - huge 1`] = `
           }
         }
       />
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         Daily Universal Register
       </Text>
       <View>
@@ -3947,7 +3961,9 @@ exports[`120. leaders slice - huge 1`] = `
           }
         />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
              Leading Articles 
           </Text>
         </View>

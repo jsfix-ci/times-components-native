@@ -251,21 +251,15 @@ const ArticleSummary: React.FC<Props> = ({
     </MarkAsRead>
   );
 
-  const renderFlags = (articleReadState: ArticleReadState) => {
-    return (
-      <MarkAsRead
-        articleReadState={articleReadState}
-        opacityAnimation={standardOpacity}
-        opacity={articleReadOpacity.standard}
-      >
-        <ArticleFlags
-          {...flagColour}
-          style={flagsStyle}
-          flags={expirableFlags}
-        />
-      </MarkAsRead>
-    );
-  };
+  const renderFlags = (articleReadState: ArticleReadState) => (
+    <MarkAsRead
+      articleReadState={articleReadState}
+      opacityAnimation={standardOpacity}
+      opacity={articleReadOpacity.standard}
+    >
+      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
+    </MarkAsRead>
+  );
 
   const renderSaveStar = () => (
     <PositionedTileStar

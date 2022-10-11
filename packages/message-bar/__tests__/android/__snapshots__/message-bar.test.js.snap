@@ -8,7 +8,9 @@ exports[`1. renders correctly 1`] = `
     data-testid="message-bar"
   >
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         test message
       </Text>
       <View>

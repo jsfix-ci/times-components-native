@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { gqlRgbaToStyle } from "@times-components-native/utils";
 import styles from "./styles";
 import { colours } from "@times-components-native/styleguide";

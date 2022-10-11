@@ -3,6 +3,7 @@
 exports[`1. article summary headline component 1`] = `
 <Text
   accessibilityRole="header"
+  allowFontScaling={false}
   aria-level="3"
   style={
     Object {
@@ -22,6 +23,7 @@ exports[`1. article summary headline component 1`] = `
 exports[`2. article summary strapline component 1`] = `
 <Text
   accessibilityRole="header"
+  allowFontScaling={false}
   aria-level="4"
   style={
     Object {

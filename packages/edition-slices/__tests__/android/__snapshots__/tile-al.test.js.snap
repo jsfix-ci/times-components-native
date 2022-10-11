@@ -46,6 +46,7 @@ exports[`tile al huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -72,6 +73,7 @@ exports[`tile al huge 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -85,7 +87,9 @@ exports[`tile al huge 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
             ...
@@ -94,6 +98,15 @@ exports[`tile al huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -143,6 +156,7 @@ exports[`tile al wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -169,6 +183,7 @@ exports[`tile al wide 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -182,7 +197,9 @@ exports[`tile al wide 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
             ...
@@ -191,5 +208,14 @@ exports[`tile al wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

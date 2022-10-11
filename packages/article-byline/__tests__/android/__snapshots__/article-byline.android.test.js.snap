@@ -3,9 +3,12 @@
 exports[`1. single inline element 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Lindsay McIntosh, Scottish Political Editor
     </Text>
   </Text>
@@ -15,12 +18,17 @@ exports[`1. single inline element 1`] = `
 exports[`2. with the author in the beginning 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       , Environment Editor
     </Text>
   </Text>
@@ -30,12 +38,17 @@ exports[`2. with the author in the beginning 1`] = `
 exports[`3. with the author at the end 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       RBS Six Nations, 
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Mike Atherton
     </Text>
   </Text>
@@ -45,21 +58,32 @@ exports[`3. with the author at the end 1`] = `
 exports[`4. with multiple authors separated by a pipe 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
        | 
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
        | 
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -69,21 +93,32 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 exports[`5. with multiple authors separated by text with commas 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       , 
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       , 
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -93,18 +128,27 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 exports[`6. with multiple authors separated by spaces 1`] = `
 <View>
   <Text
+    allowFontScaling={false}
     testID="author"
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Camilla Long
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
        
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Mike Atherton
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Alexandra Frean
     </Text>
   </Text>
@@ -113,6 +157,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
 
 exports[`7. null with an empty ast 1`] = `
 <Text
+  allowFontScaling={false}
   testID="author"
 />
 `;

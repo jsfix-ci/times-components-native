@@ -25,6 +25,7 @@ exports[`tile ak huge 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -81,6 +82,7 @@ exports[`tile ak medium 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -137,6 +139,7 @@ exports[`tile ak smallTablet 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -193,6 +196,7 @@ exports[`tile ak wide 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
@@ -249,6 +253,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
   >
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {

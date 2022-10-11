@@ -5,6 +5,7 @@ exports[`1. no short headline 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
     >
       Related articles
@@ -45,13 +46,18 @@ exports[`1. no short headline 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
                 >
                   Test Headline
                 </Text>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       
                       Summary 125
                       ...
@@ -59,16 +65,28 @@ exports[`1. no short headline 1`] = `
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    March 13 2015, 6.54pm
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      March 13 2015, 6.54pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       Camilla Long
                     </Text>
-                    <Text>
+                    <Text
+                      allowFontScaling={false}
+                    >
                       , Environment Editor
                     </Text>
                   </Text>

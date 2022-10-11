@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
+import { Text } from "@times-components-native/text";
 import ArticleLeadAsset from "../src/article-lead-asset";
 import getRatio from "../src/get-ratio";
 

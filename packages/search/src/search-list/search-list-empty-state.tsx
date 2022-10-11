@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { Text, Image, KeyboardAvoidingView, Platform } from "react-native";
+import { Image, KeyboardAvoidingView, Platform } from "react-native";
+import { Text } from "@times-components-native/text";
 import { styles } from "./styles/search-list-empty-state-styles";
 import { ImageIcons } from "@times-components-native/icons/src/icons/imageIcons";
 

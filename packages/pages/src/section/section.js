@@ -2,10 +2,14 @@ import React, { Component } from "react";
 import { AppState, DeviceEventEmitter, NativeModules } from "react-native";
 import PropTypes from "prop-types";
 
-import { SectionContext } from "@times-components-native/context";
+import {
+  ContextProviderWithDefaults,
+  SectionContext,
+} from "@times-components-native/context";
 import Section from "@times-components-native/section";
 import trackSection from "./track-section";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
+import Responsive from "@times-components-native/responsive";
 
 const {
   getOpenedPuzzleCount,
@@ -34,7 +38,6 @@ const onPuzzlePress = ({ id, title, url }) =>
 class SectionPage extends Component {
   constructor(props) {
     super(props);
-
     const existingReadArticles =
       props &&
       props.readArticles.map(articleId => ({
@@ -44,6 +47,7 @@ class SectionPage extends Component {
 
     const { section } = this.props;
     this.state = {
+      fontScaleToUse: props?.fontScale ? props.fontScale / 100 : 1,
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
       readArticles: existingReadArticles || [],
       savedArticles: null,
@@ -60,6 +64,10 @@ class SectionPage extends Component {
   }
 
   componentDidMount() {
+    this.updateFontScaleSubscription = DeviceEventEmitter.addListener(
+      "onFontScaleChanged",
+      this.onFontScaleChange,
+    );
     this.appListener = AppState.addEventListener(
       "change",
       this.onAppStateChange,
@@ -84,6 +92,7 @@ class SectionPage extends Component {
     this.updateSASubscription.remove();
     this.updateSDSubscription.remove();
     this.updateRASubscription.remove();
+    this.updateFontScaleSubscription.remove();
   }
 
   onAppStateChange(nextAppState) {
@@ -91,6 +100,12 @@ class SectionPage extends Component {
       this.syncAppData();
     }
   }
+
+  onFontScaleChange = newVal => {
+    if (newVal) {
+      this.setState({ fontScaleToUse: newVal / 100 });
+    }
+  };
 
   onArticleSavePress(save, articleId) {
     this.toggleArticleSaveStatus(save, articleId);
@@ -167,6 +182,7 @@ class SectionPage extends Component {
       recentlyOpenedPuzzleCount,
       savedArticles,
       section,
+      fontScaleToUse,
     } = this.state;
 
     return (
@@ -180,21 +196,30 @@ class SectionPage extends Component {
           recentlyOpenedPuzzleCount,
           savedArticles,
           hasDynamicBullets,
+          fontScale: fontScaleToUse,
         }}
       >
-        <RemoteConfigProvider config={remoteConfig}>
-          <Section
-            adConfig={{ sectionName: section.name }}
-            analyticsStream={trackSection}
-            onArticlePress={onArticlePress}
-            onLinkPress={onLinkPress}
-            onPuzzleBarPress={onPuzzleBarPress}
-            onPuzzlePress={onPuzzlePress}
-            publicationName={publicationName}
-            section={section}
-            puzzlesMetaData={puzzlesMetaData}
-          />
-        </RemoteConfigProvider>
+        <ContextProviderWithDefaults
+          value={{
+            theme: { fontScale: fontScaleToUse },
+          }}
+        >
+          <Responsive fontScale={fontScaleToUse}>
+            <RemoteConfigProvider config={remoteConfig}>
+              <Section
+                adConfig={{ sectionName: section.name }}
+                analyticsStream={trackSection}
+                onArticlePress={onArticlePress}
+                onLinkPress={onLinkPress}
+                onPuzzleBarPress={onPuzzleBarPress}
+                onPuzzlePress={onPuzzlePress}
+                publicationName={publicationName}
+                section={section}
+                puzzlesMetaData={puzzlesMetaData}
+              />
+            </RemoteConfigProvider>
+          </Responsive>
+        </ContextProviderWithDefaults>
       </SectionContext.Provider>
     );
   }
@@ -206,6 +231,7 @@ SectionPage.propTypes = {
   section: PropTypes.shape({}),
   hasDynamicBullets: PropTypes.bool,
   readArticles: PropTypes.arrayOf(PropTypes.string),
+  fontScale: PropTypes.number,
 };
 
 SectionPage.defaultProps = {
@@ -214,6 +240,7 @@ SectionPage.defaultProps = {
   section: null,
   hasDynamicBullets: false,
   readArticles: [],
+  fontScale: 1,
 };
 
 export default SectionPage;

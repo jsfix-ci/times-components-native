@@ -26,6 +26,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -41,6 +42,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -54,6 +56,7 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -108,21 +111,15 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
         }
       >
         <Text
+          allowFontScaling={false}
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 16,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              },
-              null,
-              null,
-              Object {
-                "color": "#1D1D1B",
-              },
-            ]
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 16,
+              "paddingTop": 0,
+            }
           }
           title="Saving…"
         >
@@ -160,6 +157,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -175,6 +173,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -188,6 +187,7 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -242,21 +242,15 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 16,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              },
-              null,
-              null,
-              Object {
-                "color": "#1D1D1B",
-              },
-            ]
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 16,
+              "paddingTop": 0,
+            }
           }
           title="Sign up now"
         >
@@ -323,6 +317,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -338,6 +333,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -351,6 +347,7 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -411,21 +408,15 @@ exports[`Inline Newsletter Puff renders signup state:  medium 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 16,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              },
-              null,
-              null,
-              Object {
-                "color": "#1D1D1B",
-              },
-            ]
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 16,
+              "paddingTop": 0,
+            }
           }
           title="Sign up now"
         >
@@ -463,6 +454,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -478,6 +470,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -491,6 +484,7 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -545,21 +539,15 @@ exports[`Inline Newsletter Puff renders signup state:  small 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 16,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              },
-              null,
-              null,
-              Object {
-                "color": "#1D1D1B",
-              },
-            ]
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 16,
+              "paddingTop": 0,
+            }
           }
           title="Sign up now"
         >
@@ -605,6 +593,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -620,6 +609,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -633,6 +623,7 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
       Politics. Explained.
     </Text>
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#333333",
@@ -693,21 +684,15 @@ exports[`Inline Newsletter Puff renders signup state:  wide 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 16,
-                "lineHeight": 16,
-                "paddingTop": 0,
-              },
-              null,
-              null,
-              Object {
-                "color": "#1D1D1B",
-              },
-            ]
+            Object {
+              "color": "#1D1D1B",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 16,
+              "lineHeight": 16,
+              "paddingTop": 0,
+            }
           }
           title="Sign up now"
         >
@@ -754,6 +739,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -809,6 +795,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  med
           }
         >
           <Text
+            allowFontScaling={false}
             style={
               Object {
                 "color": "#006699",
@@ -902,6 +889,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#1D1D1B",
@@ -957,6 +945,7 @@ exports[`Inline Newsletter Puff renders the success view after subscribing:  sma
           }
         >
           <Text
+            allowFontScaling={false}
             style={
               Object {
                 "color": "#006699",

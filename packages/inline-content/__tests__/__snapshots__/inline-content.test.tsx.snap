@@ -78,9 +78,9 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text>
+                <Txt>
                   article content
-                </Text>,
+                </Txt>,
               ]
             }
             attributes={
@@ -91,23 +91,22 @@ exports[`InlineContent ad renders content and inline ad via a render-prop 1`] = 
             narrowContent={false}
             style={Object {}}
           >
-            <Text
-              allowFontScaling={false}
+            <Txt
               selectable={true}
               style={
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 36,
-                  "lineHeight": 52,
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
               testID="paragraph"
             >
-              <Text>
+              <Txt>
                 article content
-              </Text>
-            </Text>
+              </Txt>
+            </Txt>
           </ArticleParagraphWrapper>
         </ErrorBoundary>
       </Gutter>
@@ -247,9 +246,9 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
           <ArticleParagraphWrapper
             ast={
               Array [
-                <Text>
+                <Txt>
                   article content
-                </Text>,
+                </Txt>,
               ]
             }
             attributes={
@@ -260,23 +259,22 @@ exports[`InlineContent dropcap renders content and dropcap via a render-prop 1`]
             narrowContent={false}
             style={Object {}}
           >
-            <Text
-              allowFontScaling={false}
+            <Txt
               selectable={true}
               style={
                 Object {
                   "color": "#000000",
                   "fontFamily": "TimesDigitalW04",
-                  "fontSize": 36,
-                  "lineHeight": 52,
+                  "fontSize": 18,
+                  "lineHeight": 25.92,
                 }
               }
               testID="paragraph"
             >
-              <Text>
+              <Txt>
                 article content
-              </Text>
-            </Text>
+              </Txt>
+            </Txt>
           </ArticleParagraphWrapper>
         </ErrorBoundary>
       </Gutter>
@@ -422,9 +420,9 @@ exports[`InlineContent image renders content and inline image via a render-prop 
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text>
+            <Txt>
               article content
-            </Text>,
+            </Txt>,
           ]
         }
         attributes={
@@ -435,23 +433,22 @@ exports[`InlineContent image renders content and inline image via a render-prop 
         narrowContent={false}
         style={Object {}}
       >
-        <Text
-          allowFontScaling={false}
+        <Txt
           selectable={true}
           style={
             Object {
               "color": "#000000",
               "fontFamily": "TimesDigitalW04",
-              "fontSize": 36,
-              "lineHeight": 52,
+              "fontSize": 18,
+              "lineHeight": 25.92,
             }
           }
           testID="paragraph"
         >
-          <Text>
+          <Txt>
             article content
-          </Text>
-        </Text>
+          </Txt>
+        </Txt>
       </ArticleParagraphWrapper>
     </ErrorBoundary>
   </Gutter>
@@ -574,9 +571,9 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
       <ArticleParagraphWrapper
         ast={
           Array [
-            <Text>
+            <Txt>
               article content
-            </Text>,
+            </Txt>,
           ]
         }
         attributes={
@@ -587,23 +584,22 @@ exports[`InlineContent pullQuote renders content and pullQuote ad via a render-p
         narrowContent={false}
         style={Object {}}
       >
-        <Text
-          allowFontScaling={false}
+        <Txt
           selectable={true}
           style={
             Object {
               "color": "#000000",
               "fontFamily": "TimesDigitalW04",
-              "fontSize": 36,
-              "lineHeight": 52,
+              "fontSize": 18,
+              "lineHeight": 25.92,
             }
           }
           testID="paragraph"
         >
-          <Text>
+          <Txt>
             article content
-          </Text>
-        </Text>
+          </Txt>
+        </Txt>
       </ArticleParagraphWrapper>
     </ErrorBoundary>
   </Gutter>

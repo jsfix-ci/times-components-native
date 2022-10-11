@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, Dimensions } from "react-native";
+import { Text } from "@times-components-native/text";
+import { Dimensions } from "react-native";
 import ArticleLeadAsset from "./src/article-lead-asset";
 
 const preventDefaultedAction = decorateAction =>

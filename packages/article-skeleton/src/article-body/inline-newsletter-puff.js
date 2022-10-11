@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Linking, Platform, Text, View } from "react-native";
+import { Linking, Platform, View } from "react-native";
 import { Mutation } from "react-apollo";
 import PropTypes from "prop-types";
-
+import { Text } from "@times-components-native/text";
 import { GetNewsletter } from "@times-components-native/provider";
 import { subscribeNewsletter as subscribeNewsletterMutation } from "@times-components-native/provider-queries";
 import Image, { Placeholder } from "@times-components-native/image";

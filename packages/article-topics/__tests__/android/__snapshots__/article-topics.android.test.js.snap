@@ -16,6 +16,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={false}
         >
           Football
         </Text>
@@ -36,6 +37,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={false}
         >
           Manchester United FC
         </Text>
@@ -56,6 +58,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={false}
         >
           Chelsea FC
         </Text>
@@ -76,6 +79,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={false}
         >
           Arsenal
         </Text>
@@ -96,6 +100,7 @@ exports[`1. group of topics 1`] = `
           accessibilityComponentType="button"
           accessibilityRole="button"
           accessibilityTraits="button"
+          allowFontScaling={false}
         >
           Rugby Union
         </Text>
@@ -159,6 +164,7 @@ exports[`4. article topic 1`] = `
         accessibilityComponentType="button"
         accessibilityRole="button"
         accessibilityTraits="button"
+        allowFontScaling={false}
       >
         Test
       </Text>

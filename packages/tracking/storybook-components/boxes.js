@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Text, FlatList } from "react-native";
+import { FlatList } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const viewabilityConfig = {
   viewAreaCoveragePercentThreshold: 100,

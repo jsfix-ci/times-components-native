@@ -2,15 +2,20 @@
 
 exports[`disabled comments 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Comments for this article have been turned off
   </Text>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     For more details, please see our 
     
 
     <Text
       accessibilityRole="link"
+      allowFontScaling={false}
     >
       community guidelines
     </Text>
@@ -20,13 +25,18 @@ exports[`disabled comments 1`] = `
 
 exports[`enabled comments 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     123 comments
   </Text>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={false}
     >
       here
     </Text>
@@ -37,6 +47,7 @@ exports[`enabled comments 1`] = `
     focusable={true}
   >
     <Text
+      allowFontScaling={false}
       title="View comments"
     >
       View comments
@@ -47,7 +58,9 @@ exports[`enabled comments 1`] = `
 
 exports[`should render disabled-comments if commentsGloballyDisabled 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Comments are currently unavailable
   </Text>
 </View>
@@ -55,13 +68,18 @@ exports[`should render disabled-comments if commentsGloballyDisabled 1`] = `
 
 exports[`single comment 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     1 comment
   </Text>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={false}
     >
       here
     </Text>
@@ -72,6 +90,7 @@ exports[`single comment 1`] = `
     focusable={true}
   >
     <Text
+      allowFontScaling={false}
       title="View comments"
     >
       View comments
@@ -82,13 +101,18 @@ exports[`single comment 1`] = `
 
 exports[`zero comments 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     0 comments
   </Text>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Comments are subject to our community guidelines, which can be viewed 
     <Text
       accessibilityRole="link"
+      allowFontScaling={false}
     >
       here
     </Text>
@@ -99,6 +123,7 @@ exports[`zero comments 1`] = `
     focusable={true}
   >
     <Text
+      allowFontScaling={false}
       title="Post a comment"
     >
       Post a comment

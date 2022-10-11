@@ -35,6 +35,7 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
     }
   >
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#006699",

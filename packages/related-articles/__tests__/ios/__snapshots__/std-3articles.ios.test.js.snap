@@ -5,6 +5,7 @@ exports[`1. three related articles 1`] = `
   <View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
     >
       Related articles
@@ -45,13 +46,18 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
                 >
                   First Short Headline
                 </Text>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       
                       Summary 125
                       ...
@@ -59,13 +65,23 @@ exports[`1. three related articles 1`] = `
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    March 13 2015, 6.54pm
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      March 13 2015, 6.54pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       Camilla Long, Environment Editor
                     </Text>
                   </Text>
@@ -110,13 +126,18 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
                 >
                   Second Short Headline
                 </Text>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       
                       Summary 125
                       ...
@@ -124,13 +145,23 @@ exports[`1. three related articles 1`] = `
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    January 17 2018, 12.00pm
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      January 17 2018, 12.00pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       Camilla Long, Environment Editor
                     </Text>
                   </Text>
@@ -175,13 +206,18 @@ exports[`1. three related articles 1`] = `
                 </View>
                 <Text
                   accessibilityRole="header"
+                  allowFontScaling={false}
                   aria-level="3"
                 >
                   Third Short Headline
                 </Text>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       
                       Summary 125
                       ...
@@ -189,13 +225,23 @@ exports[`1. three related articles 1`] = `
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    January 17 2018, 12.00pm
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
+                      January 17 2018, 12.00pm GMT
+                    </Text>
                   </Text>
                 </View>
                 <View>
-                  <Text>
-                    <Text>
+                  <Text
+                    allowFontScaling={false}
+                  >
+                    <Text
+                      allowFontScaling={false}
+                    >
                       Camilla Long, Environment Editor
                     </Text>
                   </Text>

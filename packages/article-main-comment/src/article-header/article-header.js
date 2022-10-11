@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import { hasBylineData } from "@times-components-native/article-byline";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { ModalImage } from "@times-components-native/image";
+import { Text } from "@times-components-native/text";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";

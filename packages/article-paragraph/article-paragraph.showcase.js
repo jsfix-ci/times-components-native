@@ -6,7 +6,7 @@ import { renderTree } from "@times-components-native/markup-forest";
 import { scales } from "@times-components-native/styleguide";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import ArticleParagraph from "./src";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 
 const renderParagraphWithScale = ({ select }, ast) => {
   const scale = select("Scale", scales, scales.medium);

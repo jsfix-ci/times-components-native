@@ -1,8 +1,8 @@
 import React from "react";
-import { NativeModules, View } from "react-native";
+import "./mocks";
+import { View, NativeModules } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components-native/test-utils";
-import "./mocks";
 import SectionPage from "../src/section/section";
 
 jest.mock("@times-components-native/section", () => {
@@ -79,6 +79,14 @@ export default () => {
 
     getSavedArticles.mockReturnValue(promise);
     onArticleSavePress.mockReturnValue(Promise.resolve(true));
+
+    // const getSavedArticles = jest
+    //   .fn(() => "default")
+    //   .mockImplementationOnce(() => true);
+
+    // const onArticleSavePress = jest
+    //   .fn(() => "default")
+    //   .mockImplementationOnce(() => true);
 
     const testInstance = TestRenderer.create(
       <SectionPage section={{ name: "News", slices: [] }} />,

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import styles from "./styles";
 
 const ArticleListError = () => (

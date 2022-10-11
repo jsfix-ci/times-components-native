@@ -73,9 +73,9 @@ const styles = StyleSheet.create({
   },
   metaContainerTabletFlow: {
     alignItems: "center",
-    flexDirection: "row",
     justifyContent: "center",
     width: "100%",
+    flexDirection: "column",
   },
   separator: {
     borderRightColor: colours.functional.keyline,

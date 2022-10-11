@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { IconVideo } from "@times-components-native/icons";
 import styles from "./style";
 

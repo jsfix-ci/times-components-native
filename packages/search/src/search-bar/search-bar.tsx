@@ -122,6 +122,7 @@ export const SearchBarComponent: FC<SearchBarComponentProps> = memo(
                     autoFocus={autoFocus}
                     editable={isConnected ? isConnected : false}
                     testID="search-input"
+                    allowFontScaling={false}
                   />
                 </View>
                 {text && isIOS ? <XButton onPress={handleResetSearch} /> : null}

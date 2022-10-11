@@ -49,6 +49,7 @@ exports[`tile ar huge 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -75,6 +76,7 @@ exports[`tile ar huge 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -88,7 +90,9 @@ exports[`tile ar huge 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
@@ -97,6 +101,15 @@ exports[`tile ar huge 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -149,6 +162,7 @@ exports[`tile ar medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -175,6 +189,7 @@ exports[`tile ar medium 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -188,7 +203,9 @@ exports[`tile ar medium 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
@@ -197,6 +214,15 @@ exports[`tile ar medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -249,6 +275,7 @@ exports[`tile ar smallTablet 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -275,6 +302,7 @@ exports[`tile ar smallTablet 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -288,7 +316,9 @@ exports[`tile ar smallTablet 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
@@ -297,6 +327,15 @@ exports[`tile ar smallTablet 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -349,6 +388,7 @@ exports[`tile ar wide 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -375,6 +415,7 @@ exports[`tile ar wide 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -388,7 +429,9 @@ exports[`tile ar wide 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
@@ -397,6 +440,15 @@ exports[`tile ar wide 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;
 
@@ -449,6 +501,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
         </View>
         <Text
           accessibilityRole="header"
+          allowFontScaling={false}
           aria-level="3"
           style={
             Object {
@@ -475,6 +528,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           numberOfLines={2}
           style={
             Object {
@@ -488,7 +542,9 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
           }
           testID="article-summary-content"
         >
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             
             Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
             ...
@@ -497,5 +553,14 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
       </View>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "marginTop": "auto",
+        "paddingTop": 5,
+      }
+    }
+  />
 </Link>
 `;

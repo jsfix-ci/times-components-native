@@ -36,6 +36,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -49,6 +50,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -105,6 +107,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -118,6 +121,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -180,6 +184,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -195,6 +200,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -259,6 +265,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -274,6 +281,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
           Some caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -349,6 +357,7 @@ exports[`5. secondary image with caption and credits 1`] = `
         }
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -362,6 +371,7 @@ exports[`5. secondary image with caption and credits 1`] = `
           Another caption
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",

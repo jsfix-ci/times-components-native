@@ -13,9 +13,9 @@ import breakpoints, {
   getNarrowArticleBreakpoint,
   getStyleByDeviceSize,
 } from "./breakpoints";
-import timesLineHeightsFactory from "./line-heights";
-import timesFonts from "./fonts/fonts";
-import timesFontSizes from "./fonts/font-sizes";
+import lineHeights from "./line-heights";
+import fonts from "./fonts/fonts";
+import fontSizes from "./fonts/font-sizes-base";
 
 import scales from "./scales";
 import spacing, { globalSpacingStyles } from "./spacing";
@@ -37,17 +37,13 @@ const Animations = {
   FadeIn,
 };
 
-const fonts = timesFonts;
-const fontSizes = timesFontSizes();
-const lineHeight = timesLineHeightsFactory();
-
-const timesFontFactory = (scale = scales.medium) => ({ font, fontSize }) => ({
-  fontFamily: fonts[font],
-  fontSize: timesFontSizes(scale)[fontSize],
-  lineHeight: timesLineHeightsFactory(scale)({ fontSize, font }),
-});
-
-const fontFactory = timesFontFactory();
+const fontFactory = ({ font, fontSize }) => {
+  return {
+    fontFamily: fonts[font],
+    fontSize: fontSizes[fontSize],
+    lineHeight: lineHeights({ fontSize, font }),
+  };
+};
 
 export {
   fontFactory,
@@ -61,7 +57,7 @@ export {
   globalSpacingStyles,
   fonts,
   fontSizes,
-  lineHeight,
+  lineHeights,
   ARTICLE_READ_ANIMATION,
   themeFactory,
   breakpoints,
@@ -75,13 +71,13 @@ export {
   spacing,
 };
 
-const styleguide = ({ scale = scales.medium } = {}) => ({
+const styleguide = () => ({
   Animations,
   colours,
-  fontFactory: timesFontFactory(scale),
+  fontFactory,
   fonts,
-  fontSizes: timesFontSizes(scale),
-  lineHeight: timesLineHeightsFactory(scale),
+  fontSizes,
+  lineHeights,
   spacing,
 });
 

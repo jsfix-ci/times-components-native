@@ -46,14 +46,14 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               <View
                 style={
                   Object {
-                    "width": 55.0546875,
+                    "width": 54.86375,
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "height": 73.9375,
+                      "height": 73.71000000000001,
                       "overflow": "visible",
                       "width": 300,
                     }
@@ -73,8 +73,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                         Object {
                           "color": undefined,
                           "fontFamily": "TimesModern-Regular",
-                          "fontSize": 96.11875,
-                          "lineHeight": 96.11875,
+                          "fontSize": 95.82300000000001,
+                          "lineHeight": 95.82300000000001,
                         }
                       }
                     >
@@ -86,7 +86,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               <View
                 style={
                   Object {
-                    "width": 234.9453125,
+                    "width": 235.13625,
                   }
                 }
               >
@@ -106,8 +106,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                           Object {
                             "color": "#000000",
                             "fontFamily": "TimesDigitalW04",
-                            "fontSize": 36,
-                            "lineHeight": 52,
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
                           }
                         }
                       >
@@ -213,8 +213,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -223,8 +223,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "lineHeight": 52,
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
                       "textDecorationLine": "underline",
                     }
                   }
@@ -264,8 +264,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -609,20 +609,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               </Text>
             </View>
           </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
-          }
-        >
-          <Ad />
         </View>
       </View>
       <View>
@@ -1018,14 +1004,14 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
               <View
                 style={
                   Object {
-                    "width": 64.5,
+                    "width": 64.28,
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "height": 87.4453125,
+                      "height": 87.17625000000001,
                       "overflow": "visible",
                       "width": 300,
                     }
@@ -1045,8 +1031,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                         Object {
                           "color": undefined,
                           "fontFamily": "TimesModern-Regular",
-                          "fontSize": 113.67890625,
-                          "lineHeight": 113.67890625,
+                          "fontSize": 113.32912500000002,
+                          "lineHeight": 113.32912500000002,
                         }
                       }
                     >
@@ -1058,7 +1044,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
               <View
                 style={
                   Object {
-                    "width": 225.5,
+                    "width": 225.72,
                   }
                 }
               >
@@ -1078,8 +1064,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                           Object {
                             "color": "#000000",
                             "fontFamily": "TimesDigitalW04",
-                            "fontSize": 36,
-                            "lineHeight": 52,
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
                           }
                         }
                       >
@@ -1129,8 +1115,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1362,8 +1348,8 @@ exports[`7. an article with link 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1372,8 +1358,8 @@ exports[`7. an article with link 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "lineHeight": 52,
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
                       "textDecorationLine": "underline",
                     }
                   }
@@ -1469,8 +1455,8 @@ exports[`8. an article with italic link 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1482,8 +1468,8 @@ exports[`8. an article with italic link 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "lineHeight": 52,
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
                       "textDecorationLine": "underline",
                     }
                   }
@@ -1587,8 +1573,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1607,8 +1593,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
                       Object {
                         "color": "#006699",
                         "fontFamily": "TimesDigitalW04",
-                        "fontSize": 36,
-                        "lineHeight": 52,
+                        "fontSize": 18,
+                        "lineHeight": 25.92,
                         "textDecorationLine": "underline",
                       }
                     }
@@ -1702,8 +1688,8 @@ exports[`10. an article with italic and normal text link 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1715,8 +1701,8 @@ exports[`10. an article with italic and normal text link 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "lineHeight": 52,
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
                       "textDecorationLine": "underline",
                     }
                   }
@@ -1823,8 +1809,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -1931,8 +1917,8 @@ exports[`12. an article with text wrapped in inline element 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -2023,8 +2009,8 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -2118,8 +2104,8 @@ exports[`14. an article with inline inside a bold tag 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -2218,14 +2204,14 @@ exports[`15. an article starting with single quote 1`] = `
               <View
                 style={
                   Object {
-                    "width": 75.46875,
+                    "width": 75.215,
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "height": 79.98046875,
+                      "height": 79.73437500000001,
                       "overflow": "visible",
                       "width": 300,
                     }
@@ -2245,8 +2231,8 @@ exports[`15. an article starting with single quote 1`] = `
                         Object {
                           "color": undefined,
                           "fontFamily": "TimesModern-Regular",
-                          "fontSize": 103.974609375,
-                          "lineHeight": 103.974609375,
+                          "fontSize": 103.65468750000002,
+                          "lineHeight": 103.65468750000002,
                         }
                       }
                     >
@@ -2258,7 +2244,7 @@ exports[`15. an article starting with single quote 1`] = `
               <View
                 style={
                   Object {
-                    "width": 214.53125,
+                    "width": 214.785,
                   }
                 }
               >
@@ -2278,8 +2264,8 @@ exports[`15. an article starting with single quote 1`] = `
                           Object {
                             "color": "#000000",
                             "fontFamily": "TimesDigitalW04",
-                            "fontSize": 36,
-                            "lineHeight": 52,
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
                           }
                         }
                       >
@@ -2374,14 +2360,14 @@ exports[`16. an article starting with double quote 1`] = `
               <View
                 style={
                   Object {
-                    "width": 91.46484375,
+                    "width": 91.16187500000001,
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "height": 79.98046875,
+                      "height": 79.73437500000001,
                       "overflow": "visible",
                       "width": 300,
                     }
@@ -2401,8 +2387,8 @@ exports[`16. an article starting with double quote 1`] = `
                         Object {
                           "color": undefined,
                           "fontFamily": "TimesModern-Regular",
-                          "fontSize": 103.974609375,
-                          "lineHeight": 103.974609375,
+                          "fontSize": 103.65468750000002,
+                          "lineHeight": 103.65468750000002,
                         }
                       }
                     >
@@ -2414,7 +2400,7 @@ exports[`16. an article starting with double quote 1`] = `
               <View
                 style={
                   Object {
-                    "width": 198.53515625,
+                    "width": 198.838125,
                   }
                 }
               >
@@ -2434,8 +2420,8 @@ exports[`16. an article starting with double quote 1`] = `
                           Object {
                             "color": "#000000",
                             "fontFamily": "TimesDigitalW04",
-                            "fontSize": 36,
-                            "lineHeight": 52,
+                            "fontSize": 18,
+                            "lineHeight": 25.92,
                           }
                         }
                       >
@@ -2532,8 +2518,8 @@ exports[`17. an article skeleton with responsive items 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -2637,8 +2623,8 @@ exports[`17. an article skeleton with responsive items 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -2647,8 +2633,8 @@ exports[`17. an article skeleton with responsive items 1`] = `
                     Object {
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "lineHeight": 52,
+                      "fontSize": 18,
+                      "lineHeight": 25.92,
                       "textDecorationLine": "underline",
                     }
                   }
@@ -2690,8 +2676,8 @@ exports[`17. an article skeleton with responsive items 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "lineHeight": 52,
+                    "fontSize": 18,
+                    "lineHeight": 25.92,
                   }
                 }
               >
@@ -3037,20 +3023,6 @@ exports[`17. an article skeleton with responsive items 1`] = `
               </Text>
             </View>
           </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "visible",
-              "width": undefined,
-            }
-          }
-        >
-          <Ad />
         </View>
       </View>
       <View>

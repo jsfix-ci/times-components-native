@@ -22,7 +22,7 @@ export const MeasureContent: React.FC<Props> = memo(
       attributes: { ...content.attributes, inline: true },
     };
 
-    const { isArticleTablet, narrowContent, scale } = skeletonProps;
+    const { isArticleTablet, narrowContent } = skeletonProps;
 
     return (
       <View
@@ -47,7 +47,6 @@ export const MeasureContent: React.FC<Props> = memo(
             isArticleTablet,
             adConfig: {},
             images: [],
-            scale,
             analyticsStream: null,
             narrowContent,
             onParagraphTextLayout: (event: any) => {

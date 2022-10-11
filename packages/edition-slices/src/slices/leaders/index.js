@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { SectionContext } from "@times-components-native/context";
 import { Leaders } from "@times-components-native/slice-layout";
 import PropTypes from "prop-types";

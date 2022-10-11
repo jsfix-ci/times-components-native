@@ -34,12 +34,13 @@ exports[`tile h without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
@@ -60,6 +61,7 @@ exports[`tile h without breakpoint 1`] = `
       }
     />
     <Text
+      allowFontScaling={false}
       style={
         Object {
           "color": "#696969",
@@ -72,14 +74,26 @@ exports[`tile h without breakpoint 1`] = `
       }
       testID="article-summary-content"
     >
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
       </Text>
     </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
+      }
+    />
     <View>
       <Text
+        allowFontScaling={false}
         style={
           Object {
             "color": "#333333",
@@ -92,6 +106,7 @@ exports[`tile h without breakpoint 1`] = `
         testID="author"
       >
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",
@@ -105,6 +120,7 @@ exports[`tile h without breakpoint 1`] = `
           Richard Lloyd Parry
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#333333",

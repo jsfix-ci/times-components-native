@@ -33,6 +33,7 @@ exports[`renders correctly with style 1`] = `
           }
         />
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "alignSelf": "center",
@@ -48,6 +49,7 @@ exports[`renders correctly with style 1`] = `
           Something's gone wrong
         </Text>
         <Text
+          allowFontScaling={false}
           style={
             Object {
               "color": "#696969",
@@ -86,6 +88,7 @@ exports[`renders correctly with style 1`] = `
           }
         >
           <Text
+            allowFontScaling={false}
             style={
               Object {
                 "color": "#FFFFFF",

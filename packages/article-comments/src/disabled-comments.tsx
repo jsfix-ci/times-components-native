@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { Text, TextProps, View } from "react-native";
+import { TextProps, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { TextLink } from "@times-components-native/link";
 import styles from "./styles";
 

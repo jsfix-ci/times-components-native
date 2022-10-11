@@ -19,18 +19,20 @@ const calculateSectionContentHeightTablet = (height: number) =>
 export const calculateResponsiveContext = (
   width: number,
   height: number,
-  fontScale: number,
-): ContextType => ({
-  editionBreakpoint: getEditionBreakpoint(width),
-  narrowArticleBreakpoint: getNarrowArticleBreakpoint(width),
-  fontScale,
-  isTablet: isTablet ? isTablet() : false,
-  isArticleTablet: width >= minTabletWidth,
-  windowWidth: width,
-  windowHeight: height,
-  orientation: height > width ? Orientation.PORTRAIT : Orientation.LANDSCAPE,
-  isPortrait: height > width,
-  isLandscape: width > height,
-  sectionContentWidth: width,
-  sectionContentHeightTablet: calculateSectionContentHeightTablet(height),
-});
+  fontScale: number = 1,
+): ContextType => {
+  return {
+    editionBreakpoint: getEditionBreakpoint(width / fontScale),
+    narrowArticleBreakpoint: getNarrowArticleBreakpoint(width),
+    fontScale,
+    isTablet: isTablet ? isTablet() : false,
+    isArticleTablet: width >= minTabletWidth,
+    windowWidth: width,
+    windowHeight: height,
+    orientation: height > width ? Orientation.PORTRAIT : Orientation.LANDSCAPE,
+    isPortrait: height > width,
+    isLandscape: width > height,
+    sectionContentWidth: width,
+    sectionContentHeightTablet: calculateSectionContentHeightTablet(height),
+  };
+};

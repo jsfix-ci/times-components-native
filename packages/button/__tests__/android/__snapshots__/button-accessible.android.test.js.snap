@@ -7,8 +7,8 @@ exports[`accessible button 1`] = `
   accessibilityRole="button"
   accessibilityTraits="button"
 >
-  <Text>
+  <Txt>
     Test button
-  </Text>
+  </Txt>
 </TouchableHighlight>
 `;

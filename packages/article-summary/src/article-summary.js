@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import { articleBylinePropTypes } from "@times-components-native/article-byline";
 import DatePublication from "@times-components-native/date-publication";
+import { Text } from "@times-components-native/text";
 
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";

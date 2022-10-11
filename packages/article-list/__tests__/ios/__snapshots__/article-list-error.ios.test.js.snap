@@ -8,10 +8,14 @@ exports[`1. page error 1`] = `
       resizeMode="contain"
       source="90626bc96bb7fbe8283024ef6a680492"
     />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Something's gone wrong
     </Text>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </Text>
   </View>

@@ -38,15 +38,23 @@ exports[`tile u with headline style 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
-          "backgroundColor": "red",
+          "0": Object {
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 40,
+            "lineHeight": 40,
+          },
+          "1": Object {
+            "backgroundColor": "red",
+          },
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 40,
+          "fontSize": 22,
           "includeFontPadding": false,
-          "lineHeight": 40,
+          "lineHeight": 27,
           "marginBottom": 10,
         }
       }
@@ -62,6 +70,15 @@ exports[`tile u with headline style 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>
@@ -106,14 +123,21 @@ exports[`tile u without breakpoint 1`] = `
     </View>
     <Text
       accessibilityRole="header"
+      allowFontScaling={false}
       aria-level="3"
       style={
         Object {
+          "0": Object {
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 40,
+            "lineHeight": 40,
+          },
+          "1": undefined,
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 40,
+          "fontSize": 22,
           "includeFontPadding": false,
-          "lineHeight": 40,
+          "lineHeight": 27,
           "marginBottom": 10,
         }
       }
@@ -129,6 +153,15 @@ exports[`tile u without breakpoint 1`] = `
             "type": "EXCLUSIVE",
           },
         ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "marginTop": "auto",
+          "paddingTop": 5,
+        }
       }
     />
   </View>

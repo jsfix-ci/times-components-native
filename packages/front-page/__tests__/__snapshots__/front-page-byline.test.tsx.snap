@@ -16,6 +16,7 @@ exports[`FrontPageByline renders with container style 1`] = `
 >
   <Text
     allowFontScaling={false}
+    style={Object {}}
   >
     <ArticleByline
       ast={
@@ -61,6 +62,7 @@ exports[`FrontPageByline renders with keyline 1`] = `
 >
   <Text
     allowFontScaling={false}
+    style={Object {}}
   >
     <ArticleByline
       ast={
@@ -101,6 +103,7 @@ exports[`FrontPageByline renders without keyline 1`] = `
 >
   <Text
     allowFontScaling={false}
+    style={Object {}}
   >
     <ArticleByline
       ast={
