@@ -46,11 +46,11 @@ beforeEach(() => {
   console.error = jest.fn(); // eslint-disable-line no-console
 });
 
-const setUpNavigationTest = (canOpenURLImpl) => {
+const setUpNavigationTest = canOpenURLImpl => {
   jest.spyOn(Linking, "canOpenURL").mockImplementation(canOpenURLImpl);
   jest
     .spyOn(Linking, "openURL")
-    .mockImplementation(() => new Promise((resolve) => resolve()));
+    .mockImplementation(() => new Promise(resolve => resolve()));
 
   const interactiveWrapper = new InteractiveWrapper();
   interactiveWrapper.webview = {
@@ -84,7 +84,7 @@ it("should not render if error", () => {
   expect(testInstance.toJSON()).toMatchSnapshot();
 });
 
-it("openURLInBrowser should try to open a link", (done) => {
+it("openURLInBrowser should try to open a link", done => {
   setUpNavigationTest(() => Promise.resolve(true));
 
   const navigateTo = "https://www.thetimes.co.uk";
@@ -98,7 +98,7 @@ it("openURLInBrowser should try to open a link", (done) => {
     .catch(done);
 });
 
-it("openURLInBrowser should try to open an invalid link", (done) => {
+it("openURLInBrowser should try to open an invalid link", done => {
   setUpNavigationTest(() => Promise.resolve(false));
 
   const navigateTo = "failing url";
@@ -112,7 +112,7 @@ it("openURLInBrowser should try to open an invalid link", (done) => {
     .catch(done);
 });
 
-it("openURLInBrowser should try to open a link and fail", (done) => {
+it("openURLInBrowser should try to open a link and fail", done => {
   setUpNavigationTest(() => Promise.reject(new Error("mock err")));
 
   const navigateTo = "failing url";
@@ -132,7 +132,7 @@ it("onLoadEnd sends a postMessage", () => {
   expect(component.webview.postMessage).toHaveBeenCalled();
 });
 
-it("handleOnShouldStartLoadWithRequest should return error if canOpenURL throws error", (done) => {
+it("handleOnShouldStartLoadWithRequest should return error if canOpenURL throws error", done => {
   setUpNavigationTest(() => Promise.reject(new Error("mock err")));
 
   const navigateTo = "https://www.thetimes.co.uk";

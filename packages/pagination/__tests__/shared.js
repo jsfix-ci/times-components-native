@@ -5,7 +5,7 @@ import {
 } from "@times-components-native/jest-serializer";
 import shared from "./shared.base";
 
-export default (withPageState) => {
+export default withPageState => {
   addSerializers(expect, minimalNative);
 
   shared(withPageState, TestRenderer.create);

@@ -61,7 +61,7 @@ import {
 const tile = mockEditionSlice(1).items[0];
 const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

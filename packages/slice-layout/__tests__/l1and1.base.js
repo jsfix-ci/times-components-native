@@ -4,7 +4,7 @@ import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { LeadOneAndOneSlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "lead one and one - small",

@@ -4,7 +4,7 @@ import NetInfo from "@react-native-community/netinfo";
 export const useIsConnected = () => {
   const [isConnected, setIsConnected] = useState<boolean | null>(true);
   useEffect(() => {
-    const unsubscribe = NetInfo.addEventListener((state) => {
+    const unsubscribe = NetInfo.addEventListener(state => {
       setIsConnected(state.isConnected);
     });
 

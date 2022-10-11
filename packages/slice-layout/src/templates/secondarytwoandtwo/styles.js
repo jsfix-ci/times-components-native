@@ -55,5 +55,5 @@ const stylesToReturn = {
   wide: wideBreakpointStyles,
 };
 
-export default (breakpoint) =>
+export default breakpoint =>
   stylesToReturn[breakpoint] || smallBreakpointStyles;

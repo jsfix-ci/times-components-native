@@ -8,7 +8,7 @@ export const getStringBounds = (fontSettings, string) => {
   let x2 = 0;
   let y1 = 0;
   let y2 = 0;
-  glyphs.forEach((glyph) => {
+  glyphs.forEach(glyph => {
     const bbox = glyph.getBoundingBox();
     x1 = Math.min(x1, bbox.x1);
     x2 = Math.max(x2, bbox.x2) + 100 * (glyphs.length - 1);

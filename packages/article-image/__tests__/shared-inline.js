@@ -22,7 +22,7 @@ export default () => {
     compose(print, flattenStyleTransform, minimalNativeTransform),
   );
 
-  shared((component) =>
+  shared(component =>
     TestRenderer.create(<Responsive>{component}</Responsive>).toJSON(),
   );
 };

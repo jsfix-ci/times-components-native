@@ -9,7 +9,7 @@ export interface VideoLabel {
   childTestID?: string;
 }
 
-const VideoLabel: FC<VideoLabel> = ({
+const VideoLabelComponent: FC<VideoLabel> = ({
   color = "black",
   title = "",
   childTestID,
@@ -24,4 +24,4 @@ const VideoLabel: FC<VideoLabel> = ({
   </View>
 );
 
-export default VideoLabel;
+export default VideoLabelComponent;

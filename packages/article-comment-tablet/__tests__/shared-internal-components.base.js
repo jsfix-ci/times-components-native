@@ -8,7 +8,7 @@ import Standfirst from "../src/article-standfirst/article-standfirst";
 import { bylineWithLink } from "../fixtures/full-article";
 import { withTabletContext } from "./shared.base";
 
-const snapshotTests = (renderComponent) => [
+const snapshotTests = renderComponent => [
   {
     name: "article standfirst with content",
     test() {

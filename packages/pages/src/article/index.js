@@ -11,7 +11,7 @@ import withNativeProvider from "../with-native-provider";
 
 const { refetch: refetchArticle } = NativeModules.ArticleEvents;
 
-const ArticlePage = (props) => {
+const ArticlePage = props => {
   const { article, articleId, error } = props;
   const data = article ? JSON.parse(article).data.article : null;
   const openInBrowser = (data || {}).url

@@ -5,7 +5,7 @@ import ArticleImage from "./article-image.base";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
 
-const ArticleImageNative = (props) => {
+const ArticleImageNative = props => {
   const { isArticleTablet, narrowArticleBreakpoint } = useResponsiveContext();
   const {
     imageOptions: { display, uri, narrowContent },

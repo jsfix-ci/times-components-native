@@ -24,6 +24,7 @@ if [ "$cur_version" == "$new_version" ]; then
 fi
 
 # Check if GraphQL queries changed since last TCN version
+git fetch --quiet --tags
 graphql_changes=$(git diff v"$cur_version" v"$new_version" -- ./packages/provider-queries/src/*.graphql)
 
 

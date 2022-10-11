@@ -21,7 +21,7 @@ const keylinePadding = {
   [editionBreakpoints.huge]: spacing(3),
 };
 
-const styles = (breakpoint) => ({
+const styles = breakpoint => ({
   byline: {
     color: colours.section.comment,
     fontFamily: fonts.supporting,

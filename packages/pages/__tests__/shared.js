@@ -20,7 +20,7 @@ export default () => {
     ),
   );
 
-  shared((component) => {
+  shared(component => {
     const testInstance = TestRenderer.create(component);
 
     return testInstance.toJSON();

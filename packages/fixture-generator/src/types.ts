@@ -1546,6 +1546,7 @@ export interface Edition {
 
   sections?: (Section | null)[] | null;
   /** Current version of the edition (used primarily for caching) */
+  //eslint-disable-next-line
   revision: BigInt;
   /** List of images in the edition */
   images: ImagesPaged;
@@ -2280,6 +2281,7 @@ export interface ArticlesQueryArgs {
 export interface EditionQueryArgs {
   id: string;
 
+  //eslint-disable-next-line
   minRevision?: BigInt | null;
 }
 export interface EditionsQueryArgs {

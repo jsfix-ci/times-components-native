@@ -6,7 +6,7 @@ import widths, {
   narrowArticleWidths,
 } from "./index.shared";
 
-const getEditionBreakpoint = (width) => {
+const getEditionBreakpoint = width => {
   if (width < editionBreakpointWidths.smallTablet) {
     return editionBreakpoints.small;
   }
@@ -22,7 +22,7 @@ const getEditionBreakpoint = (width) => {
   return editionBreakpoints.huge;
 };
 
-const getNarrowArticleBreakpoint = (width) => {
+const getNarrowArticleBreakpoint = width => {
   if (width < editionBreakpointWidths.medium) {
     return narrowArticleWidths.small;
   }

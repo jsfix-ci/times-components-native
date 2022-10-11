@@ -3,7 +3,7 @@ import { iterator } from "@times-components-native/test-utils";
 import createItem from "./utils";
 import { ListVerticalLayout } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "no child elements",
@@ -29,13 +29,13 @@ export default (renderComponent) => {
         const wrapper = renderComponent(
           <ListVerticalLayout
             tiles={[
+              // eslint-disable-next-line
               <test key="0" tile={{ article: { id: "testId" } }} />,
               createItem("standard-1"),
               createItem("standard-2"),
             ]}
           />,
         );
-
         expect(wrapper).toMatchSnapshot();
       },
     },

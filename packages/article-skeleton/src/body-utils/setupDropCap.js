@@ -20,7 +20,7 @@ const isDropcapsDisabled = ({ template, dropcapsDisabled }) => {
   return !templateWithDropCaps.includes(template);
 };
 
-const extractDropCapText = (node) => {
+const extractDropCapText = node => {
   const { children } = node;
 
   if (!children?.length) return;

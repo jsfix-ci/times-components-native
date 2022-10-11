@@ -31,7 +31,7 @@ export const calculateViewBox = ({ height, width }) => {
   };
 };
 
-export const calculateViewportVisible = (height) => {
+export const calculateViewportVisible = height => {
   const middle = height / 2;
   const middleOffset = 5;
   const minWidth = 10; // must be some width to render

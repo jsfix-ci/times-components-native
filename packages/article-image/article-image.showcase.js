@@ -13,7 +13,7 @@ const fullwidthImage = fullwidthImageFixture();
 const landscapeInlineImage = landscapeInlineImageFixture();
 const portraitInlineImage = portraitInlineImageFixture();
 
-const withResponsive = (render) => (...args) => (
+const withResponsive = render => (...args) => (
   <Responsive>{render(...args)}</Responsive>
 );
 

@@ -4,7 +4,7 @@ import { Button, StyleSheet, View } from "react-native";
 
 import { VIEW_ID_STORYBOOK } from "../navigation/ids";
 
-export const EditionView: React.FC<NavigationComponentProps> = (props) => {
+export const EditionView: React.FC<NavigationComponentProps> = props => {
   const goToStorybook = () => {
     Navigation.push(props.componentId, {
       component: {

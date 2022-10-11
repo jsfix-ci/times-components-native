@@ -7,9 +7,9 @@ import {
 import storybookReporter from "@times-components-native/tealium-utils";
 import Section from "./src/section";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
-    (args) => ["[SyntheticEvent (storybook prevented default)]", ...args],
+    args => ["[SyntheticEvent (storybook prevented default)]", ...args],
   ]);
 export default {
   children: [

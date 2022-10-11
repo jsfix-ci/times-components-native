@@ -4,7 +4,7 @@ import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { SecondaryTwoNoPicAndTwoSlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "secondary two no pic and two - small",

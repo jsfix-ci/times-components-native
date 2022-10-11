@@ -4,7 +4,7 @@ import { iterator } from "@times-components-native/test-utils";
 import createItem from "./utils";
 import { OpinionOneAndTwoSlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "a single child element",

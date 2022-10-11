@@ -27,7 +27,7 @@ const testFrontSlice = (renderComponent, width, orientation) => {
 
   expect(output).toMatchSnapshot();
 };
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "front lead one - portrait - 768",

@@ -5,7 +5,7 @@ import { colours } from "@times-components-native/styleguide";
 import VideoLabel from "@times-components-native/video-label";
 import styles from "../styles/article-header";
 
-const articleHeaderLabelBase = (render) => ({ isVideo, label }) => {
+const articleHeaderLabelBase = render => ({ isVideo, label }) => {
   if (!isVideo && !label) return null;
 
   const Label = isVideo ? VideoLabel : ArticleLabel;

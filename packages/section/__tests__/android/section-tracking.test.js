@@ -1,5 +1,3 @@
-import shared, { saveClickTracking } from "../shared-tracking";
+import shared from "../shared-tracking";
 
 shared();
-
-saveClickTracking();

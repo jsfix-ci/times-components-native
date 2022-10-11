@@ -11,7 +11,7 @@ import Topic from "./src/topic";
 import TopicProvider from "../provider/src/topic";
 import adConfig from "./fixtures/topic-ad-config.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -19,7 +19,7 @@ const preventDefaultedAction = (decorateAction) =>
     },
   ]);
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
@@ -33,7 +33,7 @@ const topicSlug = "chelsea";
 const makeTopic = (decorateAction, params) => (
   <MockFixture
     params={params}
-    render={(mocks) => (
+    render={mocks => (
       <MockedProvider mocks={mocks}>
         <TopicProvider
           articleImageRatio={articleImageRatio}
@@ -74,7 +74,7 @@ export default {
         makeTopic(
           decorateAction,
           makeParams({
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -114,7 +114,7 @@ export default {
         makeTopic(
           decorateAction,
           makeParams({
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
@@ -135,7 +135,7 @@ export default {
         makeTopic(
           decorateAction,
           makeParams({
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,

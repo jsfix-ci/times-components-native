@@ -12,7 +12,7 @@ const props = {
   showImage: true,
 };
 
-const withTabletContext = (WrappedComponent) => (
+const withTabletContext = WrappedComponent => (
   <ResponsiveContext.Provider
     value={{ isTablet: true, isArticleTablet: true, screenWidth: 1000 }}
   >
@@ -20,7 +20,7 @@ const withTabletContext = (WrappedComponent) => (
   </ResponsiveContext.Provider>
 );
 
-export default (renderMethod) => {
+export default renderMethod => {
   jest.useFakeTimers();
 
   const tests = [

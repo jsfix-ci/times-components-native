@@ -44,5 +44,5 @@ const stylesToReturn = {
   huge: hugeBreakpointStyles,
 };
 
-export default (breakpoint) =>
+export default breakpoint =>
   stylesToReturn[breakpoint] || mediumBreakpointStyles;

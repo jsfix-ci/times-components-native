@@ -1,6 +1,6 @@
 import url from "url";
 
-export const getAspectRatio = (ratio) => {
+export const getAspectRatio = ratio => {
   if (!ratio) return ratio;
 
   const [ratioWidth, ratioHeight] = ratio.split(":");
@@ -8,7 +8,7 @@ export const getAspectRatio = (ratio) => {
   return Number(ratioWidth) / Number(ratioHeight);
 };
 
-export const getCropByRatio = (ratio) => {
+export const getCropByRatio = ratio => {
   if (!ratio) return ratio;
 
   const [ratioWidth, ratioHeight] = ratio.split(":");

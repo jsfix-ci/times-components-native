@@ -42,7 +42,7 @@ const renderArticle = (data, header) => (
   </ContextProviderWithDefaults>
 );
 
-export const snapshotTests = (renderComponent) => [
+export const snapshotTests = renderComponent => [
   {
     name: "article with header",
     test() {
@@ -58,7 +58,7 @@ export const snapshotTests = (renderComponent) => [
   },
 ];
 
-export default (renderComponent) => {
+export default renderComponent => {
   const realIntl = Intl;
 
   beforeEach(() => {

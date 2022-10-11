@@ -6,7 +6,7 @@ import Responsive from "@times-components-native/responsive";
 // import data from "../../data.json"; // static data for testing new slice bullet data
 import Section from "./section";
 
-const SectionPage = (props) => {
+const SectionPage = props => {
   return (
     <Responsive>
       <Section

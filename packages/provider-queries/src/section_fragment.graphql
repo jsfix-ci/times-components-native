@@ -480,10 +480,10 @@ fragment commonSlicesSection on StandardSectionSlice {
     }
     leadBullet1 {
       ...bulletTileProps
-		}
+    }
     leadBullet2 {
-			...bulletTileProps
-    } 
+      ...bulletTileProps
+    }
     leadBullet3 {
       ...bulletTileProps
     }
@@ -583,7 +583,7 @@ fragment commonSlicesSection on StandardSectionSlice {
       ...bulletTileProps
     }
     lead1Bullet3 {
-      ...bulletTileProps		
+      ...bulletTileProps
     }
   }
   ... on SecondaryFourSlice {

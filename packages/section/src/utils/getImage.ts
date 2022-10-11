@@ -1,5 +1,5 @@
 const getRatio = (ratio: string) => {
-  const ratios = ratio.split(":").map((num) => parseInt(num, 10));
+  const ratios = ratio.split(":").map(num => parseInt(num, 10));
 
   return ratios[0] / ratios[1];
 };

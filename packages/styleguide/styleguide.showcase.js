@@ -12,7 +12,7 @@ import styles from "./styleguide.styles";
 const getStories = ({ colourMap, name }) => {
   const story = {
     component: () => {
-      const colourBoxes = Object.keys(colourMap).map((colourName) => (
+      const colourBoxes = Object.keys(colourMap).map(colourName => (
         <ColourBox
           hex={colourMap[colourName]}
           key={colourName}
@@ -59,7 +59,7 @@ ColourBox.propTypes = {
 };
 
 const fontDisplayer = (fontFamily, phrase, fontSizes) =>
-  Object.keys(fontSizes).map((fontSize) => (
+  Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <Text style={styles.subHeadline}>{fontSize}</Text>
       <Text
@@ -73,7 +73,7 @@ const fontDisplayer = (fontFamily, phrase, fontSizes) =>
     </Fragment>
   ));
 
-const fontFixture = (select) => {
+const fontFixture = select => {
   const scale = select("Scale", scales, scales.large);
   const styleguide = timesStyleguide({ scale });
   const phrase = "The Quick Brown Fox Jumps Over the Lazy Dog";

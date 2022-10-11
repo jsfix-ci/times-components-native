@@ -5,7 +5,6 @@ import Ad from "@times-components-native/ad";
 
 const SectionAd = ({ adConfig, slice }) => {
   const { slotName } = slice;
-
   return <Ad adConfig={adConfig} slotName={slotName} />;
 };
 

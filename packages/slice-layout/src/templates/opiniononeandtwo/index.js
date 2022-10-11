@@ -14,7 +14,7 @@ const OpinionOneAndTwoSlice = ({
   const support2 = renderSupport2(supportConfig);
   const supports = [support1, support2];
 
-  const filteredSupports = supports.filter((support) => support);
+  const filteredSupports = supports.filter(support => support);
   return (
     <View style={styles.container}>
       <View

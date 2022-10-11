@@ -2,7 +2,7 @@ export default ({ children }) => children;
 
 let isTablet = false;
 
-export const mockSetIsTablet = (isTabletValue) => {
+export const mockSetIsTablet = isTabletValue => {
   isTablet = isTabletValue;
 };
 

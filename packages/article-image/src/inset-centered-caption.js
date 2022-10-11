@@ -6,7 +6,7 @@ import {
 } from "@times-components-native/caption";
 import InsetCaption from "./inset-caption";
 
-const InsetCenteredCaption = (props) => (
+const InsetCenteredCaption = props => (
   <InsetCaption {...props} CaptionComponent={CentredCaption} />
 );
 

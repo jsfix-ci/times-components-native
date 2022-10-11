@@ -40,7 +40,7 @@ const TileAY = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         />
       </View>
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             tile={tile}

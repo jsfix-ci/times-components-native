@@ -61,7 +61,7 @@ const Search: FC<SearchProps> = ({
   const deviceId = getDeviceId();
   const OS = Platform.OS;
 
-  const ConnectedSearchBar = connectSearchBox((props) => (
+  const ConnectedSearchBar = connectSearchBox(props => (
     <SearchBarComponent
       {...props}
       isConnected={isConnected}

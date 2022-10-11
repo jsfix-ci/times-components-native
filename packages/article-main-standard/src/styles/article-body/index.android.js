@@ -3,7 +3,7 @@ import styleguide from "@times-components-native/styleguide";
 import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
 
-const androidStyles = (scale) => {
+const androidStyles = scale => {
   const { spacing } = styleguide({ scale });
   const sharedStyles = sharedStylesFactory(scale);
 
@@ -20,7 +20,7 @@ const androidStyles = (scale) => {
   };
 };
 
-const styles = (scale) =>
+const styles = scale =>
   StyleSheet.create({
     ...globalStyle,
     ...androidStyles(scale),

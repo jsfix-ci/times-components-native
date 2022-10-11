@@ -114,7 +114,7 @@ export default () => {
           await testInstance.root.findByType(FlatList).props.onEndReached();
         } catch (e) {
           const button = testInstance.root.find(
-            (node) => typeof node.type === "string" && node.type === "Button",
+            node => typeof node.type === "string" && node.type === "Button",
           );
 
           await button.props.onPress();

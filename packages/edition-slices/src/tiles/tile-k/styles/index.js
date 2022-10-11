@@ -13,7 +13,7 @@ const headlineSizeResolver = {
   [editionBreakpoints.smallTablet]: 22,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     flexDirection: "row",
     padding: spacing(2),

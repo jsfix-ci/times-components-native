@@ -10,7 +10,7 @@ export const setupInlineContent = (
 
   // Find something that needs inlining
   const inlineItemIndex = unprocessedContent.findIndex(
-    (item) =>
+    item =>
       (item.name === "image" && item.attributes?.display === "inline") ||
       item.name === "pullQuote",
   );
@@ -38,7 +38,7 @@ export const setupInlineContent = (
 
   // Find anything that can't be inlined
   const flagggedInlineContentIndex = inlineContent.findIndex(
-    (item) => item.name !== "paragraph",
+    item => item.name !== "paragraph",
   );
 
   // Only keep up to the last item that can be inlined

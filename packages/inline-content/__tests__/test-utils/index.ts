@@ -8,11 +8,11 @@ export const createTextWithNumberOfLines = (
   offset = 0,
 ): string =>
   range(numberOfLines)
-    .map((i) => `line${i + offset}`)
+    .map(i => `line${i + offset}`)
     .join("");
 
 export const createLinesWithNumberOfLines = (numberOfLines: number): Line[] =>
-  range(numberOfLines).map((i) => ({ text: `line${i}` }));
+  range(numberOfLines).map(i => ({ text: `line${i}` }));
 
 export const createParagraphWithText = (
   text: string,

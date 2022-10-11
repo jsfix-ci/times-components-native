@@ -58,7 +58,7 @@ export default () => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
@@ -66,7 +66,7 @@ export default () => {
         );
 
         const twitterLink = articleListHeader.root.find(
-          (node) => node.props.testID === "twitterLink",
+          node => node.props.testID === "twitterLink",
         );
 
         twitterLink.props.onPress("event");

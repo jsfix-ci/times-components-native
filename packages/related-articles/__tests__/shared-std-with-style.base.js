@@ -14,7 +14,7 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   url: "https://test.io",
 }).data;
 
-export default (renderComponent) => {
+export default renderComponent => {
   const realIntl = Intl;
 
   beforeEach(() => {

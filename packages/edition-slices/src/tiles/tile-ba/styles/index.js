@@ -10,7 +10,7 @@ const fontSizeResolver = {
   [editionBreakpoints.wide]: 22,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     paddingVertical: spacing(3),
     paddingHorizontal: spacing(2),

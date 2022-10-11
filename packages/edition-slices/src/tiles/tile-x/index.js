@@ -24,7 +24,7 @@ const TileX = ({
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <WithoutWhiteSpace
-        render={(whiteSpaceHeight) => (
+        render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             strapline={getTileStrapline(tile)}

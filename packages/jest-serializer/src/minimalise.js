@@ -2,7 +2,7 @@ import omitBy from "lodash.omitby";
 import traverse from "./traverse";
 import print from "./printers";
 
-export const minimaliseTransform = (excludeProps) => (
+export const minimaliseTransform = excludeProps => (
   accum,
   node,
   props,
@@ -14,10 +14,10 @@ export const minimaliseTransform = (excludeProps) => (
   props: omitBy(props, excludeProps),
 });
 
-export default (excludeProps) =>
+export default excludeProps =>
   traverse(print, minimaliseTransform(excludeProps));
 
-const isEmptyObject = (obj) =>
+const isEmptyObject = obj =>
   obj && typeof obj === "object" && Object.keys(obj).length === 0;
 
 export const minimalWebTransform = minimaliseTransform(

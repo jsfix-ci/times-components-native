@@ -24,7 +24,7 @@ const fonts = {
 };
 
 const ttf = {};
-Object.keys(fonts).forEach((name) => {
+Object.keys(fonts).forEach(name => {
   ttf[name] = () => {
     const opentype = require("opentype.js");
     return opentype.parse(new Int32Array(fonts[name]()).buffer, {

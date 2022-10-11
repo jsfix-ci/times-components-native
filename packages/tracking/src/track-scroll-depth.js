@@ -49,7 +49,7 @@ export default (
       this.viewed.add(elementId);
 
       const index = this.childList.findIndex(
-        (item) => item.elementId === elementId,
+        item => item.elementId === elementId,
       );
 
       this.onChildView({

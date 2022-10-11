@@ -46,7 +46,7 @@ function renderMedium(props, orientation) {
   );
 }
 
-const FrontLeadTwo = (props) => {
+const FrontLeadTwo = props => {
   const renderSlice = (_breakpoint, orientation) =>
     renderMedium(props, orientation);
 

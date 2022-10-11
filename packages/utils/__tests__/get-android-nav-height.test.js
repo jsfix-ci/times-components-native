@@ -18,7 +18,7 @@ describe("getAndroidNavHeight", () => {
   });
 
   it("returns app nav height with OS nav bar", () => {
-    dimensionsGetMock.mockImplementation((type) => {
+    dimensionsGetMock.mockImplementation(type => {
       if (type === "screen") {
         return { width: 1024, height: 778 };
       }

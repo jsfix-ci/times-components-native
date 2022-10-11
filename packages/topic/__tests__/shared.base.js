@@ -10,7 +10,7 @@ jest.mock("@times-components-native/provider", () =>
   require("./mock-provider"),
 );
 jest.mock("@times-components-native/tracking", () => {
-  const id = (x) => x;
+  const id = x => x;
 
   return {
     withTrackEvents: id,
@@ -18,7 +18,7 @@ jest.mock("@times-components-native/tracking", () => {
   };
 });
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "an error page",
@@ -58,7 +58,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         articleList.props.fetchMore(2);
@@ -74,7 +74,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         articleList.props.fetchMore(3);
@@ -90,7 +90,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
@@ -115,7 +115,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
@@ -133,7 +133,7 @@ export default (props) => {
         );
 
         const articleList = testInstance.root.find(
-          (node) => node.type === "ArticleList",
+          node => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(

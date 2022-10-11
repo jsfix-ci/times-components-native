@@ -11,7 +11,7 @@ const fontSizeResolver = {
   [editionBreakpoints.huge]: 35,
 };
 
-export default (breakpoint) => ({
+export default breakpoint => ({
   container: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),

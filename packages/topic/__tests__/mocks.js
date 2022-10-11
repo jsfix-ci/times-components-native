@@ -4,7 +4,7 @@ jest.mock("@times-components-native/article-list", () =>
 );
 jest.mock("@times-components-native/gradient", () => "Gradient");
 jest.mock("@times-components-native/pagination", () => {
-  const id = (x) => x;
+  const id = x => x;
 
   return {
     withPageState: id,

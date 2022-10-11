@@ -1,4 +1,5 @@
 import React from "react";
+import { Dimensions } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { SectionContext } from "@times-components-native/context";
 import { iterator } from "@times-components-native/test-utils";
@@ -143,17 +144,9 @@ const slicesWithPubLogo = [
   },
 ];
 
-jest.mock("@times-components-native/utils", () => {
-  // eslint-disable-next-line global-require
-  const actualUtils = jest.requireActual("../../utils");
+jest.spyOn(Dimensions, "get").mockReturnValue({ width: 500, height: 700 });
 
-  return {
-    ...actualUtils,
-    getDimensions: jest.fn(() => ({ height: 700, width: 500 })),
-  };
-});
-
-const testsWithPublictaion = (publicationName) =>
+const testsWithPublictaion = publicationName =>
   slicesWithPubLogo.map(({ mock, name, Slice }) => ({
     name,
     test: () => {

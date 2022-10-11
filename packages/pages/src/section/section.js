@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { SectionContext } from "@times-components-native/context";
 import Section from "@times-components-native/section";
 import trackSection from "./track-section";
-import adTargetConfig from "./ad-targeting-config";
 import { RemoteConfigProvider } from "@times-components-native/remote-config";
 
 const {
@@ -38,7 +37,7 @@ class SectionPage extends Component {
 
     const existingReadArticles =
       props &&
-      props.readArticles.map((articleId) => ({
+      props.readArticles.map(articleId => ({
         id: articleId,
         highlight: false,
       }));
@@ -61,7 +60,10 @@ class SectionPage extends Component {
   }
 
   componentDidMount() {
-    AppState.addEventListener("change", this.onAppStateChange);
+    this.appListener = AppState.addEventListener(
+      "change",
+      this.onAppStateChange,
+    );
     this.updateSASubscription = DeviceEventEmitter.addListener(
       "updateSavedArticles",
       this.syncAppData,
@@ -78,7 +80,7 @@ class SectionPage extends Component {
   }
 
   componentWillUnmount() {
-    AppState.removeEventListener("change", this.onAppStateChange);
+    this.appListener && this.appListener.remove();
     this.updateSASubscription.remove();
     this.updateSDSubscription.remove();
     this.updateRASubscription.remove();
@@ -141,7 +143,7 @@ class SectionPage extends Component {
       section: { id },
     } = this.props;
     if (getSectionData) {
-      getSectionData(id).then((data) => {
+      getSectionData(id).then(data => {
         this.setState({ section: JSON.parse(data) });
       });
     }
@@ -167,10 +169,6 @@ class SectionPage extends Component {
       section,
     } = this.state;
 
-    const adConfig = adTargetConfig({
-      sectionName: section.name,
-    });
-
     return (
       <SectionContext.Provider
         value={{
@@ -186,7 +184,7 @@ class SectionPage extends Component {
       >
         <RemoteConfigProvider config={remoteConfig}>
           <Section
-            adConfig={adConfig}
+            adConfig={{ sectionName: section.name }}
             analyticsStream={trackSection}
             onArticlePress={onArticlePress}
             onLinkPress={onLinkPress}

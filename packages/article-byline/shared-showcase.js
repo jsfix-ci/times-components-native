@@ -14,7 +14,7 @@ const styles = {
 
 const authorsAST = require("./fixtures/authors.json");
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -26,7 +26,7 @@ const ComponentWrapper = ({ children }) => (
   <View style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</View>
 );
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress"),
 });
 
