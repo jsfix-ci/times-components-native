@@ -19,6 +19,6 @@ export { default as gqlRgbaToStyle } from "./src/gql-rgba-to-style";
 export { default as getSectionFromTiles } from "./src/get-section-from-tiles";
 export { default as appendToImageURL } from "./src/append-to-image-url";
 export { default as getAndroidNavHeight } from "./src/get-android-nav-height";
-export { arrayToObj as arrayToObj } from "./src/array-to-obj";
+export { default as arrayToObj } from "./src/array-to-obj";
 
 // If you miss Dimensions check the new hook https://reactnative.dev/docs/0.68/usewindowdimensions
