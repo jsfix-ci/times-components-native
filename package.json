@@ -1,7 +1,7 @@
 {
   "name": "times-components-native",
   "private": true,
-  "version": "11.0.2",
+  "version": "11.0.6-beta",
   "description": "A collection of react-native components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
@@ -131,6 +131,7 @@
     "@testing-library/react-native": "^11.0.0",
     "@types/jest": "^26.0.0",
     "@types/lodash.debounce": "^4.0.6",
+    "@types/lodash.isequal": "^4.5.6",
     "@types/lodash.merge": "^4.6.6",
     "@types/lodash.omitby": "^4.6.6",
     "@types/react": "^17.0.49",
