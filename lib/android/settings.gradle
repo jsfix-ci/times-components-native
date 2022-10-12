@@ -17,3 +17,6 @@ project(':xnative-rn-community-art').projectDir = new File(rootProject.projectDi
 
 include ':xnative-rn-newrelic-agent'
 project(':xnative-rn-newrelic-agent').projectDir = new File(rootProject.projectDir, '../../node_modules/newrelic-react-native-agent/android')
+
+include ':xnative-rn-config'
+project(':xnative-rn-config').projectDir = new File(rootProject.projectDir, '../../node_modules/react-native-config/android')
