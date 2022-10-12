@@ -2,7 +2,9 @@
 
 exports[`1. key facts with title 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Example title
   </Text>
   <View>

@@ -36,6 +36,7 @@ exports[`1. red article flag 1`] = `
     }
   >
     coloured red
+     hhh
   </Text>
 </View>
 `;
@@ -93,6 +94,7 @@ exports[`2. multiple article flags 1`] = `
         }
       >
         updated
+         hhh
       </Text>
     </View>
   </View>
@@ -138,6 +140,7 @@ exports[`2. multiple article flags 1`] = `
         }
       >
         exclusive
+         hhh
       </Text>
     </View>
   </View>
@@ -183,6 +186,7 @@ exports[`2. multiple article flags 1`] = `
         }
       >
         new
+         hhh
       </Text>
     </View>
   </View>
@@ -228,6 +232,7 @@ exports[`2. multiple article flags 1`] = `
         }
       >
         sponsored
+         hhh
       </Text>
     </View>
   </View>

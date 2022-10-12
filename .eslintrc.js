@@ -68,6 +68,20 @@ module.exports = {
         "message": "Please destruct PureComponent from React."
       }
     ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "paths": [
+          {
+            "name": "react-native",
+            "importNames": [
+              "Text"
+            ],
+            "message": "Please use AppText instead."
+          }
+        ]
+      }
+    ],
     "graphql/template-strings": [
       "error",
       {

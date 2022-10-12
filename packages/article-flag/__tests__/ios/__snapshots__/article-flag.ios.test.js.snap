@@ -8,6 +8,7 @@ exports[`1. article flag 1`] = `
     allowFontScaling={false}
   >
     no colour
+     hhh
   </Text>
 </View>
 `;
@@ -20,6 +21,7 @@ exports[`2. red article flag 1`] = `
     allowFontScaling={false}
   >
     coloured red
+     hhh
   </Text>
 </View>
 `;
@@ -32,6 +34,7 @@ exports[`3. hex colour article flag 1`] = `
     allowFontScaling={false}
   >
     coloured red
+     hhh
   </Text>
 </View>
 `;
@@ -44,6 +47,7 @@ exports[`4. rgba colour article flag 1`] = `
     allowFontScaling={false}
   >
     coloured red
+     hhh
   </Text>
 </View>
 `;
@@ -58,6 +62,7 @@ exports[`5. article flags 1`] = `
         allowFontScaling={false}
       >
         updated
+         hhh
       </Text>
     </View>
   </View>
@@ -69,6 +74,7 @@ exports[`5. article flags 1`] = `
         allowFontScaling={false}
       >
         exclusive
+         hhh
       </Text>
     </View>
   </View>
@@ -86,6 +92,7 @@ exports[`6. article flags with container 1`] = `
           allowFontScaling={false}
         >
           updated
+           hhh
         </Text>
       </View>
     </View>
@@ -97,6 +104,7 @@ exports[`6. article flags with container 1`] = `
           allowFontScaling={false}
         >
           exclusive
+           hhh
         </Text>
       </View>
     </View>

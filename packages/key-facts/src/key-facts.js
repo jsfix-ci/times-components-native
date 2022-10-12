@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import Context from "@times-components-native/context";
 import styleguide from "@times-components-native/styleguide";
 import KeyFactsText from "./key-facts-text";

@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import { colours, fonts } from "@times-components-native/styleguide";
 import styles from "./styles";
 import AnimatedBullet from "./AnimatedBullet";

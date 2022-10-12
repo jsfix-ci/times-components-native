@@ -26,7 +26,7 @@ const ArticleFlag = ({
       style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >
-      {title.toLowerCase()}
+      {title.toLowerCase()} hhh
     </Text>
   </View>
 );
