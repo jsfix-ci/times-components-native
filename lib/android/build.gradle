@@ -50,7 +50,8 @@ def reactSubprojects = [
     "xnative-rn-device-info",
     "xnative-rn-community-netinfo",
     "xnative-rn-community-art",
-    "xnative-rn-newrelic-agent"
+    "xnative-rn-newrelic-agent",
+    "xnative-rn-config"
 ]
 
 task generateReactArchives {
