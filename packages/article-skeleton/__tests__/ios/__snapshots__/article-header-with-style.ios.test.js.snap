@@ -440,6 +440,7 @@ exports[`1. article with header 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "france-defies-may-over-russia",
               }
             }
             keyId="12"
@@ -521,6 +522,7 @@ exports[`1. article with header 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "france-defies-may-over-russia",
               }
             }
             keyId="14"
@@ -694,6 +696,7 @@ exports[`1. article with header 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "france-defies-may-over-russia",
               }
             }
             keyId="18"

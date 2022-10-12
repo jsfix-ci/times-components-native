@@ -617,6 +617,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "this-is-slug",
               }
             }
             keyId="7"
@@ -1110,6 +1111,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "this-is-slug",
               }
             }
             keyId="12"
@@ -4245,6 +4247,7 @@ exports[`19. renders content 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "this-is-slug",
               }
             }
             keyId="7"
@@ -4635,6 +4638,7 @@ exports[`19. renders content 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "this-is-slug",
               }
             }
             keyId="12"
@@ -4964,6 +4968,7 @@ exports[`19. renders content 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "this-is-slug",
               }
             }
             keyId="18"

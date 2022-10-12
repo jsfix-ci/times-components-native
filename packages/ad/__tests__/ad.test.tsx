@@ -16,7 +16,12 @@ test("** AD **", async () => {
     jest.resetAllMocks();
   });
 
-  render(<Ad adConfig={{ sectionName: "News" }} slotName="ad-section" />);
+  render(
+    <Ad
+      adConfig={{ sectionName: "News", slug: "slug" }}
+      slotName="ad-section"
+    />,
+  );
 
   expect(screen.toJSON()).toMatchSnapshot();
 });

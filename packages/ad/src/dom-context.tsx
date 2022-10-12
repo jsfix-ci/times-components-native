@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import {
   Dimensions,
   NativeEventEmitter,
@@ -21,10 +21,16 @@ import {
   openURLInBrowser,
   urlHasBridgePrefix,
 } from "./utils/dom-context-utils";
+import reducer, { ActionTypes } from "./reducer";
 
 const config = NativeModules.ReactConfig;
 
-const { width: screenWidth } = Dimensions.get("screen");
+const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
+
+const adScriptSrc =
+  Platform.OS === "ios"
+    ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
+    : "https://ads.thetimes.co.uk/ads.times_android.min.js";
 
 interface DomContextType {
   baseUrl: string;
@@ -32,6 +38,7 @@ interface DomContextType {
   keyId?: string;
   sectionName: string;
   slotName?: string;
+  slug: string;
   width: number;
 }
 
@@ -40,6 +47,8 @@ const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
 
 const ViewportAwareView = Viewport.Aware(View);
 
+const PADDING = 20;
+
 const DOMContext = (props: DomContextType) => {
   const {
     keyId = "",
@@ -47,6 +56,7 @@ const DOMContext = (props: DomContextType) => {
     baseUrl,
     sectionName,
     slotName = "ad-inarticle-mpu",
+    slug,
     width = screenWidth,
   } = props;
 
@@ -63,9 +73,11 @@ const DOMContext = (props: DomContextType) => {
   };
   const slotId = getSlotId();
   const webViewRef = React.useRef<WebView>(null);
-  const [loadAd, setLoadAd] = useState(false);
-  const [adHeight, setAdHeight] = useState(0);
-  const [padding, setPadding] = useState(0);
+  const [state, dispatch] = useReducer(reducer, {
+    loadAd: false,
+    adHeight: 0,
+    padding: 0,
+  });
   const networkId = config.adNetworkId;
   const adUnit =
     Platform.OS === "ios" ? "thetimes.mob.ios" : "thetimes.mob.android";
@@ -108,18 +120,26 @@ const DOMContext = (props: DomContextType) => {
   const handleMessageEvent = (event: WebViewMessageEvent) => {
     try {
       const data = JSON.parse(event.nativeEvent.data);
-      //console.log("AD DATA: ", data);
       switch (data.type) {
-        case "slotOnLoad":
-          setAdHeight(data.size);
-          setPadding(20);
+        case "slotOnLoad": {
+          const isOneByOne = data.size[0] == 1 && data.size[1] == 1;
+          dispatch({
+            type: ActionTypes.setAdHeight,
+            payload: isOneByOne ? screenHeight : data.size[1],
+          });
+          dispatch({
+            type: ActionTypes.setPadding,
+            payload: data.size[1] ? PADDING : 0,
+          });
           return;
+        }
         default:
           return;
       }
     } catch (error) {
-      console.log("AD JSON ERROR: ", error);
+      console.log("--- AD JSON ERROR: ", error);
       console.log(event.nativeEvent.data);
+      console.log("---");
       return;
     }
   };
@@ -169,16 +189,16 @@ const DOMContext = (props: DomContextType) => {
         padding: 0;
       }
     </style>
-    <script>
+    <script type="text/javascript">
       window.nuk = {
         "ads": {
           "blocked": false,
-          "commercialSection": ${sectionName},
+          "commercialSection": "${sectionName}",
           "tuples": {
             "cont": "${slotName === "ad-section" ? "sec" : "art"}",
-            "path": "",
+            "path": "${sectionName}/${slug}",
             "cpn": "${String(authId)}",
-            "device": ${isTablet() ? "tablet" : "mobile"},
+            "device": "${isTablet() ? "tablet" : "mobile"}",
           },
         },
         "user": {
@@ -211,20 +231,20 @@ const DOMContext = (props: DomContextType) => {
     </script>
   </head>
   <body>
-      <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${padding}px; padding-bottom: ${padding}px;">
+      <div id="testId" style="display: flex; width: 100%; align-content: center; justify-content: center; padding-top: ${
+        state.padding
+      }px; padding-bottom: ${state.padding}px;">
         <div id="${slotId}"></div>
       </div>
-      <script src="${
-        Platform.OS === "ios"
-          ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
-          : "https://ads.thetimes.co.uk/ads.times_android.min.js"
-      }" ></script>
-      <script defer>
+      <script src="${adScriptSrc}" ></script>
+      <script>
         function checkForGoogleTag() {
           if (window.googletag && window.googletag.pubadsReady) {
             window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-              const DEFAULT_VALUE = 0;
-              const res = JSON.stringify({size: event && event.size ? event.size[1] || DEFAULT_VALUE : DEFAULT_VALUE, "type":"slotOnLoad"});
+              const size = event && event.size || [0,0];
+              // for debug-forensic sake
+              window.lastEventSize = size;
+              const res = JSON.stringify({ "size": size, "type":"slotOnLoad"});
               window.ReactNativeWebView.postMessage(res)
             });
             return;
@@ -237,12 +257,30 @@ const DOMContext = (props: DomContextType) => {
 </html>
     `;
 
+  const webViewStyle = {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    height: state.adHeight,
+    width,
+  };
+  const viewPortStyle = {
+    height: state.adHeight + state.padding * 2,
+    width,
+  };
+  const source = { html, baseUrl };
+
   return (
     <ViewportAwareView
-      onViewportEnter={() => setLoadAd(true)}
-      style={{ height: adHeight + padding * 2, width }}
+      onViewportEnter={() =>
+        dispatch({
+          type: ActionTypes.setLoadAd,
+          payload: true,
+        })
+      }
+      style={viewPortStyle}
     >
-      {loadAd && (
+      {state.loadAd && (
         <WebView
           cacheEnabled={false}
           cacheMode={"LOAD_NO_CACHE"}
@@ -250,22 +288,14 @@ const DOMContext = (props: DomContextType) => {
           ref={webViewRef}
           onMessage={handleMessageEvent}
           onNavigationStateChange={handleNavigationStateChange}
-          source={{ html, baseUrl }}
-          originWhitelist={
-            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-          }
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            flex: 1,
-            height: adHeight,
-            width,
-          }}
+          source={source}
+          //@ts-ignore style
+          style={webViewStyle}
           allowsInlineMediaPlayback={true}
           androidLayerType={"software"}
         />
       )}
-      {adHeight !== 0 && (
+      {state.adHeight !== 0 && (
         <ViewportAwareView
           onViewportEnter={inViewport}
           onViewportLeave={outViewport}

@@ -10,6 +10,7 @@ import DOMContext from "./dom-context";
 
 interface IAdConfig {
   sectionName: string;
+  slug: string;
 }
 
 type TSlotName = "ad-section" | "ad-inarticle-mpu";
@@ -48,6 +49,7 @@ function Ad({
           baseUrl={baseUrl}
           keyId={keyId}
           sectionName={adConfig.sectionName}
+          slug={adConfig.slug}
           slotName={slotName}
           {...sizeProps}
         />
