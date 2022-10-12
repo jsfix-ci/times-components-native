@@ -1,10 +1,10 @@
 import React from "react";
-import { Text } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 import { Text as Txt } from "@times-components-native/text";
 import styles from "./styles";
 
-const { style: TextStylePropTypes } = Text.propTypes;
+const { style: TextStylePropTypes } = TextPropTypes;
 
 const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <Txt

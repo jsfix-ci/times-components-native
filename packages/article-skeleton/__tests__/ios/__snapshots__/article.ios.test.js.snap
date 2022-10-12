@@ -85,14 +85,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     <Text
                       allowFontScaling={false}
                       style={
-                        Array [
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "TimesModern-Regular",
-                            "fontSize": 95.82300000000001,
-                            "lineHeight": 95.82300000000001,
-                          },
-                        ]
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 95.82300000000001,
+                          "lineHeight": 95.82300000000001,
+                        }
                       }
                     >
                       T
@@ -1628,14 +1626,12 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     <Text
                       allowFontScaling={false}
                       style={
-                        Array [
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "TimesModern-Regular",
-                            "fontSize": 113.32912500000002,
-                            "lineHeight": 113.32912500000002,
-                          },
-                        ]
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 113.32912500000002,
+                          "lineHeight": 113.32912500000002,
+                        }
                       }
                     >
                       Q
@@ -3331,14 +3327,12 @@ exports[`15. an article starting with single quote 1`] = `
                     <Text
                       allowFontScaling={false}
                       style={
-                        Array [
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "TimesModern-Regular",
-                            "fontSize": 103.65468750000002,
-                            "lineHeight": 103.65468750000002,
-                          },
-                        ]
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 103.65468750000002,
+                          "lineHeight": 103.65468750000002,
+                        }
                       }
                     >
                       ‘S
@@ -3533,14 +3527,12 @@ exports[`16. an article starting with double quote 1`] = `
                     <Text
                       allowFontScaling={false}
                       style={
-                        Array [
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "TimesModern-Regular",
-                            "fontSize": 103.65468750000002,
-                            "lineHeight": 103.65468750000002,
-                          },
-                        ]
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 103.65468750000002,
+                          "lineHeight": 103.65468750000002,
+                        }
                       }
                     >
                       “S
@@ -6417,14 +6409,12 @@ exports[`20. an article with inline paragraph 1`] = `
                     <Text
                       allowFontScaling={false}
                       style={
-                        Array [
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "TimesModern-Regular",
-                            "fontSize": 95.82300000000001,
-                            "lineHeight": 95.82300000000001,
-                          },
-                        ]
+                        Object {
+                          "color": undefined,
+                          "fontFamily": "TimesModern-Regular",
+                          "fontSize": 95.82300000000001,
+                          "lineHeight": 95.82300000000001,
+                        }
                       }
                     >
                       I

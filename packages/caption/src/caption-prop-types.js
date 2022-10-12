@@ -1,8 +1,10 @@
-import { Text } from "react-native";
-import { ViewPropTypes } from "deprecated-react-native-prop-types";
+import {
+  ViewPropTypes,
+  TextPropTypes,
+} from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 
-const { style: TextPropTypesStyle } = Text.propTypes;
+const { style: TextPropTypesStyle } = TextPropTypes;
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {

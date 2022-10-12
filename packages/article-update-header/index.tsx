@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { DateTime } from "luxon";
 import { ArticleFlags } from "@times-components-native/article-flag";
 import { ResponsiveContext } from "@times-components-native/responsive";

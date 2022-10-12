@@ -22,14 +22,12 @@ exports[`DropCap renders a dropcap for large scale 1`] = `
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#13354E",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 109.90980000000002,
-            "lineHeight": 109.90980000000002,
-          },
-        ]
+        Object {
+          "color": "#13354E",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 109.90980000000002,
+          "lineHeight": 109.90980000000002,
+        }
       }
     >
       A
@@ -60,14 +58,12 @@ exports[`DropCap renders a dropcap for medium scale 1`] = `
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#13354E",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 94.20840000000001,
-            "lineHeight": 94.20840000000001,
-          },
-        ]
+        Object {
+          "color": "#13354E",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 94.20840000000001,
+          "lineHeight": 94.20840000000001,
+        }
       }
     >
       A
@@ -98,14 +94,12 @@ exports[`DropCap renders a dropcap for xlarge scale 1`] = `
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#13354E",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 120.37740000000001,
-            "lineHeight": 120.37740000000001,
-          },
-        ]
+        Object {
+          "color": "#13354E",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 120.37740000000001,
+          "lineHeight": 120.37740000000001,
+        }
       }
     >
       A
@@ -136,14 +130,12 @@ exports[`DropCap renders a dropcap with default font padding if provided font no
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#13354E",
-            "fontFamily": "TimesDigitalW04",
-            "fontSize": 94.20840000000001,
-            "lineHeight": 94.20840000000001,
-          },
-        ]
+        Object {
+          "color": "#13354E",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 94.20840000000001,
+          "lineHeight": 94.20840000000001,
+        }
       }
     >
       A
@@ -174,14 +166,12 @@ exports[`DropCap renders a dropcap with default scale if provided scale unknown 
     <Text
       allowFontScaling={false}
       style={
-        Array [
-          Object {
-            "color": "#13354E",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 94.20840000000001,
-            "lineHeight": 94.20840000000001,
-          },
-        ]
+        Object {
+          "color": "#13354E",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 94.20840000000001,
+          "lineHeight": 94.20840000000001,
+        }
       }
     >
       A

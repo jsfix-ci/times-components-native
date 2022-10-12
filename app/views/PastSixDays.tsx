@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationComponentProps } from "react-native-navigation";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Text } from "@times-components-native/text";
 
 import { GillSansMTStdMedium } from "../utils/fonts";
 

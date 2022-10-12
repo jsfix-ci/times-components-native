@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { IconNoInternet } from "@times-components-native/icons";
 
 function OfflineTile() {

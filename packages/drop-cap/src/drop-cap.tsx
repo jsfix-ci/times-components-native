@@ -1,6 +1,7 @@
 import { fonts } from "@times-components-native/styleguide";
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 interface Props {
   dropCapColor: string;
   dropCapFont: string;

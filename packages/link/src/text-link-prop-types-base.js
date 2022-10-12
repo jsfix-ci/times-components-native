@@ -1,7 +1,7 @@
-import { Text } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 
-const { style: StylePropType } = Text.propTypes;
+const { style: StylePropType } = TextPropTypes;
 export const basePropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
