@@ -3,21 +3,29 @@
 exports[`1. top secondary - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-3
     </Text>
   </View>
@@ -27,21 +35,29 @@ exports[`1. top secondary - smalltablet 1`] = `
 exports[`2. top secondary - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-3
     </Text>
   </View>

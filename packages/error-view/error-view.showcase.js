@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function, react/require-render-return, react/no-multi-comp */
 import React, { Component } from "react";
-import { StyleSheet, Text, View, ViewPropTypes } from "react-native";
+import { StyleSheet, View, ViewPropTypes } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 import { fontSizes } from "@times-components-native/styleguide";
 import ErrorView from "./src/error-view";

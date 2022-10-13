@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { Button } from "@times-components-native/button";
 import Tooltip from "@times-components-native/tooltip";
 

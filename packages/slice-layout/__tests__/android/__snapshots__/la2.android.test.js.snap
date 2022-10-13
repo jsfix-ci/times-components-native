@@ -4,7 +4,9 @@ exports[`1. a single child element 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         lead
       </Text>
     </View>
@@ -16,14 +18,18 @@ exports[`2. two child elements 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         lead
       </Text>
     </View>
   </View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
@@ -35,21 +41,27 @@ exports[`3. three child elements 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         lead
       </Text>
     </View>
   </View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
   </View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-2
       </Text>
     </View>

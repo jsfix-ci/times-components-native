@@ -32,7 +32,9 @@ exports[`2. a single child element 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-1
         </Text>
       </View>
@@ -89,7 +91,9 @@ exports[`3. two child elements 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-1
         </Text>
         <View />
@@ -97,7 +101,9 @@ exports[`3. two child elements 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-2
         </Text>
       </View>
@@ -136,7 +142,9 @@ exports[`4. three child elements 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-1
         </Text>
         <View />
@@ -144,7 +152,9 @@ exports[`4. three child elements 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-2
         </Text>
         <View />
@@ -152,7 +162,9 @@ exports[`4. three child elements 1`] = `
     </View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           standard-3
         </Text>
       </View>

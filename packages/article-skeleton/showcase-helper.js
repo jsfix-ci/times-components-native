@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Platform, Text, View } from "react-native";
+import { Platform, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import pick from "lodash.pick";
 import { sections } from "@times-components-native/storybook";
 import articleAdConfig from "@times-components-native/ad/fixtures/article-ad-config.json";

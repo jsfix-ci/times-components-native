@@ -3,7 +3,9 @@
 exports[`1. supplement lead one and four v2 - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
@@ -11,13 +13,17 @@ exports[`1. supplement lead one and four v2 - smalltablet 1`] = `
     <View>
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-1
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-2
           </Text>
         </View>
@@ -25,13 +31,17 @@ exports[`1. supplement lead one and four v2 - smalltablet 1`] = `
       <View />
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-3
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-4
           </Text>
         </View>
@@ -44,7 +54,9 @@ exports[`1. supplement lead one and four v2 - smalltablet 1`] = `
 exports[`2. supplement lead one and four v2 - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
@@ -52,13 +64,17 @@ exports[`2. supplement lead one and four v2 - medium 1`] = `
     <View>
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-1
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-2
           </Text>
         </View>
@@ -66,13 +82,17 @@ exports[`2. supplement lead one and four v2 - medium 1`] = `
       <View />
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-3
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-4
           </Text>
         </View>
@@ -85,7 +105,9 @@ exports[`2. supplement lead one and four v2 - medium 1`] = `
 exports[`3. supplement lead one and four v2 - wide 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
@@ -93,13 +115,17 @@ exports[`3. supplement lead one and four v2 - wide 1`] = `
     <View>
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-1
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-2
           </Text>
         </View>
@@ -107,13 +133,17 @@ exports[`3. supplement lead one and four v2 - wide 1`] = `
       <View />
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-3
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-4
           </Text>
         </View>
@@ -126,7 +156,9 @@ exports[`3. supplement lead one and four v2 - wide 1`] = `
 exports[`4. supplement lead one and four v2 - huge 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead
     </Text>
   </View>
@@ -134,13 +166,17 @@ exports[`4. supplement lead one and four v2 - huge 1`] = `
     <View>
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-1
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-2
           </Text>
         </View>
@@ -148,13 +184,17 @@ exports[`4. supplement lead one and four v2 - huge 1`] = `
       <View />
       <View>
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-3
           </Text>
         </View>
         <View />
         <View>
-          <Text>
+          <Text
+            allowFontScaling={false}
+          >
             support-4
           </Text>
         </View>

@@ -4,13 +4,17 @@ exports[`1. supplement secondary two and two - small 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
@@ -18,13 +22,17 @@ exports[`1. supplement secondary two and two - small 1`] = `
   <View />
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-2
       </Text>
     </View>
@@ -36,13 +44,17 @@ exports[`2. supplement secondary two and two - smalltablet 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
@@ -50,13 +62,17 @@ exports[`2. supplement secondary two and two - smalltablet 1`] = `
   <View />
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-2
       </Text>
     </View>
@@ -68,13 +84,17 @@ exports[`3. supplement secondary two and two - medium 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
@@ -82,13 +102,17 @@ exports[`3. supplement secondary two and two - medium 1`] = `
   <View />
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-2
       </Text>
     </View>
@@ -100,13 +124,17 @@ exports[`4. supplement secondary two and two - wide 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
@@ -114,13 +142,17 @@ exports[`4. supplement secondary two and two - wide 1`] = `
   <View />
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         support-2
       </Text>
     </View>
@@ -131,25 +163,33 @@ exports[`4. supplement secondary two and two - wide 1`] = `
 exports[`5. supplement secondary two and two - huge 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
   </View>

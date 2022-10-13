@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
+import { Text } from "@times-components-native/text";
 import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components-native/styleguide";
 import { delay } from "@times-components-native/test-utils";

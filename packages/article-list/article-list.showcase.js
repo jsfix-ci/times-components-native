@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import storybookReporter from "@times-components-native/tealium-utils";
 import { ratioTextToFloat } from "@times-components-native/utils";
 import { withTrackingContext } from "@times-components-native/tracking";

@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { ViewPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 

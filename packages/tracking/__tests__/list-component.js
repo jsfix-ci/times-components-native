@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, FlatList } from "react-native";
+import { FlatList } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 
 class ListComponent extends Component {

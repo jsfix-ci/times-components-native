@@ -1,4 +1,5 @@
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
+import { Text } from "@times-components-native/text";
 import React from "react";
 import renderer from "react-test-renderer";
 import { addSerializers, enzymeRootSerializer, minimalNative } from "../../src";

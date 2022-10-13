@@ -39,7 +39,9 @@ exports[`1. card default state 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       A card
     </Text>
   </View>
@@ -68,7 +70,9 @@ exports[`2. card with reversed state 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       A card in reverse
     </Text>
   </View>

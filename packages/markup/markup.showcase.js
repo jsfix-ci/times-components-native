@@ -1,7 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { CenteredDecorator } from "@times-components-native/storybook";
 import { fonts } from "@times-components-native/styleguide";
 import renderTrees, {

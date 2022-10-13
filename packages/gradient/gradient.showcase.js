@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
-import { Text, Image } from "react-native";
+import { Image } from "react-native";
+import { Text } from "@times-components-native/text";
 import { colours, spacing } from "@times-components-native/styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
 

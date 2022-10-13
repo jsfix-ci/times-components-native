@@ -2,15 +2,21 @@
 
 exports[`1. leaders - small 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     leader-1
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     leader-2
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     leader-3
   </Text>
 </View>
@@ -19,19 +25,25 @@ exports[`1. leaders - small 1`] = `
 exports[`2. leaders - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-3
     </Text>
   </View>
@@ -41,19 +53,25 @@ exports[`2. leaders - smalltablet 1`] = `
 exports[`3. leaders - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-3
     </Text>
   </View>
@@ -63,19 +81,25 @@ exports[`3. leaders - medium 1`] = `
 exports[`4. leaders - wide 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       leader-3
     </Text>
   </View>

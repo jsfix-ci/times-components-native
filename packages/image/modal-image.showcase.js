@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger, react/prop-types */
 import React, { Fragment } from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import ModalImage from "./src/modal-image";
 
 const uri =

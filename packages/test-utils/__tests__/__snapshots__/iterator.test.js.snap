@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. test example one 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+  style={Object {}}
+>
   This is the 
   first
    test
@@ -9,7 +12,10 @@ exports[`1. test example one 1`] = `
 `;
 
 exports[`2. text example two 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+  style={Object {}}
+>
   This is the 
   second
    test
@@ -17,7 +23,10 @@ exports[`2. text example two 1`] = `
 `;
 
 exports[`3. all test names should be lowercase 1`] = `
-<Text>
+<Text
+  allowFontScaling={false}
+  style={Object {}}
+>
   This is the 
   third
    test

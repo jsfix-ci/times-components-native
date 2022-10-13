@@ -1,8 +1,8 @@
 import { delay } from "@times-components-native/test-utils";
 import React from "react";
-import { Animated } from "react-native";
+import { Animated, Platform } from "react-native";
 import TestRenderer from "react-test-renderer";
-import { Platform, Text } from "react-native";
+import { Text } from "@times-components-native/text";
 
 import "../serializers-with-all-styles";
 

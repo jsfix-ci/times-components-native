@@ -2,32 +2,37 @@
 
 exports[`The minimal serializer should for native not remove styles 1`] = `
 <Text
+  allowFontScaling={false}
   style={
-    Array [
-      Object {
-        "color": "red",
-      },
-      Object {
-        "padding": 1,
-      },
-    ]
+    Object {
+      "color": "red",
+      "padding": 1,
+    }
   }
 />
 `;
 
 exports[`The minimal serializer should for native remove empty objects as props 1`] = `
 <View>
-  <Text />
+  <Text
+    allowFontScaling={false}
+  />
 </View>
 `;
 
 exports[`The minimal serializer should for native remove functions as props 1`] = `
 <View>
-  <Text />
+  <Text
+    allowFontScaling={false}
+  />
 </View>
 `;
 
-exports[`The minimal serializer should for native remove redundant native props 1`] = `<Text />`;
+exports[`The minimal serializer should for native remove redundant native props 1`] = `
+<Text
+  allowFontScaling={false}
+/>
+`;
 
 exports[`The minimal serializer should for native remove undefined props 1`] = `
 <View>
@@ -35,6 +40,7 @@ exports[`The minimal serializer should for native remove undefined props 1`] = `
     False={false}
     Null={null}
     Zero={0}
+    allowFontScaling={false}
   />
 </View>
 `;
@@ -42,11 +48,11 @@ exports[`The minimal serializer should for native remove undefined props 1`] = `
 exports[`The minimal serializer should for native transform render props 1`] = `
 <Foo
   prop={
-    <Text
+    <Txt
       dir="dir"
     >
       Bar
-    </Text>
+    </Txt>
   }
 />
 `;

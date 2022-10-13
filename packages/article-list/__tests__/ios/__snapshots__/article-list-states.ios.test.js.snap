@@ -22,7 +22,9 @@ exports[`1. an error view 1`] = `
 
 exports[`2. an error view with header 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     Header
   </Text>
   <View>

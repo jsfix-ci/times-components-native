@@ -80,7 +80,9 @@ exports[`5. text link with children 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     The Times
   </Text>
 </Text>
@@ -97,7 +99,9 @@ exports[`6. text link with target 1`] = `
   }
   target="_blank"
 >
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     The Times
   </Text>
 </Text>

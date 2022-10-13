@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { Text } from "@times-components-native/text";
 import { colours, fonts } from "@times-components-native/styleguide";
 import * as Icons from "./src/icons";
 

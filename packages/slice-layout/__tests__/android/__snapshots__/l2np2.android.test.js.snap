@@ -2,19 +2,27 @@
 
 exports[`1. lead two no pic and two - small 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     lead-1
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     lead-2
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     support-1
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     support-2
   </Text>
 </View>
@@ -23,23 +31,31 @@ exports[`1. lead two no pic and two - small 1`] = `
 exports[`2. lead two no pic and two - tablet - landscape 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
   </View>
@@ -49,21 +65,29 @@ exports[`2. lead two no pic and two - tablet - landscape 1`] = `
 exports[`3. lead two no pic and two - tablet - portrait 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
   </View>

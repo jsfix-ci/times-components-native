@@ -36,7 +36,9 @@ exports[`1. card default state 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       A card
     </Text>
   </View>

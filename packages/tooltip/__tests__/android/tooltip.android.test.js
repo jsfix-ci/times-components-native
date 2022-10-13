@@ -1,7 +1,7 @@
 import Tooltip from "../../../tooltip";
 import TestRenderer from "react-test-renderer";
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import "../serializers-with-all-styles";
 import { Platform } from "react-native";
 

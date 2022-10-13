@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-restricted-imports
 import { Text, TextProps } from "react-native";
 import Context from "@times-components-native/context/src/context";
 

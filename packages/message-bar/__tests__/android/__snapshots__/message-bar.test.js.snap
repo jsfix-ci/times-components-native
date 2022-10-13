@@ -59,7 +59,9 @@ exports[`5. renders correctly 1`] = `
   <View />
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         test child content
       </Text>
     </View>

@@ -4,25 +4,33 @@ exports[`1. supplement secondary four - smalltablet 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>
@@ -34,25 +42,33 @@ exports[`2. supplement secondary four - medium 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>
@@ -64,25 +80,33 @@ exports[`3. supplement secondary four - medium - with isconsecutive 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>
@@ -94,25 +118,33 @@ exports[`4. supplement secondary four - wide 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>
@@ -124,25 +156,33 @@ exports[`5. supplement secondary four - wide - with isconsecutive 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>

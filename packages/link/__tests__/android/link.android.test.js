@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import {
   addSerializers,
   compose,

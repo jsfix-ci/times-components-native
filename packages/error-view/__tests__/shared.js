@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import TestRenderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { iterator } from "@times-components-native/test-utils";

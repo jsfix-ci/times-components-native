@@ -1,6 +1,6 @@
 import React from "react";
 import { iterator } from "../index";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import renderer from "react-test-renderer";
 
 const exampleTest = ordinal => {

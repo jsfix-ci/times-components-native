@@ -2,11 +2,15 @@
 
 exports[`1. secondary one and columnist - small 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     secondary
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     columnist
   </Text>
 </View>
@@ -15,13 +19,17 @@ exports[`1. secondary one and columnist - small 1`] = `
 exports[`2. secondary one and columnist - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       columnist
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary
     </Text>
   </View>
@@ -31,13 +39,17 @@ exports[`2. secondary one and columnist - smalltablet 1`] = `
 exports[`3. secondary one and columnist - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       columnist
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary
     </Text>
   </View>

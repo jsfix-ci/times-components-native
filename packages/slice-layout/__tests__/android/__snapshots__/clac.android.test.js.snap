@@ -2,11 +2,15 @@
 
 exports[`1. comment lead and cartoon - small 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     lead-1
   </Text>
   <View />
-  <Text>
+  <Text
+    allowFontScaling={false}
+  >
     cartoon-1
   </Text>
 </View>
@@ -15,13 +19,17 @@ exports[`1. comment lead and cartoon - small 1`] = `
 exports[`2. comment lead and cartoon - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       cartoon-1
     </Text>
   </View>
@@ -31,13 +39,17 @@ exports[`2. comment lead and cartoon - smalltablet 1`] = `
 exports[`3. comment lead and cartoon - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       cartoon-1
     </Text>
   </View>
@@ -47,13 +59,17 @@ exports[`3. comment lead and cartoon - medium 1`] = `
 exports[`4. comment lead and cartoon - wide 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       cartoon-1
     </Text>
   </View>

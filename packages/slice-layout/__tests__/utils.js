@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 
 const ExampleChild = ({ children }) => <Text>{children}</Text>;

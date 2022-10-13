@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import { Text } from "@times-components-native/text";
 import TestRenderer from "react-test-renderer";
 
 import { InnerMeasureInlineContent } from "../../src/measure/MeasureInlineContent";

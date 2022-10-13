@@ -2,7 +2,7 @@ import Tooltip from "../tooltip";
 import TestRenderer from "react-test-renderer";
 import { ResponsiveContext } from "@times-components-native/responsive";
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import "./serializers-with-all-styles";
 
 export const withTabletContext = (WrappedComponent, isArticleTablet = true) => (

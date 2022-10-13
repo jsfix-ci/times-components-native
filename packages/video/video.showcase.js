@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { View, Text, Alert } from "react-native";
+import { View, Alert } from "react-native";
+import { Text } from "@times-components-native/text";
 import React from "react";
 import Video from "./src/video";
 

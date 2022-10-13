@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import { iterator } from "@times-components-native/test-utils";
 import Card from "../src/card";
 import ResponsiveContext from "@times-components-native/responsive/src/context";

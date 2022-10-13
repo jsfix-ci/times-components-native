@@ -4,13 +4,17 @@ exports[`1. secondary four - small 1`] = `
 Array [
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
@@ -18,13 +22,17 @@ Array [
   <View />,
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-3
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-4
       </Text>
     </View>
@@ -36,24 +44,32 @@ exports[`2. secondary four - smallTablet 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-4
     </Text>
   </View>
@@ -64,24 +80,32 @@ exports[`3. secondary four - medium 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-4
     </Text>
   </View>
@@ -92,24 +116,32 @@ exports[`4. secondary four - medium - with isConsecutive 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-4
     </Text>
   </View>
@@ -120,24 +152,32 @@ exports[`5. secondary four - wide 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-4
     </Text>
   </View>
@@ -148,24 +188,32 @@ exports[`6. secondary four - wide - with isConsecutive 1`] = `
 <View>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         secondary-2
       </Text>
     </View>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       secondary-4
     </Text>
   </View>

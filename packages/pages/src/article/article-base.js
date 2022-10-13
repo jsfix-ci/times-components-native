@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { DeviceEventEmitter, NativeModules, Platform } from "react-native";
+import { NativeEventEmitter, NativeModules, Platform } from "react-native";
 import Article from "@times-components-native/article";
 import {
   ContextProviderWithDefaults,
@@ -63,19 +63,32 @@ const ArticleBase = ({
   };
 
   const onFontScaleChange = newVal => {
+    if (article.id === "830cd9ec-4a11-11ed-8176-c5c5e560820a") {
+      console.log("===== ++ new font scale", article.id, newVal);
+    }
     if (newVal) {
       setFontScaleToUse(newVal / 100);
     }
   };
 
   useEffect(() => {
-    const fontChangeListener = DeviceEventEmitter.addListener(
+    if (article.id === "830cd9ec-4a11-11ed-8176-c5c5e560820a") {
+      console.log("++ INSTANCE of article initialised");
+    }
+
+    const { ArticleEvents } = NativeModules;
+    const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
+
+    const fontChangeListener = articleEventEmitter.addListener(
       "onFontScaleChanged",
       onFontScaleChange,
     );
 
     return () => {
       fontChangeListener.remove();
+      if (article.id === "830cd9ec-4a11-11ed-8176-c5c5e560820a") {
+        console.log("++ removed INSTANCE of article");
+      }
     };
   }, []);
 

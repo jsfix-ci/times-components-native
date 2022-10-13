@@ -2,7 +2,10 @@
 
 exports[`MeasureInlineContent outputs rendered content once everything has been measured 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+    style={Object {}}
+  >
     {"contents":{"lines":{"p1":[{"text":"line1"}]},"heights":{"p1":20}},"itemHeight":null}
   </Text>
 </View>
@@ -10,7 +13,10 @@ exports[`MeasureInlineContent outputs rendered content once everything has been 
 
 exports[`MeasureInlineContent outputs rendered content with inline item once everything has been measured 1`] = `
 <View>
-  <Text>
+  <Text
+    allowFontScaling={false}
+    style={Object {}}
+  >
     {"contents":{"lines":{"p1":[{"text":"line1"}]},"heights":{"p1":20}},"itemHeight":300}
   </Text>
 </View>

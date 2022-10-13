@@ -14,7 +14,9 @@ exports[`1. card default state 1`] = `
       />
     </View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         A card
       </Text>
     </View>
@@ -36,7 +38,9 @@ exports[`2. pass an empty state to the image component 1`] = `
       />
     </View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         A card with an empty image
       </Text>
     </View>
@@ -48,7 +52,9 @@ exports[`3. card without an image when showimage is false 1`] = `
 <ResponsiveContextForMobile>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         No image
       </Text>
     </View>
@@ -70,7 +76,9 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
       />
     </View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         No URI
       </Text>
     </View>
@@ -82,7 +90,9 @@ exports[`5. card with reversed layout 1`] = `
 <ResponsiveContextForMobile>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         A card in reverse
       </Text>
     </View>
@@ -104,7 +114,9 @@ exports[`6. card with reversed layout and no image 1`] = `
 <ResponsiveContextForMobile>
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         A card in reverse with no image
       </Text>
     </View>
@@ -229,7 +241,9 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Do not re-render me
     </Text>
   </View>
@@ -249,7 +263,9 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Do not re-render me
     </Text>
   </View>
@@ -269,7 +285,9 @@ exports[`12. card should re-render when image uri changes 1`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some text
     </Text>
   </View>
@@ -289,7 +307,9 @@ exports[`12. card should re-render when image uri changes 2`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some text
     </Text>
   </View>
@@ -309,7 +329,9 @@ exports[`13. card should re-render when low res size changes 1`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some content
     </Text>
   </View>
@@ -329,7 +351,9 @@ exports[`13. card should re-render when low res size changes 2`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some content
     </Text>
   </View>
@@ -349,7 +373,9 @@ exports[`14. card should re-render when high res size changes 1`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some content
     </Text>
   </View>
@@ -369,7 +395,9 @@ exports[`14. card should re-render when high res size changes 2`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Some content
     </Text>
   </View>
@@ -418,7 +446,9 @@ exports[`15. card should re-render when loading state changes 2`] = `
     />
   </View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       Re-render me
     </Text>
   </View>

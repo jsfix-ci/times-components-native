@@ -4,40 +4,56 @@ exports[`1. list two and six no pic - small 1`] = `
 Array [
   <View>
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         lead-1
       </Text>
     </View>
     <View />
     <View>
-      <Text>
+      <Text
+        allowFontScaling={false}
+      >
         lead-2
       </Text>
     </View>
   </View>,
   <View />,
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-1
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-2
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-3
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-4
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-5
     </Text>
     <View />
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       support-6
     </Text>
   </View>,
@@ -47,13 +63,17 @@ Array [
 exports[`2. list two and six no pic - smalltablet 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
@@ -61,13 +81,17 @@ exports[`2. list two and six no pic - smalltablet 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-1
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-2
         </Text>
       </View>
@@ -75,13 +99,17 @@ exports[`2. list two and six no pic - smalltablet 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-3
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-4
         </Text>
       </View>
@@ -89,13 +117,17 @@ exports[`2. list two and six no pic - smalltablet 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-5
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-6
         </Text>
       </View>
@@ -107,13 +139,17 @@ exports[`2. list two and six no pic - smalltablet 1`] = `
 exports[`3. list two and six no pic - medium 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
@@ -121,13 +157,17 @@ exports[`3. list two and six no pic - medium 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-1
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-2
         </Text>
       </View>
@@ -135,13 +175,17 @@ exports[`3. list two and six no pic - medium 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-3
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-4
         </Text>
       </View>
@@ -149,13 +193,17 @@ exports[`3. list two and six no pic - medium 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-5
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-6
         </Text>
       </View>
@@ -167,13 +215,17 @@ exports[`3. list two and six no pic - medium 1`] = `
 exports[`4. list two and six no pic - wide 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
@@ -181,13 +233,17 @@ exports[`4. list two and six no pic - wide 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-1
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-2
         </Text>
       </View>
@@ -195,13 +251,17 @@ exports[`4. list two and six no pic - wide 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-3
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-4
         </Text>
       </View>
@@ -209,13 +269,17 @@ exports[`4. list two and six no pic - wide 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-5
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-6
         </Text>
       </View>
@@ -227,13 +291,17 @@ exports[`4. list two and six no pic - wide 1`] = `
 exports[`5. list two and six no pic - huge 1`] = `
 <View>
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-1
     </Text>
   </View>
   <View />
   <View>
-    <Text>
+    <Text
+      allowFontScaling={false}
+    >
       lead-2
     </Text>
   </View>
@@ -241,13 +309,17 @@ exports[`5. list two and six no pic - huge 1`] = `
   <View>
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-1
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-2
         </Text>
       </View>
@@ -255,13 +327,17 @@ exports[`5. list two and six no pic - huge 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-3
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-4
         </Text>
       </View>
@@ -269,13 +345,17 @@ exports[`5. list two and six no pic - huge 1`] = `
     <View />
     <View>
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-5
         </Text>
       </View>
       <View />
       <View>
-        <Text>
+        <Text
+          allowFontScaling={false}
+        >
           support-6
         </Text>
       </View>

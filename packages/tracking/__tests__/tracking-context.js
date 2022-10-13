@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text } from "@times-components-native/text";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import trackingContextTypes from "../src/tracking-context-types";
