@@ -18,20 +18,16 @@ class ErrorView extends Component {
     NewRelic.NRMAModularAgentWrapper.execute(
       "recordStack",
       "ErrorView" + error.name,
-      error.message + '\n' + error.cause,
+      error.message + "\n" + error.cause,
       errorInfo.componentStack + "\n\n\n" + error.stack,
       isFatal,
       NewRelic.JSAppVersion,
     );
-    this.setState({
-      error: e,
-    });
+    this.setState({ error });
   }
 
-  handleError(e) {
-    this.setState({
-      error: e,
-    });
+  handleError(error) {
+    this.setState({ error });
   }
 
   render() {

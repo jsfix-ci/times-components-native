@@ -20,7 +20,7 @@ export default class ErrorBoundary extends Component {
     NewRelic.NRMAModularAgentWrapper.execute(
       "recordStack",
       "ArticleSkeleton " + error.name,
-      error.message + '\n' + error.cause,
+      error.message + "\n" + error.cause,
       errorInfo.componentStack + "\n\n\n" + error.stack,
       isFatal,
       NewRelic.JSAppVersion,
