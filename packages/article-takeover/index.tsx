@@ -28,7 +28,7 @@ const ArticleTakeover: FC<Props> = ({ article }) => {
   const webview = useRef();
   const {
     sourcepointAuthId,
-    userId,
+    cookieEid,
     authCookie,
     consentString,
   } = NativeModules.ReactConfig;
@@ -38,7 +38,8 @@ const ArticleTakeover: FC<Props> = ({ article }) => {
     console.log("authCookie:", authCookie);
     console.log("consentString:", consentString);
     console.log("sourcepointAuthId:", sourcepointAuthId);
-  }, [authCookie, userId, consentString, sourcepointAuthId]);
+    console.log("cookieEid:", cookieEid);
+  }, [authCookie, cookieEid, consentString, sourcepointAuthId]);
 
   const scriptToInject = `(function() { 
     window._sp_ = {
@@ -50,9 +51,8 @@ const ArticleTakeover: FC<Props> = ({ article }) => {
         "authId": "${String(sourcepointAuthId)}",
       }
     }
-    document.cookie = 'authId=${String(sourcepointAuthId)}; ${String(
-    authCookie,
-  )}'
+
+    document.cookie='authId=${String(cookieEid)}; ${String(authCookie)}'
   })();`;
 
   return (
