@@ -137,6 +137,7 @@ const ArticleBodyRow = ({
           ast={children}
         >
           <Text
+            key={key}
             testID={"paragraph"}
             onTextLayout={onParagraphTextLayout}
             selectable
