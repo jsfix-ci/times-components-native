@@ -29,7 +29,7 @@ const { width: screenWidth, height: screenHeight } = Dimensions.get("screen");
 
 const adScriptSrc =
   Platform.OS === "ios"
-    ? "https://ncu-ad-manager-thetimes-co-uk.s3.eu-west-1.amazonaws.com/branches/feature/scb-2046-readding-additional-slots/ads.times_ios.min.js"
+    ? "https://ads.thetimes.co.uk/ads.times_ios.min.js"
     : "https://ads.thetimes.co.uk/ads.times_android.min.js";
 
 interface DomContextType {
