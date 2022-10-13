@@ -41,7 +41,7 @@ class ArticleListItem extends Component {
     const { article = {} } = this.props;
     const { showImage, shortSummary, summary } = article;
     const content = showImage ? summary : shortSummary;
-    throw new Error("jaime_agudo_lopez testing new relic renderContent");
+    // throw new Error("jaime_agudo_lopez testing new relic renderContent");
     return <ArticleSummaryContent ast={content} />;
   }
 
