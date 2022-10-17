@@ -864,7 +864,17 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     }
                   >
                     An example 
-                    <Text>
+                    <Text
+                      accessibilityRole="link"
+                      style={
+                        Array [
+                          Object {
+                            "textDecorationLine": "underline",
+                          },
+                          Object {},
+                        ]
+                      }
+                    >
                       link
                     </Text>
                   </Text>
