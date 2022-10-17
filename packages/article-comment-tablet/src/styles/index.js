@@ -8,9 +8,7 @@ const Styles = {
     marginRight: "auto",
     width: "100%",
   },
-  contentContainer: {
-    marginLeft: "25%",
-  },
+  contentContainer: {},
   articleHeadline: {
     ...fontFactory({
       font: "headline",

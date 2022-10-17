@@ -20,7 +20,7 @@ const ArticleLeftColumn = ({
   tooltips,
   topics,
 }) => (
-  <View style={styles.leftColumnContainer}>
+  <View style={styles.leftColumnContainer} pointerEvents="box-none">
     <View style={styles.authorContainer}>
       <Image aspectRatio={1} uri={authorImage} rounded />
       {hasBylineData(bylines) && (

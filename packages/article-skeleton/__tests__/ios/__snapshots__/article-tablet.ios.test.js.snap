@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. with inline video 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
+<View>
   <RCTScrollView>
     <View>
       <View
@@ -102,13 +96,7 @@ exports[`1. with inline video 1`] = `
 `;
 
 exports[`2. with ad on mainstandard 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
+<View>
   <RCTScrollView>
     <View>
       <View
@@ -169,13 +157,7 @@ exports[`2. with ad on mainstandard 1`] = `
 `;
 
 exports[`3. with ad on maincomment 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
+<View>
   <RCTScrollView>
     <View>
       <View
