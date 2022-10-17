@@ -2,7 +2,13 @@
 
 exports[`1. scaled medium full article 1`] = `
 <View>
-  <RCTScrollView>
+  <RCTScrollView
+    style={
+      Object {
+        "backgroundColor": "#f0f0f0",
+      }
+    }
+  >
     <View>
       <View
         style={
@@ -88,7 +94,13 @@ exports[`1. scaled medium full article 1`] = `
 
 exports[`2. scaled large full article 1`] = `
 <View>
-  <RCTScrollView>
+  <RCTScrollView
+    style={
+      Object {
+        "backgroundColor": "#f0f0f0",
+      }
+    }
+  >
     <View>
       <View
         style={
@@ -174,7 +186,13 @@ exports[`2. scaled large full article 1`] = `
 
 exports[`3. scaled xlarge full article 1`] = `
 <View>
-  <RCTScrollView>
+  <RCTScrollView
+    style={
+      Object {
+        "backgroundColor": "#f0f0f0",
+      }
+    }
+  >
     <View>
       <View
         style={

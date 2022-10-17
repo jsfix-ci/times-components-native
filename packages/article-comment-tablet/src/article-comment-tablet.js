@@ -20,7 +20,6 @@ import {
   articleDefaultProps,
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import { colours } from "@times-components-native/styleguide";
 
 class ArticlePage extends Component {
   constructor(props) {
