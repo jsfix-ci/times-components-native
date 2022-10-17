@@ -31,6 +31,7 @@ import {
   getCropByPriority,
   isTemplateWithLeadAssetInGallery,
 } from "@times-components-native/utils";
+import { colours } from "@times-components-native/styleguide";
 
 const { ArticleEvents } = NativeModules;
 const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
@@ -255,6 +256,9 @@ const ArticleWithContent = props => {
               paddingLeft: "25%",
             }
           }
+          style={{
+            backgroundColor: colours.functional.gutter,
+          }}
         >
           <MemoisedArticle
             {...props}
