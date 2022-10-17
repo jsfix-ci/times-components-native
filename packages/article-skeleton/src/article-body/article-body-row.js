@@ -150,9 +150,10 @@ const ArticleBodyRow = ({
       );
     },
     ad(key) {
+      const config = { ...adConfig, slug: data?.slug ?? "" };
       return (
         <Ad
-          adConfig={adConfig}
+          adConfig={config}
           keyId={key}
           key={key}
           narrowContent={narrowContent}
@@ -278,17 +279,16 @@ const ArticleBodyRow = ({
           attributes: { "deck-id": deckId },
         } = element;
 
+        const style = [
+          styles.interactiveContainer,
+          isArticleTablet && styles.interactiveContainerTablet,
+          isArticleTablet &&
+            display === "fullwidth" &&
+            styles.interactiveContainerFullWidth,
+        ];
+
         return (
-          <View
-            key={key}
-            style={[
-              styles.interactiveContainer,
-              isArticleTablet && styles.interactiveContainerTablet,
-              isArticleTablet &&
-                display === "fullwidth" &&
-                styles.interactiveContainerFullWidth,
-            ]}
-          >
+          <View key={key} style={style}>
             <InteractiveWrapper.ResponsiveImageInteractive
               deckId={deckId}
               key={key}
