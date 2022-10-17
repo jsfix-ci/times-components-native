@@ -103,6 +103,7 @@ const Section: FC<Props> = props => {
   }: any) => {
     return (
       <View
+        key={index}
         onLayout={event => {
           sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
         }}

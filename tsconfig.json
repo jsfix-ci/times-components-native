@@ -25,7 +25,7 @@
     "babel.config.js",
     "metro.config.js",
     "index.ios.js",
-    "android.ios.js",
+    "index.android.js",
     "build",
     "dist",
     "**/*.js",
