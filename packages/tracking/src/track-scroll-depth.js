@@ -11,8 +11,8 @@ export default (
   const componentName = getDisplayName(WrappedComponent);
 
   class WithTrackScrollDepth extends Component {
-    constructor(props, context) {
-      super(props, context);
+    constructor(props) {
+      super(props);
       this.viewed = new Set();
       this.handleChildViewed = this.handleChildViewed.bind(this);
       this.receiveChildList = this.receiveChildList.bind(this);

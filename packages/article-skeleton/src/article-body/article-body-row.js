@@ -95,11 +95,16 @@ const ArticleBodyRow = ({
       return this.bold(key, attributes, children);
     },
     italic(key, attributes, children) {
-      return <Text style={styles.italic}>{children}</Text>;
+      return (
+        <Text key={key} style={styles.italic}>
+          {children}
+        </Text>
+      );
     },
     link(key, { href, canonicalId, type }, children) {
       return (
         <ArticleLink
+          key={key}
           testID={"hyperlink"}
           url={href}
           style={styles.articleLink}
@@ -117,14 +122,14 @@ const ArticleBodyRow = ({
     },
     subscript(key, attributes, children) {
       return (
-        <View style={styles.subscriptContainer}>
+        <View key={key} style={styles.subscriptContainer}>
           <Text style={styles.subscript}>{children}</Text>
         </View>
       );
     },
     superscript(key, attributes, children) {
       return (
-        <View style={styles.superscriptContainer}>
+        <View key={key} style={styles.superscriptContainer}>
           <Text style={styles.superscript}>{children}</Text>
         </View>
       );
@@ -135,6 +140,7 @@ const ArticleBodyRow = ({
           narrowContent={narrowContent}
           attributes={attributes}
           ast={children}
+          key={key}
         >
           <Text
             key={key}
@@ -161,9 +167,10 @@ const ArticleBodyRow = ({
         />
       );
     },
-    articleEndTracking() {
+    articleEndTracking(key) {
       return (
         <ArticleEndTracking
+          key={key}
           onViewed={() => {
             track({
               object: "Article",
@@ -221,13 +228,13 @@ const ArticleBodyRow = ({
     ) {
       return (
         <ArticleImage
+          key={key}
           captionOptions={{
             caption,
             credits,
           }}
           onImagePress={onImagePress}
           images={images}
-          key={key}
           imageOptions={{
             display:
               !isArticleTablet && caption && display === "inline"
@@ -329,11 +336,11 @@ const ArticleBodyRow = ({
         </View>
       );
     },
-    footer() {
+    footer(key) {
       const { id, url, template } = data;
-
       return (
         <ArticleExtras
+          key={key}
           analyticsStream={analyticsStream}
           articleId={id}
           articleUrl={url}
@@ -353,7 +360,7 @@ const ArticleBodyRow = ({
     },
     keyFacts(key, attributes, children, index, tree) {
       return (
-        <View style={isArticleTablet && styles.containerTablet}>
+        <View key={key} style={isArticleTablet && styles.containerTablet}>
           <KeyFacts
             analyticsStream={analyticsStream}
             ast={tree}
@@ -372,6 +379,7 @@ const ArticleBodyRow = ({
       const content = children[0].string;
       return (
         <PullQuote
+          key={key}
           caption={name}
           onTwitterLinkPress={onTwitterLinkPress}
           text={text}
