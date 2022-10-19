@@ -76,3 +76,7 @@ ios/main.jsbundle.meta
 packages/schema/__tests__/tempSchema
 packages/schema/fragment-matcher.js
 packages/schema/schema.json
+
+# react-native-config secrets
+
+.env*

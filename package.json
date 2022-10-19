@@ -1,7 +1,7 @@
 {
   "name": "times-components-native",
   "private": true,
-  "version": "11.0.4",
+  "version": "11.0.5",
   "description": "A collection of react-native components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
@@ -22,8 +22,9 @@
     "android:native": "react-native start --config ./lib/android/metro.config.js",
     "android:build-lib": "yarn android:build-lib:js && yarn android:build-lib:aar",
     "android:build-lib:js": "mkdir -p lib/android/xnative/src/main/assets/ && mkdir -p lib/android/xnative/src/main/res/ && react-native bundle --platform android --dev false --minify --entry-file lib/android/index.android.js --bundle-output lib/android/xnative/src/main/assets/index.android.bundle --assets-dest lib/android/xnative/src/main/res/",
-    "android:clean-lib:aar": "cd lib/android && ./gradlew clean && cd -",
     "android:build-lib:aar": "cd lib/android && ./gradlew generateReactArchives && ./gradlew assemble && cd -",
+    "android:clean-lib:js": "rm -rf lib/android/xnative/src/main/assets/ && rm -rf lib/android/xnative/src/main/res/",
+    "android:clean-lib:aar": "cd lib/android && ./gradlew clean && cd -",
     "android:publish-lib:aar:remote": "cd lib/android && ./gradlew publish && cd -",
     "android:publish-lib:aar:local": "cd lib/android && ./gradlew publishToMavenLocal && cd -",
     "prettier": "prettier-eslint --config .prettierrc.js --write \"{,packages,*/**/}*.{js,jsx,json,ts,tsx}\"",
