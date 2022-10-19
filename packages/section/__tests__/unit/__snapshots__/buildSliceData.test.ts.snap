@@ -77,7 +77,7 @@ Array [
 exports[`buildSliceData should add elementId and ignore Separator properties on real data 1`] = `
 Array [
   Object {
-    "elementId": "undefined203012e4-4ef8-11ed-af60-3f894fe60060a8df904a-4edc-11ed-af60-3f894fe60060b25dfac2-4eb3-11ed-af60-3f894fe6006003aec464-4eec-11ed-b120-ca4f3ffbcdc5.0",
+    "elementId": "203012e4-4ef8-11ed-af60-3f894fe60060a8df904a-4edc-11ed-af60-3f894fe60060b25dfac2-4eb3-11ed-af60-3f894fe6006003aec464-4eec-11ed-b120-ca4f3ffbcdc5LeadTwoNoPicAndTwoSlice.0",
     "items": Array [
       Object {
         "articleId": "b25dfac2-4eb3-11ed-af60-3f894fe60060",
@@ -1066,7 +1066,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefinede64a5352-4ef5-11ed-b120-ca4f3ffbcdc562dd3eb8-4eea-11ed-af60-3f894fe600603920470c-4ed9-11ed-af60-3f894fe600601eb11d4e-4edc-11ed-b120-ca4f3ffbcdc5.1",
+    "elementId": "e64a5352-4ef5-11ed-b120-ca4f3ffbcdc562dd3eb8-4eea-11ed-af60-3f894fe60060SecondaryFourSlice3920470c-4ed9-11ed-af60-3f894fe600601eb11d4e-4edc-11ed-b120-ca4f3ffbcdc5.1",
     "items": Array [
       Object {
         "articleId": "1eb11d4e-4edc-11ed-b120-ca4f3ffbcdc5",
@@ -1404,7 +1404,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefinedade81474-4edf-11ed-af60-3f894fe6006040eb4e3c-4e98-11ed-b120-ca4f3ffbcdc57aeffbbe-4e3e-11ed-af60-3f894fe60060e518c9fc-4ee9-11ed-af60-3f894fe60060.2",
+    "elementId": "ade81474-4edf-11ed-af60-3f894fe6006040eb4e3c-4e98-11ed-b120-ca4f3ffbcdc57aeffbbe-4e3e-11ed-af60-3f894fe60060SecondaryTwoAndTwoSlicee518c9fc-4ee9-11ed-af60-3f894fe60060.2",
     "items": Array [
       Object {
         "articleId": "ade81474-4edf-11ed-af60-3f894fe60060",
@@ -1882,7 +1882,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefinedeb675696-4dec-11ed-b120-ca4f3ffbcdc546cc1ae0-4e1e-11ed-b120-ca4f3ffbcdc5b0873786-4ed6-11ed-b120-ca4f3ffbcdc532a9f5b2-4ed9-11ed-af60-3f894fe60060.3",
+    "elementId": "eb675696-4dec-11ed-b120-ca4f3ffbcdc546cc1ae0-4e1e-11ed-b120-ca4f3ffbcdc5SecondaryFourSliceb0873786-4ed6-11ed-b120-ca4f3ffbcdc532a9f5b2-4ed9-11ed-af60-3f894fe60060.3",
     "items": Array [
       Object {
         "articleId": "32a9f5b2-4ed9-11ed-af60-3f894fe60060",
@@ -2215,11 +2215,11 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined.4",
+    "elementId": "PuffSlice.4",
     "name": "PuffSlice",
   },
   Object {
-    "elementId": "undefinedf5a0a458-4e4d-11ed-af60-3f894fe60060f67f08e6-4e5d-11ed-af60-3f894fe600608475ee4e-4de1-11ed-af60-3f894fe60060a37de4fc-4f05-11ed-af60-3f894fe600605b9a7966-4ee7-11ed-b120-ca4f3ffbcdc5.5",
+    "elementId": "f5a0a458-4e4d-11ed-af60-3f894fe60060f67f08e6-4e5d-11ed-af60-3f894fe600608475ee4e-4de1-11ed-af60-3f894fe60060a37de4fc-4f05-11ed-af60-3f894fe600605b9a7966-4ee7-11ed-b120-ca4f3ffbcdc5LeadOneAndFourSlice.5",
     "items": Array [
       Object {
         "articleId": "8475ee4e-4de1-11ed-af60-3f894fe60060",
@@ -2953,7 +2953,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined7139b318-4e51-11ed-b120-ca4f3ffbcdc5150bc058-4eed-11ed-af60-3f894fe60060575ce0ca-4ed6-11ed-b120-ca4f3ffbcdc5ba489a00-4e48-11ed-af60-3f894fe60060.6",
+    "elementId": "SecondaryTwoAndTwoSlice7139b318-4e51-11ed-b120-ca4f3ffbcdc5150bc058-4eed-11ed-af60-3f894fe60060575ce0ca-4ed6-11ed-b120-ca4f3ffbcdc5ba489a00-4e48-11ed-af60-3f894fe60060.6",
     "items": Array [
       Object {
         "articleId": "ba489a00-4e48-11ed-af60-3f894fe60060",
@@ -3356,7 +3356,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefinedc4b35c2e-4ec9-11ed-b120-ca4f3ffbcdc5.7",
+    "elementId": "c4b35c2e-4ec9-11ed-b120-ca4f3ffbcdc5SecondaryOneSlice.7",
     "items": Array [
       Object {
         "articleId": "c4b35c2e-4ec9-11ed-b120-ca4f3ffbcdc5",
@@ -3435,7 +3435,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefinedb2ff2b78-4e49-11ed-af60-3f894fe60060d5a57326-4ed0-11ed-b120-ca4f3ffbcdc59494681a-4e17-11ed-af60-3f894fe60060b7f10040-4e51-11ed-af60-3f894fe60060.8",
+    "elementId": "b2ff2b78-4e49-11ed-af60-3f894fe60060d5a57326-4ed0-11ed-b120-ca4f3ffbcdc5SecondaryFourSlice9494681a-4e17-11ed-af60-3f894fe60060b7f10040-4e51-11ed-af60-3f894fe60060.8",
     "items": Array [
       Object {
         "articleId": "b7f10040-4e51-11ed-af60-3f894fe60060",
@@ -3725,7 +3725,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined54cab0e2-4e33-11ed-b120-ca4f3ffbcdc5e7a18000-4e4f-11ed-af60-3f894fe600609551a41c-4e48-11ed-af60-3f894fe600605742cd48-4e72-11ed-b120-ca4f3ffbcdc5.9",
+    "elementId": "54cab0e2-4e33-11ed-b120-ca4f3ffbcdc5e7a18000-4e4f-11ed-af60-3f894fe60060SecondaryTwoNoPicAndTwoSlice9551a41c-4e48-11ed-af60-3f894fe600605742cd48-4e72-11ed-b120-ca4f3ffbcdc5.9",
     "items": Array [
       Object {
         "articleId": "5742cd48-4e72-11ed-b120-ca4f3ffbcdc5",
@@ -4161,7 +4161,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined7d8c8746-4e4f-11ed-af60-3f894fe60060666f5aa6-4e4b-11ed-af60-3f894fe60060eb50237c-4e14-11ed-af60-3f894fe600603e4f73ec-4e39-11ed-af60-3f894fe60060.10",
+    "elementId": "7d8c8746-4e4f-11ed-af60-3f894fe60060666f5aa6-4e4b-11ed-af60-3f894fe60060SecondaryFourSliceeb50237c-4e14-11ed-af60-3f894fe600603e4f73ec-4e39-11ed-af60-3f894fe60060.10",
     "items": Array [
       Object {
         "articleId": "3e4f73ec-4e39-11ed-af60-3f894fe60060",
@@ -4491,7 +4491,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined9b604fe8-4e4d-11ed-af60-3f894fe60060b3994946-4e4f-11ed-af60-3f894fe600606be84126-4e4d-11ed-af60-3f894fe60060dec1b114-4e39-11ed-af60-3f894fe60060.11",
+    "elementId": "9b604fe8-4e4d-11ed-af60-3f894fe60060b3994946-4e4f-11ed-af60-3f894fe600606be84126-4e4d-11ed-af60-3f894fe60060SecondaryTwoNoPicAndTwoSlicedec1b114-4e39-11ed-af60-3f894fe60060.11",
     "items": Array [
       Object {
         "articleId": "9b604fe8-4e4d-11ed-af60-3f894fe60060",
@@ -4942,7 +4942,7 @@ Array [
     },
   },
   Object {
-    "elementId": "undefined90c1b5f2-4e31-11ed-af60-3f894fe60060.12",
+    "elementId": "90c1b5f2-4e31-11ed-af60-3f894fe60060SecondaryOneSlice.12",
     "items": Array [
       Object {
         "articleId": "90c1b5f2-4e31-11ed-af60-3f894fe60060",
