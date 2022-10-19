@@ -8,9 +8,7 @@ const Styles = {
     marginRight: "auto",
     width: "100%",
   },
-  contentContainer: {
-    marginLeft: "25%",
-  },
+  contentContainer: {},
   articleHeadline: {
     ...fontFactory({
       font: "headline",
@@ -66,6 +64,7 @@ const Styles = {
     height: "100%",
     position: "absolute",
     zIndex: 1,
+    backgroundColor: colours.functional.white,
   },
   authorContainer: {
     width: "100%",

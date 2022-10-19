@@ -31,6 +31,7 @@ import {
   getCropByPriority,
   isTemplateWithLeadAssetInGallery,
 } from "@times-components-native/utils";
+import { colours } from "@times-components-native/styleguide";
 
 const { ArticleEvents } = NativeModules;
 const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
@@ -162,7 +163,7 @@ const MemoisedArticle = React.memo(props => {
 });
 
 const ArticleWithContent = props => {
-  const { onArticleRead, data } = props;
+  const { onArticleRead, data, useCommentTabletPadding } = props;
   const articleReadTimerDuration = 6000;
   const hasBeenRead = useRef(false);
   let articleReadDelay = null;
@@ -250,6 +251,14 @@ const ArticleWithContent = props => {
           onScroll={handleScroll}
           scrollEventThrottle={400}
           ref={ref => setScrollRef(ref)}
+          contentContainerStyle={
+            useCommentTabletPadding && {
+              paddingLeft: "25%",
+            }
+          }
+          style={{
+            backgroundColor: colours.functional.gutter,
+          }}
         >
           <MemoisedArticle
             {...props}
@@ -299,6 +308,7 @@ ArticleSkeleton.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
   onImagePress: PropTypes.func.isRequired,
+  useCommentTabletPadding: PropTypes.bool,
 };
 ArticleSkeleton.defaultProps = {
   ...articleSkeletonDefaultProps,
