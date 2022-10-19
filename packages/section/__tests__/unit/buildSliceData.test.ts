@@ -1,9 +1,15 @@
 import { buildSliceData } from "../../src/utils/buildSliceData";
+import realSlicesDump from "../real-slices-dump.json";
 
 describe("buildSliceData", () => {
   const isTablet = false;
   const sectionTitle = "News";
-  it("should add elementId and ignoreSeparator properties", () => {
+  it("should add elementId and ignore Separator properties on real data", () => {
+    const newData = buildSliceData(isTablet, sectionTitle)(realSlicesDump);
+    expect(newData).toMatchSnapshot();
+  });
+
+  it("should add elementId and ignore Separator properties", () => {
     const originalData = [
       { id: "a", name: "LeadersSlice" },
       { id: "b", name: "DailyUniversalRegister" },
