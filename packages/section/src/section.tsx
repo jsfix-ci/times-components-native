@@ -103,7 +103,7 @@ const Section: FC<Props> = props => {
   }: any) => {
     return (
       <View
-        key={index}
+        key={slice.name + String(index)}
         onLayout={event => {
           sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
         }}
@@ -201,7 +201,7 @@ const Section: FC<Props> = props => {
         ItemSeparatorComponent={leadingItem =>
           renderItemSeparator(isPuzzle)(leadingItem, editionBreakpoint)
         }
-        keyExtractor={item => item.elementId}
+        keyExtractor={(item, idx) => item.elementId + String(idx)}
         ListHeaderComponent={getHeaderComponent(isPuzzle, isMagazine)}
         nestedScrollEnabled
         onViewableItemsChanged={onViewed ? onViewableItemsChanged : null}

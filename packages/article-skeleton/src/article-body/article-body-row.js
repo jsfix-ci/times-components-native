@@ -64,11 +64,15 @@ const ArticleBodyRow = ({
 
   return {
     text(key, attributes) {
-      return <Text>{attributes.value}</Text>;
+      return <Text key={key}>{attributes.value}</Text>;
     },
     heading2(key, attributes, children, index, tree) {
       return (
-        <ArticleParagraphWrapper style={styles.headingContainer} ast={children}>
+        <ArticleParagraphWrapper
+          key={key}
+          style={styles.headingContainer}
+          ast={children}
+        >
           <Text style={styles[tree.name]}>{children}</Text>
         </ArticleParagraphWrapper>
       );
@@ -86,7 +90,11 @@ const ArticleBodyRow = ({
       return this.heading2(key, attributes, children, index, tree);
     },
     bold(key, attributes, children) {
-      return <Text style={styles.bold}>{children}</Text>;
+      return (
+        <Text key={key} style={styles.bold}>
+          {children}
+        </Text>
+      );
     },
     emphasis(key, attributes, children) {
       return this.bold(key, attributes, children);
@@ -104,7 +112,7 @@ const ArticleBodyRow = ({
     link(key, { href, canonicalId, type }, children) {
       return (
         <ArticleLink
-          key={key}
+          key={key + canonicalId}
           testID={"hyperlink"}
           url={href}
           style={styles.articleLink}
@@ -160,8 +168,8 @@ const ArticleBodyRow = ({
       return (
         <Ad
           adConfig={config}
-          keyId={key}
           key={key}
+          keyId={key}
           narrowContent={narrowContent}
           slotName={"ad-inarticle-mpu"}
         />
@@ -309,8 +317,8 @@ const ArticleBodyRow = ({
         } = element;
         return (
           <InlineNewsletterPuff
-            analyticsStream={analyticsStream}
             key={key}
+            analyticsStream={analyticsStream}
             code={code}
             copy={safeDecodeURIComponent(copy)}
             headline={safeDecodeURIComponent(headline)}
@@ -355,8 +363,8 @@ const ArticleBodyRow = ({
         />
       );
     },
-    break() {
-      return <Text>{`\n`}</Text>;
+    break(key) {
+      return <Text key={key}>{`\n`}</Text>;
     },
     keyFacts(key, attributes, children, index, tree) {
       return (
