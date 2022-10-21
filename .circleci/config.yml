@@ -159,17 +159,6 @@ jobs:
                   command: yarn test:ios
                   working_directory: ~/project/
 
-    dump_vars_to_env:
-        executor: node
-        steps:
-        - checkout
-        - attach_workspace:
-            at: ./
-        - run:
-            name: Dump environment variables to .env file
-            command: bash scripts/dump-vars-to-env-file.sh
-            working_directory: ~/project/
-
     publish_android_artifacts:
         <<: *PUBLISH_ANDROID
 
@@ -221,9 +210,7 @@ workflows:
             - run_ios_tests:
                 requires:
                     - setup
-            - dump_vars_to_env:
-                requires:
-                    - setup
+
             - hold_release:
                 type: approval
                 context: nuk-tnl-app-universal
@@ -237,7 +224,6 @@ workflows:
                     - run_noplatform_tests
                     - run_android_tests
                     - run_ios_tests
-                    - dump_vars_to_env
 
             # Artifact publishing jobs - beta/prod disinctions will be determined in publish-android.sh and publish-ios.sh
             - publish_android_artifacts:
