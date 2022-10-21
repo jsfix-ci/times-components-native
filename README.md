@@ -30,7 +30,7 @@ For more details read the React Native [documentation](https://reactnative.dev/d
 4. `cd ios && pod install && cd -`
 5. `yarn start` and leave it running
 6. Run the iOS app using XCode or open the Android project to run on Android.
-7. We use [react-native-config](https://github.com/luggit/react-native-config) to keep secrets out of git. You might need to `$ cp env.example .env` and check it out.
+
 ## Native Apps & TCN
 
 In order to run development servers for native applications, start react-native dev
@@ -71,7 +71,7 @@ When developing you should branch off this to create a feature branch.
 
 `format: feat/TNLT-XXX-new-feature-branch-name`
 
-This is a short lived branch that holds new features being built and tested or even hot fixes for an existing release branch.
+This is a short lived branch that holds new features being built and tested or even hot fixes for an existing release branch. 
 
 It is recommended you use feature branches for larger changes that need reviewed and to avoid siloing of knowledge, amongst other reasons for reviewing changes.
 
@@ -81,7 +81,7 @@ Once reviewed and tests are passing you should squash & merge your branch into m
 
 `format: release/X.X.X`
 
-Release branches will live for as long as that version is in production. Regular pruning should take place to delete unused release branches.
+Release branches will live for as long as that version is in production. Regular pruning should take place to delete unused release branches. 
 
 Release branches are never merged back into master as master already has these changes. You may see merge conflicts in the PR but these can be ignored.
 
@@ -89,13 +89,10 @@ Changes should never be made on a release branch, changes should be made in mast
 
 ## Releases
 
-
-See https://github.com/luggit/react-native-config#different-environments
-
 ### Production Releases
 
 To release a production build use the following steps;
-- bump version in feature branch and merge into master
+- bump version in feature branch and merge into master 
   - branch format - `chore/feature-release-X.X.X`
   - commit format - `chore(NO_JIRA): feature release X.X.X`
 - create a new release branch with the format - `release/X.X.X`
@@ -127,14 +124,14 @@ When a bug is found in a pre-existing release you may want to push a fix to that
 
 To do this you can;
 - create a feature branch to make and test changes and go through the process of merging feature into master
-- check out the existing release branch you are updating and cherry-pick the merge-commit
+- check out the existing release branch you are updating and cherry-pick the merge-commit 
 	- `git cherry-pick -m 1 -x <MERGE_COMMIT_SHA>`
 - checkout a new release branch off of the existing release branch and bump the version to match in the branch name
 	- e.g if you are on `release/1.0.0` and adding a hotfix, your new branch will be `release/1.0.1`
 - now create a build by selecting the `hold_release` option in circleci for your new release branch
 - clean up by deleting this latest release branch
 
-`NB:` This extra release branch step is required due to an issue with `conventional-github-releaser` referencing the branch name in some way to check if an existing release exists for that version.
+`NB:` This extra release branch step is required due to an issue with `conventional-github-releaser` referencing the branch name in some way to check if an existing release exists for that version. 
 So even if we update the version in package.json the publish notes step fails.
 
 

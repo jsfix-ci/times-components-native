@@ -106,7 +106,4 @@ dependencies {
     api("uk.co.thetimes:xnative-rn-newrelic-agent:${packageInfo.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-config:${packageInfo.version}") {
-        exclude group: "com.facebook.react"
-    }
 }

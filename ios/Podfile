@@ -19,10 +19,6 @@ target 'TimesComponents' do
 	  :app_path => "#{Pod::Config.instance.installation_root}/..",
   )
 
-  pod 'react-native-config', :path => '../node_modules/react-native-config'
-
-  pod 'newrelic-react-native-agent', :path => '../node_modules/newrelic-react-native-agent'
-
   target 'TimesComponentsTests' do
     inherit! :complete
     # Pods for testing

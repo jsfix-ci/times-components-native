@@ -1,12 +1,11 @@
 import { Platform } from "react-native";
-import Config from "react-native-config";
 export { version } from "./package.json";
 
+//TODO explore how to expose the tokens
 export const appToken = Platform.select({
-  ios: Config.RN_NUK_NEW_RELIC_TOKEN_IOS, // NUK_NEW_RELIC_TOKEN on the iOS app
-  android: Config.RN_NUK_NEW_RELIC_TOKEN_ANDROID, // NEW_RELIC_APP_TOKEN on the Android app
+  ios: "<IOS-APP-TOKEN>", //NUK_NEW_RELIC_TOKEN
+  android: "<ANDROID-APP-TOKEN>", //NEW_RELIC_APP_TOKEN
 });
-console.log("🚀 ~ file: newRelicConfig.js ~ line 9 ~ appToken", appToken);
 
 export const agentConfiguration = {
   //Android Specific
