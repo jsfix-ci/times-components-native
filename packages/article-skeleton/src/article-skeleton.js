@@ -32,6 +32,7 @@ import {
   isTemplateWithLeadAssetInGallery,
 } from "@times-components-native/utils";
 import { colours } from "@times-components-native/styleguide";
+import { getFirstParagraphText } from "@times-components-native/utils/src/logbox-utils";
 
 const { ArticleEvents } = NativeModules;
 const articleEventEmitter = new NativeEventEmitter(ArticleEvents);
@@ -54,9 +55,16 @@ const getAllImages = (template, leadAsset, fixedContent) => {
   return fixedContent.filter(node => node.name === "image");
 };
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 const MemoisedArticle = React.memo(props => {
   const { Header, data, isArticleTablet, narrowContent, setLayoutRef } = props;
   const { content, template, leadAsset } = data;
+  //To track potential re-renders
+  console.log(
+    "🚀 ~ article-skeleton.js:L64 ~ MemoisedArticle ~ 1st paragraph",
+    getFirstParagraphText(content),
+  );
 
   const { windowWidth } = useResponsiveContext();
 
@@ -150,17 +158,19 @@ const MemoisedArticle = React.memo(props => {
       <Gutter>
         <Header width={Math.min(maxWidth, windowWidth)} />
       </Gutter>
-
-      {fixedContent.map((item, index) => (
-        <ArticleContentRow
-          key={`fixedContent-${index}`}
-          item={item}
-          index={index}
-        />
-      ))}
+      {fixedContent.map((item, index) => {
+        const key = `fixedContent-${
+          item.attributes?.id || item.attributes?.value || index
+        }`;
+        return <ArticleContentRow key={key} item={item} index={index} />;
+      })}
     </>
   );
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 const ArticleWithContent = props => {
   const { onArticleRead, data, useCommentTabletPadding } = props;
@@ -172,7 +182,7 @@ const ArticleWithContent = props => {
    * Ref for scroll view stored to allow scrollToRef
    * function to scroll to a key fact article ref
    */
-  const [scrollRef, setScrollRef] = useState();
+  const scrollRef = useRef(null);
 
   /**
    * stores object with references to article headline refs
@@ -203,10 +213,16 @@ const ArticleWithContent = props => {
         if (Platform.OS === "android" && ArticleEvents.scrollToY) {
           ArticleEvents.scrollToY(y);
         } else {
-          scrollRef.scrollTo({
-            y,
-            animated: true,
-          });
+          if (scrollRef.current) {
+            scrollRef.current.scrollTo({
+              y,
+              animated: true,
+            });
+          } else {
+            console.warn(
+              "🚀 ~ file: article-skeleton.js:L227 ~ scrollRef.current not set",
+            );
+          }
         }
       }
     },
@@ -250,7 +266,7 @@ const ArticleWithContent = props => {
           nestedScrollEnabled
           onScroll={handleScroll}
           scrollEventThrottle={400}
-          ref={ref => setScrollRef(ref)}
+          ref={ref => (scrollRef.current = ref)}
           contentContainerStyle={
             useCommentTabletPadding && {
               paddingLeft: "25%",
@@ -262,7 +278,6 @@ const ArticleWithContent = props => {
         >
           <MemoisedArticle
             {...props}
-            scrollRef={scrollRef}
             layoutRefs={layoutRefs}
             setLayoutRef={setLayoutRef}
             scrollToRef={scrollToRef}

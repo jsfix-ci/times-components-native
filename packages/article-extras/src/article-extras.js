@@ -21,7 +21,7 @@ const ArticleExtras = ({
   template,
   tooltips,
 }) => (
-  <ArticleExtrasProvider debounceTimeMs={0} id={articleId}>
+  <ArticleExtrasProvider debounceTimeMs={0} id={articleId.toLowerCase()}>
     {({ article, error, isLoading, refetch }) => {
       return (
         <ViewportAwareView onViewportEnter={refetch}>

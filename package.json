@@ -11,7 +11,8 @@
   "scripts": {
     "start": "rnstl && react-native start --config ./app/metro.config.js",
     "depcheck": "depcheck --config=./.depcheckrc",
-    "lint:base": "DEBUG=eslint:cli-engine eslint --ext .tsx,.ts,.js,.jsx",
+    "lint:base": "eslint --ext .tsx,.ts,.js,.jsx",
+    "lint:debug": "DEBUG=eslint:cli-engine yarn lint:base",
     "lint:errors": "yarn lint:base --quiet .",
     "lint:changed": "FILES=$(git diff-index --name-only HEAD | egrep '.tsx$|.ts$|.js$|.jsx$'); if [ \"$FILES\" ]; then yarn lint:base ${FILES} --fix; fi",
     "lint": "yarn lint:base .",

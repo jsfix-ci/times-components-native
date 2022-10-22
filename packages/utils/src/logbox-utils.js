@@ -27,3 +27,8 @@ export const logboxSetup = () => {
   //Might come in handy
   console.reportErrorsAsExceptions = false; // https://github.com/facebook/react-native/blob/b633cc130533f0731b2577123282c4530e4f0abe/Libraries/Core/ExceptionsManager.js#L115
 };
+
+export const getFirstParagraphText = article => {
+  const p = article.find(e => e.name === "paragraph");
+  return (p?.children[0] && p.children[0].attributes?.value) || "";
+};
