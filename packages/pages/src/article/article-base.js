@@ -52,6 +52,24 @@ const ArticleBase = ({
     version: appVersion,
   };
 
+  const onAuthorPressWithProps = (event, { slug }) => onAuthorPress(slug);
+  const onCommentsPressWithProps = (event, { articleId: id, url }) =>
+    onCommentsPress(id, url);
+  const onLinkPressWithProps = (event, { type, url }) => {
+    if (type === "article") {
+      onArticlePress(url);
+    } else if (type === "topic") {
+      onTopicPress(url);
+    } else {
+      onLinkPress(url);
+    }
+  };
+
+  const onRelatedArticlePress = (event, { url }) => onArticlePress(url);
+  const onTopicPressWithProps = (event, { slug }) => onTopicPress(slug);
+  const onTwitterLinkPress = (_, { url }) => onLinkPress(url);
+  const onVideoPressWithProps = (event, info) => onVideoPress(info);
+
   return (
     <ContextProviderWithDefaults value={{ theme }}>
       <RemoteConfigProvider config={remoteConfig}>
@@ -63,26 +81,16 @@ const ArticleBase = ({
           interactiveConfig={interactiveConfig}
           isLoading={isLoading || (omitErrors && error)}
           onArticleRead={onArticleRead}
-          onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
-          onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
-          onCommentsPress={(event, { articleId: id, url }) =>
-            onCommentsPress(id, url)
-          }
+          onAuthorPress={onAuthorPressWithProps}
+          onCommentGuidelinesPress={onCommentGuidelinesPress}
+          onCommentsPress={onCommentsPressWithProps}
           onImagePress={onImagePress}
-          onLinkPress={(event, { type, url }) => {
-            if (type === "article") {
-              onArticlePress(url);
-            } else if (type === "topic") {
-              onTopicPress(url);
-            } else {
-              onLinkPress(url);
-            }
-          }}
-          onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
-          onTopicPress={(event, { slug }) => onTopicPress(slug)}
-          onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
+          onLinkPress={onLinkPressWithProps}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPressWithProps}
+          onTwitterLinkPress={onTwitterLinkPress}
           onTooltipPresented={onTooltipPresented}
-          onVideoPress={(event, info) => onVideoPress(info)}
+          onVideoPress={onVideoPressWithProps}
           pageSection={pageSection}
           referralUrl={referralUrl}
           refetch={refetch}
@@ -92,6 +100,8 @@ const ArticleBase = ({
     </ContextProviderWithDefaults>
   );
 };
+
+ArticleBase.whyDidYouRender = true;
 
 ArticleBase.propTypes = propTypes;
 ArticleBase.defaultProps = defaultProps;

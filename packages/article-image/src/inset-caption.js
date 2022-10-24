@@ -1,5 +1,5 @@
 import React from "react";
-import { useResponsiveContext } from "@times-components-native/responsive";
+import { usePartialResponsiveContext } from "@times-components-native/responsive";
 import { spacing } from "@times-components-native/styleguide";
 import { propTypes, defaultProps } from "./inset-caption-prop-types";
 
@@ -10,7 +10,7 @@ const captionStyle = {
 };
 
 const CaptionComponentPrimaryNative = ({ text, credits, CaptionComponent }) => {
-  const { isArticleTablet } = useResponsiveContext();
+  const { isArticleTablet } = usePartialResponsiveContext();
   return (
     <CaptionComponent
       credits={credits}

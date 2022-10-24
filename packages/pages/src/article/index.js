@@ -25,6 +25,7 @@ const ArticlePage = props => {
   };
 
   if (article || error) {
+    const refetch = () => refetchArticle(articleId);
     const ArticlePageView = withErrorBoundaries(
       withNativeProvider(
         <Responsive>
@@ -32,7 +33,7 @@ const ArticlePage = props => {
             {...props}
             article={article ? JSON.parse(article).data.article : null}
             error={error ? { message: error } : null}
-            refetch={() => refetchArticle(articleId)}
+            refetch={refetch}
           />
         </Responsive>,
       ),

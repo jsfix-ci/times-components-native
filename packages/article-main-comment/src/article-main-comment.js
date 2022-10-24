@@ -1,30 +1,32 @@
 /* eslint-disable consistent-return */
-import React, { Component } from "react";
+import React from "react";
 import ArticleError from "@times-components-native/article-error";
 import ArticleSkeleton from "@times-components-native/article-skeleton";
-import { ResponsiveContext } from "@times-components-native/responsive";
 import { getHeadline } from "@times-components-native/utils";
-import Context from "@times-components-native/context";
 import ArticleHeader from "./article-header/article-header";
+import { usePartialResponsiveContext } from "@times-components-native/responsive";
+import { useAppContext } from "@times-components-native/context";
 import {
   articlePropTypes,
   articleDefaultProps,
 } from "./article-prop-types/article-prop-types";
 
-class ArticlePage extends Component {
-  constructor(props) {
-    super(props);
-    this.renderHeader = this.renderHeader.bind(this);
-  }
+const ArticleMainComment = props => {
+  const { isArticleTablet } = usePartialResponsiveContext();
 
-  renderHeader() {
+  const {
+    theme: { scale, dropCapFont },
+  } = useAppContext();
+
+  const renderHeader = () => {
     const {
       article,
       onAuthorPress,
       onImagePress,
       onTooltipPresented,
       tooltips,
-    } = this.props;
+    } = props;
+
     const {
       bylines,
       expirableFlags,
@@ -64,80 +66,67 @@ class ArticlePage extends Component {
         tooltips={tooltips}
       />
     );
+  };
+
+  const { error, refetch, isLoading } = props;
+
+  if (error) {
+    return <ArticleError refetch={refetch} />;
   }
 
-  render() {
-    const { error, refetch, isLoading } = this.props;
-
-    if (error) {
-      return <ArticleError refetch={refetch} />;
-    }
-
-    if (isLoading) {
-      return null;
-    }
-
-    const {
-      adConfig,
-      analyticsStream,
-      article,
-      interactiveConfig,
-      onArticleRead,
-      onAuthorPress,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onImagePress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTooltipPresented,
-      onTopicPress,
-      onTwitterLinkPress,
-      onVideoPress,
-      onViewed,
-      receiveChildList,
-      tooltips,
-    } = this.props;
-
-    return (
-      <ResponsiveContext.Consumer>
-        {({ isArticleTablet }) => (
-          <Context.Consumer>
-            {({ theme: { scale, dropCapFont } }) => (
-              <ArticleSkeleton
-                adConfig={adConfig}
-                analyticsStream={analyticsStream}
-                data={article}
-                dropCapFont={dropCapFont}
-                Header={this.renderHeader}
-                interactiveConfig={interactiveConfig}
-                isArticleTablet={isArticleTablet}
-                onArticleRead={onArticleRead}
-                onAuthorPress={onAuthorPress}
-                onCommentGuidelinesPress={onCommentGuidelinesPress}
-                onCommentsPress={onCommentsPress}
-                onImagePress={onImagePress}
-                onLinkPress={onLinkPress}
-                onRelatedArticlePress={onRelatedArticlePress}
-                onTooltipPresented={onTooltipPresented}
-                onTopicPress={onTopicPress}
-                onTwitterLinkPress={onTwitterLinkPress}
-                onVideoPress={onVideoPress}
-                onViewableItemsChanged={
-                  onViewed ? this.onViewableItemsChanged : null
-                }
-                receiveChildList={receiveChildList}
-                scale={scale}
-                tooltips={tooltips}
-              />
-            )}
-          </Context.Consumer>
-        )}
-      </ResponsiveContext.Consumer>
-    );
+  if (isLoading) {
+    return null;
   }
-}
 
-ArticlePage.propTypes = articlePropTypes;
-ArticlePage.defaultProps = articleDefaultProps;
+  const {
+    adConfig,
+    analyticsStream,
+    article,
+    interactiveConfig,
+    onArticleRead,
+    onAuthorPress,
+    onCommentGuidelinesPress,
+    onCommentsPress,
+    onImagePress,
+    onLinkPress,
+    onRelatedArticlePress,
+    onTooltipPresented,
+    onTopicPress,
+    onTwitterLinkPress,
+    onVideoPress,
+    receiveChildList,
+    tooltips,
+  } = props;
 
-export default ArticlePage;
+  return (
+    <ArticleSkeleton
+      adConfig={adConfig}
+      analyticsStream={analyticsStream}
+      data={article}
+      dropCapFont={dropCapFont}
+      Header={renderHeader}
+      interactiveConfig={interactiveConfig}
+      isArticleTablet={isArticleTablet}
+      onArticleRead={onArticleRead}
+      onAuthorPress={onAuthorPress}
+      onCommentGuidelinesPress={onCommentGuidelinesPress}
+      onCommentsPress={onCommentsPress}
+      onImagePress={onImagePress}
+      onLinkPress={onLinkPress}
+      onRelatedArticlePress={onRelatedArticlePress}
+      onTooltipPresented={onTooltipPresented}
+      onTopicPress={onTopicPress}
+      onTwitterLinkPress={onTwitterLinkPress}
+      onVideoPress={onVideoPress}
+      onViewableItemsChanged={null}
+      receiveChildList={receiveChildList}
+      scale={scale}
+      tooltips={tooltips}
+    />
+  );
+};
+
+ArticleMainComment.propTypes = articlePropTypes;
+ArticleMainComment.defaultProps = articleDefaultProps;
+
+export default ArticleMainComment;

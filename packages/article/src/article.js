@@ -5,7 +5,7 @@ import ArticleMagazineStandard from "@times-components-native/article-magazine-s
 import ArticleMainStandard from "@times-components-native/article-main-standard";
 import ArticleMainComment from "@times-components-native/article-main-comment";
 import ArticleCommentTablet from "@times-components-native/article-comment-tablet";
-import { useResponsiveContext } from "@times-components-native/responsive";
+import { usePartialResponsiveContext } from "@times-components-native/responsive";
 import { scales } from "@times-components-native/styleguide";
 import { MessageManager } from "@times-components-native/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
@@ -32,14 +32,16 @@ export class TakeoverBailout extends Error {
 }
 
 const Article = props => {
-  const { isArticleTablet } = useResponsiveContext();
+  const { isArticleTablet } = usePartialResponsiveContext();
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
 
   let { content } = article || {};
+
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
+
   let onImagePressArticle = useMemo(() => {
     if (onImagePress) {
       content = addIndexesToInlineImages(content, leadAsset);
@@ -49,7 +51,10 @@ const Article = props => {
     return null;
   }, []);
 
-  const Component = getComponentByTemplate(template, isArticleTablet);
+  const Component = useMemo(() => {
+    return getComponentByTemplate(template, isArticleTablet);
+  }, [isArticleTablet, template]);
+
   const newProps = {
     ...props,
     article: {
@@ -65,4 +70,4 @@ const Article = props => {
   );
 };
 
-export default Article;
+export default React.memo(Article);

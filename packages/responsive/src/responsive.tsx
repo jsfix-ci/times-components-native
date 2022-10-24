@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { AppState, ScaledSize, Dimensions } from "react-native";
 import ResponsiveContext from "./context";
+import PartialResponsiveContext from "./partial-context";
+
 import { calculateResponsiveContext } from "./calculateResponsiveContext";
 
 interface DimensionChangeEvent {
@@ -21,12 +23,23 @@ const ResponsiveProvider: React.FC = ({ children }) => {
     calculateResponsiveContext(width, height, fontScale),
   );
 
+  const [partialState, setPartialState] = useState({
+    isArticleTablet: calculateResponsiveContext(width, height, fontScale)
+      .isArticleTablet,
+  });
+
   const onDimensionChange = ({
     window: { fontScale, width, height },
   }: DimensionChangeEvent) => {
     // Prevents issue with odd orientation switch when app put in background
     if (/inactive|background/.test(appState.current)) return;
-    setState(calculateResponsiveContext(width, height, fontScale));
+    const newState = calculateResponsiveContext(width, height, fontScale);
+    if (newState.isArticleTablet !== state.isArticleTablet) {
+      setPartialState({
+        isArticleTablet: newState.isArticleTablet,
+      });
+    }
+    setState(newState);
   };
 
   useEffect(() => {
@@ -44,12 +57,20 @@ const ResponsiveProvider: React.FC = ({ children }) => {
 
   return (
     <ResponsiveContext.Provider value={state}>
-      {children}
+      <PartialResponsiveContext.Provider value={partialState}>
+        {children}
+      </PartialResponsiveContext.Provider>
     </ResponsiveContext.Provider>
   );
 };
 
 const useResponsiveContext = () => useContext(ResponsiveContext);
+const usePartialResponsiveContext = () => useContext(PartialResponsiveContext);
 
-export { ResponsiveContext, useResponsiveContext };
+export {
+  ResponsiveContext,
+  useResponsiveContext,
+  PartialResponsiveContext,
+  usePartialResponsiveContext,
+};
 export default ResponsiveProvider;

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { View } from "react-native";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent,
 } from "@times-components-native/article-summary";
 import Card from "@times-components-native/card";
-import { ResponsiveContext } from "@times-components-native/responsive";
+import { usePartialResponsiveContext } from "@times-components-native/responsive";
 import Link from "@times-components-native/link";
 import { colours, tabletWidth } from "@times-components-native/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
@@ -13,118 +13,92 @@ import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
 import styles from "./styles";
 
-class ArticleListItem extends Component {
-  constructor(props) {
-    super(props);
-    this.onItemPress = this.onItemPress.bind(this);
-    this.renderContent = this.renderContent.bind(this);
-    this.renderHeadline = this.renderHeadline.bind(this);
-  }
+const ArticleListItem = props => {
+  const { isArticleTablet } = usePartialResponsiveContext();
 
-  shouldComponentUpdate(nextProps) {
-    const { article } = this.props;
-    const { article: nextArticle } = nextProps;
-    return (
-      !article || !nextArticle || nextArticle.elementId !== article.elementId
-    );
-  }
-
-  onItemPress(event) {
+  const onItemPress = event => {
     const {
       article: { id, url },
       onPress,
-    } = this.props;
+    } = props;
     onPress(event, { id, url });
-  }
+  };
 
-  renderContent() {
-    const { article = {} } = this.props;
+  const renderContent = () => {
+    const { article = {} } = props;
     const { showImage, shortSummary, summary } = article;
     const content = showImage ? summary : shortSummary;
     return <ArticleSummaryContent ast={content} />;
-  }
+  };
 
-  renderHeadline() {
-    const { article } = this.props;
+  const renderHeadline = () => {
+    const { article } = props;
     const { headline, shortHeadline } = article || {};
     return (
       <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
     );
-  }
+  };
 
-  render() {
-    const {
-      article,
-      highResSize,
-      imageRatio,
-      isLoading,
-      showImage,
-    } = this.props;
+  const { article, highResSize, imageRatio, isLoading, showImage } = props;
 
-    const {
-      bylines,
-      hasVideo,
-      label,
-      publicationName,
-      publishedTime,
-      section,
-      url,
-    } = article || {};
+  const {
+    bylines,
+    hasVideo,
+    label,
+    publicationName,
+    publishedTime,
+    section,
+    url,
+  } = article || {};
 
-    const imageUri = getImageUri(article);
+  const imageUri = getImageUri(article);
 
-    return (
-      <ResponsiveContext.Consumer>
-        {({ isArticleTablet }) => (
-          <View style={{ flexDirection: "row", justifyContent: "center" }}>
-            <View style={{ flex: 1, maxWidth: tabletWidth }}>
-              <Link onPress={this.onItemPress} url={url}>
-                <View
-                  style={
-                    isArticleTablet
-                      ? styles.listItemContainerTablet
-                      : styles.listItemContainer
-                  }
-                >
-                  <Card
-                    highResSize={highResSize}
-                    imageRatio={imageRatio}
-                    imageUri={imageUri}
-                    isLoading={isLoading}
-                    showImage={showImage}
-                  >
-                    <ArticleSummary
-                      bylineProps={
-                        bylines
-                          ? {
-                              ast: bylines,
-                              color: colours.section.default,
-                            }
-                          : null
+  return (
+    <View style={{ flexDirection: "row", justifyContent: "center" }}>
+      <View style={{ flex: 1, maxWidth: tabletWidth }}>
+        <Link onPress={onItemPress} url={url}>
+          <View
+            style={
+              isArticleTablet
+                ? styles.listItemContainerTablet
+                : styles.listItemContainer
+            }
+          >
+            <Card
+              highResSize={highResSize}
+              imageRatio={imageRatio}
+              imageUri={imageUri}
+              isLoading={isLoading}
+              showImage={showImage}
+            >
+              <ArticleSummary
+                bylineProps={
+                  bylines
+                    ? {
+                        ast: bylines,
+                        color: colours.section.default,
                       }
-                      content={this.renderContent}
-                      datePublicationProps={{
-                        date: publishedTime,
-                        publication: publicationName,
-                      }}
-                      headline={this.renderHeadline()}
-                      labelProps={{
-                        color:
-                          colours.section[section] || colours.section.default,
-                        isVideo: hasVideo,
-                        title: label,
-                      }}
-                    />
-                  </Card>
-                </View>
-              </Link>
-            </View>
+                    : null
+                }
+                content={renderContent}
+                datePublicationProps={{
+                  date: publishedTime,
+                  publication: publicationName,
+                }}
+                headline={renderHeadline()}
+                labelProps={{
+                  color: colours.section[section] || colours.section.default,
+                  isVideo: hasVideo,
+                  title: label,
+                }}
+              />
+            </Card>
           </View>
-        )}
-      </ResponsiveContext.Consumer>
-    );
-  }
-}
+        </Link>
+      </View>
+    </View>
+  );
+};
 
 ArticleListItem.propTypes = propTypes;
 ArticleListItem.defaultProps = defaultProps;
