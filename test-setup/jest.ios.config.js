@@ -22,7 +22,5 @@ module.exports = {
   },
   transformIgnorePatterns: [
     "node_modules/(?!(@react-native|react-native|react-native-svg|react-native-webview|react-native-autoheight-webview|@react-native-community/art|@storybook/react-native|react-native-swipe-gestures|react-native-device-info|newrelic-react-native-agent|react-native-promise-rejection-utils)/)",
-
-    //    "node_modules/(?!(@react-native|react-native|react-native-svg|react-native-webview|react-native-autoheight-webview|@react-native-community/art|@storybook/react-native|react-native-swipe-gestures|react-native-device-info|newrelic-react-native-agent)/)",
   ],
 };
