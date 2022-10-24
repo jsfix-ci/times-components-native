@@ -15,7 +15,6 @@ export default class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    // TODO: need a native API for logging errors
     const isFatal = false;
     NewRelic.NRMAModularAgentWrapper.execute(
       "recordStack",

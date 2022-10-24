@@ -1,13 +1,11 @@
-import { Platform } from "react-native";
-export { version } from "./package.json";
+import NewRelic from "newrelic-react-native-agent";
+import { Platform, NativeModules } from "react-native";
+import { version } from "./package.json";
+const {
+  ReactConfig: { newRelicToken },
+} = NativeModules;
 
-//TODO explore how to expose the tokens
-export const appToken = Platform.select({
-  ios: "<IOS-APP-TOKEN>", //NUK_NEW_RELIC_TOKEN
-  android: "<ANDROID-APP-TOKEN>", //NEW_RELIC_APP_TOKEN
-});
-
-export const agentConfiguration = {
+const agentConfiguration = {
   //Android Specific
   // Optional:Enable or disable collection of event data.
   analyticsEventEnabled: Platform.OS === "android",
@@ -34,4 +32,17 @@ export const agentConfiguration = {
   //iOS Specific
   // Optional:Enable/Disable automatic instrumentation of WebViews
   webViewInstrumentation: Platform.OS === "ios",
+};
+
+export const startNewRelicAgent = () => {
+  if (!newRelicToken) {
+    console.warn("NewRelic token missing");
+    return;
+  }
+
+  NewRelic.startAgent(newRelicToken, agentConfiguration);
+  NewRelic.setJSAppVersion(version);
+  NewRelic.isAgentStarted()
+    ? console.log("NewRelic Agent Started")
+    : console.warn("NewRelic Agent NOT started");
 };
