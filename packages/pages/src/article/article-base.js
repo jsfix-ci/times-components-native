@@ -101,8 +101,6 @@ const ArticleBase = ({
   );
 };
 
-ArticleBase.whyDidYouRender = true;
-
 ArticleBase.propTypes = propTypes;
 ArticleBase.defaultProps = defaultProps;
 

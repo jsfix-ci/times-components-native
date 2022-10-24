@@ -171,8 +171,6 @@ const ArticleMainStandard = props => {
   );
 };
 
-ArticleMainStandard.whyDidYouRender = true;
-
 ArticleMainStandard.propTypes = {
   ...articlePropTypes,
   interactiveConfig: PropTypes.shape({}),
