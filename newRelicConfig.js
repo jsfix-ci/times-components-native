@@ -39,10 +39,14 @@ export const startNewRelicAgent = () => {
     console.warn("NewRelic token missing");
     return;
   }
-
-  NewRelic.startAgent(newRelicToken, agentConfiguration);
-  NewRelic.setJSAppVersion(version);
-  NewRelic.isAgentStarted()
-    ? console.log("NewRelic Agent Started")
-    : console.warn("NewRelic Agent NOT started");
+  try {
+    NewRelic.startAgent(newRelicToken, agentConfiguration);
+    NewRelic.setJSAppVersion(version);
+    NewRelic.isAgentStarted()
+      ? console.log("NewRelic Agent Started")
+      : console.warn("NewRelic Agent NOT started");
+  } catch (e) {
+    console.warn("NewRelic Agent NOT started");
+    console.warn(e);
+  }
 };
