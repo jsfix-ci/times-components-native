@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
+import NewRelic from "newrelic-react-native-agent";
 
 class ErrorView extends Component {
   constructor(props) {
@@ -12,16 +13,21 @@ class ErrorView extends Component {
     this.handleError = this.handleError.bind(this);
   }
 
-  componentDidCatch(e) {
-    this.setState({
-      error: e,
-    });
+  componentDidCatch(error, errorInfo) {
+    const isFatal = false;
+    NewRelic.NRMAModularAgentWrapper.execute(
+      "recordStack",
+      "ErrorView" + error.name,
+      error.message + "\n" + error.cause,
+      errorInfo.componentStack + "\n\n\n" + error.stack,
+      isFatal,
+      NewRelic.JSAppVersion,
+    );
+    this.setState({ error });
   }
 
-  handleError(e) {
-    this.setState({
-      error: e,
-    });
+  handleError(error) {
+    this.setState({ error });
   }
 
   render() {

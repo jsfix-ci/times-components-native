@@ -6,7 +6,6 @@ import "./mocks";
 import Ad from "@times-components-native/ad";
 
 //@ts-ignore TODO hydrate mock with sensible values and remove skip
-const adConfig = { sectionName: "News", bidderSlots: [], globalSlots: [] };
 
 jest.mock("react-native-device-info", () => {
   return {
@@ -19,7 +18,12 @@ test.skip("** AD **", async () => {
     jest.resetAllMocks();
   });
 
-  render(<Ad adConfig={adConfig} slotName="ad-section" />);
+  render(
+    <Ad
+      adConfig={{ sectionName: "News", slug: "slug", isLive: false }}
+      slotName="ad-section"
+    />,
+  );
 
   expect(screen.toJSON()).toMatchSnapshot();
 });

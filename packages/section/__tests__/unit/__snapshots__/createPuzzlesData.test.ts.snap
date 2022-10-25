@@ -3,7 +3,7 @@
 exports[`createPuzzleData should create puzzle data and return 2 rows of puzzles 1`] = `
 Array [
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.0",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.0",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -70,7 +70,7 @@ Array [
     ],
   },
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.1",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.1",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -142,7 +142,7 @@ Array [
 exports[`createPuzzleData should create puzzle data and return 3 rows of puzzles 1`] = `
 Array [
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.0",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.0",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -209,7 +209,7 @@ Array [
     ],
   },
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.1",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.1",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -276,7 +276,7 @@ Array [
     ],
   },
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.2",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.2",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -308,7 +308,7 @@ Array [
 exports[`createPuzzleData should create puzzle data and return 3 rows of puzzles on resolution different than small  1`] = `
 Array [
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.0",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.0",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -375,7 +375,7 @@ Array [
     ],
   },
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.1",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.1",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [
@@ -442,7 +442,7 @@ Array [
     ],
   },
   Object {
-    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1.2",
+    "elementId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1522abf2c-e752-11e8-9f32-f2801f1b9fd1Puzzle.2",
     "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
     "name": "Puzzle",
     "puzzles": Array [

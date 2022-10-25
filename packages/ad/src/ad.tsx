@@ -9,7 +9,9 @@ import { getSlotConfig } from "./utils";
 import DOMContext from "./dom-context";
 
 interface IAdConfig {
+  isLive: boolean;
   sectionName: string;
+  slug: string;
 }
 
 type TSlotName = "ad-section" | "ad-inarticle-mpu";
@@ -48,6 +50,8 @@ function Ad({
           baseUrl={baseUrl}
           keyId={keyId}
           sectionName={adConfig.sectionName}
+          isLive={adConfig.isLive}
+          slug={adConfig.slug}
           slotName={slotName}
           {...sizeProps}
         />

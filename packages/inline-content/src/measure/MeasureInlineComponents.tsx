@@ -24,6 +24,38 @@ export const MeasureContent: React.FC<Props> = memo(
 
     const { isArticleTablet, narrowContent } = skeletonProps;
 
+    const trees = renderTrees(
+      [inlineContent],
+      getRenderers({
+        data: {},
+        interactiveConfig: {},
+        onLinkPress: null,
+        onTwitterLinkPress: null,
+        onVideoPress: null,
+        onImagePress: null,
+        isArticleTablet,
+        adConfig: {},
+        images: [],
+        analyticsStream: null,
+        narrowContent,
+        onParagraphTextLayout: (event: any) => {
+          const lines = event.nativeEvent.lines;
+          dispatch({
+            type: "SET_INLINE_CONTENT_LINES",
+            id: inlineContent.id!,
+            payload: lines,
+          });
+        },
+        onCommentGuidelinesPress: () => null,
+        onCommentsPress: () => null,
+        onRelatedArticlePress: () => null,
+        onTooltipPresented: () => null,
+        tooltips: [],
+        onTopicPress: () => null,
+        scrollToRef: () => null,
+      }),
+    );
+    //TODO Warning: Each child in a list should have a unique key prop
     return (
       <View
         onLayout={event => {
@@ -35,37 +67,7 @@ export const MeasureContent: React.FC<Props> = memo(
           });
         }}
       >
-        {renderTrees(
-          [inlineContent],
-          getRenderers({
-            data: {},
-            interactiveConfig: {},
-            onLinkPress: null,
-            onTwitterLinkPress: null,
-            onVideoPress: null,
-            onImagePress: null,
-            isArticleTablet,
-            adConfig: {},
-            images: [],
-            analyticsStream: null,
-            narrowContent,
-            onParagraphTextLayout: (event: any) => {
-              const lines = event.nativeEvent.lines;
-              dispatch({
-                type: "SET_INLINE_CONTENT_LINES",
-                id: inlineContent.id!,
-                payload: lines,
-              });
-            },
-            onCommentGuidelinesPress: () => null,
-            onCommentsPress: () => null,
-            onRelatedArticlePress: () => null,
-            onTooltipPresented: () => null,
-            tooltips: [],
-            onTopicPress: () => null,
-            scrollToRef: () => null,
-          }),
-        )}
+        {trees}
       </View>
     );
   },

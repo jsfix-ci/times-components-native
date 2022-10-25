@@ -23,6 +23,7 @@ exports[`1. key facts with title 1`] = `
       >
         An example 
         <Text
+          accessibilityRole="link"
           allowFontScaling={false}
         >
           link
@@ -77,6 +78,7 @@ exports[`2. key facts without title 1`] = `
       >
         An example 
         <Text
+          accessibilityRole="link"
           allowFontScaling={false}
         >
           link

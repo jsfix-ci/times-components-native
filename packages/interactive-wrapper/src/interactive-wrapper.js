@@ -83,6 +83,10 @@ class InteractiveWrapper extends Component {
     } = this.props;
     const { height } = this.state;
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
+
+    // ERROR  Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+    // We'd avoid the memory leaks removing the callback componentWillUnmount() TBC
+    // const scriptToInjectUponUnmount = `window.postMessage = undefined (${webviewEventCallbackSetup})({window});`;
     const scriptToInject = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
 
     return (

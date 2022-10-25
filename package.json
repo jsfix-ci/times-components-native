@@ -1,7 +1,7 @@
 {
   "name": "times-components-native",
   "private": true,
-  "version": "11.0.2",
+  "version": "11.0.5",
   "description": "A collection of react-native components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
@@ -11,7 +11,8 @@
   "scripts": {
     "start": "rnstl && react-native start --config ./app/metro.config.js",
     "depcheck": "depcheck --config=./.depcheckrc",
-    "lint:base": "DEBUG=eslint:cli-engine eslint --ext .tsx,.ts,.js,.jsx",
+    "lint:base": "eslint --ext .tsx,.ts,.js,.jsx",
+    "lint:debug": "DEBUG=eslint:cli-engine yarn lint:base",
     "lint:errors": "yarn lint:base --quiet .",
     "lint:changed": "FILES=$(git diff-index --name-only HEAD | egrep '.tsx$|.ts$|.js$|.jsx$'); if [ \"$FILES\" ]; then yarn lint:base ${FILES} --fix; fi",
     "lint": "yarn lint:base .",
@@ -22,8 +23,9 @@
     "android:native": "react-native start --config ./lib/android/metro.config.js",
     "android:build-lib": "yarn android:build-lib:js && yarn android:build-lib:aar",
     "android:build-lib:js": "mkdir -p lib/android/xnative/src/main/assets/ && mkdir -p lib/android/xnative/src/main/res/ && react-native bundle --platform android --dev false --minify --entry-file lib/android/index.android.js --bundle-output lib/android/xnative/src/main/assets/index.android.bundle --assets-dest lib/android/xnative/src/main/res/",
-    "android:clean-lib:aar": "cd lib/android && ./gradlew clean && cd -",
     "android:build-lib:aar": "cd lib/android && ./gradlew generateReactArchives && ./gradlew assemble && cd -",
+    "android:clean-lib:js": "rm -rf lib/android/xnative/src/main/assets/ && rm -rf lib/android/xnative/src/main/res/",
+    "android:clean-lib:aar": "cd lib/android && ./gradlew clean && cd -",
     "android:publish-lib:aar:remote": "cd lib/android && ./gradlew publish && cd -",
     "android:publish-lib:aar:local": "cd lib/android && ./gradlew publishToMavenLocal && cd -",
     "prettier": "prettier-eslint --config .prettierrc.js --write \"{,packages,*/**/}*.{js,jsx,json,ts,tsx}\"",
@@ -94,6 +96,7 @@
     "luxon": "1.18.0",
     "memoize-one": "5.1.1",
     "mockdate": "2.0.2",
+    "newrelic-react-native-agent": "^0.0.5",
     "node-fetch": "^2.6.0",
     "opentype.js": "1.1.0",
     "prop-types": "15.7.2",

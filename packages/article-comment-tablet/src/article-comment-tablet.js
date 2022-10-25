@@ -169,6 +169,7 @@ class ArticlePage extends Component {
                     receiveChildList={receiveChildList}
                     scale={scale}
                     tooltips={tooltips}
+                    useCommentTabletPadding
                   />
                 </View>
               </View>

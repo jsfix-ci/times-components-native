@@ -35,6 +35,7 @@ exports[`1. article with header 1`] = `
                   >
                     Another ministerial aide, 
                     <Text
+                      accessibilityRole="link"
                       allowFontScaling={false}
                     >
                       Robert Courts
@@ -499,6 +500,7 @@ exports[`1. article with header 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -506,6 +508,7 @@ exports[`1. article with header 1`] = `
                 "slotTargeting": Object {
                   "path": "/news",
                 },
+                "slug": "france-defies-may-over-russia",
               }
             }
             keyId="13"

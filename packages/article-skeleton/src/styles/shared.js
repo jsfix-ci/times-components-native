@@ -2,9 +2,7 @@ import { spacing, colours } from "@times-components-native/styleguide";
 import { maxWidth } from "../gutter";
 
 const globalStyle = {
-  articleContainer: {
-    backgroundColor: colours.functional.gutter,
-  },
+  articleContainer: {},
   scroller: {
     backgroundColor: colours.functional.white,
   },

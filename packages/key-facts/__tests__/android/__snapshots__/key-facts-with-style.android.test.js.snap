@@ -102,7 +102,13 @@ exports[`key facts with title and context theme 1`] = `
         }
       >
         An example 
-        <Text>
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
           link
         </Text>
       </Text>
@@ -303,7 +309,13 @@ exports[`key facts with title on mobile 1`] = `
         }
       >
         An example 
-        <Text>
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
           link
         </Text>
       </Text>
@@ -504,7 +516,13 @@ exports[`key facts with title on tablet 1`] = `
         }
       >
         An example 
-        <Text>
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
           link
         </Text>
       </Text>
@@ -694,7 +712,13 @@ exports[`key facts without title on mobile 1`] = `
         }
       >
         An example 
-        <Text>
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
           link
         </Text>
       </Text>
@@ -884,7 +908,13 @@ exports[`key facts without title on tablet 1`] = `
         }
       >
         An example 
-        <Text>
+        <Text
+          style={
+            Object {
+              "textDecorationLine": "underline",
+            }
+          }
+        >
           link
         </Text>
       </Text>

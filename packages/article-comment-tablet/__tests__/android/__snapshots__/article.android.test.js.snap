@@ -6,7 +6,9 @@ exports[`2. loading 1`] = `null`;
 
 exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <View>
-  <View>
+  <View
+    pointerEvents="box-none"
+  >
     <View>
       <Image
         aspectRatio={1}
@@ -106,7 +108,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`4. an article with ads 1`] = `
 <View>
-  <View>
+  <View
+    pointerEvents="box-none"
+  >
     <View>
       <Image
         aspectRatio={1}

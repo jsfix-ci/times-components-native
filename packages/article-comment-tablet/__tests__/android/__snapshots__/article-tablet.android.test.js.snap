@@ -14,6 +14,7 @@ exports[`1. article comment tablet - magazinecomment template 1`] = `
   <View
     style={
       Object {
+        "backgroundColor": "#FFFFFF",
         "height": "100%",
         "paddingTop": 40,
         "position": "absolute",
@@ -63,13 +64,7 @@ exports[`1. article comment tablet - magazinecomment template 1`] = `
       />
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "marginLeft": "25%",
-      }
-    }
-  >
+  <View>
     <ArticleSkeleton>
       <View>
         <View
@@ -225,6 +220,7 @@ exports[`2. article comment tablet - maincomment template 1`] = `
   <View
     style={
       Object {
+        "backgroundColor": "#FFFFFF",
         "height": "100%",
         "paddingTop": 40,
         "position": "absolute",
@@ -274,13 +270,7 @@ exports[`2. article comment tablet - maincomment template 1`] = `
       />
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "marginLeft": "25%",
-      }
-    }
-  >
+  <View>
     <ArticleSkeleton>
       <View>
         <View
