@@ -26,7 +26,7 @@ import styles from "./styles";
 const ArticleInDepth = props => {
   const { isArticleTablet } = usePartialResponsiveContext();
 
-  const renderHeader = React.useCallback(({ width }) => {
+  const renderHeader = ({ width }) => {
     const { article, onAuthorPress, onImagePress, onVideoPress } = props;
 
     const {
@@ -87,7 +87,7 @@ const ArticleInDepth = props => {
         </View>
       </Fragment>
     );
-  }, []);
+  };
 
   const {
     error,

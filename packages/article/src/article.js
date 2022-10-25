@@ -70,4 +70,4 @@ const Article = props => {
   );
 };
 
-export default React.memo(Article);
+export default Article;
