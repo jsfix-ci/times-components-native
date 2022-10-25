@@ -164,7 +164,10 @@ const ArticleBodyRow = ({
       );
     },
     ad(key) {
-      const config = { ...adConfig, slug: data?.slug ?? "" };
+      const isLive = data.expirableFlags
+        ? data.expirableFlags.filter(flag => flag.type === "LIVE").length > 0
+        : false;
+      const config = { ...adConfig, slug: data?.slug ?? "", isLive };
       return (
         <Ad
           adConfig={config}

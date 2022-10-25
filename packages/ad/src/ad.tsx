@@ -9,6 +9,7 @@ import { getSlotConfig } from "./utils";
 import DOMContext from "./dom-context";
 
 interface IAdConfig {
+  isLive: boolean;
   sectionName: string;
   slug: string;
 }
@@ -49,6 +50,7 @@ function Ad({
           baseUrl={baseUrl}
           keyId={keyId}
           sectionName={adConfig.sectionName}
+          isLive={adConfig.isLive}
           slug={adConfig.slug}
           slotName={slotName}
           {...sizeProps}

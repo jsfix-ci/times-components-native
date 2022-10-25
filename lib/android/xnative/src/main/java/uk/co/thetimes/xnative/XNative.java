@@ -7,6 +7,7 @@ import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.reactnativecommunity.art.ARTPackage;
+import com.NewRelic.NRMModularAgentPackage;
 
 import java.util.List;
 
@@ -18,7 +19,8 @@ public class XNative {
                 new RNCWebViewPackage(),
                 new RNDeviceInfo(),
                 new NetInfoPackage(),
-                new ARTPackage()
+                new ARTPackage(),
+                new NRMModularAgentPackage()
         );
     }
 }

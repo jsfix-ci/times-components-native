@@ -28,6 +28,7 @@ const ArticleListItem = props => {
     const { article = {} } = props;
     const { showImage, shortSummary, summary } = article;
     const content = showImage ? summary : shortSummary;
+
     return <ArticleSummaryContent ast={content} />;
   };
 
