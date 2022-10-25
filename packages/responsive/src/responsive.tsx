@@ -55,6 +55,11 @@ const ResponsiveProvider: React.FC = ({ children }) => {
     };
   }, []);
 
+  /**
+   * The partial context has been implemented so that components only making use of the
+   * isArticleTablet value (which doesn't change as frequently as other values in the responsive
+   * provider, such as width) can use this provider and avoid unnecessary re-renders
+   */
   return (
     <ResponsiveContext.Provider value={state}>
       <PartialResponsiveContext.Provider value={partialState}>
