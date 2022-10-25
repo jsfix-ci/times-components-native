@@ -18,7 +18,7 @@ test("** AD **", async () => {
 
   render(
     <Ad
-      adConfig={{ sectionName: "News", slug: "slug" }}
+      adConfig={{ sectionName: "News", slug: "slug", isLive: false }}
       slotName="ad-section"
     />,
   );

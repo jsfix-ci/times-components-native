@@ -609,6 +609,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -1113,6 +1114,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -4294,6 +4296,7 @@ exports[`19. renders content 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -4685,6 +4688,7 @@ exports[`19. renders content 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -5015,6 +5019,7 @@ exports[`19. renders content 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",

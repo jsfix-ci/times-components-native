@@ -36,6 +36,7 @@ interface DomContextType {
   baseUrl: string;
   height: number;
   keyId?: string;
+  isLive: boolean;
   sectionName: string;
   slotName?: string;
   slug: string;
@@ -54,6 +55,7 @@ const DOMContext = (props: DomContextType) => {
     keyId = "",
     height,
     baseUrl,
+    isLive,
     sectionName,
     slotName = "ad-inarticle-mpu",
     slug,
@@ -196,6 +198,7 @@ const DOMContext = (props: DomContextType) => {
           "commercialSection": "${sectionName}",
           "tuples": {
             "cont": "${slotName === "ad-section" ? "sec" : "art"}",
+            "isLive": "${isLive ? 1 : 0}",
             "path": "${sectionName}/${slug}",
             "cpn": "${String(authId)}",
             "device": "${isTablet() ? "tablet" : "mobile"}",

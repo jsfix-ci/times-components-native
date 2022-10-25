@@ -433,6 +433,7 @@ exports[`1. article with header 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -515,6 +516,7 @@ exports[`1. article with header 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
@@ -689,6 +691,7 @@ exports[`1. article with header 1`] = `
                   "ad-pixelskin",
                   "ad-pixelteads",
                 ],
+                "isLive": false,
                 "networkId": "mockNetwork",
                 "pageTargeting": Object {
                   "title": "Title",
