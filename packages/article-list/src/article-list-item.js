@@ -41,6 +41,7 @@ class ArticleListItem extends Component {
     const { article = {} } = this.props;
     const { showImage, shortSummary, summary } = article;
     const content = showImage ? summary : shortSummary;
+
     return <ArticleSummaryContent ast={content} />;
   }
 

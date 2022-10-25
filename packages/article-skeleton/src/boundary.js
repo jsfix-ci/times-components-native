@@ -2,6 +2,7 @@
 import React, { Component, isValidElement } from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
+import NewRelic from "newrelic-react-native-agent";
 
 export default class ErrorBoundary extends Component {
   constructor(props) {
@@ -13,8 +14,16 @@ export default class ErrorBoundary extends Component {
     return { hasError: true };
   }
 
-  componentDidCatch() {
-    // TODO: need a native API for logging errors
+  componentDidCatch(error, errorInfo) {
+    const isFatal = false;
+    NewRelic.NRMAModularAgentWrapper.execute(
+      "recordStack",
+      "ArticleSkeleton " + error.name,
+      error.message + "\n" + error.cause,
+      errorInfo.componentStack + "\n\n\n" + error.stack,
+      isFatal,
+      NewRelic.JSAppVersion,
+    );
   }
 
   render() {
