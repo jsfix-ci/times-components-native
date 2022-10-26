@@ -26,3 +26,4 @@ export { default as SupplementSecondaryFourSlice } from "./supplementsecondaryfo
 export { default as SupplementSecondaryOneSlice } from "./supplementsecondaryone";
 export { default as SupplementSecondaryTwoAndTwoSlice } from "./supplementsecondarytwoandtwo";
 export { default as SectionAd } from "./sectionad";
+export { default as Interactive } from "./interactive";

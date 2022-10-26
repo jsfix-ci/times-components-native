@@ -58,6 +58,18 @@ const interactives = {
     source:
       "//components.timesdev.tools/lib2/times-vertical-timeline-2.0.0/vertical-timeline.html",
   },
+  testOctober: {
+    attributes: {
+      "deck-id": "4101",
+      url:
+        "https://jotn9sgpg6.execute-api.eu-west-1.amazonaws.com/prod/component/942547cc-c6a1-4ab7-ac5a-7c509552a563?platform=android",
+    },
+    element: "vertical-timeline",
+    id: "942547cc-c6a1-4ab7-ac5a-7c509552a563",
+    source:
+      "//jotn9sgpg6.execute-api.eu-west-1.amazonaws.com/prod/component/942547cc-c6a1-4ab7-ac5a-7c509552a563?platform=android",
+    // "//components.timesdev.tools/lib2/times-vertical-timeline-2.0.0/vertical-timeline.html",
+  },
 };
 
 export default interactives;
