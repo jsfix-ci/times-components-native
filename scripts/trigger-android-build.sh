@@ -13,9 +13,8 @@ if [ ! -d "$android_dir" ] ; then
 fi
 (cd "$android_dir" && git checkout --force develop && git pull origin develop) &> /dev/null
 
-
 # Check if the TCN version is already up to date
-cur_version=$(grep uk.co.thetimes:times-xnative "$android_dir/gradle/libs.versions.toml" | awk -F\" '{ print $4 }')
+cur_version=$(grep "tcnVersion =" $android_dir/gradle/libs.versions.toml | awk -F\' '{ print $2 }')
 echo "The Android project is currently using TCN version $cur_version."
 
 if [ "$cur_version" == "$new_version" ]; then
