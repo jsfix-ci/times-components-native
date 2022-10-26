@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import { Dimensions, View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import fixtures from "@times-components-native/interactive-wrapper/fixtures";
+import { version } from "@times-components-native/../package.json";
 
 import { ResponsiveSlice } from "../shared";
 import {
@@ -26,6 +27,13 @@ const interactiveProps = {
     "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html",
 };
 
+const config = {
+  dev: false,
+  environment: "production",
+  platform: "android",
+  version,
+};
+
 class LeadOneFullWidthSlice extends PureComponent {
   constructor(props) {
     super(props);
@@ -43,19 +51,6 @@ class LeadOneFullWidthSlice extends PureComponent {
   }
 
   renderMedium(breakpoint) {
-    // const {
-    //   slice: { lead },
-    //   onPress,
-    // } = this.props;
-    // return <InteractiveWrapper {...interactiveProps} />;
-    // return (
-    //   <TileR
-    //     breakpoint={breakpoint}
-    //     onPress={onPress}
-    //     tile={lead}
-    //     tileName="lead"
-    //   />
-    // );
     const { fontScale } = Dimensions.get("window");
     // const { narrowArticleBreakpoint } = useResponsiveContext();
     const styles = styleFactory({
@@ -70,24 +65,20 @@ class LeadOneFullWidthSlice extends PureComponent {
       key,
     );
     const interactiveProps = fixtures.testOctober;
-    console.log(
-      "🚀 ~ file: index.js ~ line 73 ~ LeadOneFullWidthSlice ~ renderMedium ~ interactiveProps",
-      interactiveProps,
-    );
 
     return (
       <View
         key={key}
         style={[
-          // styles.interactiveContainer,
+          styles.interactiveContainer,
           // isArticleTablet && styles.interactiveContainerTablet,
           styles.interactiveContainerFullWidth,
         ]}
       >
         {Platform.OS === "android" ? (
-          <InteractiveWrapper config={interactiveProps} {...interactiveProps} />
+          <InteractiveWrapper config={config} {...interactiveProps} />
         ) : (
-          <WebviewWrapper config={interactiveProps} {...interactiveProps} />
+          <WebviewWrapper config={config} {...interactiveProps} />
         )}
       </View>
     );

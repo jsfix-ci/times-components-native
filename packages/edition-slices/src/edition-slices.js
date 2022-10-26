@@ -26,6 +26,7 @@ import {
   SupplementSecondaryFourSlice,
   SupplementSecondaryOneSlice,
   SupplementSecondaryTwoAndTwoSlice,
+  Interactive,
 } from "./slices";
 import { sectionConfigs } from "@times-components-native/section/src/utils";
 
@@ -62,7 +63,8 @@ const sliceMap = (isInSupplement, sectionTitle, orientation, isTablet) => {
     DailyUniversalRegister: DailyRegisterLeadFourSlice,
     LeadersSlice,
     LeadOneAndFourSlice: selectLeadOneAndFourSlice(isInTabletSupplement),
-    LeadOneAndOneSlice: selectLeadOneAndOneSlice(isInTabletSupplement),
+    // LeadOneAndOneSlice: selectLeadOneAndOneSlice(isInTabletSupplement),
+    LeadOneAndOneSlice: Interactive,
     LeadOneFullWidthSlice,
     LeadTwoNoPicAndTwoSlice: selectLeadTwoNoPicAndTwoSlice(
       isTablet,
