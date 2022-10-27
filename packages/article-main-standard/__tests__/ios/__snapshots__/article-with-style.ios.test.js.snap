@@ -3,26 +3,6 @@
 exports[`full article with style on mobile 1`] = `
 <ArticleSkeleton>
   <View>
-    <View>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <ModalImage />
-        <Caption
-          style={
-            Object {
-              "container": Object {
-                "paddingHorizontal": 10,
-              },
-            }
-          }
-        />
-      </View>
-    </View>
     <View
       style={
         Object {
@@ -168,30 +148,38 @@ exports[`full article with style on mobile 1`] = `
         </View>
       </View>
     </View>
+    <View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ModalImage />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingHorizontal": 10,
+              },
+            }
+          }
+        />
+      </View>
+    </View>
   </View>
 </ArticleSkeleton>
 `;
 
 exports[`full article with style on tablet 1`] = `
 <ArticleSkeleton>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "paddingLeft": 10,
-        "paddingRight": 10,
-        "width": 660,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "alignSelf": "center",
-          "marginTop": 30,
           "paddingLeft": 10,
           "paddingRight": 10,
-          "width": 660,
         }
       }
     >
@@ -210,8 +198,8 @@ exports[`full article with style on tablet 1`] = `
           Object {
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 45,
-            "lineHeight": 45,
+            "fontSize": 30,
+            "lineHeight": 33,
             "marginBottom": 5,
             "marginTop": 5,
           }
@@ -257,10 +245,9 @@ exports[`full article with style on tablet 1`] = `
           "borderBottomColor": "#DBDBDB",
           "borderBottomWidth": 1,
           "marginBottom": 20,
-          "marginLeft": 0,
-          "marginRight": 0,
+          "marginLeft": 10,
+          "marginRight": 10,
           "paddingBottom": 5,
-          "zIndex": 1,
         }
       }
     >
@@ -338,12 +325,19 @@ exports[`full article with style on tablet 1`] = `
         style={
           Object {
             "marginBottom": 10,
-            "paddingBottom": 10,
           }
         }
       >
         <ModalImage />
-        <Caption />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingHorizontal": 10,
+              },
+            }
+          }
+        />
       </View>
     </View>
   </View>

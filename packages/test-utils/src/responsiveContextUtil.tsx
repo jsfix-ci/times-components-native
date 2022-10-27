@@ -13,8 +13,9 @@ const withResponsiveContext = (WrappedComponent: any, width: number) => (
   </ResponsiveContext.Provider>
 );
 
-export const withTabletContext = (WrappedComponent: any) =>
-  withResponsiveContext(WrappedComponent, 1000);
+export const withTabletContext = (WrappedComponent: any) => {
+  return withResponsiveContext(WrappedComponent, 1000);
+};
 
 export const withMobileContext = (WrappedComponent: any) =>
   withResponsiveContext(WrappedComponent, 300);

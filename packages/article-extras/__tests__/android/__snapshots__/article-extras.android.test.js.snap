@@ -33,9 +33,6 @@ exports[`2. article extras content on tablet 1`] = `
     narrowContent={false}
     url="dummy-article-url"
   />
-  <SponsoredAd
-    numberOfAds={4}
-  />
 </View>
 `;
 
