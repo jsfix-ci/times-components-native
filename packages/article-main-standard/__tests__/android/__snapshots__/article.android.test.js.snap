@@ -5,46 +5,6 @@ exports[`1. an article 1`] = `
   <View>
     <View>
       <View>
-        <ModalImage
-          aspectRatio={1.7777777777777777}
-          caption={
-            Object {
-              "credits": "Some Credits",
-              "text": "Some Caption",
-            }
-          }
-          images={
-            Array [
-              Object {
-                "attributes": Object {
-                  "caption": "Some Caption",
-                  "credits": "Some Credits",
-                  "display": "",
-                  "ratio": "16:9",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "url": "https://crop169.io",
-                },
-              },
-            ]
-          }
-          index={0}
-          onImagePress={null}
-          testIDProp="lead-image"
-          uri="https://crop169.io"
-        />
-        <Caption
-          credits="Some Credits"
-          testIDCaption="lead-image-caption"
-          testIDCredit="lead-image-credit"
-          text="Some Caption"
-        />
-      </View>
-    </View>
-    <View>
-      <View>
         <ArticleLabel
           childTestID="article-slug"
           color="#1D1D1B"
@@ -117,6 +77,46 @@ exports[`1. an article 1`] = `
         </View>
       </View>
     </View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption={
+            Object {
+              "credits": "Some Credits",
+              "text": "Some Caption",
+            }
+          }
+          images={
+            Array [
+              Object {
+                "attributes": Object {
+                  "caption": "Some Caption",
+                  "credits": "Some Credits",
+                  "display": "",
+                  "ratio": "16:9",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
+                  "url": "https://crop169.io",
+                },
+              },
+            ]
+          }
+          index={0}
+          onImagePress={null}
+          testIDProp="lead-image"
+          uri="https://crop169.io"
+        />
+        <Caption
+          credits="Some Credits"
+          testIDCaption="lead-image-caption"
+          testIDCredit="lead-image-credit"
+          text="Some Caption"
+        />
+      </View>
+    </View>
   </View>
 </ArticleSkeleton>
 `;
@@ -128,7 +128,6 @@ exports[`3. an error 1`] = `<ArticleError />`;
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <ArticleSkeleton>
   <View>
-    <View />
     <View>
       <Text
         selectable={true}
@@ -160,6 +159,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         </View>
       </View>
     </View>
+    <View />
   </View>
 </ArticleSkeleton>
 `;
@@ -167,7 +167,6 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 exports[`5. an article with ads 1`] = `
 <ArticleSkeleton>
   <View>
-    <View />
     <View>
       <Text
         selectable={true}
@@ -199,6 +198,7 @@ exports[`5. an article with ads 1`] = `
         </View>
       </View>
     </View>
+    <View />
   </View>
 </ArticleSkeleton>
 `;
@@ -206,46 +206,6 @@ exports[`5. an article with ads 1`] = `
 exports[`6. an article with no byline 1`] = `
 <ArticleSkeleton>
   <View>
-    <View>
-      <View>
-        <ModalImage
-          aspectRatio={1.7777777777777777}
-          caption={
-            Object {
-              "credits": "Some Credits",
-              "text": "Some Caption",
-            }
-          }
-          images={
-            Array [
-              Object {
-                "attributes": Object {
-                  "caption": "Some Caption",
-                  "credits": "Some Credits",
-                  "display": "",
-                  "ratio": "16:9",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "url": "https://crop169.io",
-                },
-              },
-            ]
-          }
-          index={0}
-          onImagePress={null}
-          testIDProp="lead-image"
-          uri="https://crop169.io"
-        />
-        <Caption
-          credits="Some Credits"
-          testIDCaption="lead-image-caption"
-          testIDCredit="lead-image-credit"
-          text="Some Caption"
-        />
-      </View>
-    </View>
     <View>
       <View>
         <ArticleLabel
@@ -299,13 +259,6 @@ exports[`6. an article with no byline 1`] = `
         </View>
       </View>
     </View>
-  </View>
-</ArticleSkeleton>
-`;
-
-exports[`7. an article with no label 1`] = `
-<ArticleSkeleton>
-  <View>
     <View>
       <View>
         <ModalImage
@@ -346,6 +299,13 @@ exports[`7. an article with no label 1`] = `
         />
       </View>
     </View>
+  </View>
+</ArticleSkeleton>
+`;
+
+exports[`7. an article with no label 1`] = `
+<ArticleSkeleton>
+  <View>
     <View>
       <Text
         selectable={true}
@@ -411,6 +371,46 @@ exports[`7. an article with no label 1`] = `
             , The Times
           </Text>
         </View>
+      </View>
+    </View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption={
+            Object {
+              "credits": "Some Credits",
+              "text": "Some Caption",
+            }
+          }
+          images={
+            Array [
+              Object {
+                "attributes": Object {
+                  "caption": "Some Caption",
+                  "credits": "Some Credits",
+                  "display": "",
+                  "ratio": "16:9",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
+                  "url": "https://crop169.io",
+                },
+              },
+            ]
+          }
+          index={0}
+          onImagePress={null}
+          testIDProp="lead-image"
+          uri="https://crop169.io"
+        />
+        <Caption
+          credits="Some Credits"
+          testIDCaption="lead-image-caption"
+          testIDCredit="lead-image-credit"
+          text="Some Caption"
+        />
       </View>
     </View>
   </View>

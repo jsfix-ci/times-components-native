@@ -4,10 +4,9 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
       "flexDirection": "column",
       "paddingBottom": 15,
-      "width": 640,
+      "width": "100%",
     }
   }
 >
@@ -31,6 +30,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
       <View
         style={
           Object {
+            "paddingHorizontal": 10,
             "paddingTop": 10,
           }
         }
@@ -73,10 +73,9 @@ exports[`2. tablet primary image with caption and credits 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
       "flexDirection": "column",
       "paddingBottom": 15,
-      "width": 640,
+      "width": "100%",
     }
   }
 >
@@ -100,6 +99,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
       <View
         style={
           Object {
+            "paddingHorizontal": 10,
             "paddingTop": 10,
           }
         }
@@ -300,13 +300,12 @@ exports[`5. secondary image with caption and credits 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
       "flexDirection": "row",
       "flexWrap": "nowrap",
       "paddingBottom": 20,
-      "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "width": "100%",
     }
   }
 >
