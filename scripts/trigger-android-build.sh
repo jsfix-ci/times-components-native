@@ -34,7 +34,8 @@ cd "$android_dir"
 new_branch="chore/NOJIRA/update-tcn-$new_version"
 git checkout -b "$new_branch" --quiet
 echo "Updating the TCN version from $cur_version to $new_version."
-sed -i "s/uk.co.thetimes:times-xnative\", version=\"[0-9]\+\.[0-9]\+\.[0-9]\+.*\"/uk.co.thetimes:times-xnative\", version=\"$new_version\"/g" gradle/libs.versions.toml
+sed -i "s/tcnVersion = \'[0-9]\+\.[0-9]\+\.[0-9]\+.*\'/tcnVersion =\'$new_version\'/g" gradle/libs.versions.toml
+
 
 # If GraphQL queries have been updated,
 # 1. Bump the database version
