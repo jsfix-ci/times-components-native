@@ -25,7 +25,7 @@ export const calculateResponsiveContext = (
   narrowArticleBreakpoint: getNarrowArticleBreakpoint(width),
   fontScale,
   isTablet: isTablet ? isTablet() : false,
-  isArticleTablet: width >= minTabletWidth,
+  isArticleTablet: width >= minTabletWidth && isTablet && isTablet(),
   windowWidth: width,
   windowHeight: height,
   orientation: height > width ? Orientation.PORTRAIT : Orientation.LANDSCAPE,

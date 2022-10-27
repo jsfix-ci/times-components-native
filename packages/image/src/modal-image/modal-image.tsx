@@ -3,7 +3,7 @@ import { ImageProps, Modal, SafeAreaView, StyleProp, View } from "react-native";
 import Url from "url-parse";
 import ImageViewer from "react-native-image-zoom-viewer";
 import Link from "@times-components-native/link";
-import { ResponsiveContext } from "@times-components-native/responsive";
+import { usePartialResponsiveContext } from "@times-components-native/responsive";
 import { ImageContent } from "@times-components-native/types";
 import CloseButton from "../close-button";
 import ModalCaptionContainer from "../modal-caption-container";
@@ -89,6 +89,7 @@ const ModalImage: FC<ModalImageProps> = ({
   imageStyles = {},
   uri = "",
 }) => {
+  const { isArticleTablet } = usePartialResponsiveContext();
   const [showModal, setShowModal] = useState(show || false);
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
@@ -154,9 +155,10 @@ const ModalImage: FC<ModalImageProps> = ({
   );
 
   if (onImagePress && !isSmallImage) {
+    const onImagePressWithIndex = () => onImagePress(currentIndex);
     return (
       <Link
-        onPress={() => onImagePress(currentIndex)}
+        onPress={onImagePressWithIndex}
         // @ts-ignore Type 'string' is not assignable to type 'null | undefined'.ts(2322)
         testIDProp={testIDProp}
       >
@@ -175,6 +177,8 @@ const ModalImage: FC<ModalImageProps> = ({
     );
   }
 
+  const renderIndicator = () => <View />;
+
   return (
     <View>
       <Modal
@@ -185,45 +189,41 @@ const ModalImage: FC<ModalImageProps> = ({
         visible={showModal}
       >
         <View style={styles.modal}>
-          <ResponsiveContext.Consumer>
-            {({ isArticleTablet }) => (
-              <Fragment>
-                <SafeAreaView
-                  style={[
-                    styles.buttonContainer,
-                    isArticleTablet && styles.buttonContainerTablet,
-                  ]}
-                >
-                  <CloseButton
-                    isArticleTablet={isArticleTablet}
-                    onPress={hideModal}
-                  />
-                </SafeAreaView>
-                <ImageViewer
-                  imageUrls={images}
-                  renderIndicator={() => <View />}
-                  enableSwipeDown
-                  onChange={handleSetCurrentIndex}
-                  useNativeDriver
-                  renderImage={renderImage}
-                  onSwipeDown={hideModal}
-                  saveToLocalByLongPress={false}
-                  enablePreload
-                  index={currentIndex}
-                />
-                <ModalCaptionContainer
-                  pointerEvents="none"
-                  style={styles.bottomSafeView}
-                >
-                  <ModalCaption
-                    isArticleTablet={isArticleTablet}
-                    text={images[currentIndex]?.caption || ""}
-                    credits={images[currentIndex]?.credits || ""}
-                  />
-                </ModalCaptionContainer>
-              </Fragment>
-            )}
-          </ResponsiveContext.Consumer>
+          <Fragment>
+            <SafeAreaView
+              style={[
+                styles.buttonContainer,
+                isArticleTablet && styles.buttonContainerTablet,
+              ]}
+            >
+              <CloseButton
+                isArticleTablet={isArticleTablet}
+                onPress={hideModal}
+              />
+            </SafeAreaView>
+            <ImageViewer
+              imageUrls={images}
+              renderIndicator={renderIndicator}
+              enableSwipeDown
+              onChange={handleSetCurrentIndex}
+              useNativeDriver
+              renderImage={renderImage}
+              onSwipeDown={hideModal}
+              saveToLocalByLongPress={false}
+              enablePreload
+              index={currentIndex}
+            />
+            <ModalCaptionContainer
+              pointerEvents="none"
+              style={styles.bottomSafeView}
+            >
+              <ModalCaption
+                isArticleTablet={isArticleTablet}
+                text={images[currentIndex]?.caption || ""}
+                credits={images[currentIndex]?.credits || ""}
+              />
+            </ModalCaptionContainer>
+          </Fragment>
         </View>
       </Modal>
       <Link
