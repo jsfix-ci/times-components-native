@@ -111,10 +111,10 @@
     "react-native-device-info": "7.3.1",
     "react-native-flipper": "^0.162.0",
     "react-native-image-zoom-viewer": "3.0.1",
-    "react-native-navigation": "7.20.0",
+    "react-native-navigation": "7.29.1",
     "react-native-safe-area-context": "3.3.0",
-    "react-native-svg": "12.1.0",
-    "react-native-webview": "11.6.4",
+    "react-native-svg": "13.4.0",
+    "react-native-webview": "11.23.1",
     "unfetch": "^4.1.0",
     "url-parse": "1.4.7",
     "zen-observable": "0.8.11"
