@@ -286,6 +286,7 @@ dependencies {
         exclude group:'com.facebook.flipper'
     }
 
+    //https://reactnative.dev/architecture/bundled-hermes#android-implementation-details
     if (enableHermes) {
         //noinspection GradleDynamicVersion
         implementation("com.facebook.react:hermes-engine:+") { // From node_modules
