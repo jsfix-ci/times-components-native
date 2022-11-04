@@ -17,7 +17,7 @@ import Section from "./section";
  *
  * This function applies that transformation
  */
-const flattenSlices = entity => {
+export const flattenSlices = entity => {
   return entity.slices.reduce((slicesArr, slice) => {
     if (slice.name === "ContainerSlice") {
       const innerSlices = slice.collection.slices;
