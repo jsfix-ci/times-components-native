@@ -3,6 +3,7 @@ import {
   fonts,
   spacing,
   editionBreakpoints,
+  fontFactory,
 } from "@times-components-native/styleguide";
 
 const separatorSpacingResolver = {
@@ -41,5 +42,20 @@ export default breakpoint => ({
   },
   additionalContainerPadding: {
     paddingBottom: spacing(3),
+  },
+  collectionContainer: {
+    backgroundColor: "#efefef",
+  },
+  collectionHeaderContainer: {
+    paddingHorizontal: spacing(5),
+    paddingVertical: spacing(2),
+  },
+  collectionHeaderText: {
+    color: colours.functional.primary,
+    fontFamily: fonts.headline,
+    ...fontFactory({
+      font: "headline",
+      fontSize: "smallHeadline",
+    }),
   },
 });

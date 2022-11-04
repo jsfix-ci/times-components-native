@@ -12,6 +12,723 @@
   "name": "StandardSection",
   "slices": [
     {
+      "name": "ContainerSlice",
+      "collection": {
+        "__typename": "Collection",
+        "title": "Container title",
+        "slices": [
+          {
+            "lead1Bullet1": {
+              "article": {
+                "id": "208c808e-5a19-11ed-962f-53da0c787308",
+                "url": "https://www.thetimes.co.uk/article/how-will-stealth-tax-affect-me-finances-savings-9vrtxw2b9",
+                "shortHeadline": "Stealth tax to cost middle earners £3,500",
+                "headline": "Rishi Sunak’s stealth tax to cost middle earners £3,500"
+              }
+            },
+            "lead1Bullet2": {
+              "article": {
+                "id": "96537b2c-5a98-11ed-9b1f-f7c251e9dfdc",
+                "url": "https://www.thetimes.co.uk/article/tories-face-a-drubbing-at-next-election-warns-polling-expert-john-curtice-r25n0w7nc",
+                "shortHeadline": "Tories face a drubbing at next election, warns polling expert",
+                "headline": "Tories face a drubbing at next election, warns polling expert John Curtice"
+              }
+            },
+            "lead2": {
+              "teaser125": null,
+              "teaser300": null,
+              "article": {
+                "id": "3d78db3a-5ab8-11ed-962f-53da0c787308",
+                "section": "news",
+                "label": "uk news",
+                "summary125": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "The number of people in England and Wales who were born outside the UK has risen to ten million — or one in six of the"
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "headline": "Ten million residents of England and Wales born outside the UK, 2021 census shows",
+                "url": "https://www.thetimes.co.uk/article/ten-million-residents-of-england-and-wales-born-outside-the-uk-2021-census-shows-jzh7pmplm",
+                "expirableFlags": [
+                  {
+                    "type": "NEW",
+                    "expiryTime": "2022-11-02T17:40:00.000Z"
+                  }
+                ],
+                "summary1000": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "The number of people in England and Wales who were born outside the UK has risen to ten million — or one in six of the population — for the first time, census data has shown."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "Office for National Statistics (ONS) figures from last year’s census showed that Romanians accounted for the biggest increase after working restrictions on the nationality were lifted in 2014. The number of people born in Romania and living in England and Wales grew by 574 per cent compared with the previous census a decade ago, from 80,000 in 2011 to 539,000 last year."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "However, on average the migrant population in England and Wales grew more slowly during the 2010s than during the 2000s, probably as a result of the "
+                        },
+                        "children": []
+                      },
+                      {
+                        "attributes": {
+                          "type": "topic",
+                          "href": "https://www.thetimes.co.uk/topic/brexit"
+                        },
+                        "name": "link",
+                        "children": [
+                          {
+                            "attributes": { "value": "Brexit" },
+                            "name": "text",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "bylines": [
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "author",
+                        "attributes": { "slug": "james-beal" },
+                        "children": [
+                          {
+                            "attributes": { "value": "James Beal" },
+                            "name": "text",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "inline",
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": {
+                              "value": ", Social Affairs Editor"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasVideo": false,
+                "summary300": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "The number of people in England and Wales who were born outside the UK has risen to ten million — or one in six of the population — for the first time, census data has shown."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Office for National Statistics (ONS) figures from last year’s census showed that Romanians accounted for the biggest increase"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "shortHeadline": "Ten million residents born outside the UK, census shows"
+              },
+              "teaser1000": null,
+              "headline": null
+            },
+            "lead1Bullet3": {
+              "article": {
+                "id": "a8d20dd2-5538-11ed-b965-3a5f647316f8",
+                "url": "https://www.thetimes.co.uk/article/cop27-egypt-when-agenda-dates-king-charles-brkvxkh08",
+                "shortHeadline": "When is Cop27 and who will be attending?",
+                "headline": "Cop27 in Egypt: When is it and who will be attending?"
+              }
+            },
+            "support2": {
+              "article": {
+                "id": "77d320fa-5aa0-11ed-9b1f-f7c251e9dfdc",
+                "section": "news",
+                "summary800": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "A private archive detailing Queen Elizabeth II’s experiences as a wartime mechanic has come to light after her military driving instructor insisted it could not be sold during the monarch’s lifetime."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "The photographs and documents belonged to Major Violet Wellesley, who was Princess Elizabeth’s driving instructor in the Auxiliary Territorial Service (ATS) during the Second World War."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "As well as seven black and white photos of the 19-year-old princess wearing her mechanic’s uniform, it also includes the future Queen’s war department provisional driving licence (No B1232)."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "The official document, which was signed in ink “Elizabeth”, lists her name as “H.R.H Princess Elizabeth” and states she has blue eyes, is 5ft 4in tall and has light brown hair."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Before her death in 1971, Wellesley gave strict"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "summary125": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "A private archive detailing Queen Elizabeth II’s experiences as a wartime mechanic has come to light after her military"
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "label": "ROYAL FAMILY",
+                "headline": "Rare photos of Queen as a Second World War mechanic go on sale",
+                "leadAsset": {
+                  "crop45": {
+                    "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1352b95a-5aa1-11ed-8b80-edb247d13355.jpg?crop=1766%2C2207%2C259%2C251",
+                    "relativeHeight": 0.78345757898473556,
+                    "ratio": "4:5",
+                    "relativeVerticalOffset": 0.089101881434149807,
+                    "relativeWidth": 0.57920629714660543,
+                    "relativeHorizontalOffset": 0.084945883896359459
+                  },
+                  "__typename": "Image",
+                  "crop23": {
+                    "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1352b95a-5aa1-11ed-8b80-edb247d13355.jpg?crop=1545%2C2318%2C340%2C237",
+                    "ratio": "2:3",
+                    "relativeHeight": 0.82286119985800499,
+                    "relativeVerticalOffset": 0.084132055378061774,
+                    "relativeWidth": 0.50672351590685472,
+                    "relativeHorizontalOffset": 0.11151197113807806
+                  },
+                  "crop32": {
+                    "relativeHorizontalOffset": 0.03082978025582158,
+                    "relativeHeight": 0.63435542367293107,
+                    "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F195467a4-5aa1-11ed-8b80-edb247d13355.jpg?crop=2886%2C1924%2C94%2C401",
+                    "relativeWidth": 0.94653984913086253,
+                    "ratio": "3:2",
+                    "relativeVerticalOffset": 0.1322123310253874
+                  }
+                },
+                "url": "https://www.thetimes.co.uk/article/rare-photos-of-queen-as-second-world-war-mechanic-go-on-sale-vx0jsz6k7",
+                "expirableFlags": [
+                  {
+                    "type": "NEW",
+                    "expiryTime": "2022-11-02T15:50:00.000Z"
+                  }
+                ],
+                "bylines": [
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "inline",
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": { "value": "Will Humphries" },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasVideo": false,
+                "listingAsset": null,
+                "shortHeadline": "Doing her duty: rare photos of the Queen as wartime mechanic"
+              },
+              "teaser125": null,
+              "leadAsset": null,
+              "teaser800": null,
+              "headline": null
+            },
+            "lead1": {
+              "article": {
+                "id": "08d5f32e-59df-11ed-962f-53da0c787308",
+                "section": "news",
+                "label": null,
+                "summary125": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Albania’s prime minister has condemned Suella Braverman’s anti-migrant rhetoric and said Britain must treat his country with"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "strapline": "Sunak passing the blame over Channel crisis, says Starmer at PMQs",
+                "headline": "Treat us with respect if you want a deal on illegal Channel migrants, demands Albania — follow latest",
+                "url": "https://www.thetimes.co.uk/article/rishi-sunak-pmqs-suella-braverman-nhs-amanda-pritchard-speech-latest-news-follow-live-57r87xsqs",
+                "expirableFlags": [{ "type": "LIVE", "expiryTime": null }],
+                "summary1000": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Albania’s prime minister has condemned Suella Braverman’s anti-migrant rhetoric and said Britain must treat his country with “respect” if it wants to strike a returns deal."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "In an extraordinary intervention, Edi Rama said it was “insane” to blame Albanian migrants as the “cause of Britain’s crime and border problems”."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "He attacked Braverman over the language she used this week when she described the Channel migrant crisis as an “invasion”, and accused her using “easy rhetoric” to hide policy failings."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "In a statement on Twitter, Rama wrote: “Repeating the same things and expecting different results is insane (ask Einstein!).”"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "He quoted figures suggesting that 70 per cent of the 140,000 Albanians in the UK were previously living in wealthy European countries such as Italy and Greece,"
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "bylines": [
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "author",
+                        "attributes": { "slug": "henry-zeffman" },
+                        "children": [
+                          {
+                            "attributes": { "value": "Henry Zeffman" },
+                            "name": "text",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "inline",
+                        "children": [
+                          {
+                            "attributes": { "value": " | " },
+                            "name": "text",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "author",
+                        "attributes": { "slug": "geraldine-scott" },
+                        "children": [
+                          {
+                            "attributes": { "value": "Geraldine Scott" },
+                            "name": "text",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "inline",
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": {
+                              "value": ", Political Reporter"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasVideo": true,
+                "summary300": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Albania’s prime minister has condemned Suella Braverman’s anti-migrant rhetoric and said Britain must treat his country with “respect” if it wants to strike a returns deal."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "In an extraordinary intervention, Edi Rama said it was “insane” to blame Albanian migrants as the “cause of Britain’s crime and"
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "shortHeadline": "Treat us with respect if you want migrant deal, demands Albania"
+              },
+              "teaser300": null,
+              "teaser125": null,
+              "teaser1000": null,
+              "strapline": null,
+              "headline": null
+            },
+            "support1": {
+              "article": {
+                "id": "2256d214-5a98-11ed-9b1f-f7c251e9dfdc",
+                "section": "news",
+                "summary800": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Daniel Radcliffe has said it was “really important” for him to speak out against JK Rowling over transgender rights."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "The Harry Potter actor, 33, claimed he would not have been able to look himself in the mirror had he not made a statement."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "He asserted his support for trans people in 2020, after a series of “transphobic” tweets by Rowling, who suggested the word “woman” was being erased."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "In an interview with IndieWire, "
+                        },
+                        "children": []
+                      },
+                      {
+                        "name": "link",
+                        "attributes": {
+                          "type": "article",
+                          "href": "https://www.thetimes.co.uk/article/sunday-times-rich-list-daniel-radcliffe-net-worth-d7lxpg58h",
+                          "canonicalId": "sunday-times-rich-list-daniel-radcliffe-net-worth-d7lxpg58h"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": { "value": "Radcliffe" },
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": " said that many young, queer and transgender fans of the fantasy series had been hurt by Rowling’s posts."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "He said he had spoken out to show that not everyone involved with the Harry Potter franchise felt the same."
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": {
+                          "value": "Radcliffe said: “The reason I felt very, very much as though I needed"
+                        },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "summary125": [
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Daniel Radcliffe has said it was “really important” for him to speak out against JK Rowling over transgender rights."
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "paragraph",
+                    "children": [
+                      {
+                        "attributes": { "value": "The Harry" },
+                        "name": "text",
+                        "children": []
+                      }
+                    ]
+                  }
+                ],
+                "label": "UK NEWS",
+                "headline": "Daniel Radcliffe defends decision to defy JK Rowling over trans rights",
+                "leadAsset": {
+                  "crop32": {
+                    "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Facb94fce-5a9b-11ed-8b80-edb247d13355.jpg?crop=2097%2C1398%2C13%2C199",
+                    "relativeHeight": 0.51040525739320919,
+                    "ratio": "3:2",
+                    "relativeWidth": 0.9938388625592417,
+                    "relativeVerticalOffset": 0.072654253377144942,
+                    "relativeHorizontalOffset": 0.0061611374407582941
+                  },
+                  "crop45": {
+                    "relativeWidth": 0.53033175355450235,
+                    "relativeHeight": 0.51040525739320919,
+                    "relativeVerticalOffset": 0.072654253377144942,
+                    "ratio": "4:5",
+                    "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Facb94fce-5a9b-11ed-8b80-edb247d13355.jpg?crop=1119%2C1398%2C502%2C199",
+                    "relativeHorizontalOffset": 0.23791469194312795
+                  },
+                  "__typename": "Image"
+                },
+                "url": "https://www.thetimes.co.uk/article/daniel-radcliffe-defends-decision-to-defy-jk-rowling-over-trans-rights-s7lbk65fl",
+                "expirableFlags": [
+                  {
+                    "type": "NEW",
+                    "expiryTime": "2022-11-02T14:15:00.000Z"
+                  }
+                ],
+                "bylines": [
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "author",
+                        "attributes": { "slug": "james-beal" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": { "value": "James Beal" },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "image": null,
+                    "byline": [
+                      {
+                        "name": "inline",
+                        "children": [
+                          {
+                            "name": "text",
+                            "attributes": {
+                              "value": ", Social Affairs Editor"
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasVideo": false,
+                "listingAsset": null,
+                "shortHeadline": "Radcliffe defends decision to defy JK Rowling over trans rights"
+              },
+              "teaser125": null,
+              "leadAsset": null,
+              "teaser800": null,
+              "headline": null
+            },
+            "name": "LeadTwoNoPicAndTwoSlice",
+            "items": [
+              { "articleId": "08d5f32e-59df-11ed-962f-53da0c787308" },
+              { "articleId": "3d78db3a-5ab8-11ed-962f-53da0c787308" },
+              { "articleId": "2256d214-5a98-11ed-9b1f-f7c251e9dfdc" },
+              { "articleId": "77d320fa-5aa0-11ed-9b1f-f7c251e9dfdc" },
+              { "articleId": "208c808e-5a19-11ed-962f-53da0c787308" },
+              { "articleId": "96537b2c-5a98-11ed-9b1f-f7c251e9dfdc" },
+              { "articleId": "a8d20dd2-5538-11ed-b965-3a5f647316f8" }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "LeadTwoNoPicAndTwoSlice",
       "items": [
         {

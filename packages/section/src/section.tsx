@@ -4,6 +4,7 @@ import {
   NativeEventEmitter,
   NativeModules,
   StyleSheet,
+  Text,
   View,
 } from "react-native";
 import { useResponsiveContext } from "@times-components-native/responsive";
@@ -25,6 +26,7 @@ import { SectionTitles } from "./utils/sectionConfigs";
 import { Orientation } from "@times-components-native/responsive/src/types";
 // @ts-ignore
 import { Viewport } from "@skele/components";
+import { Gutter } from "@times-components-native/edition-slices/src/slices/shared";
 
 const styles = styleFactory();
 const { SectionEvents } = NativeModules;
@@ -61,11 +63,12 @@ const Section: FC<Props> = props => {
     onPuzzlePress,
     onPuzzleBarPress,
     onViewed,
-    receiveChildList,
     section,
+    receiveChildList,
     puzzlesMetaData = undefined,
   } = props;
-  const { cover, name, slices, title: sectionTitle } = section;
+  const { name, cover, slices, title: sectionTitle } = section;
+
   const { isTablet, editionBreakpoint, orientation } = useResponsiveContext();
 
   const flatListRef = useRef<FlatList | null>(null);
@@ -107,8 +110,20 @@ const Section: FC<Props> = props => {
         onLayout={event => {
           sliceOffsets.current[index] = event?.nativeEvent?.layout?.height ?? 0;
         }}
-        style={sliceStyles.sliceContainer}
+        style={[
+          sliceStyles.sliceContainer,
+          slice.isInContainer ? styles.collectionContainer : {},
+        ]}
       >
+        {slice.containerTitle && slice.isFirstInContainer ? (
+          <Gutter grow={false}>
+            <View style={styles.collectionHeaderContainer}>
+              <Text style={styles.collectionHeaderText}>
+                {slice.containerTitle}
+              </Text>
+            </View>
+          </Gutter>
+        ) : null}
         <Slice
           index={index}
           length={slices.length}

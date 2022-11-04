@@ -36,8 +36,13 @@ fragment puzzleSection on PuzzleSection {
 
 fragment standardSection on StandardSection {
   name: __typename
-  slices {
-    ...commonSlicesSection
+  slices(enableContainers: $enableContainers) {
+    ... on StandardSlice {
+      ...commonSlicesSection
+    }
+    ... on ContainerSlice {
+      ...containerSlicesSection
+    }
   }
 }
 
@@ -258,6 +263,19 @@ fragment sectionCropProps on Crop {
   relativeWidth
   relativeHeight
   url
+}
+
+fragment containerSlicesSection on StandardSectionSlice {
+  name: __typename
+  ... on ContainerSlice {
+    collection {
+      __typename
+      title
+      slices {
+        ...commonSlicesSection
+      }
+    }
+  }
 }
 
 fragment commonSlicesSection on StandardSectionSlice {
