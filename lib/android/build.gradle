@@ -19,7 +19,6 @@ buildscript {
 }
 
 def reactRepositoryPath = "$rootDir/repo"
-def hermesVersion = new JsonSlurper().parseText(file("$rootDir/../../node_modules/hermes-engine/package.json").text).version
 def graphQlFilesPath = './xnative/src/main/res/raw'
 
 allprojects {
@@ -85,34 +84,6 @@ task generateReactArchives {
         into(reactRepositoryPath)
     }
 
-    task hermesCopy {
-
-        task hermesCopyArchive(type: Copy) {
-          from('../../node_modules/hermes-engine/android/hermes-release.aar')
-          into("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion")
-          rename('hermes-release.aar', "hermes-engine-${hermesVersion}.aar")
-        }
-
-        task generateHermesArchive {
-          apply plugin: 'maven-publish'
-          description "Generates pom file for Hermes Engine"
-          publishing {
-            publications {
-              Hermes(MavenPublication) {
-                pom {
-                    groupId 'com.facebook.hermes'
-                    artifactId 'hermes-engine'
-                    version hermesVersion
-                    packaging 'aar'
-                }
-              }
-            }
-          }
-        }
-        hermesCopy.dependsOn(hermesCopyArchive)
-        hermesCopy.dependsOn(generateHermesArchive)
-        hermesCopy.dependsOn(generatePomFileForHermesPublication)
-    }
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
     task graphQlCopy(type: Copy) {
         from('../../packages/provider-queries/src/')
@@ -120,14 +91,10 @@ task generateReactArchives {
         into(graphQlFilesPath)
     }
 
-    generateReactArchives.dependsOn(hermesCopy)
     generateReactArchives.dependsOn(reactNativeCopy)
     generateReactArchives.dependsOn(graphQlCopy)
 }
 
-model {
-    tasks.generatePomFileForHermesPublication {
-        destination = file("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
 //Fix RN 0.69.6 AAPT core-1.7.0/res/values/values.xml:105:5-114:25: AAPT: error: resource android:attr/lStar not found.
 subprojects { subproject ->
     afterEvaluate{

@@ -87,8 +87,10 @@ android {
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
 
-    def hermesPackageInfo = new JsonSlurper().parseText(rootProject.file("../../node_modules/hermes-engine/package.json").text)
-    api "com.facebook.hermes:hermes-engine:${hermesPackageInfo.version}"
+    //if (enableHermes)
+    implementation("com.facebook.react:hermes-engine:+") {
+        exclude group:'com.facebook.fbjni'
+    }
 
     api("uk.co.thetimes:xnative-rn-svg:${packageInfo.version}") {
         exclude group: "com.facebook.react"
