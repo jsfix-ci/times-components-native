@@ -68,6 +68,8 @@ publishing {
 }
 
 android {
+//TODO: enable this which is not working to ensure versions are alligned
+//              compileSdkVersion rootProject.ext.compileSdkVersion
     compileSdkVersion 31
     defaultConfig {
         minSdkVersion 21
@@ -105,11 +107,5 @@ dependencies {
     }
     api("uk.co.thetimes:xnative-rn-newrelic-agent:${packageInfo.version}") {
         exclude group: "com.facebook.react"
-    }
-}
-
-configurations.all {
-    resolutionStrategy {
-        force 'androidx.core:core-ktx:1.7.0'
     }
 }

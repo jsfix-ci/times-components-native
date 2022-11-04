@@ -55,13 +55,3 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
     }
 }
-subprojects { subproject ->
-    afterEvaluate{
-        if (project.hasProperty("android")) {
-            android {
-                androidXCore = "1.7.0"
-                compileSdkVersion 31
-            }
-        }
-    }
-}

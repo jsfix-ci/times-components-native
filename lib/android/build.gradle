@@ -128,5 +128,16 @@ task generateReactArchives {
 model {
     tasks.generatePomFileForHermesPublication {
         destination = file("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
+//Fix RN 0.69.6 AAPT core-1.7.0/res/values/values.xml:105:5-114:25: AAPT: error: resource android:attr/lStar not found.
+subprojects { subproject ->
+    afterEvaluate{
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 31
+//TODO: enable this which is not working to ensure versions are alligned
+//              compileSdkVersion rootProject.ext.compileSdkVersion
+
+            }
+        }
     }
 }
