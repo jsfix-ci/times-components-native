@@ -33,6 +33,7 @@ const adScriptSrc =
     : "https://ads.thetimes.co.uk/ads.times_android.min.js";
 
 interface DomContextType {
+  articleData: any;
   baseUrl: string;
   height: number;
   keyId?: string;
@@ -52,6 +53,7 @@ const PADDING = 20;
 
 const DOMContext = (props: DomContextType) => {
   const {
+    articleData,
     keyId = "",
     height,
     baseUrl,
@@ -61,7 +63,7 @@ const DOMContext = (props: DomContextType) => {
     slug,
     width = screenWidth,
   } = props;
-
+  console.log("ARTICLE DATA: ", articleData);
   const getSlotId = () => {
     const slotId = slotName;
     switch (Number(keyId)) {
@@ -196,6 +198,7 @@ const DOMContext = (props: DomContextType) => {
         "ads": {
           "blocked": false,
           "commercialSection": "${sectionName}",
+          "sec": "",
           "tuples": {
             "cont": "${slotName === "ad-section" ? "sec" : "art"}",
             "isLive": "${isLive ? 1 : 0}",
@@ -205,8 +208,20 @@ const DOMContext = (props: DomContextType) => {
           },
         },
         "user": {
-          "isLoggedIn": true,
+          "isLoggedIn": "logged in",
+          "subscription": true,
         }
+      };
+      window.utag_data = {
+        "article_id": "${articleData.id}",
+ 	      "article_name": "${articleData.headline}",
+        "article_kicker_name": "${articleData.shortHeadline}"
+        "article_author":  ${[...articleData.keywords]},
+        "page_tags":  ${[...articleData.keywords]},
+        "page_type":  ${slotName === "ad-section" ? "section" : "article"}"
+        "isPremium": false
+        "article_publish_latest": "${articleData.updatedTime}"
+        "article_publish_timestamp": "${articleData.publishedTime}"
       };
     </script>
     <script>

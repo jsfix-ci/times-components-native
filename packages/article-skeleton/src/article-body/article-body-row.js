@@ -171,6 +171,7 @@ const ArticleBodyRow = ({
       return (
         <Ad
           adConfig={config}
+          articleData={data}
           key={key}
           keyId={key}
           narrowContent={narrowContent}
