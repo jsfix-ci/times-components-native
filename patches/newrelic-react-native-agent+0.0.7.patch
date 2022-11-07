@@ -1,0 +1,12 @@
+diff --git a/node_modules/newrelic-react-native-agent/android/build.gradle b/node_modules/newrelic-react-native-agent/android/build.gradle
+index 4b45814..aeadd60 100644
+--- a/node_modules/newrelic-react-native-agent/android/build.gradle
++++ b/node_modules/newrelic-react-native-agent/android/build.gradle
+@@ -68,7 +68,6 @@ android {
+ 
+ repositories {
+     mavenCentral()
+-    jcenter()
+     google()
+ }
+ 
