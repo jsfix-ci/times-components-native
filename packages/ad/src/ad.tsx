@@ -18,7 +18,7 @@ type TSlotName = "ad-section" | "ad-inarticle-mpu";
 
 interface IProps {
   adConfig: IAdConfig;
-  articleData: any;
+  articleData?: any | null;
   baseUrl?: string;
   keyId?: string;
   narrowContent?: boolean;
@@ -27,7 +27,7 @@ interface IProps {
 
 function Ad({
   adConfig,
-  articleData,
+  articleData = null,
   baseUrl = "https://www.thetimes.co.uk/",
   keyId = "",
   narrowContent = false,
