@@ -180,6 +180,9 @@ const DOMContext = (props: DomContextType) => {
     }
   };
 
+  const getArticleKeyWords = (keywords: string[]) =>
+    keywords.map(keyword => `"${keyword}"`);
+
   const utag = articleData
     ? `
     window.utag_data = {
@@ -187,9 +190,9 @@ const DOMContext = (props: DomContextType) => {
       "article_name": "${articleData.headline}",
       "article_kicker_name": "${articleData.shortHeadline}",
       "article_author":  [${getArticleAuthors(articleData.bylines)}],
-      "page_tags":  [${articleData.keywords}],
-      "page_type":  ${slotName === "ad-section" ? "section" : "article"}",
-      "isPremium": false,
+      "page_tags":  [${getArticleKeyWords(articleData.keywords)}],
+      "page_type":  "${slotName === "ad-section" ? "section" : "article"}",
+      "isPremium": "0",
       "article_publish_latest": "${articleData.updatedTime}",
       "article_publish_timestamp": "${articleData.publishedTime}",
     };
@@ -225,7 +228,7 @@ const DOMContext = (props: DomContextType) => {
         },
         "user": {
           "isLoggedIn": "logged in",
-          "subscription": true,
+          "subscription": "1",
         }
       };
       ${utag}

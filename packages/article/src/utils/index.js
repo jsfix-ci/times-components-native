@@ -63,7 +63,7 @@ const getArticleAuthors = bylineData => {
   return bylineData.reduce((acc, cur) => {
     const authors = cur.byline.reduce((a, c) => {
       if (c.name === "author") {
-        return [...a, c.attributes.slug];
+        return [...a, `"${c.attributes.slug}"`];
       }
       return [...a];
     }, []);
