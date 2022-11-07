@@ -297,7 +297,6 @@ ArticleWithContent.propTypes = {
 
 const ArticleSkeleton = props => {
   const { data } = props;
-
   if (!data) {
     return null;
   }

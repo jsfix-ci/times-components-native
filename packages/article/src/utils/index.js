@@ -59,4 +59,16 @@ const addIndexesToInlineImages = (content, leadAsset) => {
   return mutatedContent;
 };
 
-export { addIndexesToInlineImages, getMediaList };
+const getArticleAuthors = bylineData => {
+  return bylineData.reduce((acc, cur) => {
+    const authors = cur.byline.reduce((a, c) => {
+      if (c.name === "author") {
+        return [...a, c.attributes.slug];
+      }
+      return [...a];
+    }, []);
+    return [...acc, ...authors];
+  }, []);
+};
+
+export { addIndexesToInlineImages, getMediaList, getArticleAuthors };
