@@ -21,9 +21,9 @@ const ArticleMeta = ({
   publishedTime,
 }) => (
   <View style={isArticleTablet && styles.metaContainerTabletFlow}>
-    {hasBylineData(bylines) && (
-      <Fragment>
-        <View style={styles.meta}>
+    <View style={styles.meta}>
+      {hasBylineData(bylines) && (
+        <>
           <Context.Consumer>
             {({ theme: { sectionColour } }) => (
               <ArticleBylineWithLinks
@@ -31,14 +31,12 @@ const ArticleMeta = ({
                 ast={bylines}
                 color={sectionColour || colours.section.default}
                 onAuthorPress={onAuthorPress}
+                centered={isArticleTablet}
               />
             )}
           </Context.Consumer>
-        </View>
-        {isArticleTablet && <View style={styles.separator} />}
-      </Fragment>
-    )}
-    <View style={styles.meta}>
+        </>
+      )}
       <DatePublication
         style={{
           ...styles.datePublication,

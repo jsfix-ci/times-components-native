@@ -75,6 +75,10 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.11.0)
   - libevent (2.1.12)
+  - newrelic-react-native-agent (0.0.5):
+    - NewRelicAgent (= 7.3.8)
+    - React
+  - NewRelicAgent (7.3.8)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.06.28.00-v2):
     - boost
@@ -424,6 +428,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (~> 0.11.0)
   - libevent (~> 2.1.12)
+  - newrelic-react-native-agent (from `../node_modules/newrelic-react-native-agent`)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -479,6 +484,7 @@ SPEC REPOS:
     - fmt
     - hermes-engine
     - libevent
+    - NewRelicAgent
     - OpenSSL-Universal
     - SocketRocket
     - YogaKit
@@ -494,6 +500,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/React/FBReactNativeSpec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  newrelic-react-native-agent:
+    :path: "../node_modules/newrelic-react-native-agent"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -586,6 +594,8 @@ SPEC CHECKSUMS:
   glog: 85ecdd10ee8d8ec362ef519a6a45ff9aa27b2e85
   hermes-engine: 84e3af1ea01dd7351ac5d8689cbbea1f9903ffc3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  newrelic-react-native-agent: 43984413d412ef735a55c7a9977854aeba735fe2
+  NewRelicAgent: 89724f6460b8be82e41ce04724444aed9b15d486
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 803a9cfd78114b2ec0f140cfa6fa2a6bafb2d685
   RCTRequired: b8caca023d386d43740dfb94c2cf68f695fa5e77
@@ -628,4 +638,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 138ed635344da3464d92e7e3e8a63e579c8677fe
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.10.1
