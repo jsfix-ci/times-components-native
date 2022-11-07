@@ -25,7 +25,8 @@ const AuthorComponent = ({
       style={linkStyle}
       url={url}
     >
-      {children}
+      {children} sgh rgerg rgejhg eg jhgrejer erhg rgh rghuergiu greuhgeriuhw
+      guigwgegw weghghegw hwghweg wfehe wegh egf dg shhf f egg aaggsgsg
     </TextLink>
   );
 };

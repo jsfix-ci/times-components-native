@@ -21,22 +21,22 @@ const ArticleMeta = ({
   publishedTime,
 }) => (
   <View style={isArticleTablet && styles.metaContainerTabletFlow}>
+    {hasBylineData(bylines) && (
+      <View style={styles.meta}>
+        <Context.Consumer>
+          {({ theme: { sectionColour } }) => (
+            <ArticleBylineWithLinks
+              articleId={articleId}
+              ast={bylines}
+              color={sectionColour || colours.section.default}
+              onAuthorPress={onAuthorPress}
+              centered={isArticleTablet}
+            />
+          )}
+        </Context.Consumer>
+      </View>
+    )}
     <View style={styles.meta}>
-      {hasBylineData(bylines) && (
-        <>
-          <Context.Consumer>
-            {({ theme: { sectionColour } }) => (
-              <ArticleBylineWithLinks
-                articleId={articleId}
-                ast={bylines}
-                color={sectionColour || colours.section.default}
-                onAuthorPress={onAuthorPress}
-                centered={isArticleTablet}
-              />
-            )}
-          </Context.Consumer>
-        </>
-      )}
       <DatePublication
         style={{
           ...styles.datePublication,
