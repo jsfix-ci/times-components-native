@@ -64,6 +64,9 @@ const DOMContext = (props: DomContextType) => {
     slug,
     width = screenWidth,
   } = props;
+
+  console.log("ARTICLE DATA: ", articleData);
+
   const getSlotId = () => {
     const slotId = slotName;
     switch (Number(keyId)) {
@@ -180,8 +183,8 @@ const DOMContext = (props: DomContextType) => {
     }
   };
 
-  const getArticleKeyWords = (keywords: string[]) =>
-    keywords.map(keyword => `"${keyword}"`);
+  const getArrayElementsAsStrings = (elements: string[]) =>
+    elements.map(element => `"${element}"`);
 
   const utag = articleData
     ? `
@@ -189,8 +192,10 @@ const DOMContext = (props: DomContextType) => {
       "article_id": "${articleData.id}",
       "article_name": "${articleData.headline}",
       "article_kicker_name": "${articleData.shortHeadline}",
-      "article_author":  [${getArticleAuthors(articleData.bylines)}],
-      "page_tags":  [${getArticleKeyWords(articleData.keywords)}],
+      "article_author":  [${getArrayElementsAsStrings(
+        getArticleAuthors(articleData.bylines),
+      )}],
+      "page_tags":  [${getArrayElementsAsStrings(articleData.keywords)}],
       "page_type":  "${slotName === "ad-section" ? "section" : "article"}",
       "isPremium": "0",
       "article_publish_latest": "${articleData.updatedTime}",
