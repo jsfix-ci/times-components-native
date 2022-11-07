@@ -4,10 +4,10 @@ exports[`adConfig is set correctly 1`] = `
 Object {
   "adUnit": "thetimes.mob.android",
   "bidInitialiser": Promise {
-    "_1": 0,
-    "_2": 1,
-    "_3": undefined,
-    "_4": null,
+    "_A": null,
+    "_x": 0,
+    "_y": 1,
+    "_z": undefined,
   },
   "bidderSlots": Array [],
   "biddersConfig": Object {},
