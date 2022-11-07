@@ -1,5 +1,5 @@
 /* eslint-disable react/require-default-props */
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC, useEffect } from "react";
 import { NativeModules, ScrollView } from "react-native";
 import { WebView } from "react-native-webview";
 import { ResponsiveContext } from "@times-components-native/responsive";
@@ -25,13 +25,20 @@ interface Props {
  */
 
 const ArticleTakeover: FC<Props> = ({ article }) => {
-  const webview = useRef();
+  const [url, setUrl] = React.useState(
+    "https://www.thetimes.co.uk/diagnostics?goto=/article/morten-morland-times-cartoon-november-1-2022-j50fr5l7g" +
+      "?enableEmbeddedMode=true",
+  );
+  const hasReloaded = React.useRef(false);
+
   const {
     sourcepointAuthId,
     cookieEid,
     authCookie,
     consentString,
   } = NativeModules.ReactConfig;
+
+  const webview = React.useRef();
 
   /** Note: left this in case it's useful */
   useEffect(() => {
@@ -53,6 +60,10 @@ const ArticleTakeover: FC<Props> = ({ article }) => {
     }
 
     document.cookie='authId=${String(cookieEid)}; ${String(authCookie)}'
+
+    setTimeout(() => {
+      window.ReactNativeWebView.postMessage("hello");
+    }, 3000);
   })();`;
 
   return (
@@ -70,9 +81,18 @@ const ArticleTakeover: FC<Props> = ({ article }) => {
                 <WebView
                   ref={webview}
                   source={{
-                    uri:
-                      "https://www.thetimes.co.uk/article/cambridge-streets-named-black-alumni-qbrxjfw68" +
-                      "?enableEmbeddedMode=true",
+                    uri: url,
+                  }}
+                  onMessage={() => {
+                    console.log("xxxx on message");
+                    // setUrl(
+                    //   "https://www.thetimes.co.uk/diagnostics?goto=/article/morten-morland-times-cartoon-november-1-2022-j50fr5l7g" +
+                    //     "?enableEmbeddedMode=true",
+                    // );
+                    if (!hasReloaded.current) {
+                      hasReloaded.current = true;
+                      webview.current.reload();
+                    }
                   }}
                   injectedJavaScriptBeforeContentLoaded={scriptToInject}
                   style={{
