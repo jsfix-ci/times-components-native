@@ -8,7 +8,7 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.1.1")
@@ -24,8 +24,7 @@ def graphQlFilesPath = './xnative/src/main/res/raw'
 allprojects {
     repositories {
         google()
-        jcenter()
-
+        mavenCentral()
         maven {
             url "$reactRepositoryPath"
         }

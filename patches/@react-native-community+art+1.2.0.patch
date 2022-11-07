@@ -1,0 +1,21 @@
+diff --git a/node_modules/@react-native-community/art/android/build.gradle b/node_modules/@react-native-community/art/android/build.gradle
+index 949bc00..7227142 100644
+--- a/node_modules/@react-native-community/art/android/build.gradle
++++ b/node_modules/@react-native-community/art/android/build.gradle
+@@ -31,7 +31,6 @@ android {
+ 
+ repositories {
+   google()
+-  jcenter()
+   mavenCentral()
+ }
+ 
+@@ -39,7 +38,7 @@ allprojects {
+     repositories {
+         mavenLocal()
+         google()
+-        jcenter()
++        mavenCentral()
+         maven {
+             url "$rootDir/../node_modules/react-native/android"
+         }
