@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 import groovy.json.JsonSlurper
 
-def packageInfo = new JsonSlurper().parseText(rootProject.file("../../package.json").text)
+def tcnPackageJson = new JsonSlurper().parseText(rootProject.file("../../package.json").text)
 
 def reactRepositoryPath = "$rootDir/repo"
 
@@ -21,7 +21,7 @@ publishing {
         xnative(MavenPublication) {
             groupId 'uk.co.thetimes'
             artifactId 'times-xnative'
-            version packageInfo.version
+            version tcnPackageJson.version
             artifact(sourceJar)
             artifact("$buildDir/outputs/aar/xnative-release.aar")
             pom.withXml {
@@ -61,7 +61,7 @@ publishing {
         }
     }
     repositories {
-        maven {
+        mavenLocal {
             url "$reactRepositoryPath"
         }
     }
@@ -75,7 +75,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 31
         versionCode 1
-        versionName packageInfo.version
+        versionName tcnPackageJson.version
         consumerProguardFiles 'proguard-rules.pro'
     }
 
@@ -85,29 +85,35 @@ android {
 }
 
 dependencies {
-    api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
+    api "com.facebook.react:react-native:${tcnPackageJson.dependencies.'react-native'}"
 
     //if (enableHermes)
     implementation("com.facebook.react:hermes-engine:+") {
         exclude group:'com.facebook.fbjni'
     }
 
-    api("uk.co.thetimes:xnative-rn-svg:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-svg:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-webview:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-webview:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-device-info:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-device-info:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-community-netinfo:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-community-netinfo:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-community-art:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-community-art:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
-    api("uk.co.thetimes:xnative-rn-newrelic-agent:${packageInfo.version}") {
+    api("uk.co.thetimes:xnative-rn-newrelic-agent:${tcnPackageJson.version}") {
         exclude group: "com.facebook.react"
     }
 }
+
+gradle.buildFinished { buildResult ->
+  println '\n\n\n#### xnative libraries ' + tcnPackageJson.version + ' published to\n\nmaven {\n\turl "' + reactRepositoryPath + '"\n}\n'
+  println 'Update your build.gradle/repositories accordingly if you want to fetch local versions\n\n'
+}
+
