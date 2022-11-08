@@ -23,6 +23,7 @@ import {
 } from "./utils/dom-context-utils";
 import reducer, { ActionTypes } from "./reducer";
 import { getArticleAuthors } from "@times-components-native/article/src/utils";
+import { connectStats } from "react-instantsearch-core";
 
 const config = NativeModules.ReactConfig;
 
@@ -65,8 +66,6 @@ const DOMContext = (props: DomContextType) => {
     width = screenWidth,
   } = props;
 
-  console.log("ARTICLE DATA: ", articleData);
-
   const getSlotId = () => {
     const slotId = slotName;
     switch (Number(keyId)) {
@@ -82,7 +81,7 @@ const DOMContext = (props: DomContextType) => {
   const webViewRef = React.useRef<WebView>(null);
   const [state, dispatch] = useReducer(reducer, {
     loadAd: false,
-    adHeight: 0,
+    adHeight: 250,
     padding: 0,
   });
   const networkId = config.adNetworkId;
@@ -204,6 +203,16 @@ const DOMContext = (props: DomContextType) => {
   `
     : "";
 
+  const getExtraTag = () => {
+    if (articleData && articleData?.extraTag) {
+      return JSON.stringify(articleData.extraTag).replace(
+        new RegExp(/[{}]/g, "g"),
+        "",
+      );
+    }
+    return "";
+  };
+
   const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
   const html = `
   <html>
@@ -229,6 +238,7 @@ const DOMContext = (props: DomContextType) => {
             "path": "${sectionName}/${slug}",
             "cpn": "${String(authId)}",
             "device": "${isTablet() ? "tablet" : "mobile"}",
+            ${getExtraTag()}
           },
         },
         "user": {
