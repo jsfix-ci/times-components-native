@@ -10175,10 +10175,10 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-newrelic-react-native-agent@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/newrelic-react-native-agent/-/newrelic-react-native-agent-0.0.5.tgz#ac5abcb6231eef2dc26c5d12ff006f2bac35739c"
-  integrity sha512-+G4lFtCRRTvYPLaMLnFXAdLCrksvmyXk3Ogw8c/DpwbdpoLqPZzPgi0Ox7VOaNShXR/CdaHZ6nQZt2wQdcdgQw==
+newrelic-react-native-agent@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/newrelic-react-native-agent/-/newrelic-react-native-agent-0.0.7.tgz#6ac82afc8dd7c57b8f6416d7935159e6eac36909"
+  integrity sha512-/tgOW+ctvrkeyvAkdfgXyjlGL+zdiPOtYtd/AFN+UbfhFqwKA5GKSrqLV54G3/876FqZFxPrOJ6WqFYbWKARLQ==
   dependencies:
     "@expo/config-plugins" "^4.0.14"
     commitizen "^4.2.4"

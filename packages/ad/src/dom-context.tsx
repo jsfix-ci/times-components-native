@@ -22,6 +22,7 @@ import {
   urlHasBridgePrefix,
 } from "./utils/dom-context-utils";
 import reducer, { ActionTypes } from "./reducer";
+import { getArticleAuthors } from "@times-components-native/article/src/utils";
 
 const config = NativeModules.ReactConfig;
 
@@ -33,6 +34,7 @@ const adScriptSrc =
     : "https://ads.thetimes.co.uk/ads.times_android.min.js";
 
 interface DomContextType {
+  articleData: any | null;
   baseUrl: string;
   height: number;
   keyId?: string;
@@ -52,6 +54,7 @@ const PADDING = 20;
 
 const DOMContext = (props: DomContextType) => {
   const {
+    articleData,
     keyId = "",
     height,
     baseUrl,
@@ -61,6 +64,8 @@ const DOMContext = (props: DomContextType) => {
     slug,
     width = screenWidth,
   } = props;
+
+  console.log("ARTICLE DATA: ", articleData);
 
   const getSlotId = () => {
     const slotId = slotName;
@@ -178,6 +183,27 @@ const DOMContext = (props: DomContextType) => {
     }
   };
 
+  const getArrayElementsAsStrings = (elements: string[]) =>
+    elements.map(element => `"${element}"`);
+
+  const utag = articleData
+    ? `
+    window.utag_data = {
+      "article_id": "${articleData.id}",
+      "article_name": "${articleData.headline}",
+      "article_kicker_name": "${articleData.shortHeadline}",
+      "article_author":  [${getArrayElementsAsStrings(
+        getArticleAuthors(articleData.bylines),
+      )}],
+      "page_tags":  [${getArrayElementsAsStrings(articleData.keywords)}],
+      "page_type":  "${slotName === "ad-section" ? "section" : "article"}",
+      "isPremium": "0",
+      "article_publish_latest": "${articleData.updatedTime}",
+      "article_publish_timestamp": "${articleData.publishedTime}",
+    };
+  `
+    : "";
+
   const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
   const html = `
   <html>
@@ -196,6 +222,7 @@ const DOMContext = (props: DomContextType) => {
         "ads": {
           "blocked": false,
           "commercialSection": "${sectionName}",
+          "sec": "",
           "tuples": {
             "cont": "${slotName === "ad-section" ? "sec" : "art"}",
             "isLive": "${isLive ? 1 : 0}",
@@ -205,9 +232,11 @@ const DOMContext = (props: DomContextType) => {
           },
         },
         "user": {
-          "isLoggedIn": true,
+          "isLoggedIn": "logged in",
+          "subscription": "1",
         }
       };
+      ${utag}
     </script>
     <script>
       !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 6); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
