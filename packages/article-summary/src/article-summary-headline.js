@@ -1,9 +1,9 @@
 import React from "react";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
+
 import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
-
-const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryHeadline = ({
   className,
@@ -29,7 +29,7 @@ ArticleSummaryHeadline.propTypes = {
   allowFontScaling: PropTypes.bool,
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: TextStylePropTypes,
+  style: TextPropTypes.style,
 };
 
 ArticleSummaryHeadline.defaultProps = {

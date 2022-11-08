@@ -1,7 +1,6 @@
-import { Text } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
 import PropTypes from "prop-types";
 
-const { style: StylePropType } = Text.propTypes;
 export const basePropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
@@ -10,7 +9,7 @@ export const basePropTypes = {
     PropTypes.arrayOf(PropTypes.element),
   ]).isRequired,
   onPress: PropTypes.func.isRequired,
-  style: StylePropType,
+  style: TextPropTypes.style,
   target: PropTypes.string,
   url: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
