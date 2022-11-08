@@ -75,6 +75,10 @@ PODS:
   - glog (0.3.5)
   - hermes-engine (0.11.0)
   - libevent (2.1.12)
+  - newrelic-react-native-agent (0.0.7):
+    - NewRelicAgent (= 7.3.7)
+    - React
+  - NewRelicAgent (7.3.7)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.06.28.00-v2):
     - boost
@@ -424,6 +428,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (~> 0.11.0)
   - libevent (~> 2.1.12)
+  - newrelic-react-native-agent (from `../node_modules/newrelic-react-native-agent`)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -479,6 +484,7 @@ SPEC REPOS:
     - fmt
     - hermes-engine
     - libevent
+    - NewRelicAgent
     - OpenSSL-Universal
     - SocketRocket
     - YogaKit
@@ -494,6 +500,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/React/FBReactNativeSpec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  newrelic-react-native-agent:
+    :path: "../node_modules/newrelic-react-native-agent"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -583,11 +591,13 @@ SPEC CHECKSUMS:
   Flipper-RSocket: d9d9ade67cbecf6ac10730304bf5607266dd2541
   FlipperKit: cbdee19bdd4e7f05472a66ce290f1b729ba3cb86
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  glog: 85ecdd10ee8d8ec362ef519a6a45ff9aa27b2e85
+  glog: 476ee3e89abb49e07f822b48323c51c57124b572
   hermes-engine: 84e3af1ea01dd7351ac5d8689cbbea1f9903ffc3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  newrelic-react-native-agent: fed2404bb9d406dea6b90d8928d533b55525e138
+  NewRelicAgent: 13afbb9545e287293cf7514d344be4ebc9413c6e
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  RCT-Folly: 803a9cfd78114b2ec0f140cfa6fa2a6bafb2d685
+  RCT-Folly: 4d8508a426467c48885f1151029bc15fa5d7b3b8
   RCTRequired: b8caca023d386d43740dfb94c2cf68f695fa5e77
   RCTTypeSafety: ec44ea1d6ad1e5cd6447b22159ff40c2ebbd23b1
   React: 9f8c8afb9a9d61b7a1b01a1c6fb7f0d4f902988f
