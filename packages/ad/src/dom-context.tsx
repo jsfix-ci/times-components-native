@@ -65,8 +65,6 @@ const DOMContext = (props: DomContextType) => {
     width = screenWidth,
   } = props;
 
-  console.log("ARTICLE DATA: ", articleData);
-
   const getSlotId = () => {
     const slotId = slotName;
     switch (Number(keyId)) {
@@ -82,8 +80,8 @@ const DOMContext = (props: DomContextType) => {
   const webViewRef = React.useRef<WebView>(null);
   const [state, dispatch] = useReducer(reducer, {
     loadAd: false,
-    adHeight: 250,
-    padding: PADDING,
+    adHeight: slotId !== "ad-inarticle-mpu-2" ? 250 : 0,
+    padding: slotId !== "ad-inarticle-mpu-2" ? PADDING : 0,
   });
   const networkId = config.adNetworkId;
   const adUnit =
