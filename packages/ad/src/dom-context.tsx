@@ -82,8 +82,8 @@ const DOMContext = (props: DomContextType) => {
   const webViewRef = React.useRef<WebView>(null);
   const [state, dispatch] = useReducer(reducer, {
     loadAd: false,
-    adHeight: 0,
-    padding: 0,
+    adHeight: 250,
+    padding: PADDING,
   });
   const networkId = config.adNetworkId;
   const adUnit =
@@ -311,6 +311,7 @@ const DOMContext = (props: DomContextType) => {
         })
       }
       style={viewPortStyle}
+      pointerEvents="box-none"
     >
       {state.loadAd && (
         <WebView
