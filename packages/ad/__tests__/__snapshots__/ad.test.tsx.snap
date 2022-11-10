@@ -4,11 +4,26 @@ exports[`** AD ** 1`] = `
 <View
   inViewport={false}
   onViewportEnter={[Function]}
+  pointerEvents="box-none"
   style={
     Object {
-      "height": 0,
+      "height": 290,
       "width": 750,
     }
   }
-/>
+>
+  <View
+    inViewport={false}
+    onViewportEnter={[Function]}
+    onViewportLeave={[Function]}
+    style={
+      Object {
+        "height": 10,
+        "position": "absolute",
+        "top": 40,
+        "width": 10,
+      }
+    }
+  />
+</View>
 `;
