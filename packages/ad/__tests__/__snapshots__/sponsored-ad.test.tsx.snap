@@ -11,10 +11,10 @@ exports[`SponsoredAd renders Dianomi script tag 1`] = `
   \\"show source\\";
 
   var window = _ref.window,
-  document = _ref.document,
-  MutationObserver = _ref.MutationObserver,
-  width = _ref.width,
-  ratio = _ref.ratio;
+      document = _ref.document,
+      MutationObserver = _ref.MutationObserver,
+      width = _ref.width,
+      ratio = _ref.ratio;
   window.ReactNativeWebView.postMessage(JSON.stringify({
     running: \\"error\\"
   }));
@@ -64,10 +64,10 @@ exports[`SponsoredAd renders the require number of ad items 1`] = `
   \\"show source\\";
 
   var window = _ref.window,
-  document = _ref.document,
-  MutationObserver = _ref.MutationObserver,
-  width = _ref.width,
-  ratio = _ref.ratio;
+      document = _ref.document,
+      MutationObserver = _ref.MutationObserver,
+      width = _ref.width,
+      ratio = _ref.ratio;
   window.ReactNativeWebView.postMessage(JSON.stringify({
     running: \\"error\\"
   }));
