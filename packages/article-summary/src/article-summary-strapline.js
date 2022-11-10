@@ -1,9 +1,9 @@
 import React from "react";
 import { Text } from "react-native";
+import { TextPropTypes } from "deprecated-react-native-prop-types";
+
 import PropTypes from "prop-types";
 import styles from "./styles";
-
-const { style: TextStylePropTypes } = Text.propTypes;
 
 const ArticleSummaryStrapline = ({ strapline, style, allowFontScaling }) => (
   <Text
@@ -19,7 +19,7 @@ const ArticleSummaryStrapline = ({ strapline, style, allowFontScaling }) => (
 ArticleSummaryStrapline.propTypes = {
   allowFontScaling: PropTypes.bool,
   strapline: PropTypes.string.isRequired,
-  style: TextStylePropTypes,
+  style: TextPropTypes.style,
 };
 
 ArticleSummaryStrapline.defaultProps = {
