@@ -6,9 +6,23 @@ exports[`** AD ** 1`] = `
   onViewportEnter={[Function]}
   style={
     Object {
-      "height": 0,
+      "height": 290,
       "width": 750,
     }
   }
-/>
+>
+  <View
+    inViewport={false}
+    onViewportEnter={[Function]}
+    onViewportLeave={[Function]}
+    style={
+      Object {
+        "height": 10,
+        "position": "absolute",
+        "top": 40,
+        "width": 10,
+      }
+    }
+  />
+</View>
 `;

@@ -77,8 +77,8 @@ const DOMContext = (props: DomContextType) => {
   const webViewRef = React.useRef<WebView>(null);
   const [state, dispatch] = useReducer(reducer, {
     loadAd: false,
-    adHeight: 0,
-    padding: 0,
+    adHeight: slotId !== "ad-inarticle-mpu-2" ? 250 : 0,
+    padding: slotId !== "ad-inarticle-mpu-2" ? PADDING : 0,
   });
   const networkId = config.adNetworkId;
   const adUnit =
