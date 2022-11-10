@@ -130,3 +130,14 @@ model {
         destination = file("$reactRepositoryPath/com/facebook/hermes/hermes-engine/$hermesVersion/hermes-engine-${hermesVersion}.pom")
     }
 }
+
+subprojects { subproject ->
+    afterEvaluate{
+        if (project.hasProperty("android")) {
+            android {
+                androidXCore = "1.7.0"
+                compileSdkVersion 31
+            }
+        }
+    }
+}
