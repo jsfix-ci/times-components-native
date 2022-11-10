@@ -9,6 +9,9 @@
 ## any script/line that fails will block execution of later scripts
 set -e
 
+## Apply patches
+yarn patch-package
+
 yarn gen:types
 
 node ./scripts/fetch-fonts
@@ -20,3 +23,5 @@ then
   pod install --repo-update
   popd
 fi
+
+
