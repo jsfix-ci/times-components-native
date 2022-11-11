@@ -202,6 +202,20 @@ const DOMContext = (props: DomContextType) => {
   `
     : "";
 
+  const getExtraTag = () => {
+    try {
+      if (articleData && articleData?.extraTag) {
+        return JSON.stringify(articleData.extraTag).replace(
+          new RegExp(/[{}]/g, "g"),
+          "",
+        );
+      }
+      return "";
+    } catch (e) {
+      return "";
+    }
+  };
+
   const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
   const html = `
   <html>
@@ -227,6 +241,7 @@ const DOMContext = (props: DomContextType) => {
             "path": "${sectionName}/${slug}",
             "cpn": "${String(authId)}",
             "device": "${isTablet() ? "tablet" : "mobile"}",
+            ${getExtraTag()}
           },
         },
         "user": {

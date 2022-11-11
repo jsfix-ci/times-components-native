@@ -163,7 +163,17 @@ const ArticleBodyRow = ({
         </ArticleParagraphWrapper>
       );
     },
-    ad(key) {
+    ad(key, ...props) {
+      const extraTag = props.reduce((acc, cur) => {
+        if (typeof cur === "object" && cur !== null) {
+          if (cur.extraTag) {
+            return cur.extraTag;
+          }
+          return null;
+        }
+        return null;
+      }, null);
+      console.log("Extra tag: ", extraTag);
       const isLive = data.expirableFlags
         ? data.expirableFlags.filter(flag => flag.type === "LIVE").length > 0
         : false;
@@ -171,7 +181,7 @@ const ArticleBodyRow = ({
       return (
         <Ad
           adConfig={config}
-          articleData={data}
+          articleData={{ ...data, extraTag }}
           key={key}
           keyId={key}
           narrowContent={narrowContent}

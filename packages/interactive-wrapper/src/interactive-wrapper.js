@@ -102,6 +102,7 @@ class InteractiveWrapper extends Component {
         source={{ uri }}
         style={{ height }}
         androidLayerType={"software"}
+        textInteractionEnabled={true}
       />
     );
   }

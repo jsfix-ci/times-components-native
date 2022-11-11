@@ -1086,6 +1086,7 @@ exports[`1. article with header 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": null,
                 "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
                 "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
                 "keywords": Array [
@@ -1871,6 +1872,7 @@ exports[`1. article with header 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": null,
                 "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
                 "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
                 "keywords": Array [
@@ -2748,6 +2750,9 @@ exports[`1. article with header 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": Object {
+                  "bc": "1",
+                },
                 "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
                 "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
                 "keywords": Array [
