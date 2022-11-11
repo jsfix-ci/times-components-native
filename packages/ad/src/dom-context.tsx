@@ -23,7 +23,6 @@ import {
 } from "./utils/dom-context-utils";
 import reducer, { ActionTypes } from "./reducer";
 import { getArticleAuthors } from "@times-components-native/article/src/utils";
-import { connectStats } from "react-instantsearch-core";
 
 const config = NativeModules.ReactConfig;
 
@@ -81,8 +80,8 @@ const DOMContext = (props: DomContextType) => {
   const webViewRef = React.useRef<WebView>(null);
   const [state, dispatch] = useReducer(reducer, {
     loadAd: false,
-    adHeight: 250,
-    padding: 0,
+    adHeight: slotId !== "ad-inarticle-mpu-2" ? 250 : 0,
+    padding: slotId !== "ad-inarticle-mpu-2" ? PADDING : 0,
   });
   const networkId = config.adNetworkId;
   const adUnit =
@@ -321,6 +320,7 @@ const DOMContext = (props: DomContextType) => {
         })
       }
       style={viewPortStyle}
+      pointerEvents="box-none"
     >
       {state.loadAd && (
         <WebView

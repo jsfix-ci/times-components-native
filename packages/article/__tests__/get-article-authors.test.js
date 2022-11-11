@@ -19,6 +19,5 @@ test("get array of author names from byline data", () => {
   ];
 
   const authorNames = getArticleAuthors(bylineData);
-  console.log("AN: ", authorNames);
   expect(authorNames).toEqual(["Author Name"]);
 });
