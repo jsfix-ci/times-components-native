@@ -203,13 +203,17 @@ const DOMContext = (props: DomContextType) => {
     : "";
 
   const getExtraTag = () => {
-    if (articleData && articleData?.extraTag) {
-      return JSON.stringify(articleData.extraTag).replace(
-        new RegExp(/[{}]/g, "g"),
-        "",
-      );
+    try {
+      if (articleData && articleData?.extraTag) {
+        return JSON.stringify(articleData.extraTag).replace(
+          new RegExp(/[{}]/g, "g"),
+          "",
+        );
+      }
+      return "";
+    } catch (e) {
+      return "";
     }
-    return "";
   };
 
   const authId = `${NativeModules.ReactConfig.sourcepointAuthId}`;
