@@ -57,6 +57,7 @@ exports[`renders correctly 1`] = `
         "overflow": "hidden",
       }
     }
+    textInteractionEnabled={true}
     useSharedProcessPool={true}
   />
 </View>

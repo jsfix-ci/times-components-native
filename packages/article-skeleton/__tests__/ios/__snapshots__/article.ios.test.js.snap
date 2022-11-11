@@ -1025,6 +1025,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": null,
                 "flags": Array [
                   "NEW",
                 ],
@@ -2085,6 +2086,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": Object {
+                  "key": "value",
+                },
                 "flags": Array [
                   "NEW",
                 ],
@@ -6093,6 +6097,7 @@ exports[`19. renders content 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": null,
                 "flags": Array [
                   "NEW",
                 ],
@@ -7311,6 +7316,7 @@ exports[`19. renders content 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": null,
                 "flags": Array [
                   "NEW",
                 ],
@@ -8468,6 +8474,9 @@ exports[`19. renders content 1`] = `
                     "type": "UPDATED",
                   },
                 ],
+                "extraTag": Object {
+                  "bc": "1",
+                },
                 "flags": Array [
                   "NEW",
                 ],
