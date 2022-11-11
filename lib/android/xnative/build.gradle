@@ -68,7 +68,7 @@ publishing {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 31
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 28
@@ -105,5 +105,11 @@ dependencies {
     }
     api("uk.co.thetimes:xnative-rn-newrelic-agent:${packageInfo.version}") {
         exclude group: "com.facebook.react"
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'androidx.core:core-ktx:1.7.0'
     }
 }
