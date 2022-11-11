@@ -166,7 +166,7 @@ const ArticleBodyRow = ({
     ad(key, ...props) {
       const extraTag = props.reduce((acc, cur) => {
         if (typeof cur === "object" && cur !== null) {
-          if (Object.hasOwn(cur, "extraTag")) {
+          if (cur.extraTag) {
             return cur.extraTag;
           }
           return null;
