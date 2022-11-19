@@ -76,7 +76,7 @@
     "apollo-link-http": "1.5.14",
     "apollo-utilities": "1.2.1",
     "css": "^2.2.1",
-    "date-fns": "1.28.5",
+    "date-fns": "^2.29.3",
     "deprecated-react-native-prop-types": "^2.3.0",
     "graphql": "14.2.1",
     "graphql-tools": "4.0.4",
